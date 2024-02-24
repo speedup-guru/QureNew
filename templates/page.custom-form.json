@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "page-stocklist",
+      "type": "temp-page-stocklist",
       "settings": {
       }
     }
