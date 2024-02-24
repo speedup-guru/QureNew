@@ -1,0 +1,315 @@
+{%- assign rating_count = 0 -%}
+{%- assign supply_count = 0 -%}
+{%- assign subscribe_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'rating' -%}
+            {%- assign rating_count = rating_count | plus: 1 -%}    
+        {%- when 'list' -%}
+            {%- assign list_count = list_count | plus: 1 -%}
+        {%- when 'supply' -%}
+            {%- assign supply_count = supply_count | plus: 1 -%}
+        {%- when 'subscribe' -%}
+            {%- assign subscribe_count = subscribe_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 order-2 order-md-1">
+            <div class="best_seller_info">
+                <div class="section_header text-start m-0 d-grid">
+                    <h1 class="title-xl order-2 order-md-1">{{ product.title }}</h1>
+                    {%- for block in section.blocks -%}
+                        {% case block.type %}
+                            {% when 'preorder' %}
+                                <h6 class="order-3 order-md-2">Pre-Order</h6>
+                            {% when 'rating' %}
+                                <div class="star_gp order-1 order-md-3">
+                                    {% if block.settings.image != blank %}
+                                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <a href="#">{{ block.settings.text }}</a>
+                                    {% endif %}
+                                </div>
+                        {% endcase %}
+                    {%- endfor -%}
+                </div>
+                <div class="bundle_ftr">
+                    {{ product.description }}
+                </div>
+                <div class="bundle_price">
+                    <div class="old_price">{{ product.compare_at_price |  money_without_trailing_zeros }}</div>
+                    <div class="new_price">{{ product.price |  money_without_trailing_zeros }}</div>
+                    {% if product.compare_at_price != blank %}
+                        <div class="discount_percentage">{{ product.price | times: 100 | divided_by: product.compare_at_price | minus: 100 | abs | round }}% OFF</div>
+                    {% endif %}
+                </div>
+                <div class="bundle_quantity_wrap">
+                    <div class="bundle_quantity">
+                        <a href="#">-</a>
+                        <p>1</p>
+                        <a href="#">+</a>
+                    </div>
+                    <a class="btn btn-lg btn-primary buy_btn d-none d-md-block" href="#">Add to cart<img src="{{ 'arrow_right.svg' | asset_url }}" alt=""></a>
+                    <a class="btn btn-lg btn-primary buy_btn d-block d-md-none" href="#">Add to cart</a>
+                </div>
+
+                {% if product.compare_at_price != blank %}
+                    {% render 'product-sticky-button' with
+                        variant_id: product.variants.first.id, 
+                        current_price: product.price, 
+                        original_price: product.compare_at_price, 
+                    %}                    
+                {% else %}
+                    {% render 'product-sticky-button' with
+                        variant_id: product.variants.first.id, 
+                        current_price: product.price, 
+                        original_price: product.price, 
+                    %}
+                {% endif %}
+
+                <div class="payment_method">
+                    <p>OR pay 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
+                    <div class="pmt_img ps-2">
+                        <img src="{{ 'klarna.svg' | asset_url }}" alt="">
+                        <img src="{{ 'sezzle.svg' | asset_url }}" alt="">
+                        <img src="{{ 'afterpay.svg' | asset_url }}" alt="">
+                    </div>
+                </div>
+
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'button' %}
+                        <div class="special_deals">
+                            <img src="{{ 'special_deals_n.webp' | asset_url }}" alt="">
+                            <div class="special_deal_btn">
+                                {% if block.settings.button_label != blank %}
+                                    <a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}<img src="{{ 'arrow-right-white.png' | asset_url }}"></a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+
+                <div class="shipping shipping_bg bg-transparent">
+                    <div class="s_bx">
+                        <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
+                        <p class="d-none d-md-block">Dermatologist Approved</p>
+                        <p class="d-block d-md-none">Dermatologist<br> Approved</p>
+                    </div>
+                    <div class="s_bx">
+                        <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+                        <p class="d-none d-md-block">Free Shipping Over $100</p>
+                        <p class="d-block d-md-none">Free World-Wide <br>Shipping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+            <div class="bundle_pdp_slider mw-mob-100">
+                <div class="bf-bundles__img position-relative mw-mob-100">
+                    <div 
+                        class="swiper bf-bundle_slider dot_pagination twa__swiper"
+                        id="twa__swiper-bundle_slider" 
+                        data-section-id="bundle_slider" 
+                        data-autoplay="false"
+                        data-loop="false" 
+                        data-centerslide="false" 
+                        data-mobile="1" 
+                        data-tablet="1"
+                        data-desktop="1" 
+                        data-spacing="0" 
+                        data-arrowleft="bundle_slider-swiper-prev"
+                        data-arrowright="bundle_slider-swiper-next">
+                        <div class="swiper-wrapper">
+                            {% for media in product.media %}
+                                <div class="swiper-slide">
+                                    <div class="sale-bf-img">
+                                        <div class="sale-bf-bgImg">
+                                            <picture id="image-id">
+                                                <source media="(min-width:1920px)" srcset="{{ media | img_url: 'master' }}">
+                                                <source media="(min-width:1600px)" srcset="{{ media | img_url: '1600x' }}">
+                                                <source media="(min-width:1100px)" srcset="{{ media | img_url: '1100x' }}">
+                                                <source media="(min-width:720px)" srcset="{{ media | img_url: '720x' }}">
+                                                <source media="(min-width:540px)" srcset="{{ media | img_url: '540x' }}">
+                                                <img class="img-fluid" src="{{ media | img_url: '540x' }}" width="100" height="100" alt="{{ block.settings.image.alt | escape }}">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next bundle_slider-swiper-next"></div>
+                        <div class="swiper-button-prev bundle_slider-swiper-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const decreaseButton = document.querySelector('.bundle_quantity a:first-child');
+        const increaseButton = document.querySelector('.bundle_quantity a:last-child');
+        const quantityElement = document.querySelector('.bundle_quantity p');
+        const addToCartLinks = document.querySelectorAll('.buy_btn');
+
+        decreaseButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            let quantity = parseInt(quantityElement.innerText);
+            if (quantity > 1) {
+                quantityElement.innerText = quantity - 1;
+                updateCartLinksQuantity(quantity - 1);
+            }
+        });
+
+        increaseButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            let quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = quantity + 1;
+            updateCartLinksQuantity(quantity + 1);
+        });
+
+        document.querySelectorAll('.gift_variant').forEach(button => {
+            button.addEventListener('click', function () {
+                var variantId = this.getAttribute('data-variant-id');
+
+                updateCartLinksId(variantId);
+            });
+        });
+
+        function updateCartLinksId(id) {
+            addToCartLinks.forEach(link => {
+                link.href = link.href.replace(/id=\d+/, 'id=' + id);
+            });
+        }
+
+        function updateCartLinksQuantity(quantity) {
+            addToCartLinks.forEach(link => {
+                link.href = link.href.replace(/quantity=\d+/, 'quantity=' + quantity);
+            });
+        }
+    });
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title | escape }}",
+  "url": "{{ shop.url }}{{ product.url }}",
+  {% if product.featured_image %}
+    {% assign image_size = product.featured_image.width | append: 'x' %}
+    "image": [
+      "https:{{ product.featured_image.src | img_url: image_size }}"
+    ],
+  {% endif %}
+  "description": "{{ product.description | strip_html | escape }}",
+  {% if current_variant.sku != blank %}
+    "sku": "{{ current_variant.sku }}",
+  {% endif %}
+  "brand": {
+    "@type": "Thing",
+    "name": "{{ product.vendor | escape }}"
+  },
+  {% if product.variants %}
+    "offers": [
+      {% for variant in product.variants %}
+        {
+          "@type" : "Offer",
+          "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+          "price" : "{{ variant.price | divided_by: 100.00 }}",
+          "priceCurrency" : "{{ shop.currency }}",
+          "url" : "{{ shop.url }}{{ variant.url }}",
+          "itemOffered" :
+          {
+              "@type" : "Product",
+              {% if variant.image %}
+                {% assign variant_image_size = variant.image.width | append: 'x' %}
+                "image": "http:{{ variant.image.src | img_url: variant_image_size }}",
+              {% endif %}
+              {% if variant.title != blank %}
+                "name" : "{{ variant.title | escape }}",
+              {% endif %}
+              {% if variant.sku != blank %}
+                "sku": "{{ variant.sku }}",
+              {% endif %}
+              {% if variant.weight != blank %}
+                "weight": {
+                  "@type": "QuantitativeValue",
+                  {% if variant.weight_unit != blank %}
+                    "unitCode": "{{ variant.weight_unit }}",
+                  {% endif %}
+                  "value": "{{ variant.weight | weight_with_unit: variant.weight_unit }}"
+                },
+              {% endif %}
+              "url": "{{ shop.url }}{{ variant.url }}"
+          }
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  {% endif %}
+}
+</script>
+
+
+{% schema %}
+    {
+        "name": "t:sections.product.name",
+        "class": "section-product",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "rating",
+                "name": "t:common.rating.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "preorder",
+                "name": "t:common.preorder.label",
+                "limit": 1,
+                "settings": [
+
+                ]
+		    }
+        ]
+    }
+{% endschema %}

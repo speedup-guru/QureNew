@@ -1,0 +1,210 @@
+<style>
+.bf-bundles__item-dropdown {
+    padding: 10px;
+}
+.bf-bundles__item-dropdown ul li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .3px;
+    color: #000;
+    opacity: 0.8;
+}
+.bf-bundles__item-dropdown ul li:before {
+    content: '●';
+    opacity: 0.8;
+    margin-right: 5px;
+}
+</style>
+
+<!-- Black Friday -->
+<section class="bf-bundles-section bf_with_slider" id="bf-bundles">
+    <div class="container">
+        <div class="bf-bundles__title-wrapper">
+            <div class="bf-bundles__subtitle text-start text-md-center">A Bundle Is sold every 67 seconds!</div>
+            <div class="bf-bundles__offer-wrapper">
+                <div class="bf-bundles__offer black">Don’t miss out!</div>
+                <div class="bf-bundles__offer red">
+                    <span class="bf-desktop px-3">HOLIDAY SALE</span><span class="bf-mobile px-3">HOLIDAY SALE</span>
+                </div>
+                <div class="bf-bundles__offer black">Limited offer</div>
+            </div>
+            <div class="bf-bundles_title text-start text-md-center">
+                {% if section.settings.heading != blank %}
+                    <h3>{{ section.settings.heading }}</h3> 
+                {% endif %}
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }} 
+                {% endif %}
+            </div>
+        </div>
+        {% if section.blocks.size > 0 %}
+            <div class="bf-bundles__items-wrapper">
+                {%- for block in section.blocks -%}
+
+                    {% assign product = block.settings.product %}
+                    {% assign product_variant = product.variants.first.id %}
+                    {% assign product_price = product.price | money_without_trailing_zeros %}
+                    {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
+                    {% assign product_price_discount = product.compare_at_price | minus: product.price | money_without_trailing_zeros %}
+                    {% assign product_price_divided = product.price | divided_by: 4 | money_without_trailing_zeros %}
+                    {% assign discount_percentage = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price %}
+                    {% assign discount_percentage_rounded = discount_percentage | ceil %}
+
+                    <div class="bf-bundles__item bundles__item-{{ forloop.index }}{%  unless product.available %} sold_out{% endunless %}">
+                        <div class="bf-bundles__img position-relative">
+                            <div class="swiper bf-bundle_slider dot_pagination twa__swiper"
+                                id="twa__swiper-slider-{{ forloop.index }}" data-section-id="slider-{{ forloop.index }}"
+                                data-autoplay="false" data-loop="false" data-centerslide="false" data-mobile="1"
+                                data-tablet="1" data-desktop="1" data-spacing="0"
+                                data-arrowleft="slider-{{ forloop.index }}-swiper-prev"
+                                data-arrowright="slider-{{ forloop.index }}-swiper-next">
+                                <div class="swiper-wrapper">
+                                    {% for media in product.media %}
+                                        <div class="swiper-slide">
+                                            <div class="sale-bf-img">
+                                                <div class="sale-bf-bgImg">
+                                                    <img class="img-fluid" src="{{ media | img_url: '720x' }}" alt="">
+                                                </div>
+                                                {% if forloop.index == 1 %}
+                                                    <div class="bf-bundles__item-off">{{ discount_percentage_rounded }}% OFF</div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next slider-{{ forloop.index }}-swiper-next"></div>
+                                <div class="swiper-button-prev slider-{{ forloop.index }}-swiper-prev"></div>
+                            </div>
+    
+                        </div>
+                        <div class="bf-bundles__content">
+                            <div class="bf-bundle__rating">
+                                {{ product.metafields.stamped.badge }}
+                                {% comment %} <img src="{{ 'bundle_r_2.svg' | asset_url }}" alt="">
+                                <span class="underline_btn">242 reviews</span> {% endcomment %}
+                            </div>
+                            <div class="bf-bundles__item-title">
+                                <h4>{{ block.settings.product.title | replace: ' (Sold Out)', '' }}</h4>
+                            </div>
+                            <div class="bf-bundles__item-included-wrapper">
+                                <div class="bf-bundles__item-included">
+                                    What is included?
+                                    <span>
+                                        <img src="{{ 'included_arrow.svg' | asset_url }}" alt="">
+                                    </span>
+                                </div>
+                                <div class="bf-bundles__item-dropdown">
+                                    {{ product.description }}
+                                </div>
+                            </div>
+                            <div class="bf-bundles__item-price-wrapper">
+                                <div class="bf-bundles__item-before">{{ product_price_compare }}</div>
+                                <div class="bf-bundles__item-after">{{ product_price  }}</div>
+                                <div class="bf-bundles__item-save">YOU SAVE <span>{{ product_price_discount  }}</span></div>
+                            </div>
+
+                            {% if product.available %}
+                                {% if block.settings.percent == 0 %}
+                                    <button class="bf-buy-button" style="--bgPercent:0%; --bgMobPercent:19%">
+                                        <span>Out of Stock</span>
+                                        <span class="buy-sold-wrapper">
+                                            <span class="buy-sold buy-sold-mobile">
+                                                <span class="buy-sold__top">0%</span>
+                                                <span class="buy-sold__bottom">of stock left</span>
+                                            </span>
+                                        </span>
+                                        <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt="">
+                                    </button>
+                                {% else %}
+                                    <button class="bf-buy-button" style="--bgPercent:{{ 100 | minus: block.settings.percent }}%; --bgMobPercent:{{ block.settings.percent }}%" data-product-handle="{{ product.handle }}" data-ajax-cart-request-button="/cart/add?id={{ product_variant }}&quantity=1">
+                                        <span>Buy Now</span>
+                                        <span class="buy-sold-wrapper">
+                                            <span class="buy-sold buy-sold-mobile">
+                                                <span class="buy-sold__top">{{ block.settings.percent }}%</span>
+                                                <span class="buy-sold__bottom">
+                                                    of stock left
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt="">
+                                    </button>
+                                {% endif %}
+                            {% else %}
+                                <button class="bf-buy-button" style="--bgPercent:0%; --bgMobPercent:19%">
+                                    <span>Out of Stock</span>
+                                    <span class="buy-sold-wrapper">
+                                        <span class="buy-sold buy-sold-mobile">
+                                            <span class="buy-sold__top">0%</span>
+                                            <span class="buy-sold__bottom">of stock left</span>
+                                        </span>
+                                    </span>
+                                    <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt="">
+                                </button>
+                            {% endif %}
+
+                            <div class="payment_method">
+                                <p>OR 4 monthly payments {{ product_price_divided }} with</p>
+                                <div class="pmt_img ps-2">
+                                    <img src="{{ 'klarna.svg' | asset_url }}" alt="">
+                                    <img src="{{ 'sezzle.svg' | asset_url }}" alt="">
+                                    <img src="{{ 'afterpay.svg' | asset_url }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                {%- endfor -%}
+            </div>
+        {% endif %}
+    </div>
+</section>
+<!-- Black Friday end -->
+
+{% schema %}
+    {
+        "name": "t:sections.bundle-list.name",
+        "class": "section-bundle-list",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "product",
+                "name": "t:common.product.label",
+                "limit": 12,
+                "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "percent",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.percent.label",
+                        "default": 34
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.bundle-list.name"
+			}
+        ]
+    }
+{% endschema %}

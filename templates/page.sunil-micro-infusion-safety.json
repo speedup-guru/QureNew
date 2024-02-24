@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-sunil-micro-infusion-safety",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

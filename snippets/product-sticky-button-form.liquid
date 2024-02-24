@@ -1,0 +1,25 @@
+<div class="button_sticky_wrapper">
+    <a href="javascript:void(0)" onclick="formSubmit('{{ form_classname }}')" class="button_sticky {{ button_classname }} event_btn">
+        {% if current_price != original_price %}
+            {{ current_price | money_without_trailing_zeros }}<span id="original-price">{{ original_price | money_without_trailing_zeros }}</span>
+        {% else %}
+            {{ current_price | money_without_trailing_zeros }}
+        {% endif %}
+        - ADD TO BAG
+    </a>
+</div>
+
+
+<style>
+    @media only screen and (min-width:769px){
+        .button_sticky_wrapper {
+            width: 65% !important;
+        }
+    }
+    /* special for mobile */
+    @media (max-width: 768px) {
+        .button_sticky_wrapper {
+            width: 88% !important;
+        }
+    }
+</style>

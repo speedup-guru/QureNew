@@ -1,0 +1,100 @@
+<!-- ===== main banner start ===== -->
+<div class="contact_wrapper section">
+    <div class="container">
+        <div class="contact_help">
+            <div class="section_header text-md-center">
+                <h2 class="title-xl">Contact Us</h2>
+                <h5>We are here to help!</h5>
+            </div>
+            <div class="contact_info">
+                <div class="cnt_item">
+                    <div class="cnt_img">
+                        <img src="{{ 'email.svg' | asset_url }}" alt="">
+                    </div>
+                    <h6>EMAIL</h6>
+                    <p>Send a Message to Customer Service below</p>
+                </div>
+                <div class="cnt_item">
+                    <div class="cnt_img">
+                        <img src="{{ 'live-chat.svg' | asset_url }}" alt="">
+                    </div>
+                    <h6>LIVE CHAT</h6>
+                    <p>Experts are Available: Mon-Fri 9AM - 5PM EST</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== main banner end ===== -->
+<!-- ======== contact us form start ======= -->
+<div class="contact_form qure_form">
+    <div class="container">
+        {% form 'contact' %}
+
+            {% if form.posted_successfully? %}
+                <p class="form-success">
+                  {{ 'contact.form.post_success' | t }}
+                </p>
+            {% endif %}
+
+            {{ form.errors | default_errors }}
+
+            <div class="contact_form_grid mb-4">
+                <div class="qure_input">
+                    <input 
+                        type="text"
+                        name="contact[name]"
+                        id="ContactFormName"
+                        value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                        class="qure_input_field"
+                        placeholder="Name"
+                    >
+                    <label for="c_name" class="qure_input_label"></label>
+                </div>
+                <div class="qure_input">
+                    <input 
+                        type="email"
+                        name="contact[email]"
+                        id="ContactFormEmail"
+                        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                        spellcheck="false"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        class="qure_input_field"
+                        placeholder="Email"
+                    >
+                    <label for="c_email" class="qure_input_label"></label>
+                </div>
+            </div>
+            <div class="qure_input">
+                <label for="message" class="form-label qure_input_label"></label>
+                <textarea 
+                    rows="6"
+                    name="contact[body]"
+                    id="ContactFormMessage"
+                    class="qure_input_field"
+                    placeholder="What's on your mind?">
+                    {%- if form.body -%}
+                        {{- form.body -}}
+                    {%- endif -%}
+                </textarea>
+            </div>
+            <div class="qure_form_btn my-4 d-block">
+                <input type="submit" class="btn btn-lg btn-primary" value="Submit">
+            </div>
+        {% endform %}
+    </div>
+
+
+</div>
+<!-- ======== contact us form end ======= -->
+<!-- === additional customer service start ====== -->
+<div class="customer_details">
+    <div class="container">
+        <div class="c_d_wrapper">
+            <p><strong>ADDITIONAL CUSTOMER SERVICE</strong></p>
+            <p>International FAQ<span class="mx-4"></span>Returns and Exchanges</p>
+        </div>
+    </div>
+</div>
+<!-- === additional customer service start ====== -->

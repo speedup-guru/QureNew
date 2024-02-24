@@ -1,0 +1,29 @@
+{% if variant_id %}
+    <div class="button_sticky_wrapper">
+        <a href="{{ routes.cart_add_url }}?id={{ variant_id }}&quantity=1" data-ajax-cart-request-button class="button_sticky {{ classname }} event_btn">
+            {% if current_price != original_price %}
+                <i id="sale-price">{{ current_price | money_without_trailing_zeros }}</i><span id="regular_price">{{ original_price | money_without_trailing_zeros }}</span>
+            {% else %}
+                <i id="sale-price">{{ current_price | money_without_trailing_zeros }}</i>
+            {% endif %}
+            - ADD TO BAG
+        </a>
+    </div>
+{% endif %}
+
+<style>
+    .button_sticky_wrapper i {
+        font-style: normal;
+    }
+    @media only screen and (min-width:769px){
+        .button_sticky_wrapper {
+            width: 65% !important;
+        }
+    }
+    /* special for mobile */
+    @media (max-width: 768px) {
+        .button_sticky_wrapper {
+            width: 88% !important;
+        }
+    }
+</style>

@@ -1,0 +1,6 @@
+{% case request.path %}
+    {% when '/pages/exclusive-holiday-bundle-deal' %}
+        {% render 'header-sales' %}
+    {% else %}
+        {% render 'header-default' %}
+{% endcase %}

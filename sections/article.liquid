@@ -1,0 +1,151 @@
+<div class="blogs_wrapper">
+    <div class="blogs_tab_wrapper">
+        <div class="container">
+            <ul>
+                {% for link in linklists.new-blog-menu.links %}
+                    <li class="blogs_tab">
+                        <a href="{{ link.url }}"{% if link.current %} class="active"{% endif %}>{{ link.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="blog_banner_wrap mt-3 mt-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="h-100 d-flex align-items-center">
+                        <div class="blog_banner">
+                            <div class="blog_breadcrumb">Blog > <a href="{{ blog.url }}" aria-label="{{ blog.title |  escape }}">{{ blog.title }}</a></div>
+                            <h2 class="title-lg mt-2 mb-3 mb-md-4 mt-md-4">{{ article.title }}</h2>
+                            <p class="d-none d-md-block"><strong>Written by Our Editorial Team</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="blog_banner_img">
+
+                        {% if article.image != blank %}
+                            <picture>
+                                <source media="(min-width:1920px)" srcset="{{ article | img_url: 'master' }}">
+                                <source media="(min-width:1600px)" srcset="{{ article | img_url: '1600x' }}">
+                                <source media="(min-width:1100px)" srcset="{{ article | img_url: '1100x' }}">
+                                <source media="(min-width:720px)" srcset="{{ article | img_url: '720x' }}">
+                                <source media="(min-width:540px)" srcset="{{ article | img_url: '540x' }}">
+                                <img class="img-fluid" src="{{ article | img_url: '540x' }}" alt="{{ section.settings.image.alt | escape }}" width="332" height="192">
+                            </picture>
+                        {% endif %}
+
+                        <p class="d-block d-md-none mt-3"><strong>Written by Our Editorial Team</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blogs_tab_info" style="--column-gap:45px; --column-gap-mobile:30px;">
+        <div class="container">
+            <div class="row custom__grid">
+                <div class="col-md-9 custom__block">
+                    <div class="post_wrapper">
+                        {{ article.content }}
+                        <div class="blog_post_bl">
+                            <div class="section_header text-start mw-100 ms-0 ps-0">
+                                <h2 class="title-xl">Related stories:</h2>
+                            </div>
+                            {% render 'blog-post' with blog_handle: blog.handle, limit: 9, skip_title: true %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 custom__block">
+                    <div class="most_popular">
+                        <div class="most_popular_title"><strong>Don’t miss</strong> <span class="mx-2">|</span>
+                            <span style="font-style: italic;letter-spacing: 0.3px;">Most Popular</span>
+                        </div>
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+
+                        <div class="blog_wrap mt-5 d-none d-md-block">
+                            <div class="blog_img">
+                                <picture>
+                                    <source media="(min-width:1920px)" srcset="{{ 'blog_recommend1.webp' | asset_url }}"
+                                        width="253" height="109">
+                                    <source media="(min-width:1600px)" srcset="{{ 'blog_recommend1.webp' | asset_url }}"
+                                        width="253" height="109">
+                                    <source media="(min-width:1100px)" srcset="{{ 'blog_recommend1.webp' | asset_url }}"
+                                        width="253" height="109">
+                                    <source media="(min-width:720px)" srcset="{{ 'blog_recommend1.webp' | asset_url }}"
+                                        width="253" height="109">
+                                    <source media="(min-width:540px)" srcset="{{ 'blog_recommend1.webp' | asset_url }}"
+                                        width="332" height="192">
+                                    <img src="{{ 'blog_recommend1.webp' | asset_url }}" alt="" class="img-fluid" width="332"
+                                        height="192">
+                                </picture>
+                            </div>
+                            <div class="blog_content">
+                                <h6 class="blog_info">Qure recommends</h6>
+                                <h5 class="blog_title">Discover our Best Sellers
+                                </h5>
+                            </div>
+                            <div class="blog_btn_wrapper">
+                                <a class="btn btn-primary blog_btn" href="/collections/best-sellers" aria-label="Discover our Best Sellers">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "articleBody": "{{ article.content | strip_html }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ shop.url }}{{ page.url }}"
+  },
+  "headline": "{{ article.title }}",
+  {% if article.excerpt != blank %}
+    "description": "{{ article.excerpt | strip_html }}",
+  {% endif %}
+  {% if article.image %}
+    {% assign image_size = article.image.width | append: 'x' %}
+    "image": [
+      "https:{{ article | img_url: image_size }}"
+    ],
+  {% endif %}
+  "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "dateCreated": "{{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ article.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    {% if settings.share_image %}
+      {% assign image_size = settings.share_image.width | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ settings.share_image.height }}",
+        "url": "https:{{ settings.share_image | img_url: image_size }}",
+        "width": "{{ settings.share_image.width }}"
+      },
+    {% elsif article.image %}
+      {% assign image_size = article.image.width | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ article.image.height }}",
+        "url": "https:{{ article.image | img_url: image_size }}",
+        "width": "{{ article.image.width }}"
+      },
+    {% endif %}
+    "name": "{{ shop.name }}"
+  }
+}
+</script>

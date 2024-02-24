@@ -1,0 +1,603 @@
+{
+  "sections": {
+    "main": {
+      "type": "mobile-product-slider",
+      "blocks": {
+        "slide_eMzaPx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepageslide-1.jpg",
+            "link_label": "Q-Rejuvalight LED Mask",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/q-rejuvalight-pro-facewear"
+          }
+        },
+        "slide_qqmpCY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepageslide-2.jpg",
+            "link_label": "Micro-Infusion System",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
+          }
+        },
+        "slide_iQgE8e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepageslide-3.jpg",
+            "link_label": "Neck & Décolletage LED",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/neck-decolletage-led"
+          }
+        },
+        "slide_aKL6kD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepageslide-4.jpg",
+            "link_label": "All-In-One Face Serum",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/face-serum"
+          }
+        },
+        "slide_9qAien": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepageslide-5.jpg",
+            "link_label": "Q-urify Water Filter",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/q-urify-water-filter"
+          }
+        },
+        "slide_GReD48": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepageslide-6.jpg",
+            "link_label": "Micro-Infusion Refill",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/micro-infusion-refill"
+          }
+        }
+      },
+      "block_order": [
+        "slide_eMzaPx",
+        "slide_qqmpCY",
+        "slide_iQgE8e",
+        "slide_aKL6kD",
+        "slide_9qAien",
+        "slide_GReD48"
+      ],
+      "settings": {
+      }
+    },
+    "main_banner_rJmjKt": {
+      "type": "main-banner",
+      "blocks": {
+        "link_6iQ8RV": {
+          "type": "link",
+          "settings": {
+            "link_label": "Shop Best Sellers",
+            "link_url": "shopify:\/\/collections\/best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "link_6iQ8RV"
+      ],
+      "settings": {
+        "heading": "Clinic-level results from home - minus the ‘clinical’ costs.",
+        "subheading": "smoother, brighter, healthier skin",
+        "text": "<p><strong>+ 40,745 <\/strong>customers feel more confident in their own skin.<\/p>",
+        "image": "shopify:\/\/shop_images\/homepage_banner_desk1.webp",
+        "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob1.webp"
+      }
+    },
+    "featuredin_cgKaqj": {
+      "type": "featuredin",
+      "blocks": {
+        "heading_YyDyVn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "FEATURED IN"
+          }
+        },
+        "image_WfRncU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_MEEkak": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_Ft78hT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_fY8aLL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_dcMyYm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_KNeCQ7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YyDyVn",
+        "image_WfRncU",
+        "image_MEEkak",
+        "image_Ft78hT",
+        "image_fY8aLL",
+        "image_dcMyYm",
+        "image_KNeCQ7"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "uses_gjAiWF": {
+      "type": "uses",
+      "blocks": {
+        "video_8zPJdn": {
+          "type": "video",
+          "settings": {
+            "heading": "Why Qure?",
+            "image": "shopify:\/\/shop_images\/why_qure.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=X9KXJPv6rno"
+          }
+        },
+        "column_WiRkVB": {
+          "type": "column",
+          "settings": {
+            "heading": "Science-Backed, Dermatologist Approved",
+            "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals <\/strong>and <strong>scientific studies <\/strong>that <strong>prove; <\/strong>Qure’s skincare <strong>works.<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/q_uses_1.webp"
+          }
+        },
+        "column_LCgEjM": {
+          "type": "column",
+          "settings": {
+            "heading": "Safe and Easy To Use",
+            "text": "<p>Perform <strong>safely <\/strong>from home for quick and <strong>easy <\/strong>regular <strong>DIY therapies <\/strong>so you can maintain long term smooth and healthy skin.<\/p>",
+            "image": "shopify:\/\/shop_images\/q_uses_2.webp"
+          }
+        },
+        "column_fwkxwx": {
+          "type": "column",
+          "settings": {
+            "heading": "Saves You Time, and Money",
+            "text": "<p>No one has the time, or the money, to attend regular in-clinic treatments in order to see long lasting results. With Qure, it’s like going to the clinic 5x a week - Minus the cost and the time commitment.<\/p>",
+            "image": "shopify:\/\/shop_images\/q_uses_4.webp"
+          }
+        },
+        "column_XycrHX": {
+          "type": "column",
+          "settings": {
+            "heading": "Clinically Proven Results",
+            "text": "<p>Keep your skin looking like you for longer. We put <strong>clinically proven <\/strong>technology and skincare that’s backed by science in your hands, so you can <strong>achieve in-clinic results without the guess work.<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/q_uses_3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "video_8zPJdn",
+        "column_WiRkVB",
+        "column_LCgEjM",
+        "column_fwkxwx",
+        "column_XycrHX"
+      ],
+      "settings": {
+      }
+    },
+    "before_after_slider_dckiYy": {
+      "type": "before-after-slider",
+      "blocks": {
+        "slide_CUQDHb": {
+          "type": "slide",
+          "settings": {
+            "heading": "Fine Lines and Wrinkles",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/michelle_after_img.webp",
+            "text_after": "AFTER 8 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Michelle S.",
+            "progress": 87,
+            "progress_text": "<p><strong>smoother<\/strong> facial wrinkles and fine lines after 12 weeks.<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...8 out of 10<\/strong> subjects reported a                                                      significant <strong>reduction in periorbital wrinkles<\/strong><\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged\/photoaged individuals in a split-face single-blinded study.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+          }
+        },
+        "slide_nqkLxX": {
+          "type": "slide",
+          "settings": {
+            "heading": "Skin Tone and Texture",
+            "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+            "product_image": "shopify:\/\/shop_images\/skiSlider_micro.webp",
+            "image_before": "shopify:\/\/shop_images\/mica_1_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/mica_after_img.webp",
+            "text_after": "AFTER 1 TREATMENT",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Mica A.",
+            "progress": 91,
+            "progress_text": "<p><strong>improved<\/strong> clarity, smoother texture and skin                                                  appearance<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...9 out of 10<\/strong> subjects reported <strong>a                                                         noticeable difference<\/strong> in <strong>skin                                                          texture<\/strong> and <strong>clarify<\/strong> after                                                      treatment.<\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": ""
+          }
+        },
+        "slide_kiTVen": {
+          "type": "slide",
+          "settings": {
+            "heading": "Acne and Breakouts",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/bj_nardi_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "client": "BJ Nardi.",
+            "progress": 83,
+            "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 8 weeks.<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...9 out of 10 <\/strong>subjects said they                                                      saw <strong>a reduction in the skin acne after 2 weeks<\/strong>.<\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Improvement ranging up to 83.3% of moderate acne lesion count. A downward shift in the Burton                                                                  grade was seen overall. No adverse effects were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted with male and female subjects with acne grades at baseline ranging from                                                                  Burton grade 1 to 5. Subjects were treated with LED therapy, alternating between the blue (415 nm) and  near-IR (830 nm) heads. No other treatment was allowed. Results were assessed and compared with the baseline values at 1, 4 and 8 weeks post-treatment.<\/p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/p>"
+          }
+        },
+        "slide_B4zrcd": {
+          "type": "slide",
+          "settings": {
+            "heading": "Pigmentation and Dark Spots",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/jess_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Jess.",
+            "progress": 91,
+            "progress_text": "<p><strong>improved<\/strong> skin tone and enhanced smoothness after 12 weeks.<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion and collagen density.<\/strong><\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CUQDHb",
+        "slide_nqkLxX",
+        "slide_kiTVen",
+        "slide_B4zrcd"
+      ],
+      "settings": {
+        "classname": "skincare_slider bg_gradient_yellow_bt",
+        "heading": "Science-backed skincare that’s proven to work.",
+        "text": "<p>See the real, unedited results for yourself.<\/p><p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/><\/p><p>Our science-backed skincare and treatments are <em>clinically-proven <\/em>to work. <br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is, so you can.<\/p>"
+      }
+    },
+    "trusted_qcJp6N": {
+      "type": "trusted",
+      "blocks": {
+        "feedback_hXVkGe": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cl_shah.webp",
+            "text": "<p>\"The <strong>best LED mask the market<\/strong> in my opinion at this time,that being said you do need to use this consistently to see results...\"<\/p><h6><strong>Dr Shah, MD Certified<\/strong> Dermatologist<\/h6>"
+          }
+        },
+        "feedback_VV7WqP": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cl_max.webp",
+            "text": "<p>\"<strong>The Qure mask wins<\/strong> the LED device mask went off..\"<\/p><h6><strong>Dr Maxfield, MD<\/strong> Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_4eMcWB": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_zVFniz": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
+            "wistia_id": "",
+            "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr. Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_TDePaM": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_greeney_76bc7346-026a-4350-96df-6fd73c5be00e.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
+            "wistia_id": "",
+            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_3BWkgV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_maxfield_99f72bee-8b87-4244-a5b9-43323823b22a.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
+            "wistia_id": "",
+            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_Kb99Wn": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_natasha.webp",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ebb5f0ed35b844f7b9f2486db670748b.mp4?_ga=2.232823709.263527484.1696998277-1098661776.1696998277",
+            "wistia_id": "",
+            "text": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment\"<\/p><h6><strong>Dr Natasha Henry,<\/strong> Medical Doctor<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "feedback_hXVkGe",
+        "feedback_VV7WqP",
+        "video_4eMcWB",
+        "video_zVFniz",
+        "video_TDePaM",
+        "video_3BWkgV",
+        "video_Kb99Wn"
+      ],
+      "settings": {
+        "classname": "trusted_bl",
+        "heading": "Trusted and recommended by world leading Dermatologists",
+        "likes": "4.8K",
+        "views": "192K views",
+        "image": "shopify:\/\/shop_images\/trusted_2.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+      }
+    },
+    "bestseller_zBUA8r": {
+      "type": "bestseller",
+      "blocks": {
+        "product_JQnqag": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bestseller_serum.webp",
+            "heading": "All-In-One Face Serum",
+            "text": "<p>Multi-tasking face serum <strong>boosts firmness, smooths fine lines and<br\/>brightens dark spots<\/strong> with Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.     <\/p>",
+            "button_label": "Learn more",
+            "button_url": "shopify:\/\/products\/face-serum"
+          }
+        },
+        "product_QKidrm": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bestseller_mask.webp",
+            "heading": "Light Therapy Mask",
+            "text": "<p><strong>FDA cleared,<\/strong> dermatologist recommended, at-home LED Light<br\/>Therapy Mask that’s proven to reduce fine lines, wrinkles, redness, pigmentation, and acne. Connects with app to customize, plan and track treatments.<\/p>",
+            "button_label": "Learn more",
+            "button_url": "shopify:\/\/products\/q-rejuvalight-pro-facewear"
+          }
+        },
+        "product_CU9rxM": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bestseller_micro.webp",
+            "heading": "Micro-Infusion System",
+            "text": "<p>Facial stamping system that painlessly stimulates collagen whilst infusing serums directly into the skin to boost absorption and maximise results with no downtime.<br\/>                                <\/p>",
+            "button_label": "Learn more",
+            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
+          }
+        }
+      },
+      "block_order": [
+        "product_JQnqag",
+        "product_QKidrm",
+        "product_CU9rxM"
+      ],
+      "settings": {
+      }
+    },
+    "personalized_3nm8Qr": {
+      "type": "personalized",
+      "blocks": {
+        "object_w63E4C": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pt_collagen.svg",
+            "text": "<p>Stimulate collagen production<\/p>"
+          }
+        },
+        "object_cDhnPM": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pt_wrinkles.svg",
+            "text": "<p>Smooth fine lines and wrinkles<\/p>"
+          }
+        },
+        "object_643PyP": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pt_texture.webp",
+            "text": "<p>Evens skin tone and smooths texture<\/p>"
+          }
+        },
+        "object_ebCGMd": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pt_long.svg",
+            "text": "<p>Immediate, long lasting results<\/p>"
+          }
+        },
+        "object_HYrkNB": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pt_soothes.webp",
+            "text": "<p>Clear and prevent breakouts<\/p>"
+          }
+        },
+        "object_U6RabF": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pt_science.svg",
+            "text": "<p>Proven results, backed by science<\/p>"
+          }
+        },
+        "button_NCdWPA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read our Light Therapy Guide",
+            "button_url": "https:\/\/www.qureskincare.com\/blogs\/led-light-therapy"
+          }
+        }
+      },
+      "block_order": [
+        "object_w63E4C",
+        "object_cDhnPM",
+        "object_643PyP",
+        "object_ebCGMd",
+        "object_HYrkNB",
+        "object_U6RabF",
+        "button_NCdWPA"
+      ],
+      "settings": {
+        "heading": "Personalized treatments for your specific skin type and needs",
+        "text": "<p>Your skin is unique. So your treatment should be too.<\/p><p>LED light therapy works be emitting infrared lights in different wavelengths (like red or blue). And each wavelength has its own benefits: red light, for example, stimulates collagen production and blue light kills bacteria.<\/p><p>If you deal with things like sagging or wrinkling skin, acne, or inflammation, you should try Qure light therapy.<\/p>"
+      }
+    },
+    "compare_DAUaWM": {
+      "type": "compare",
+      "blocks": {
+        "object_gKrU3q": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beauty_ledmask.webp",
+            "heading": "Q-Rejuvalight \\nPro LED Mask",
+            "text": "<p><strong>one-time cost investment<\/strong><\/p>",
+            "price": "$329",
+            "style": "correctCircle",
+            "list": "<ul><li>saves you time<\/li><li>comfort and convenience of your own home<\/li><li><strong>unlimited treatments<\/strong><\/li><li><strong>only 3 minutes daily<\/strong><\/li><li>no ongoing payments<\/li><\/ul>"
+          }
+        },
+        "object_DXpTpn": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beauty_derma.webp",
+            "heading": "In-Clinic\/ \\nDermatologist",
+            "text": "<p><strong>per 6 session treatment cost<\/strong><\/p>",
+            "price": "$300 - $900",
+            "style": "incorrectCircle",
+            "list": "<ul><li><strong>time-consuming<\/strong> commute to clinic <\/li><li>when (if) you get an appointment<\/li><li><strong>limited treatments<\/strong><\/li><li>requires <strong>regular visits<\/strong><\/li><li>ongoing payments required<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_gKrU3q",
+        "object_DXpTpn"
+      ],
+      "settings": {
+        "classname": "beauty_skincare section bg_yellow",
+        "heading": "The beauty of clinical results from home - without the ‘clinical’ costs",
+        "text": "<p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, <br\/>the upselling and the hassle.<\/p>"
+      }
+    },
+    "tile_JERe9p": {
+      "type": "tile",
+      "blocks": {
+        "image_bgV7D9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/future_s_1_ca84c55d-7c1d-4382-be84-06bfbd4696d7.webp"
+          }
+        },
+        "image_89qpgF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/future_s_2_ffc7c32f-04a3-4829-80fd-a06015cd07cb.webp"
+          }
+        },
+        "image_qYRbmY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/future_s_3_682e924f-f372-492c-bcb7-5699dc4dc4d6.webp"
+          }
+        },
+        "image_z4kpCb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/future_s_4_ad5e58ee-21f7-446c-a954-9b28de16e828.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_bgV7D9",
+        "image_89qpgF",
+        "image_qYRbmY",
+        "image_z4kpCb"
+      ],
+      "settings": {
+        "heading": "The future of skincare is",
+        "text": "bright",
+        "button_label": "Our story",
+        "button_url": "https:\/\/www.qureskincare.com\/pages\/our-story"
+      }
+    },
+    "solution_form_bzJyB8": {
+      "type": "solutionForm",
+      "blocks": {
+        "form_G4MGjz": {
+          "type": "form",
+          "settings": {
+            "form_id": "Wqjuda"
+          }
+        }
+      },
+      "block_order": [
+        "form_G4MGjz"
+      ],
+      "settings": {
+        "heading": "Personalized solutions for your skin’s unique needs",
+        "text": "<p>Answer a few questions and we’ll tell you how to achieve your skincare goals.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_banner_rJmjKt",
+    "featuredin_cgKaqj",
+    "uses_gjAiWF",
+    "before_after_slider_dckiYy",
+    "trusted_qcJp6N",
+    "bestseller_zBUA8r",
+    "personalized_3nm8Qr",
+    "compare_DAUaWM",
+    "tile_JERe9p",
+    "solution_form_bzJyB8"
+  ]
+}

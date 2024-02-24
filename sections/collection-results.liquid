@@ -1,0 +1,144 @@
+<!-- -- featured promotion end -- -->
+<div class="container cus-bradcamp">
+    <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+        <a href="/" title="Home">Home</a>
+        <span aria-hidden="true">›</span>
+        <span>{{ collection.title }}</span>
+    </nav>
+    {% render 'collection-sort-by-desktop' %}
+    {% render 'collection-filter-mobile' %}
+</div>
+
+<div class="collection collection-container container">
+
+    {% render 'collection-filter-desktop' %}
+    
+    <div class="col-product product-grid-container">
+        {% for product in collection.products %}
+            <div class="productBlockGrid">
+                <div class="cus-tag">
+                    {% assign amount = 0 %}
+                    {% for variant in product.variants %}
+                      {% assign saving = variant.compare_at_price | minus: variant.price %}
+                      {% assign amount = saving | at_least: amount %}
+                    {% endfor %}
+                    {% if amount != 0 %}
+                        <span class="cus-save">Save {{ amount | money_without_trailing_zeros }}</span>
+                    {% endif %}
+                    {% for tag in product.tags %}
+                        {% if tag contains 'Best Seller' %}
+                            <span class="cus-seller">BestSeller</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="product-grid__image">
+                    <a href="{{ routes.root_url }}products/{{ product.handle }}" class="productLink">
+                        <img src="{{ product.featured_image | img_url: '720x' }}" alt="collection img" />
+                    </a>
+                </div>
+                <div class="product-grid__review collection-review">
+                    {{ product.metafields.stamped.badge }}
+                </div>
+                <div class="product-grid__title">{{ product.title }}</div>
+                <div class="collection-description">{{ product.description | strip_html | truncate: 130 }}</div>
+                <div class="product-grid__price abtest">
+                    <span class="product-grid__sale-price" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
+                    <s class="product-grid__compare-price" data-processed-abconvert-price="true">{{ product.compare_at_price |  money_without_trailing_zeros }}</s>
+                </div>
+                <div class="product-grid__atc-form-wrapper collection-form">
+                    <button type="button" class="button button_primary" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button><span>Buy Now</span></button>
+                    <a href="{{ routes.root_url }}products/{{ product.handle }}" class="collec-more">Learn More</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            console.log('click');
+            // Add click event listener to checkbox
+            checkbox.addEventListener('click', updateURL);
+
+            // Add click event listener to closest parent li of the checkbox
+            const parentLi = checkbox.closest('li');
+            if (parentLi) {
+                parentLi.addEventListener('click', function(event) {
+                    // Prevent triggering the event twice if the checkbox itself was clicked
+                    if (event.target !== checkbox) {
+                        checkbox.checked = !checkbox.checked;
+                        updateURL.call(checkbox);
+                    }
+                });
+            }
+        });
+
+        function updateURL() {
+            const paramName = this.name;
+            const paramValue = this.checked ? this.value : '';
+            const newUrl = new URL(window.location.href);
+
+            if (paramValue) {
+                newUrl.searchParams.set(paramName, paramValue);
+            } else {
+                newUrl.searchParams.delete(paramName);
+            }
+
+            window.location.href = newUrl.toString();
+        }
+
+        // Add existing sort parameters to current URL
+        document.querySelector('.sort-by').addEventListener('change', function(e) {
+            var value = e.currentTarget.value;
+            Shopify.queryParams.sort_by = value;
+            location.search = new URLSearchParams(Shopify.queryParams).toString();
+        });
+
+        setInterval(
+            function () {
+                var classNameRaman = document.getElementById("offcanvasBottom").classList;
+                console.log(classNameRaman)
+                if (classNameRaman.contains('show')) {
+                    $('html').addClass('filterActive');
+                }
+                else {
+                    $('html').removeClass('filterActive');
+                }
+        })
+
+        document.querySelectorAll('.clear_filter_text').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const url = new URL(window.location);
+                const baseUrl = url.origin + url.pathname;
+                window.location.href = baseUrl;
+            });
+        });
+
+    });
+
+    Shopify.queryParams = {};
+    if(location.search.length) {
+        for(var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+        aKeyValue = aCouples[i].split('=');
+        if (aKeyValue.length > 1) {
+            Shopify.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+        }
+        }
+    }
+
+</script>
+
+
+{% schema %}
+    {
+        "name": "t:sections.collection-results.name",
+        "class": "section-collection-results",
+        "settings": [
+
+        ],
+        "blocks": [
+        ]
+    }
+{% endschema %}

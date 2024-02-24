@@ -1,0 +1,20 @@
+{{ section.settings.code }}
+
+{% schema %}
+    {
+        "name": "t:sections.liquid.name",
+        "class": "section-liquid",
+        "settings": [
+            {
+                "type": "liquid",
+                "id": "code",
+                "label": "t:common.code.label"
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.liquid.name"
+			}
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,105 @@
+{% assign main_class = '' %}
+
+{% case template %}
+    {% when 'index' %}
+        {% assign main_class = 'homepage' %}
+        <link rel="stylesheet" href="{{ 'product-homepage.css' | asset_url }}">
+    {% when 'collection' %}
+        {% assign main_class = 'collection_page' %}
+        <link rel="stylesheet" href="{{ 'collections.css' | asset_url }}">
+    {% when 'product.sunil-led-mask' %}
+        {% assign main_class = 'led_mask' %}
+        <link rel="stylesheet" href="{{ 'product-led-mask.css' | asset_url }}">
+    {% when 'product.sunil-q-urify' %}
+        {% assign main_class = 'qurify_water' %}
+        <link rel="stylesheet" href="{{ 'product_q-urify-water.css' | asset_url }}">
+    {% when 'product.sunil-bundle-pdp' %}
+        {% assign main_class = 'bundle_pdp' %}
+        <link rel="stylesheet" href="{{ 'product-bf-sales.css' | asset_url }}">
+    {% when 'product.sunil-chest-pdp' %}
+        {% assign main_class = 'chest_pdp' %}
+        <link rel="stylesheet" href="{{ 'product-chest-pdp.css' | asset_url }}">
+    {% when 'product.sunil-all-in-one' %}
+        {% assign main_class = 'all_in_one' %}
+        <link rel="stylesheet" href="{{ 'product-serum-pdp.css' | asset_url }}">
+    {% when 'product.sunil-gift-card' %}
+        {% assign main_class = 'bundle_pdp gift_page' %}
+        <link rel="stylesheet" href="{{ 'product-gift-card.css' | asset_url }}"> 
+    {% when 'product.q-rify-replacement-water-filter' %}
+        {% assign main_class = 'qurify_water replacement_filter' %}
+        <link rel="stylesheet" href="{{ 'product-qurify-replacement.css' | asset_url }}">
+    {% when 'page.sunil-micro-infusion-pdp' %}
+        {% assign main_class = 'mi_refill1 mi-pdp' %}
+        <link rel="stylesheet" href="{{ 'product_micro-infusion-pdp.css' | asset_url }}"> 
+    {% when 'page.sunil-micro-infusion-refill-subscriptions' %}
+        {% assign main_class = 'mi_refill' %}
+        <link rel="stylesheet" href="{{ 'product_microinfusion-refill.css' | asset_url }}"> 
+    {% when 'page.sunil-bf-sales' %}
+        {% assign main_class = 'bf_sale' %}
+        <link rel="stylesheet" href="{{ 'product-bf-sales.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'faq-page.css' | asset_url }}"> 
+    {% when 'page.sunil-free-water-report' %}
+        {% assign main_class = 'free_water' %}
+        <link rel="stylesheet" href="{{ 'product-offers.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'free-water-report.css' | asset_url }}">
+    {% when 'page.sunil_qurify-filter-lp' %}
+        {% assign main_class = 'qurify_lp' %}
+        <link rel="stylesheet" href="{{ 'qurify-filter-lp.css' | asset_url }}">
+    {% when 'page.sunil-mi-landing' %}
+        {% assign main_class = 'mi_landing' %}
+        <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.faq-new' %}
+        {% assign main_class = 'faqs' %}
+        <link rel="stylesheet" href="{{ 'faq-page.css' | asset_url }}">
+    {% when 'page.faq-sub' %}
+        {% assign main_class = 'faqs' %}
+        <link rel="stylesheet" href="{{ 'faq-page.css' | asset_url }}">
+    {% when 'page.Affiliate-page' %}
+        {% assign main_class = 'affiliate' %}
+        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.new-app-page' %}
+        {% assign main_class = 'app_page' %}
+        <link rel="stylesheet" href="{{ 'qure-skincare-app.css' | asset_url }}">
+    {% when 'page.our-story' %}
+        {% assign main_class = 'our_story' %}
+        <link rel="stylesheet" href="{{ 'product-our-story.css' | asset_url }}">
+    {% when 'page.contact' %}
+        {% assign main_class = 'contact_us' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'contact-us.css' | asset_url }}">
+    {% when 'page.custom-form' %}
+        {% assign main_class = 'stocklist' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'become-stocklist.css' | asset_url }}">
+    {% when 'blog' %}
+        {% assign main_class = 'blogs' %}
+        <link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
+    {% when 'article' %}
+        {% assign main_class = 'blogs article_blog' %}
+        <link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
+    {% when 'cart' %}
+        {% assign main_class = 'shopping_cart' %}
+        <link rel="stylesheet" href="{{ 'shopping_cart.css' | asset_url }}">
+    {% when 'customers/login' %}
+        {% assign main_class = 'sign_in_form' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+    {% when 'customers/reset_password' %}
+        {% assign main_class = 'reset-password_form' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+    {% when 'customers/register' %}
+        {% assign main_class = 'create_account_form' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+    {% when 'customers/account' %}
+        {% assign main_class = 'account_address' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'account-table.css' | asset_url }}">
+    {% when 'customers/addresses' %}
+        {% assign main_class = 'account_address' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'account-table.css' | asset_url }}">
+    {% when 'customers/order' %}
+        {% assign main_class = 'account_address' %}
+        <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'account-table.css' | asset_url }}">
+{% endcase %}

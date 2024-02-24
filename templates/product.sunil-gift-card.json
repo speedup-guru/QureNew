@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-gift",
+      "blocks": {
+        "rating_N4rKLx": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
+            "text": "26 reviews"
+          }
+        },
+        "button_j84CiF": {
+          "type": "button",
+          "settings": {
+            "button_label": "See more special deals",
+            "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+          }
+        }
+      },
+      "block_order": [
+        "rating_N4rKLx",
+        "button_j84CiF"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

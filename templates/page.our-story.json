@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-our-story",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

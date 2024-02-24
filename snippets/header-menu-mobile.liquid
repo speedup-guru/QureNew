@@ -1,0 +1,56 @@
+{% comment %}
+  Renders a standard mobile style menu for the header.
+
+  Usage:
+  {% render 'header-menu-mobile' %}
+{% endcomment %}
+
+{% assign menu = linklists['header-menu'] %}
+
+{% capture menu %}
+    <ul id="menu">
+        {% for link in menu.links %}
+            {%- if link.links != blank -%}
+                {%- for childlink in link.links -%}
+                    {% if childlink.links == blank %}
+                        <li class="title">
+                            <a href=" {{ childlink.url }}" aria-label="{{ childlink.title |  escape }}">{{ childlink.title }}</a>
+                        </li>
+                    {% else %}
+                        {% assign forloop_second_level = forloop.index %}
+                        <hr />
+                        {% if forloop_second_level == 1 %}
+                            <li><a href="#"><span class="title">{{ link.title }}</span></a></li>
+                        {% endif %}
+                        {%- for childChildlink in childlink.links -%}
+                            <li>
+                                <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                    {% if forloop_second_level == 1 %}
+                                        <span class="image"> <img src="{{ 'h_[num].png' | asset_url |  replace: '[num]', forloop.index }}"></span>
+                                    {% endif %}   
+                                    {{ childChildlink.title | escape }}
+                                </a>
+                            </li>
+                        {%- endfor -%}
+                    {% endif %}
+                {%- endfor -%}
+            {%- endif -%}
+        {%- endfor -%}
+
+        <li class="mobile-menu__custom-item">
+            <a href="/account/login" aria-label="Account"><img src="{{ 'login-mob.svg' | asset_url }}"><span
+                    class="mob__spacing">Account</span></a>
+        </li>
+    </ul> 
+{% endcapture %}
+
+<nav class="mobile-menu-custome">
+    <div class="hamburger-container">
+        <ul class="hamburger">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    {{ menu }}
+</nav>

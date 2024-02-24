@@ -1,0 +1,120 @@
+{
+  "current": {
+    "favicon": "shopify:\/\/shop_images\/qure_favicon.png",
+    "social_instagram_link": "https:\/\/www.instagram.com\/qureskincare\/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/Qureskincare\/",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@qureskincare",
+    "social_youtube_link": "https:\/\/youtube.com\/channel\/UCGTi3BZn8GVlu30NtQ-reYA",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "announcement_TPxBgi": {
+            "type": "announcement",
+            "settings": {
+              "heading": "EXCLUSIVE HOLIDAY BUNDLES",
+              "button_label": "SAVE UPTO 55%",
+              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+            }
+          }
+        },
+        "block_order": [
+          "announcement_TPxBgi"
+        ],
+        "settings": {
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "blocks": {
+          "form_Wgkcrq": {
+            "type": "form",
+            "settings": {
+              "form_id": "YpweK2"
+            }
+          }
+        },
+        "block_order": [
+          "form_Wgkcrq"
+        ],
+        "settings": {
+          "heading": "Get the latest from Qure",
+          "social_text": "Follow Us",
+          "social_show": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "menu_8c9EX9": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer-menu"
+            }
+          },
+          "content_kxJQ6T": {
+            "type": "content",
+            "settings": {
+              "heading": "Download Our App",
+              "text": "Access additional features and customize your treatments."
+            }
+          },
+          "link_c3yUqG": {
+            "type": "link",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/app_store.svg",
+              "link_url": "https:\/\/apps.apple.com\/nl\/app\/qure-skincare-pro\/id1670113821"
+            }
+          },
+          "link_wfYX8m": {
+            "type": "link",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/google_play.svg",
+              "link_url": "https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure"
+            }
+          }
+        },
+        "block_order": [
+          "menu_8c9EX9",
+          "content_kxJQ6T",
+          "link_c3yUqG",
+          "link_wfYX8m"
+        ],
+        "settings": {
+          "heading": "© 2024 Qure. All rights reserved.",
+          "menu": "footer-bottom-menu",
+          "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
+        }
+      },
+      "slidecart": {
+        "type": "slidecart",
+        "settings": {
+        }
+      },
+      "footer-landing": {
+        "type": "footer-landing",
+        "settings": {
+          "heading": "Have More Questions? Contact Us!",
+          "text": "<p>Our beauty experts will answer any questions you may have and provide professional guidance in using your Qure Micro-Infusion System<\/p>",
+          "menu": "footer-bottom-menu",
+          "text_bottom": "<p>Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice.<\/p>"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+    }
+  }
+}

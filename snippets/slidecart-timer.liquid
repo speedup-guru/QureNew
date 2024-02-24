@@ -1,0 +1,145 @@
+{% comment %} Don't forget to delete startCartTimer from cart-ajax.liquid {% endcomment %}
+<!-- temp updated 17.11 - 27.11 -->
+<style>
+	.my-floating-cart .cart_timer {
+			background-color: #F5F5F5;
+			padding: 4px 0;
+	}
+
+	.my-floating-cart .cart_timer .timer_wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+	}
+
+	.timer_separator {
+			width: 1px;
+			background-color: #C92127;
+			height: 30px;
+			margin: 0 40px
+	}
+
+	.my-floating-cart .timer_wrapper .timer_countdown {
+			display: flex;
+			color: #C92127;
+			padding: 10px 0;
+			align-items: center;
+	}
+
+	.my-floating-cart .timer_wrapper .timer_countdown .timer_countdown_heading {
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 400;
+	}
+
+	.my-floating-cart .timer_wrapper .timer_countdown .countdown_cart {
+			margin-left: 20px;
+			font-size: 20px;
+			line-height: 18px;
+			font-weight: 500;
+	}
+
+	.my-floating-cart .timer_wrapper .timer_text {
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 600;
+			color: #C92127;
+			padding: 10px 0;
+	}
+
+	@media(max-width:556px) {
+			.my-floating-cart .timer_wrapper .timer_text {
+					font-size: 12px;
+					line-height: 12px;
+			}
+			.timer_separator {
+					margin: 0 20px;
+			}
+			.my-floating-cart .timer_wrapper .timer_countdown .timer_countdown_heading {
+					font-size: 12px;
+					line-height: 12px;
+			}
+
+			.my-floating-cart .timer_wrapper .timer_countdown .countdown_cart {
+					margin-left: 20px;
+					font-size: 18px;
+					line-height: 18px;
+			}
+	}
+</style>
+
+{% if cart.item_count > 0  %}
+	<div class="cart_timer">
+		<div class="timer_wrapper">
+			<div class="timer_text">IN HIGH DEMAND</div>
+			<div class="timer_separator"></div>
+			<div class="timer_countdown">
+				<div class="timer_countdown_heading">Items reserved for:</div>
+				<div class="countdown_cart" id="countdown"></div>
+			</div>
+		</div>
+	</div>
+{%- endif -%}
+
+<script>
+function setCookie(name, value, hours) {
+    var expires = "";
+    if (hours) {
+        var date = new Date();
+        date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function startCartTimer(secs) {
+		if(window.timer_started === undefined)
+		{
+			var savedTime = getCookie("timer");
+			timeInSecs = savedTime ? parseInt(savedTime) : parseInt(secs);
+			ticker = setInterval(() => tick(), 1000);
+			window.timer_started = true;
+		}
+}
+
+async function tick() {
+    var secs = timeInSecs;
+    
+    if (secs > 0) {
+        timeInSecs--; 
+        setCookie("timer", timeInSecs, 1/24); // Set cookie for 1 hour
+    } else {
+        clearInterval(ticker);
+        setCookie("timer", "", -1); // Delete the cookie
+
+				const response = await fetch('/cart.js');
+				const cartData = await response.json();
+				
+				if (cartData.items.length > 0) {
+						startTimer(15 * 60);
+				}
+    }
+
+    var mins = Math.floor(secs / 60);
+    secs %= 60;
+    var pretty = `${mins < 10 ? "0" : ""}${mins}:${secs < 10 ? "0" : ""}${secs}`;
+
+		if (document.getElementById("countdown")) {
+				document.getElementById("countdown").innerHTML = pretty;
+		}
+
+}
+
+</script>
+<!-- temp updated 17.11 - 27.11 -->

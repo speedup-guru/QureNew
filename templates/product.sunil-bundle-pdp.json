@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "rating_JRyVkE": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
+            "text": "729 reviews"
+          }
+        },
+        "preorder_P3zKE8": {
+          "type": "preorder",
+          "settings": {
+          }
+        },
+        "button_FhkPj8": {
+          "type": "button",
+          "settings": {
+            "button_label": "See more special deals",
+            "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+          }
+        }
+      },
+      "block_order": [
+        "rating_JRyVkE",
+        "preorder_P3zKE8",
+        "button_FhkPj8"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

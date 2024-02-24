@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-sunil-free-water-report",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

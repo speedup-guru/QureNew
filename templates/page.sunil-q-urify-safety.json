@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-sunil-q-urify-safety",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

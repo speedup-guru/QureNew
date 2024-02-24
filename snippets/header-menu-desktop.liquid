@@ -1,0 +1,101 @@
+{% comment %}
+  Renders a standard desktop style menu for the header.
+
+  Usage:
+  {% render 'header-menu-desktop' %}
+{% endcomment %}
+
+{% assign menu = linklists['header-menu'] %}
+
+{% capture left_menu %}
+    {% for link in menu.links limit:1 %}
+        {%- if link.links != blank -%}
+            <li class="has-dropdown">
+                <a href="javascript:;" aria-label="{{ link.title | escape }}">{{ link.title }}</a>
+                <ul class="dropdown-nav">
+                    {%- for childlink in link.links -%}
+                        <li>
+                            <a href="{{ childlink.url }}" aria-label="{{ childlink.title | escape }}">{{ childlink.title | escape }}</a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </li>
+        {%- endif -%}
+    {%- endfor -%}  
+{% endcapture %}
+
+<ul class="menu">
+    {{ left_menu }}
+    <li class="scrol-hp"><a href="#result_section" aria-label="Reviews and results">Reviews &amp; results</a></li>
+    <li><a href="#faq_section" aria-label="FAQ">FAQ</a></li>
+</ul>
+
+
+<div class="header-logo">
+        <a href="{{ routes.root_url }}" class="logo-image" aria-label="Qure">
+            <img src="{{ 'logo.svg' | asset_url }}" alt="{{ link.title | escape }}" class="img-fluid">
+        </a>
+</div>
+
+{% capture right_menu %}
+    {% for link in menu.links offset:1 %}
+        {%- if link.links != blank -%}
+            <li class="dropdown mega-dropdown new-menu">
+                <a href="{{ link.url }}" class="mega-drop-tag" aria-label="{{ link.title | escape }}">
+                    {{ link.title | escape }}
+                    <img src="{{ 'header_dropdown.svg' | asset_url }}" alt="dropdown">
+                </a>
+                <ul class="dropdown-menu-hp mega-dropdown-menu row">
+                    {%- for childlink in link.links -%}
+                        {% if childlink.links != blank %}
+                            {% assign forloop_second_level = forloop.index %}
+
+                            <li class="cus-md-6">
+                                <ul>
+                                    {%- for childChildlink in childlink.links -%}
+                                        <li>
+                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                                {% if forloop_second_level == 1 %}
+                                                    <span class="image"><img src="{{ 'h_[num].png' | asset_url |  replace: '[num]', forloop.index }}" alt="group"></span>
+                                                {% endif %}
+                                                <span class="text">{{ childChildlink.title | escape }}</span>
+                                            </a>
+                                        </li>
+                                    {%- endfor -%}
+                                </ul>
+                            </li>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </ul>
+            </li>
+        {%- endif -%}
+    {%- endfor -%}
+{% endcapture %}
+
+
+<div class="icon-section">
+    <ul class="nav nav_e-commerce">
+        {{ right_menu }}
+        <li class="nav__item d-only">
+            <a href="{{ routes.root_url }}pages/contact-us" aria-label="Contact us" class="nav__url">
+                <img src="{{ 'support.svg' | asset_url }}" class="fa cus-support" alt="support">
+            </a>
+        </li>
+        <li class="nav__item d-only" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccount" aria-controls="offcanvasAccount">
+            <a class="nav__url">
+                <img src="{{ 'login.svg' | asset_url }}" class="fa fa-user nav__icon" alt="navigation">
+            </a>
+        </li>
+        {% comment %} <li class="nav__item d-only">
+            <a href="{{ routes.account_url }}" aria-label="Account" class="nav__url ac_url">
+                <img src="{{ 'login.svg' | asset_url }}" class="fa fa-user nav__icon" alt="user">
+            </a>
+        </li> {% endcomment %}
+        <li class="nav__item cart_btn" data-ajax-cart-toggle-class-button="js-my-cart-open" style="cursor:pointer;">
+            <a href="{{ routes.cart_url }}" class="nav__url" aria-label="Cart">
+                <img src="{{ 'cart.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
+                <span class="nav__cart-count" data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
