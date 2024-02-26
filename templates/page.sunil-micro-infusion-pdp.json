@@ -919,6 +919,14 @@
         "classname": "bg_yellow",
         "heading": "The answers to your questions"
       }
+    },
+    "reviews_LMxgH7": {
+      "type": "reviews",
+      "settings": {
+        "heading": "<h2>Real reviews, real results<br\/>from people just like you.<\/h2>",
+        "heading_mobile": "<h2>Real reviews, real results<br\/>from people just like you.<\/h2>",
+        "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum"
+      }
     }
   },
   "order": [
@@ -937,6 +945,7 @@
     "liquid_7yXgYR",
     "liquid_UxmW9A",
     "liquid_JJikgW",
-    "faq_4hnCjw"
+    "faq_4hnCjw",
+    "reviews_LMxgH7"
   ]
 }
