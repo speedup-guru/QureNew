@@ -2525,13 +2525,13 @@
 		  font-style: normal;
 		  font-weight: 400;
 		  line-height: 26px;
-		  text-decoration-line: underline;
 		  color: rgb(0 0 0 / 80%);
 		  margin-top: 10px
   }
   
   .empty-product .empty-title .empty-review a {
-		  color: rgb(0 0 0 / 80%)
+		  color: rgb(0 0 0 / 80%);
+		  text-decoration-line: underline;
   }
   
   .empty-product .empty-main .empty-content {
