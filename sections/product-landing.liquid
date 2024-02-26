@@ -256,6 +256,25 @@
                                                                         </picture>
                                                                     </a>
                                                                 </div>
+                                                            {% elsif block.settings.wistia_id != blank %}
+                                                                <div class="swiper-slide video_popup">
+                                                                    <div class="banner_img position-relative">
+                                                                        <img class="img-fluid tab_img d-none d-md-block" src="{{ block.settings.image | img_url: '900x' }}" alt="">
+                                                                        <img class="img-fluid d-block d-md-none" src="{{ block.settings.image | img_url: '540x' }}" alt="">
+                                                                        <a class="popup-youtube1 position-absolute top-0 bottom-0 start-0 end-0">
+                                                                            <div class="wistia_responsive_padding"
+                                                                                style="position:relative;">
+                                                                                <div class="wistia_responsive_wrapper"
+                                                                                    style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                                                    <span
+                                                                                        class="wistia_embed wistia_async_{{ block.settings.wistia_id }} popover=true videoFoam=true"
+                                                                                        style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div> 
+                                                                <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>  
                                                             {% else %}
                                                                 <div class="swiper-slide">
                                                                     <a class="banner-popup-link" id="popup-link">
@@ -362,7 +381,7 @@
 {% schema %}
     {
         "name": "t:sections.product-landing.name",
-        "class": "section-product",
+        "class": "section-product-landing",
         "settings": [
             {
                 "type": "text",
