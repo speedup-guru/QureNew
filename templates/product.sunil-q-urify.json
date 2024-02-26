@@ -112,8 +112,8 @@
         "content_AzCjy3": {
           "type": "content",
           "settings": {
-            "text": "<h2>What contaminants is your skin absorbing everyday?<\/h2><p>Enter your information below to get a free, custom water report for your local area. Learn about what’s in your water and how it can be affecting your skin.<\/p><p><\/p><p><\/p><p>[code]<\/p>",
-            "classname": "free_report_info"
+            "text": "<h2>What contaminants is your skin absorbing everyday?<\/h2><p>Enter your information below to get a free, custom water report for your local area. Learn about what’s in your water and how it can be affecting your skin.<\/p><p>[code]<\/p>",
+            "classname": "free_report_info section_header px-0 text-start ms-0 pt-md-4"
           }
         },
         "code_RekAEF": {
@@ -524,7 +524,8 @@
           "settings": {
             "heading": "All you need is included",
             "text": "",
-            "code": ""
+            "code": "",
+            "classname": "section_header mb-3 text-center"
           }
         },
         "image_TnUeeT": {
