@@ -1,8 +1,8 @@
 <div class="{{ section.settings.classname }}">
     <div class="container">
-        <div class="section_header text-start text-md-center ms-0 m-md-auto mw-765 mb-3">
+        <div class="section_header text-center mb-4">
             {% if section.settings.heading %}
-                <h2 class="title-lg paddingB">
+                <h2 class="title-lg paddingB mx-auto">
                     {{ section.settings.heading }}
                 </h2> 
             {% endif %}
@@ -52,13 +52,21 @@
                             {% endif %}
                         </div>
                         <div class="bs_feature {{ block.settings.style }}">
-                            {{ 
-                                block.settings.list
-                                |  replace: '<p>', '<ul>'  
-                                |  replace: '</p>', '</ul>'
-                                |  replace: '<em>', '<li class="correct" style="border-bottom: 1px solid #EDE7DD">'
-                                |  replace: '</em>', '</li>'
-                             }}
+                            {% capture list %}
+                                {{ 
+                                    block.settings.list
+                                    |  replace: '<p>', '<ul>'  
+                                    |  replace: '</p>', '</ul>'
+                                    |  replace: '<em>', '<li class="correct" style="border-bottom: 1px solid #EDE7DD">'
+                                    |  replace: '</em>', '</li>'
+                                 }}
+                            {% endcapture %}
+
+                            {% if block.settings.style == 'correctCircle' %}
+                                {{ list | replace: '<ul>', '<ul class="rightCircle">' }}
+                            {% else %}
+                                {{ list | replace: '<ul>', '<ul class="wrongCircle">' }}
+                            {% endif %}
                         </div>
                     </div>
                     {% if forloop.index == 1 %}
