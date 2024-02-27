@@ -259,7 +259,8 @@
           "settings": {
             "heading": "",
             "text": "<h2>6 skin health benefits of Qure‘s<\/h2><h2>at-home clinical treatments<\/h2><p>Experience clinical-grade skincare from the comfort of home and get the results you deserve without sacrificing effectiveness. Qure’s breakthrough technology and formulation has been clinically shown to:<\/p>",
-            "code": ""
+            "code": "",
+            "classname": "section_header mb-3 text-center"
           }
         },
         "image_H8M4Tm": {
@@ -363,6 +364,13 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
+        "product_WfekKR": {
+          "type": "product",
+          "settings": {
+            "product": "youth-boosting-bundle",
+            "percent": 34
+          }
+        },
         "product_j6VEmz": {
           "type": "product",
           "settings": {
@@ -391,13 +399,6 @@
             "percent": 34
           }
         },
-        "product_WfekKR": {
-          "type": "product",
-          "settings": {
-            "product": "youth-boosting-bundle",
-            "percent": 34
-          }
-        },
         "product_kqtHFi": {
           "type": "product",
           "settings": {
@@ -421,11 +422,11 @@
         }
       },
       "block_order": [
+        "product_WfekKR",
         "product_j6VEmz",
         "product_GQYCdC",
         "product_M7PHCm",
         "product_pVWmCD",
-        "product_WfekKR",
         "product_kqtHFi",
         "product_RT3GfB",
         "product_aznLyF"
