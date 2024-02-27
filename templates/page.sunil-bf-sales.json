@@ -364,13 +364,6 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
-        "product_WfekKR": {
-          "type": "product",
-          "settings": {
-            "product": "youth-boosting-bundle",
-            "percent": 34
-          }
-        },
         "product_j6VEmz": {
           "type": "product",
           "settings": {
@@ -399,6 +392,13 @@
             "percent": 34
           }
         },
+        "product_WfekKR": {
+          "type": "product",
+          "settings": {
+            "product": "youth-boosting-bundle",
+            "percent": 34
+          }
+        },
         "product_kqtHFi": {
           "type": "product",
           "settings": {
@@ -422,11 +422,11 @@
         }
       },
       "block_order": [
-        "product_WfekKR",
         "product_j6VEmz",
         "product_GQYCdC",
         "product_M7PHCm",
         "product_pVWmCD",
+        "product_WfekKR",
         "product_kqtHFi",
         "product_RT3GfB",
         "product_aznLyF"
