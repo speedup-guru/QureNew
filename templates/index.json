@@ -108,10 +108,10 @@
             "mobile_hide": false
           }
         },
-        "image_Ft78hT": {
+        "image_dcMyYm": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
             "mobile_hide": false
           }
         },
@@ -122,10 +122,10 @@
             "mobile_hide": false
           }
         },
-        "image_dcMyYm": {
+        "image_Ft78hT": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "image": "shopify:\/\/shop_images\/glamour.svg",
             "mobile_hide": false
           }
         },
@@ -141,9 +141,9 @@
         "heading_YyDyVn",
         "image_WfRncU",
         "image_MEEkak",
-        "image_Ft78hT",
-        "image_fY8aLL",
         "image_dcMyYm",
+        "image_fY8aLL",
+        "image_Ft78hT",
         "image_KNeCQ7"
       ],
       "settings": {
