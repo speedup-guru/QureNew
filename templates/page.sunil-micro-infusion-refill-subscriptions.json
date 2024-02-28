@@ -663,6 +663,11 @@
         "heading_mobile": "<h2>Real reviews, real results<br\/>from people just like you.<\/h2>",
         "product": "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum"
       }
+    },
+    "pdm_product_social_proof_data_dHFkEe": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -676,6 +681,7 @@
     "trusted_3LYymW",
     "liquid_yCpGbf",
     "faq_i6CJe6",
-    "reviews_gBAXeE"
+    "reviews_gBAXeE",
+    "pdm_product_social_proof_data_dHFkEe"
   ]
 }

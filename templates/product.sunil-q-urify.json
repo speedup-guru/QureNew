@@ -643,6 +643,11 @@
         "classname": "bg_yellow",
         "heading": "The answers to your questions"
       }
+    },
+    "pdm_product_social_proof_data_4iretp": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -659,6 +664,7 @@
     "compare_yQKzP4",
     "guide_7WfJ8X",
     "two_column_box_ixntx8",
-    "faq_NrT9Hx"
+    "faq_NrT9Hx",
+    "pdm_product_social_proof_data_4iretp"
   ]
 }

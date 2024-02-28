@@ -725,6 +725,11 @@
       ],
       "settings": {
       }
+    },
+    "pdm_product_social_proof_data_dFhMMf": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -742,6 +747,7 @@
     "compare_d6fHbg",
     "faq_UUdrDJ",
     "heading_rr4Umg",
-    "17076549626a095922"
+    "17076549626a095922",
+    "pdm_product_social_proof_data_dFhMMf"
   ]
 }

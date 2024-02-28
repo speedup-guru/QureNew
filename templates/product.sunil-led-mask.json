@@ -883,6 +883,11 @@
       ],
       "settings": {
       }
+    },
+    "pdm_product_social_proof_data_VREtzd": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -903,6 +908,7 @@
     "product_box_JzAAt3",
     "faq_BgPiYb",
     "heading_fijgLW",
-    "1707653061bd3707e6"
+    "1707653061bd3707e6",
+    "pdm_product_social_proof_data_VREtzd"
   ]
 }

@@ -69,6 +69,22 @@
 
     {{ content_for_header }}
     {% include 'config-layout' %}
+
+    {% comment %} Intelligems Script  {% endcomment %}
+    <script>
+        window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+        window._template = {
+                directory: "{{ template.directory }}",
+                name: "{{ template.name }}",
+                suffix: "{{ template.suffix }}"
+        }
+    </script> 
+    <script src="https://cdn.intelligems.io/e5166ddbef7f.js"></script>
+    {% comment %} Intelligems Script - End {% endcomment %}
+
+    <!-- styles endrock -->
+    {{ 'endrock.css' | asset_url | stylesheet_tag }}
+    <!-- end styles endrock -->
 </head>
 
 <body>
@@ -115,6 +131,7 @@
     <script src="{{ '__app_trackObject.js' | asset_url }}"></script>
     <script src="{{ '__app_serums-months-form.js' | asset_url }}"></script>
     <script src="{{ '__app_serums-refill-form.js' | asset_url }}"></script>
+    <script defer src="{{ 'endrock.js' | asset_url }}"></script>
 
     {% render 'slidecart-insert' %}
 
