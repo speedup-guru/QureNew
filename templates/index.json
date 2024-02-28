@@ -212,6 +212,8 @@
           "settings": {
             "heading": "Fine Lines and Wrinkles",
             "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
             "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
             "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
             "text_before": "BEFORE",
@@ -231,7 +233,9 @@
           "type": "slide",
           "settings": {
             "heading": "Skin Tone and Texture",
-            "product": "microinfusion-system",
+            "product": "",
+            "product_title": "Micro-Infusion Facial System",
+            "product_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion",
             "product_image": "shopify:\/\/shop_images\/skiSlider_micro.webp",
             "image_before": "shopify:\/\/shop_images\/mica_1_before_img.webp",
             "text_before": "BEFORE",
@@ -252,6 +256,8 @@
           "settings": {
             "heading": "Acne and Breakouts",
             "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
             "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
             "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
             "text_before": "BEFORE",
@@ -272,6 +278,8 @@
           "settings": {
             "heading": "Pigmentation and Dark Spots",
             "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
             "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
             "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
             "text_before": "BEFORE",

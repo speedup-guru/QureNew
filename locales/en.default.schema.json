@@ -73,6 +73,12 @@
       "label": "Product",
       "image": {
         "label": "Product image"
+      },
+      "title": {
+        "label": "Product title"
+      },
+      "url": {
+        "label": "Product url"
       }
     },
     "object": {
