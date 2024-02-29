@@ -84,6 +84,9 @@
     "object": {
       "label": "Object"
     },
+    "people_choise": {
+      "label": "People choise"
+    },
     "list": {
       "label": "List"
     },
