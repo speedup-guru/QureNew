@@ -9,6 +9,13 @@
         }
       }
     },
+    "promotions": {
+      "name": "Promotions",
+      "settings": {
+        "default": "default",
+        "promotion": "promotion"
+      }
+    },
     "social-media": {
       "name": "Social media",
       "settings": {

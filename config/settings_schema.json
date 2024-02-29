@@ -19,6 +19,26 @@
     ]
   },
   {
+    "name": "t:settings_schema.promotions.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "promotion",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:settings_schema.promotions.settings.default"
+          },
+          {
+            "value": "promotion",
+            "label": "t:settings_schema.promotions.settings.promotion"
+          }
+        ],
+        "default": "default"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {

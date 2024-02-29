@@ -2,14 +2,12 @@
     {% for block in section.blocks %}
         {%- case block.type -%}
             {% when 'announcement' %}
-                <div class="announcement_bar">
-                    <p>
-                        <span>{{ block.settings.heading }} </span>
-                        {% if block.settings.button_label %}
-                            <a href="{{ block.settings.button_url }}" aria-label="{{ block.settings.button_label | escape }}" class="green_coloured">{{ block.settings.button_label }}</a>
-                        {% endif %}
-                    </p>
-                </div>
+                {% case settings.promotion %}
+                    {% when 'promotion' %}
+                        {% render 'promotion-header-announcement-bar', section: section, block: block %}
+                    {% else %}
+                        {% render 'header-announcement-bar', section: section, block: block %}
+                {% endcase %}
         {%- endcase -%}
     {% endfor %}
     <div id="shopify-section-header" class="shopify-section site-header">
