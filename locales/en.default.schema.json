@@ -9,13 +9,6 @@
         }
       }
     },
-    "promotions": {
-      "name": "Promotions",
-      "settings": {
-        "default": "default",
-        "promotion": "promotion"
-      }
-    },
     "social-media": {
       "name": "Social media",
       "settings": {
@@ -225,6 +218,11 @@
           "name": "Announcement",
           "settings": {
           }
+        },
+        "announcement-promo": {
+          "name": "Announcement promo",
+          "settings": {
+          }
         }
       }
     },
@@ -331,6 +329,18 @@
     },
     "main-banner": {
       "name": "Main banner",
+      "settings": {
+      },
+      "blocks": {
+        "link": {
+          "name": "Link",
+          "settings": {
+          }
+        }
+      }
+    },
+    "main-banner-promotion": {
+      "name": "Main banner promo",
       "settings": {
       },
       "blocks": {

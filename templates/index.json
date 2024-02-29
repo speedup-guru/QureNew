@@ -63,6 +63,28 @@
       "settings": {
       }
     },
+    "promotion_main_banner_48gkNr": {
+      "type": "promotion-main-banner",
+      "blocks": {
+        "link_crBjL9": {
+          "type": "link",
+          "settings": {
+            "link_label": "Get FREE Face Serum",
+            "link_url": "shopify:\/\/collections\/best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "link_crBjL9"
+      ],
+      "settings": {
+        "heading": "HAPPY INTERNATIONAL WOMEN'S DAY",
+        "subheading": "Together, we con-Qure self-confidence",
+        "text": "<p>*(worth $79) with orders over $150<\/p>",
+        "image": "shopify:\/\/shop_images\/womens_banner_desk.webp",
+        "image_mobile": "shopify:\/\/shop_images\/womens_banner_mob.webp"
+      }
+    },
     "main_banner_rJmjKt": {
       "type": "main-banner",
       "blocks": {
@@ -77,6 +99,7 @@
       "block_order": [
         "link_6iQ8RV"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Clinic-level results from home - minus the ‘clinical’ costs.",
         "subheading": "smoother, brighter, healthier skin",
@@ -596,6 +619,7 @@
   },
   "order": [
     "main",
+    "promotion_main_banner_48gkNr",
     "main_banner_rJmjKt",
     "featuredin_cgKaqj",
     "uses_gjAiWF",

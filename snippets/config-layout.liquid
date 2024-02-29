@@ -2,13 +2,7 @@
 
 {% case template %}
     {% when 'index' %}
-        {% assign main_class = 'homepage' %}
-        {% case settings.promotion %}
-            {% when 'promotion' %}
-                {% render 'promotion-config-layout' %}
-            {% else %}
-                <link rel="stylesheet" href="{{ 'product-homepage.css' | asset_url }}">
-        {% endcase %}
+        <link rel="stylesheet" href="{{ 'product-homepage.css' | asset_url }}">
     {% when 'collection' %}
         {% assign main_class = 'collection_page' %}
         <link rel="stylesheet" href="{{ 'collections.css' | asset_url }}">
@@ -77,10 +71,6 @@
         {% assign main_class = 'stocklist' %}
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'become-stocklist.css' | asset_url }}">
-    {% when 'page.content-instructions' %}
-        {% assign main_class = 'content_instructions' %}
-        <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">
-        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
     {% when 'blog' %}
         {% assign main_class = 'blogs' %}
         <link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
