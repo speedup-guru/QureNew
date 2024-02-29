@@ -325,15 +325,6 @@
             "text": "<p>\"<strong>The Qure mask wins<\/strong> the LED device mask off...\"<\/p><h6><strong>Dr Maxfield, MD<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_4eMcWB": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
-            "wistia_id": "",
-            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
         "video_zVFniz": {
           "type": "video",
           "settings": {
@@ -341,6 +332,15 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
             "wistia_id": "",
             "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_4eMcWB": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
           }
         },
         "video_TDePaM": {
@@ -374,8 +374,8 @@
       "block_order": [
         "feedback_hXVkGe",
         "feedback_VV7WqP",
-        "video_4eMcWB",
         "video_zVFniz",
+        "video_4eMcWB",
         "video_TDePaM",
         "video_3BWkgV",
         "video_Kb99Wn"
@@ -383,10 +383,10 @@
       "settings": {
         "classname": "trusted_bl",
         "heading": "Trusted and recommended by world leading Dermatologists",
-        "likes": "4.8K",
-        "views": "192K views",
+        "likes": "7.1K",
+        "views": "351K views",
         "image": "shopify:\/\/shop_images\/trusted_2.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg&t=37s"
       }
     },
     "bestseller_zBUA8r": {
