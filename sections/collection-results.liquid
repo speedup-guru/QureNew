@@ -14,7 +14,77 @@
     {% render 'collection-filter-desktop' %}
     
     <div class="col-product product-grid-container">
+        {% comment %} First Info Card {% endcomment %}
+        {% assign first_block = section.blocks | where: 'type', 'info-card' | first %}
+        {% if first_block != nil %}
+            <div class="productBlockGrid info-card">
+                {% if first_block.settings.info_card_link != nil %}
+                <a href="{{ first_block.settings.info_card_link }}">
+                {% endif %}
+                <img 
+                    class="info-card__desktop-image"
+                    src="{{ first_block.settings.info_card_image | image_url: width: 600 }}" 
+                    alt="{{ first_block.settings.info_card_image.alt }}"
+                    width="auto"
+                    height="auto"
+                    loading="eager"
+                >
+                <img 
+                    class="info-card__mobile-image"
+                    src="{{ first_block.settings.info_card_image_mobile | image_url: width: 300 }}" 
+                    alt="{{ first_block.settings.info_card_image_mobile.alt }}"
+                    width="200"
+                    height="auto"
+                    loading="eager"
+                >
+
+                {% if first_block.settings.info_card_link != nil %}  
+                </a>
+                {% endif %}
+            </div>
+        {% endif %}
+        {% assign info_card_position = section.settings.info_card_position %}
+        {% assign counter = 0 %}
+        
         {% for product in collection.products %}
+            {% assign position = counter | modulo: info_card_position %}
+
+
+            {% assign counter = counter | plus: 1 %}
+            {% if position == 0 and counter >= info_card_position %}
+                {% assign other_blocks = section.blocks | where: 'type', 'info-card' %}
+                {% assign info_card_index = counter | divided_by: info_card_position | modulo: other_blocks.size %}
+
+                {% for block in other_blocks %}
+                  {% if forloop.index0 == info_card_index %}
+                    <div class="productBlockGrid info-card">
+                      {% if block.settings.info_card_link != nil %}
+                        <a href="{{ block.settings.info_card_link }}">
+                      {% endif %}
+                      <img 
+                        class="info-card__desktop-image"
+                        src="{{ block.settings.info_card_image | image_url: width: 600 }}" 
+                        alt="{{ block.settings.info_card_image.alt }}"
+                        width="auto"
+                        height="auto"
+                        loading="eager"
+                      >
+                      <img 
+                        class="info-card__mobile-image"
+                        src="{{ block.settings.info_card_image_mobile | image_url: width: 300 }}" 
+                        alt="{{ block.settings.info_card_image_mobile.alt }}"
+                        width="200"
+                        height="auto"
+                        loading="eager"
+                      >
+                      {% if block.settings.info_card_link != nil %}  
+                        </a>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                
+              {% endif %}
             <div class="productBlockGrid">
                 <div class="cus-tag">
                     {% assign amount = 0 %}
@@ -136,9 +206,39 @@
         "name": "t:sections.collection-results.name",
         "class": "section-collection-results",
         "settings": [
-
+            {
+            "type": "header",
+            "content": "INFO CARDS"
+            },
+            {
+            "type": "number",
+            "id": "info_card_position",
+            "default": 3,
+            "label": "Info card position"
+            }
         ],
         "blocks": [
+            {
+                "type": "info-card",
+                "name": "Info card",
+                "settings": [
+                    {
+                    "type": "url",
+                    "id": "info_card_link",
+                    "label": "Link"
+                    },
+                    {
+                    "type": "image_picker",
+                    "id": "info_card_image",
+                    "label": "Image Desktop"
+                    },
+                    {
+                    "type": "image_picker",
+                    "id": "info_card_image_mobile",
+                    "label": "Image Mobile"
+                    }
+                ]
+            }
         ]
     }
 {% endschema %}
