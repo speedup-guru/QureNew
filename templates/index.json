@@ -392,14 +392,14 @@
     "bestseller_zBUA8r": {
       "type": "bestseller",
       "blocks": {
-        "product_JQnqag": {
+        "product_CU9rxM": {
           "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bestseller_serum.webp",
-            "heading": "All-In-One Face Serum",
-            "text": "<p>Multi-tasking face serum <strong>boosts firmness, smooths fine lines and<br\/>brightens dark spots<\/strong> with Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.     <\/p>",
+            "image": "shopify:\/\/shop_images\/bestseller_micro.webp",
+            "heading": "Micro-Infusion System",
+            "text": "<p>At-home facial treatment that <strong>transforms dull-looking skin<\/strong>. Designed to reduce the look of fine lines and pores with minimal to <strong>no downtime<\/strong> for <strong>visibly glowing skin<\/strong>!<\/p>",
             "button_label": "Learn more",
-            "button_url": "shopify:\/\/products\/face-serum"
+            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
           }
         },
         "product_QKidrm": {
@@ -412,21 +412,21 @@
             "button_url": "shopify:\/\/products\/q-rejuvalight-pro-facewear"
           }
         },
-        "product_CU9rxM": {
+        "product_JQnqag": {
           "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bestseller_micro.webp",
-            "heading": "Micro-Infusion System",
-            "text": "<p>Facial stamping system that painlessly stimulates collagen whilst infusing serums directly into the skin to boost absorption and maximise results with no downtime.<br\/>                                <\/p>",
+            "image": "shopify:\/\/shop_images\/bestseller_serum.webp",
+            "heading": "All-In-One Face Serum",
+            "text": "<p>Multi-tasking face serum <strong>reduces appearance of fine lines <\/strong>and<strong><br\/><\/strong>improves look of <strong>dark spots<\/strong> with Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.     <\/p>",
             "button_label": "Learn more",
-            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
+            "button_url": "shopify:\/\/products\/face-serum"
           }
         }
       },
       "block_order": [
-        "product_JQnqag",
+        "product_CU9rxM",
         "product_QKidrm",
-        "product_CU9rxM"
+        "product_JQnqag"
       ],
       "settings": {
       }
