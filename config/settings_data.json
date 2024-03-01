@@ -15,10 +15,19 @@
       "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
       "micro-infusion-1-month-bundle-2x-e-g-f-serum"
     ],
+    "promotion": "promotion",
     "sections": {
       "header": {
         "type": "header",
         "blocks": {
+          "announcement-promotion_L6B7qD": {
+            "type": "announcement-promotion",
+            "settings": {
+              "heading": "WOMEN'S DAY | SPEND $150",
+              "button_label": "Get FREE Face Serum",
+              "button_url": "shopify:\/\/collections\/best-sellers"
+            }
+          },
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
@@ -29,6 +38,7 @@
           }
         },
         "block_order": [
+          "announcement-promotion_L6B7qD",
           "announcement_TPxBgi"
         ],
         "settings": {

@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-content-instructions",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

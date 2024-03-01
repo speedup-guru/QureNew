@@ -1,15 +1,10 @@
 <div class="wrapper home-default-wrapper header-wrapperBlock">
-    {% for block in section.blocks %}
+    {% for block in section.blocks limit: 1 %}
         {%- case block.type -%}
             {% when 'announcement' %}
-                <div class="announcement_bar">
-                    <p>
-                        <span>{{ block.settings.heading }} </span>
-                        {% if block.settings.button_label %}
-                            <a href="{{ block.settings.button_url }}" aria-label="{{ block.settings.button_label | escape }}" class="green_coloured">{{ block.settings.button_label }}</a>
-                        {% endif %}
-                    </p>
-                </div>
+                {% render 'header-announcement-bar', section: section, block: block %}
+            {% when 'announcement-promotion' %}
+                {% render 'promotion-header-announcement-bar', section: section, block: block %}
         {%- endcase -%}
     {% endfor %}
     <div id="shopify-section-header" class="shopify-section site-header">
@@ -183,6 +178,30 @@
 		{
 			"type": "announcement",
 			"name": "t:sections.header.blocks.announcement.name",
+            "limit": 1,
+			"settings": [
+                {
+                    "type" : "textarea",
+                    "id" : "heading",
+                    "label" : "t:common.heading.label"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "default": "Button label",
+                    "label": "t:common.button.label",
+                    "info": "t:common.button.info"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button.url.label"
+                }
+			]
+		},
+		{
+			"type": "announcement-promotion",
+			"name": "t:sections.header.blocks.announcement-promo.name",
             "limit": 1,
 			"settings": [
                 {

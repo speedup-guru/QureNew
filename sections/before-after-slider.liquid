@@ -153,6 +153,18 @@
                                                         <a href="{{ routes.root_url }}products/{{ block.settings.product.handle }}">Learn more &gt;</a>
                                                     </div>
                                                 </div>
+                                            {%  elsif block.settings.product_title != blank %}
+                                                <div class="ss_skin_mask">
+                                                    {% if block.settings.product_image != blank %}
+                                                        <div class="ss_mask_img">
+                                                            <img class="img-fluid" src="{{ block.settings.product_image | img_url: '250x' }}" alt="{{ block.settings.product_image.alt | escape }}">
+                                                        </div>
+                                                    {% endif %}
+                                                    <div class="ss_mask_info">
+                                                        <h5>{{ block.settings.product_title }}</h5>
+                                                        <a href="{{ block.settings.product_url }}">Learn more &gt;</a>
+                                                    </div>
+                                                </div>
                                             {% endif %}
                                         </div>
     
@@ -206,6 +218,16 @@
                         "type": "product",
                         "id": "product",
                         "label": "t:common.product.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "product_title",
+                        "label": "t:common.product.title.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "product_url",
+                        "label": "t:common.product.url.label"
                     },
                     {
                         "type": "image_picker",

@@ -34171,6 +34171,18 @@ p.insurance__text--bottom {
         align-items: center;
         display: flex;
     }
+
+    .press_bl.press_bl_3 .ps_wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+
+    .press_bl.press_bl_4 .ps_wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+    }
 }
 
 /* --------------------- Press Slider End ----------------------------- */

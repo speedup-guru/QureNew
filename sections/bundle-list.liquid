@@ -39,6 +39,7 @@
             </div>
         </div>
         {% if section.blocks.size > 0 %}
+            
             <div class="bf-bundles__items-wrapper">
                 {%- for block in section.blocks -%}
 
@@ -54,39 +55,39 @@
                     <div class="bf-bundles__item bundles__item-{{ forloop.index }}{%  unless product.available %} sold_out{% endunless %}">
                         <div class="bf-bundles__img position-relative">
                             <div class="swiper bf-bundle_slider dot_pagination twa__swiper"
-                                id="twa__swiper-slider-{{ forloop.index }}" data-section-id="slider-{{ forloop.index }}"
+                                id="twa__swiper-bf-bundle_slider{{ forloop.index }}" data-section-id="bf-bundle_slider{{ forloop.index }}"
                                 data-autoplay="false" data-loop="false" data-centerslide="false" data-mobile="1"
                                 data-tablet="1" data-desktop="1" data-spacing="0"
-                                data-arrowleft="slider-{{ forloop.index }}-swiper-prev"
-                                data-arrowright="slider-{{ forloop.index }}-swiper-next">
+                                data-arrowleft="bf-bundle_slider{{ forloop.index }}-swiper-prev"
+                                data-arrowright="bf-bundle_slider{{ forloop.index }}-swiper-next">
                                 <div class="swiper-wrapper">
                                     {% for media in product.media %}
                                         <div class="swiper-slide">
                                             <div class="sale-bf-img">
-                                                <div class="sale-bf-bgImg">
-                                                    <img class="img-fluid" src="{{ media | img_url: '720x' }}" alt="">
-                                                </div>
-                                                {% if forloop.index == 1 %}
-                                                    <div class="bf-bundles__item-off">{{ discount_percentage_rounded }}% OFF</div>
-                                                {% endif %}
+                                                <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x' }}" />
+                                                <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" />
                                             </div>
+                                            {% if block.settings.ppl_choise == forloop.index %}
+                                                <div class="bf-bundles__pplChoice">Over 20,000 people chose these products</div>
+                                            {% endif %}
                                         </div>
                                     {% endfor %}
                                 </div>
                                 <div class="swiper-pagination"></div>
-                                <div class="swiper-button-next slider-{{ forloop.index }}-swiper-next"></div>
-                                <div class="swiper-button-prev slider-{{ forloop.index }}-swiper-prev"></div>
+                                <div class="swiper-button-next bf-bundle_slider{{ forloop.index }}-swiper-next"></div>
+                                <div class="swiper-button-prev bf-bundle_slider{{ forloop.index }}-swiper-prev"></div>
                             </div>
-    
+
                         </div>
                         <div class="bf-bundles__content">
                             <div class="bf-bundle__rating">
                                 {{ product.metafields.stamped.badge }}
-                                {% comment %} <img src="{{ 'bundle_r_2.svg' | asset_url }}" alt="">
-                                <span class="underline_btn">242 reviews</span> {% endcomment %}
                             </div>
                             <div class="bf-bundles__item-title">
-                                <h4>{{ block.settings.product.title | replace: ' (Sold Out)', '' }}</h4>
+                                <h4>{{ block.settings.product.title | replace: ' (Sold Out)', '' | replace: ' (Pre-Order)', '' }}</h4>
+                                {% if block.settings.product.title contains '(Pre-Order)' %}
+                                    <h5>Pre-Order</h5>
+                                {% endif %}
                             </div>
                             <div class="bf-bundles__item-included-wrapper">
                                 <div class="bf-bundles__item-included">
@@ -104,7 +105,6 @@
                                 <div class="bf-bundles__item-after">{{ product_price  }}</div>
                                 <div class="bf-bundles__item-save">YOU SAVE <span>{{ product_price_discount  }}</span></div>
                             </div>
-
                             {% if product.available %}
                                 {% if block.settings.percent == 0 %}
                                     <button class="bf-buy-button" style="--bgPercent:0%; --bgMobPercent:19%">
@@ -119,16 +119,13 @@
                                     </button>
                                 {% else %}
                                     <button class="bf-buy-button" style="--bgPercent:{{ 100 | minus: block.settings.percent }}%; --bgMobPercent:{{ block.settings.percent }}%" data-product-handle="{{ product.handle }}" data-ajax-cart-request-button="/cart/add?id={{ product_variant }}&quantity=1">
-                                        <span>Buy Now</span>
+                                        <span class="bf_btn_text">Buy Now <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt=""></span>
                                         <span class="buy-sold-wrapper">
                                             <span class="buy-sold buy-sold-mobile">
                                                 <span class="buy-sold__top">{{ block.settings.percent }}%</span>
-                                                <span class="buy-sold__bottom">
-                                                    of stock left
-                                                </span>
+                                                <span class="buy-sold__bottom">of stock left</span>
                                             </span>
                                         </span>
-                                        <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt="">
                                     </button>
                                 {% endif %}
                             {% else %}
@@ -143,7 +140,6 @@
                                     <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt="">
                                 </button>
                             {% endif %}
-
                             <div class="payment_method">
                                 <p>OR 4 monthly payments {{ product_price_divided }} with</p>
                                 <div class="pmt_img ps-2">
@@ -153,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 {%- endfor -%}
             </div>
         {% endif %}
@@ -197,6 +193,12 @@
                         "unit": "%",
                         "label": "t:common.percent.label",
                         "default": 34
+                    },
+                    {
+                        "type": "number",
+                        "id": "ppl_choise",
+                        "label": "t:common.people_choise.label",
+                        "default": 0
                     }
                 ]
 		    }

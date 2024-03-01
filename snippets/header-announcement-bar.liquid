@@ -1,0 +1,8 @@
+<div class="announcement_bar">
+    <p>
+        <span>{{ block.settings.heading }} </span>
+        {% if block.settings.button_label %}
+            <a href="{{ block.settings.button_url }}" aria-label="{{ block.settings.button_label | escape }}" class="green_coloured">{{ block.settings.button_label }}</a>
+        {% endif %}
+    </p>
+</div>

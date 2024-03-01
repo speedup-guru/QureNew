@@ -63,6 +63,28 @@
       "settings": {
       }
     },
+    "promotion_main_banner_48gkNr": {
+      "type": "promotion-main-banner",
+      "blocks": {
+        "link_crBjL9": {
+          "type": "link",
+          "settings": {
+            "link_label": "Get FREE Face Serum",
+            "link_url": "shopify:\/\/collections\/best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "link_crBjL9"
+      ],
+      "settings": {
+        "heading": "HAPPY INTERNATIONAL WOMEN'S DAY",
+        "subheading": "Together, we con-Qure self-confidence",
+        "text": "<p>*(worth $79) with orders over $150<\/p>",
+        "image": "shopify:\/\/shop_images\/womens_banner_desk.webp",
+        "image_mobile": "shopify:\/\/shop_images\/womens_banner_mob.webp"
+      }
+    },
     "main_banner_rJmjKt": {
       "type": "main-banner",
       "blocks": {
@@ -77,6 +99,7 @@
       "block_order": [
         "link_6iQ8RV"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Clinic-level results from home - minus the ‘clinical’ costs.",
         "subheading": "smoother, brighter, healthier skin",
@@ -212,6 +235,8 @@
           "settings": {
             "heading": "Fine Lines and Wrinkles",
             "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
             "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
             "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
             "text_before": "BEFORE",
@@ -231,7 +256,9 @@
           "type": "slide",
           "settings": {
             "heading": "Skin Tone and Texture",
-            "product": "microinfusion-system",
+            "product": "",
+            "product_title": "Micro-Infusion Facial System",
+            "product_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion",
             "product_image": "shopify:\/\/shop_images\/skiSlider_micro.webp",
             "image_before": "shopify:\/\/shop_images\/mica_1_before_img.webp",
             "text_before": "BEFORE",
@@ -240,10 +267,10 @@
             "image_country": "shopify:\/\/shop_images\/america_f.webp",
             "client": "Mica A.",
             "progress": 91,
-            "progress_text": "<p><strong>improved<\/strong> clarity, smoother texture and skin                                                  appearance<\/p>",
+            "progress_text": "<p>saw<strong> improved<\/strong> clarity and smoother texture<\/p>",
             "text": "",
-            "feedback_text": "<p><strong>...9 out of 10<\/strong> subjects reported <strong>a                                                         noticeable difference<\/strong> in <strong>skin                                                          texture<\/strong> and <strong>clarify<\/strong> after                                                      treatment.<\/p>",
-            "popup_link_text": "Read more about clinical Study",
+            "feedback_text": "<p><strong>...9 out of 10<\/strong> users reported <strong>a                                                         noticeable difference<\/strong> in <strong>skin                                                          texture<\/strong> and <strong>clarify<\/strong> after                                                      treatment.<\/p>",
+            "popup_link_text": "",
             "popup_content": ""
           }
         },
@@ -252,6 +279,8 @@
           "settings": {
             "heading": "Acne and Breakouts",
             "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
             "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
             "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
             "text_before": "BEFORE",
@@ -272,6 +301,8 @@
           "settings": {
             "heading": "Pigmentation and Dark Spots",
             "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
             "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
             "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
             "text_before": "BEFORE",
@@ -297,7 +328,7 @@
       "settings": {
         "classname": "skincare_slider bg_gradient_yellow_bt",
         "heading": "Science-backed skincare that’s proven to work.",
-        "text": "<p>See the real, unedited results for yourself.<\/p><p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/><\/p><p>Our science-backed skincare and treatments are <em>clinically-proven <\/em>to work. <br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is, so you can.<\/p>"
+        "text": "<p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/><\/p><p><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
       }
     },
     "trusted_qcJp6N": {
@@ -317,15 +348,6 @@
             "text": "<p>\"<strong>The Qure mask wins<\/strong> the LED device mask off...\"<\/p><h6><strong>Dr Maxfield, MD<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_4eMcWB": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
-            "wistia_id": "",
-            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
         "video_zVFniz": {
           "type": "video",
           "settings": {
@@ -333,6 +355,15 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
             "wistia_id": "",
             "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_4eMcWB": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
           }
         },
         "video_TDePaM": {
@@ -366,8 +397,8 @@
       "block_order": [
         "feedback_hXVkGe",
         "feedback_VV7WqP",
-        "video_4eMcWB",
         "video_zVFniz",
+        "video_4eMcWB",
         "video_TDePaM",
         "video_3BWkgV",
         "video_Kb99Wn"
@@ -375,23 +406,23 @@
       "settings": {
         "classname": "trusted_bl",
         "heading": "Trusted and recommended by world leading Dermatologists",
-        "likes": "4.8K",
-        "views": "192K views",
+        "likes": "7.1K",
+        "views": "351K views",
         "image": "shopify:\/\/shop_images\/trusted_2.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg&t=37s"
       }
     },
     "bestseller_zBUA8r": {
       "type": "bestseller",
       "blocks": {
-        "product_JQnqag": {
+        "product_CU9rxM": {
           "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bestseller_serum.webp",
-            "heading": "All-In-One Face Serum",
-            "text": "<p>Multi-tasking face serum <strong>boosts firmness, smooths fine lines and<br\/>brightens dark spots<\/strong> with Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.     <\/p>",
+            "image": "shopify:\/\/shop_images\/bestseller_micro.webp",
+            "heading": "Micro-Infusion System",
+            "text": "<p>At-home facial treatment that <strong>transforms dull-looking skin<\/strong>. Designed to reduce the look of fine lines and pores with minimal to <strong>no downtime<\/strong> for <strong>visibly glowing skin<\/strong>!<\/p>",
             "button_label": "Learn more",
-            "button_url": "shopify:\/\/products\/face-serum"
+            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
           }
         },
         "product_QKidrm": {
@@ -404,21 +435,21 @@
             "button_url": "shopify:\/\/products\/q-rejuvalight-pro-facewear"
           }
         },
-        "product_CU9rxM": {
+        "product_JQnqag": {
           "type": "product",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bestseller_micro.webp",
-            "heading": "Micro-Infusion System",
-            "text": "<p>Facial stamping system that painlessly stimulates collagen whilst infusing serums directly into the skin to boost absorption and maximise results with no downtime.<br\/>                                <\/p>",
+            "image": "shopify:\/\/shop_images\/bestseller_serum.webp",
+            "heading": "All-In-One Face Serum",
+            "text": "<p>Multi-tasking face serum <strong>reduces appearance of fine lines <\/strong>and<strong><br\/><\/strong>improves look of <strong>dark spots<\/strong> with Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.     <\/p>",
             "button_label": "Learn more",
-            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
+            "button_url": "shopify:\/\/products\/face-serum"
           }
         }
       },
       "block_order": [
-        "product_JQnqag",
+        "product_CU9rxM",
         "product_QKidrm",
-        "product_CU9rxM"
+        "product_JQnqag"
       ],
       "settings": {
       }
@@ -588,6 +619,7 @@
   },
   "order": [
     "main",
+    "promotion_main_banner_48gkNr",
     "main_banner_rJmjKt",
     "featuredin_cgKaqj",
     "uses_gjAiWF",
