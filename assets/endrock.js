@@ -1,3 +1,6 @@
+/**
+ * Retrieves the user's location IP and calls the deliveryDate function with the result.
+ */
 const userLocationIP = () => {
   const url = 'https://us-central1-functions-358315.cloudfunctions.net/location';
   const requestOptions = {
@@ -13,6 +16,12 @@ const userLocationIP = () => {
     .catch(error => console.log('error', error));
 }
 
+
+/**
+ * Retrieves the delivery range for a given state.
+ * @param {string} stateAcronym - The acronym of the state.
+ * @returns {number|null} - The delivery range for the state, or null if not found.
+ */
 function getDeliveryRange(stateAcronym) {
   const stateFound = window.stateDeliveryRange.find(
     (state) => state.stateAcronym === stateAcronym
@@ -21,24 +30,24 @@ function getDeliveryRange(stateAcronym) {
   return stateFound ? stateFound.deliveryRange : null;
 }
 
+
+/**
+ * Calculates and displays the delivery date based on the location.
+ * @param {Object} location - The location object containing the countryCode and region.
+ */
 const deliveryDate = (location) => {
   const { countryCode, region } = location;
 
   const messageContainer = document.querySelector('.orderby-receiveby__shipping-text');
   const nationalMessage = window.nationalText.split('[]');
 
-  console.log('countrycode', countryCode);
-  console.log('region', region);
-
   if (countryCode != 'US') {
     messageContainer.innerText = window.internationalText
   } else {
     const foundNationalDate = getDeliveryRange(region);
-    console.log('foundNationalDate', foundNationalDate);
     messageContainer.innerText = `${nationalMessage[0]} ${foundNationalDate} ${nationalMessage[1]}`
   }
   document.querySelector('.orderby-receiveby').classList.remove('hidden');
-  
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -118,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // End PDP Social Proof Data
 
   // Start Order by Receive by
-  //userLocationIP();
+  userLocationIP();
 });
 
 
