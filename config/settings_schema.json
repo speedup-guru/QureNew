@@ -60,7 +60,7 @@
         "type": "text",
         "id": "social_proof_label",
         "label": "Social Proof Label",
-        "default":"items purchased in the last 48 hours"
+        "default":"purchased in the last 48 hours"
       },
       {
         "type": "product_list",
