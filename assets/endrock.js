@@ -23,7 +23,8 @@ const userLocationIP = () => {
  * @returns {number|null} - The delivery range for the state, or null if not found.
  */
 function getDeliveryRange(stateAcronym) {
-  const stateFound = window.stateDeliveryRange.find(
+  console.log(stateAcronym);
+  const stateFound = window.statesInfo.find(
     (state) => state.stateAcronym === stateAcronym
   );
 
@@ -44,7 +45,8 @@ const deliveryDate = (location) => {
   if (countryCode != 'US') {
     messageContainer.innerText = window.internationalText
   } else {
-    const foundNationalDate = getDeliveryRange(region);
+
+    const foundNationalDate = getDeliveryRange(region.toUpperCase());
     messageContainer.innerText = `${nationalMessage[0]} ${foundNationalDate} ${nationalMessage[1]}`
   }
   document.querySelector('.orderby-receiveby').classList.remove('hidden');
@@ -127,7 +129,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // End PDP Social Proof Data
 
   // Start Order by Receive by
-  userLocationIP();
+  const showReceiveBy = window.showOrderBy;
+  if (showReceiveBy) {
+    userLocationIP();
+  }
+
 });
 
 

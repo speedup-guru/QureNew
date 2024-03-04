@@ -5,7 +5,7 @@
 <div class="orderby-receiveby hidden">
   <div class="orderby-receiveby__today">
     {% render 'pdm_icon-package' %}
-    <span class="orderby-receiveby__today-text">{{ section.settings.today_text }}</span>
+    <span class="orderby-receiveby__today-text">{{ settings.today_text }}</span>
     {% render 'pdm_icon-arrow-right' %}
   </div>
     <div class="orderby-receiveby__dates">
@@ -14,16 +14,3 @@
     </span>
   </div>
 </div>
-  
-<script>
-  window.nationalText = '{{ section.settings.national_text }}';
-  window.internationalText = '{{ section.settings.international_text }}';
-  window.stateDeliveryRange = [
-    {% for block in section.blocks %}
-      {
-        stateAcronym: '{{ block.settings.state_acronym | downcase }}',
-        deliveryRange: '{{ block.settings.delivery_range }}'
-      },
-    {% endfor %}
-  ];
-</script>
