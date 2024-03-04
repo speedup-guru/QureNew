@@ -190,6 +190,9 @@
   justify-content: center;
   align-items: center;
 }
+.section-product-landing .orderby-receiveby {
+  margin-bottom: 0;
+}
 
 .orderby-receiveby svg {
   margin: 0 6px;
