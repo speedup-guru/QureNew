@@ -15,11 +15,8 @@
       "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
       "micro-infusion-1-month-bundle-2x-e-g-f-serum"
     ],
-<<<<<<< HEAD
     "show_order_by_receive_by": true,
-=======
     "promotion": "promotion",
->>>>>>> 60a5d5270cfd2c8c13493328c9913343745652ed
     "sections": {
       "header": {
         "type": "header",
