@@ -25,12 +25,20 @@
             "text": "<p>Due to high demand from our Black Friday Sale we have sold out. Order now and secure yours from the next shipment.<\/p>",
             "html": "<div class=\"batch_h batch_h_fade mt-3 mt-md-4\">\n                                    <div class=\"batch_h_month\">December 5th<\/div>\n                                    <div class=\"batch_h_info sold_out_h\" style=\"--bgPercent:100%;\"><span>SOLD\n                                            OUT<\/span><\/div>\n                                <\/div>\n\n<div class=\"batch_h my-2\">\n                                    <div class=\"batch_h_month\">January 10th<\/div>\n                                    <div class=\"batch_h_info\" style=\"--bgPercent:81%;\">81% Reserved<\/div>\n                                <\/div>\n\n<div class=\"batch_h batch_h_fade\">\n                                    <div class=\"batch_h_month\">January 30th<\/div>\n                                    <div class=\"batch_h_info\" style=\"--bgPercent:0%;\"><span>In\n                                            Production<\/span><\/div>\n                                <\/div>"
           }
+        },
+        "state_3gjUei": {
+          "type": "State",
+          "settings": {
+            "state_acronym": "FL",
+            "delivery_range": "4-5"
+          }
         }
       },
       "block_order": [
         "rating_6FYizY",
         "list_EVK9TV",
-        "supply_iDLrxG"
+        "supply_iDLrxG",
+        "state_3gjUei"
       ],
       "settings": {
         "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
@@ -39,7 +47,10 @@
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false
+        "reserve": false,
+        "today_text": "Order today",
+        "international_text": "Ships within 2 days",
+        "national_text": "Get in [] business days"
       }
     },
     "featuredin_yT6yRP": {
@@ -108,6 +119,8 @@
           "settings": {
             "heading": "Fine Lines and Wrinkles",
             "product": "",
+            "product_title": "",
+            "product_url": "",
             "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
             "text_before": "BEFORE",
             "image_after": "shopify:\/\/shop_images\/michelle_after_img.webp",
@@ -127,6 +140,8 @@
           "settings": {
             "heading": "Pigmentation & Inflammation",
             "product": "",
+            "product_title": "",
+            "product_url": "",
             "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
             "text_before": "BEFORE",
             "image_after": "shopify:\/\/shop_images\/jess_after_img.webp",
@@ -146,6 +161,8 @@
           "settings": {
             "heading": "Acne and Breakouts",
             "product": "",
+            "product_title": "",
+            "product_url": "",
             "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
             "text_before": "BEFORE",
             "image_after": "shopify:\/\/shop_images\/bj_nardi_after_img.webp",

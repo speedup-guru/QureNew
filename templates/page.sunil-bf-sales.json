@@ -364,72 +364,73 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
-        "product_j6VEmz": {
+        "product_EQ6HJY": {
           "type": "product",
           "settings": {
-            "product": "confidence-booster-bundle",
+            "product": "skin-ssentials-set-doctorly-choice",
             "percent": 34
           }
         },
-        "product_GQYCdC": {
+        "product_CnMwyU": {
+          "type": "product",
+          "settings": {
+            "product": "youthify-or-glow-set",
+            "percent": 44
+          }
+        },
+        "product_3Frmww": {
           "type": "product",
           "settings": {
             "product": "best-seller-bundle",
-            "percent": 34
+            "percent": 32,
+            "ppl_choise": 1
           }
         },
-        "product_M7PHCm": {
+        "product_zF9wP9": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-gift-box",
-            "percent": 34
+            "product": "all-in-one-face-serum-bundle",
+            "percent": 44
           }
         },
-        "product_pVWmCD": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "percent": 34
-          }
-        },
-        "product_WfekKR": {
+        "product_JVJkGj": {
           "type": "product",
           "settings": {
             "product": "youth-boosting-bundle",
             "percent": 34
           }
         },
-        "product_kqtHFi": {
+        "product_nRhA4x": {
           "type": "product",
           "settings": {
-            "product": "youthify-or-glow-set",
-            "percent": 34
+            "product": "hydra-glow",
+            "percent": 42
           }
         },
-        "product_RT3GfB": {
+        "product_aKUc4N": {
           "type": "product",
           "settings": {
-            "product": "all-in-one-face-serum-bundle",
-            "percent": 34
+            "product": "confidence-booster-bundle",
+            "percent": 36
           }
         },
-        "product_aznLyF": {
+        "product_pCXqdM": {
           "type": "product",
           "settings": {
-            "product": "fomo-skin-vestment-bundle",
+            "product": "ageless-glow-bundle",
             "percent": 34
           }
         }
       },
       "block_order": [
-        "product_j6VEmz",
-        "product_GQYCdC",
-        "product_M7PHCm",
-        "product_pVWmCD",
-        "product_WfekKR",
-        "product_kqtHFi",
-        "product_RT3GfB",
-        "product_aznLyF"
+        "product_EQ6HJY",
+        "product_CnMwyU",
+        "product_3Frmww",
+        "product_zF9wP9",
+        "product_JVJkGj",
+        "product_nRhA4x",
+        "product_aKUc4N",
+        "product_pCXqdM"
       ],
       "settings": {
         "heading": "Choose your bundle.",

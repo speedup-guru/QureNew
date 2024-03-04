@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="{{ 'womens_day.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'product-homepage-special.css' | asset_url }}">
+
+<div class="main_banner py-3 py-md-5 womens_day">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="banner_info">
+                    {% if section.settings.heading != blank %}
+                        <h4>{{ section.settings.heading }}</h4>
+                    {% endif %}
+                    {% if section.settings.subheading != blank %}
+                        <h2 class="title-lg d-block d-md-none">{{ section.settings.subheading |  replace: '\n', '' }} </h2>
+                    {% endif %} 
+                    {% if section.settings.subheading != blank %}
+                        <h2 class="title-lg d-none d-md-block">{{ section.settings.subheading |  replace: '\n', '<br />' }} </h2>
+                    {% endif %} 
+                    {% if section.blocks.size > 0 %}
+                    <div class="btn_wrapper">
+                        {%- for block in section.blocks -%}
+                        <a href="{{ block.settings.link_url }}" class="btn btn-bfBundle" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                        {%- endfor -%}
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text }}
+                        {% endif %}
+                    </div>
+                {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="banner_img">
+                    {% if section.settings.image %}
+                        <picture>
+                            <source media="(min-width:1920px)" srcset="{{ section.settings.image | img_url: 'master' }}">
+                            <source media="(min-width:1600px)" srcset="{{ section.settings.image | img_url: '1600x' }}">
+                            <source media="(min-width:1100px)" srcset="{{ section.settings.image | img_url: '1100x' }}">
+                            {% if section.settings.image_mobile %}
+                                <source media="(min-width:720px)" srcset="{{ section.settings.image_mobile | img_url: '720x' }}">
+                                <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | img_url: '540x' }}">
+                            {% endif %}
+                            {% if section.settings.image_mobile %}
+                                <img class="img-fluid bg_banner" src="{{ section.settings.image_mobile | img_url: '540x' }}" alt="{{ section.settings.image_mobile.alt | escape }}" width="125" height="173">
+                            {% else %}
+                                <img class="img-fluid bg_banner" src="{{ section.settings.image | img_url: '540x' }}" alt="{{ section.settings.image.alt | escape }}" width="125" height="173">
+                            {% endif %}
+                        </picture>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -- main banner end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.main-banner-promotion.name",
+        "class": "section-main-banner-promotion",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_mobile",
+                "label": "t:common.image_mobile.label"
+            }
+        ],
+        "blocks": [
+            {
+			"type": "link",
+			"name": "t:sections.main-banner-promotion.blocks.link.name",
+            "limit": 2,
+			"settings": [
+                {
+                    "type": "text",
+                    "id": "link_label",
+                    "default": "Link label",
+                    "label": "t:common.link.label",
+                    "info": "t:common.link.info"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link.url.label"
+                }
+			]
+		}
+        ],
+        "presets": [
+			{
+				"name": "t:sections.main-banner-promotion.name"
+			}
+        ]
+    }
+{% endschema %}
