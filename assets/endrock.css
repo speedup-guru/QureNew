@@ -65,7 +65,7 @@
 }
 
 
-/* INFO CARD TEST */
+/* INFO CARD */
 
 .info-card .info-card__mobile-image {
   display: none;
@@ -180,7 +180,7 @@
   }
 }
 
-
+/* ORDER BY RECEIVE BY */
 
 .orderby-receiveby {
   display: flex;

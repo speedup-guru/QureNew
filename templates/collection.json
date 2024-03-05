@@ -51,37 +51,6 @@
     },
     "main_results": {
       "type": "collection-results",
-      "blocks": {
-        "info_card_dc9TCF": {
-          "type": "info-card",
-          "settings": {
-            "info_card_link": "",
-            "info_card_image": "shopify:\/\/shop_images\/IC_-_23_2_b7422097-4470-4515-9371-23c27039d01a.png",
-            "info_card_image_mobile": "shopify:\/\/shop_images\/IC_-_28_2_1603c196-df38-4e67-a775-4ce69521bd9a.png"
-          }
-        },
-        "info_card_Tna7qN": {
-          "type": "info-card",
-          "settings": {
-            "info_card_link": "shopify:\/\/products\/q-rejuvalight-pro-facewear",
-            "info_card_image": "shopify:\/\/shop_images\/IC_-_6.png",
-            "info_card_image_mobile": "shopify:\/\/shop_images\/IC_-_25_e4471ed3-6ab7-428c-bd77-8613031dee48.png"
-          }
-        },
-        "info_card_F4QeBC": {
-          "type": "info-card",
-          "settings": {
-            "info_card_link": "",
-            "info_card_image": "shopify:\/\/shop_images\/IC_-_14_3_c6821edf-669c-48c1-a500-17567fdfe7c2.png",
-            "info_card_image_mobile": "shopify:\/\/shop_images\/IC_-_30_2.png"
-          }
-        }
-      },
-      "block_order": [
-        "info_card_dc9TCF",
-        "info_card_Tna7qN",
-        "info_card_F4QeBC"
-      ],
       "settings": {
       }
     },
