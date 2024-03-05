@@ -380,6 +380,11 @@
         "classname": "bg_yellow",
         "heading": "Keep the questions flowing"
       }
+    },
+    "pdm_product_social_proof_data_6ctXkc": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -390,6 +395,7 @@
     "two_column_box_kz3jTU",
     "reasons_M7mmUh",
     "guide_JYmJHW",
-    "faq_3GchLg"
+    "faq_3GchLg",
+    "pdm_product_social_proof_data_6ctXkc"
   ]
 }

@@ -129,6 +129,9 @@
                                                     {{ product.price | money_without_trailing_zeros }}
                                                 </div>
                                             </div>
+                                            {% unless supply_count > 0 %}
+                                                {% render 'pdm_orderby' %}
+                                            {% endunless %}
                                             <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                                             {% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
                                                 {{ product.price | money_without_trailing_zeros }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
@@ -152,7 +155,9 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                        {% unless supply_count > 0 %}
+                                            {% render 'pdm_orderby' %}
+                                        {% endunless %}
                                         <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-smartrr-form-id="{{ product.id }}">
                                             <input type="hidden" name="selling_plan" data-smartrr-selling-plan-input="" value="{{ block.settings.plan }}">
                                             <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn" name="Submit" value="Submit">
@@ -174,6 +179,9 @@
                                 {% endif %}
                             {%- endfor -%}
                         {% else %}
+                        {% unless supply_count > 0 %}
+                            {% render 'pdm_orderby' %}
+                        {% endunless %}
                             <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
                                 {{ product.price | money_without_trailing_zeros }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                             </a>

@@ -69,6 +69,22 @@
 
     {{ content_for_header }}
     {% include 'config-layout' %}
+
+    {% comment %} Intelligems Script  {% endcomment %}
+    <script>
+        window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+        window._template = {
+                directory: "{{ template.directory }}",
+                name: "{{ template.name }}",
+                suffix: "{{ template.suffix }}"
+        }
+    </script> 
+    <script src="https://cdn.intelligems.io/e5166ddbef7f.js"></script>
+    {% comment %} Intelligems Script - End {% endcomment %}
+
+    <!-- styles endrock -->
+    {{ 'endrock.css' | asset_url | stylesheet_tag }}
+    <!-- end styles endrock -->
 </head>
 
 <body>
@@ -116,6 +132,7 @@
     <script src="{{ '__app_serums-months-form.js' | asset_url }}"></script>
     <script src="{{ '__app_serums-refill-form.js' | asset_url }}"></script>
 
+
     {% render 'slidecart-insert' %}
 
     <script async type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
@@ -152,6 +169,65 @@
         {% endif %}
     </script>
 
+    <script defer type="text/javascript">
+        /* order by: states info */
+        window.showOrderBy = {{ settings.show_order_by_receive_by }};
+        window.nationalText = '{{ settings.national_text }}';
+        window.internationalText = '{{ settings.international_text }}';
+        window.statesInfo = [
+            { stateAcronym: 'OR', deliveryRange: '6-8' },
+            { stateAcronym: 'NV', deliveryRange: '6-7' },
+            { stateAcronym: 'AL', deliveryRange: '5-7' },
+            { stateAcronym: 'AK', deliveryRange: '5-7' },
+            { stateAcronym: 'CO', deliveryRange: '5-7' },
+            { stateAcronym: 'ID', deliveryRange: '5-7' },
+            { stateAcronym: 'IA', deliveryRange: '5-7' },
+            { stateAcronym: 'KS', deliveryRange: '5-7' },
+            { stateAcronym: 'MN', deliveryRange: '5-7' },
+            { stateAcronym: 'MO', deliveryRange: '5-7' },
+            { stateAcronym: 'MT', deliveryRange: '5-7' },
+            { stateAcronym: 'NH', deliveryRange: '5-7' },
+            { stateAcronym: 'ND', deliveryRange: '5-7' },
+            { stateAcronym: 'RI', deliveryRange: '5-7' },
+            { stateAcronym: 'SD', deliveryRange: '5-7' },
+            { stateAcronym: 'UT', deliveryRange: '5-7' },
+            { stateAcronym: 'WA', deliveryRange: '5-7' },
+            { stateAcronym: 'WI', deliveryRange: '5-7' },
+            { stateAcronym: 'WY', deliveryRange: '5-7' },
+            { stateAcronym: 'HI', deliveryRange: '5-6' },
+            { stateAcronym: 'AZ', deliveryRange: '4-6' },
+            { stateAcronym: 'AR', deliveryRange: '4-6' },
+            { stateAcronym: 'CA', deliveryRange: '4-6' },
+            { stateAcronym: 'CT', deliveryRange: '4-6' },
+            { stateAcronym: 'GA', deliveryRange: '4-6' },
+            { stateAcronym: 'IL', deliveryRange: '4-6' },
+            { stateAcronym: 'IN', deliveryRange: '4-6' },
+            { stateAcronym: 'KY', deliveryRange: '4-6' },
+            { stateAcronym: 'LA', deliveryRange: '4-6' },
+            { stateAcronym: 'ME', deliveryRange: '4-6' },
+            { stateAcronym: 'MD', deliveryRange: '4-6' },
+            { stateAcronym: 'MA', deliveryRange: '4-6' },
+            { stateAcronym: 'MI', deliveryRange: '4-6' },
+            { stateAcronym: 'MS', deliveryRange: '4-6' },
+            { stateAcronym: 'NE', deliveryRange: '4-6' },
+            { stateAcronym: 'NM', deliveryRange: '4-6' },
+            { stateAcronym: 'NY', deliveryRange: '4-6' },
+            { stateAcronym: 'NC', deliveryRange: '4-6' },
+            { stateAcronym: 'OK', deliveryRange: '4-6' },
+            { stateAcronym: 'PA', deliveryRange: '4-6' },
+            { stateAcronym: 'SC', deliveryRange: '4-6' },
+            { stateAcronym: 'TN', deliveryRange: '4-6' },
+            { stateAcronym: 'TX', deliveryRange: '4-6' },
+            { stateAcronym: 'VT', deliveryRange: '4-6' },
+            { stateAcronym: 'WV', deliveryRange: '4-6' },
+            { stateAcronym: 'DE', deliveryRange: '3-5' },
+            { stateAcronym: 'NJ', deliveryRange: '3-5' },
+            { stateAcronym: 'OH', deliveryRange: '3-5' },
+            { stateAcronym: 'VA', deliveryRange: '3-5' },
+            { stateAcronym: 'FL', deliveryRange: '2-4' }
+            ];
+    </script>
+    <script defer src="{{ 'endrock.js' | asset_url }}"></script>
 </body>
 
 </html>

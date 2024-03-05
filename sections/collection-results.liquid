@@ -14,6 +14,7 @@
     {% render 'collection-filter-desktop' %}
     
     <div class="col-product product-grid-container">
+        
         {% for product in collection.products %}
             <div class="productBlockGrid">
                 <div class="cus-tag">
@@ -136,9 +137,6 @@
         "name": "t:sections.collection-results.name",
         "class": "section-collection-results",
         "settings": [
-
-        ],
-        "blocks": [
         ]
     }
 {% endschema %}

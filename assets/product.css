@@ -4916,6 +4916,8 @@ input[type=range]::-moz-range-thumb {
 .button_sticky_wrapper.sticky {
     opacity: 1;
     visibility: visible;
+    width: 100% !important;
+    left: 0;
 }
 
 @media(max-width:767px) {

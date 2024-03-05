@@ -926,6 +926,11 @@
         "heading_mobile": "<h2>Real reviews, real results<br\/>from people just like you.<\/h2>",
         "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum"
       }
+    },
+    "pdm_product_social_proof_data_XeqhJL": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -945,6 +950,7 @@
     "liquid_UxmW9A",
     "liquid_JJikgW",
     "faq_4hnCjw",
-    "reviews_LMxgH7"
+    "reviews_LMxgH7",
+    "pdm_product_social_proof_data_XeqhJL"
   ]
 }
