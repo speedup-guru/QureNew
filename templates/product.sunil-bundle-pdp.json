@@ -30,9 +30,15 @@
       ],
       "settings": {
       }
+    },
+    "pdm_product_social_proof_data_Vn6dfc": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "pdm_product_social_proof_data_Vn6dfc"
   ]
 }

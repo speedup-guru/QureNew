@@ -46,5 +46,64 @@
         "placeholder": "t:settings_schema.social-media.settings.social_youtube_link.info"
       }
     ]
+  },
+  {
+    "name": "Product",
+    "settings": [
+      {
+        "type":"checkbox",
+        "id":"show_social_proof",
+        "label":"Show Social Proof Component",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "social_proof_label",
+        "label": "Social Proof Label",
+        "default":"purchased in the last 48 hours"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_microinfusion_refill",
+        "label": "Micro-Infusion Refill Products",
+        "limit": 12
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_microinfusion",
+        "label": "MicroInfusion Products",
+        "limit": 12
+      }
+    ]
+  },
+  {
+    "name": "Order By - Receive By",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_order_by_receive_by",
+        "label": "Show Order By - Receive By",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "today_text",
+        "label": "Today Text",
+        "default": "Order today"
+      },
+      {
+        "type": "text",
+        "id": "international_text",
+        "label": "International Text",
+        "default": "Ships within 2 days"
+      },
+      {
+        "type": "text",
+        "id": "national_text",
+        "label": "National Text",
+        "default": "Get in [] business days",
+        "info": "Use [] to replace the number of days"
+      }
+    ]
   }
 ]

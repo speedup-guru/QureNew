@@ -39,7 +39,10 @@
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false
+        "reserve": false,
+        "today_text": "Order today",
+        "international_text": "Ships within 2 days",
+        "national_text": "Get in [] business days"
       }
     },
     "featuredin_yT6yRP": {
@@ -108,6 +111,8 @@
           "settings": {
             "heading": "Fine Lines and Wrinkles",
             "product": "",
+            "product_title": "",
+            "product_url": "",
             "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
             "text_before": "BEFORE",
             "image_after": "shopify:\/\/shop_images\/michelle_after_img.webp",
@@ -127,6 +132,8 @@
           "settings": {
             "heading": "Pigmentation & Inflammation",
             "product": "",
+            "product_title": "",
+            "product_url": "",
             "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
             "text_before": "BEFORE",
             "image_after": "shopify:\/\/shop_images\/jess_after_img.webp",
@@ -146,6 +153,8 @@
           "settings": {
             "heading": "Acne and Breakouts",
             "product": "",
+            "product_title": "",
+            "product_url": "",
             "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
             "text_before": "BEFORE",
             "image_after": "shopify:\/\/shop_images\/bj_nardi_after_img.webp",
@@ -883,6 +892,11 @@
       ],
       "settings": {
       }
+    },
+    "pdm_product_social_proof_data_VREtzd": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -903,6 +917,7 @@
     "product_box_JzAAt3",
     "faq_BgPiYb",
     "heading_fijgLW",
-    "1707653061bd3707e6"
+    "1707653061bd3707e6",
+    "pdm_product_social_proof_data_VREtzd"
   ]
 }
