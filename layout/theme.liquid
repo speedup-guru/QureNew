@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
     <link rel="canonical" href="{{ canonical_url }}">
-		<meta name="p:domain_verify" content="67d2a1408f84408a05deffe883a0a523"/>
-		<meta name="google-site-verification" content="eJrHRDM9bifPc8Nf-ycIg275f3KrlSoWEHd5VM5M9LQ" />
+    <meta name="p:domain_verify" content="67d2a1408f84408a05deffe883a0a523"/>
+    <meta name="google-site-verification" content="eJrHRDM9bifPc8Nf-ycIg275f3KrlSoWEHd5VM5M9LQ" />
 
     {% capture seo_title %}
       {{ page_title }}
@@ -68,26 +68,42 @@
     </style>
 
     {{ content_for_header }}
-    {% include 'config-layout' %}
 
-    {% comment %} Intelligems Script  {% endcomment %}
-    <script>
-        window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
-        window._template = {
-                directory: "{{ template.directory }}",
-                name: "{{ template.name }}",
-                suffix: "{{ template.suffix }}"
-        }
-    </script> 
-    <script src="https://cdn.intelligems.io/e5166ddbef7f.js"></script>
-    {% comment %} Intelligems Script - End {% endcomment %}
+    {% include 'config-layout' %}
 
     <!-- styles endrock -->
     {{ 'endrock.css' | asset_url | stylesheet_tag }}
     <!-- end styles endrock -->
+
+    {% render 'header-scripts' %}
+
 </head>
 
-<body>
+<body class="{{ template }}">
+    <script>window.KlarnaThemeGlobals={};
+        {% case template.name %} 
+            {% when "product" %} 
+                {% if product.first_available_variant.price %}
+                    window.KlarnaThemeGlobals.data_purchase_amount = {{ product.first_available_variant.price }};
+                {% endif %}
+                window.KlarnaThemeGlobals.productVariants={{product.variants|json}};
+                window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
+            {% when "cart" %}
+                window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};
+                window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
+        {% endcase %}
+    </script>
+
+    <!-- Google Tag Manager (noscript) -- BV -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLP8CZF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -- BV -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7RD8D7B"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     {% render 'config-header' %}
 
     <main {% if main_class != blank %}class="{{ main_class }}"{% endif %}>
@@ -122,6 +138,21 @@
 
     </script>
 
+    {% if product %}
+        <script>
+            var item = {
+                Name: {{ product.title|json }},
+                ProductID: {{ product.id|json }},
+                Categories: {{ product.collections|map:'title'|json }},
+                ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+                URL: "{{ shop.secure_url }}{{ product.url }}",
+                Brand: {{ product.vendor|json }},
+                Price: {{ product.price|money|json }},
+                CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+            };
+        </script>
+    {% endif %}
+
     <!--======================= Scripts ============================-->
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'vendor.js' | asset_url }}"></script>
@@ -136,38 +167,6 @@
     {% render 'slidecart-insert' %}
 
     <script async type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
-
-    <script>
-        {% if collection %}
-            console.log('https://admin.shopify.com/store/qure-skincare/collections/{{ collection.id }}')
-            console.log('handle: {{ collection.handle }}')
-            console.log('template name: {{ template }}')
-        {% endif %}
-        
-        {% if product %}
-            console.log('https://admin.shopify.com/store/qure-skincare/products/{{ product.id }}')
-            console.log('handle: {{ product.handle }}')
-            console.log('template name: {{ template }}')
-        {% endif %}
-        
-        {% if page %}
-            console.log('https://admin.shopify.com/store/qure-skincare/pages/{{ page.id }}')
-            console.log('handle: {{ page.handle }}')
-            console.log('template name: {{ template }}')
-        {% endif %}
-        
-        {% if blog %}
-            console.log('https://admin.shopify.com/store/qure-skincare/blogs/{{ blog.id }}')
-            console.log('handle: {{ blog.handle }}')
-            console.log('template name: {{ template }}')
-        {% endif %}
-        
-        {% if article %}
-            console.log('https://admin.shopify.com/store/qure-skincare/articles/{{ article.id }}')
-            console.log('handle: {{ article.handle }}')
-            console.log('template name: {{ template }}')
-        {% endif %}
-    </script>
 
     <script defer type="text/javascript">
         /* order by: states info */

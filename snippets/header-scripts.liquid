@@ -1,0 +1,162 @@
+
+{% comment %} Intelligems Script  {% endcomment %}
+<script>
+    window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+    window._template = {
+            directory: "{{ template.directory }}",
+            name: "{{ template.name }}",
+            suffix: "{{ template.suffix }}"
+    }
+</script> 
+<script src="https://cdn.intelligems.io/e5166ddbef7f.js"></script>
+{% comment %} Intelligems Script - End {% endcomment %}
+
+
+<!-- Outbrain Pixel Code -->
+<script data-obct type = "text/javascript">
+	/** DO NOT MODIFY THIS CODE**/
+	!function(_window, _document) {
+		var OB_ADV_ID = '00a5faaf84f5fdc1ad07f50e6164714e62';
+		if (_window.obApi) {
+			var toArray = function(object) {
+				return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+			};
+			_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+			return;
+		}
+		var api = _window.obApi = function() {
+			api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+		};
+		api.version = '1.1';
+		api.loaded = true;
+		api.marketerId = OB_ADV_ID;
+		api.queue = [];
+		var tag = _document.createElement('script');
+		tag.async = true;
+		tag.src = '//amplify.outbrain.com/cp/obtp.js';
+		tag.type = 'text/javascript';
+		var script = _document.getElementsByTagName('script')[0];
+		script.parentNode.insertBefore(tag, script);
+	}(window, document);
+
+	obApi('track', 'PAGE_VIEW');
+</script>
+<!--  End of Outbrain Pixel Code -->
+
+<script defer src="https://static.myshlf.us/Affiliates/sms_aff_clicktrack.js"></script>
+
+<!-- Taboola Pixel Code -->
+<script type='text/javascript'>
+	window._tfa = window._tfa || [];
+	window._tfa.push({notify: 'event', name: 'page_view', id: 1355029});
+	!function (t, f, a, x) {
+		if (!document.getElementById(x)) {
+			t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+		}
+	}(document.createElement('script'),
+		document.getElementsByTagName('script')[0],
+		'//cdn.taboola.com/libtrc/unip/1355029/tfa.js',
+		'tb_tfa_script');
+</script>
+
+<noscript>
+	<img src='https://trc.taboola.com/1355029/log/3/unip?en=page_view'
+			width='0' height='0' style='display:none' />
+</noscript>
+<!-- End of Taboola Pixel Code -->
+
+<!-- Hotjar Tracking Code for https://www.qureskincare.com/ -->
+<script>
+	(function(h,o,t,j,a,r){
+		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:2289227,hjsv:6};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1;
+		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+<!-- Google Tag Manager -- BV -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KLP8CZF');</script>
+<!-- End Google Tag Manager -- BV -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JKHTGWBK7"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-6JYCZD5LR9');
+</script>
+
+<!-- Start Converge Pixel Snippet -->
+<script>
+	!function (w, d, t) {
+	w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){
+		for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+		ttq.load('C40603K5T8EOFRF6BBI0');
+		ttq.page();
+	}(window, document, 'ttq');
+
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '875056633226981');
+	window['__cvg_shopify_info'] = {  product: {{ product | json }},  variant: {{ product.selected_or_first_available_variant | json }},  currency: {{ shop.currency | json }},  collection: {...{{ collection | json }}, products: {{ collection.products | json }}},  customer_id: {{ customer.id | json }} || {{ checkout.customer.id | json }},  email: {{ customer.email | json }} || {{ checkout.customer.email | json }},  address: {{ customer.default_address | json }} || {{ checkout.customer.default_address | json }},  phone: {{ customer.phone | json }} || {{ checkout.customer.phone | json }},  search: {{ search.terms | json }},};
+	!function(e,n,t,i,s,o){e.cvg||("shopify"in e||"undefined"!=typeof analytics&&"undefined"!=typeof browser&&"undefined"!=typeof init&&(e.shopify={},e.shopify.analytics=analytics,e.shopify.browser=browser,e.shopify.init=init),(i=e.cvg=function(){i.process?i.process.apply(i,arguments):i.queue.push(arguments)}).queue=[],i.t=+new Date,(s=n.createElement(t)).async=1,s.src="https://static.runconverge.com/convergepixelV3.min.js",(o=n.getElementsByTagName(t)[0]).parentNode.insertBefore(s,o))}(window,document,"script"),cvg({method:"init",id:'wZfB3h',params:{shopName:'qure-skincare',ga4MeasurementId:'G-6JYCZD5LR9', send_fb_pageview: true}}),cvg({method:"event",event:"$page_load"});
+</script>
+<!-- End Converge Pixel Snippet -->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M7RD8D7B');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+    window.kameleoonQueue = window.kameleoonQueue || [];
+</script>
+<script type="text/javascript" src="//jz055bru6e.kameleoon.eu/kameleoon.js" async="true"></script>
+
+<script type='text/javascript'>
+    var script = document.createElement('script');
+    script.src = 'https://xp2023-pix.s3.amazonaws.com/px_Kgpv6.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+
+<!-- Begin: Northbeam pixel -->
+<script>(function(){var r;(e=r=r||{}).A="identify",e.B="trackPageView",e.C="fireEmailCaptureEvent",e.D="fireCustomGoal",e.E="firePurchaseEvent";var e="//j.northbeam.io/ota-sp/dab5dd43-51be-4d02-86bb-eb24fbf43a62.js";function t(e){for(var n=[],r=1;r<arguments.length;r++)n[r-1]=arguments[r];a.push({fnName:e,args:n})}var a=[],n=((n={_q:a})[r.A]=function(e,n){return t(r.A,e,n)},n[r.B]=function(){return t(r.B)},n[r.C]=function(e,n){return t(r.C,e,n)},n[r.D]=function(e,n){return t(r.D,e,n)},n[r.E]=function(e){return t(r.E,e)},window.Northbeam=n,document.createElement("script"));n.async=!0,n.src=e,document.head.appendChild(n);})()</script>
+<!-- End: Northbeam pixel -->
+
+<script>
+    (function(w,d,t,r,u) {
+        var f,n,i;
+        w[u]=w[u]||[],f=function()
+        {
+            var o={ti:"343112181", enableAutoSpaTracking: true};
+            o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+        },
+        n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
+        {
+            var s=this.readyState;
+            s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+        },
+        i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+    })
+    (window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>

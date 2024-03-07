@@ -39,10 +39,7 @@
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false,
-        "today_text": "Order today",
-        "international_text": "Ships within 2 days",
-        "national_text": "Get in [] business days"
+        "reserve": false
       }
     },
     "featuredin_yT6yRP": {
