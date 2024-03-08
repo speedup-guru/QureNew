@@ -18,6 +18,7 @@
         },
         "supply_b9ppf8": {
           "type": "supply",
+          "disabled": true,
           "settings": {
             "heading": "Next batch ships 10th March 2024:",
             "heading_mobile": "Next batch ships 10th March 2024:",
