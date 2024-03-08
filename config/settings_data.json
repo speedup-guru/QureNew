@@ -21,14 +21,6 @@
       "header": {
         "type": "header",
         "blocks": {
-          "announcement-promotion_L6B7qD": {
-            "type": "announcement-promotion",
-            "settings": {
-              "heading": "WOMEN'S DAY | SPEND $150",
-              "button_label": "Get FREE Face Serum",
-              "button_url": "shopify:\/\/collections\/best-sellers"
-            }
-          },
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
@@ -36,11 +28,20 @@
               "button_label": "SAVE UPTO 55%",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
+          },
+          "announcement-promotion_L6B7qD": {
+            "type": "announcement-promotion",
+            "disabled": true,
+            "settings": {
+              "heading": "WOMEN'S DAY | SPEND $150",
+              "button_label": "Get FREE Face Serum",
+              "button_url": "shopify:\/\/collections\/best-sellers"
+            }
           }
         },
         "block_order": [
-          "announcement-promotion_L6B7qD",
-          "announcement_TPxBgi"
+          "announcement_TPxBgi",
+          "announcement-promotion_L6B7qD"
         ],
         "settings": {
         }
@@ -134,7 +135,7 @@
       },
       "8218531531362863771": {
         "type": "shopify:\/\/apps\/kite-free-gift-discounts\/blocks\/app-embed\/2c7302c4-455d-4078-a829-48563ba26089",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }

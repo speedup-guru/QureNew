@@ -290,7 +290,7 @@ accordionHeaders.forEach(header => {
 });
 
 // scroll to id
-$('a[href*="#"]:not([href="#"])').not('.faq-menu__url, .skincare_right a.popup-modal.ss_c_link, .popup-youtube, .ss_c_link').click(function () {
+$('a[href*="#"]:not([href="#"])').not('.faq-menu__url, .skincare_right a.popup-modal.ss_c_link, .popup-youtube, .ss_c_link, .collection-form .button_primary').click(function () {
     var target = $(this.hash);
     $('html,body').stop().animate({
         scrollTop: target.offset().top - 100
@@ -1199,7 +1199,43 @@ countdownSections.forEach((section) => {
 /*
 * skin promise js start
 */
+(function () {
+    'use strict';
+    const breakpoint = window.matchMedia('(max-width:767px)');
 
+    // keep track of swiper instances to destroy later
+    let mySwiper;
+    const breakpointChecker = function () {
+        if (breakpoint.matches === true) {
+            if (mySwiper !== undefined) mySwiper.destroy(true, true);
+            return;
+        } else if (breakpoint.matches === false) {
+            return enableSwiper();
+
+        }
+    };
+
+
+    const enableSwiper = function () {
+
+        mySwiper = new Swiper('.skin_promises_slider', {
+            slidesPerView: '3',
+            spaceBetween: 10,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-arrow-next",
+                prevEl: ".swiper-arrow-prev",
+            }
+        });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+})();
 /*
 * skin promise js end
 */

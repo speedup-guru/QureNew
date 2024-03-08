@@ -102,6 +102,10 @@
     font-weight: 400;
 }
 
+.it_info .header {
+    margin-top: -14px;
+}
+
 @media(max-width:768px) {
     .free_grid {
         grid-template-columns: 1fr;
@@ -196,5 +200,8 @@
         min-height: 45px;
         align-items: center;
         display: flex;
+    }
+    .it_info .header {
+        margin-top: 0px;
     }
 }
