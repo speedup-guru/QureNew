@@ -30,6 +30,8 @@
 			<meta name="description" content="{{ seo_title | escape }}">
     {%- endif -%}
 
+    {% include 'social-meta-tags' %}
+
     {% if settings.favicon != blank %}
         <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {% endif %}
@@ -38,34 +40,7 @@
     <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'product.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'announcement-bar.css' | asset_url }}">
-
-    <style>
-        .header-wrapperBlock.header-sticky {
-            position: fixed !important;
-        }
-        .errors {
-            color:red;
-            text-align: center;
-            padding: 10px;
-        }
-        .stamped-fa-star-half-o:before, .stamped-fa-star:before {
-            color: #008763 !important;
-        }
-        .productBlockGrid .collection-review span.stamped-badge {
-            margin-left: 0px !important;
-        }
-        .bf-bundle__rating .stamped-badge-caption {
-            padding-left: 5px;
-        }
-        .trusted_cl .t_c_info+.t_c_info {
-            max-width: 405px !important;
-        }
-        .refill_s_tab_content .swiper.dot_pagination .swiper-pagination {
-            position: absolute;
-            bottom: 5px !important;
-            padding-top: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
 
     {{ content_for_header }}
 
@@ -80,19 +55,6 @@
 </head>
 
 <body class="{{ template }}">
-    <script>window.KlarnaThemeGlobals={};
-        {% case template.name %} 
-            {% when "product" %} 
-                {% if product.first_available_variant.price %}
-                    window.KlarnaThemeGlobals.data_purchase_amount = {{ product.first_available_variant.price }};
-                {% endif %}
-                window.KlarnaThemeGlobals.productVariants={{product.variants|json}};
-                window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
-            {% when "cart" %}
-                window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};
-                window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
-        {% endcase %}
-    </script>
 
     <!-- Google Tag Manager (noscript) -- BV -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLP8CZF"
@@ -227,6 +189,11 @@
             ];
     </script>
     <script defer src="{{ 'endrock.js' | asset_url }}"></script>
+
+    <script type="text/javascript" src="https://s.skimresources.com/js/200448X1678823.skimlinks.js"></script>
+    <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=4c00ac67-4d68-4b44-95c1-190a7b67b92a"></script>
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4a846202-05f3-48b3-a077-4d4a2eacbe6a"> </script>
+
 </body>
 
 </html>

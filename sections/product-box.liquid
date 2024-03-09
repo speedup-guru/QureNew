@@ -51,7 +51,7 @@
                                 {% endif %}
 
                                 {% if block.settings.product != blank %}
-                                    <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.root_url }}products/{{ block.settings.product.handle }}" role="button" style="cursor:pointer;">Buy Now - {{ block.settings.product.price | money_without_trailing_zeros }}
+                                    <a class="btn btn-lg btn-primary buy_btn event_btn" href="{{ routes.root_url }}products/{{ block.settings.product.handle }}" role="button" style="cursor:pointer;">Buy Now - {{ block.settings.product.price | money_without_trailing_zeros }}
                                         <img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                                     </a>
                                 {% endif %}

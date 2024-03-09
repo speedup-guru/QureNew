@@ -53,8 +53,8 @@
                         <p>1</p>
                         <a href="#">+</a>
                     </div>
-                    <a class="btn btn-lg btn-primary buy_btn d-none d-md-block" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Add to cart<img src="{{ 'arrow_right.svg' | asset_url }}" alt=""></a>
-                    <a class="btn btn-lg btn-primary buy_btn d-block d-md-none" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Add to cart</a>
+                    <a class="btn btn-lg btn-primary buy_btn d-none d-md-block event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Add to cart<img src="{{ 'arrow_right.svg' | asset_url }}" alt=""></a>
+                    <a class="btn btn-lg btn-primary buy_btn d-block d-md-none event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Add to cart</a>
                 </div>
 
                 {% if product.compare_at_price != blank %}

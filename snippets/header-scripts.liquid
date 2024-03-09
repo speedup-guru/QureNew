@@ -1,15 +1,22 @@
+<!-- Begin BlackCrow Script Tag: DO NOT MODIFY! -->
+<script type="text/javascript" async src="https://shopify-init.blackcrow.ai/js/core/qure-skincare.js?shopify_app_version=1.0.243&shop=qure-skincare.myshopify.com"></script>
+<!-- End BlackCrow Script Tag -->
 
-{% comment %} Intelligems Script  {% endcomment %}
+<!-- Google Tag Manager -->
 <script>
-    window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
-    window._template = {
-            directory: "{{ template.directory }}",
-            name: "{{ template.name }}",
-            suffix: "{{ template.suffix }}"
-    }
-</script> 
-<script src="https://cdn.intelligems.io/e5166ddbef7f.js"></script>
-{% comment %} Intelligems Script - End {% endcomment %}
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M7RD8D7B');
+</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+	window.kameleoonQueue = window.kameleoonQueue || [];
+</script>
+
+<script type="text/javascript" src="//jz055bru6e.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
 <!-- Outbrain Pixel Code -->
@@ -98,65 +105,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Start Converge Pixel Snippet -->
 <script>
-	!function (w, d, t) {
-	w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){
-		for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-		ttq.load('C40603K5T8EOFRF6BBI0');
-		ttq.page();
-	}(window, document, 'ttq');
-
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window, document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '875056633226981');
-	window['__cvg_shopify_info'] = {  product: {{ product | json }},  variant: {{ product.selected_or_first_available_variant | json }},  currency: {{ shop.currency | json }},  collection: {...{{ collection | json }}, products: {{ collection.products | json }}},  customer_id: {{ customer.id | json }} || {{ checkout.customer.id | json }},  email: {{ customer.email | json }} || {{ checkout.customer.email | json }},  address: {{ customer.default_address | json }} || {{ checkout.customer.default_address | json }},  phone: {{ customer.phone | json }} || {{ checkout.customer.phone | json }},  search: {{ search.terms | json }},};
-	!function(e,n,t,i,s,o){e.cvg||("shopify"in e||"undefined"!=typeof analytics&&"undefined"!=typeof browser&&"undefined"!=typeof init&&(e.shopify={},e.shopify.analytics=analytics,e.shopify.browser=browser,e.shopify.init=init),(i=e.cvg=function(){i.process?i.process.apply(i,arguments):i.queue.push(arguments)}).queue=[],i.t=+new Date,(s=n.createElement(t)).async=1,s.src="https://static.runconverge.com/convergepixelV3.min.js",(o=n.getElementsByTagName(t)[0]).parentNode.insertBefore(s,o))}(window,document,"script"),cvg({method:"init",id:'wZfB3h',params:{shopName:'qure-skincare',ga4MeasurementId:'G-6JYCZD5LR9', send_fb_pageview: true}}),cvg({method:"event",event:"$page_load"});
+window['__cvg_shopify_info'] = {
+  product: {{ product | json }},
+  variant: {{ product.selected_or_first_available_variant | json }},
+  currency: {{ shop.currency | json }},
+  collection: {...{{ collection | json }}, products: {{ collection.products | json }}},
+  search: {{ search.terms | json }},
+};
+</script>
+<script src="https://static.runconverge.com/pixels/wZfB3h.js" async></script>
+<script>
+  window.cvg||(cvg=function(){cvg.process?cvg.process.apply(cvg,arguments):cvg.queue.push(arguments)},cvg.queue=[]);
+  cvg({method:"track",eventName:"$page_load"});
 </script>
 <!-- End Converge Pixel Snippet -->
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M7RD8D7B');</script>
-<!-- End Google Tag Manager -->
-
-<script type="text/javascript">
-    window.kameleoonQueue = window.kameleoonQueue || [];
-</script>
-<script type="text/javascript" src="//jz055bru6e.kameleoon.eu/kameleoon.js" async="true"></script>
-
-<script type='text/javascript'>
-    var script = document.createElement('script');
-    script.src = 'https://xp2023-pix.s3.amazonaws.com/px_Kgpv6.js';
-    document.getElementsByTagName('head')[0].appendChild(script);
-</script>
 
 <!-- Begin: Northbeam pixel -->
 <script>(function(){var r;(e=r=r||{}).A="identify",e.B="trackPageView",e.C="fireEmailCaptureEvent",e.D="fireCustomGoal",e.E="firePurchaseEvent";var e="//j.northbeam.io/ota-sp/dab5dd43-51be-4d02-86bb-eb24fbf43a62.js";function t(e){for(var n=[],r=1;r<arguments.length;r++)n[r-1]=arguments[r];a.push({fnName:e,args:n})}var a=[],n=((n={_q:a})[r.A]=function(e,n){return t(r.A,e,n)},n[r.B]=function(){return t(r.B)},n[r.C]=function(e,n){return t(r.C,e,n)},n[r.D]=function(e,n){return t(r.D,e,n)},n[r.E]=function(e){return t(r.E,e)},window.Northbeam=n,document.createElement("script"));n.async=!0,n.src=e,document.head.appendChild(n);})()</script>
 <!-- End: Northbeam pixel -->
 
+{% comment %} Intelligems Script  {% endcomment %}
 <script>
-    (function(w,d,t,r,u) {
-        var f,n,i;
-        w[u]=w[u]||[],f=function()
-        {
-            var o={ti:"343112181", enableAutoSpaTracking: true};
-            o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
-        },
-        n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
-        {
-            var s=this.readyState;
-            s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
-        },
-        i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
-    })
-    (window,document,"script","//bat.bing.com/bat.js","uetq");
+	window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+	window._template = {
+			directory: "{{ template.directory }}",
+			name: "{{ template.name }}",
+			suffix: "{{ template.suffix }}"
+	}
+</script> 
+<script src="https://cdn.intelligems.io/e5166ddbef7f.js"></script>
+{% comment %} Intelligems Script - End {% endcomment %}
+
+<script type='text/javascript'>
+	var script = document.createElement('script');
+	script.src = 'https://xp2023-pix.s3.amazonaws.com/px_Kgpv6.js';
+	document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+
+<script>
+	(function(w,d,t,r,u) {
+		var f,n,i;
+		w[u]=w[u]||[],f=function()
+		{
+			var o={ti:"343112181", enableAutoSpaTracking: true};
+			o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+		},
+		n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
+		{
+			var s=this.readyState;
+			s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+		},
+		i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+	})
+	(window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+
+
+<script>window.KlarnaThemeGlobals={};
+{% case template.name %} 
+	{% when "product" %} 
+		{% if product.first_available_variant.price %}
+			window.KlarnaThemeGlobals.data_purchase_amount = {{ product.first_available_variant.price }};
+		{% endif %}
+		window.KlarnaThemeGlobals.productVariants={{product.variants|json}};
+		window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
+	{% when "cart" %}
+		window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};
+		window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
+	{% endcase %}
 </script>

@@ -27,14 +27,9 @@
                     </div>
                 </div>
                 <div class="gift_card_variants">
-                    <button data-price="200" data-slideTo="3" class="gift_variant"><span>$200</span> Gift
-                        Card</button>
-                    <button data-price="150" data-slideTo="2"
-                        class="gift_variant gift_variant_active"><span>$150</span> Gift Card</button>
-                    <button data-price="100" data-slideTo="1" class="gift_variant "><span>$100</span> Gift
-                        Card</button>
-                    <button data-price="50" data-slideTo="0" class="gift_variant"><span>$50</span> Gift
-                        Card</button>
+                    {% for variant in product.variants %}
+                        <button data-variant-id="{{ variant.id }}" data-price="{{ variant.price | divided_by: 100.0 }}" data-slideTo="{{ forloop.index0 }}" class="gift_variant{% if variant.id == product.variants.first.id %} gift_variant_active{% endif %}"><span class="money">{{ variant.price | money_without_trailing_zeros }}</span> Gift Card</button>
+                    {% endfor %}
                 </div>
                 <div class="gift_cal">
                     <div class="bundle_quantity_wrap">
@@ -43,10 +38,10 @@
                             <p>1</p>
                             <a href="#">+</a>
                         </div>
-                        <a class="btn btn-lg btn-primary buy_btn d-none d-md-block" href="#">Add to cart<img
+                        <a class="btn btn-lg btn-primary buy_btn d-none d-md-block event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Add to cart<img
                                 src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                         </a>
-                        <a class="btn btn-lg btn-primary buy_btn d-block d-md-none" href="#">Add to cart
+                        <a class="btn btn-lg btn-primary buy_btn d-block d-md-none event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Add to cart
                         </a>
                     </div>
                     <div class="payment_method">
@@ -100,6 +95,8 @@
         </div>
     </div>
 </div>
+
+<script src="{{ '__app-product-gift.js' | asset_url }}"></script>
 
 {% schema %}
     {

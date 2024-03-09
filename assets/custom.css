@@ -1,0 +1,25 @@
+.header-wrapperBlock.header-sticky {
+    position: fixed !important;
+}
+.errors {
+    color:red;
+    text-align: center;
+    padding: 10px;
+}
+.stamped-fa-star-half-o:before, .stamped-fa-star:before {
+    color: #008763 !important;
+}
+.productBlockGrid .collection-review span.stamped-badge {
+    margin-left: 0px !important;
+}
+.bf-bundle__rating .stamped-badge-caption {
+    padding-left: 5px;
+}
+.trusted_cl .t_c_info+.t_c_info {
+    max-width: 405px !important;
+}
+.refill_s_tab_content .swiper.dot_pagination .swiper-pagination {
+    position: absolute;
+    bottom: 5px !important;
+    padding-top: 0px;
+}
