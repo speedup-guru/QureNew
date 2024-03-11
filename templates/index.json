@@ -227,6 +227,47 @@
       "settings": {
       }
     },
+    "icons_list_DnUaPQ": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_HgUjXt": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
+          }
+        },
+        "icon_TiCgNY": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
+            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
+          }
+        },
+        "icon_GqBXpG": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
+            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
+          }
+        },
+        "icon_TYFEbq": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/science-ftr.svg",
+            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_HgUjXt",
+        "icon_TiCgNY",
+        "icon_GqBXpG",
+        "icon_TYFEbq"
+      ],
+      "settings": {
+      }
+    },
     "before_after_slider_dckiYy": {
       "type": "before-after-slider",
       "blocks": {
@@ -633,6 +674,7 @@
     "main_banner_rJmjKt",
     "featuredin_cgKaqj",
     "uses_gjAiWF",
+    "icons_list_DnUaPQ",
     "before_after_slider_dckiYy",
     "trusted_qcJp6N",
     "bestseller_zBUA8r",

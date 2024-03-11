@@ -24,7 +24,7 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "FREE World-Wide Shipping All Orders Above $100",
+              "heading": "<p><strong>FREE World-Wide Shipping<\/strong> All Orders Above $100<\/p>",
               "button_label": "SHOP NOW",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
