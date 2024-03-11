@@ -316,7 +316,7 @@
           "type": "feedback",
           "settings": {
             "image": "shopify:\/\/shop_images\/cl_max.webp",
-            "text": "<p>“<strong>...if water is a contributing factor<\/strong>it may be the easiest thing to help fix that first.”<\/p><h6><strong>Dr Maxfield, MD<\/strong> Board-Certified Dermatologist<\/h6>"
+            "text": "<p>“<strong>...if water is a contributing factor <\/strong>it may be the easiest thing to help fix that first.”<\/p><h6><strong>Dr Maxfield, MD<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         }
       },
