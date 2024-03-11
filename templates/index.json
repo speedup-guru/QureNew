@@ -227,47 +227,6 @@
       "settings": {
       }
     },
-    "icons_list_DnUaPQ": {
-      "type": "icons-list",
-      "blocks": {
-        "icon_HgUjXt": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
-          }
-        },
-        "icon_TiCgNY": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
-            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
-          }
-        },
-        "icon_GqBXpG": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
-            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
-          }
-        },
-        "icon_TYFEbq": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/science-ftr.svg",
-            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_HgUjXt",
-        "icon_TiCgNY",
-        "icon_GqBXpG",
-        "icon_TYFEbq"
-      ],
-      "settings": {
-      }
-    },
     "before_after_slider_dckiYy": {
       "type": "before-after-slider",
       "blocks": {
@@ -375,6 +334,42 @@
     "trusted_qcJp6N": {
       "type": "trusted",
       "blocks": {
+        "video_h36GEW": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_zVFniz": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
+            "wistia_id": "",
+            "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_3BWkgV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_maxfield_99f72bee-8b87-4244-a5b9-43323823b22a.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
+            "wistia_id": "",
+            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable.\"<\/p><h6><strong>Dr Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_TDePaM": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_greeney_76bc7346-026a-4350-96df-6fd73c5be00e.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
+            "wistia_id": "",
+            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
         "feedback_hXVkGe": {
           "type": "feedback",
           "settings": {
@@ -389,15 +384,6 @@
             "text": "<p>\"<strong>The Qure mask wins<\/strong> the LED device mask off...\"<\/p><h6><strong>Dr Maxfield, MD<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_zVFniz": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
-            "wistia_id": "",
-            "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
         "video_4eMcWB": {
           "type": "video",
           "settings": {
@@ -405,24 +391,6 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
             "wistia_id": "",
             "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
-        "video_TDePaM": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_greeney_76bc7346-026a-4350-96df-6fd73c5be00e.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
-            "wistia_id": "",
-            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
-        "video_3BWkgV": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maxfield_99f72bee-8b87-4244-a5b9-43323823b22a.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
-            "wistia_id": "",
-            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable.\"<\/p><h6><strong>Dr Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
           }
         },
         "video_Kb99Wn": {
@@ -433,26 +401,17 @@
             "wistia_id": "",
             "text": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment.\"<\/p><h6><strong>Dr Natasha Henry,<\/strong> Medical Doctor<\/h6>"
           }
-        },
-        "video_h36GEW": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
-            "wistia_id": "",
-            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
-          }
         }
       },
       "block_order": [
+        "video_h36GEW",
+        "video_zVFniz",
+        "video_3BWkgV",
+        "video_TDePaM",
         "feedback_hXVkGe",
         "feedback_VV7WqP",
-        "video_zVFniz",
         "video_4eMcWB",
-        "video_TDePaM",
-        "video_3BWkgV",
-        "video_Kb99Wn",
-        "video_h36GEW"
+        "video_Kb99Wn"
       ],
       "settings": {
         "classname": "trusted_bl",
@@ -460,7 +419,7 @@
         "likes": "7.1K",
         "views": "351K views",
         "image": "shopify:\/\/shop_images\/trusted_2.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg&t=37s"
       }
     },
     "bestseller_zBUA8r": {
@@ -674,7 +633,6 @@
     "main_banner_rJmjKt",
     "featuredin_cgKaqj",
     "uses_gjAiWF",
-    "icons_list_DnUaPQ",
     "before_after_slider_dckiYy",
     "trusted_qcJp6N",
     "bestseller_zBUA8r",
