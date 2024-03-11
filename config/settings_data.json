@@ -24,8 +24,8 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "EXCLUSIVE HOLIDAY BUNDLES",
-              "button_label": "SAVE UPTO 55%",
+              "heading": "FREE World-Wide Shipping All Orders Above $100",
+              "button_label": "SHOP NOW",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
           },

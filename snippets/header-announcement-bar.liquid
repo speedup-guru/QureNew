@@ -1,6 +1,8 @@
+{% comment %} <link rel="stylesheet" href="{{ 'announcement-bar.css' | asset_url }}"> {% endcomment %}
+
 <div class="announcement_bar">
     <p>
-        <span>{{ block.settings.heading }} </span>
+        {{ block.settings.heading |  replace: '<p>', '' |  replace: '</p>', '' }}
         {% if block.settings.button_label %}
             <a href="{{ block.settings.button_url }}" aria-label="{{ block.settings.button_label | escape }}" class="green_coloured">{{ block.settings.button_label }}</a>
         {% endif %}
