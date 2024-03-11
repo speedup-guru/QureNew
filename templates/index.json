@@ -227,47 +227,6 @@
       "settings": {
       }
     },
-    "icons_list_HBtmq7": {
-      "type": "icons-list",
-      "blocks": {
-        "icon_9di3kB": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
-          }
-        },
-        "icon_7XUiNh": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
-            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
-          }
-        },
-        "icon_w7LDkt": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
-            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
-          }
-        },
-        "icon_rFa7FY": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/science-ftr.svg",
-            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_9di3kB",
-        "icon_7XUiNh",
-        "icon_w7LDkt",
-        "icon_rFa7FY"
-      ],
-      "settings": {
-      }
-    },
     "before_after_slider_dckiYy": {
       "type": "before-after-slider",
       "blocks": {
@@ -433,6 +392,15 @@
             "wistia_id": "",
             "text": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment.\"<\/p><h6><strong>Dr Natasha Henry,<\/strong> Medical Doctor<\/h6>"
           }
+        },
+        "video_h36GEW": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -442,7 +410,8 @@
         "video_4eMcWB",
         "video_TDePaM",
         "video_3BWkgV",
-        "video_Kb99Wn"
+        "video_Kb99Wn",
+        "video_h36GEW"
       ],
       "settings": {
         "classname": "trusted_bl",
@@ -664,7 +633,6 @@
     "main_banner_rJmjKt",
     "featuredin_cgKaqj",
     "uses_gjAiWF",
-    "icons_list_HBtmq7",
     "before_after_slider_dckiYy",
     "trusted_qcJp6N",
     "bestseller_zBUA8r",
