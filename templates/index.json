@@ -174,7 +174,7 @@
       }
     },
     "endrock_bestseller_7J3dy3": {
-      "type": "endrock-bestseller",
+      "type": "endrock_bestseller",
       "blocks": {
         "product_mngAaH": {
           "type": "product",

@@ -53,16 +53,6 @@ const deliveryDate = (location) => {
 }
 
 // bestseller section on hompage
-const initBestSellerSection = () => { 
-  const categoryButtons = document.querySelectorAll('.best-seller-section .best-seller-wrapper__categories .btn');
-  const productCardsContainer = document.querySelector('.best-seller-section .best-seller-wrapper__products-container');
-  const bestSellerFooter = document.querySelector('.best-seller-section .best-seller-wrapper__footer');
-  const productCards = document.querySelectorAll('.best-seller-section .best-seller-wrapper__products-container .product-link');
-  const swiperElements = document.querySelectorAll('.best-seller-section .swiper-element');
-  const isVariantCActive = document.body.hasAttribute('data-bestseller-c');
-  const isMobile = window.innerWidth <= 768;
-
-  let swiper;
   const initSwiperBestSeller = () => {
     swiper = new Swiper('.best-seller-section .swiper', {
       spaceBetween: 16,
@@ -97,8 +87,19 @@ const initBestSellerSection = () => {
         }
       }
     });
+    return swiper;
   }
-  initSwiperBestSeller();
+
+const initBestSellerSection = () => { 
+  const categoryButtons = document.querySelectorAll('.best-seller-section .best-seller-wrapper__categories .btn');
+  const productCardsContainer = document.querySelector('.best-seller-section .best-seller-wrapper__products-container');
+  const bestSellerFooter = document.querySelector('.best-seller-section .best-seller-wrapper__footer');
+  const productCards = document.querySelectorAll('.best-seller-section .best-seller-wrapper__products-container .product-link');
+  const swiperElements = document.querySelectorAll('.best-seller-section .swiper-element');
+  const isVariantCActive = document.body.hasAttribute('data-bestseller-c');
+  const isMobile = window.innerWidth <= 768;
+  
+  let swiper = initSwiperBestSeller();
 
   // show product images on mobile - variant c
   if ( isVariantCActive && isMobile ) {
