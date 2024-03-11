@@ -322,6 +322,10 @@
                 width: 100% !important;
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
+                object-fit: cover;
+                &:not(.hover-image) {
+                  object-fit: contain;
+                }
               }
             }
             .content-container {
@@ -373,10 +377,13 @@
                 margin-top: auto;
                 margin-bottom: auto;
                 ul {
-                  padding-inline-start: 30px;
+                  padding-inline-start: 20px;
                   margin-bottom: 0;
+                  letter-spacing: 0;
                   li {
                     text-align: left;
+                    list-style: disc;
+                    letter-spacing: 0;
                   }
                 }
               }
@@ -404,6 +411,9 @@
         &.not-slider {
           justify-content: center;
           gap: 16px;
+          .product-link {
+            margin-right: 0 !important;
+          }
         }
       }
       .swiper-button-prev,
