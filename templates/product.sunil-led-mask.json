@@ -821,6 +821,14 @@
             "code": ""
           }
         },
+        "object_YiKwdT": {
+          "type": "object",
+          "settings": {
+            "heading": "Is it safe for all skin types?",
+            "text": "<p>It's crucial to note that skin types V and VI (on the fitzpatrick scale) are more sensitive for light therapy as they can absorb more light than other skin types. The reason is that skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows higher absorption of energy which increases the risk of adverse events from epidermal injury in people with skin type V and VI. This is why the FDA recommends caution for individuals with these skin types. <\/p><p>Based on our experience, numerous customers with skin types V and VI have successfully treated their skin with our Q-Rejuvalight Pro Facewear, reporting positive results. <\/p><p>For customers with skin types V and VI, we highly recommend consulting with your dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin reactions can vary from person to person, and what works well for one individual may not be suitable for another.<\/p>",
+            "code": ""
+          }
+        },
         "object_R4NqQq": {
           "type": "object",
           "settings": {
@@ -834,14 +842,6 @@
           "settings": {
             "heading": "At what age and when is the best time to start using LED light therapy?",
             "text": "<p>Most people can benefit from the Q-Rejuvalight Pro. Whether the goal is to treat acne, help reduce the visible signs of aging, or both, prevention is better than correction. So the sooner the Q-Rejuvalight Pro becomes part of your routine, the better.<\/p>",
-            "code": ""
-          }
-        },
-        "object_YiKwdT": {
-          "type": "object",
-          "settings": {
-            "heading": "Is it safe for all skin types?",
-            "text": "<p>It's crucial to note that skin types V and VI (on the fitzpatrick scale) are more sensitive for light therapy as they can absorb more light than other skin types. The reason is that skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows higher absorption of energy which increases the risk of adverse events from epidermal injury in people with skin type V and VI. This is why the FDA recommends caution for individuals with these skin types. <\/p><p>Based on our experience, numerous customers with skin types V and VI have successfully treated their skin with our Q-Rejuvalight Pro Facewear, reporting positive results. <\/p><p>For customers with skin types V and VI, we highly recommend consulting with your dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin reactions can vary from person to person, and what works well for one individual may not be suitable for another.<\/p>",
             "code": ""
           }
         },
@@ -859,9 +859,9 @@
         "object_WzL6if",
         "object_zEjFPh",
         "object_kwgVxd",
+        "object_YiKwdT",
         "object_R4NqQq",
         "object_XmQVbH",
-        "object_YiKwdT",
         "object_94NRej"
       ],
       "settings": {
