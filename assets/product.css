@@ -7844,32 +7844,10 @@ p.title_mob {
 }
 
 .future_skincare .fs-img {
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.future_skincare .fs-img .fs-block {
-    flex: 0 0 50%;
-    width: 100%;
-    position: relative;
-    height: 0;
-    padding-bottom: 48.69%;
-    overflow: hidden;
-    max-width: 50%;
-}
-
-.future_skincare.fs-img .fs-block img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    right: 0;
-    bottom: 0;
-}
 
 .future_skincare .fs-content .app_img {
     display: flex;
@@ -7905,11 +7883,6 @@ p.title_mob {
         line-height: 20px;
         font-weight: 500;
         padding: 12.5px 82.5px;
-    }
-
-    .future_skincare .fs-img {
-        flex: 0 0 100%;
-        max-width: 100%;
     }
 }
 
