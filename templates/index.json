@@ -411,31 +411,31 @@
       "settings": {
       }
     },
-    "icons_list_DnUaPQ": {
+    "icons_list_aYq7xP": {
       "type": "icons-list",
       "blocks": {
-        "icon_HgUjXt": {
+        "icon_gjkqLM": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
             "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
           }
         },
-        "icon_TiCgNY": {
+        "icon_4VUke8": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
             "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
           }
         },
-        "icon_GqBXpG": {
+        "icon_TYWJ97": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/derma-ftr.svg",
             "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
           }
         },
-        "icon_TYFEbq": {
+        "icon_7DF4yt": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/science-ftr.svg",
@@ -444,10 +444,10 @@
         }
       },
       "block_order": [
-        "icon_HgUjXt",
-        "icon_TiCgNY",
-        "icon_GqBXpG",
-        "icon_TYFEbq"
+        "icon_gjkqLM",
+        "icon_4VUke8",
+        "icon_TYWJ97",
+        "icon_7DF4yt"
       ],
       "settings": {
       }
@@ -553,12 +553,48 @@
       "settings": {
         "classname": "skincare_slider bg_gradient_yellow_bt",
         "heading": "Science-backed skincare that’s proven to work.",
-        "text": "<p>See the real, unedited results for yourself.<br\/><br\/>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/>Our science-backed skincare and treatments are <em>clinically-proven<\/em> to work.<br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
+        "text": "<p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/>Our science-backed skincare and treatments are <em>clinically-proven<\/em> to work.<br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
       }
     },
     "trusted_qcJp6N": {
       "type": "trusted",
       "blocks": {
+        "video_h36GEW": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_zVFniz": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
+            "wistia_id": "",
+            "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_3BWkgV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_maxfield_99f72bee-8b87-4244-a5b9-43323823b22a.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
+            "wistia_id": "",
+            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable.\"<\/p><h6><strong>Dr Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_TDePaM": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_greeney_76bc7346-026a-4350-96df-6fd73c5be00e.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
+            "wistia_id": "",
+            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
         "feedback_hXVkGe": {
           "type": "feedback",
           "settings": {
@@ -573,15 +609,6 @@
             "text": "<p>\"<strong>The Qure mask wins<\/strong> the LED device mask off...\"<\/p><h6><strong>Dr Maxfield, MD<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_zVFniz": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
-            "wistia_id": "",
-            "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
         "video_4eMcWB": {
           "type": "video",
           "settings": {
@@ -589,24 +616,6 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
             "wistia_id": "",
             "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
-        "video_TDePaM": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_greeney_76bc7346-026a-4350-96df-6fd73c5be00e.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
-            "wistia_id": "",
-            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney,<\/strong> Board Certified Dermatologist<\/h6>"
-          }
-        },
-        "video_3BWkgV": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maxfield_99f72bee-8b87-4244-a5b9-43323823b22a.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
-            "wistia_id": "",
-            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable.\"<\/p><h6><strong>Dr Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
           }
         },
         "video_Kb99Wn": {
@@ -617,26 +626,17 @@
             "wistia_id": "",
             "text": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment.\"<\/p><h6><strong>Dr Natasha Henry,<\/strong> Medical Doctor<\/h6>"
           }
-        },
-        "video_h36GEW": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
-            "wistia_id": "",
-            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
-          }
         }
       },
       "block_order": [
+        "video_h36GEW",
+        "video_zVFniz",
+        "video_3BWkgV",
+        "video_TDePaM",
         "feedback_hXVkGe",
         "feedback_VV7WqP",
-        "video_zVFniz",
         "video_4eMcWB",
-        "video_TDePaM",
-        "video_3BWkgV",
-        "video_Kb99Wn",
-        "video_h36GEW"
+        "video_Kb99Wn"
       ],
       "settings": {
         "classname": "trusted_bl",
@@ -859,7 +859,7 @@
     "featuredin_cgKaqj",
     "endrock_bestseller_7J3dy3",
     "uses_gjAiWF",
-    "icons_list_DnUaPQ",
+    "icons_list_aYq7xP",
     "before_after_slider_dckiYy",
     "trusted_qcJp6N",
     "bestseller_zBUA8r",
