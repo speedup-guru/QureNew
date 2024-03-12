@@ -16,6 +16,7 @@
       "micro-infusion-1-month-bundle-2x-e-g-f-serum"
     ],
     "show_order_by_receive_by": true,
+    "today_text": "Order today",
     "promotion": "promotion",
     "sections": {
       "header": {
@@ -24,8 +25,8 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "<p><strong>FREE World-Wide Shipping<\/strong> All Orders Above $100<\/p>",
-              "button_label": "SHOP NOW",
+              "heading": "<p><strong>FREE World-Wide Shipping <\/strong>All Orders Above $100<\/p>",
+              "button_label": "SAVE UPTO 55%",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
           },
@@ -103,7 +104,7 @@
           "link_wfYX8m"
         ],
         "settings": {
-          "heading": "© 2024 Qure. All rights reserved.",
+          "heading": "© 2024 Qure™ Skincare. All rights reserved.",
           "menu": "footer-bottom-menu",
           "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
         }
