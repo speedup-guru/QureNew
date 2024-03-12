@@ -52,6 +52,114 @@ const deliveryDate = (location) => {
   document.querySelector('.orderby-receiveby').classList.remove('hidden');
 }
 
+// bestseller section on hompage
+  const initSwiperBestSeller = () => {
+    swiper = new Swiper('.best-seller-section .swiper', {
+      spaceBetween: 16,
+      slidesPerView: 'auto',
+      mousewheel: {
+        forceToAxis: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerGroup: 1,
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+          slidesOffsetBefore: 24,
+          slidesOffsetAfter: 24
+        },
+        768: {
+          slidesPerGroup: 2,
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerGroup: 1,
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+        }
+      }
+    });
+    return swiper;
+  }
+
+const initBestSellerSection = () => { 
+  const categoryButtons = document.querySelectorAll('.best-seller-section .best-seller-wrapper__categories .btn');
+  const productCardsContainer = document.querySelector('.best-seller-section .best-seller-wrapper__products-container');
+  const bestSellerFooter = document.querySelector('.best-seller-section .best-seller-wrapper__footer');
+  const productCards = document.querySelectorAll('.best-seller-section .best-seller-wrapper__products-container .product-link');
+  const swiperElements = document.querySelectorAll('.best-seller-section .swiper-element');
+  const isVariantCActive = document.body.hasAttribute('data-bestseller-c');
+  const isMobile = window.innerWidth <= 768;
+  
+  let swiper = initSwiperBestSeller();
+
+  // show product images on mobile - variant c
+  if ( isVariantCActive && isMobile ) {
+    const imagesContainer = document.querySelectorAll('.best-seller-section .product-wrapper .images-container');
+
+    imagesContainer.forEach(imageContainer => {
+      let images = imageContainer.querySelectorAll('img');
+      let nextImageIndex = 1;
+      
+      function showNextImage() {
+        images[nextImageIndex == 1 ?  0 : 1].style.display = 'none';
+        images[nextImageIndex].style.display = 'block';
+        nextImageIndex = (nextImageIndex + 1) % images.length;
+      }
+      setInterval(showNextImage, 3000); 
+    });
+  }
+
+  categoryButtons.forEach(categoryButton => {
+    categoryButton.addEventListener('click', e => {
+      let target = e.currentTarget;
+      let { category } = target.dataset;
+      
+      // set active button
+      categoryButtons.forEach(categoryButton => categoryButton.classList.remove('active'));
+      target.classList.add('active');
+
+      // show products according to active button
+      productCards.forEach(productCard => {
+        let { category:productCardCategory} = productCard.dataset;
+        productCard.classList.remove('best-seller-hidden');
+        if (category != productCardCategory) productCard.classList.add('best-seller-hidden');
+      });
+
+      // slider on desktop 
+      if ( !isMobile ) { 
+        if ( category !== "cat1" ) {
+          swiper.destroy(); 
+          swiperElements.forEach(swiperElement => {
+            swiperElement.classList.add('best-seller-hidden');
+          });
+          productCardsContainer.classList.add('not-slider');
+          bestSellerFooter.classList.add('not-slider');
+        } else {
+          initSwiperBestSeller();
+          swiperElements.forEach(swiperElement => {
+            swiperElement.classList.remove('best-seller-hidden');
+          });
+          productCardsContainer.classList.remove('not-slider');
+          bestSellerFooter.classList.remove('not-slider');
+        }  
+      } else {
+        // slider on mobile when switching between categoryButtons
+        swiper.destroy();
+        initSwiperBestSeller();
+      }
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
   // Start PDP Social Proof Data
@@ -127,6 +235,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // End PDP Social Proof Data
+
+   // best-seller-section 
+   initBestSellerSection();
 
   // Start Order by Receive by
   const showReceiveBy = window.showOrderBy;
