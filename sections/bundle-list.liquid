@@ -81,7 +81,8 @@
                         </div>
                         <div class="bf-bundles__content">
                             <div class="bf-bundle__rating">
-                                {{ product.metafields.stamped.badge }}
+                                <img src="{{ 'bundle_r_2.svg' | asset_url }}" alt="">
+                                <span class="underline_btn">{{ block.settings.comment_ammount }} reviews</span>
                             </div>
                             <div class="bf-bundles__item-title">
                                 <h4>{{ block.settings.product.title | replace: ' (Sold Out)', '' | replace: ' (Pre-Order)', '' }}</h4>
@@ -183,6 +184,12 @@
                         "type": "product",
                         "id": "product",
                         "label": "t:common.product.label"
+                    },
+                    {
+                        "type" : "number",
+                        "id" : "comment_ammount",
+                        "label" : "t:common.comment.amount.label",
+                        "default": 100
                     },
                     {
                         "type": "range",

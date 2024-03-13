@@ -7,7 +7,7 @@
           "type": "announcement",
           "settings": {
             "heading": "Holiday Sale Ends In:",
-            "timer": "2024-03-12T23:59:59",
+            "timer": "2024-03-17T23:59:59",
             "timer_next": 7
           }
         },
@@ -368,15 +368,17 @@
           "type": "product",
           "settings": {
             "product": "skin-ssentials-set-doctorly-choice",
+            "comment_ammount": 202,
             "percent": 34,
             "ppl_choise": 0
           }
         },
-        "product_JVJkGj": {
+        "product_CnMwyU": {
           "type": "product",
           "settings": {
-            "product": "youth-boosting-bundle",
-            "percent": 34,
+            "product": "youthify-or-glow-set",
+            "comment_ammount": 514,
+            "percent": 44,
             "ppl_choise": 0
           }
         },
@@ -384,31 +386,26 @@
           "type": "product",
           "settings": {
             "product": "best-seller-bundle",
+            "comment_ammount": 729,
             "percent": 32,
             "ppl_choise": 1
-          }
-        },
-        "product_CnMwyU": {
-          "type": "product",
-          "settings": {
-            "product": "youthify-or-glow-set",
-            "percent": 44,
-            "ppl_choise": 0
-          }
-        },
-        "product_pCXqdM": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "percent": 34,
-            "ppl_choise": 0
           }
         },
         "product_zF9wP9": {
           "type": "product",
           "settings": {
             "product": "all-in-one-face-serum-bundle",
+            "comment_ammount": 212,
             "percent": 44,
+            "ppl_choise": 0
+          }
+        },
+        "product_JVJkGj": {
+          "type": "product",
+          "settings": {
+            "product": "youth-boosting-bundle",
+            "comment_ammount": 202,
+            "percent": 34,
             "ppl_choise": 0
           }
         },
@@ -416,6 +413,7 @@
           "type": "product",
           "settings": {
             "product": "hydra-glow",
+            "comment_ammount": 187,
             "percent": 42,
             "ppl_choise": 0
           }
@@ -424,20 +422,30 @@
           "type": "product",
           "settings": {
             "product": "confidence-booster-bundle",
+            "comment_ammount": 242,
             "percent": 36,
+            "ppl_choise": 0
+          }
+        },
+        "product_pCXqdM": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "comment_ammount": 283,
+            "percent": 34,
             "ppl_choise": 0
           }
         }
       },
       "block_order": [
         "product_EQ6HJY",
-        "product_JVJkGj",
-        "product_3Frmww",
         "product_CnMwyU",
-        "product_pCXqdM",
+        "product_3Frmww",
         "product_zF9wP9",
+        "product_JVJkGj",
         "product_nRhA4x",
-        "product_aKUc4N"
+        "product_aKUc4N",
+        "product_pCXqdM"
       ],
       "settings": {
         "heading": "Choose your bundle.",
