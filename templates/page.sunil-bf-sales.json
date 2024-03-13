@@ -372,11 +372,11 @@
             "ppl_choise": 0
           }
         },
-        "product_CnMwyU": {
+        "product_JVJkGj": {
           "type": "product",
           "settings": {
-            "product": "youthify-or-glow-set",
-            "percent": 44,
+            "product": "youth-boosting-bundle",
+            "percent": 34,
             "ppl_choise": 0
           }
         },
@@ -388,19 +388,27 @@
             "ppl_choise": 1
           }
         },
+        "product_CnMwyU": {
+          "type": "product",
+          "settings": {
+            "product": "youthify-or-glow-set",
+            "percent": 44,
+            "ppl_choise": 0
+          }
+        },
+        "product_pCXqdM": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "percent": 34,
+            "ppl_choise": 0
+          }
+        },
         "product_zF9wP9": {
           "type": "product",
           "settings": {
             "product": "all-in-one-face-serum-bundle",
             "percent": 44,
-            "ppl_choise": 0
-          }
-        },
-        "product_JVJkGj": {
-          "type": "product",
-          "settings": {
-            "product": "youth-boosting-bundle",
-            "percent": 34,
             "ppl_choise": 0
           }
         },
@@ -419,25 +427,17 @@
             "percent": 36,
             "ppl_choise": 0
           }
-        },
-        "product_pCXqdM": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "percent": 34,
-            "ppl_choise": 0
-          }
         }
       },
       "block_order": [
         "product_EQ6HJY",
-        "product_CnMwyU",
-        "product_3Frmww",
-        "product_zF9wP9",
         "product_JVJkGj",
+        "product_3Frmww",
+        "product_CnMwyU",
+        "product_pCXqdM",
+        "product_zF9wP9",
         "product_nRhA4x",
-        "product_aKUc4N",
-        "product_pCXqdM"
+        "product_aKUc4N"
       ],
       "settings": {
         "heading": "Choose your bundle.",
