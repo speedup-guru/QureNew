@@ -45,7 +45,7 @@
     },
     "comment": {
       "label": "Comment",
-      "amount" : {
+      "amount": {
         "label": "Comments amount"
       }
     },
