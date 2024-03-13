@@ -58,6 +58,9 @@
     "subheading": {
       "label": "Subheading"
     },
+    "recommended": {
+      "label": "Recommended"
+    },
     "menu": {
       "label": "Menu"
     },

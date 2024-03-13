@@ -370,7 +370,8 @@
             "product": "skin-ssentials-set-doctorly-choice",
             "comment_ammount": 202,
             "percent": 34,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 1
           }
         },
         "product_CnMwyU": {
@@ -379,7 +380,8 @@
             "product": "youthify-or-glow-set",
             "comment_ammount": 514,
             "percent": 44,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 0
           }
         },
         "product_3Frmww": {
@@ -388,7 +390,8 @@
             "product": "best-seller-bundle",
             "comment_ammount": 729,
             "percent": 32,
-            "ppl_choise": 1
+            "ppl_choise": 1,
+            "recommended": 0
           }
         },
         "product_zF9wP9": {
@@ -397,7 +400,8 @@
             "product": "all-in-one-face-serum-bundle",
             "comment_ammount": 212,
             "percent": 44,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 0
           }
         },
         "product_JVJkGj": {
@@ -406,7 +410,8 @@
             "product": "youth-boosting-bundle",
             "comment_ammount": 202,
             "percent": 34,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 0
           }
         },
         "product_nRhA4x": {
@@ -415,7 +420,8 @@
             "product": "hydra-glow",
             "comment_ammount": 187,
             "percent": 42,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 0
           }
         },
         "product_aKUc4N": {
@@ -424,7 +430,8 @@
             "product": "confidence-booster-bundle",
             "comment_ammount": 242,
             "percent": 36,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 0
           }
         },
         "product_pCXqdM": {
@@ -433,7 +440,8 @@
             "product": "ageless-glow-bundle",
             "comment_ammount": 283,
             "percent": 34,
-            "ppl_choise": 0
+            "ppl_choise": 0,
+            "recommended": 0
           }
         }
       },
