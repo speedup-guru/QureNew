@@ -52,7 +52,10 @@
                                             </div>
                                             {% if block.settings.text != blank %}
                                                 <div class="c_desc ps-2">
-                                                    {{ block.settings.text }}
+                                                    {{ block.settings.text 
+                                                    | replace:  '<strong>', '<span>' 
+                                                    | replace:  '</strong>', '</span>' 
+                                                    }}
                                                 </div>
                                             {% endif %}
                                         </div>
@@ -60,7 +63,10 @@
                                         <div class="t_c_info d-flex t_c_right">
                                             {% if block.settings.text != blank %}
                                                 <div class="c_desc pe-2 text-end">
-                                                    {{ block.settings.text }}
+                                                    {{ block.settings.text 
+                                                    | replace:  '<strong>', '<span>' 
+                                                    | replace:  '</strong>', '</span>' 
+                                                    }}
                                                 </div>
                                             {% endif %}
                                             <div class="c_img">
