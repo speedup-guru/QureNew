@@ -154,7 +154,8 @@ const initBestSellerSection = () => {
       } else {
         // slider on mobile when switching between categoryButtons
         swiper.destroy();
-        initSwiperBestSeller();
+        swiper = initSwiperBestSeller();
+        swiper.update();
       }
     });
   });
