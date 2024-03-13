@@ -3560,6 +3560,16 @@ p.border-r {
 @media(max-width:480px) {
     .trusted_cl .t_c_info {
         width: 100%;
+        padding: 10px;
+    }
+
+    .trusted_cl .t_c_info h6 span {
+        letter-spacing: 0.1px;
+        padding-right: 3px;
+    }
+
+    .trusted_cl .t_c_info h6 {
+        letter-spacing: 0px;
     }
 
     .trusted_cl_m .play_btn span h6 {
