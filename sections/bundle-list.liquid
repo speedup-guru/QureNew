@@ -62,15 +62,39 @@
                                 data-arrowright="bf-bundle_slider{{ forloop.index }}-swiper-next">
                                 <div class="swiper-wrapper">
                                     {% for media in product.media %}
-                                        <div class="swiper-slide">
-                                            <div class="sale-bf-img">
-                                                <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x' }}" />
-                                                <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" />
-                                            </div>
-                                            {% if block.settings.ppl_choise == forloop.index %}
-                                                <div class="bf-bundles__pplChoice">Over 20,000 people chose these products</div>
-                                            {% endif %}
-                                        </div>
+                                        {% case media.media_type %}
+                                            {% when 'external_video' %}
+                                                <div class="swiper-slide">
+                                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v={{ media.external_id }}">
+                                                        <div class="sale-bf-img">
+                                                            <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x' }}" />
+                                                            <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" />
+                                                            {% comment %} <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x620', crop: 'top' }}" /> {% endcomment %}
+                                                            {% comment %} <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x464', crop: 'top' }}" /> {% endcomment %}
+                                                        </div>
+                                                    </a>
+                                                </div>  
+                                            {% else %}
+                                                <div class="swiper-slide">
+                                                    <div class="sale-bf-img">
+                                                        <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x' }}" />
+                                                        <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" />
+                                                        {% comment %} <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x620', crop: 'top' }}" /> {% endcomment %}
+                                                        {% comment %} <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x464', crop: 'top' }}" /> {% endcomment %}
+                                                        {% if block.settings.recommended == forloop.index %}
+                                                            <div class="doctorly_rec">
+                                                                <img src="{{ 'doctorly.png' | asset_url }}" alt="" class="img-fluid">
+                                                                <div class="doctorly_text">
+                                                                    <p>Doctorly <br><span>Recommended</span></p>
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    </div>
+                                                    {% if block.settings.ppl_choise == forloop.index %}
+                                                        <div class="bf-bundles__pplChoice">Over 20,000 people chose these products</div>
+                                                    {% endif %}
+                                                </div>        
+                                        {% endcase %}
                                     {% endfor %}
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -81,7 +105,8 @@
                         </div>
                         <div class="bf-bundles__content">
                             <div class="bf-bundle__rating">
-                                {{ product.metafields.stamped.badge }}
+                                <img src="{{ 'bundle_r_2.svg' | asset_url }}" alt="">
+                                <span class="underline_btn">{{ block.settings.comment_ammount }} reviews</span>
                             </div>
                             <div class="bf-bundles__item-title">
                                 <h4>{{ block.settings.product.title | replace: ' (Sold Out)', '' | replace: ' (Pre-Order)', '' }}</h4>
@@ -185,6 +210,12 @@
                         "label": "t:common.product.label"
                     },
                     {
+                        "type" : "number",
+                        "id" : "comment_ammount",
+                        "label" : "t:common.comment.amount.label",
+                        "default": 100
+                    },
+                    {
                         "type": "range",
                         "id": "percent",
                         "min": 0,
@@ -198,6 +229,12 @@
                         "type": "number",
                         "id": "ppl_choise",
                         "label": "t:common.people_choise.label",
+                        "default": 0
+                    },
+                    {
+                        "type": "number",
+                        "id": "recommended",
+                        "label": "t:common.recommended.label",
                         "default": 0
                     }
                 ]

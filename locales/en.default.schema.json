@@ -43,6 +43,12 @@
         "label": "day"
       }
     },
+    "comment": {
+      "label": "Comment",
+      "amount": {
+        "label": "Comments amount"
+      }
+    },
     "heading": {
       "label": "Heading",
       "mobile": {
@@ -51,6 +57,9 @@
     },
     "subheading": {
       "label": "Subheading"
+    },
+    "recommended": {
+      "label": "Recommended"
     },
     "menu": {
       "label": "Menu"

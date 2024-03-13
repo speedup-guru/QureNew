@@ -2,15 +2,17 @@
 
 
 {% endcomment %}
-<div class="orderby-receiveby hidden">
-  <div class="orderby-receiveby__today">
-    {% render 'pdm_icon-package' %}
-    <span class="orderby-receiveby__today-text">{{ settings.today_text }}</span>
-    {% render 'pdm_icon-arrow-right' %}
-  </div>
+{% if settings.today_text != blank %}
+  <div class="orderby-receiveby hidden">
+    <div class="orderby-receiveby__today">
+      {% render 'pdm_icon-package' %}
+      <span class="orderby-receiveby__today-text">{{ settings.today_text }}</span>
+      {% render 'pdm_icon-arrow-right' %}
+    </div>
     <div class="orderby-receiveby__dates">
-    {% render 'pdm_icon-truck' %}
-    <span class="orderby-receiveby__shipping-text">
-    </span>
+      {% render 'pdm_icon-truck' %}
+      <span class="orderby-receiveby__shipping-text">
+      </span>
+    </div>
   </div>
-</div>
+{% endif %}
