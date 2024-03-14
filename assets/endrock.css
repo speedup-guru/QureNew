@@ -536,9 +536,7 @@
       }  
       .swiper-pagination-bullets {
         bottom: 65px;
-      }
-      .best-seller-wrapper__footer {
-        padding-top: 24px;
+        margin-bottom: 24px;
       }
     }
   }
