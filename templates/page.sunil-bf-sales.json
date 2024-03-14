@@ -374,22 +374,32 @@
             "recommended": 0
           }
         },
+        "product_pCXqdM": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "comment_ammount": 283,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 0
+          }
+        },
+        "product_aKUc4N": {
+          "type": "product",
+          "settings": {
+            "product": "confidence-booster-bundle",
+            "comment_ammount": 242,
+            "percent": 36,
+            "ppl_choise": 0,
+            "recommended": 0
+          }
+        },
         "product_JVJkGj": {
           "type": "product",
           "settings": {
             "product": "youth-boosting-bundle",
             "comment_ammount": 202,
             "percent": 34,
-            "ppl_choise": 0,
-            "recommended": 0
-          }
-        },
-        "product_zF9wP9": {
-          "type": "product",
-          "settings": {
-            "product": "all-in-one-face-serum-bundle",
-            "comment_ammount": 212,
-            "percent": 44,
             "ppl_choise": 0,
             "recommended": 0
           }
@@ -402,6 +412,16 @@
             "percent": 34,
             "ppl_choise": 0,
             "recommended": 1
+          }
+        },
+        "product_zF9wP9": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-bundle",
+            "comment_ammount": 212,
+            "percent": 44,
+            "ppl_choise": 0,
+            "recommended": 0
           }
         },
         "product_CnMwyU": {
@@ -424,26 +444,6 @@
             "recommended": 0
           }
         },
-        "product_aKUc4N": {
-          "type": "product",
-          "settings": {
-            "product": "confidence-booster-bundle",
-            "comment_ammount": 242,
-            "percent": 36,
-            "ppl_choise": 0,
-            "recommended": 0
-          }
-        },
-        "product_pCXqdM": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "comment_ammount": 283,
-            "percent": 34,
-            "ppl_choise": 0,
-            "recommended": 0
-          }
-        },
         "product_iRt6LW": {
           "type": "product",
           "disabled": true,
@@ -458,13 +458,13 @@
       },
       "block_order": [
         "product_3Frmww",
+        "product_pCXqdM",
+        "product_aKUc4N",
         "product_JVJkGj",
-        "product_zF9wP9",
         "product_EQ6HJY",
+        "product_zF9wP9",
         "product_CnMwyU",
         "product_nRhA4x",
-        "product_aKUc4N",
-        "product_pCXqdM",
         "product_iRt6LW"
       ],
       "settings": {
