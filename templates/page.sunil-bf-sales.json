@@ -122,6 +122,18 @@
             "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n                                    <\/div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System<\/p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ><\/a>\n                                    <\/div>\n                                <\/div>"
           }
         },
+        "result_qPtW3B": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_ellie.webp",
+            "heading": "my skin RETURNED to LIFE!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ellie V.",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n                                    <\/div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System<\/p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ><\/a>\n                                    <\/div>\n                                <\/div>"
+          }
+        },
         "result_xWj8KY": {
           "type": "result",
           "settings": {
@@ -217,22 +229,11 @@
             "client": "Mary R.M.",
             "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_chest.webp' | asset_url }}\" alt=\"\">\n                                    <\/div>\n                                    <div class=\"rl_info\">\n                                        <p>Neck & Décolletage LED Device<\/p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ><\/a>\n                                    <\/div>\n                                <\/div>"
           }
-        },
-        "result_qPtW3B": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_ellie.webp",
-            "heading": "my skin RETURNED to LIFE!",
-            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Ellie V.",
-            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n                                    <\/div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System<\/p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ><\/a>\n                                    <\/div>\n                                <\/div>"
-          }
         }
       },
       "block_order": [
         "result_9TbCEi",
+        "result_qPtW3B",
         "result_xWj8KY",
         "result_4bU4Vd",
         "result_HAiWRG",
@@ -240,8 +241,7 @@
         "result_LnaKQn",
         "result_CXpHFb",
         "result_TacyCe",
-        "result_XBpdJz",
-        "result_qPtW3B"
+        "result_XBpdJz"
       ],
       "custom_css": [
         "@media only screen and (min-width: 769px) {.section_header {width: 50%; }}"
@@ -443,6 +443,17 @@
             "ppl_choise": 0,
             "recommended": 0
           }
+        },
+        "product_iRt6LW": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "easter-bundle",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 0
+          }
         }
       },
       "block_order": [
@@ -453,7 +464,8 @@
         "product_JVJkGj",
         "product_nRhA4x",
         "product_aKUc4N",
-        "product_pCXqdM"
+        "product_pCXqdM",
+        "product_iRt6LW"
       ],
       "settings": {
         "heading": "Choose your bundle.",
