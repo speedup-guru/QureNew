@@ -179,37 +179,43 @@
         "image_CMHyhX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.svg"
+            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "mobile_hide": false
           }
         },
         "image_CE8JHg": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elle.svg"
+            "image": "shopify:\/\/shop_images\/elle.svg",
+            "mobile_hide": false
           }
         },
         "image_DGN3zc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glamour.svg"
+            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "mobile_hide": false
           }
         },
         "image_wdPDGq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grazia.svg"
+            "image": "shopify:\/\/shop_images\/grazia.svg",
+            "mobile_hide": false
           }
         },
         "image_TXKk7A": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan.svg"
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "mobile_hide": false
           }
         },
         "image_k7aY9B": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png"
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "mobile_hide": false
           }
         }
       },
@@ -223,6 +229,7 @@
         "image_k7aY9B"
       ],
       "settings": {
+        "heading": ""
       }
     },
     "two_column_box_p7J7bk": {
@@ -566,48 +573,63 @@
             "text": "<p>\"In terms of <strong>safety<\/strong>, the micro stamping devices, this [Qure's Micro-Infusion] is great...\"<\/p><h6><strong>Dr Maxfield, MD,<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_LGjiGa": {
+        "video_pEM9DL": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8",
-            "text": "<p>\"This will definitely work and there have been studies to show that<br\/>this will definitely work...\"<\/p><h6><strong>Dr Shah & Dr Maxfield<\/strong>, Certified Dermatologist<br\/>                                    <\/h6>"
+            "image": "shopify:\/\/shop_images\/trusted_maren1.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=0DYmxvyKAVI",
+            "wistia_id": "",
+            "text": "<p>\"Qure’s system is far more affordable and convenient than the in office procedure because it’s done in the comfort of your home.\"<\/p><h6><strong>Dr Maren Locke<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         },
-        "video_p33xg8": {
+        "video_XF3pgt": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maren.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
-            "text": "<p>\"There are actually many of these on the market but I love this one<br\/>for several reasons. It's well made, it has a comfortable adjustable<br\/>headband, it comes with an app..\"<\/p><h6><strong>Dr. Maren Locke<\/strong>, Board Certified Dermatologist<br\/>                                    <\/h6>"
+            "image": "shopify:\/\/shop_images\/trusted_anthony.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=gGVKgTHloXw",
+            "wistia_id": "",
+            "text": "<p>\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Board-Certified Plastic Surgeon<\/h6>"
           }
         },
-        "video_DX4hEm": {
+        "video_C6tFxe": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maxfield.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
-            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield<\/strong>, Board Certified Dermatologist<\/h6>"
+            "image": "shopify:\/\/shop_images\/trusted_dylan.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=mVdncsTAXiA",
+            "wistia_id": "",
+            "text": "<p>\"The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.”<\/p><h6><strong>Dr Dylan Greeney<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         },
-        "video_6Vixwm": {
+        "video_jPYhQi": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_greeney.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
-            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to<br\/>stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney<\/strong>, Board Certified Dermatologist<\/h6>"
+            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "wistia_id": "",
+            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_PECKPL": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_mona.webp",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
+            "wistia_id": "",
+            "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Internal Medicine<\/h6>"
           }
         }
       },
       "block_order": [
         "feedback_9Aa4j6",
         "feedback_NVbkWM",
-        "video_LGjiGa",
-        "video_p33xg8",
-        "video_DX4hEm",
-        "video_6Vixwm"
+        "video_pEM9DL",
+        "video_XF3pgt",
+        "video_C6tFxe",
+        "video_jPYhQi",
+        "video_PECKPL"
       ],
       "settings": {
+        "classname": "trusted_bl",
         "heading": "Reviewed by world leading Dermatologists",
         "likes": "23K",
         "views": "1.3M VIEWS",
@@ -726,6 +748,7 @@
         "result_AE79LP"
       ],
       "settings": {
+        "classname": "mi_landing_result",
         "heading": "Results you‘ll see with your own eyes"
       }
     },
