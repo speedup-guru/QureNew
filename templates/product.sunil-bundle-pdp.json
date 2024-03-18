@@ -12,6 +12,7 @@
         },
         "preorder_P3zKE8": {
           "type": "preorder",
+          "disabled": true,
           "settings": {
           }
         },
