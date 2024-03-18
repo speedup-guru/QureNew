@@ -385,6 +385,30 @@
             "client": "Lena A.",
             "code": ""
           }
+        },
+        "result_aEQJMi": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_chery.webp",
+            "heading": "I SEE A DIFFERENCE!!",
+            "text": "<p>\"I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 2 weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.\"<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Cheryl T.",
+            "code": ""
+          }
+        },
+        "result_AdLwAt": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_jessica.webp",
+            "heading": "Best experience",
+            "text": "<p>\"Best experience. I got an excellent costumer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100\/100 , My skin had a small breakout, enlarged pores and was tired, with just one micro-infusion treatment it changed radically in 3 days, I will buy it again”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jessica R.",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -393,7 +417,9 @@
         "result_UnxUQa",
         "result_KdLc7q",
         "result_ehhnNV",
-        "result_rzJmMH"
+        "result_rzJmMH",
+        "result_aEQJMi",
+        "result_AdLwAt"
       ],
       "settings": {
         "classname": "mi_landing_result",
