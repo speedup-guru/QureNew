@@ -1278,7 +1278,7 @@ $('.faq-menu__item a[href*="#"]').click(function (e) {
     e.preventDefault()
     console.log("click11")
     var el = $(this),
-        target = el.attr('href'),
+        target = el.attr('href').substring(el.attr('href').indexOf("#")),
         indiTarget = $('[data-id="' + target + '"]');
     $(target).add(indiTarget).addClass('active').siblings().removeClass('active');
 });
