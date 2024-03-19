@@ -227,7 +227,9 @@
 
                 </div>
             </div>
+            {% comment %} component-original {% endcomment %}
             <div class="col-md-6  order-1 order-md-2">
+                <!--
                 <div class="refill_slider mw-mob-100">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
@@ -340,6 +342,9 @@
                         </div>
                     {% endif %}
                 </div>
+                -->
+            {% comment %} end component original {% endcomment %}
+            {% render 'endrock_before_after', data: section.blocks %}
             </div>
         </div>
     </div>
@@ -547,7 +552,56 @@
                         "default": 0
                     }
                 ]
-		    }
+		    },
+            {
+                "type": "before_and_after",
+                "name": "before and after",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_1",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_1",
+                        "label": "Alt text Imagen 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_2",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_2",
+                        "label": "Alt text Imagen 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_3",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_3",
+                        "label": "Alt text Imagen 3"
+                    }
+                ]                  
+            },
+            {
+                "type": "video_before_and_after",
+                "name": "video before and after",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "video",
+                        "id": "video_new_section",
+                        "label": "video"
+                    }
+                ]
+            }          
         ]
     }
 {% endschema %}

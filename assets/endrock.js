@@ -52,6 +52,21 @@ const deliveryDate = (location) => {
   document.querySelector('.orderby-receiveby').classList.remove('hidden');
 }
 
+// swiper PDP: Before & After First Image 
+
+const swiperInfoResutl = new Swiper('.swiper-info-result', {
+
+});
+
+// end swiper PDP: Before & After First Image
+
+const swiperBeforeAfter = (selector) => {
+  return new Swiper(`${selector}`, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
   // Start PDP Social Proof Data
@@ -133,6 +148,50 @@ document.addEventListener('DOMContentLoaded', function() {
   if (showReceiveBy) {
     userLocationIP();
   }
+
+  //  PDP: Before & After First Image 
+
+  const productButton = document.getElementById('productButton');
+  const resultButton = document.getElementById('resultButton');
+  const dermaButton = document.getElementById('dermaButton');
+
+  const productComponent = document.getElementById('info-product');
+  const resultComponent = document.getElementById('info-result');
+  const dermaComponent = document.getElementById('info-derma');
+
+  swiperBeforeAfter('.swiper-info-result')
+
+  function showComponent(component) {
+    document.querySelectorAll('[id^="info-"]').forEach(component => {
+      component.style.display = 'none';
+    });
+
+    component.style.display = 'block';
+  }
+
+
+  productButton.addEventListener('click', function() {
+    showComponent(productComponent);
+    resultButton.classList.remove('active');
+    productButton.classList.add('active');
+    dermaButton.classList.remove('active');
+  });
+
+  resultButton.addEventListener('click', function() {
+    showComponent(resultComponent);
+    resultButton.classList.add('active');
+    productButton.classList.remove('active');
+    dermaButton.classList.remove('active');
+  });
+
+  dermaButton.addEventListener('click', function() {
+    showComponent(dermaComponent);
+    dermaButton.classList.add('active');
+    productButton.classList.remove('active');
+    resultButton.classList.remove('active');
+  });
+
+  // end PDP: Before & After First Image 
 
 });
 
