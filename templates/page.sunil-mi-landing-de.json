@@ -1,0 +1,12 @@
+{
+    "sections": {
+      "main": {
+        "type": "temp-page-sunil-mi-landing-de",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
