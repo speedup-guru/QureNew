@@ -23,3 +23,9 @@
     bottom: 5px !important;
     padding-top: 0px;
 }
+@media(max-width:767px) {
+    .header_btn a {
+        font-size: 12px !important;
+        white-space: nowrap;
+    }
+}

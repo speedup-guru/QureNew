@@ -3225,7 +3225,7 @@
     position: relative;
 }
 
-.trusted_bl .trust_img .play_btn {
+.trusted_bl .trust_img .play_btn, .sale-bf-img .play_btn {
     position: absolute;
     top: 0;
     left: 0;
@@ -3246,12 +3246,12 @@
     max-width: 163px;
 }
 
-.trusted_bl .trust_img .play_btn a span {
+.trusted_bl .trust_img .play_btn a span, .sale-bf-img .play_btn a span {
     display: flex;
     align-items: center;
 }
 
-.trusted_bl .trust_img .play_btn a span h6 {
+.trusted_bl .trust_img .play_btn a span h6, .sale-bf-img .play_btn a span h6 {
     margin-bottom: 0;
     padding-left: 8px;
     font-size: 16px;

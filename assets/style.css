@@ -30495,6 +30495,10 @@ p {
     .mw-mob-100 {
         margin: 0 -24px
     }
+
+    .mw-mob-70 {
+        margin: 0 -10px
+    }
 }
 
 /* -- common css for background color start -- */
