@@ -306,7 +306,7 @@
         "content_XdKeWR"
       ],
       "settings": {
-        "classname": "technology_light pt-30",
+        "classname": "technology_light pt-30 section",
         "column_image": 6,
         "column_content": 6
       }
