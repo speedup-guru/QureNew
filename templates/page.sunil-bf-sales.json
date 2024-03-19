@@ -446,11 +446,10 @@
         },
         "product_iRt6LW": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "easter-bundle",
-            "comment_ammount": 100,
-            "percent": 34,
+            "comment_ammount": 147,
+            "percent": 56,
             "ppl_choise": 0,
             "recommended": 0
           }
