@@ -594,7 +594,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_mona.webp",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
-            "video_label": "Watch Video",
+            "video_label": "Video ansehen",
             "wistia_id": "",
             "text": "<p>\"Man sieht eine Art strahlenden Teint nach der Anwendung, und innerhalb von ein paar Tagen sieht die Haut wirklich fantastisch aus.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Innere Medizin<\/h6>"
           }
@@ -785,7 +785,7 @@
       "settings": {
         "classname": "beauty_skincare section",
         "heading": "Wirksamer und sicherer als andere Microneedling-Systeme",
-        "text": "<p>Im Gegensatz zu den Nadelroller-Geräten für zu Hause erfordert die Micro-Infusion<strong>wenig bis gar keine Ausfallzeiten, ist praktisch schmerzfrei<\/strong>und minimiert das Risiko von Infektionen und Reizungen<\/p>"
+        "text": "<p>Im Gegensatz zu den Nadelroller-Geräten für zu Hause erfordert die Micro-Infusion wenig bis<strong> gar keine Ausfallzeiten, <\/strong>ist praktisch <strong>schmerzfrei <\/strong>und minimiert das Risiko von Infektionen und Reizungen.<\/p>"
       }
     },
     "guide_xibEe6": {
