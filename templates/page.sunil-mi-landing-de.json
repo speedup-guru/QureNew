@@ -819,7 +819,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step3.webp",
             "text": "<p>Sobald das Serum genügend Zeit hatte, in die Nadeln einzudringen, kann der Deckel abgenommen werden und die Mikroinfusion beginnen!<\/p>",
-            "step": "STEP"
+            "step": "SCHRITT"
           }
         },
         "object_THFDbC": {
@@ -827,7 +827,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step4.webp",
             "text": "<p>Beginnend in der Mitte des Gesichts nach außen arbeiten, um das gesamte Gesicht zu bedecken. Das restliche Serum aus dem System nehmen, auf Gesicht und Hals auftragen und über Nacht einwirken lassen.<\/p>",
-            "step": "STEP"
+            "step": "SCHRITT"
           }
         },
         "object_tMTm7n": {
