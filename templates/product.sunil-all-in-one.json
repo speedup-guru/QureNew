@@ -213,9 +213,18 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Bakuchiol<\/strong><\/p>",
-            "text": "<p>Get all the benefits of retinol without the risk of irritation. Bakuchiol increases cell turnover and stimulates collagen production to make your skin look smooth and firm.<\/p>",
+            "text": "<p>Get the benefits of retinol - in a more natural way! Bakuchiol helps to stimulate cell turnover to make your skin look smooth and firm.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>saw significant improvement in lines and wrinkles, pigmentation, elasticity, firmness and overall reduction in photo‐damage.<\/p>",
             "popup_content": "<p>Subjects saw significant improvement in lines and wrinkles, pigmentation, elasticity, firmness and overall reduction in photo‐damage without usual retinol therapy‐associated undesirable side effects.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included healthy subjects between the ages of 30 and 55. A cream containing Bakuchiol was applied daily for 12 weeks on the participants. Change in wrinkle and skin pigmentation appearance were assessed at weeks 4, 8, and 12.<\/p><p>Reference: University of California, Davis. (2017). Comparison of the Cosmetic Effects of Bakuchiol and Retinol.NCT03112863.<\/p>"
+          }
+        },
+        "object_Czzq3P": {
+          "type": "object",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "feedback": "",
+            "popup_content": ""
           }
         },
         "object_DiMGjf": {
@@ -249,6 +258,7 @@
       "block_order": [
         "object_eBqNf8",
         "object_gRF8VJ",
+        "object_Czzq3P",
         "object_DiMGjf",
         "object_iPqM8q",
         "object_UtrtEV"
