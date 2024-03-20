@@ -138,7 +138,7 @@
             "image": "shopify:\/\/shop_images\/see_work.png",
             "image_mobile": "shopify:\/\/shop_images\/see_work_mob.webp",
             "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4",
-            "video_label": "Click To Watch"
+            "video_label": "So funktioniert's"
           }
         }
       },
@@ -158,7 +158,7 @@
         "video_GAjMEW"
       ],
       "settings": {
-        "heading": "Der schnellste, einfachste, bequemste Weg, um eine \"Red Carpet ready\" Haut zu bekommen",
+        "heading": "Der schnellste, einfachste, bequemste Weg, um \"Red Carpet ready\" Haut zu bekommen",
         "heading_mobile": "Der schnellste, einfachste, bequemste Weg, um \"Red Carpet ready\" Haut zu bekommen",
         "product": "",
         "product_images_limit": 6,
@@ -297,7 +297,7 @@
         "content_XdKeWR": {
           "type": "content",
           "settings": {
-            "text": "<h2>Der ideale Hautbooster - selbstbewusste Make-up-freie Tage[image_mobile]<\/h2><p>Micro-Infusion - <strong>eine bei Promis beliebte Gesichtsbehandlung<\/strong> - und jetzt endlich auch für dich zu Hause zugänglich.<\/p><p>Genieße deine Mikro-Infusion-Gesichtsbehandlung gönnen, <strong>für einen verfeinerten Teint, glatte Hauttextur und Hollywood-GLOW.<\/strong><\/p><p>Und das Beste daran? Du kannst die <strong>Behandlung zu einem Bruchteil der Kosten bequem von zu Hause aus genießen.<\/strong><\/p>",
+            "text": "<h2>Der ideale Hautbooster - selbstbewusste Make-up-freie Tage[image_mobile]<\/h2><p>Micro-Infusion -<strong>eine bei Promis beliebte Gesichtsbehandlung<\/strong> - und jetzt endlich auch für dich zu Hause zugänglich.<\/p><p>Genieße deine Mikro-Infusion-Gesichtsbehandlung gönnen,<strong>für einen verfeinerten Teint, glatte Hauttextur und Hollywood-GLOW.<\/strong><\/p><p>Und das Beste daran? Du kannst die <strong>Behandlung zu einem Bruchteil der Kosten bequem von zu Hause aus genießen.<\/strong><\/p>",
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         }
@@ -326,7 +326,7 @@
           "type": "product",
           "settings": {
             "heading": "",
-            "text": "<h2>Kennst du schon das Qure Mikro-Infusionssystem?<\/h2><p>Kliniken, Dermatologen und Prominente sind sich einig -<strong>ES FUNKTIONIERT<\/strong><\/p><ul><li>Unterstützt bei der Reduzierung von Falten<\/li><li>Wacher mit <strong>frischer, strahlender Haut <\/strong>auf<\/li><li>Die Haut sieht <strong>strahlender<\/strong> aus und fühlt sich <strong>straffer<\/strong> an<\/li><li>Unterstütze das Verblassen von dunklen Flecken und <strong>Aknenarben<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
+            "text": "<h2>Kennst du schon das Qure Mikro-Infusions system?<\/h2><p>Kliniken, Dermatologen und Prominente sind sich einig -<strong>ES FUNKTIONIERT<\/strong><\/p><ul><li>Unterstützt bei der Reduzierung von Falten<\/li><li>Wache mit <strong>frischer, strahlender Haut <\/strong>auf<\/li><li>Die Haut sieht <strong>strahlender<\/strong> aus und fühlt sich <strong>straffer<\/strong> an<\/li><li>Unterstütze das Verblassen von dunklen Flecken und <strong>Aknenarben<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
             "product": ""
           }
         },
@@ -342,12 +342,20 @@
             "button_label": "JETZT KAUFEN & BIS ZU 43 % SPAREN",
             "button_url": "#productSubscription"
           }
+        },
+        "rating_PGdBXE": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star4.8.svg",
+            "text": "4.8\/5 von 43.893 Kunden"
+          }
         }
       },
       "block_order": [
         "product_4qqcQV",
         "image_gnyiNf",
-        "button_rznYjF"
+        "button_rznYjF",
+        "rating_PGdBXE"
       ],
       "settings": {
         "classname": "main_banner section pt-0",
@@ -475,7 +483,7 @@
         "code_3Ljyfa": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"it_info dual_bl\">\n                        <div class=\"dual_bl_steps\">\n                            <p>Das Mikro-Infusionssystem von Qure verfügt über eine doppelte Wirkung, die es einzigartig effektiv macht.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">1<\/div>\n                            <p>Erstens kann die Haut <strong>mit sterilen 24-karätigen Goldnadeln „gestempelt“<\/strong> werden. Dadurch entsteht eine kontrollierte Anregung in deiner Haut, die das Gefühl von Festigkeit verstärken kann und feine Linien und Fältchen glätten kann. Die Nadeln sind dünner als ein menschliches Haar, sodass man sie kaum spürt.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">2<\/div>\n                            <p>Zweitens wird die oberste Hautschicht durch die unsichtbaren Mikrokanäle mit <strong>Seren versorgt, die mit wissenschaftlich belegten Inhaltsstoffen angereichert sind.<\/strong>\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <p>Dadurch können die Inhaltsstoffe tiefer in die Haut eindringen und <strong>besser aufgenommen werden.<\/strong><\/p>\n                        <\/div>\n                        <p>Perfekt für alle, die ihrer Haut ein frisches, strahlendes Aussehen verleihen möchten, insbesondere vor Veranstaltungen oder besonderen Anlässen.<\/p>\n\n                    <\/div>"
+            "code": "<div class=\"it_info dual_bl\">\n                        <div class=\"dual_bl_steps\">\n                            <p>Das Mikro-Infusions system von Qure verfügt über eine doppelte Wirkung, die es einzigartig effektiv macht..\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">1<\/div>\n                            <p>Erstens kann die Haut <strong>mit sterilen 24-karätigen Goldnadeln „gestempelt“<\/strong> werden. Dadurch entsteht eine kontrollierte Anregung in deiner Haut, die das Gefühl von Festigkeit verstärken kann und feine Linien und Fältchen glätten kann.Die Nadeln sind dünner als ein menschliches Haar, sodass man sie kaum spürt.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">2<\/div>\n                            <p>Zweitens wird die oberste Hautschicht durch die unsichtbaren Mikrokanäle mit <strong>Seren versorgt, die mit wissenschaftlich belegten Inhaltsstoffen angereichert sind.<\/strong>\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <p>Dadurch können die Inhaltsstoffe tiefer in die Haut eindringen und <strong>besser aufgenommen werden.<\/strong><\/p>\n                        <\/div>\n                        <p>Perfekt für alle, die ihrer Haut ein frisches, strahlendes Aussehen verleihen möchten, insbesondere vor Veranstaltungen oder besonderen Anlässen.<\/p>\n\n                    <\/div>"
           }
         }
       },
@@ -497,7 +505,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason1.svg",
-            "text": "<p><strong>Spart Zeit, Geld und Aufwand <\/strong>von Behandlungen in Kliniken<\/p>"
+            "text": "<p><strong>Spart Zeit, Geld und Aufwand<\/strong>von Behandlungen in Kliniken<\/p>"
           }
         },
         "icon_LN8RVc": {
@@ -549,14 +557,14 @@
           "type": "feedback",
           "settings": {
             "image": "shopify:\/\/shop_images\/cl_shah.webp",
-            "text": "<p>\"... [Qure's Micro-Infusion] hilft <strong>Deinen Produkten, besser einzudringen.\"<\/strong><\/p><h6><strong>Dr Shah, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
+            "text": "<p>\"... [Qure's Micro-Infusion] hilft Deinen Produkten, besser einzudringen.\"<\/p><h6><strong>Dr Shah, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
           }
         },
         "feedback_NVbkWM": {
           "type": "feedback",
           "settings": {
             "image": "shopify:\/\/shop_images\/cl_max.webp",
-            "text": "<p>\"In Bezug auf die <strong>Sicherheit<\/strong> der Mikro-Stanzgeräte, ist dieses [Qure's Micro-Infusion] großartig...\"<\/p><h6><strong>Dr Maxfield, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
+            "text": "<p>\"In Bezug auf die Sicherheit der Mikro-Stanzgeräte, ist dieses [Qure's Micro-Infusion] großartig...\"<\/p><h6><strong>Dr Maxfield, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
           }
         },
         "video_pEM9DL": {
@@ -785,7 +793,7 @@
       "settings": {
         "classname": "beauty_skincare section",
         "heading": "Wirksamer und sicherer als andere Microneedling-Systeme",
-        "text": "<p>Im Gegensatz zu den Nadelroller-Geräten für zu Hause erfordert die Micro-Infusion wenig bis<strong> gar keine Ausfallzeiten, <\/strong>ist praktisch <strong>schmerzfrei <\/strong>und minimiert das Risiko von Infektionen und Reizungen.<\/p>"
+        "text": "<p>Im Gegensatz zu den Nadelroller-Geräten für zu Hause erfordert die Micro-Infusion<strong>wenig bis gar keine Ausfallzeiten, ist praktisch schmerzfrei<\/strong>und minimiert das Risiko von Infektionen und Reizungen<\/p>"
       }
     },
     "guide_xibEe6": {
@@ -849,7 +857,7 @@
       ],
       "settings": {
         "classname": "",
-        "heading": "Sieh es in Aktion - ein unvergleichliches Strahlen, das so gut aussieht, wie sie wirkt.",
+        "heading": "Sieh es in Aktion - ein unvergleichliches Strahlen, das so gut aussieht, wie es aussieht",
         "text": "<h5>5 Minuten insgesamt, alle 2-4 Wochen<\/h5>"
       }
     },
@@ -1185,7 +1193,7 @@
         "code_fXbXkm": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                                    href=\"#productSubscription\">JETZT KAUFEN & BIS ZU 43 % SPAREN<\/a>\n                                <div class=\"progress_bar\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        <\/div>\n                                    <\/div>\n                                    <p>SCHNELL AUSVERKAUFT<\/p>\n                                <\/div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>90-Tage-Geld-<br> zurück-Garantie <\/p>\n                                    <\/div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        <p>Kostenloser weltweiter<br> Versand über 100 €<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>"
+            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                                    href=\"#productSubscription\">JETZT KAUFEN & BIS ZU 43 % SPAREN<\/a>\n                                <div class=\"progress_bar d-block d-md-block\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        <\/div>\n                                    <\/div>\n                                    <p>SCHNELL AUSVERKAUFT<\/p>\n                                <\/div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>90-Tage-Geld-<br> zurück-Garantie <\/p>\n                                    <\/div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        <p>Kostenloser weltweiter<br> Versand über 100 €<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>"
           }
         }
       },
