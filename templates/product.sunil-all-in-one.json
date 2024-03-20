@@ -104,6 +104,7 @@
       "blocks": {
         "image_diywHk": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/all_serum_difference-desk.png",
             "image_mobile": "shopify:\/\/shop_images\/all_serum_difference-mob.png",
