@@ -41,6 +41,30 @@
         "reserve": false
       }
     },
+    "two_column_box_TyH4EK": {
+      "type": "two-column-box",
+      "blocks": {
+        "content_3tryDW": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare experience.<\/p>",
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "content_3tryDW"
+      ],
+      "custom_css": [
+        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
+        ".row {align-items: center !important;}"
+      ],
+      "settings": {
+        "classname": "richtext_prog_section section",
+        "column_image": 5,
+        "column_content": 7
+      }
+    },
     "featuredin_MiWihW": {
       "type": "featuredin",
       "blocks": {
@@ -97,40 +121,6 @@
       ],
       "settings": {
         "heading": "FEATURED IN"
-      }
-    },
-    "two_column_box_TyH4EK": {
-      "type": "two-column-box",
-      "blocks": {
-        "image_diywHk": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/all_serum_difference-desk.png",
-            "image_mobile": "shopify:\/\/shop_images\/all_serum_difference-mob.png",
-            "classname": "mw-mob-100"
-          }
-        },
-        "content_3tryDW": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare experience.<\/p>",
-            "classname": "it_info p-0 pt-0 pt-md-3"
-          }
-        }
-      },
-      "block_order": [
-        "image_diywHk",
-        "content_3tryDW"
-      ],
-      "custom_css": [
-        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
-        ".row {align-items: center !important;}"
-      ],
-      "settings": {
-        "classname": "richtext_prog_section section",
-        "column_image": 5,
-        "column_content": 7
       }
     },
     "before_after_box_bQQL6y": {
@@ -706,8 +696,8 @@
   },
   "order": [
     "main",
-    "featuredin_MiWihW",
     "two_column_box_TyH4EK",
+    "featuredin_MiWihW",
     "before_after_box_bQQL6y",
     "before_after_box_J7Ee7E",
     "before_after_box_9qjQBW",
