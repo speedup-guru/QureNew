@@ -97,7 +97,7 @@
                             <div class="play_btn">
                                 <a class="popup-youtube" href="{{ section.settings.video_url }}">
                                     <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
-                                        <h6>Click To Watch Review</h6>
+                                        <h6>{{ section.settings.video_label }}</h6>
                                     </span>
                                 </a>
                             </div>   
@@ -136,7 +136,7 @@
                                                         <a class="popup-youtube" href="{{ block.settings.video_url }}">
                                                             <span>
                                                                 <img src="{{ 'trusted_play.svg' | asset_url }}" alt="" class="w-auto">
-                                                                <h6>Watch Video</h6>
+                                                                <h6>{{ block.settings.video_label }}</h6>
                                                             </span>
                                                         </a>
                                                     </div>
@@ -152,7 +152,7 @@
                                                                         style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
                                                                 </div>
                                                                 <span><img src="{{ 'trusted_play.svg' | asset_url }}" alt="" class="w-auto">
-                                                                    <h6>Watch Video</h6>
+                                                                    <h6>{{ block.settings.video_label }}</h6>
                                                                 </span>
                                                             </div>
                                                         </a>
@@ -222,6 +222,12 @@
                 "type": "text",
                 "id": "video_url",
                 "label": "t:common.video.url.label"
+            },
+            {
+                "type": "text",
+                "id": "video_label",
+                "label": "t:common.video.cta.label",
+                "default": "Click To Watch Review"
             }
         ],
         "blocks": [
@@ -256,6 +262,12 @@
                         "type": "text",
                         "id": "video_url",
                         "label": "t:common.video.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_label",
+                        "label": "t:common.video.cta.label",
+                        "default": "Watch Video"
                     },
                     {
                         "type": "text",

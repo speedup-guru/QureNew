@@ -8,7 +8,7 @@
 	{%- case block.type -%}
         {%- when 'rating' -%}
             {%- assign rating_count = rating_count | plus: 1 -%}    
-        {%- when 'rating' -%}
+        {%- when 'button' -%}
             {%- assign button_count = button_count | plus: 1 -%}    
         {%- when 'list' -%}
             {%- assign list_count = list_count | plus: 1 -%}
@@ -151,7 +151,7 @@
                                     <div class="play_btn">
                                         <a class="popup-youtube" href="{{ video_source_url }}">
                                             <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
-                                                <h6>Click To Watch</h6>
+                                                <h6>{{ block.settings.video_label }}</h6>
                                             </span>
                                         </a>
                                     </div> 
@@ -454,7 +454,7 @@
                         "label": "t:common.text.label"
                     }
                 ]
-		    },
+		        },
             {
                 "type": "liquid",
                 "name": "t:sections.liquid.name",
@@ -533,12 +533,18 @@
                     {
                         "type": "image_picker",
                         "id": "image_mobile",
-                        "label": "t:common.image.mobile.label"
+                        "label": "t:common.image_mobile.label"
                     },
                     {
                         "type": "video",
                         "id": "video",
                         "label": "t:common.video.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_label",
+                        "label": "t:common.video.cta.label",
+                        "default": "Click To Watch"
                     }
                 ]
 		    },

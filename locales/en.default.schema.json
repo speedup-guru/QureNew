@@ -99,6 +99,9 @@
     "list": {
       "label": "List"
     },
+    "step": {
+      "label": "Step"
+    },
     "result": {
       "label": "Result"
     },
@@ -160,6 +163,9 @@
       "label": "Video",
       "url": {
         "label": "Video url"
+      },
+      "cta": {
+        "label": "Video label"
       }
     },
     "wistia": {

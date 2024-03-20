@@ -137,7 +137,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/see_work.png",
             "image_mobile": "shopify:\/\/shop_images\/see_work_mob.webp",
-            "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4"
+            "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4",
+            "video_label": "Click To Watch"
           }
         }
       },
@@ -356,12 +357,20 @@
             "button_label": "BUY NOW & SAVE UP TO 43%",
             "button_url": "#productSubscription"
           }
+        },
+        "rating_G3APhm": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star4.8.svg",
+            "text": "97% customer satisfaction rate"
+          }
         }
       },
       "block_order": [
         "product_4qqcQV",
         "image_gnyiNf",
-        "button_rznYjF"
+        "button_rznYjF",
+        "rating_G3APhm"
       ],
       "settings": {
         "classname": "main_banner section pt-0",
@@ -578,6 +587,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0DYmxvyKAVI",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Qure’s system is far more affordable and convenient than the in office procedure because it’s done in the comfort of your home.\"<\/p><h6><strong>Dr Maren Locke<\/strong> Board-Certified Dermatologist<\/h6>"
           }
@@ -587,6 +597,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_anthony.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=gGVKgTHloXw",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Board-Certified Plastic Surgeon<\/h6>"
           }
@@ -596,6 +607,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_dylan.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=mVdncsTAXiA",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.”<\/p><h6><strong>Dr Dylan Greeney<\/strong> Board-Certified Dermatologist<\/h6>"
           }
@@ -605,6 +617,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_davim.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
           }
@@ -614,6 +627,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_mona.webp",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Internal Medicine<\/h6>"
           }
@@ -634,7 +648,8 @@
         "likes": "23K",
         "views": "1.3M VIEWS",
         "image": "shopify:\/\/shop_images\/trusted_3.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8",
+        "video_label": "Click To Watch Review"
       }
     },
     "results_3LEkF7": {
@@ -808,35 +823,40 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step1_aaa00f01-0535-41a0-92e5-8395ca15e96b.webp",
-            "text": "<p>Twist open the chamber of the device and fill with one ampule of serum. Twist on needle head with lid to close it tight.<\/p>"
+            "text": "<p>Twist open the chamber of the device and fill with one ampule of serum. Twist on needle head with lid to close it tight.<\/p>",
+            "step": "STEP"
           }
         },
         "object_hP3C9q": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step2.webp",
-            "text": "<p>Leave the device upside down for 1-2 minutes. During this time, wash your face and make sure your hands are clean.<\/p>"
+            "text": "<p>Leave the device upside down for 1-2 minutes. During this time, wash your face and make sure your hands are clean.<\/p>",
+            "step": "STEP"
           }
         },
         "object_QnrbNQ": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step3.webp",
-            "text": "<p>Once the serum has had enough time to make its way into the needles, you can take off the lid and start micro-infusing!<\/p>"
+            "text": "<p>Once the serum has had enough time to make its way into the needles, you can take off the lid and start micro-infusing!<\/p>",
+            "step": "STEP"
           }
         },
         "object_THFDbC": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step4.webp",
-            "text": "<p>Start at the centre of the face and work your way outward to cover the full face. Take any leftover serum from the device and pat it onto your face and neck to leave on overnight.<\/p>"
+            "text": "<p>Start at the centre of the face and work your way outward to cover the full face. Take any leftover serum from the device and pat it onto your face and neck to leave on overnight.<\/p>",
+            "step": "STEP"
           }
         },
         "object_tMTm7n": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step5_f85c08be-1937-47f5-81e4-084b716d6352.webp",
-            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely. Open a new sterile needle head and put it on the device ready for your next treatment.<\/p>"
+            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely. Open a new sterile needle head and put it on the device ready for your next treatment.<\/p>",
+            "step": "STEP"
           }
         }
       },

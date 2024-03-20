@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="step_content step_serum">
                                     <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="rejuvenating-hydra" checked />
+                                        <input type="radio" class="" name="serum" id="rejuvenating-hydra" />
                                         <label class="serum_prd bg-yellowGrey" for="rejuvenating-hydra">
                                             <div class="serum_img product_type" data-product-type="1" data-month1-image="{{ 'MI2x-mixed.webp' | asset_url }}"
                                                 data-month2-image="{{ 'MI4x-mixed.webp' | asset_url }}"
@@ -95,7 +95,7 @@
                                         </label>
                                     </div>
                                     <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="hydra-soothing" />
+                                        <input type="radio" class="" name="serum" id="hydra-soothing" checked />
                                         <label class="serum_prd bg-grey" for="hydra-soothing">
                                             <div class="serum_img product_type" data-product-type="3" data-month1-image="{{ 'MI2x-hydra.webp' | asset_url }}"
                                                 data-month2-image="{{ 'MI4x-hydra.webp' | asset_url }}"
@@ -284,7 +284,7 @@
                                 </div>
                             </div>
                         </div>
-                        {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
+                        {% assign product = all_products['micro-infusion-3-month-refill-6x-hydra-soothing-serum'] %}
                         
                         <div class="step_content my-3">
                             <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject event_btn" href="{{ routes.cart_add_url }}?id=43216377217263&quantity=1" data-ajax-cart-request-button>

@@ -137,7 +137,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/see_work.png",
             "image_mobile": "shopify:\/\/shop_images\/see_work_mob.webp",
-            "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4"
+            "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4",
+            "video_label": "So funktioniert's"
           }
         }
       },
@@ -341,12 +342,20 @@
             "button_label": "JETZT KAUFEN & BIS ZU 43 % SPAREN",
             "button_url": "#productSubscription"
           }
+        },
+        "rating_PGdBXE": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star4.8.svg",
+            "text": "4.8\/5 von 43.893 Kunden"
+          }
         }
       },
       "block_order": [
         "product_4qqcQV",
         "image_gnyiNf",
-        "button_rznYjF"
+        "button_rznYjF",
+        "rating_PGdBXE"
       ],
       "settings": {
         "classname": "main_banner section pt-0",
@@ -563,6 +572,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0DYmxvyKAVI",
+            "video_label": "Video ansehen",
             "wistia_id": "",
             "text": "<p>\"Das System von Qure ist viel günstiger und bequemer als die Behandlung in der Praxis, da es bequem zu Hause durchgeführt werden kann.“<\/p><h6><strong>Dr Maren Locke<\/strong> Zertifizierte Dermatologin<\/h6>"
           }
@@ -572,6 +582,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_anthony.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=gGVKgTHloXw",
+            "video_label": "Video ansehen",
             "wistia_id": "",
             "text": "<p>\"Qure's System ist das, was man am ehesten mit einem Kosmetiker zu Hause vergleichen kann!“<\/p><h6><strong>Dr Anthony Youn<\/strong> Zertifizierter plastischer Chirurg<\/h6>"
           }
@@ -581,6 +592,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_dylan.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=mVdncsTAXiA",
+            "video_label": "Video ansehen",
             "wistia_id": "",
             "text": "<p>\"Das Qure Mikroinfusionssystem geht noch einen Schritt weiter, indem es nicht nur die Hydratation erhöht, sondern auch die Wachstumsfaktoren genau dorthin bringt, wo sie benötigt werden.\"<\/p><h6><strong>Dr Dylan Greeney<\/strong> Dermatologe mit Facharzt-Zertifikat<\/h6>"
           }
@@ -590,6 +602,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_mona.webp",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
+            "video_label": "Video ansehen",
             "wistia_id": "",
             "text": "<p>\"Man sieht eine Art strahlenden Teint nach der Anwendung, und innerhalb von ein paar Tagen sieht die Haut wirklich fantastisch aus.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Innere Medizin<\/h6>"
           }
@@ -609,7 +622,8 @@
         "likes": "23K",
         "views": "1.3M VIEWS",
         "image": "shopify:\/\/shop_images\/trusted_3.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8",
+        "video_label": "Bewertung ansehen"
       }
     },
     "results_3LEkF7": {
@@ -796,35 +810,40 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step1_aaa00f01-0535-41a0-92e5-8395ca15e96b.webp",
-            "text": "<p>Die Kammer des Geräts aufdrehen und mit einer Ampulle Serum füllen. Den Nadelkopf mit Deckel fest zusammendrehen, um ihn zu verschließen.<\/p>"
+            "text": "<p>Die Kammer des Geräts aufdrehen und mit einer Ampulle Serum füllen. Den Nadelkopf mit Deckel fest zusammendrehen, um ihn zu verschließen.<\/p>",
+            "step": "SCHRITT"
           }
         },
         "object_hP3C9q": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step2.webp",
-            "text": "<p>Lege das Gerät für 1–2 Minuten auf den Kopf. Wasche in dieser Zeit dein Gesicht und achte darauf, dass deine Hände sauber sind.<\/p>"
+            "text": "<p>Lege das Gerät für 1–2 Minuten auf den Kopf. Wasche in dieser Zeit dein Gesicht und achte darauf, dass deine Hände sauber sind.<\/p>",
+            "step": "SCHRITT"
           }
         },
         "object_QnrbNQ": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step3.webp",
-            "text": "<p>Sobald das Serum genügend Zeit hatte, in die Nadeln einzudringen, kann der Deckel abgenommen werden und die Mikroinfusion beginnen!<\/p>"
+            "text": "<p>Sobald das Serum genügend Zeit hatte, in die Nadeln einzudringen, kann der Deckel abgenommen werden und die Mikroinfusion beginnen!<\/p>",
+            "step": "SCHRITT"
           }
         },
         "object_THFDbC": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step4.webp",
-            "text": "<p>Beginnend in der Mitte des Gesichts nach außen arbeiten, um das gesamte Gesicht zu bedecken. Das restliche Serum aus dem System nehmen, auf Gesicht und Hals auftragen und über Nacht einwirken lassen.<\/p>"
+            "text": "<p>Beginnend in der Mitte des Gesichts nach außen arbeiten, um das gesamte Gesicht zu bedecken. Das restliche Serum aus dem System nehmen, auf Gesicht und Hals auftragen und über Nacht einwirken lassen.<\/p>",
+            "step": "SCHRITT"
           }
         },
         "object_tMTm7n": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step5_f85c08be-1937-47f5-81e4-084b716d6352.webp",
-            "text": "<p>Nach Abschluss der Behandlung wird die Kappe auf den Nadelkopf gesetzt. Anschließend die Kappe abdrehen und sicher entsorgen. Einen neuen sterilen Nadelkopf öffnen und für die nächste Behandlung in das Gerät einsetzen.<\/p>"
+            "text": "<p>Nach Abschluss der Behandlung wird die Kappe auf den Nadelkopf gesetzt. Anschließend die Kappe abdrehen und sicher entsorgen. Einen neuen sterilen Nadelkopf öffnen und für die nächste Behandlung in das Gerät einsetzen.<\/p>",
+            "step": "SCHRITT"
           }
         }
       },
@@ -1174,7 +1193,7 @@
         "code_fXbXkm": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                                    href=\"#productSubscription\">JETZT KAUFEN & BIS ZU 43 % SPAREN<\/a>\n                                <div class=\"progress_bar\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        <\/div>\n                                    <\/div>\n                                    <p>SCHNELL AUSVERKAUFT<\/p>\n                                <\/div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>90-Tage-Geld-<br> zurück-Garantie <\/p>\n                                    <\/div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        <p>Kostenloser weltweiter<br> Versand über 100 €<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>"
+            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                                    href=\"#productSubscription\">JETZT KAUFEN & BIS ZU 43 % SPAREN<\/a>\n                                <div class=\"progress_bar d-block d-md-block\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        <\/div>\n                                    <\/div>\n                                    <p>SCHNELL AUSVERKAUFT<\/p>\n                                <\/div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>90-Tage-Geld-<br> zurück-Garantie <\/p>\n                                    <\/div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        <p>Kostenloser weltweiter<br> Versand über 100 €<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>"
           }
         }
       },
