@@ -556,7 +556,7 @@
           "type": "feedback",
           "settings": {
             "image": "shopify:\/\/shop_images\/cl_max.webp",
-            "text": "<p>\"In Bezug auf die Sicherheit der Mikro-Stanzgeräte, ist dieses [Qure's Micro-Infusion] großartig...\"<\/p><h6><strong>Dr Maxfield, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
+            "text": "<p>\"In Bezug auf die <strong>Sicherheit<\/strong> der Mikro-Stanzgeräte, ist dieses [Qure's Micro-Infusion] großartig...\"<\/p><h6><strong>Dr Maxfield, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
           }
         },
         "video_pEM9DL": {
