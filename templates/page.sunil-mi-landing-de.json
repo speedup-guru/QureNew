@@ -557,7 +557,7 @@
           "type": "feedback",
           "settings": {
             "image": "shopify:\/\/shop_images\/cl_shah.webp",
-            "text": "<p>\"... [Qure's Micro-Infusion] hilft Deinen Produkten, besser einzudringen.\"<\/p><h6><strong>Dr Shah, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
+            "text": "<p>\"... [Qure's Micro-Infusion] <strong>hilft Deinen Produkten, besser einzudringen.\"<\/strong><\/p><h6><strong>Dr Shah, MD,<\/strong> Zertifizierter Dermatologe<\/h6>"
           }
         },
         "feedback_NVbkWM": {
