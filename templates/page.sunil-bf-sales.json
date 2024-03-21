@@ -369,7 +369,7 @@
           "settings": {
             "product": "best-seller-bundle",
             "comment_ammount": 729,
-            "percent": 32,
+            "percent": 28,
             "ppl_choise": 1,
             "recommended": 0
           }
@@ -409,7 +409,7 @@
           "settings": {
             "product": "skin-ssentials-set-doctorly-choice",
             "comment_ammount": 202,
-            "percent": 34,
+            "percent": 40,
             "ppl_choise": 0,
             "recommended": 1
           }
@@ -449,7 +449,7 @@
           "settings": {
             "product": "easter-bundle",
             "comment_ammount": 147,
-            "percent": 56,
+            "percent": 46,
             "ppl_choise": 0,
             "recommended": 0
           }
