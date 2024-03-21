@@ -6156,6 +6156,8 @@ p.title_mob {
     margin: 0;
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    text-wrap: wrap;
 }
 
 .supply-detail-2 .supply_steps .step_block .serum_prd .serum_ttl {
