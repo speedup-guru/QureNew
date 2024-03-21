@@ -371,7 +371,7 @@
           "settings": {
             "heading": "Hautunreinheiten",
             "text": "<ul><li>Glättet raues Hautbild, reduziert Poren und <strong>gleicht den Hautton aus.<\/strong><\/li><li>Hilft, das Erscheinungsbild feiner Linien zu reduzieren, und sorgt für eine <strong>straffere, prallere Haut.<\/strong><\/li><li>Unterstützt das <strong>Verblassen<\/strong> von <strong>dunklen Flecken<\/strong> und <strong>Aknenarben<\/strong><\/li><\/ul>",
-            "image": "shopify:\/\/shop_images\/results_mica.webp",
+            "image": "shopify:\/\/shop_images\/results_mica-de.webp",
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "client": "Mica A."
           }
@@ -381,7 +381,7 @@
           "settings": {
             "heading": "Hautton und Hautbild",
             "text": "<ul><li>Erhellt das Aussehen der Haut für einen <strong>gesünderen, strahlenderen Teint.<\/strong><\/li><li>Reduziert das Auftreten von dunklen Flecken und Aknenarben für ein <strong>ebenmäßigeres Hautbild.<\/strong><\/li><li>Fördert die Feuchtigkeitszufuhr für <strong>frische, straffe Haut.<\/strong><\/li><\/ul>",
-            "image": "shopify:\/\/shop_images\/results_monika.webp",
+            "image": "shopify:\/\/shop_images\/results_monika-de.webp",
             "image_country": "shopify:\/\/shop_images\/australia_f.webp",
             "client": "Monika"
           }
@@ -391,7 +391,7 @@
           "settings": {
             "heading": "Gesamte Transformation",
             "text": "<ul><li>Die Haut wirkt <strong>strahlender, glatter und jünger<\/strong><\/li><li>Hilft bei der <strong>besseren Absorption des Serums<\/strong> für sichtbare Ergebnisse<\/li><li>Minimiert das <strong>Erscheinungsbild von Poren und Fältchen<\/strong><\/li><\/ul>",
-            "image": "shopify:\/\/shop_images\/results_ellie1.webp",
+            "image": "shopify:\/\/shop_images\/results_ellie1-de.webp",
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "client": "Ellie V."
           }
@@ -404,7 +404,8 @@
       ],
       "settings": {
         "heading": "Erreiche deine Hautpflegeziele",
-        "text": ""
+        "text": "",
+        "text_verified_customer": "Verifizierte Kundin"
       }
     },
     "videos_list_9mL4h8": {
