@@ -180,6 +180,9 @@
       "info": "Leave the label blank to hide the link.",
       "url": {
         "label": "Button url"
+      },
+      "mobile": {
+        "label": "Button label mobile"
       }
     },
     "link": {
