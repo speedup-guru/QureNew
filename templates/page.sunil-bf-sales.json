@@ -446,7 +446,6 @@
         },
         "product_iRt6LW": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "easter-bundle",
             "comment_ammount": 147,
@@ -494,6 +493,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr. Maren Locke,<\/strong> Certified Dermatologist<\/h6>"
           }
@@ -503,6 +503,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maxfield.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield,<\/strong> Certified Dermatologist<\/h6>"
           }
@@ -512,6 +513,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_davim.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Certified Dermatologist<\/h6>"
           }
@@ -530,7 +532,8 @@
         "likes": "2.4K",
         "views": "1.4M views",
         "image": "shopify:\/\/shop_images\/trusted_3.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8",
+        "video_label": "Click To Watch Review"
       }
     },
     "compare_DUM6Ff": {
