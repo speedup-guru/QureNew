@@ -14,9 +14,55 @@
     {% render 'collection-filter-desktop' %}
     
     <div class="col-product product-grid-container">
-        
         {% for product in collection.products %}
-            <div class="productBlockGrid">
+            {% case forloop.index %}
+                {% when 1 %}
+                    <div class="productBlockGrid">
+                        <div class="product-grid__image d-none d-md-block">
+                            <img src="{{ 'collection-ela.webp' | asset_url }}" alt="">
+                        </div>
+                        <div class="product-grid__image d-block d-md-none">
+                            <img src="{{ 'collection-ela-mobile.webp' | asset_url }}" alt="">
+                        </div>
+                        <div class="collection_card text-center">
+                            <div class="product_card_info">
+                                I was shocked at how my skin looked the <strong>morning after my first
+                                    Micro-Infusion</strong>
+                                treatment!
+                                It was so easy to use, can’t wait until my next treatment.
+                            </div>
+                            <div class="product_card_userName">Ela O.</div>
+                            <div class="product_verified">
+                                <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Verified Customer
+                            </div>
+                        </div>
+                    </div>
+                {% when 4 %}
+                    <div class="productBlockGrid">
+                        <div class="product-grid__image">
+                            <img src="{{ 'collection_drShah.webp' | asset_url }}" alt="collection img" />
+                        </div>
+                        <div class="collection_card text-center doctor_card">
+                            <h6>Trusted and recommended
+                                by world-leading dermatologists</h6>
+                            <p>"The best LED mask on the market in my opinion at this time, that being said you do need to
+                                use this consistently to see results..."</p>
+                            <div class="dr_profile">Dr Shah, MD Certified Dermatologist</div>
+                        </div>
+                    </div>
+                {% when 7 %}
+                    <div class="productBlockGrid">
+                        <img src="{{ 'collectionVogue.webp' | asset_url }}" alt="" class="img-fluid h-100">
+                        <div class="productVogue">
+                            <p>One of VOGUE's top LED masks</p>
+                            <h5>VOGUE</h5>
+                            <a href="https://www.qureskincare.com/products/q-rejuvalight-pro-facewear"
+                                class="discover_btn">Discover Now</a>
+                        </div>
+                    </div>
+            {% endcase %}
+
+            <div class="productBlockGrid fixed_height_btn">
                 <div class="cus-tag">
                     {% assign amount = 0 %}
                     {% for variant in product.variants %}
