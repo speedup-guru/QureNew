@@ -66,7 +66,7 @@
                                                                 {{ block.settings.feedback }}
                                                             {% endif %}
                                                             {% if block.settings.popup_content != blank %}
-                                                                <a class="popup-modal ss_c_link" href="#test-modal-{{ block.id }}-{{ forloop.index }}">Read more about clinical Study <span><img src="{{ 'info.svg' | asset_url }}" alt=""></span></a>
+                                                                <a class="popup-modal ss_c_link" href="#test-modal-{{ block.id }}-{{ forloop.index }}">{{ block.settings.button_label }} <span><img src="{{ 'info.svg' | asset_url }}" alt=""></span></a>
                                                                 <div id="test-modal-{{ block.id }}-{{ forloop.index }}"
                                                                     class="mfp-hide white-popup-block skin_popup">
                                                                     <div class="ss_clinical">
@@ -150,6 +150,13 @@
                         "type": "richtext",
                         "id": "feedback",
                         "label": "t:common.feedback.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Read more about clinical Study",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
                     },
                     {
                         "type": "richtext",
