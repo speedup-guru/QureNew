@@ -12,14 +12,57 @@
 <script type="application/json" data-ajax-cart-initial-state class="__init"> {{ cart | json }} </script> 
 <script type="application/json" data-ajax-cart-configuration class="__init"> { "addToCartCssClass": "js-my-cart-open" } </script>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Initialize Swiper -->
+  <script>  
+    const upsellSwiper = () => {
+      const isMobile = window.innerWidth <= 768;
+      if(isMobile){
+        return new Swiper('.custom_upsell', {
+          slidesPerView: "auto",
+          centeredSlides: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          }
+        });
+      }else{
+        return new Swiper('.custom_upsell', {
+          slidesPerView: "auto",
+          centeredSlides: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }
+        });
+      }
+    }
+    
+    const initUpsellSwiper = () => {
+      if(document.body.hasAttribute('data-variantc-upsell-carousel')){
+        const upsell = upsellSwiper();
+        if(upsell){
+          upsell.init();
+        }
+      }
+    }  
+  </script>
+
 <script type="module"> import { configureCart, subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
 	configureCart('addToCartCssClass', 'js-my-cart-open'); 
-
+  initUpsellSwiper();
 	subscribeToCartSectionsUpdate( sections => {
 		updateShippingInsurance();
 		if(typeof startCartTimer == 'function') {
 			startCartTimer(15 * 60);
 		}
+    initUpsellSwiper();
 	});
 </script> 
 
