@@ -63,7 +63,7 @@
         "image": "shopify:\/\/shop_images\/bf-sale_desk.webp",
         "image_mobile": "shopify:\/\/shop_images\/bf-sale_mob.webp",
         "button_label": "Shop now",
-        "button_url": "shopify:\/\/collections\/best-sellers"
+        "button_url": "#bf-bundles"
       }
     },
     "icons_list_qXfGQA": {
