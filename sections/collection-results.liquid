@@ -99,8 +99,8 @@
                     <div class="collection-description">{{ product.description | strip_html | truncate: 130 }}</div>
 
                     <div class="product-grid__price abtest">
-                        <span class="product-grid__sale-price" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
-                        <s class="product-grid__compare-price" data-processed-abconvert-price="true">{{ product.compare_at_price |  money_without_trailing_zeros }}</s>
+                        <span class="product-grid__sale-price" data-processed-abconvert-price="true" data-product-id="{{ product.id }}">{{ product.price |  money_without_trailing_zeros }}</span>
+                        <s class="product-grid__compare-price" data-processed-abconvert-price="true" data-product-id="{{ product.id }}">{{ product.compare_at_price |  money_without_trailing_zeros }}</s>
                     </div>
                     <div class="product-grid__atc-form-wrapper collection-form">
                         <button type="button" class="button button_primary" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button><span>Buy Now</span></button>
