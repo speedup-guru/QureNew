@@ -752,7 +752,8 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Unglaubliche Ergebnisse in wenigen Behandlungen"
+        "heading": "Unglaubliche Ergebnisse in wenigen Behandlungen",
+        "text_verified_customer": "Verifizierte Kundin"
       }
     },
     "liquid_9GnXBn": {
