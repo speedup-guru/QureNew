@@ -488,7 +488,7 @@
   "shopify": {
     "checkout": {
       "subscriptions": {
-        "recurring_totals_with_initial_order_shipping_discount": " "
+        "recurring_totals_with_initial_order_shipping_discount": "First payment"
       }
     }
   }
