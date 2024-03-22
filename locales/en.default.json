@@ -490,8 +490,7 @@
       "subscriptions": {
         "recurring_totals_with_policies": {
           "first_cycles": {
-            "one": " ",
-            "other": " "
+            "one": " "
           }
         }
       }
