@@ -554,7 +554,7 @@
 /* Start Side Cart: Upsell Carousel A/B/C by samu3le*/
 body[data-variantb-upsell-carousel] {
   .original_v {
-    display: none;
+    display: none !important;
   }
   .my-floating-cart{
     position: absolute;
@@ -620,13 +620,16 @@ body[data-variantb-upsell-carousel] {
           display: flex;
           align-items: flex-start;
           gap: 13px;
+          height: auto;
+          width: 100%;
+          justify-content: space-between;
           overflow-x: auto;
           overflow-y: hidden;
           -webkit-overflow-scrolling: touch;
           scrollbar-width: none;
-          padding-bottom: 4px;
-          height: auto;
-
+          @media screen and (min-width:768px){
+            justify-content: center;
+          }
           .upsell_main{
             flex-direction: column;
             justify-content: center;
@@ -636,21 +639,20 @@ body[data-variantb-upsell-carousel] {
             padding: 0;
             border: none;
             flex: auto;
-            min-height: 219px;
-            height: 219px;
+            min-height: 236px;
+            height: 236px;
             max-width: 127px;
             width: 127px;
 
             > div{
               align-items: flex-start;
-              gap: 0;
+              gap: 8px;
             }
             .upsell_image{
               flex-direction: column;
-              width: 100%;
-              height: 100%;
               padding-top: 0;
-              min-height: 127px;
+              flex: 1;
+              width: 100%;
               .upsell_product{
                 max-width: none;
                 /* background: #FFF; */
@@ -665,13 +667,14 @@ body[data-variantb-upsell-carousel] {
                   max-height: 92px;
                   width: 127px;
                   height: 92px;
-                  object-fit: scale-down;
-                  border-radius: 6px;
                   background: #FFF;
                   border-radius: 8px;
                 }           
               }
               .upsell_content {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
                 padding:0;
                 color: #000;
                 font-family: "Canela Web",sans-serif;
@@ -695,6 +698,7 @@ body[data-variantb-upsell-carousel] {
                   font-weight: 500;
                   line-height: 18px; /* 128.571% */
                   letter-spacing: 0.14px;
+                  opacity: 0.8;
                 }
                 p {
                   opacity: 0.8;
@@ -703,7 +707,7 @@ body[data-variantb-upsell-carousel] {
                   font-size: 10px;
                   font-style: italic;
                   font-weight: 400;
-                  line-height: 16px;
+                  line-height: 10px;
                   letter-spacing: 0.1px;
                 }
               }
@@ -711,7 +715,6 @@ body[data-variantb-upsell-carousel] {
             .upsell_price{
               flex-direction: column;
               gap: 0;
-              margin-top: 4px;
               .upsell_amt{
                 margin: 0;
                 text-align: start;
@@ -779,34 +782,36 @@ body[data-variantb-upsell-carousel] {
           > div{
             gap: 20px;
             .upsell_main{
-              max-width: 170px;
-              width: 170px;
-              padding: 0 14px;
-              gap: 0px;
+              max-width: 186px;
+              width: 186px;
+              padding: 12px 12px;
+              gap: 12px;
               border-radius: 8px;
               flex: 1;
-              min-height: 270px;
-              height: 270px;
+              min-height: 292px;
+              height: 292px;
               > div{
                 gap: 20px;
               }
               .upsell_image{
-                gap: 0;
-                padding-top: 14px;
-                min-height: 213px;
+                gap: 16px;
+                max-height: 213px;
                 .upsell_product{
                   
                   border-radius: 6px;
                   img{
-                    width: 145.8px;
-                    max-width: 145.8px;
+                    width: 162px;
+                    max-width: 162px;
                     height: 108px;
                     max-height: 108px;
                     border-radius: 6px;
                   }
                 }
                 .upsell_content {
-                  max-width: 145.8px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  max-width: none;
                   width: 100%;
                   font-size: 16px;
                   font-style: normal;
@@ -833,8 +838,8 @@ body[data-variantb-upsell-carousel] {
                 }
               }
               .upsell_price{
-                gap: 0;
-                padding-bottom: 14px;
+                margin-top: 0;
+                justify-content: space-between;
                 .upsell_amt {
                   span{
                     color: #000;
@@ -878,150 +883,313 @@ body[data-variantb-upsell-carousel] {
 } 
 body[data-variantc-upsell-carousel] {
   .original_v {
-    display: none;
+    display: none !important;
   }
   .my-floating-cart{
     position: absolute;
     top: 0;
     bottom: 0;
-  }
-  .my-floating-cart form.my-cart .my-cart__info{
-    overflow-y: auto;
-    min-height: calc(100vh - 80vh);
-  }
-  .my-floating-cart .drawer__overlay{
-    opacity: .8;
-  }
-  .my-floating-cart form.my-cart .custom_upsell {
-    background:  #C8E6DC;
-    padding: 14px 20px 24px 20px;
-    width: 100%;
-    height: auto;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .upsell_title {
-    color: transparent;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-    gap: 8px;
-    position: relative;
-    padding-bottom: 8px;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .upsell_title::before {
-    content: 'Achieve your skin goals faster ';
-    font-family: "Canela Web",sans-serif;
-    position: absolute;
-    color: #000;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 28px; /* 200% */
-    letter-spacing: 0.14px;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .upsell_title span{
-    width: auto;
-    height: auto;
-    color: #FFF;
-    text-align: right;
-    font-size: 9px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    padding: 0 4px;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .swiper-wrapper{
-    margin-bottom: 10px;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    height: auto;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    /* gap: 6px; */
-    border-radius: 8px;
-    background: #FFF;
-    max-width: 361px;
-    height: auto;
-    min-height: 111px;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_price .upsell_amt{
-    margin: 0;
-    display: flex;
-    text-align: start;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_price{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 8px;
-    min-width: 63px;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_price a > svg{
-    display: none;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_content{
-    padding: 0;
-    max-width: 100%;
-  }
-  
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_product {
-      width: 54px;
-      max-width: 54px;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_product img{
-    width: 100%;
-    height: 100%;
-  }
-  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_image{
-    width: auto;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .swiper-pagination{
-    justify-content: center;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .swiper-pagination .swiper-pagination-bullet {
-    opacity: 1;
-  }
-  .my-floating-cart form.my-cart .custom_upsell .swiper-pagination .swiper-pagination-bullet-active {
-    background: #FFF;
-  }
-  @media screen and (min-width:769px){
-    .my-floating-cart form.my-cart .custom_upsell .swiper-button-next,
-    .my-floating-cart form.my-cart .custom_upsell .swiper-button-prev{
-      display: initial !important;
-      width: 32px;
-      height: 32px;
-      /*transform: rotate(90deg);
-      */position: absolute;
-      right: -4px;
-      bottom: 30px;
-      fill: var(--Turquoise, #C8E6DC);
-      background: #C8E6DC;
-      border-radius: 50px 50px;
-      -webkit-border-radius: 50px 50px;
-      -moz-border-radius: 50px 50px;
-      -ms-border-radius: 50px 50px;
-      -o-border-radius: 50px 50px;
-      margin-top: 0px;
+    form.my-cart {
+      .my-cart__info{
+        overflow-y: auto;
+        min-height: 30dvh;
+      }
+      .custom_upsell {
+        background:  #C8E6DC;
+        padding: 14px 20px;
+        width: 100%;
+        max-height: none;
+        height: auto;
+        .upsell_title {
+          color: transparent;
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 0;
+          gap: 8px;
+          position: relative;
+          padding-bottom: 8px;
+          span{
+            width: auto;
+            height: auto;
+            color: #FFF;
+            text-align: right;
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 12px;
+            padding: 0 4px;
+          }
+        }
+        .upsell_title::before {
+          content: 'Achieve your skin goals faster ';
+          font-family: "Canela Web",sans-serif;
+          position: absolute;
+          color: #000;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 200% */
+          letter-spacing: 0.14px;
+        }
+        .swiper-wrapper{
+          margin-bottom: 10px;
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          height: auto;
+        }
+        > div{
+          .upsell_main{
+            display: flex;
+            width: 306px;
+            height: 84px;
+            max-width: 306px;
+            max-height: 84px;
+            padding: 12px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #FFF;
+            .upsell_image{
+              display: flex;
+              flex-direction: row;
+              gap: 8px;
+              flex: 1;
+              width: 100%;
+              height: 100%;
+              .upsell_product {
+                width: 42px;
+                max-width: 42px;
+                img{
+                  width: 42px;
+                  max-width: 42px;
+                  max-height: 42px;
+                  height: 42px;
+                }
+              }
+              .upsell_content{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+                flex: 1;
+                gap: 8px;
+                h4{
+                  align-self: stretch;
+                  color: #000;
+                  font-family: "Canela Web";
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 18px; /* 128.571% */
+                  opacity: 0.8;
+                  width: auto;
+                p{
+                  width: auto;
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 10px;
+                  font-style: italic;
+                  font-weight: 400;
+                  line-height: 16px; /* 160% */
+                  opacity: 0.8;
+                }
+              }
+            }
+            .upsell_price {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: space-between;
+              height: 100%;
+              .upsell_amt{
+                margin: 0;
+                display: flex;
+                text-align: start;
+                span{
+                  color: #C4C4C4;
+                  text-align: right;
+                  font-family: Poppins;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 16px; /* 114.286% */
+                  letter-spacing: 0.14px;
+                  text-decoration-line: strikethrough;
+                }
+                i{
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 16px;
+                  letter-spacing: 0.14px;
+                }
+              }
+              a {
+                display: flex;
+                width: 64px;
+                height: 28px;
+                padding: 4px 2px 5px 2px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                border-radius: 20px;
+                background: var(--Black, #000);
+                width: 60px;
+                flex-shrink: 0;
+                color: var(--Site-White, #FFF);
+                text-align: center;
+                font-family: Poppins;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18.683px; /* 169.849% */
+                letter-spacing: 0.11px;
+              }
+            }
+          }
+
+        }
+        .swiper-pagination{
+          justify-content: center;
+        }
+        .swiper-pagination .swiper-pagination-bullet {
+          opacity: 1;
+        }
+        .swiper-pagination .swiper-pagination-bullet-active {
+          background: #FFF;
+        }
+      }
+      .swiper-button-next::after,
+      .swiper-button-prev::after{
+        background: #C8E6DC;
+      }
+      .swiper-pagination-bullet {
+        background: #FFF;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active{
+        background: #000;
+      }
     }
-    .my-floating-cart form.my-cart .custom_upsell .swiper-button-next::after,
-    .my-floating-cart form.my-cart .custom_upsell .swiper-button-prev::after{
-      content: "";
+    .drawer__overlay{
+      opacity: .8;
     }
-    .my-floating-cart form.my-cart .custom_upsell .swiper-button-next{
-      right: 10px;
+    @media screen and (min-width:769px){
+      .swiper-button-disabled{
+        opacity: 0;
+      }
+      .custom_upsell {
+        background:  #C8E6DC;
+        padding: 14px 20px 0 20px;
+        height: 191px;
+        min-height: 191px;
+        .upsell_title {
+          position: relative;
+          span{
+            color: #FFF;
+            text-align: right;
+            font-family: Poppins;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 12px; /* 120% */
+            color: #FFF;
+            text-align: right;
+            padding: 2px 4px;
+            flex-shrink: 0;
+            border-radius: 15.873px;
+            background: #008763;
+          }
+        }
+        .upsell_title::before {
+          content: 'Achieve your skin goals faster ';
+          color: #000;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 175% */
+          letter-spacing: 0.16px;
+          font-family: "Canela Web",sans-serif;
+          position: absolute;
+        }
+        .swiper-wrapper{
+          gap: 12px;
+          .upsell_main{
+            width: 384px;
+            height: 98px;
+            max-width: 384px;
+            max-height: 98px;
+            padding: 16px 12px;
+            gap: 24px;
+            .upsell_image{
+              .upsell_product {
+                width: 70px;
+                max-width: 70px;
+                img{
+                  width: 70px;
+                  max-width: 70px;
+                  max-height: 70px;
+                  height: 70px;
+                }
+              }
+              .upsell_content{
+                gap: 12px;
+                h4{
+                  align-self: stretch;
+                  color: #000;
+                  font-family: "Canela Web";
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 20px; /* 125% */
+                  opacity: 0.8;
+                p{
+                  width: auto;
+                  color: #000;
+                  font-family: Poppins;
+                  font-size: 11px;
+                  font-style: italic;
+                  font-weight: 400;
+                  line-height: 16px;
+                }
+              }
+            }
+            }
+            .upsell_price{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: space-between;
+              height: 100%;
+            }
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+          background: #C8E6DC;
+          top: 49%;
+          width: 8%;
+          height: 100px;
+        }
+        .swiper-button-next{
+          right: 0;
+        }
+        .swiper-button-prev{
+          left: 0;
+        }
+      }
     }
-    .my-floating-cart form.my-cart .custom_upsell .swiper-button-prev{
-      transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-}
   }
+
   @media screen and (min-width:968px) {
     .cart_total-checkout .drawer__cart-checkout-btn {
       padding: 0 25px;
