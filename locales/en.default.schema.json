@@ -264,6 +264,13 @@
         }
       }
     },
+    "banner": {
+      "name": "Banner",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "header-landing": {
       "name": "Header landing",
       "settings": {
@@ -554,6 +561,34 @@
             "label": "Details"
           }
         }
+      }
+    },
+    "three-column-box": {
+      "name": "Three column box",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "perks": {
+      "name": "Perks",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "influencers": {
+      "name": "Influencers",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "influencers-social": {
+      "name": "Influencers social",
+      "settings": {
+      },
+      "blocks": {
       }
     },
     "reasons": {
