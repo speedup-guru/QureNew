@@ -49,6 +49,12 @@
         "label": "Comments amount"
       }
     },
+    "align": {
+      "label": "Align",
+      "center": {
+        "label": "Align center"
+      }
+    },
     "heading": {
       "label": "Heading",
       "mobile": {
@@ -483,6 +489,13 @@
     },
     "trusted": {
       "name": "Trusted",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "trusted-simple": {
+      "name": "Trusted simple",
       "settings": {
       },
       "blocks": {

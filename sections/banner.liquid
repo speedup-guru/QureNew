@@ -20,10 +20,10 @@
 
     <div class="main_b_wrapper bg_gradient_mob text-light">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-5">
-                    <div class="banner_content">
-                        <div class="section_header">
+            <div class="row{% if section.settings.align_center == true %} justify-content-center{% endif %}">
+                <div class="col-12 col-md-6">
+                    <div class="{% if section.settings.align_center == false %}banner_content{% endif %}">
+                        <div class="section_header{% if section.settings.align_center == true %} text-center{% endif %}">
                             {% if section.settings.heading != blank %}
                                 <h1 class="title-xl">{{ section.settings.heading }}</h1>
                             {% endif %}
@@ -74,6 +74,12 @@
                 "type": "image_picker",
                 "id": "image_mobile",
                 "label": "t:common.image_mobile.label"
+            },
+            {
+                "type": "checkbox",
+                "id": "align_center",
+                "label": "t:common.align.center.label",
+                "default": false
             }
         ],
         "blocks": [
