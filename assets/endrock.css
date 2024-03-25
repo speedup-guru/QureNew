@@ -552,6 +552,9 @@
 }
 
 /* Start Side Cart: Upsell Carousel A/B/C by samu3le*/
+.upsell_main.variant_v{
+  display: none;
+}
 body[data-variantb-upsell-carousel] {
   .original_v {
     display: none !important;
@@ -631,6 +634,7 @@ body[data-variantb-upsell-carousel] {
             justify-content: center;
           }
           .upsell_main{
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
@@ -1195,5 +1199,6 @@ body[data-variantc-upsell-carousel] {
       padding: 0 25px;
     }
   }
+}
 }
 /* End Side Cart: Upsell Carousel A/B/C by samu3le*/
