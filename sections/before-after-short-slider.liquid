@@ -41,7 +41,7 @@
                                                 <div class="verified_img pe-2">
                                                     <img src="{{ 'verified.svg' | asset_url }}" alt="">
                                                 </div>
-                                                <p>Verified customer</p>
+                                                <p>{{ section.settings.text_verified_customer }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -81,6 +81,12 @@
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "text_verified_customer",
+                "label": "t:common.text.label",
+                "default": "Verified customer"
             }
         ],
         "blocks": [

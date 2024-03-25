@@ -17,7 +17,7 @@
                         <div class="step_content step_serum">
                             <div class="serumBlock {{ section_id }}_productTypeObject">
                                 <input type="radio" name="mBanner_serum"
-                                    id="mBanner_rejuvenating-hydra" checked>
+                                    id="mBanner_rejuvenating-hydra">
                                 <label class="serum_prd pdt_bg_gradient"
                                     for="mBanner_rejuvenating-hydra">
                                     <div class="serum_img product_type" data-product-type="1">
@@ -40,7 +40,7 @@
                             </div>
                             <div class="serumBlock {{ section_id }}_productTypeObject">
                                 <input type="radio" name="mBanner_serum"
-                                    id="mBanner_hydra-soothing">
+                                    id="mBanner_hydra-soothing" checked>
                                 <label class="serum_prd pdt_bg_grey"
                                     for="mBanner_hydra-soothing">
                                     <div class="serum_img product_type" data-product-type="3">
@@ -121,10 +121,10 @@
         </div>
 
     </div>
-    {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
+    {% assign product = all_products['micro-infusion-3-month-refill-6x-hydra-soothing-serum'] %}
     {% assign divided_price = product.price | divided_by: 4 %}
     {% render 'pdm_orderby' %}
-    <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject event_btn" href="{{ routes.cart_add_url }}?id=43216377217263&quantity=1" data-ajax-cart-request-button>Buy Now <span
+    <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Buy Now <span
             class="savedAmount">& SAVE 43%</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
     </a>
 

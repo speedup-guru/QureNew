@@ -276,6 +276,7 @@
 }
 
 
+
 .bf-bundles__content .bf-bundle__rating {
     display: flex;
     align-items: center;
@@ -1002,7 +1003,7 @@
         top: 6px;
     }
 
-    .sale-bf-img img {
+    .sale-bf-img>img {
         min-height: 292px;
         object-fit: cover;
         width: 100%;

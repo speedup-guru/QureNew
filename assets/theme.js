@@ -267,8 +267,8 @@ faq.forEach((story) => {
         const paragraph = story.querySelector(".faq__hidden-div");
         paragraph.classList.toggle("hidden");
         const text = paragraph.classList.contains("hidden")
-            ? "Show More Questions"
-            : "Hide More Questions";
+            ? story.querySelector(".faq_ques").getAttribute('data-show')
+            : story.querySelector(".faq_ques").getAttribute('data-hide');
         button.textContent = text;
     });
 });
@@ -1278,7 +1278,7 @@ $('.faq-menu__item a[href*="#"]').click(function (e) {
     e.preventDefault()
     console.log("click11")
     var el = $(this),
-        target = el.attr('href'),
+        target = el.attr('href').substring(el.attr('href').indexOf("#")),
         indiTarget = $('[data-id="' + target + '"]');
     $(target).add(indiTarget).addClass('active').siblings().removeClass('active');
 });

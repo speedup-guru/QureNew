@@ -107,7 +107,7 @@
                                                     <img src="{{ block.settings.image | img_url: '350x' }}" alt="{{ block.settings.image.alt | escape }}">
                                                 {% endif %}
                                                 <div class="see_item_info">
-                                                    <h5>STEP {{ forloop.index0 }}:</h5>
+                                                    <h5>{{ block.settings.step }} {{ forloop.index0 }}:</h5>
                                                     {% if block.settings.text != blank %}
                                                         {{ block.settings.text }}
                                                     {% endif %}
@@ -199,6 +199,12 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "step",
+                        "label": "t:common.step.label",
+                        "default": "STEP"
                     }
                 ]
 		    }

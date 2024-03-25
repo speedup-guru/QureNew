@@ -78,7 +78,7 @@
                                 {% endif %}
                             {%- endfor -%}
                         </div>
-                        <div class="faq__accordion faq_ques">Show More Questions</div>
+                        <div class="faq__accordion faq_ques" data-show="{{ section.settings.button_label }}" data-hide="{{ section.settings.button_hide_label }}">{{ section.settings.button_label }}</div>
                     </div>
                 </div>
             {% endif %}
@@ -103,6 +103,18 @@
                 "type": "text",
                 "id": "heading",
                 "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Show More Questions",
+                "label": "t:common.button.label"
+            },
+            {
+                "type": "text",
+                "id": "button_hide_label",
+                "default": "Hide More Questions",
+                "label": "t:common.button.label"
             }
         ],
         "blocks": [

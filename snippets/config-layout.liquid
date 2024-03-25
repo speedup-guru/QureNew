@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="{{ 'product_q-urify-water.css' | asset_url }}">
     {% when 'product.sunil-bundle-pdp' %}
         {% assign main_class = 'bundle_pdp' %}
-        <link rel="stylesheet" href="{{ 'product-bf-sales.css' | asset_url }}">
+        {% comment %} <link rel="stylesheet" href="{{ 'product-bf-sales.css' | asset_url }}"> {% endcomment %}
     {% when 'product.sunil-chest-pdp' %}
         {% assign main_class = 'chest_pdp' %}
         <link rel="stylesheet" href="{{ 'product-chest-pdp.css' | asset_url }}">
@@ -48,6 +48,11 @@
     {% when 'page.sunil-mi-landing' %}
         {% assign main_class = 'mi_landing' %}
         <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.sunil-mi-landing-de' %}
+        {% assign main_class = 'mi_landing mi_landing_de' %}
+        <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'product-mi-landing-de.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
     {% when 'page.faq-new' %}
         {% assign main_class = 'faqs' %}

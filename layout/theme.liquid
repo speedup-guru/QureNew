@@ -46,13 +46,15 @@
     {% include 'config-layout' %}
 
     <!-- styles endrock -->
-    {{ 'endrock.css' | asset_url | stylesheet_tag }}
+    {% case template %}
+        {% when 'page.sunil-mi-landing' %}
+        {% when 'page.sunil-mi-landing-de' %}
+        {% else %}
+            {{ 'endrock.css' | asset_url | stylesheet_tag }}
+    {% endcase %}
     <!-- end styles endrock -->
 
     {% render 'header-scripts' %}
-
-    {% comment %} swiper.js  {% endcomment %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
 
