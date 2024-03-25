@@ -18,6 +18,24 @@
   <!-- Initialize Swiper -->
   <script>
   
+    const displayCard = () => {
+      if(document.body.hasAttribute("data-variantb-upsell-carousel")){
+        const customUpsell = document.querySelector(".my-floating-cart form.my-cart .custom_upsell .swiper-wrapper");
+        if (customUpsell) {
+          const slides = customUpsell.querySelectorAll(".swiper-slide");
+          let center_slide = false;
+          if(slides.length <= 2){
+            center_slide = true;
+          }
+          
+          if(center_slide){
+            customUpsell.classList.add('center-slide')
+          }else{
+            customUpsell.classList.remove('center-slide')
+          }
+        }
+      }
+    }
     const removeSwiperClass = () => {
       const customUpsell = document.querySelector(".my-floating-cart form.my-cart .custom_upsell");
       if (customUpsell) {
@@ -60,6 +78,7 @@
     }
     
     const initUpsellSwiper = () => {
+      displayCard();
       if(document.body.hasAttribute('data-variantc-upsell-carousel')){
         const upsell = upsellSwiper();
         if(upsell){

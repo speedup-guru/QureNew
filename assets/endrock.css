@@ -751,6 +751,9 @@ body[data-variantb-upsell-carousel] {
         > div::-webkit-scrollbar {
           display: none;
         }
+        .center-slide{
+          justify-content: center;
+        }
         @media screen and (min-width:1140px) {
           position: fixed;
           transform: translate(-100%, 0%);
@@ -867,6 +870,9 @@ body[data-variantb-upsell-carousel] {
                 }
               }
             }
+          }
+          .center-slide{
+            justify-content: space-between;
           }      
         }
         @media screen and (min-width:1203px) {
