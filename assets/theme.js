@@ -267,8 +267,8 @@ faq.forEach((story) => {
         const paragraph = story.querySelector(".faq__hidden-div");
         paragraph.classList.toggle("hidden");
         const text = paragraph.classList.contains("hidden")
-            ? "Show More Questions"
-            : "Hide More Questions";
+            ? story.querySelector(".faq_ques").getAttribute('data-show')
+            : story.querySelector(".faq_ques").getAttribute('data-hide');
         button.textContent = text;
     });
 });

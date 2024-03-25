@@ -1,3 +1,5 @@
+{% assign currency = shop.currency | money_without_trailing_zeros |  remove: '0' %}
+
 {% if section_id == blank %}
     <p>Please provide section_id property to use this snippet</p>
 {% else %}
@@ -46,7 +48,7 @@
                                     <img src="{{ 'free-shipping-ftr.svg' | asset_url }}" alt="">
                                 </div>
                                 <div class="tmtFtr_des">
-                                    Kostenloser weltweiter<br> Versand über 100 €
+                                    Kostenloser weltweiter<br> Versand über 100 {{ currency }}
                                 </div>
                             </div>
                             <div class="tmtFtrs_block text-center">
@@ -73,7 +75,7 @@
                                 </div>
                                 <div class="step_content step_serum">
                                     <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="rejuvenating-hydra" checked />
+                                        <input type="radio" class="" name="serum" id="rejuvenating-hydra" />
                                         <label class="serum_prd bg-yellowGrey" for="rejuvenating-hydra">
                                             <div class="serum_img product_type" data-product-type="1" data-month1-image="{{ 'MI2x-mixed.webp' | asset_url }}"
                                                 data-month2-image="{{ 'MI4x-mixed.webp' | asset_url }}"
@@ -95,7 +97,7 @@
                                         </label>
                                     </div>
                                     <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="hydra-soothing" />
+                                        <input type="radio" class="" name="serum" id="hydra-soothing" checked />
                                         <label class="serum_prd bg-grey" for="hydra-soothing">
                                             <div class="serum_img product_type" data-product-type="3" data-month1-image="{{ 'MI2x-hydra.webp' | asset_url }}"
                                                 data-month2-image="{{ 'MI4x-hydra.webp' | asset_url }}"
@@ -121,9 +123,16 @@
                                         
                                         {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
                                         {% assign divided_price = product.price | divided_by: 4 %}
+
+                                        {% assign product_price = product.price | money_without_trailing_zeros %}
+                                        {% assign product_compare_at_price = product.compare_at_price | money_without_trailing_zeros %}
+
+                                        {% if product_compare_at_price == blank %}
+                                            {% assign product_compare_at_price = 26200 | money_without_trailing_zeros %}
+                                        {% endif %}
                                         
                                         <a class="planBlock active {{ section_id }}_productPeriodObject" href="month_3" data-tab="month_3"
-                                            data-per="& BIS ZU 43% SPAREN" data-pay="${{ divided_price | money_without_currency }}" data-image="{{ 'MI2x-mixed-1.jpg' | asset_url }}">
+                                            data-per="& BIS ZU 43% SPAREN" data-pay="{{ currency }}{{ divided_price | money_without_currency }}" data-image="{{ 'MI2x-mixed-1.jpg' | asset_url }}">
                                             <div class="plan_choosed">
                                                 <span>Gewählt vom mehr als 5.000 Menschen</span>
                                             </div>
@@ -137,17 +146,24 @@
                                                     <div class="plan_des">6 Behandlungen</div>
                                                 </div>
                                                 <div class="price">
-                                                    <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
-                                                    <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                                    <div class="plan_prc regular_price">{{ product_compare_at_price }}</div>
+                                                    <div class="plan_prc sale_price">{{ product_price }}</div>
                                                 </div>
                                             </label>
                                         </a>
                                         
                                         {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
                                         {% assign divided_price = product.price | divided_by: 4 %}
+
+                                        {% assign product_price = product.price | money_without_trailing_zeros %}
+                                        {% assign product_compare_at_price = product.compare_at_price | money_without_trailing_zeros %}
+
+                                        {% if product_compare_at_price == blank %}
+                                            {% assign product_compare_at_price = 17200 | money_without_trailing_zeros %}
+                                        {% endif %}
                                         
                                         <a class="planBlock {{ section_id }}_productPeriodObject new_block active" href="month_2" data-tab="month_2"
-                                            data-per="& BIS ZU 25% SPAREN" data-pay="${{ divided_price | money_without_currency }}" data-image="{{ 'MI4x-mixed.jpg' | asset_url }}">
+                                            data-per="& BIS ZU 25% SPAREN" data-pay="{{ currency }}{{ divided_price | money_without_currency }}" data-image="{{ 'MI4x-mixed.jpg' | asset_url }}">
                                             <input type="radio" name="monthlyPlan" id="2_month" data-product-period="2">
                                             <label class="monthly_plans" for="2_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
                                                 <div class="plan_des">
@@ -158,17 +174,20 @@
                                                     <div class="plan_des">4 Behandlungen</div>
                                                 </div>
                                                 <div class="price">
-                                                    <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
-                                                    <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                                    <div class="plan_prc regular_price">{{ product_compare_at_price }}</div>
+                                                    <div class="plan_prc sale_price">{{ product_price }}</div>
                                                 </div>
                                             </label>
                                         </a>
 
                                         {% assign product = all_products['micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum'] %}
                                         {% assign divided_price = product.price | divided_by: 4 %}
+
+                                        {% assign product_price = product.price | money_without_trailing_zeros %}
+                                        {% assign product_compare_at_price = product.compare_at_price | money_without_trailing_zeros %}
                                         
                                         <a class="planBlock {{ section_id }}_productPeriodObject new_block" href="month_1" data-tab="month_1"
-                                            data-per="- $99" data-pay="${{ divided_price | money_without_currency }}" data-image="{{ 'treatment.png' | asset_url }}">
+                                            data-per="- {{ currency }}99" data-pay="{{ currency }}{{ divided_price | money_without_currency }}" data-image="{{ 'treatment.png' | asset_url }}">
                                             <input type="radio" name="monthlyPlan" id="1_month" data-product-period="1">
                                             <label class="monthly_plans" for="1_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
                                                 <div class="plan_des">
@@ -178,7 +197,7 @@
                                                     <div class="plan_des">2 Behandlungen</div>
                                                 </div>
                                                 <div class="price">
-                                                    <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                                    <div class="plan_prc sale_price">{{ product_price }}</div>
                                                 </div>
                                             </label>
                                         </a>
@@ -189,14 +208,14 @@
                                                         src="{{ 'arrow-up.png' | asset_url }}" alt=""></span></h6>
                                             <div class="u_item__hidden-div" style="display: none;">
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
-                                                    Mikro-Infusionsgerät (im Wert von 80 €)</p>
+                                                    Mikro-Infusionsgerät (im Wert von 80 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
-                                                    5 klinische Micro-Needling-Köpfe (im Wert von 50 €)</p>
+                                                    5 klinische Micro-Needling-Köpfe (im Wert von 50 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
                                                     6 klinisch formulierte 4-ml-Seren nach Wahl zur Behandlung
-                                                    spezieller Hautprobleme (im Wert von 120 €) </p>
+                                                    spezieller Hautprobleme (im Wert von 120 {{ currency }}) </p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
-                                                    Weltweiter Versand (im Wert von 25 €)</p>
+                                                    Weltweiter Versand (im Wert von 25 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>24/7 Zugang zum
                                                     Kundensupport</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>Risikofreie 90
@@ -210,15 +229,15 @@
                                                         src="{{ 'arrow-up.png' | asset_url }}" alt=""></span></h6>
                                             <div class="u_item__hidden-div" style="display: none;">
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
-                                                    Mikro-Infusionsgerät (im Wert von 80 €)</p>
+                                                    Mikro-Infusionsgerät (im Wert von 80 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
-                                                    3 klinische Micro-Needling-Köpfe (im Wert von 30 €)</p>
+                                                    3 klinische Micro-Needling-Köpfe (im Wert von 30 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
                                                     4 klinisch formulierte 4-ml-Seren nach Wahl zur Behandlung
-                                                    spezieller Hautprobleme (im Wert von 80 €)</p>
+                                                    spezieller Hautprobleme (im Wert von 80 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>Weltweiter
                                                     Versand
-                                                    (im Wert von 25 €)</p>
+                                                    (im Wert von 25 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>24/7 Zugang zum
                                                     Kundensupport</p>
                                             </div>
@@ -230,12 +249,12 @@
                                                         src="{{ 'arrow-up.png' | asset_url }}" alt=""></span></h6>
                                             <div class="u_item__hidden-div" style="display: none;">
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>
-                                                    Mikro-Infusionsgerät (im Wert von 80 €)</p>
+                                                    Mikro-Infusionsgerät (im Wert von 80 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>3 klinische
-                                                    Micro-Needling-Köpfe (im Wert von 10 €)</p>
+                                                    Micro-Needling-Köpfe (im Wert von 10 {{ currency }})</p>
                                                 <p><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>2 klinisch
                                                     2 klinisch formulierte 4-ml-Seren nach Wahl zur Behandlung
-                                                    spezieller Hautprobleme (im Wert von 40 €)</p>
+                                                    spezieller Hautprobleme (im Wert von 40 {{ currency }})</p>
                                             </div>
                                         </div>
                                     </div>
@@ -261,8 +280,8 @@
                                                         class="img-fluid" /></div>
                                             </div>
                                             <div class="price total_price">
-                                                <div class="pmt_prc regular_price">262 €</div>
-                                                <div class="pmt_prc sale_price">149 €</div>
+                                                <div class="pmt_prc regular_price">{{ currency }}262</div>
+                                                <div class="pmt_prc sale_price">{{ currency }}149</div>
                                             </div>
                                         </label>
                                     </div>
@@ -277,14 +296,14 @@
                                                 <div class="pmt_options"><img src="{{ 'klarna.svg' | asset_url }}" alt=""><img src="{{ 'sezzle.svg' | asset_url }}" alt="" class="ms-2"></div>
                                             </div>
                                             <div class="price">
-                                                <div class="pmt_prc pay_today">€ 42.25</div>
+                                                <div class="pmt_prc pay_today">{{ currency }}37,25</div>
                                             </div>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
+                        {% assign product = all_products['micro-infusion-3-month-refill-6x-hydra-soothing-serum'] %}
                         
                         <div class="step_content my-3">
                             <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject event_btn" href="{{ routes.cart_add_url }}?id=43216377217263&quantity=1" data-ajax-cart-request-button>
@@ -300,7 +319,7 @@
                                 </div>
                                 <div class="c_s_bx">
                                     <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-                                    <p>Kostenloser<br> weltweiter Versand über 100 €</p>
+                                    <p>Kostenloser<br> weltweiter Versand über 100 {{ currency }}</p>
                                 </div>
                                 <div class="c_s_bx">
                                     <img src="{{ 'derma-ftr.svg' | asset_url }}" alt="">

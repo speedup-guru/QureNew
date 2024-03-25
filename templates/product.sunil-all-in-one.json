@@ -32,13 +32,39 @@
         "subscribe_8ThJCW"
       ],
       "settings": {
-        "heading": "Embrace ageless confidence withAll-In-One Face Serum",
+        "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "heading_mobile": "Embrace ageless confidence withAll-In-One Face Serum",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 3,
         "before_after_button_label": "Real Results",
-        "reserve": false
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100"
+      }
+    },
+    "two_column_box_TyH4EK": {
+      "type": "two-column-box",
+      "blocks": {
+        "content_3tryDW": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare experience.<\/p>",
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "content_3tryDW"
+      ],
+      "custom_css": [
+        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
+        ".row {align-items: center !important;}"
+      ],
+      "settings": {
+        "classname": "richtext_prog_section section",
+        "column_image": 5,
+        "column_content": 7
       }
     },
     "featuredin_MiWihW": {
@@ -99,39 +125,6 @@
         "heading": "FEATURED IN"
       }
     },
-    "two_column_box_TyH4EK": {
-      "type": "two-column-box",
-      "blocks": {
-        "image_diywHk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/all_serum_difference-desk.png",
-            "image_mobile": "shopify:\/\/shop_images\/all_serum_difference-mob.png",
-            "classname": "mw-mob-100"
-          }
-        },
-        "content_3tryDW": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>Everything you need in one serum<\/h2><p>Unique blend of active ingredients work together to brighten, plump and smooth skin.<\/p><p>Treat various skin concerns in just one step.<\/p><p>Fragrance, Paraben & PEG Free.<\/p>",
-            "classname": "it_info p-0 pt-0 pt-md-3"
-          }
-        }
-      },
-      "block_order": [
-        "image_diywHk",
-        "content_3tryDW"
-      ],
-      "custom_css": [
-        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
-        ".row {align-items: center !important;}"
-      ],
-      "settings": {
-        "classname": "richtext_prog_section section",
-        "column_image": 5,
-        "column_content": 7
-      }
-    },
     "before_after_box_bQQL6y": {
       "type": "before-after-box",
       "blocks": {
@@ -139,7 +132,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Bethany <\/strong>(Vitamin B3 Derivative)<\/p>",
-            "text": "<p>All star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.<\/p>",
+            "text": "<p>All-star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>reported significant improvement in fine lines, radiance, acne breakouts and smoothness.<\/p>",
             "popup_content": "<p>A 12-week clinical study demonstrated a 21% improvement in fine lines along with a 14% skin tone clarity and 15% radiance improvement. Improvements were reported as early as 2 weeks. Subjects reported no stinging, itching, dryness, or tingling after 10 weeks.<\/p><p><strong>In another Clinical Trial…<\/strong><\/p><p>Subjects experienced significantly lowered oil production after 2 and 4 weeks of application with reduced clogged pores and acne breakouts.<\/p><p>References: J Drugs Dermatol 2016 Jul 1;15(7):863-8 combined with 0.5% retinol. Int J Dermatol. 1995 Jun;34(6):434-7. doi: 10.1111\/j.1365-4362.1995.tb04449.x.<\/p>"
           }
@@ -148,7 +141,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Lactic & Mandelic acid <\/strong>(Gentle Exfoliators)<\/p>",
-            "text": "<p>Gentle chemical exfoliants gobble up the top layer of dead cells to reveal clearer, smoother skin.<\/p>",
+            "text": "<p>Gentle chemical exfoliants gobble up the top layer of dead cells which can reveal clearer, smoother skin.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>reported firmer, smoother skin resulting in fewer fine lines and wrinkles, along with reduction of acne.<\/p>",
             "popup_content": "<p>Participants using lactic acid experienced fimer, thicker skin and saw significant improvement in reduction of lines and wrinkles after application with boosted skin radiance. Along with reduction and prevention of acne lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and test participants applied lactic acid twice a day for 3 months. Changes in skin smoothness and texture, the depth and number of lines and wrinkles, and epidermal and dermal firmness and thickness were determined.<\/p><p>Reference: Rathi SK. Acne vulgaris treatment : The Current Scenario. Indian J Dermatol 2011;56:7-13<\/p>"
           }
@@ -170,7 +163,7 @@
       ],
       "settings": {
         "heading": "Uneven Skin Texture",
-        "text": "<p>Clarify and even skin tone, minimise enlarged pores, strengthen skin’s barrier, reduce breakouts.<\/p>",
+        "text": "<p>Helps clarify and even skin tone, minimise enlarged pores, strengthen skin’s barrier, and reduce breakouts.<\/p>",
         "image": "shopify:\/\/shop_images\/bethany_skincare.webp",
         "image_country": "shopify:\/\/shop_images\/canada_f.svg",
         "client": "Bethany N."
@@ -183,7 +176,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Argireline Peptides<\/strong><\/p>",
-            "text": "<p>The most trusted anti-aging peptide in the world. Stimulates collagen, reduces fine lines and boosts moisture for a firmer, youthful complexion!<\/p>",
+            "text": "<p>The most trusted anti-aging peptide in the world. Stimulates collagen, which aids in reducing fine lines and boosting moisture for a firmer, youthful-looking complexion!<\/p>",
             "feedback": "<p><strong>…Argireline <\/strong>has been found to be effective in <strong>reducing wrinkles, <\/strong>with efficacies <strong>up to 48%<\/strong>upon 4 weeks of twice daily treatment.<\/p>",
             "popup_content": "<p>Argireline, a mimetic of Botox, has been found to be safer than Botox and effective in reducing wrinkles, with efficacies up to 48% upon 4 weeks of twice daily treatment. The total anti wrinkle efficiency in the Argireline group was 48.9%, the depth of the wrinkles was notably reduced.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included 60 subjects that received a randomized treatment of Argireline or placebo in a ratio of 3:1. Argireline or placebo was applied to their periorbital wrinkles twice daily for 4 weeks, and then evaluations were made for the improvements in wrinkles. Silicone replicas of the skin at the application area were made before and after the treatment, which were analyzed by a wrinkle-analysis apparatus.<\/p><p>Reference: Am J Clin Dermatol. 2013 Apr;14(2):147-53. The anti-wrinkle efficacy of argireline, a synthetic hexapeptide, in Chinese subjects: a randomized, placebo-controlled study. doi: 10.1007\/s40257-013-0009-9.<\/p>"
           }
@@ -192,9 +185,18 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Bakuchiol<\/strong><\/p>",
-            "text": "<p>Get all the benefits of retinol without the risk of irritation. Bakuchiol increases cell turnover and stimulates collagen production to make your skin look smooth and firm.<\/p>",
+            "text": "<p>Get the benefits of retinol - in a more natural way! Bakuchiol helps to stimulate cell turnover to make your skin look smooth and firm.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>saw significant improvement in lines and wrinkles, pigmentation, elasticity, firmness and overall reduction in photo‐damage.<\/p>",
             "popup_content": "<p>Subjects saw significant improvement in lines and wrinkles, pigmentation, elasticity, firmness and overall reduction in photo‐damage without usual retinol therapy‐associated undesirable side effects.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included healthy subjects between the ages of 30 and 55. A cream containing Bakuchiol was applied daily for 12 weeks on the participants. Change in wrinkle and skin pigmentation appearance were assessed at weeks 4, 8, and 12.<\/p><p>Reference: University of California, Davis. (2017). Comparison of the Cosmetic Effects of Bakuchiol and Retinol.NCT03112863.<\/p>"
+          }
+        },
+        "object_Czzq3P": {
+          "type": "object",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "feedback": "",
+            "popup_content": ""
           }
         },
         "object_DiMGjf": {
@@ -210,7 +212,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Boswellia Serrata Extract<\/strong><\/p>",
-            "text": "<p>Nourishes and protects whilst improves skin elasticity, even skin tone and helps to reduce appearance of wrinkles for firmer, more youthful-looking skin.<\/p>",
+            "text": "<p>Nourishes and protects whilst helping to even skin tone. Helps support elastin and hyaluronic acid to improve the appearance of firm skin and reduce the appearance of fine lines.<\/p>",
             "feedback": "<p><strong>...Subjects reported <\/strong>significant improvement of tactile roughness, fine lines and skin elasticity, and a decrease of sebum excretion.<\/p>",
             "popup_content": "<p>Subjects reported significant improvement of tactile roughness, fine lines and skin elasticity, and a decrease of sebum excretion.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Randomized, double-blind, split-face study was conducted on 15 female volunteers. Cream containing Boswellia Serrata Extract was applied once daily for 30 days. At the end of the treatment clinical findings were assessed according to the Dover classification scale for photoaging and by biophysical and ecographic measurements.<\/p><p>Reference: Planta Med. 2010 Apr;76(6):555-60. doi: 10.1055\/s-0029-1240581. Epub 2009 Nov 16.<\/p>"
           }
@@ -228,13 +230,14 @@
       "block_order": [
         "object_eBqNf8",
         "object_gRF8VJ",
+        "object_Czzq3P",
         "object_DiMGjf",
         "object_iPqM8q",
         "object_UtrtEV"
       ],
       "settings": {
         "heading": "Fine Lines and Wrinkles",
-        "text": "<p>Deeply hydrate skin to make fine lines less visible and boost the moisture of your skin!<\/p>",
+        "text": "<p>Add deep hydration to reduce the appearance of fine lines and boost the moisture of your skin!<\/p>",
         "image": "shopify:\/\/shop_images\/shannon_skincare.webp",
         "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
         "client": "Shannon"
@@ -247,7 +250,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Ethyl Ascorbic Acid <\/strong>(Vitamin C)<\/p>",
-            "text": "<p>Known for its brightening, wrinkle reduction, firming, benefits. It helps with fading hyperpigmentation to restore a more even skin tone and maintains smooth, supple skin.<\/p>",
+            "text": "<p>Known for its brightening, wrinkle reduction, firming, benefits. It helps with fading hyperpigmentation to restore a more even skin tone and helps maintain smooth, supple skin.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>experienced <strong>visible <\/strong>improvement of fine lines, wrinkles, skin texture and skin tone.<\/p>",
             "popup_content": "<p>Clinical assessment demonstrated significant improvement with active treatment greater than control for fine wrinkling, tactile roughness, coarse rhytids, skin laxity\/tone, sallowness\/yellowing, and overall features. Patient questionnaire results demonstrated statistically significant improvement overall, active treatment 84.2% greater than control.<\/p><p>Reference: Arch Otolaryngol Head Neck Surg. 1999 Oct;125(10):1091-8. doi: 10.1001\/archotol.125.10.1091.<\/p>"
           }
@@ -256,7 +259,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Ferulic Acid<\/strong><\/p>",
-            "text": "<p>Works to stop all the damage that comes from extrinsic aging. Reduces the formation of fine lines and wrinkles, dark spots<\/p>",
+            "text": "<p>Works to stop all the damage that comes from extrinsic aging. Helps reduce the formation of fine lines and wrinkles, dark spots.<\/p>",
             "feedback": "<p><strong>A 2005 study <\/strong>suggests that ferulic acid has the potential to offer twice the amount of photoprotection when combined with vitamins C and E.<\/p>",
             "popup_content": "<p>Clinical assessment demonstrated significant improvement with active treatment greater than control for fine wrinkling, tactile roughness, coarse rhytids, skin laxity\/tone, sallowness\/yellowing, and overall features. Patient questionnaire results demonstrated statistically significant improvement overall, active treatment 84.2% greater than control.<\/p><p>Reference: Arch Otolaryngol Head Neck Surg. 1999 Oct;125(10):1091-8. doi: 10.1001\/archotol.125.10.1091.<\/p>"
           }
@@ -265,7 +268,7 @@
           "type": "object",
           "settings": {
             "heading": "<p><strong>Actiwhite™<\/strong><\/p>",
-            "text": "<p>Visibly brighten and even skin tone for a more radiant complexion. Actiwhite™ reduces the appearance of dark spots and prevents discoloration (by inhibiting melanin) with continued use.<\/p>",
+            "text": "<p>Work to visibly brighten and even skin tone for a more radiant complexion. Actiwhite™ helps reduce the appearance of dark spots and works to prevent discoloration (by inhibiting melanin) with continued use.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>demonstrated a significant reduction of pigmented age spots, and visible improvement of skin clarity and brightness.<\/p>",
             "popup_content": "<p><strong>After 2 weeks<\/strong><br\/>Dermatologists evaluated skin was more luminous in 100% of subjects.<br\/>Dermatologists evaluated lightened pigmented spots in 100% of subjects.<\/p><p><strong>After 8 weeks<\/strong><br\/>Dermatologists evaluated significant reduction of pigmented spots in 100% of subjects.<\/p><p><strong>After 12 weeks<\/strong><br\/>Significant reduction of tyrosinase activity and released melanin quantity.<\/p><p>Dermatologists evaluated lighter skin appearance.<br\/>Dermatologists evaluated improved skin clarity and brighter complexion.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included subjects between the ages of 18 and 45. The specific requirement was the presence of well-defined pigmented spots on each side of the face associated to a spotless area.<\/p><p>An emulsion containing 2% Actiwhite™ was applied twice daily for 8 weeks. Evaluation was conducted with colorimetric measurement (∆ITA☐), dermatologist, self-assessment and macro photograph of visibility, size and number of the age spot, skin complexion.<\/p><p>Reference: Actiwhite. by Beauty Creations. The tailor-made whitener and spot preventer to improve skin appearance<br\/>November 26, 2016.Author: Morgan Griffith<\/p>"
           }
@@ -454,7 +457,8 @@
         "likes": "33K",
         "views": "806K views",
         "image": "shopify:\/\/shop_images\/trusted_shah_max_main.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk",
+        "video_label": "Click To Watch Review"
       }
     },
     "icons_list_688GQP": {
@@ -578,7 +582,7 @@
           "type": "object",
           "settings": {
             "heading": "Who should use the Face Serum?",
-            "text": "<p>You should use Face Serum if:<\/p><ul><li>💦 Your skin is showing signs of aging<\/li><li>💦 Your skin looks dull and tired<\/li><li>💦 You want to even your skin tone and texture<\/li><li>💦 Your skin has dark spots and discoloration<\/li><\/ul><p>Face Serum helps improve these skin concerns. It’s a lightweight serum that rejuvenates dull skin for smooth, radiant results. Its clinically-proven ingredients work to make your skin look brighter, instantly and over time.<\/p><h2><\/h2>",
+            "text": "<p>You should use Face Serum if:<\/p><ul><li>💦 Your skin is showing signs of aging<\/li><li>💦 Your skin looks dull and tired<\/li><li>💦 You want to even your skin tone and texture<\/li><\/ul><p>Face Serum helps improve these skin concerns effortlessly. It’s a lightweight serum that aids in the  rejuvenation of dull skin for smooth, radiant results. Its clinically-proven ingredients work to make your skin look brighter, instantly and over time.<\/p><h2><\/h2>",
             "code": ""
           }
         },
@@ -674,8 +678,8 @@
   },
   "order": [
     "main",
-    "featuredin_MiWihW",
     "two_column_box_TyH4EK",
+    "featuredin_MiWihW",
     "before_after_box_bQQL6y",
     "before_after_box_J7Ee7E",
     "before_after_box_9qjQBW",

@@ -9,6 +9,13 @@
             {% capture button %}
                 <a href="{{ block.settings.button_url }}" class="mt-4 btn btn-lg btn-primary">{{ block.settings.button_label }}</a>
             {% endcapture %}
+        {%- when 'rating' -%}
+            {% capture rating %}
+                {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                {% endif %}
+                <p class="text-sm fw-normal mb-0 text-decoration-none">{{ block.settings.text }}</p>
+            {% endcapture %}    
     {%- endcase -%}
 {%- endfor -%}
 
@@ -33,9 +40,7 @@
                         <div class="col-md-6 order-2 order-md-1">
                                 <div class="{% if images_count > 1 %}cg_desc pe-0 pe-md-3 pe-lg-5  pt-4 pt-md-0{% else %}pt-5{% endif %}">
                                 <div class="refill_review justify-content-start text-start mb-3">
-                                    <img src="{{ 'bundle_r_3.svg' | asset_url }}" alt="">
-                                    <p class="text-sm fw-normal mb-0 text-decoration-none">97% customer satisfaction rate
-                                    </p>
+                                    {{ rating }}
                                 </div>
                                 <div class="section_header p-0 mb-3">
                                     {% if block.settings.heading != blank %}
@@ -143,6 +148,24 @@
                 ]
 		    },
             {
+                "type": "rating",
+                "name": "t:common.rating.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label",
+                        "default": "97% customer satisfaction rate"
+                    }
+                ]
+            },
+            {
                 "type": "image",
                 "name": "t:common.image.label",
                 "limit": 4,
@@ -188,6 +211,13 @@
                             "heading": "Neck & Décolletage LED Light Therapy",
                             "text": "<p>Safe, non-invasive LED treatment. We recommend three to five 10-minute treatments per week for the best results.<\/p>",
                             "product": "neck-decolletage-led"
+                        }
+                    },
+                    {
+                        "type": "rating",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/bundle_r_3.svg",
+                            "text": "97% customer satisfaction rate"
                         }
                     },
                     {

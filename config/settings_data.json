@@ -22,27 +22,28 @@
       "header": {
         "type": "header",
         "blocks": {
+          "announcement-promotion_L6B7qD": {
+            "type": "announcement-promotion",
+            "settings": {
+              "heading": "EASTER OFFER",
+              "button_label": "Hunt 56% OFF Exclusive Easter Bundle",
+              "button_mobile_label": "Hunt Exclusive 56% OFF Bundle",
+              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+            }
+          },
           "announcement_TPxBgi": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "heading": "<p><strong>FREE World-Wide Shipping <\/strong>All Orders Above $100<\/p>",
               "button_label": "SAVE UPTO 55%",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
-          },
-          "announcement-promotion_L6B7qD": {
-            "type": "announcement-promotion",
-            "disabled": true,
-            "settings": {
-              "heading": "WOMEN'S DAY | SPEND $150",
-              "button_label": "Get FREE Face Serum",
-              "button_url": "shopify:\/\/collections\/best-sellers"
-            }
           }
         },
         "block_order": [
-          "announcement_TPxBgi",
-          "announcement-promotion_L6B7qD"
+          "announcement-promotion_L6B7qD",
+          "announcement_TPxBgi"
         ],
         "settings": {
         }

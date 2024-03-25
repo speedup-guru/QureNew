@@ -23,3 +23,14 @@
     bottom: 5px !important;
     padding-top: 0px;
 }
+.mi_landing .shipping.one_line .s_bx p {
+    white-space: normal !important;
+    padding-left: 10px;
+    width: 137px;
+}
+
+@media(max-width:767px) {
+    .mi_landing .shipping.one_line .s_bx p {
+        width: 130px;
+    }
+}
