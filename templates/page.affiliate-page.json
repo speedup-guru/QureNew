@@ -1,12 +1,279 @@
 {
   "sections": {
-    "main": {
-      "type": "temp-page-affiliate",
+    "banner_7hcQt3": {
+      "type": "banner",
+      "blocks": {
+        "button_ytUV8q": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join now",
+            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+          }
+        }
+      },
+      "block_order": [
+        "button_ytUV8q"
+      ],
       "settings": {
+        "heading": "Qure Skincare Affiliate Program",
+        "text": "<p>Become a Qure Ambassador and be part of a community that shapes the future of skincare.<\/p><p>Let’s bridge the gap to better skincare together and spread skin confidence worldwide.<\/p>",
+        "image": "shopify:\/\/shop_images\/affiliate_banner_desk.webp",
+        "image_mobile": "shopify:\/\/shop_images\/affiliate_banner_mob.webp"
+      }
+    },
+    "three_column_box_VdFUgY": {
+      "type": "three-column-box",
+      "blocks": {
+        "object_kqfMjr": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_h_w_1.webp",
+            "heading": "Sign Up",
+            "text": "<p>Use the link below to apply for our exclusive affiliate program and<\/p>"
+          }
+        },
+        "object_aUVXYM": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_h_w_2.webp",
+            "heading": "Create amazing content",
+            "text": "<p>Create amazing content around any of our science-backed skincare products and treatments. Create a video, write a blog post, record a vlog or take a picture of your Qure skincare investment.<\/p>"
+          }
+        },
+        "object_X88LEt": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_h_w_3.webp",
+            "heading": "Share the content",
+            "text": "<p>Share the content you created using your unique affiliate link. Include your affiliate link in your social bio. You’ll earn commission on all eligible sales made through your exclusive affiliate link.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "object_kqfMjr",
+        "object_aUVXYM",
+        "object_X88LEt"
+      ],
+      "settings": {
+        "heading": "How does it work?",
+        "text": "<p>Earn commission on sales with our Qure Skincare Affiliate Program. Simply sign up, shine the light on skincare that actually works, and watch the $$$ roll in while the no-worries skincare moments roll on.<\/p><p>You’ll get exclusive access to new clinical-grade treatments and products, promotions, and the latest updates.<\/p><p><strong>We may be a mask, but we don’t hide behind it. We’re at the front of skin care. Through our affiliate program<\/strong><\/p>"
+      }
+    },
+    "icons_list_zQqttF": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_GG8P74": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
+          }
+        },
+        "icon_ki7Nza": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
+            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
+          }
+        },
+        "icon_h9mYj7": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
+            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
+          }
+        },
+        "icon_ENM96A": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/science-ftr.svg",
+            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_GG8P74",
+        "icon_ki7Nza",
+        "icon_h9mYj7",
+        "icon_ENM96A"
+      ],
+      "settings": {
+      }
+    },
+    "perks_WicUUX": {
+      "type": "perks",
+      "blocks": {
+        "object_aBRekq": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/join_money.svg",
+            "heading": "Earn Money",
+            "text": "<p>A competitive % commission per sale<\/p>"
+          }
+        },
+        "object_nE8JJn": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/join_creatives_fbe14863-2c40-45c3-9a73-d84b00863641.svg",
+            "heading": "Access to Creatives",
+            "text": "<p>Shared creatives and graphics so you are set up for success<\/p>"
+          }
+        },
+        "object_C4dCRz": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/join_vip.svg",
+            "heading": "Exclusive Perks",
+            "text": "<p>Receive free products, bonuses, and first access to new products, promotions and VIP campaigns<\/p>"
+          }
+        },
+        "object_Fw7fMV": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/join_social.svg",
+            "heading": "Social Collabs",
+            "text": "<p>Opportunity to be featured on Qure Skincare social media channels and boost your exposure<\/p>"
+          }
+        },
+        "object_DpDhKj": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/join_discounts.svg",
+            "heading": "Special Discounts",
+            "text": "<p>Exclusive discounts & offers to share with your friends, family, and followers<\/p>"
+          }
+        },
+        "object_BLGzFp": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/join_handshake.svg",
+            "heading": "Dedicated Ambassador Manager",
+            "text": "<p>To help you understand how to grow your following, get the most out of the program and progress at an individual level<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "object_aBRekq",
+        "object_nE8JJn",
+        "object_C4dCRz",
+        "object_Fw7fMV",
+        "object_DpDhKj",
+        "object_BLGzFp"
+      ],
+      "settings": {
+        "heading": "Why should you join?"
+      }
+    },
+    "influencers_zc7mUz": {
+      "type": "influencers",
+      "blocks": {
+        "object_QzLKAK": {
+          "type": "object",
+          "settings": {
+            "heading": "Skincare Experts",
+            "image": "shopify:\/\/shop_images\/affiliate_s_m_1.webp",
+            "button_label": "Join now",
+            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+          }
+        },
+        "object_TpBnqU": {
+          "type": "object",
+          "settings": {
+            "heading": "Influencers",
+            "image": "shopify:\/\/shop_images\/affiliate_s_m_2.webp",
+            "button_label": "Join now",
+            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+          }
+        },
+        "object_yzhdrf": {
+          "type": "object",
+          "settings": {
+            "heading": "Dermatologists",
+            "image": "shopify:\/\/shop_images\/affiliate_s_m_3.webp",
+            "button_label": "Join now",
+            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+          }
+        }
+      },
+      "block_order": [
+        "object_QzLKAK",
+        "object_TpBnqU",
+        "object_yzhdrf"
+      ],
+      "settings": {
+      }
+    },
+    "influencers_social_wPiYA4": {
+      "type": "influencers-social",
+      "blocks": {
+        "object_b7G6yA": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_insta_1.webp",
+            "image_icon": "shopify:\/\/shop_images\/amandalee_hill.webp",
+            "text": "<p><strong>@amandalee_hill<\/strong><\/p>"
+          }
+        },
+        "object_nMxKWh": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_insta_2.webp",
+            "image_icon": "shopify:\/\/shop_images\/vanidiy.webp",
+            "text": "<p><strong>@vanidiy<\/strong><\/p>"
+          }
+        },
+        "object_FNCfTr": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_insta_3.webp",
+            "image_icon": "shopify:\/\/shop_images\/dr_skinsanity.webp",
+            "text": "<p>@<strong>dr_skinsanity<\/strong><\/p>"
+          }
+        },
+        "object_TV4pBP": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_insta_4.webp",
+            "image_icon": "shopify:\/\/shop_images\/skin_so_fabulous.webp",
+            "text": "<p><strong>@skin_so_fabulous<\/strong><\/p>"
+          }
+        },
+        "object_PQez6x": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/affiliate_insta_5.webp",
+            "image_icon": "shopify:\/\/shop_images\/hilarykennedy.webp",
+            "text": "<p>@<strong>hilarykennedy<\/strong><\/p>"
+          }
+        },
+        "button_PxHQH3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join now",
+            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+          }
+        }
+      },
+      "block_order": [
+        "object_b7G6yA",
+        "object_nMxKWh",
+        "object_FNCfTr",
+        "object_TV4pBP",
+        "object_PQez6x",
+        "button_PxHQH3"
+      ],
+      "settings": {
+        "heading": "Join the Qure family",
+        "text": ""
       }
     }
   },
   "order": [
-    "main"
+    "banner_7hcQt3",
+    "three_column_box_VdFUgY",
+    "icons_list_zQqttF",
+    "perks_WicUUX",
+    "influencers_zc7mUz",
+    "influencers_social_wPiYA4"
   ]
 }

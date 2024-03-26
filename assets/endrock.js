@@ -179,6 +179,9 @@ const removeSwiperClass = () => {
 window.addEventListener("ig:ready", () => { 
   if(!(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel'))){
     removeSwiperClass()
+  }else{
+console.log("entra aqui a ver luego");
+    initUpsellSwiper();
   }
 });
 
