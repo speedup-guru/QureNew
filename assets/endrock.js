@@ -63,7 +63,11 @@ const swiperInfoResutl = new Swiper('.swiper-info-result', {
 const swiperBeforeAfter = (selector) => {
   return new Swiper(`${selector}`, {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   });
 }
 
@@ -151,10 +155,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //  PDP: Before & After First Image 
 
+  // Crear el botón
+  /*
+  const newNavItemHTML = `
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" 
+      data-bs-toggle="pill"
+      data-bs-target="#new-tab-pane"
+      type="button"
+      role="tab"
+      aria-controls="new-tab-pane"
+      aria-selected="false">
+      Dermatologist
+    </button>
+  </li>
+  `;
+  const tabList = document.getElementById('pills-tab');
+  tabList.insertAdjacentHTML('beforeend', newNavItemHTML);
+  const newButton = tabList.querySelector('.nav-link:last-child');
+
+  newButton.addEventListener('click', function() {
+    // Remover la clase 'active' de todos los botones
+    document.querySelectorAll('.nav-link').forEach(button => {
+      button.classList.remove('active');
+    });
+
+    // Agregar la clase 'active' solo al nuevo botón
+    this.classList.add('active');
+  });
+
+  const newTabPane = document.createElement('div');
+  newTabPane.classList.add('tab-pane', 'fade');
+  newTabPane.setAttribute('id', 'new-tab-pane');
+  newTabPane.setAttribute('role', 'tabpanel');
+  newTabPane.innerHTML = `
+    <video autoplay muted controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  `
+
+  const tabContent = document.getElementById('pills-tabContent');
+  tabContent.appendChild(newTabPane);
+  */
+
+  /*
   const productButton = document.getElementById('productButton');
   const resultButton = document.getElementById('resultButton');
   const dermaButton = document.getElementById('dermaButton');
-
+  */
   const productComponent = document.getElementById('info-product');
   const resultComponent = document.getElementById('info-result');
   const dermaComponent = document.getElementById('info-derma');
@@ -170,6 +219,30 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
+  document.querySelectorAll('.nav-button').forEach(button => {
+    button.addEventListener('click', function() {
+      const buttonId = this.id
+      console.log(buttonId)
+      document.querySelectorAll('.nav-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      this.classList.add('active');
+
+      switch (buttonId) {
+        case 'productButton':
+          showComponent(productComponent);
+          break;
+        case 'resultButton':
+          showComponent(resultComponent);
+          break;
+        case 'dermaButton':
+          showComponent(dermaComponent);
+          break;
+      }
+    });
+  });
+  /*
   productButton.addEventListener('click', function() {
     showComponent(productComponent);
     resultButton.classList.remove('active');
@@ -190,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
     productButton.classList.remove('active');
     resultButton.classList.remove('active');
   });
-
+  */
   // end PDP: Before & After First Image 
 
 });

@@ -18,10 +18,10 @@
 
 
 <!-- -- main banner start -- -->
-<div class="refill_bl pt-0 tabSlider">
+<div id='testing' class="refill_bl pt-0 tabSlider">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-2 order-md-1 testingdiv">
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start">
                         {% if section.settings.heading != blank %}
@@ -229,8 +229,8 @@
             </div>
             {% comment %} component-original {% endcomment %}
             <div class="col-md-6  order-1 order-md-2">
-                <!--
-                <div class="refill_slider mw-mob-100">
+                
+                <div style="display: none" class="refill_slider mw-mob-100">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -342,8 +342,9 @@
                         </div>
                     {% endif %}
                 </div>
-                -->
+                
             {% comment %} end component original {% endcomment %}
+            
             {% render 'endrock_before_after', data: section.blocks %}
             </div>
         </div>

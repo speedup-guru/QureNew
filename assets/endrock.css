@@ -238,6 +238,34 @@
 
 /*   PDP: Before & After First Image  */
 
+#testing .container{
+  padding: 0 7rem;
+  max-width: 100%;
+}
+
+#testing .container .row .testingdiv{
+  display: flex;
+  justify-content: center;
+}
+
+#info-result .swiper-info-result{
+  width: 600px;
+  height: 100%;
+}
+
+#info-result .result-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#info-product .tab-pane .swiper{
+  width: 600px;
+  min-height: auto;
+}
+
+/* nav buttons */
+
 .selector-container{
   padding: 5px;
 }
