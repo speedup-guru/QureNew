@@ -183,7 +183,7 @@
                             {% render 'pdm_orderby' %}
                         {% endunless %}
                             <a class="btn btn-lg btn-primary buy_btn event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
-                                {{ product.price | money_without_trailing_zeros }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
+                            <span class="igPrice" data-product-id="{{ product.id }}"> {{ product.price | money_without_trailing_zeros }}</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                             </a>
 
                             {% if product.compare_at_price != blank %}
@@ -201,7 +201,7 @@
                             {% endif %}
 
                             <div class="payment_method">
-                                <p class="d-none d-md-block">OR pay 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
+                                <p class="d-none d-md-block">OR pay 4 monthly payments of <span class="igInstallmentPrice" data-product-id="{{ product.id }}"> {{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
                                 <p class="d-block d-md-none">OR 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
                                 <div class="pmt_img ps-2">
                                     <img src="{{ 'klarna.svg' | asset_url }}" alt="">
