@@ -484,5 +484,17 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "subscriptions": {
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": " "
+          },
+          "following_cycles": " "
+        }
+      }
+    }
   }
 }

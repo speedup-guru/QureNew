@@ -7,7 +7,7 @@
           "type": "announcement",
           "settings": {
             "heading": "Holiday Sale Ends In:",
-            "timer": "2024-03-17T23:59:59",
+            "timer": "2024-04-01T23:59:59",
             "timer_next": 7
           }
         },
@@ -248,7 +248,8 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Confidence changing results, from people just like you"
+        "heading": "Confidence changing results, from people just like you",
+        "text_verified_customer": "Verified customer"
       }
     },
     "two_column_box_FQCXGb": {

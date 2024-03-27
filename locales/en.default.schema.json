@@ -49,6 +49,12 @@
         "label": "Comments amount"
       }
     },
+    "align": {
+      "label": "Align",
+      "center": {
+        "label": "Align center"
+      }
+    },
     "heading": {
       "label": "Heading",
       "mobile": {
@@ -262,6 +268,13 @@
           "settings": {
           }
         }
+      }
+    },
+    "banner": {
+      "name": "Banner",
+      "settings": {
+      },
+      "blocks": {
       }
     },
     "header-landing": {
@@ -481,6 +494,13 @@
       "blocks": {
       }
     },
+    "trusted-simple": {
+      "name": "Trusted simple",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "bestseller": {
       "name": "Bestseller",
       "settings": {
@@ -554,6 +574,34 @@
             "label": "Details"
           }
         }
+      }
+    },
+    "three-column-box": {
+      "name": "Three column box",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "perks": {
+      "name": "Perks",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "influencers": {
+      "name": "Influencers",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "influencers-social": {
+      "name": "Influencers social",
+      "settings": {
+      },
+      "blocks": {
       }
     },
     "reasons": {
