@@ -61,15 +61,20 @@ const swiperInfoResutl = new Swiper('.swiper-info-result', {
 // end swiper PDP: Before & After First Image
 
 const swiperBeforeAfter = (selector) => {
-  return new Swiper(`${selector}`, {
+  const swiperInstance = new Swiper(`${selector}`, {
     slidesPerView: 1,
-    spaceBetween: 0,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    },
+    }
   });
+
+  return swiperInstance;
 }
+
+swiperBeforeAfter('.swiper-products')
+swiperBeforeAfter('.swiper-info-result')
+swiperBeforeAfter('.swiper-page-product')
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -208,14 +213,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const resultComponent = document.getElementById('info-result');
   const dermaComponent = document.getElementById('info-derma');
 
-  swiperBeforeAfter('.swiper-info-result')
+  // swiperBeforeAfter('.swiper-products')
+  // swiperBeforeAfter('.swiper-info-result')
+  // swiperBeforeAfter('.swiper-page-product')
 
   function showComponent(component) {
     document.querySelectorAll('[id^="info-"]').forEach(component => {
-      component.style.display = 'none';
+      component.classList.remove('active');
     });
-
-    component.style.display = 'block';
+    component.classList.add('active')
   }
 
 

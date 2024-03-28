@@ -172,7 +172,7 @@
                 </div>
             </div>
             <div class="col-md-6  order-1 order-md-2">
-                <div class="refill_slider mw-mob-100">
+                <div style='display: none' class="refill_slider mw-mob-100">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -371,6 +371,8 @@
                         </div>
                     {% endif %}
                 </div>
+              {% comment %} end component original {% endcomment %}
+              {% render 'endrock_before_after', data: section.blocks %}
             </div>
         </div>
     </div>
@@ -560,6 +562,63 @@
                 ]
             },
             {
+              "type": "product_in_page",
+              "name": "Product in page",
+              "limit": 1,
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image_product_1",
+                  "label": "image product 1"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_1",
+                  "label": "image product text 1"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_2",
+                  "label": "image product 2"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_2",
+                  "label": "image product text 2"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_3",
+                  "label": "image product 3"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_3",
+                  "label": "image product text 3"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_4",
+                  "label": "image product 4"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_4",
+                  "label": "image product text 4"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_5",
+                  "label": "image product 5"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_5",
+                  "label": "image product text 5"
+                }
+              ]
+            },
+            {
                 "type": "before_and_after",
                 "name": "before and after",
                 "limit": 1,
@@ -615,7 +674,19 @@
                         "label": "Alt text Imagen 5"
                     }
                 ]                  
-            }
+            },
+            {
+                "type": "video_before_and_after",
+                "name": "video before and after",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "video",
+                        "id": "video_new_section",
+                        "label": "video"
+                    }
+                ]
+            }          
         ],
         "presets": [
           {

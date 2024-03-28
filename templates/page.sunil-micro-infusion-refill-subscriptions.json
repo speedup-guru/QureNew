@@ -77,6 +77,38 @@
           "settings": {
             "code": "{% render 'serums-refill-form' with section_id: section.id %}"
           }
+        },
+        "product_in_page_gkYdxK": {
+          "type": "product_in_page",
+          "settings": {
+            "image_product_1": "shopify:\/\/shop_images\/mi_refill-product-1.webp",
+            "image_product_text_1": "mi refill product with a man",
+            "image_product_2": "shopify:\/\/shop_images\/mi_refill-product-2.webp",
+            "image_product_text_2": "collection refill product",
+            "image_product_3": "shopify:\/\/shop_images\/mi_refill-product-3.webp",
+            "image_product_text_3": "using refill product",
+            "image_product_4": "shopify:\/\/shop_images\/mi_refill-product-4.webp",
+            "image_product_text_4": "collage product",
+            "image_product_text_5": ""
+          }
+        },
+        "before_and_after_jmNTNh": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/real_result_refill_img_1x_2.png",
+            "image_new_section_text_1": "real resul",
+            "image_new_section_2": "shopify:\/\/shop_images\/micro_inusion_refill_img_2_x_2.png",
+            "image_new_section_text_2": "testimonail two",
+            "image_new_section_text_3": "",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": ""
+          }
+        },
+        "video_before_and_after_w4xCC8": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Micro infusion edit.mov"
+          }
         }
       },
       "block_order": [
@@ -90,7 +122,10 @@
         "media_8Qj7Ce",
         "media_8nG6mE",
         "media_efznbh",
-        "liquid_a4mkYA"
+        "liquid_a4mkYA",
+        "product_in_page_gkYdxK",
+        "before_and_after_jmNTNh",
+        "video_before_and_after_w4xCC8"
       ],
       "settings": {
         "heading": "Micro-Infusion Refill Kit",
