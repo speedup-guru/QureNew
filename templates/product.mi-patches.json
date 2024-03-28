@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-extended",
+      "blocks": {
+        "rating_6FYizY": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
+            "text": "<p>97% customer satisfaction rate<\/p>"
+          }
+        },
+        "list_EVK9TV": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li><strong>FDA-cleared <\/strong>device that treats acne, fine lines, wrinkles and dark spots.<\/li><li><strong>Customizable<\/strong> treatment on 5 facial areas for <strong>your specific<\/strong> skin concerns.<\/li><li>Quick <strong>3 minute,<\/strong> wireless daily treatments with convinient hands-free operation.<\/li><\/ul>"
+          }
+        },
+        "supply_iDLrxG": {
+          "type": "supply",
+          "disabled": true,
+          "settings": {
+            "heading": "Next batch ships 10th January                                    2024:",
+            "heading_mobile": "Next batch ships 10\/01:",
+            "text": "<p>Due to high demand from our Black Friday Sale we have sold out. Order now and secure yours from the next shipment.<\/p>",
+            "html": "<div class=\"batch_h batch_h_fade mt-3 mt-md-4\">\n                                    <div class=\"batch_h_month\">December 5th<\/div>\n                                    <div class=\"batch_h_info sold_out_h\" style=\"--bgPercent:100%;\"><span>SOLD\n                                            OUT<\/span><\/div>\n                                <\/div>\n\n<div class=\"batch_h my-2\">\n                                    <div class=\"batch_h_month\">January 10th<\/div>\n                                    <div class=\"batch_h_info\" style=\"--bgPercent:81%;\">81% Reserved<\/div>\n                                <\/div>\n\n<div class=\"batch_h batch_h_fade\">\n                                    <div class=\"batch_h_month\">January 30th<\/div>\n                                    <div class=\"batch_h_info\" style=\"--bgPercent:0%;\"><span>In\n                                            Production<\/span><\/div>\n                                <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "rating_6FYizY",
+        "list_EVK9TV",
+        "supply_iDLrxG"
+      ],
+      "settings": {
+        "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
+        "heading_mobile": "Customizable LED Light Therapy Mask",
+        "product_images_limit": 5,
+        "product_button_label": "Product",
+        "before_after_images_limit": 2,
+        "before_after_button_label": "Before & After",
+        "reserve": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
