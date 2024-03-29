@@ -161,6 +161,7 @@
         "heading": "Der schnellste, einfachste, bequemste Weg, um eine \"Red Carpet ready\" Haut zu bekommen",
         "heading_mobile": "Der schnellste, einfachste, bequemste Weg, um eine \"Red Carpet ready\" Haut zu bekommen",
         "product": "",
+        "product_images_offset": 0,
         "product_images_limit": 6,
         "product_button_label": "Produkt",
         "before_after_images_limit": 3,
@@ -232,6 +233,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Das Geheimnis der besten Dermatologen<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
+            "column_content": 0,
             "classname": "secret_grid_wrap ps-0 ps-md-5 pt-5"
           }
         },
@@ -263,6 +265,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>\"Hollywood\"-Haut ist endlich zum Greifen nah, auch ohne das Elite-Budget.[image_mobile]<\/h2><p>Hast du dich jemals gefragt, wie deine Haut aussehen und sich anfühlen würde, wenn du Zugang zu den modernsten Behandlungen hättest?<\/p><p>Die, die sich nur die „Reichen und Schönen“ leisten können, die von den besten Dermatologen durchgeführt werden und nur in exklusiven Kliniken erhältlich sind.<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
@@ -298,6 +301,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Der ideale Hautbooster - selbstbewusste Make-up-freie Tage[image_mobile]<\/h2><p>Micro-Infusion - <strong>eine bei Promis beliebte Gesichtsbehandlung<\/strong> - und jetzt endlich auch für dich zu Hause zugänglich.<\/p><p>Genieße deine Mikro-Infusion-Gesichtsbehandlung gönnen, <strong>für einen verfeinerten Teint, glatte Hauttextur und Hollywood-GLOW.<\/strong><\/p><p>Und das Beste daran? Du kannst die <strong>Behandlung zu einem Bruchteil der Kosten bequem von zu Hause aus genießen.<\/strong><\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         }
@@ -478,6 +482,7 @@
           "type": "content",
           "settings": {
             "text": "<p>[code]<\/p>",
+            "column_content": 0,
             "classname": ""
           }
         },
@@ -1048,7 +1053,7 @@
           "type": "object",
           "settings": {
             "heading": "Gibt es eine Nachbehandlung, die ich nach der Behandlung durchführen sollte?",
-            "text": "<p>Nachdem du deine Haut mit dem Serum versorgt hast, solltest du versuchen, die Haut 24 Stunden lang sauber zu halten und die folgenden Richtlinien für die Nachbehandlung zu befolgen:<\/p><ul><li>- Wasche dein Gesicht am Tag nach der Behandlung mit einem sanften Reinigungsmittel und trage eine pflegende Feuchtigkeitscreme auf.<\/li><li>- Nach der Behandlung kann es zu leichten Rötungen und Irritationen kommen, die jedoch schnell abklingen sollten. Die Haut kann leicht anschwellen, sich schälen oder abblättern. Du kannst diese Auswirkungen minimieren, indem du die Haut mit Feuchtigkeit versorgen, was die Schuppenbildung verringert und das Spannungsgefühl mildert.<\/li><li>- Verzichte so lange wie möglich auf Make-up, mindestens jedoch 24 Stunden lang.<\/li><li>- In den ersten 24 Stunden nach der Behandlung solltest du keinen Sport treiben und keine anstrengenden Aktivitäten unternehmen. Schwitzen und die Umgebung im Fitnessstudio sind schädlich, voller Bakterien und können unerwünschte Reaktionen hervorrufen.<\/li><li>- Denke daran, dass alles, was du nach der Anwendung von Qure Microinfusion auf Ihre Haut auftragen, leichter absorbiert wird. Es ist daher wichtig, die Haut sauber zu halten und Produkte zu verwenden, die keine aggressiven Inhaltsstoffe enthalten (keine Säuren!).<\/li><li>- Vermeide es, dein Gesicht zu berühren, insbesondere mit schmutzigen, nicht desinfizierten Händen.<\/li><li>- Vermeide Schwimmen, Saunabesuche und Dampfbäder für mindestens 24 Stunden nach der Behandlung.<\/li><li>- Vermeide die Anwendung von Hautpflegeprodukten, die Duftstoffe, Wirkstoffe oder Säuren enthalten, wie z. B. Alphahydroxysäuren, Beta-Hydroxysäuren, Retinol (Vitamin A), Vitamin C oder alles, was als \"aktive\" Hautpflege wahrgenommen wird, einschließlich Peelings oder Toner, für mindestens zwei bis drei Tage nach der Behandlung, da dies zu Reizungen führen kann. Vermeide Peelingprodukte für 2-3 Tage nach der Behandlung, da du die Haut in diesem Zustand abstumpfen kannst.<\/li><li>- Vermeide direkte Sonneneinstrahlung unmittelbar nach der Behandlung. Trage einen Sonnenschutz mit hohem Lichtschutzfaktor auf, wenn du dich im Freien aufhältst, und vermeide eine längere Sonnenexposition.<\/li><li>- Verwende ein hochwertiges, nicht komedogenes Sonnenschutzmittel, wenn du in die Sonne gehst.<\/li><\/ul><p>Am nächsten Tag kannst du deine normalen Aktivitäten, deine normale Hautpflege und Make-up wieder aufnehmen - aber vielleicht brauchst du es gar nicht. Achte einfach darauf, wie deine Haut reagiert.<\/p>",
+            "text": "<p>Nachdem du deine Haut mit dem Serum versorgt hast, solltest du versuchen, die Haut 24 Stunden lang sauber zu halten und die folgenden Richtlinien für die Nachbehandlung zu befolgen:<\/p><ul><li>Wasche dein Gesicht am Tag nach der Behandlung mit einem sanften Reinigungsmittel und trage eine pflegende Feuchtigkeitscreme auf.<\/li><li>Nach der Behandlung kann es zu leichten Rötungen und Irritationen kommen, die jedoch schnell abklingen sollten. Die Haut kann leicht anschwellen, sich schälen oder abblättern. Du kannst diese Auswirkungen minimieren, indem du die Haut mit Feuchtigkeit versorgen, was die Schuppenbildung verringert und das Spannungsgefühl mildert.<\/li><li>Verzichte so lange wie möglich auf Make-up, mindestens jedoch 24 Stunden lang.<\/li><li>In den ersten 24 Stunden nach der Behandlung solltest du keinen Sport treiben und keine anstrengenden Aktivitäten unternehmen. Schwitzen und die Umgebung im Fitnessstudio sind schädlich, voller Bakterien und können unerwünschte Reaktionen hervorrufen.<\/li><li>Denke daran, dass alles, was du nach der Anwendung von Qure Microinfusion auf Ihre Haut auftragen, leichter absorbiert wird. Es ist daher wichtig, die Haut sauber zu halten und Produkte zu verwenden, die keine aggressiven Inhaltsstoffe enthalten (keine Säuren!).<\/li><li>Vermeide es, dein Gesicht zu berühren, insbesondere mit schmutzigen, nicht desinfizierten Händen.<\/li><li>Vermeide Schwimmen, Saunabesuche und Dampfbäder für mindestens 24 Stunden nach der Behandlung.<\/li><li>Vermeide die Anwendung von Hautpflegeprodukten, die Duftstoffe, Wirkstoffe oder Säuren enthalten, wie z. B. Alphahydroxysäuren, Beta-Hydroxysäuren, Retinol (Vitamin A), Vitamin C oder alles, was als \"aktive\" Hautpflege wahrgenommen wird, einschließlich Peelings oder Toner, für mindestens zwei bis drei Tage nach der Behandlung, da dies zu Reizungen führen kann. Vermeide Peelingprodukte für 2-3 Tage nach der Behandlung, da du die Haut in diesem Zustand abstumpfen kannst.<\/li><li>Vermeide direkte Sonneneinstrahlung unmittelbar nach der Behandlung. Trage einen Sonnenschutz mit hohem Lichtschutzfaktor auf, wenn du dich im Freien aufhältst, und vermeide eine längere Sonnenexposition.<\/li><li>Verwende ein hochwertiges, nicht komedogenes Sonnenschutzmittel, wenn du in die Sonne gehst.<\/li><\/ul><p>Am nächsten Tag kannst du deine normalen Aktivitäten, deine normale Hautpflege und Make-up wieder aufnehmen - aber vielleicht brauchst du es gar nicht. Achte einfach darauf, wie deine Haut reagiert.<\/p>",
             "code": ""
           }
         },
@@ -1186,6 +1191,7 @@
           "type": "content",
           "settings": {
             "text": "<ul><li><strong>Verwandelt stumpf aussehende Haut, <\/strong>hilft, Fältchen zu reduzieren und glättet die Hautstruktur<\/li><li>5-Minuten-Gesichtsbehandlung, auf deine Hautbedürfnisse <strong>abgestimmte<\/strong> Seren <strong>für sichtbare Ergebnisse<\/strong><\/li><li>Minimale bis <strong>keine Ausfallzeiten,<\/strong> praktisch <strong>schmerzfrei <\/strong>und bequem von zu Hause aus durchführbar<\/li><\/ul><p>[image_mobile]<\/p><p>[code]<\/p>",
+            "column_content": 0,
             "classname": "ba_wrapper"
           }
         },
