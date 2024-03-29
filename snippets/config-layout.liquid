@@ -74,6 +74,10 @@
     {% when 'page.our-story' %}
         {% assign main_class = 'our_story' %}
         <link rel="stylesheet" href="{{ 'product-our-story.css' | asset_url }}">
+    {% when 'page.content-instructions' %}
+        {% assign main_class = 'content_instructions' %}
+        <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
     {% when 'page.contact' %}
         {% assign main_class = 'contact_us' %}
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
