@@ -24,12 +24,23 @@
             "plan": "4496589039",
             "discount": 3000
           }
+        },
+        "before_and_after_7iFzry": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/purify_water_1_x2_5ec53536-d536-49b2-a02d-ce400900ccee.png",
+            "image_new_section_text_1": "water purify one",
+            "image_new_section_2": "shopify:\/\/shop_images\/purify_water_2_x2_e6ec6a32-f42f-4792-b744-21d2838dccba.png",
+            "image_new_section_text_2": "water purify two",
+            "image_new_section_text_3": ""
+          }
         }
       },
       "block_order": [
         "rating_KQGPaL",
         "list_BDhCQ7",
-        "subscribe_J9Afdq"
+        "subscribe_J9Afdq",
+        "before_and_after_7iFzry"
       ],
       "settings": {
         "heading": "Get healthier skin, on tap, with Q-urify Water Filter",

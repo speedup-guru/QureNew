@@ -60,11 +60,11 @@ const swiperInfoResutl = new Swiper('.swiper-info-result', {
 
 // end swiper PDP: Before & After First Image
 
-const swiperBeforeAfter = (selector) => {
+const swiperBeforeAfter = (selector, paginationClass) => {
   const swiperInstance = new Swiper(`${selector}`, {
     slidesPerView: 1,
     pagination: {
-      el: '.swiper-pagination',
+      el: `${paginationClass}`,
       clickable: true,
     }
   });
@@ -72,9 +72,21 @@ const swiperBeforeAfter = (selector) => {
   return swiperInstance;
 }
 
-swiperBeforeAfter('.swiper-products')
-swiperBeforeAfter('.swiper-info-result')
+swiperBeforeAfter('.swiper-products', '.swiper-pagination-products')
 swiperBeforeAfter('.swiper-page-product')
+
+const swiperResult = new Swiper('.swiper-info-result', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination-real-result',
+      clickable: true,
+    }
+  });
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -160,81 +172,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //  PDP: Before & After First Image 
 
-  // Crear el botón
-  /*
-  const newNavItemHTML = `
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" 
-      data-bs-toggle="pill"
-      data-bs-target="#new-tab-pane"
-      type="button"
-      role="tab"
-      aria-controls="new-tab-pane"
-      aria-selected="false">
-      Dermatologist
-    </button>
-  </li>
-  `;
-  const tabList = document.getElementById('pills-tab');
-  tabList.insertAdjacentHTML('beforeend', newNavItemHTML);
-  const newButton = tabList.querySelector('.nav-link:last-child');
+  // const beforeAfterElement = document.querySelector('.ba-main__container');
 
-  newButton.addEventListener('click', function() {
-    // Remover la clase 'active' de todos los botones
-    document.querySelectorAll('.nav-link').forEach(button => {
-      button.classList.remove('active');
-    });
+  // if (beforeAfterElement) {
+  //   const swiperResult = new Swiper('.swiper-info-result', {
+  //     slidesPerView: 1,
+  //     pagination: {
+  //       el: '.swiper-pagination-real-result',
+  //       clickable: true,
+  //     }
+  //   });
 
-    // Agregar la clase 'active' solo al nuevo botón
-    this.classList.add('active');
-  });
+  //   return swiperResult;
+  // }
 
-  const newTabPane = document.createElement('div');
-  newTabPane.classList.add('tab-pane', 'fade');
-  newTabPane.setAttribute('id', 'new-tab-pane');
-  newTabPane.setAttribute('role', 'tabpanel');
-  newTabPane.innerHTML = `
-    <video autoplay muted controls>
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  `
-
-  const tabContent = document.getElementById('pills-tabContent');
-  tabContent.appendChild(newTabPane);
-  */
-
-  /*
-  const productButton = document.getElementById('productButton');
-  const resultButton = document.getElementById('resultButton');
-  const dermaButton = document.getElementById('dermaButton');
-  */
   const productComponent = document.getElementById('info-product');
   const resultComponent = document.getElementById('info-result');
   const dermaComponent = document.getElementById('info-derma');
+  
 
-  // swiperBeforeAfter('.swiper-products')
-  // swiperBeforeAfter('.swiper-info-result')
-  // swiperBeforeAfter('.swiper-page-product')
-
+  /**
+   * Function to show a component and hide the others.
+   * @param {HTMLElement} component The component to be shown.
+   */
   function showComponent(component) {
+    // Hide all components
     document.querySelectorAll('[id^="info-"]').forEach(component => {
       component.classList.remove('active');
     });
-    component.classList.add('active')
+    // Show the specified component
+    component.classList.add('active');
   }
 
-
+  // Add event listeners to all elements with the class 'nav-button'
   document.querySelectorAll('.nav-button').forEach(button => {
     button.addEventListener('click', function() {
-      const buttonId = this.id
-      console.log(buttonId)
+      // Get the ID of the clicked button
+      const buttonId = this.id;
+      // Remove the 'active' class from all navigation buttons
       document.querySelectorAll('.nav-button').forEach(btn => {
         btn.classList.remove('active');
       });
-
+      // Add the 'active' class to the clicked button
       this.classList.add('active');
-
+      // Show the corresponding component based on the clicked button
       switch (buttonId) {
         case 'productButton':
           showComponent(productComponent);
@@ -248,28 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  /*
-  productButton.addEventListener('click', function() {
-    showComponent(productComponent);
-    resultButton.classList.remove('active');
-    productButton.classList.add('active');
-    dermaButton.classList.remove('active');
-  });
-
-  resultButton.addEventListener('click', function() {
-    showComponent(resultComponent);
-    resultButton.classList.add('active');
-    productButton.classList.remove('active');
-    dermaButton.classList.remove('active');
-  });
-
-  dermaButton.addEventListener('click', function() {
-    showComponent(dermaComponent);
-    dermaButton.classList.add('active');
-    productButton.classList.remove('active');
-    resultButton.classList.remove('active');
-  });
-  */
+ 
   // end PDP: Before & After First Image 
 
 });
