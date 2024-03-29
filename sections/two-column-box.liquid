@@ -144,7 +144,7 @@
                                 </div>
                             {% endif %}
                         {% when 'content' %}
-                            <div class="col-12 col-md-{{ section.settings.column_content }}">
+                            <div class="col-12 col-md-{% if block.settings.column_content > 0 %}{{ block.settings.column_content }}{% else %}{{ section.settings.column_content }}{% endif %}">
                                 <div class="{{ block.settings.classname }}">
                                     <!--<div class="section_header"> -->
                                         {% if block.settings.text != blank %}
@@ -269,6 +269,16 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "column_content",
+                        "min": 0,
+                        "max": 11,
+                        "step": 1,
+                        "unit": "col",
+                        "label": "t:common.column.content.label",
+                        "default": 0
                     },
                     {
                         "type": "text",
