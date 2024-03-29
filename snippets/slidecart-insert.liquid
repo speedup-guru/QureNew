@@ -42,15 +42,20 @@
         return new Swiper('.custom_upsell', {
           slidesPerView: "auto",
           centeredSlides: false,
+          slidesOffsetAfter: 20, 
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
+          },
+          mousewheel:{
+            forceToAxis:true
           }
         });
       }else{
         return new Swiper('.custom_upsell', {
           slidesPerView: "auto",
           centeredSlides: false,
+          slidesOffsetAfter: 20, 
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -58,13 +63,31 @@
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+          },
+          mousewheel:{
+            forceToAxis:true
           }
         });
       }
     }
     
+    const showUpsell = () => {
+      if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
+        const myCart = document.querySelector('form.my-cart');
+        if (myCart) {
+          const upsell = myCart.querySelector('.swiper.custom_upsell');
+          if (upsell) {
+            const upsellProducts = document.querySelectorAll('.swiper-slide.upsell_main.variant_v');
+            const hasUpsellProducts = upsellProducts.length == 0;
+            upsell.classList.toggle('notVisible', hasUpsellProducts);
+          }
+        }
+      }
+    };
+
     const initUpsellSwiper = () => {
       displayCard();
+      showUpsell();
       if(document.body.hasAttribute('data-variantc-upsell-carousel')){
         const upsell = upsellSwiper();
         if(upsell){
