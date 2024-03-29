@@ -330,6 +330,10 @@
     "product-landing": {
       "name": "Product landing",
       "settings": {
+        "product_images_offset": {
+          "label": "Product media ofsset",
+          "unit": "unit"
+        },
         "product_images_limit": {
           "label": "Product media limit",
           "unit": "unit"

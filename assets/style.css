@@ -30133,7 +30133,7 @@ p {
 }
 
 .rounded-20 {
-    border-radius: 20px;
+    border-radius: 20px !important;
 }
 
 
@@ -30424,6 +30424,10 @@ p {
 
 .mw-500 {
     max-width: 500px;
+}
+
+.mw-525 {
+    max-width: 525px;
 }
 
 .mw-546 {
