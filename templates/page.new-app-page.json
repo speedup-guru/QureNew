@@ -1,12 +1,188 @@
 {
   "sections": {
-    "main": {
-      "type": "temp-page-app",
+    "banner_dMm43V": {
+      "type": "banner",
+      "blocks": {
+        "code_bV7dw4": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"app_img\">\n                        <div class=\"app_item me-4\">\n                            <a href=\"https:\/\/apps.apple.com\/us\/app\/qure-skincare\/id1537832613\" target=\"_blank\">\n                                <img src=\"{{ 'app_store.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                            <\/a>\n                        <\/div>\n                        <div class=\"app_item\">\n                            <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure\"\n                                target=\"_blank\">\n                                <img src=\"{{ 'google_play.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                            <\/a>\n                        <\/div>\n                    <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "code_bV7dw4"
+      ],
       "settings": {
+        "heading": "The only FDA-cleared LED light therapy mask with an app.",
+        "text": "",
+        "image": "shopify:\/\/shop_images\/app_banner_desk.webp",
+        "image_mobile": "shopify:\/\/shop_images\/app_banner_mob.webp",
+        "align_center": false
+      }
+    },
+    "slider_8PJF8T": {
+      "type": "slider",
+      "blocks": {
+        "object_HQFWDh": {
+          "type": "object",
+          "settings": {
+            "heading": "Customize Treatments",
+            "text": "<p>Customize your LED light therapy treatments for a personalized program that’s unique to your skin’s profile. Tailor your treatments on 5 facial areas to treat your specific skin concerns, no one else's.<\/p>",
+            "image": "shopify:\/\/shop_images\/app_i_1.webp"
+          }
+        },
+        "object_XGWAbF": {
+          "type": "object",
+          "settings": {
+            "heading": "Plan and Schedule",
+            "text": "<p>Use the Qure calendar to schedule in your home at clinical treatments on your own time and get reminders straight to your phone. Scheduled treatments appear as a clock icon and completed treatment appear solid ticks.<\/p>",
+            "image": "shopify:\/\/shop_images\/app_i_2.webp"
+          }
+        },
+        "object_HPr94A": {
+          "type": "object",
+          "settings": {
+            "heading": "Track Treatments",
+            "text": "<p>The Qure planner shows your treatment history and scheduled treatments in a monthly calendar. View your total summary of completed challenges, monthly and yearly treatments.<\/p>",
+            "image": "shopify:\/\/shop_images\/app_i_3.webp"
+          }
+        },
+        "object_biH4fg": {
+          "type": "object",
+          "settings": {
+            "heading": "Stay on Track",
+            "text": "<p>Join a challenge and complete a full-anti-aging or anti-breakout treatment course for maxiumum results.<\/p>",
+            "image": "shopify:\/\/shop_images\/app_i_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "object_HQFWDh",
+        "object_XGWAbF",
+        "object_HPr94A",
+        "object_biH4fg"
+      ],
+      "settings": {
+        "heading": "An app for out-of-this world skincare",
+        "text": "<p>Your skin’s unique. So your treatment should be. Step into the world of personalized skincare with the Qure Skincare App. It gives you full control of your clinical-grade LED light therapy treatments. No more visits to beauty clinics, no more waiting rooms at the dermatologist.<\/p>"
+      }
+    },
+    "before_after_slider_XYXRek": {
+      "type": "before-after-slider",
+      "blocks": {
+        "slide_tG7N48": {
+          "type": "slide",
+          "settings": {
+            "heading": "Fine Lines and Wrinkles",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
+            "text_before": "Before",
+            "image_after": "shopify:\/\/shop_images\/michelle_after_img.webp",
+            "text_after": "AFTER 8 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Michelle S.",
+            "progress": 87,
+            "progress_text": "<p><strong>smoother<\/strong> facial wrinkles and fine lines after 12 weeks.<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...8 out of 10<\/strong> subjects reported a                                                      significant <strong>reduction in periorbital wrinkles<\/strong><\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged\/photoaged individuals in a split-face single-blinded study.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+          }
+        },
+        "slide_BrqNrc": {
+          "type": "slide",
+          "settings": {
+            "heading": "Skin Tone and Texture",
+            "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skiSlider_micro.webp",
+            "image_before": "shopify:\/\/shop_images\/mica_1_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/mica_after_img.webp",
+            "text_after": "AFTER 1 TREATMENT",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Mica A.",
+            "progress": 91,
+            "progress_text": "<p><strong>improved<\/strong> clarity, smoother texture and skin                                                  appearance<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...9 out of 10<\/strong> subjects reported <strong>a                                                         noticeable difference<\/strong> in <strong>skin                                                          texture<\/strong> and <strong>clarify<\/strong> after                                                      treatment.<\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": ""
+          }
+        },
+        "slide_HgePYR": {
+          "type": "slide",
+          "settings": {
+            "heading": "Acne and Breakouts",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/bj_nardi_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "client": "BJ Nardi.",
+            "progress": 83,
+            "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 8 weeks.<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...9 out of 10 <\/strong>subjects said they                                                      saw <strong>a reduction in the skin acne after 2 weeks<\/strong>.<\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Improvement ranging up to 83.3% of moderate acne lesion count. A downward shift in the Burton                                                                  grade was seen overall. No adverse effects were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted with male and female subjects with acne grades at baseline ranging from                                                                  Burton grade 1 to 5. Subjects were treated with LED therapy, alternating between the blue (415 nm) and  near-IR (830 nm) heads. No other treatment was allowed. Results were assessed and compared with the baseline values at 1, 4 and 8 weeks post-treatment.<\/p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/p>"
+          }
+        },
+        "slide_rmLPLa": {
+          "type": "slide",
+          "settings": {
+            "heading": "Pigmentation and Dark Spots",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/jess_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Jess.",
+            "progress": 91,
+            "progress_text": "<p><strong>improved<\/strong> skin tone and enhanced smoothness after 12 weeks.<\/p>",
+            "text": "",
+            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion and collagen density.<\/strong><\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_tG7N48",
+        "slide_BrqNrc",
+        "slide_HgePYR",
+        "slide_rmLPLa"
+      ],
+      "settings": {
+        "classname": "skincare_slider bg_gradient_yellow_bt",
+        "heading": "Science-backed skincare that’s proven to work.",
+        "text": "<p>See the real, unedited results for yourself<\/p><p>Want smoother fine lines? Even toned complexion? Clearer skin?<\/p><p>Our science-backed skincare and treatments are<em>clinically-proven<\/em>to work. <\/p><p><strong>Reclaim your confidence at any age,<\/strong>no matter what your skin concern is, so you can.<\/p>"
+      }
+    },
+    "liquid_JUTAPg": {
+      "type": "liquid",
+      "settings": {
+        "code": "<div class=\"future_skincare fs_light\">\n    <div class=\"fs-content order-2 order-md-1\">\n        <h2>Out-of-this<br> world skincare awaits you<\/h2>\n        <div class=\"app_img\">\n            <div class=\"app_item me-4\">\n                <a href=\"https:\/\/apps.apple.com\/us\/app\/qure-skincare\/id1537832613\" target=\"_blank\">\n                    <img src=\"{{ 'app_store.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <\/a>\n            <\/div>\n            <div class=\"app_item\">\n                <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure\"\n                    target=\"_blank\">\n                    <img src=\"{{ 'google_play.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <\/a>\n            <\/div>\n        <\/div>\n    <\/div>\n    <div class=\"fs-img order-1 order-md-2\">\n        <div class=\"fs-grid-block\">\n            <img src=\"{{ 'future_s_5.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n        <\/div>\n    <\/div>\n<\/div>"
       }
     }
   },
   "order": [
-    "main"
+    "banner_dMm43V",
+    "slider_8PJF8T",
+    "before_after_slider_XYXRek",
+    "liquid_JUTAPg"
   ]
 }

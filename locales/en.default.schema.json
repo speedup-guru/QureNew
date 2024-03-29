@@ -421,6 +421,13 @@
         }
       }
     },
+    "slider": {
+      "name": "Slider",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "details-slider": {
       "name": "Details slider",
       "settings": {
