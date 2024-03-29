@@ -41,8 +41,8 @@
                     {{ product.description }}
                 </div>
                 <div class="bundle_price">
-                    <div class="old_price">{{ product.compare_at_price |  money_without_trailing_zeros }}</div>
-                    <div class="new_price">{{ product.price |  money_without_trailing_zeros }}</div>
+                    <div class="old_price" data-product-id="{{ product.id }}">{{ product.compare_at_price |  money_without_trailing_zeros }}</div>
+                    <div class="new_price" data-product-id="{{ product.id }}">{{ product.price |  money_without_trailing_zeros }}</div>
                     {% if product.compare_at_price != blank %}
                         <div class="discount_percentage">{{ product.price | times: 100 | divided_by: product.compare_at_price | minus: 100 | abs | round }}% OFF</div>
                     {% endif %}
@@ -72,7 +72,7 @@
                 {% endif %}
 
                 <div class="payment_method">
-                    <p>OR pay 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
+                    <p>OR pay 4 monthly payments of <span class="igInstallmentPrice" data-product-id="{{ product.id }}">{{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
                     <div class="pmt_img ps-2">
                         <img src="{{ 'klarna.svg' | asset_url }}" alt="">
                         <img src="{{ 'sezzle.svg' | asset_url }}" alt="">
