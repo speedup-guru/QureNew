@@ -880,7 +880,7 @@ body[data-variantb-upsell-carousel] {
           padding-right: 80px;
         }
       }
-      .custom_upsell:empty {
+      .custom_upsell.notVisible {
         display: none;
       }
     }
@@ -907,6 +907,8 @@ body[data-variantc-upsell-carousel] {
       .my-cart__info{
         overflow-y: auto;
         min-height: 30dvh;
+        display: flex;
+        flex-direction: column;
       }
       .custom_upsell {
         background:  #C8E6DC;
@@ -1094,7 +1096,7 @@ body[data-variantc-upsell-carousel] {
         background: #000;
       }
       }
-      .custom_upsell:empty {
+      .custom_upsell.notVisible {
         display: none;
       }
     .drawer__overlay{
