@@ -15,14 +15,24 @@
           "settings": {
             "text": "<ul><li>Reduces appearance of <strong>fine lines<\/strong> and <strong>wrinkles,<\/strong> under-eye darkness, and puffiness.<\/li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface<\/strong> for faster results.<\/li><li><strong>Science backed,<\/strong> age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.<\/li><\/ul><p><strong>16 PATCHES<\/strong>(8 pairs) \/ 1 month supply<\/p>"
           }
+        },
+        "icons_BdndQd": {
+          "type": "icons",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dermatologist_12ddc1d8-0403-4ee2-8860-8ad809c80b84.jpg",
+            "text": "Dermatologist Reviewed",
+            "image_second": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+            "text_second": "Free Shipping Over $100"
+          }
         }
       },
       "block_order": [
         "rating_zmEFgC",
-        "list_qEJGnV"
+        "list_qEJGnV",
+        "icons_BdndQd"
       ],
       "custom_css": [
-        ".ss_list p {padding: 10px 0 10px 0;}"
+        ".ss_list .list p {padding: 10px 0 10px 0px;}"
       ],
       "settings": {
         "heading": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",

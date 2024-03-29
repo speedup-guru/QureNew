@@ -3,6 +3,8 @@
 {%- assign list_count = 0 -%}
 {%- assign liquid_count = 0 -%}
 {%- assign video_count = 0 -%}
+{%- assign icons_count = 0 -%}
+
 
 {%- for block in section.blocks -%}
 	{%- case block.type -%}
@@ -14,6 +16,8 @@
             {%- assign list_count = list_count | plus: 1 -%}
         {%- when 'video' -%}
             {%- assign video_count = video_count | plus: 1 -%}
+        {%- when 'icons' -%}
+            {%- assign icons_count = icons_count | plus: 1 -%}
         {%- when 'liquid' -%}
             {%- assign liquid_count = liquid_count | plus: 1 -%}
     {%- endcase -%}
@@ -69,7 +73,7 @@
 
                     <div class="ss_list mw-423 py-4">
                         {% if list_count > 0 %}
-                            <ul>
+                            <div class="list">
                             {%- for block in section.blocks -%}
                                 {% if block.type == 'list' %}
                                     {% if block.settings.text %}
@@ -77,7 +81,7 @@
                                     {% endif %}
                                 {% endif %}
                             {%- endfor -%} 
-                            </ul>
+                            </div>
                         {% endif %}
                         {% if section.settings.product != blank %}
                             <a class="btn btn-lg btn-primary buy_btn event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
@@ -108,18 +112,22 @@
                                 </div>
                             </div> 
 
-                            <div class="shipping shipping_bg bg-transparent">
-                                <div class="s_bx">
-                                    <img src="{{ '1_year.svg' | asset_url }}" alt="">
-                                    <p class="d-block d-md-none">Free 1-Year<br> Warranty</p>
-                                    <p class="d-none d-md-block">Free 1-Year Warranty</p>
-                                </div>
-                                <div class="s_bx">
-                                    <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-                                    <p class="d-none d-md-block">Free Shipping Over $100</p>
-                                    <p class="d-block d-md-none">Free World-Wide<br> Shipping</p>
-                                </div>
-                            </div>
+                            {% if icons_count > 0 %}
+                                {%- for block in section.blocks -%}
+                                    {% if block.type == 'icons' %}
+                                        <div class="shipping shipping_bg bg-transparent">
+                                            <div class="s_bx">
+                                                <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" height="32">
+                                                <p>{{ block.settings.text }}</p>
+                                            </div>
+                                            <div class="s_bx">
+                                                <img src="{{ block.settings.image_second | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" height="32">
+                                                <p>{{ block.settings.text_second }}</p>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%} 
+                            {% endif %}
                         {% endif %}
                     </div>
 
@@ -569,6 +577,33 @@
                         "id": "video_label",
                         "label": "t:common.video.cta.label",
                         "default": "Click To Watch"
+                    }
+                ]
+		    },
+            {
+                "type": "icons",
+                "name": "t:common.icons.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_second",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label"
                     }
                 ]
 		    },

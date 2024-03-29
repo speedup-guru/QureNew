@@ -70,6 +70,9 @@
     "menu": {
       "label": "Menu"
     },
+    "icons": {
+      "label": "Icons"
+    },
     "form": {
       "label": "Klaviyo form",
       "id": {
