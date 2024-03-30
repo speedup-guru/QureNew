@@ -280,6 +280,20 @@
       "blocks": {
       }
     },
+    "banner-two-column": {
+      "name": "Banner two column",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "one-column-box": {
+      "name": "One column box",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "header-landing": {
       "name": "Header landing",
       "settings": {
