@@ -18,7 +18,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/microinfusion-animation.gif",
-            "classname": "meet_your_gif"
+            "classname": "meet_your_gif none"
           }
         },
         "content_dUqFby": {
