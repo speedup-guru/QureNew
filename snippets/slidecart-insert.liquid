@@ -30,7 +30,7 @@
     const upsellSwiper = () => {
       const isMobile = window.innerWidth <= 768;
       if(isMobile){
-        return new Swiper('.custom_upsell', {
+        return new Swiper('.swiper.custom_upsell.variant_v', {
           slidesPerView: "auto",
           centeredSlides: false,
           slidesOffsetAfter: 20, 
@@ -43,7 +43,7 @@
           }
         });
       }else{
-        return new Swiper('.custom_upsell', {
+        return new Swiper('.swiper.custom_upsell.variant_v', {
           slidesPerView: "auto",
           centeredSlides: false,
           slidesOffsetAfter: 20, 

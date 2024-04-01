@@ -552,11 +552,11 @@
 }
 
 /* Start Side Cart: Upsell Carousel A/B/C by samu3le*/
-.upsell_main.variant_v{
+.swiper.custom_upsell.variant_v{
   display: none;
 }
 body[data-variantb-upsell-carousel] {
-  .original_v {
+  .custom_upsell.original_v {
     display: none !important;
   }
   .my-floating-cart{
@@ -581,17 +581,21 @@ body[data-variantb-upsell-carousel] {
       .custom_upsell {
         background:  #C8E6DC;
         padding: 14px 20px;
-
+        display: block;
         .upsell_title {
-          color: transparent;
+          font-family: "Canela Web",sans-serif;
+          color: #000;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 200% */
+          letter-spacing: 0.14px;
           display: inline-flex;
           flex-direction: column;
           align-items: flex-start;
           margin: 0;
           gap: 0;
-          position: relative;
           padding-bottom: 8px;
-
           span{
             width: 79px;
             height: 12px;
@@ -607,17 +611,6 @@ body[data-variantb-upsell-carousel] {
             justify-content: center;
             align-items: center;
           }
-        }
-        .upsell_title::before {
-          content: 'Achieve your skin goals faster ';
-          font-family: "Canela Web",sans-serif;
-          position: absolute;
-          color: #000;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 28px; /* 200% */
-          letter-spacing: 0.14px;
         }
         > div{
           display: flex;
@@ -767,6 +760,11 @@ body[data-variantb-upsell-carousel] {
           padding-right: 1vw;
           .upsell_title{
             gap: 22px;
+            color: #FFF;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 0.28px;
             span{
               width: 170px;
               height: 30.357px;
@@ -778,13 +776,6 @@ body[data-variantb-upsell-carousel] {
               font-weight: 400;
               line-height: 24.286px;
             }
-          }
-          .upsell_title::before {
-            color: #FFF;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 300;
-            letter-spacing: 0.28px;
           }
           > div{
             gap: 20px;
@@ -896,7 +887,7 @@ body[data-variantb-upsell-carousel] {
   display: none !important;
 } 
 body[data-variantc-upsell-carousel] {
-  .original_v {
+  .custom_upsell.original_v{
     display: none !important;
   }
   .my-floating-cart{
@@ -916,14 +907,21 @@ body[data-variantc-upsell-carousel] {
         width: 100%;
         max-height: none;
         height: auto;
+        display: flex;
+        flex-direction: column;
         .upsell_title {
-          color: transparent;
+          font-family: "Canela Web",sans-serif;
+          color: #000;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 200% */
+          letter-spacing: 0.14px;
           display: inline-flex;
           flex-direction: column;
           align-items: flex-start;
           margin: 0;
           gap: 8px;
-          position: relative;
           padding-bottom: 8px;
           span{
             width: auto;
@@ -936,17 +934,6 @@ body[data-variantc-upsell-carousel] {
             line-height: 12px;
             padding: 0 4px;
           }
-        }
-        .upsell_title::before {
-          content: 'Achieve your skin goals faster ';
-          font-family: "Canela Web",sans-serif;
-          position: absolute;
-          color: #000;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 28px; /* 200% */
-          letter-spacing: 0.14px;
         }
         .swiper-wrapper{
           margin-bottom: 10px;
@@ -1112,7 +1099,13 @@ body[data-variantc-upsell-carousel] {
         height: 191px;
         min-height: 191px;
         .upsell_title {
-          position: relative;
+          color: #000;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 175% */
+          letter-spacing: 0.16px;
+          font-family: "Canela Web",sans-serif;
           span{
             color: #FFF;
             text-align: right;
@@ -1128,17 +1121,6 @@ body[data-variantc-upsell-carousel] {
             border-radius: 15.873px;
             background: #008763;
           }
-        }
-        .upsell_title::before {
-          content: 'Achieve your skin goals faster ';
-          color: #000;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 28px; /* 175% */
-          letter-spacing: 0.16px;
-          font-family: "Canela Web",sans-serif;
-          position: absolute;
         }
         .swiper-wrapper{
           gap: 12px;
@@ -1197,7 +1179,7 @@ body[data-variantc-upsell-carousel] {
           justify-content: center;
           align-items: center;
           background: #C8E6DC;
-          top: 49%;
+          top: 50%;
           width: 8%;
           height: 100px;
         }
