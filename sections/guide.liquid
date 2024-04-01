@@ -125,6 +125,13 @@
                 </div>
             </div>
         {% endif %}
+        {%- for block in section.blocks -%}
+            {% if block.type == 'button' %}
+                {% if block.settings.button_label != blank %} 
+                    <a class="btn btn-lg btn-primary buy_btn see_detailed mt-0 mt-md-5" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt=""></a>
+                {% endif %}
+            {% endif %}
+        {%- endfor -%}
     </div>
 </div>
 <!-- -- how to use end -- -->
@@ -205,6 +212,25 @@
                         "id": "step",
                         "label": "t:common.step.label",
                         "default": "STEP"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
                     }
                 ]
 		    }

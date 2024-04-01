@@ -21,7 +21,7 @@
     <div class="main_b_wrapper bg_gradient_mob text-light">
         <div class="container">
             <div class="row{% if section.settings.align_center == true %} justify-content-center{% endif %}">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-md-6 col-sm-8">
                     <div class="{% if section.settings.align_center == false %}banner_content{% endif %}">
                         <div class="section_header{% if section.settings.align_center == true %} text-center{% endif %}">
                             {% if section.settings.heading != blank %}
@@ -44,7 +44,7 @@
                                             </div>
                                         {% else %}
                                             <div class="btn-auto mw-359">
-                                                <a href="{{ block.settings.button_url }}" class="btn_white m-0" target="_blank">{{ block.settings.button_label }}</a>
+                                                <a href="{{ block.settings.button_url }}" class="{{ block.settings.classname }}">{{ block.settings.button_label }}</a>
                                             </div>
                                         {% endif %}
                                     {% endif %}
@@ -110,6 +110,12 @@
                         "type": "url",
                         "id": "button_url",
                         "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:common.classname.label",
+                        "default": "btn_white m-0"
                     }
                 ]
 		    },
