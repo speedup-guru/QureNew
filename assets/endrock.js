@@ -161,25 +161,8 @@ const initBestSellerSection = () => {
   });
 }
 
-const removeSwiperClass = () => {
-  const customUpsell = document.querySelector(".my-floating-cart form.my-cart .custom_upsell");
-  if (customUpsell) {
-      customUpsell.classList.remove("swiper");
-      const containerElement = customUpsell.querySelector('div');
-      if (containerElement) {
-          containerElement.classList.remove("swiper-wrapper");
-          const slides = containerElement.querySelectorAll(".swiper-slide");
-          slides.forEach(element => {
-            element.classList.remove("swiper-slide");
-          });
-      }
-  }
-};
-
 window.addEventListener("ig:ready", () => { 
-  if(!(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel'))){
-    removeSwiperClass()
-  }else{
+  if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
     initUpsellSwiper();
   }
 });
