@@ -2,7 +2,7 @@
   <div class="main__wrapper">
     <div class="panel__container">
       {% comment %} data {% endcomment %}
-      <div id="info-product" class="panel ">
+      <div id="info-product" class="panel active">
         {% if template.name == 'product' %}
           {% comment %} product {% endcomment %}
           {% render 'endrock_product_carousel' %}
@@ -17,7 +17,7 @@
         {% endunless %}
       </div>
       {% comment %} real results {% endcomment %}
-      <div id="info-result" class="panel active">
+      <div id="info-result" class="panel">
         {% for block in data %}
           {% if block.type == 'before_and_after' %}
             {% render 'endrock_real_results', block: block %}
@@ -46,7 +46,7 @@
       <ul class="nav-wrapper">
         <li class="nav-item">
           <button
-            class="nav-button "
+            class="nav-button active"
             id="productButton"
           >
             Product
@@ -54,7 +54,7 @@
         </li>
         <li class="nav-item">
           <button
-            class="nav-button active"
+            class="nav-button"
             id="resultButton"
           >
             Real Results

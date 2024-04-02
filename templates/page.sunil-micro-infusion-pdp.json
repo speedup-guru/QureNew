@@ -90,16 +90,22 @@
           "settings": {
             "image_product_1": "shopify:\/\/shop_images\/mi_pdp-product-1.webp",
             "image_product_text_1": "product one",
+            "video_wistia_id_1": "",
             "image_product_2": "shopify:\/\/shop_images\/mi_pdp-product-2.webp",
             "image_product_text_2": "product two",
+            "video_wistia_id_2": "jg8c1a3bee",
             "image_product_3": "shopify:\/\/shop_images\/mi_pdp-product-3.webp",
             "image_product_text_3": "product three",
+            "video_wistia_id_3": "",
             "image_product_4": "shopify:\/\/shop_images\/mi_pdp-product-4.webp",
             "image_product_text_4": "producto fourth",
+            "video_wistia_id_4": "",
             "image_product_5": "shopify:\/\/shop_images\/mi_pdp-product-5.webp",
             "image_product_text_5": "product five",
+            "video_wistia_id_5": "",
             "image_product_6": "shopify:\/\/shop_images\/mi_pdp-product-7.webp",
-            "image_product_text_6": "product six"
+            "image_product_text_6": "product six",
+            "video_wistia_id_6": ""
           }
         },
         "before_and_after_i7mAeJ": {

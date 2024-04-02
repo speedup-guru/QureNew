@@ -83,14 +83,20 @@
           "settings": {
             "image_product_1": "shopify:\/\/shop_images\/mi_refill-product-1.webp",
             "image_product_text_1": "mi refill product with a man",
+            "video_widia_id_1": "",
             "image_product_2": "shopify:\/\/shop_images\/mi_refill-product-2.webp",
             "image_product_text_2": "collection refill product",
+            "video_widia_id_2": "",
             "image_product_3": "shopify:\/\/shop_images\/mi_refill-product-3.webp",
             "image_product_text_3": "using refill product",
+            "video_widia_id_3": "",
             "image_product_4": "shopify:\/\/shop_images\/mi_refill-product-4.webp",
             "image_product_text_4": "collage product",
+            "video_widia_id_4": "",
             "image_product_text_5": "",
-            "image_product_text_6": ""
+            "video_widia_id_5": "",
+            "image_product_text_6": "",
+            "video_widia_id_6": ""
           }
         },
         "before_and_after_jmNTNh": {
@@ -110,7 +116,7 @@
         "video_before_and_after_w4xCC8": {
           "type": "video_before_and_after",
           "settings": {
-            "video_new_section": "shopify:\/\/files\/videos\/Micro infusion edit.mov"
+            "video_new_section": "shopify:\/\/files\/videos\/Micro infusion Refill edit.mov"
           }
         }
       },

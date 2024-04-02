@@ -73,7 +73,7 @@ const swiperBeforeAfter = (selector, paginationClass) => {
 }
 
 swiperBeforeAfter('.swiper-products', '.swiper-pagination-products')
-swiperBeforeAfter('.swiper-page-product')
+swiperBeforeAfter('.swiper-page-product', '.swiper-pagination-product-page')
 
 const swiperResult = new Swiper('.swiper-info-result', {
     slidesPerView: 1,
