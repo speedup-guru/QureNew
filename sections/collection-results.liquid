@@ -14,9 +14,55 @@
     {% render 'collection-filter-desktop' %}
     
     <div class="col-product product-grid-container">
-        
         {% for product in collection.products %}
-            <div class="productBlockGrid">
+            {% case forloop.index %}
+                {% when 1 %}
+                    <div class="productBlockGrid">
+                        <div class="product-grid__image d-none d-md-block">
+                            <img src="{{ 'collection-ela.webp' | asset_url }}" alt="">
+                        </div>
+                        <div class="product-grid__image d-block d-md-none">
+                            <img src="{{ 'collection-ela-mobile.webp' | asset_url }}" alt="">
+                        </div>
+                        <div class="collection_card text-center">
+                            <div class="product_card_info">
+                                I was shocked at how my skin looked the <strong>morning after my first
+                                    Micro-Infusion</strong>
+                                treatment!
+                                It was so easy to use, can’t wait until my next treatment.
+                            </div>
+                            <div class="product_card_userName">Ela O.</div>
+                            <div class="product_verified">
+                                <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Verified Customer
+                            </div>
+                        </div>
+                    </div>
+                {% when 4 %}
+                    <div class="productBlockGrid">
+                        <div class="product-grid__image">
+                            <img src="{{ 'collection_drShah.webp' | asset_url }}" alt="collection img" />
+                        </div>
+                        <div class="collection_card text-center doctor_card">
+                            <h6>Trusted and recommended
+                                by world-leading dermatologists</h6>
+                            <p>"The best LED mask on the market in my opinion at this time, that being said you do need to
+                                use this consistently to see results..."</p>
+                            <div class="dr_profile">Dr Shah, MD Certified Dermatologist</div>
+                        </div>
+                    </div>
+                {% when 7 %}
+                    <div class="productBlockGrid">
+                        <img src="{{ 'collectionVogue.webp' | asset_url }}" alt="" class="img-fluid h-100">
+                        <div class="productVogue">
+                            <p>One of VOGUE's top LED masks</p>
+                            <h5>VOGUE</h5>
+                            <a href="https://www.qureskincare.com/products/q-rejuvalight-pro-facewear"
+                                class="discover_btn">Discover Now</a>
+                        </div>
+                    </div>
+            {% endcase %}
+
+            <div class="productBlockGrid fixed_height_btn">
                 <div class="cus-tag">
                     {% assign amount = 0 %}
                     {% for variant in product.variants %}
@@ -45,22 +91,25 @@
                         <img src="{{ product.featured_image | img_url: '720x' }}" alt="collection img" />
                     </a>
                 </div>
-                <div class="product-grid__review collection-review">
-                    {{ product.metafields.stamped.badge }}
-                </div>
-                <div class="product-grid__title">{{ product.title }}</div>
-                <div class="collection-description">{{ product.description | strip_html | truncate: 130 }}</div>
-                <div class="product-grid__price abtest">
-                    <span class="product-grid__sale-price" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
-                    <s class="product-grid__compare-price" data-processed-abconvert-price="true">{{ product.compare_at_price |  money_without_trailing_zeros }}</s>
-                </div>
-                <div class="product-grid__atc-form-wrapper collection-form">
-                    <button type="button" class="button button_primary" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button><span>Buy Now</span></button>
-                    {% if product.id == 7802884784367 %}
-                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
-                    {% else %}
-                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
-                    {% endif %}
+                <div class="pdt_cln_info">
+                    <div class="product-grid__review collection-review">
+                        {{ product.metafields.stamped.badge }}
+                    </div>
+                    <div class="product-grid__title">{{ product.title }}</div>
+                    <div class="collection-description">{{ product.description | strip_html | truncate: 130 }}</div>
+
+                    <div class="product-grid__price abtest">
+                        <span class="product-grid__sale-price" data-processed-abconvert-price="true" data-product-id="{{ product.id }}">{{ product.price |  money_without_trailing_zeros }}</span>
+                        <s class="product-grid__compare-price" data-processed-abconvert-price="true" data-product-id="{{ product.id }}">{{ product.compare_at_price |  money_without_trailing_zeros }}</s>
+                    </div>
+                    <div class="product-grid__atc-form-wrapper collection-form">
+                        <button type="button" class="button button_primary" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button><span>Buy Now</span></button>
+                        {% if product.id == 7802884784367 %}
+                            <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
+                        {% else %}
+                            <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         {% endfor %}

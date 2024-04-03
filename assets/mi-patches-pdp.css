@@ -1,0 +1,71 @@
+/* ======= mi-patches-pdf start ======== */
+.mi-patches-pdf .bs_item h4 {
+    word-break: normal;
+}
+
+.mi-patches-pdf .skincare_right {
+    padding: 0px 0px 0px 40px;
+}
+
+.mi-patches-pdf .accordion-button::after {
+    filter: grayscale(1);
+}
+
+.mi-patches-pdf .rightCircle {
+    width: 456px;
+}
+
+.mi-patches-pdf .result_c_info .star_gp p {
+    font-size: 13px;
+}
+
+.mi-patches-pdf .r_c_info {
+    padding: 15px 0px;
+}
+
+.mi-patches-pdf .skin_item,
+.mi-patches-pdf .skincare_left {
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.mi-patches-pdf .accordionTechnologyWrapper>#accordionTechnology {
+    grid-template-columns: 1fr;
+}
+
+.mi-patches-pdf .accordionTechnologyWrapper p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+}
+
+.combat_slider {
+    overflow: unset;
+}
+
+@media (max-width: 767px) {
+    .mi-patches-pdf .rightCircle {
+        width: 100%;
+    }
+
+    .mi-patches-pdf .r_c_info .c_information p {
+        font-size: 10px;
+    }
+
+    .mi-patches-pdf .refill_info .refill_review .star_gp img {
+        max-width: 93px;
+    }
+
+    .mi-patches-pdf .refill_bl.tabSlider .refill_info .section_header .title-xl {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .mi-patches-pdf .skincare_right {
+        padding: 10px;
+    }
+}
+
+/* ======= mi-patches-pdf end ======== */

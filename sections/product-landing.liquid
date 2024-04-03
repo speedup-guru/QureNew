@@ -3,17 +3,21 @@
 {%- assign list_count = 0 -%}
 {%- assign liquid_count = 0 -%}
 {%- assign video_count = 0 -%}
+{%- assign icons_count = 0 -%}
+
 
 {%- for block in section.blocks -%}
 	{%- case block.type -%}
         {%- when 'rating' -%}
             {%- assign rating_count = rating_count | plus: 1 -%}    
-        {%- when 'rating' -%}
+        {%- when 'button' -%}
             {%- assign button_count = button_count | plus: 1 -%}    
         {%- when 'list' -%}
             {%- assign list_count = list_count | plus: 1 -%}
         {%- when 'video' -%}
             {%- assign video_count = video_count | plus: 1 -%}
+        {%- when 'icons' -%}
+            {%- assign icons_count = icons_count | plus: 1 -%}
         {%- when 'liquid' -%}
             {%- assign liquid_count = liquid_count | plus: 1 -%}
     {%- endcase -%}
@@ -69,7 +73,7 @@
 
                     <div class="ss_list mw-423 py-4">
                         {% if list_count > 0 %}
-                            <ul>
+                            <div class="list">
                             {%- for block in section.blocks -%}
                                 {% if block.type == 'list' %}
                                     {% if block.settings.text %}
@@ -77,11 +81,11 @@
                                     {% endif %}
                                 {% endif %}
                             {%- endfor -%} 
-                            </ul>
+                            </div>
                         {% endif %}
                         {% if section.settings.product != blank %}
                             <a class="btn btn-lg btn-primary buy_btn event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
-                                {{ product.price | money_without_trailing_zeros }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
+                            <span class="igPrice" data-product-id="{{ product.id }}"> {{ product.price | money_without_trailing_zeros }}</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                             </a>
 
                             {% if product.compare_at_price != blank %}
@@ -99,7 +103,7 @@
                             {% endif %}
 
                             <div class="payment_method">
-                                <p class="d-none d-md-block">OR pay 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
+                                <p class="d-none d-md-block">OR pay 4 monthly payments of <span class="igInstallmentPrice" data-product-id="{{ product.id }}">{{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
                                 <p class="d-block d-md-none">OR 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
                                 <div class="pmt_img ps-2">
                                     <img src="{{ 'klarna.svg' | asset_url }}" alt="">
@@ -108,18 +112,22 @@
                                 </div>
                             </div> 
 
-                            <div class="shipping shipping_bg bg-transparent">
-                                <div class="s_bx">
-                                    <img src="{{ '1_year.svg' | asset_url }}" alt="">
-                                    <p class="d-block d-md-none">Free 1-Year<br> Warranty</p>
-                                    <p class="d-none d-md-block">Free 1-Year Warranty</p>
-                                </div>
-                                <div class="s_bx">
-                                    <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-                                    <p class="d-none d-md-block">Free Shipping Over $100</p>
-                                    <p class="d-block d-md-none">Free World-Wide<br> Shipping</p>
-                                </div>
-                            </div>
+                            {% if icons_count > 0 %}
+                                {%- for block in section.blocks -%}
+                                    {% if block.type == 'icons' %}
+                                        <div class="shipping shipping_bg bg-transparent">
+                                            <div class="s_bx">
+                                                <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" height="32">
+                                                <p>{{ block.settings.text }}</p>
+                                            </div>
+                                            <div class="s_bx">
+                                                <img src="{{ block.settings.image_second | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" height="32">
+                                                <p>{{ block.settings.text_second }}</p>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%} 
+                            {% endif %}
                         {% endif %}
                     </div>
 
@@ -151,7 +159,7 @@
                                     <div class="play_btn">
                                         <a class="popup-youtube" href="{{ video_source_url }}">
                                             <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
-                                                <h6>Click To Watch</h6>
+                                                <h6>{{ block.settings.video_label }}</h6>
                                             </span>
                                         </a>
                                     </div> 
@@ -191,7 +199,14 @@
                                     data-arrowright="productSlider-swiper-next">
                                     <div class="swiper-wrapper">
                                         {% if product != blank %}
-                                            {% for media in product.media limit:section.settings.product_images_limit %}
+
+                                            {% if section.settings.product_images_offset > 0 %}
+                                              {% assign offset = section.settings.product_images_offset %}
+                                            {% else %}
+                                              {% assign offset = 0 %}
+                                            {% endif %}
+
+                                            {% for media in product.media limit:section.settings.product_images_limit offset: offset %}
                                                 {% if media.media_type == 'video' %}
     
                                                     {% if media.sources[1].url != blank %}
@@ -310,7 +325,14 @@
                                         data-arrowright="realResultSlider-swiper-next">
                                         <div class="swiper-wrapper">
                                             {% if product != blank %}
-                                                {% for media in product.media limit:section.settings.before_after_images_limit offset:section.settings.product_images_limit %}
+                                                
+                                                {% if section.settings.product_images_offset > 0 %}
+                                                  {% assign offset = section.settings.product_images_offset | plus: section.settings.product_images_limit %}
+                                                {% else %}
+                                                  {% assign offset = 0 %}
+                                                {% endif %}
+
+                                                {% for media in product.media limit:section.settings.before_after_images_limit offset: offset %}
                                                     <div class="swiper-slide">
                                                         <a class="banner-popup-link" id="popup-link">
                                                             <picture id="image-id">
@@ -400,9 +422,19 @@
             },
             {
                 "type": "range",
-                "id": "product_images_limit",
+                "id": "product_images_offset",
                 "min": 0,
                 "max": 6,
+                "step": 1,
+                "unit": "t:sections.product-landing.settings.product_images_offset.unit",
+                "label": "t:sections.product-landing.settings.product_images_offset.label",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "product_images_limit",
+                "min": 0,
+                "max": 10,
                 "step": 1,
                 "unit": "t:sections.product-landing.settings.product_images_limit.unit",
                 "label": "t:sections.product-landing.settings.product_images_limit.label",
@@ -419,7 +451,7 @@
                 "type": "range",
                 "id": "before_after_images_limit",
                 "min": 0,
-                "max": 6,
+                "max": 10,
                 "step": 1,
                 "unit": "t:sections.product-landing.settings.before_after_images_limit.unit",
                 "label": "t:sections.product-landing.settings.before_after_images_limit.label",
@@ -456,7 +488,7 @@
                         "label": "t:common.text.label"
                     }
                 ]
-		    },
+		        },
             {
                 "type": "liquid",
                 "name": "t:sections.liquid.name",
@@ -535,12 +567,45 @@
                     {
                         "type": "image_picker",
                         "id": "image_mobile",
-                        "label": "t:common.image.mobile.label"
+                        "label": "t:common.image_mobile.label"
                     },
                     {
                         "type": "video",
                         "id": "video",
                         "label": "t:common.video.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_label",
+                        "label": "t:common.video.cta.label",
+                        "default": "Click To Watch"
+                    }
+                ]
+		    },
+            {
+                "type": "icons",
+                "name": "t:common.icons.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_second",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label"
                     }
                 ]
 		    },
@@ -729,360 +794,7 @@
         ],
         "presets": [
           {
-            "name": "t:sections.product-landing.name",
-            "category": "Power Digital Marketing",
-            "blocks": [
-              {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "OR",
-                    "delivery_range": "6-8"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NV",
-                    "delivery_range": "6-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "AL",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "AK",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "CO",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "ID",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "IA",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "KS",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MN",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MO",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MT",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NH",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "ND",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "RI",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "SD",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "UT",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "WA",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "WI",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "WY",
-                    "delivery_range": "5-7"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "HI",
-                    "delivery_range": "5-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "AZ",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "AR",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "CA",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "CT",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "GA",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "IL",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "IN",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "KY",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "LA",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "ME",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MD",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MA",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MI",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "MS",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NE",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NM",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NY",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NC",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "OK",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "PA",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "SC",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "TN",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "TX",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "VT",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "WV",
-                    "delivery_range": "4-6"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "DE",
-                    "delivery_range": "3-5"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "NJ",
-                    "delivery_range": "3-5"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "OH",
-                    "delivery_range": "3-5"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "VA",
-                    "delivery_range": "3-5"
-                  }
-                },
-                {
-                  "type": "State",
-                  "settings": {
-                    "state_acronym": "FL",
-                    "delivery_range": "2-4"
-                  }
-                }
-            ]
+            "name": "t:sections.product-landing.name"
           }
         ]
     }

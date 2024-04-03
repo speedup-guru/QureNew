@@ -1,7 +1,3 @@
-<!-- Begin BlackCrow Script Tag: DO NOT MODIFY! -->
-<script type="text/javascript" async src="https://shopify-init.blackcrow.ai/js/core/qure-skincare.js?shopify_app_version=1.0.243&shop=qure-skincare.myshopify.com"></script>
-<!-- End BlackCrow Script Tag -->
-
 <!-- Google Tag Manager -->
 <script>
 	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -86,12 +82,12 @@
 
 
 <!-- Google Tag Manager -- BV -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+{% comment %} <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KLP8CZF');</script>
-<!-- End Google Tag Manager -- BV -->
+<!-- End Google Tag Manager -- BV --> {% endcomment %}
 
 
 <!-- Google tag (gtag.js) -->
@@ -173,4 +169,16 @@ window['__cvg_shopify_info'] = {
 		window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};
 		window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);
 	{% endcase %}
+</script>
+
+<script type="text/javascript">
+  var AddShoppersWidgetOptions = { 'loadCss': false, 'pushResponse': false };
+  (!function(){
+    var t=document.createElement("script");
+    t.type="text/javascript",
+    t.async=!0,
+     t.id="AddShoppers",
+    t.src="https://shop.pe/widget/widget_async.js#65e9d4706697be0cf3c144d2",
+    document.getElementsByTagName("head")[0].appendChild(t)
+  }());
 </script>

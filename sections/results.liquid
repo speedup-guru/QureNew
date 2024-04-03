@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="verified_img">
                                             <img src="{{ 'verified.svg' | asset_url }}" alt="">
-                                            <p>Verified customer</p>
+                                            <p>{{ section.settings.text_verified_customer }}</p>
                                         </div>
                                     </div>
                                     <div class="result_item_info">
@@ -87,6 +87,12 @@
                 "type": "text",
                 "id": "heading",
                 "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "text_verified_customer",
+                "label": "t:common.text.label",
+                "default": "Verified customer"
             }
         ],
         "blocks": [

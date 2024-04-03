@@ -51,13 +51,15 @@
         "video_before_and_after_dPc77J"
       ],
       "settings": {
-        "heading": "Neck & DécolletageLED Light Therapy",
-        "heading_mobile": "Neck & DécolletageLED Light Therapy",
+        "heading": "Neck & Décolletage LED Light Therapy",
+        "heading_mobile": "Neck & Décolletage LED Light Therapy",
         "product_images_limit": 4,
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100"
       }
     },
     "featuredin_fRGQkn": {
@@ -383,6 +385,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_prem.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem<\/strong>,  Certified Dermatologist<\/h6>"
           }
@@ -392,6 +395,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr. Maren Locke<\/strong>, Certified Dermatologist<\/h6>"
           }
@@ -401,6 +405,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_greeney.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney<\/strong>, Certified Dermatologist<\/h6>"
           }
@@ -410,6 +415,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maxfield.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield<\/strong>, Certified Dermatologist<\/h6>"
           }
@@ -419,6 +425,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_natasha.webp",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ebb5f0ed35b844f7b9f2486db670748b.mp4",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment\"<\/p><h6><strong>Dr Natasha Henry<\/strong>, Medical Doctor<\/h6>"
           }
@@ -439,7 +446,8 @@
         "likes": "4.8K",
         "views": "192K views",
         "image": "shopify:\/\/shop_images\/trusted_2.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg",
+        "video_label": "Click To Watch Review"
       }
     },
     "results_CkzVNb": {
@@ -515,7 +523,8 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes"
+        "heading": "Results you‘ll see with your own eyes",
+        "text_verified_customer": "Verified customer"
       }
     },
     "two_column_box_mDmyKj": {
@@ -713,7 +722,9 @@
       ],
       "settings": {
         "classname": "bg_yellow",
-        "heading": "The answers to your questions"
+        "heading": "The answers to your questions",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
       }
     },
     "heading_rr4Umg": {

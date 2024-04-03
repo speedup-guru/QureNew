@@ -8,7 +8,7 @@
 {%- endfor -%}
 
 <!-- Video blocks -->
-<div class="section videosQure">
+<div class="{{ section.settings.classname }}">
     <div class="container">
         <div class="section_header text-start text-md-center mb-3">
             {% if section.settings.heading != blank %}
@@ -117,6 +117,12 @@
                 "type": "text",
                 "id": "heading",
                 "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "section videosQure"
             }
         ],
         "blocks": [

@@ -1,10 +1,10 @@
 {% if variant_id %}
-    <div class="button_sticky_wrapper">
+    <div class="button_sticky_wrapper" data-product-id="{{ product.id }}">
         <a href="{{ routes.cart_add_url }}?id={{ variant_id }}&quantity=1" data-ajax-cart-request-button class="button_sticky {{ classname }} event_btn">
             {% if current_price != original_price %}
-                <i id="sale-price">{{ current_price | money_without_trailing_zeros }}</i><span id="regular_price">{{ original_price | money_without_trailing_zeros }}</span>
+                <i id="sale-price" class="igPrice">{{ current_price | money_without_trailing_zeros }}</i><span id="regular_price" class="igComparePrice">{{ original_price | money_without_trailing_zeros }}</span>
             {% else %}
-                <i id="sale-price">{{ current_price | money_without_trailing_zeros }}</i>
+                <i id="sale-price" class="igPrice">{{ current_price | money_without_trailing_zeros }}</i>
             {% endif %}
             - ADD TO BAG
         </a>

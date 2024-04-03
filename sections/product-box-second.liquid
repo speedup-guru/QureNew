@@ -34,11 +34,11 @@
                         <div class="shipping bg-transparent shipping_bg mw-423 pe-0 one_line ps-2">
                             <div class="s_bx">
                                 <img src="{{ '90_days.svg' | asset_url }}" alt="">
-                                <p>90-Day Money<br> Back Guarantee </p>
+                                <p>{{ section.settings.underbutton_text_left }}</p>
                             </div>
                             <div class="s_bx">
                                 <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-                                <p>Free World-Wide <br> Shipping Over $100</p>
+                                <p>{{ section.settings.underbutton_text_right }}</p>
                             </div>
                         </div>
 
@@ -119,6 +119,18 @@
                 "type": "url",
                 "id": "button_url",
                 "label": "t:common.button.url.label"
+            },
+            {
+                "type": "text",
+                "id": "underbutton_text_left",
+                "label": "t:common.text.label",
+                "default": "90-Day Money Back Guarantee"
+            },
+            {
+                "type": "text",
+                "id": "underbutton_text_right",
+                "label": "t:common.text.label",
+                "default": "Free World-Wide Shipping Over $100"
             }
         ],
         "blocks": [

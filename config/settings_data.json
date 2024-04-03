@@ -34,9 +34,10 @@
             "type": "announcement-promotion",
             "disabled": true,
             "settings": {
-              "heading": "WOMEN'S DAY | SPEND $150",
-              "button_label": "Get FREE Face Serum",
-              "button_url": "shopify:\/\/collections\/best-sellers"
+              "heading": "EASTER OFFER",
+              "button_label": "Hunt 56% OFF Exclusive Easter Bundle",
+              "button_mobile_label": "Hunt Exclusive 56% OFF Bundle",
+              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
           }
         },
@@ -136,6 +137,24 @@
       },
       "8218531531362863771": {
         "type": "shopify:\/\/apps\/kite-free-gift-discounts\/blocks\/app-embed\/2c7302c4-455d-4078-a829-48563ba26089",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "1291562577487733835": {
+        "type": "shopify:\/\/apps\/black-crow-more-new-customers\/blocks\/blackcrow_ai_script\/3e73f597-cb71-47a1-8a06-0c931482ecd2",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "7885500093077574326": {
+        "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/script_embed\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "11945366711752539959": {
+        "type": "shopify:\/\/apps\/zendesk\/blocks\/zendesk_web_widget\/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,
         "settings": {
         }

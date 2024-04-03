@@ -49,6 +49,12 @@
         "label": "Comments amount"
       }
     },
+    "align": {
+      "label": "Align",
+      "center": {
+        "label": "Align center"
+      }
+    },
     "heading": {
       "label": "Heading",
       "mobile": {
@@ -63,6 +69,9 @@
     },
     "menu": {
       "label": "Menu"
+    },
+    "icons": {
+      "label": "Icons"
     },
     "form": {
       "label": "Klaviyo form",
@@ -98,6 +107,9 @@
     },
     "list": {
       "label": "List"
+    },
+    "step": {
+      "label": "Step"
     },
     "result": {
       "label": "Result"
@@ -160,6 +172,9 @@
       "label": "Video",
       "url": {
         "label": "Video url"
+      },
+      "cta": {
+        "label": "Video label"
       }
     },
     "wistia": {
@@ -174,6 +189,9 @@
       "info": "Leave the label blank to hide the link.",
       "url": {
         "label": "Button url"
+      },
+      "mobile": {
+        "label": "Button label mobile"
       }
     },
     "link": {
@@ -255,6 +273,27 @@
         }
       }
     },
+    "banner": {
+      "name": "Banner",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "banner-two-column": {
+      "name": "Banner two column",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "one-column-box": {
+      "name": "One column box",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "header-landing": {
       "name": "Header landing",
       "settings": {
@@ -308,6 +347,10 @@
     "product-landing": {
       "name": "Product landing",
       "settings": {
+        "product_images_offset": {
+          "label": "Product media ofsset",
+          "unit": "unit"
+        },
         "product_images_limit": {
           "label": "Product media limit",
           "unit": "unit"
@@ -392,6 +435,13 @@
         }
       }
     },
+    "slider": {
+      "name": "Slider",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "details-slider": {
       "name": "Details slider",
       "settings": {
@@ -472,6 +522,13 @@
       "blocks": {
       }
     },
+    "trusted-simple": {
+      "name": "Trusted simple",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "bestseller": {
       "name": "Bestseller",
       "settings": {
@@ -545,6 +602,34 @@
             "label": "Details"
           }
         }
+      }
+    },
+    "three-column-box": {
+      "name": "Three column box",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "perks": {
+      "name": "Perks",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "influencers": {
+      "name": "Influencers",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "influencers-social": {
+      "name": "Influencers social",
+      "settings": {
+      },
+      "blocks": {
       }
     },
     "reasons": {
