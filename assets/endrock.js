@@ -192,6 +192,12 @@ const initBestSellerSection = () => {
   });
 }
 
+window.addEventListener("ig:ready", () => { 
+  if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
+    initUpsellSwiper();
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
 
   // Start PDP Social Proof Data

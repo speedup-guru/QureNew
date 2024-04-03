@@ -12,14 +12,92 @@
 <script type="application/json" data-ajax-cart-initial-state class="__init"> {{ cart | json }} </script> 
 <script type="application/json" data-ajax-cart-configuration class="__init"> { "addToCartCssClass": "js-my-cart-open" } </script>
 
+  <!-- Swiper JS Add PDM By Samu3le-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Initialize Swiper -->
+  <script>
+    // align cards center when they nedded
+    const displayCard = () => {
+      if(document.body.hasAttribute("data-variantb-upsell-carousel")){
+        const customUpsell = document.querySelector(".my-floating-cart form.my-cart .custom_upsell .swiper-wrapper");
+        if (!customUpsell) return;
+        const shouldCenterSlide = customUpsell.querySelectorAll(".swiper-slide").length <= 2;
+        customUpsell.classList.toggle('align-slide', shouldCenterSlide);
+      }
+    }
+    //create swiper Upsell 
+    const upsellSwiper = () => {
+      const isMobile = window.innerWidth <= 768;
+      if(isMobile){
+        return new Swiper('.swiper.custom_upsell.variant_v', {
+          slidesPerView: "auto",
+          centeredSlides: false,
+          slidesOffsetAfter: 20, 
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          mousewheel:{
+            forceToAxis:true
+          }
+        });
+      }else{
+        return new Swiper('.swiper.custom_upsell.variant_v', {
+          slidesPerView: "auto",
+          centeredSlides: false,
+          slidesOffsetAfter: 20, 
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          mousewheel:{
+            forceToAxis:true
+          }
+        });
+      }
+    }
+    //show upsell data only if the contain product
+    const showUpsell = () => {
+      if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
+        const myCart = document.querySelector('form.my-cart');
+        if (myCart) {
+          const upsell = myCart.querySelector('.swiper.custom_upsell');
+          if (upsell) {
+            const upsellProducts = document.querySelectorAll('.swiper-slide.upsell_main.variant_v');
+            const hasUpsellProducts = upsellProducts.length == 0;
+            upsell.classList.toggle('notVisible', hasUpsellProducts);
+          }
+        }
+      }
+    };
+    //init functionalities swiper upsell by pdm
+    const initUpsellSwiper = () => {
+      displayCard();
+      showUpsell();
+      if(document.body.hasAttribute('data-variantc-upsell-carousel')){
+        const upsell = upsellSwiper();
+        if(upsell){
+          upsell.init();
+        }
+      }
+    }
+    window.initUpsellSwiper =   initUpsellSwiper; 
+  </script>
+
 <script type="module"> import { configureCart, subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
 	configureCart('addToCartCssClass', 'js-my-cart-open'); 
-
+  initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
 	subscribeToCartSectionsUpdate( sections => {
 		updateShippingInsurance();
 		if(typeof startCartTimer == 'function') {
 			startCartTimer(15 * 60);
 		}
+    initUpsellSwiper();
 	});
 </script> 
 
