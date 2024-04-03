@@ -284,23 +284,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //  PDP: Before & After First Image 
 
-  // const beforeAfterElement = document.querySelector('.ba-main__container');
-
-  // if (beforeAfterElement) {
-  //   const swiperResult = new Swiper('.swiper-info-result', {
-  //     slidesPerView: 1,
-  //     pagination: {
-  //       el: '.swiper-pagination-real-result',
-  //       clickable: true,
-  //     }
-  //   });
-
-  //   return swiperResult;
-  // }
-
   const productComponent = document.getElementById('info-product');
   const resultComponent = document.getElementById('info-result');
   const dermaComponent = document.getElementById('info-derma');
+
+  const resultButton = document.getElementById('resultButton');
+  const dermaButton = document.getElementById('dermaButton');
+  let body = document.querySelector('body');
+
+  // if(body.getAttribute('before-after') === 'b'){
+  //   resultComponent.classList.add('active');
+  //   resultButton.classList.add('active');
+  // } else if(body.getAttribute('before-after') === 'c'){
+  //   dermaComponent.classList.add('active');
+  //   dermaButton.classList.add('active');
+  // }
   
 
   /**

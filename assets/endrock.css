@@ -248,6 +248,11 @@
   }
 }
 
+/* variables */
+:root{
+  --heihgt-before-after-container: 472px;
+  --heihgt-before-after-container-panel: 439px;
+}
 
 .before-after-result-test .container{
   max-width: 100%;
@@ -267,8 +272,18 @@
 }
 
 .ba-main__container .main__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   padding: 10px;
 }
+
+@media screen and (max-width: 768px){
+  .ba-main__container .main__wrapper{
+    gap: 8px;
+  }
+}
+
 
 .ba-main__container .panel{
   display: none;
@@ -321,18 +336,11 @@
   height: 472px;
 }
 
-@media screen and (max-width: 1024px){
-  #info-product,
-  #info-result,
-  #info-derma{
-    height: 430px;
-  }
-}
 @media screen and (max-width: 768px){
   #info-product,
   #info-result,
   #info-derma{
-    height: 315px;
+    height: 350px;
   }
 }
 @media screen and (max-width: 320px){
@@ -344,24 +352,23 @@
 }
 
 /* product - pdp */
-/* 
-  preguntar acerca de wistia
-  mirar si se puede quitar el ::before del anchor
-  reestrucutrar y verificar funcionalidad
-*/
+
 
 #info-product .swiper-products{
   width: 100%;
-  /* height: 472px; */
-  max-height: 100%;
 }
 
-#info-product .swiper-products .img-fluid.tab_img{
- max-width: 94% !important;
+#info-product .swiper-products .swiper-slide,
+#info-product .swiper-products .swiper-slide .popup-youtube
+{
+  height: 439px;
 }
-
-#info-product .swiper-products .swiper-slide{
-  margin-left: 20px;
+@media screen and (max-width: 768px){
+  #info-product .swiper-products .swiper-slide,
+  #info-product .swiper-products .swiper-slide .popup-youtube
+  {
+    height: 315px;
+  }
 }
 
 #info-product .swiper-products .swiper-pagination-products{
@@ -372,9 +379,8 @@
   padding-top: 10px;
 }
 
-#info-product .swiper-products .swiper-pagination-products .swiper-pagination-bullet{
-  height: 10px;
-  width: 10px;
+#info-product .swiper-products .banner-popup-link::before{
+  content: none;
 }
 
 #info-product .swiper-products .swiper-pagination-products .swiper-pagination-bullet-active{
@@ -383,24 +389,37 @@
 
 
 /* product - page */
+
 #info-product .swiper-page-product{
   width: 100%;
-  /* height: 100%; */
 }
 
 #info-product .swiper-page-product .swiper-slide {
   height: 439px;
+}
+@media screen and (max-width: 768px){
+  #info-product .swiper-page-product .swiper-slide {
+    height: 315px;
+  }
 }
 
 #info-product .swiper-page-product .banner-popup-link::before{
   content: none;
 }
 
+#info-product .banner_img {
+  width: 100%;
+  height: 100%;
+}
 
-/* #info-product .swiper-page-products .img-fluid.tab_img{
-  max-width: 94% !important;
- } */
- 
+#info-product .banner_img .img-fluid{
+  width: 100%;
+  height: 100%;
+}
+/* #info-product .banner_img .tab_img{
+  width: 100%;
+  height: 100%;
+} */
 
 #info-product .swiper-page-product .swiper-pagination-product-page{
   display: flex;
@@ -409,6 +428,7 @@
   gap: 5px;
   padding-top: 10px;
 }
+
 
 #info-product .swiper-page-product .swiper-pagination-product-page .swiper-pagination-bullet-active{
   background-color: black;
@@ -434,11 +454,6 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-}
-
-#info-result .swiper-info-result .swiper-pagination-real-result .swiper-pagination-bullet{
-  height: 10px;
-  width: 10px;
 }
 
 #info-result .swiper-info-result .swiper-pagination-real-result .swiper-pagination-bullet-active{
