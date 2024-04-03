@@ -686,7 +686,6 @@ $(window).scroll(function () {
     }
 });
 
-//aaaaqqqq
 document.addEventListener('DOMContentLoaded', function () {
     // ============ qure video js ======
     const parent = document.querySelector('body');

@@ -275,6 +275,7 @@
           "type": "content",
           "settings": {
             "text": "<p>[code]<\/p>",
+            "column_content": 0,
             "classname": ""
           }
         },
@@ -447,6 +448,7 @@
         },
         "product_iRt6LW": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "easter-bundle",
             "comment_ammount": 147,

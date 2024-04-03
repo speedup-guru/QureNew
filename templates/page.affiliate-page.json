@@ -7,7 +7,8 @@
           "type": "button",
           "settings": {
             "button_label": "Join now",
-            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm",
+            "classname": "btn_white m-0"
           }
         }
       },
@@ -18,7 +19,8 @@
         "heading": "Qure Skincare Affiliate Program",
         "text": "<p>Become a Qure Ambassador and be part of a community that shapes the future of skincare.<\/p><p>Let’s bridge the gap to better skincare together and spread skin confidence worldwide.<\/p>",
         "image": "shopify:\/\/shop_images\/affiliate_banner_desk.webp",
-        "image_mobile": "shopify:\/\/shop_images\/affiliate_banner_mob.webp"
+        "image_mobile": "shopify:\/\/shop_images\/affiliate_banner_mob.webp",
+        "align_center": false
       }
     },
     "three_column_box_VdFUgY": {
@@ -106,7 +108,7 @@
         "object_aBRekq": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/join_money.svg",
+            "image": "shopify:\/\/shop_images\/join_money.jpg",
             "heading": "Earn Money",
             "text": "<p>A competitive % commission per sale<\/p>"
           }
@@ -114,7 +116,7 @@
         "object_nE8JJn": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/join_creatives_fbe14863-2c40-45c3-9a73-d84b00863641.svg",
+            "image": "shopify:\/\/shop_images\/join_creatives_f6707665-8344-4ff3-80a3-f42da0de26b9.jpg",
             "heading": "Access to Creatives",
             "text": "<p>Shared creatives and graphics so you are set up for success<\/p>"
           }
@@ -122,7 +124,7 @@
         "object_C4dCRz": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/join_vip.svg",
+            "image": "shopify:\/\/shop_images\/join_vip.jpg",
             "heading": "Exclusive Perks",
             "text": "<p>Receive free products, bonuses, and first access to new products, promotions and VIP campaigns<\/p>"
           }
@@ -130,7 +132,7 @@
         "object_Fw7fMV": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/join_social.svg",
+            "image": "shopify:\/\/shop_images\/join_social.jpg",
             "heading": "Social Collabs",
             "text": "<p>Opportunity to be featured on Qure Skincare social media channels and boost your exposure<\/p>"
           }
@@ -138,7 +140,7 @@
         "object_DpDhKj": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/join_discounts.svg",
+            "image": "shopify:\/\/shop_images\/join_discounts.jpg",
             "heading": "Special Discounts",
             "text": "<p>Exclusive discounts & offers to share with your friends, family, and followers<\/p>"
           }
@@ -146,7 +148,7 @@
         "object_BLGzFp": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/join_handshake.svg",
+            "image": "shopify:\/\/shop_images\/join_handshake.jpg",
             "heading": "Dedicated Ambassador Manager",
             "text": "<p>To help you understand how to grow your following, get the most out of the program and progress at an individual level<\/p>"
           }
@@ -264,7 +266,8 @@
       ],
       "settings": {
         "heading": "Join the Qure family",
-        "text": ""
+        "text": "",
+        "classname": "social_media all_bg_gradient_yellow_bt section"
       }
     }
   },
