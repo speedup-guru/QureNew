@@ -205,7 +205,7 @@
         ".row {align-items: center !important;}"
       ],
       "settings": {
-        "classname": "technology_light",
+        "classname": "hollywood_skin mt-0",
         "column_image": 6,
         "column_content": 6
       }
