@@ -3075,7 +3075,6 @@
   
 		  .skill-bar .progress {
 				  width: calc(100% - 162px);
-				  /* margin: 0 -40px */ /* aaaaqqqq */
 		  }
   
 		  .my-cart__items.cart__empty-items {
