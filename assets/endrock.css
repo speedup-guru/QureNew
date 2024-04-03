@@ -666,6 +666,7 @@ body[data-variantb-upsell-carousel] {
                   height: 92px;
                   background: #FFF;
                   border-radius: 8px;
+                  object-fit: contain;
                 }           
               }
               .upsell_content {
@@ -744,8 +745,8 @@ body[data-variantb-upsell-carousel] {
         > div::-webkit-scrollbar {
           display: none;
         }
-        .center-slide{
-          justify-content: center;
+        .align-slide{
+          justify-content: flex-start;
         }
         @media screen and (min-width:1140px) {
           position: fixed;
@@ -863,7 +864,7 @@ body[data-variantb-upsell-carousel] {
               }
             }
           }
-          .center-slide{
+          .align-slide{
             justify-content: space-between;
           }      
         }
@@ -894,13 +895,15 @@ body[data-variantc-upsell-carousel] {
     position: absolute;
     top: 0;
     bottom: 0;
+
     form.my-cart {
+      display: flex;
+      flex-direction: column;
+      overflow: scroll;
       .my-cart__info{
-        overflow-y: auto;
-        min-height: 30dvh;
-        display: flex;
-        flex-direction: column;
-      }
+        flex: min-content;
+        height: auto;
+      } 
       .custom_upsell {
         background:  #C8E6DC;
         padding: 14px 20px;
@@ -909,6 +912,8 @@ body[data-variantc-upsell-carousel] {
         height: auto;
         display: flex;
         flex-direction: column;
+        height: 191px;
+        min-height: 191px;
         .upsell_title {
           font-family: "Canela Web",sans-serif;
           color: #000;
@@ -972,6 +977,7 @@ body[data-variantc-upsell-carousel] {
                   max-width: 42px;
                   max-height: 42px;
                   height: 42px;
+                  object-fit: contain;
                 }
               }
               .upsell_content{
@@ -1140,6 +1146,7 @@ body[data-variantc-upsell-carousel] {
                   max-width: 70px;
                   max-height: 70px;
                   height: 70px;
+                  object-fit: contain;
                 }
               }
               .upsell_content{
