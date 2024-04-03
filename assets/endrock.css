@@ -899,7 +899,6 @@ body[data-variantc-upsell-carousel] {
     form.my-cart {
       display: flex;
       flex-direction: column;
-      overflow: scroll;
       .my-cart__info{
         flex: min-content;
         height: auto;
