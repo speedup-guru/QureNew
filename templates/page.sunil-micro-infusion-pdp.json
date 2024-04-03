@@ -191,7 +191,7 @@
         "content_CUznx9": {
           "type": "content",
           "settings": {
-            "text": "<h2>5 reasons why everyone is using Qure Micro-Infusion System<\/h2><p>The ”dull” to “dewy” at-home facial your skincare routine is missing that saves you hundreds of dollars.<\/p><p>Up until recently, Micro-Infusion was only performed by cosmetic dermatologists as an expensive in-clinic facial. Often used by Celebrities before a big even to get ‘red carpet ready’ skin.<\/p><p>Now, you can easily perform it from the convenience of your home, in less than 5 minutes for roughly <strong>15x less than the average clinic’s price.<\/strong><\/p>",
+            "text": "<h2>5 reasons why everyone is using Qure Micro-Infusion System<\/h2><p>The ”dull” to “dewy” at-home facial your skincare routine is missing that saves you hundreds of dollars.<\/p><p><\/p><p>Up until recently, Micro-Infusion was only performed by cosmetic dermatologists as an expensive in-clinic facial. Often used by Celebrities before a big even to get ‘red carpet ready’ skin.<\/p><p><\/p><p>Now, you can easily perform it from the convenience of your home, in less than 5 minutes for roughly <strong>15x less than the average clinic’s price.<\/strong><\/p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -202,7 +202,7 @@
         "content_CUznx9"
       ],
       "custom_css": [
-        ".row {align-items:center !important;}"
+        ".row {align-items: center !important;}"
       ],
       "settings": {
         "classname": "technology_light",
