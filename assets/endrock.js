@@ -52,6 +52,37 @@ const deliveryDate = (location) => {
   document.querySelector('.orderby-receiveby').classList.remove('hidden');
 }
 
+// swiper PDP: Before & After First Image 
+
+const swiperBeforeAfter = (selector, paginationClass) => {
+  const swiperInstance = new Swiper(`${selector}`, {
+    slidesPerView: 1,
+    pagination: {
+      el: `${paginationClass}`,
+      clickable: true,
+    }
+  });
+
+  return swiperInstance;
+}
+
+swiperBeforeAfter('.swiper-products', '.swiper-pagination-products')
+swiperBeforeAfter('.swiper-page-product', '.swiper-pagination-product-page')
+
+const swiperResult = new Swiper('.swiper-info-result', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination-real-result',
+      clickable: true,
+    }
+  });
+
+// end swiper PDP: Before & After First Image
+
+
+
+
 // bestseller section on hompage
   const initSwiperBestSeller = () => {
     swiper = new Swiper('.best-seller-section .swiper', {
@@ -251,6 +282,66 @@ document.addEventListener('DOMContentLoaded', function() {
   if (showReceiveBy) {
     userLocationIP();
   }
+
+  //  PDP: Before & After First Image 
+
+  const productComponent = document.getElementById('info-product');
+  const resultComponent = document.getElementById('info-result');
+  const dermaComponent = document.getElementById('info-derma');
+
+  const resultButton = document.getElementById('resultButton');
+  const dermaButton = document.getElementById('dermaButton');
+  let body = document.querySelector('body');
+
+  // if(body.getAttribute('before-after') === 'b'){
+  //   resultComponent.classList.add('active');
+  //   resultButton.classList.add('active');
+  // } else if(body.getAttribute('before-after') === 'c'){
+  //   dermaComponent.classList.add('active');
+  //   dermaButton.classList.add('active');
+  // }
+  
+
+  /**
+   * Function to show a component and hide the others.
+   * @param {HTMLElement} component The component to be shown.
+   */
+  function showComponent(component) {
+    // Hide all components
+    document.querySelectorAll('[id^="info-"]').forEach(component => {
+      component.classList.remove('active');
+    });
+    // Show the specified component
+    component.classList.add('active');
+  }
+
+  // Add event listeners to all elements with the class 'nav-button'
+  document.querySelectorAll('.nav-button').forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the ID of the clicked button
+      const buttonId = this.id;
+      // Remove the 'active' class from all navigation buttons
+      document.querySelectorAll('.nav-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      // Add the 'active' class to the clicked button
+      this.classList.add('active');
+      // Show the corresponding component based on the clicked button
+      switch (buttonId) {
+        case 'productButton':
+          showComponent(productComponent);
+          break;
+        case 'resultButton':
+          showComponent(resultComponent);
+          break;
+        case 'dermaButton':
+          showComponent(dermaComponent);
+          break;
+      }
+    });
+  });
+ 
+  // end PDP: Before & After First Image 
 
 });
 

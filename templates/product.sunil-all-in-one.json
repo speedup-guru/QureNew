@@ -24,12 +24,31 @@
             "plan": "4562551023",
             "discount": 2000
           }
+        },
+        "before_and_after_z8mG4R": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/serum_1_x2_1bf090ac-a228-4800-b713-18e24968aa86.png",
+            "image_new_section_text_1": "",
+            "image_new_section_2": "shopify:\/\/shop_images\/serum_2_x_2.png",
+            "image_new_section_text_2": "",
+            "image_new_section_3": "shopify:\/\/shop_images\/serum_3_x2_db46a098-032e-4ac4-a9d7-9eecce8be344.png",
+            "image_new_section_text_3": ""
+          }
+        },
+        "video_before_and_after_QXnPdD": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Serum edit.mov"
+          }
         }
       },
       "block_order": [
         "rating_rh9xg6",
         "list_kGgFyL",
-        "subscribe_8ThJCW"
+        "subscribe_8ThJCW",
+        "before_and_after_z8mG4R",
+        "video_before_and_after_QXnPdD"
       ],
       "settings": {
         "heading": "Embrace ageless confidence with All-In-One Face Serum",

@@ -236,6 +236,326 @@
   }
 }
 
+/*   PDP: Before & After First Image  */
+
+/* animatios */
+@keyframes fadeInBa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* variables */
+:root{
+  --heihgt-before-after-container: 472px;
+  --heihgt-before-after-container-panel: 439px;
+}
+
+.before-after-result-test .container{
+  max-width: 100%;
+}
+
+.before-after-result-test .container .row .befor-after-main{
+  display: flex;
+  justify-content: center;
+}
+
+/* main container */
+.ba-main__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ba-main__container .main__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .ba-main__container .main__wrapper{
+    gap: 8px;
+  }
+}
+
+
+.ba-main__container .panel{
+  display: none;
+}
+
+.ba-main__container .main__wrapper .panel__container{
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 472px;
+}
+
+@media screen and (max-width: 1024px){
+  .ba-main__container .main__wrapper .panel__container{
+    max-width: 500px;
+  }  
+}
+
+@media screen and (max-width: 768px){
+  .ba-main__container .main__wrapper .panel__container{
+    max-width: calc(768px - (768px * 0.55 ));
+  }
+}
+
+@media screen and (max-width: 425px){
+  .ba-main__container .main__wrapper .panel__container{
+    max-width: calc(425px - (425px * 0.1 ));
+  }
+}
+@media screen and (max-width: 375px){
+  .ba-main__container .main__wrapper .panel__container{
+    max-width: calc(375px - (375px * 0.1 ));
+  }
+}
+@media screen and (max-width: 320px){
+  .ba-main__container .main__wrapper .panel__container{
+    max-width: calc(320px - (320px * 0.1 ));
+  }
+}
+
+.ba-main__container .panel.active{
+  display: block;
+  animation: fadeInBa 1s linear;
+}
+
+#info-product,
+#info-result,
+#info-derma{
+  width: 100%;
+  height: 472px;
+}
+
+@media screen and (max-width: 768px){
+  #info-product,
+  #info-result,
+  #info-derma{
+    height: 350px;
+  }
+}
+@media screen and (max-width: 320px){
+  #info-product,
+  #info-result,
+  #info-derma{
+    height: 265px;
+  }
+}
+
+/* product - pdp */
+
+
+#info-product .swiper-products{
+  width: 100%;
+}
+
+#info-product .swiper-products .swiper-slide,
+#info-product .swiper-products .swiper-slide .popup-youtube
+{
+  height: 439px;
+}
+@media screen and (max-width: 768px){
+  #info-product .swiper-products .swiper-slide,
+  #info-product .swiper-products .swiper-slide .popup-youtube
+  {
+    height: 315px;
+  }
+}
+
+#info-product .swiper-products .swiper-pagination-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+#info-product .swiper-products .banner-popup-link::before{
+  content: none;
+}
+
+#info-product .swiper-products .swiper-pagination-products .swiper-pagination-bullet-active{
+  background-color: black;
+}
+
+
+/* product - page */
+
+#info-product .swiper-page-product{
+  width: 100%;
+}
+
+#info-product .swiper-page-product .swiper-slide {
+  height: 439px;
+}
+@media screen and (max-width: 768px){
+  #info-product .swiper-page-product .swiper-slide {
+    height: 315px;
+  }
+}
+
+#info-product .swiper-page-product .banner-popup-link::before{
+  content: none;
+}
+
+#info-product .banner_img {
+  width: 100%;
+  height: 100%;
+}
+
+#info-product .banner_img .img-fluid{
+  width: 100%;
+  height: 100%;
+}
+/* #info-product .banner_img .tab_img{
+  width: 100%;
+  height: 100%;
+} */
+
+#info-product .swiper-page-product .swiper-pagination-product-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+
+#info-product .swiper-page-product .swiper-pagination-product-page .swiper-pagination-bullet-active{
+  background-color: black;
+}
+
+
+
+/* real result element  */
+#info-result .info-result__wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-result .swiper-info-result .swiper-slide {
+  padding: 0 10px;
+}
+
+#info-result .swiper-info-result .swiper-pagination-real-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#info-result .swiper-info-result .swiper-pagination-real-result .swiper-pagination-bullet-active{
+  background-color: black;
+}
+
+/* video element */
+
+#info-derma .derma-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#info-derma .video-container{
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+#info-derma .video-container .derma-video{
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+/* nav buttons */
+
+.ba-main__container .selector-container{
+  padding: 5px;
+  width: 100%;
+}
+
+
+.ba-main__container .selector-container .nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ba-main__container .selector-container .nav-wrapper .nav-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.ba-main__container  .selector-container .nav-wrapper .nav-item .nav-button{
+  border: 1px solid #D0D0D0;
+  width: 169px;
+  height: 32px;
+  border-radius: 40px;
+  background-color: white;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.ba-main__container .selector-container .nav-wrapper .nav-item .nav-button:hover{
+  background-color: black;
+  color: white;
+}
+
+.ba-main__container .selector-container .nav-wrapper .nav-item .nav-button.active{
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1024px){
+  .ba-main__container  .selector-container .nav-wrapper .nav-item .nav-button{
+    width: 150px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px){
+  .ba-main__container  .selector-container .nav-wrapper .nav-item .nav-button{
+    width: 100%;
+    height: 24px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 10px;
+  }
+  
+}
+
+@media screen and (max-width: 320px){
+  .ba-main__container  .selector-container .nav-wrapper .nav-item .nav-button{
+    width: 100%;
+    height: 42px;
+    font-size: 10px;
+  }
+  
+}
+
+
+
+/* end PDP: Before & After First Image  */
 /* best seller section on homepage */
 :root {
   --star-size: 20px;
