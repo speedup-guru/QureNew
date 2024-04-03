@@ -54,12 +54,6 @@ const deliveryDate = (location) => {
 
 // swiper PDP: Before & After First Image 
 
-const swiperInfoResutl = new Swiper('.swiper-info-result', {
-
-});
-
-// end swiper PDP: Before & After First Image
-
 const swiperBeforeAfter = (selector, paginationClass) => {
   const swiperInstance = new Swiper(`${selector}`, {
     slidesPerView: 1,
@@ -84,6 +78,7 @@ const swiperResult = new Swiper('.swiper-info-result', {
     }
   });
 
+// end swiper PDP: Before & After First Image
 
 
 
