@@ -34784,6 +34784,35 @@ picture img {
     margin-right: calc(var(--column-gap)/-2)
 }
 
+
+/* =========== affiliate_t_conditons start ============ */
+.affiliate_t_conditons ol {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.affiliate_t_conditons .subscriptions_content p strong {
+    font-size: 13px;
+}
+
+.affiliate_t_conditons .subscriptions_content p {
+    font-size: 12px;
+}
+
+.affiliate_t_conditons .cancel_section h6 {
+    margin-bottom: 20px;
+}
+
+.affiliate_t_conditons .subscriptions_content p:not(:last-child) {
+    margin-bottom: 20px !important;
+}
+
+.affiliate_t_conditons .cancel_section {
+    padding: 15px 0;
+}
+
+/* =========== affiliate_t_conditons end ============ */
+
 @media screen and (max-width:1279px) {
     .custom__grid {
         margin-left: calc(var(--column-gap)/2/-2);
