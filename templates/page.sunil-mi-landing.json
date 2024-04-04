@@ -161,6 +161,7 @@
         "heading": "The quickest, easiest,most convenient way to get “Red Carpet ready” skin",
         "heading_mobile": "The quickest, easiest,most convenient way to get “Red Carpet ready” skin",
         "product": "",
+        "product_images_offset": 0,
         "product_images_limit": 6,
         "product_button_label": "Product",
         "before_after_images_limit": 3,
@@ -247,6 +248,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Unlock Dermatologist's<br\/>best kept secret<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
+            "column_content": 0,
             "classname": "secret_grid_wrap ps-0 ps-md-5 pt-5"
           }
         },
@@ -277,7 +279,8 @@
         "content_Hham8b": {
           "type": "content",
           "settings": {
-            "text": "<h2>“Hollywood” skin is finally accessible without the a-list budget<\/h2><p>[image_mobile]<\/p><p>Have you ever wondered how your skin would look and feel if you had access to the most advanced treatments?<\/p><p>The ones that only the “rich and famous” can afford, performed by the best dermatologists, only available at exclusive clinics.<\/p>",
+            "text": "<h2>“Hollywood” skin is finally accessible without the a-list budget<\/h2><p>[image_mobile]<\/p><p>Have you ever wondered how your skin would look and feel if you had access to the most advanced treatments?<\/p><p><\/p><p>The ones that only the “rich and famous” can afford, performed by the best dermatologists, only available at exclusive clinics.<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
@@ -312,7 +315,8 @@
         "content_XdKeWR": {
           "type": "content",
           "settings": {
-            "text": "<h2>Go to skin booster for confident<br\/>Make up free days<\/h2><p>[image_mobile]<\/p><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/p><p>The best part? You can enjoy it for roughly a fraction of the cost in the comfort of your home, with little to no downtime!<\/p>",
+            "text": "<h2>Go to skin booster for confident<br\/>Make up free days<\/h2><p>[image_mobile]<\/p><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/p><p><\/p><p>The best part? You can enjoy it for roughly a fraction of the cost in the comfort of your home, with little to <strong>no downtime!<\/strong><\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         }
@@ -357,20 +361,12 @@
             "button_label": "BUY NOW & SAVE UP TO 43%",
             "button_url": "#productSubscription"
           }
-        },
-        "rating_G3APhm": {
-          "type": "rating",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/star4.8.svg",
-            "text": "97% customer satisfaction rate"
-          }
         }
       },
       "block_order": [
         "product_4qqcQV",
         "image_gnyiNf",
-        "button_rznYjF",
-        "rating_G3APhm"
+        "button_rznYjF"
       ],
       "settings": {
         "classname": "main_banner section pt-0",
@@ -419,7 +415,8 @@
       ],
       "settings": {
         "heading": "Achieve your skincare goals",
-        "text": ""
+        "text": "",
+        "text_verified_customer": "Verified customer"
       }
     },
     "videos_list_9mL4h8": {
@@ -475,7 +472,8 @@
         "wistia_ctwd8i"
       ],
       "settings": {
-        "heading": "Confident skin starts here"
+        "heading": "Confident skin starts here",
+        "classname": "section videosQure"
       }
     },
     "two_column_box_f67akQ": {
@@ -492,6 +490,7 @@
           "type": "content",
           "settings": {
             "text": "<p>[code]<\/p>",
+            "column_content": 0,
             "classname": ""
           }
         },
@@ -520,21 +519,21 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason2.svg",
-            "text": "<p><strong>Saves time, money & hassle<\/strong>of attending in-clinic treatments.<\/p>"
+            "text": "<p><strong>Saves time, money & hassle <\/strong>of attending in-clinic treatments.<\/p>"
           }
         },
         "icon_LN8RVc": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason2.svg",
-            "text": "<p><strong>Quick 5 minute<\/strong>way to help enhance skin with little to<strong>no downtime.<\/strong><\/p>"
+            "text": "<p><strong>Quick 5 minute <\/strong>way to help enhance skin with little to <strong>no downtime.<\/strong><\/p>"
           }
         },
         "icon_3jJA6X": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason3.svg",
-            "text": "<p>Perfect before your big event to<strong>transform dull-looking<\/strong>skin.<\/p>"
+            "text": "<p>Perfect before your big event to <strong>transform dull-looking <\/strong>skin.<\/p>"
           }
         },
         "icon_hQTWT9": {
@@ -764,7 +763,8 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes"
+        "heading": "Results you‘ll see with your own eyes",
+        "text_verified_customer": "Verified customer"
       }
     },
     "liquid_9GnXBn": {
@@ -920,7 +920,9 @@
         "heading": "We make science-backed skincare easily accessible and affordable",
         "text": "<p><strong>“Even my esthetician is hooked!<\/strong> And I can now visit beauty clinics less often.”<\/p><ul><li>Helps <strong>boost<\/strong> serum absorption<\/li><li>Minimal to <strong>no downtime<\/strong><\/li><li>Virtually <strong>painless<\/strong><\/li><li><strong>Easy to use,<\/strong> 5-minute treatment<\/li><li><strong>2-in-1 action:<\/strong> stimulate & infuse<\/li><\/ul>",
         "button_label": "BUY NOW & SAVE UP TO 43%",
-        "button_url": "#productSubscription"
+        "button_url": "#productSubscription",
+        "underbutton_text_left": "90-Day Money Back Guarantee",
+        "underbutton_text_right": "Free World-Wide Shipping Over $100"
       }
     },
     "liquid_7dQkU7": {
@@ -1130,7 +1132,9 @@
       ],
       "settings": {
         "classname": "",
-        "heading": "The answers to your questions"
+        "heading": "The answers to your questions",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
       }
     },
     "social_zwVAqW": {
@@ -1193,6 +1197,7 @@
           "type": "content",
           "settings": {
             "text": "<ul><li><strong>Transforms dull-looking skin,<\/strong> helps reduce appearance of fine lines & smooths texture skin<\/li><li><strong>Easy<\/strong> 5-minute facial, serums <strong>customized<\/strong> to address your skin concerns for <strong>visible results<\/strong><\/li><li>Minimal to <strong>no downtime,<\/strong> virtually <strong>painless &<\/strong> perform conveniently from home<\/li><\/ul><p>[image_mobile]<\/p><p>[code]<\/p>",
+            "column_content": 0,
             "classname": "ba_wrapper"
           }
         },
