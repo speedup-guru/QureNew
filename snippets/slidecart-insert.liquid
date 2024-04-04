@@ -82,9 +82,15 @@
     const initUpsellSwiper = () => {
       displayCard();
       showUpsell();
+      const upsell = upsellSwiper();
       if(document.body.hasAttribute('data-variantc-upsell-carousel')){
-        const upsell = upsellSwiper();
         if(upsell){
+          upsell.init();
+        }
+      }
+      if(document.body.hasAttribute('data-variantb-upsell-carousel')){
+        const isMobile = window.innerWidth <= 768;
+        if(isMobile && upsell){
           upsell.init();
         }
       }

@@ -598,22 +598,8 @@ body[data-variantb-upsell-carousel] {
           align-items: flex-start;
           margin: 0;
           gap: 0;
-          padding-bottom: 8px;
-          span{
-            width: 79px;
-            height: 12px;
-            color: #FFF;
-            text-align: right;
-            font-family: Poppins;
-            font-size: 9px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 12px;
-            padding: 0 4px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
+          padding:0;
+          margin-bottom: 8px;
         }
         > div{
           display: flex;
@@ -622,10 +608,7 @@ body[data-variantb-upsell-carousel] {
           height: auto;
           width: 100%;
           justify-content: space-between;
-          overflow-x: auto;
-          overflow-y: hidden;
-          -webkit-overflow-scrolling: touch;
-          scrollbar-width: none;
+          margin-bottom: 10px;
           @media screen and (min-width:768px){
             justify-content: center;
           }
@@ -639,8 +622,8 @@ body[data-variantb-upsell-carousel] {
             padding: 0;
             border: none;
             flex: auto;
-            min-height: 236px;
-            height: 236px;
+            max-height: 215px;
+            height: 215px;
             max-width: 127px;
             width: 127px;
 
@@ -714,33 +697,49 @@ body[data-variantb-upsell-carousel] {
               }
             }
             .upsell_price{
-              flex-direction: column;
-              gap: 0;
               .upsell_amt{
-                margin: 0;
-                text-align: start;
-                span{
-                  color: #000;
-                  font-family: Poppins;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 300;
-                  line-height: 18.683px; /* 133.453% */
-                  letter-spacing: 0.14px;
-                  text-decoration-line: strikethrough;
-                }
-                i{
-                  color: #000;
-                  font-family: Poppins;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: 18.683px;
-                  letter-spacing: 0.14px;
-                }
-              }
-              a > svg{
                 display: none;
+              }
+              a {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18.683px; /* 169.849% */
+                letter-spacing: 0.11px;
+                width: auto;
+                display: flex;
+                align-items: center;
+                padding: 6px 10px;
+                .upsell_amt{
+                  display: flex;
+                  margin: 0;
+                  text-align: start;
+                  min-width: 0 !important;
+                  span{
+                    color: #D7D9D9;
+                    font-family: Poppins;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18.683px;
+                    letter-spacing: 0.11px;
+                    text-decoration-line: strikethrough;
+                    -moz-text-decoration-line: strikethrough;
+                  }
+                  i{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 18.683px; /* 169.849% */
+                    letter-spacing: 0.11px;
+                  }
+                }
               }
             }
           }
@@ -763,35 +762,25 @@ body[data-variantb-upsell-carousel] {
           background: transparent;
           padding-right: 1vw;
           .upsell_title{
-            gap: 22px;
             color: #FFF;
             font-size: 28px;
             font-style: normal;
             font-weight: 300;
             letter-spacing: 0.28px;
-            span{
-              width: 170px;
-              height: 30.357px;
-              color: #FFF;
-              text-align: right;
-              font-family: Poppins;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24.286px;
-            }
+            margin-bottom: 0;
           }
           > div{
             gap: 20px;
             .upsell_main{
               max-width: 186px;
               width: 186px;
-              padding: 12px 12px;
-              gap: 10px;
+              padding: 12px;
+              gap: 0;
+              justify-content: space-between;
               border-radius: 8px;
               flex: 1;
-              min-height: 292px;
-              height: 292px;
+              max-height: 281px;
+              height: 281px;
               > div{
                 gap: 18px;
               }
@@ -813,7 +802,7 @@ body[data-variantb-upsell-carousel] {
                 .upsell_content {
                   display: flex;
                   flex-direction: column;
-                  gap: 9px;
+                  gap: 12px;
                   max-width: none;
                   width: 100%;
                   font-size: 16px;
@@ -843,25 +832,47 @@ body[data-variantb-upsell-carousel] {
               .upsell_price{
                 margin-top: 0;
                 justify-content: space-between;
-                .upsell_amt {
-                  span{
-                    color: #000;
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 18.683px; /* 116.771% */
-                    letter-spacing: 0.16px;
-                    text-decoration-line: strikethrough;
-                  }
-                  i{
-                    color: #000;
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 18.683px;
-                    letter-spacing: 0.16px;
+                .upsell_amt{
+                  display: none;
+                }
+                a {
+                  color: #FFF;
+                  text-align: center;
+                  font-family: Poppins;
+                  font-size: 11px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 18.683px; /* 169.849% */
+                  letter-spacing: 0.11px;
+                  width: auto;
+                  display: flex;
+                  align-items: center;
+                  .upsell_amt{
+                    display: flex;
+                    margin: 0;
+                    text-align: start;
+                    min-width: 0 !important;
+                    span{
+                      color: #D7D9D9;
+                      font-family: Poppins;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 18.683px;
+                      letter-spacing: 0.11px;
+                      text-decoration-line: strikethrough;
+                      -moz-text-decoration-line: strikethrough;
+                    }
+                    i{
+                      color: #FFF;
+                      text-align: center;
+                      font-family: Poppins;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 18.683px; /* 169.849% */
+                      letter-spacing: 0.11px;
+                    }
                   }
                 }
               }
@@ -874,6 +885,18 @@ body[data-variantb-upsell-carousel] {
         @media screen and (min-width:1203px) {
           padding-right: 80px;
         }
+        .swiper-pagination{
+          display: block;
+          margin: 0px;
+          .swiper-pagination-bullet {
+            background: #FFF;
+            opacity: 1;
+          }
+          .swiper-pagination-bullet-active{
+            background: #000;
+          }
+        }
+        
       }
       .custom_upsell.notVisible {
         display: none;
@@ -914,8 +937,8 @@ body[data-variantc-upsell-carousel] {
         height: auto;
         display: flex;
         flex-direction: column;
-        height: 191px;
-        min-height: 191px;
+        height: auto;
+        min-height: 0;
         .upsell_title {
           font-family: "Canela Web",sans-serif;
           color: #000;
@@ -1065,6 +1088,9 @@ body[data-variantc-upsell-carousel] {
                 font-weight: 600;
                 line-height: 18.683px; /* 169.849% */
                 letter-spacing: 0.11px;
+                .upsell_amt{
+                  display: none;
+                }
               }
             }
 
@@ -1104,8 +1130,8 @@ body[data-variantc-upsell-carousel] {
       .custom_upsell {
         background:  #C8E6DC;
         padding: 14px 20px 0 20px;
-        height: 191px;
-        min-height: 191px;
+        height: 167px;
+        min-height: 167px;
         .upsell_title {
           color: #000;
           font-size: 16px;
@@ -1132,6 +1158,7 @@ body[data-variantc-upsell-carousel] {
         }
         .swiper-wrapper{
           gap: 12px;
+          margin-bottom: 10px;
           .upsell_main{
             width: 384px;
             height: 98px;
@@ -1179,6 +1206,9 @@ body[data-variantc-upsell-carousel] {
               align-items: flex-end;
               justify-content: space-between;
               height: 100%;
+              a .upsell_amt{
+                display: none;
+              }
             }
           }
         }
@@ -1188,7 +1218,7 @@ body[data-variantc-upsell-carousel] {
           justify-content: center;
           align-items: center;
           background: #C8E6DC;
-          top: 50%;
+          top: 43%;
           width: 8%;
           height: 100px;
         }
