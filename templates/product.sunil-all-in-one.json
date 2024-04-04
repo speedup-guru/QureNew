@@ -46,6 +46,14 @@
     "two_column_box_TyH4EK": {
       "type": "two-column-box",
       "blocks": {
+        "image_KK9rFk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/all_serum_difference-desk.png",
+            "image_mobile": "shopify:\/\/shop_images\/all_serum_difference-mob.png",
+            "classname": "mw-mob-100"
+          }
+        },
         "content_3tryDW": {
           "type": "content",
           "settings": {
@@ -56,11 +64,11 @@
         }
       },
       "block_order": [
+        "image_KK9rFk",
         "content_3tryDW"
       ],
       "custom_css": [
-        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
-        ".row {align-items: center !important;}"
+        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}"
       ],
       "settings": {
         "classname": "richtext_prog_section section",
