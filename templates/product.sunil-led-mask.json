@@ -31,7 +31,7 @@
           "settings": {
             "image_new_section_1": "shopify:\/\/shop_images\/LM_BA_01_-_D_x_2.png",
             "image_new_section_text_1": "image 1",
-            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D.png",
+            "image_new_section_2": "shopify:\/\/shop_images\/led_mask_2_x2_1b86c7b1-32ac-4557-8808-e43fa5ea62c2.png",
             "image_new_section_text_2": "image 2",
             "image_new_section_text_3": "image 3"
           }
@@ -57,7 +57,9 @@
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100"
       }
     },
     "featuredin_yT6yRP": {
@@ -458,7 +460,8 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes"
+        "heading": "Results you‘ll see with your own eyes",
+        "text_verified_customer": "Verified customer"
       }
     },
     "two_column_box_xCB6mV": {
@@ -475,6 +478,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Qure’s LED light therapy mask is unlike any other skincare device<\/h2><p>A portable, <strong>FDA-cleared<\/strong>, at-home LED light therapy treatment that is <strong>scientifically proven<\/strong> to change your skin for the better. That makes you feel better, too.<\/p><p><\/p><p>Choose between three treatment modes, <strong>“Anti-Breakout”<\/strong>, <strong>“Anti-Aging”<\/strong> or <strong>custom treatment zones.<\/strong> Each treatment mode utilizes a combination of market-leading light wavelengths to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach.<\/p><p><\/p><p>Get all the skin firming, smoothing, clearing benefits with just <strong>1 device.<\/strong><\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         }
@@ -564,6 +568,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Clinical-grade LED, personalized to your skin.<\/h2><h3>See transformative results in less than 12 weeks. [image_mobile]<\/h3><p>Safe, <strong>clinically proven<\/strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results<\/strong>.<\/p><p>The <strong>same technology used in professional clinics<\/strong> by dermatologists, giving you <strong>in-clinic results conveniently from home,<\/strong> without the clinical price tag.<\/p><p>[details]<\/p>",
+            "column_content": 0,
             "classname": "section_header text-start pb-0"
           }
         },
@@ -601,6 +606,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Qure Mobile App<\/h2><h3>Your skin is unique, so your treatment should be too.<\/h3><p>[image_mobile] <\/p><p>Qure’s LED Light Therapy Mask is comes with a companion iPhone\/Android app.<\/p><p>Select from our range of <strong>treatments<\/strong> across five different facial areas to treat and target what your skin needs today. So you can <strong>help prevent breakouts on your chin<\/strong> while smoothing the appearance of “crow’s feet” at the same time.<\/p><p>You’ll never miss a treatment with Qure mobile app <strong>planner<\/strong> and phone reminders.<\/p>",
+            "column_content": 0,
             "classname": "section_header text-start pb-0"
           }
         },
@@ -676,7 +682,8 @@
         "video_f9Laey"
       ],
       "settings": {
-        "heading": "Confident skin starts here. Just ask the internet."
+        "heading": "Confident skin starts here. Just ask the internet.",
+        "classname": "section videosQure"
       }
     },
     "easy_guide_E8KQFR": {
@@ -900,7 +907,9 @@
       ],
       "settings": {
         "classname": "bg_yellow",
-        "heading": "The answers to your questions"
+        "heading": "The answers to your questions",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
       }
     },
     "heading_fijgLW": {
