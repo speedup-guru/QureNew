@@ -68,7 +68,8 @@
         "content_3tryDW"
       ],
       "custom_css": [
-        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}"
+        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
+        "@media (max-width: 767px) {.img-fluid {max-width: 153px; }}"
       ],
       "settings": {
         "classname": "richtext_prog_section section",
