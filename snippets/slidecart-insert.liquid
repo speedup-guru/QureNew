@@ -8,7 +8,10 @@
 	{% endfor %}
 	]
 </script>
-<script>var cart_price = '{{ cart.items_subtotal_price | money_without_currency | round:2 }}';</script>
+<script>
+	var currency = '{{ shop.money_with_currency_format | remove: ' ' | split: '' | first }}';
+	var cart_price = '{{ cart.items_subtotal_price | money_without_currency | round:2 }}';
+</script>
 <script type="application/json" data-ajax-cart-initial-state class="__init"> {{ cart | json }} </script> 
 <script type="application/json" data-ajax-cart-configuration class="__init"> { "addToCartCssClass": "js-my-cart-open" } </script>
 
@@ -31,7 +34,7 @@
 			var subTotalPrice = $(".drawer__cart-subtotal-price-end").attr('data-total_price')
 			subTotalPrice = subTotalPrice.trim() //remove all whitespaces
 			subTotalPrice = subTotalPrice.replace(/[A-Za-z]/g, "")  //remove all letters
-			subTotalPrice = subTotalPrice.replace("$","") 
+			subTotalPrice = subTotalPrice.replace(currency,"") 
 			subTotalPrice = parseFloat(subTotalPrice)
 
 			var totalPrice = parseFloat((cart.total_price/100).toFixed(2))
@@ -127,7 +130,7 @@
 			var subTotalPrice = $(".cart_items_subtotal_price").text();
 			subTotalPrice = subTotalPrice.trim() //remove all whitespaces
 			subTotalPrice = subTotalPrice.replace(/[A-Za-z]/g, "")  //remove all letters
-			subTotalPrice = subTotalPrice.replace("$","") 
+			subTotalPrice = subTotalPrice.replace(currency,"") 
 			subTotalPrice = parseFloat(subTotalPrice).toFixed(2);
 		
 			var totalPrice = parseFloat((cart.total_price/100).toFixed(2))
@@ -170,17 +173,16 @@
 			var priceWithoutInsurance 
 			priceWithoutInsurance = cart.total_price
 			var checkSwitch = $(".insurance__switch-wrapper input").is(":checked")
-			$(".insurance__cost").text("$"+insurancePrice.toFixed(2))
+			$(".insurance__cost").text(currency+insurancePrice.toFixed(2))
 			
 			var insurance__cost = parseFloat((0.011 * calcInsuranceTier).toFixed(2))
 			var insuranceInt = parseInt(insurance__cost);
 			var cart_latest_price = cart_price;
 		
-			var Cart_single_price_IS = $('p.drawer__cart-subtotal-price-end').attr('data-total_price').replace(',','')
-			var Compare_price = $('span.old_price-cart').attr('data-compare-price').replace(',','');
+			var Cart_single_price_IS = $('p.drawer__cart-subtotal-price-end').attr('data-total_price').replace(',','.')
+			var Compare_price = $('span.old_price-cart').attr('data-compare-price').replace(',','.');
 			var total = Cart_single_price_IS
-			var avoid = "$"
-			var inCPRICE = $('.insurance__cost').text().replace(avoid,'')
+			var inCPRICE = $('.insurance__cost').text().replace(currency,'')
 			var InsurancePriceIS = inCPRICE
 			var Price_iNT = Cart_single_price_IS
 			var Savings_price = parseFloat(Compare_price) - parseFloat(Price_iNT);
@@ -188,16 +190,16 @@
 
 			if(Cart_single_price_IS > 100)
 			{
-				$("#savings-amount").html('$' + parseInt(Savings_price, 10));
+				$("#savings-amount").html(currency + parseInt(Savings_price, 10));
 			}
 
 			if (checkSwitch) {
 				var convert_price_is = final_cart_price_WithInsurance
-				$("span.cart_items_subtotal_price").html(" $" + parseFloat(convert_price_is).toFixed(2))
+				$("span.cart_items_subtotal_price").html(" " + currency + parseFloat(convert_price_is).toFixed(2))
 			}
 			else {
 				var insuraceProdId = 7813366743279
-				$("span.cart_items_subtotal_price").html(" $" + Cart_single_price_IS)
+				$("span.cart_items_subtotal_price").html(" " + currency + Cart_single_price_IS)
 		
 				for (let yy = 0; yy < cart.items.length; yy++) {
 					if (cart.items[yy].product_id === 7813366743279) {
