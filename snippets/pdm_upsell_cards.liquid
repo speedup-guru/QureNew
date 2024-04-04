@@ -11,7 +11,7 @@
   {% assign product_patches_micro_infusion = all_products['micro-infusion-targeted-patches'] %}
 
   <div class="swiper custom_upsell variant_v">
-    <h3 class="upsell_title">Achieve your skin goals faster <span>SAVE up to 50%</span></h3>
+    <h3 class="upsell_title">Achieve your skin goals faster</h3>
     {% assign maskProduct = false %}
     {% assign neckProduct = false %}
     {% assign waterFilter = false %}
@@ -74,6 +74,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_neck_decolletage.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_neck_decolletage.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_neck_decolletage.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -97,6 +101,11 @@
             <a href="{{ routes.cart_add_url }}?id={{ 
               product_micro_infusion_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -118,6 +127,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -147,6 +160,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_rejuvalight_mask.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -168,6 +185,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -191,6 +212,11 @@
             <a href="{{ routes.cart_add_url }}?id={{ 
               product_micro_infusion_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -223,6 +249,11 @@
             <a href="{{ routes.cart_add_url }}?id={{ 
               product_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -244,6 +275,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_rejuvalight_mask.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -275,6 +310,11 @@
             <a href="{{ routes.cart_add_url }}?id={{ 
               product_micro_infusion_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -296,6 +336,10 @@
               </div>
               <a href="{{ routes.cart_add_url }}?id={{ product_rejuvalight_mask.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                 Add +
+                <div class="upsell_amt">
+                  <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+                </div>
               </a>
             </div>
           </div>
@@ -346,6 +390,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_hydra_soothing.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_hydra_soothing.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_hydra_soothing.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -367,6 +415,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -416,6 +468,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_q_rify.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_q_rify.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_q_rify.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -437,6 +493,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_hydra_soothing.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_hydra_soothing.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_hydra_soothing.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -458,6 +518,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -487,6 +551,10 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -510,6 +578,11 @@
             <a href="{{ routes.cart_add_url }}?id={{ 
               product_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
         </div>
@@ -561,6 +634,10 @@
               </div>
               <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                 Add +
+                <div class="upsell_amt">
+                  <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+                </div>
               </a>
             </div>
           </div>
@@ -584,6 +661,11 @@
               <a href="{{ routes.cart_add_url }}?id={{ 
                 product_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                 Add +
+                <div class="upsell_amt">
+                  <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ 
+                    product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+                </div>
               </a>
             </div>
           </div>
