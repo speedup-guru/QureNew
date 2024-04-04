@@ -540,14 +540,14 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason3.svg",
-            "text": "<p>Easy DIY facial performed from the<strong>comfort & convenience<\/strong>of home.<\/p>"
+            "text": "<p><strong>Easy<\/strong> DIY facial performed from the <strong>comfort & convenience <\/strong>of home.<\/p>"
           }
         },
         "icon_6qiFmi": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason3.svg",
-            "text": "<p><strong>Improved absorption<\/strong>of serum that’s customized to address your specific concerns.<\/p>"
+            "text": "<p><strong>Improved absorption <\/strong>of serum that’s customized to address your specific concerns.<\/p>"
           }
         }
       },
