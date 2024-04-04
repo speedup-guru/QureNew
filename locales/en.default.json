@@ -494,6 +494,9 @@
           },
           "following_cycles": " "
         }
+      },
+      "marketing": {
+        "accept_sms_checkbox_label": "Get Skincare Hacks & Exclusive Deals to Your Phone"
       }
     }
   }
