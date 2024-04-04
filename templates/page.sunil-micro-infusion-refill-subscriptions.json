@@ -77,6 +77,47 @@
           "settings": {
             "code": "{% render 'serums-refill-form' with section_id: section.id %}"
           }
+        },
+        "product_in_page_gkYdxK": {
+          "type": "product_in_page",
+          "settings": {
+            "image_product_1": "shopify:\/\/shop_images\/mi_refill-product-1.webp",
+            "image_product_text_1": "mi refill product with a man",
+            "video_widia_id_1": "",
+            "image_product_2": "shopify:\/\/shop_images\/mi_refill-product-2.webp",
+            "image_product_text_2": "collection refill product",
+            "video_widia_id_2": "",
+            "image_product_3": "shopify:\/\/shop_images\/mi_refill-product-3.webp",
+            "image_product_text_3": "using refill product",
+            "video_widia_id_3": "",
+            "image_product_4": "shopify:\/\/shop_images\/mi_refill-product-4.webp",
+            "image_product_text_4": "collage product",
+            "video_widia_id_4": "",
+            "image_product_text_5": "",
+            "video_widia_id_5": "",
+            "image_product_text_6": "",
+            "video_widia_id_6": ""
+          }
+        },
+        "before_and_after_jmNTNh": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/real_result_refill_img_1x_2.png",
+            "image_new_section_text_1": "real resul",
+            "image_new_section_2": "shopify:\/\/shop_images\/micro_inusion_refill_img_2_x_2.png",
+            "image_new_section_text_2": "testimonail two",
+            "image_new_section_3": "shopify:\/\/shop_images\/micro_infusion_refill_3_x2_7a535cc9-186a-4c09-93a9-b70bdb3784fd.png",
+            "image_new_section_text_3": "",
+            "image_new_section_4": "shopify:\/\/shop_images\/micro_infusion_refill_4_x2_fb85987f-fe8b-4c40-9a73-9f5579cac4fe.png",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": ""
+          }
+        },
+        "video_before_and_after_w4xCC8": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Micro infusion Refill edit.mov"
+          }
         }
       },
       "block_order": [
@@ -90,7 +131,10 @@
         "media_8Qj7Ce",
         "media_8nG6mE",
         "media_efznbh",
-        "liquid_a4mkYA"
+        "liquid_a4mkYA",
+        "product_in_page_gkYdxK",
+        "before_and_after_jmNTNh",
+        "video_before_and_after_w4xCC8"
       ],
       "settings": {
         "heading": "Micro-Infusion Refill Kit",

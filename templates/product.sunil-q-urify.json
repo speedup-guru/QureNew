@@ -24,12 +24,30 @@
             "plan": "4496589039",
             "discount": 3000
           }
+        },
+        "before_and_after_7iFzry": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/purify_water_1_x2_5ec53536-d536-49b2-a02d-ce400900ccee.png",
+            "image_new_section_text_1": "water purify one",
+            "image_new_section_2": "shopify:\/\/shop_images\/purify_water_2_x2_e6ec6a32-f42f-4792-b744-21d2838dccba.png",
+            "image_new_section_text_2": "water purify two",
+            "image_new_section_text_3": ""
+          }
+        },
+        "video_before_and_after_mQBbUX": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Water filter edit.mov"
+          }
         }
       },
       "block_order": [
         "rating_KQGPaL",
         "list_BDhCQ7",
-        "subscribe_J9Afdq"
+        "subscribe_J9Afdq",
+        "before_and_after_7iFzry",
+        "video_before_and_after_mQBbUX"
       ],
       "settings": {
         "heading": "Get healthier skin, on tap, with Q-urify Water Filter",
@@ -38,7 +56,9 @@
         "product_button_label": "Real results",
         "before_after_images_limit": 5,
         "before_after_button_label": "Product",
-        "reserve": false
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100"
       }
     },
     "featuredin_RKtJRq": {
@@ -113,6 +133,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>What contaminants is your skin absorbing everyday?<\/h2><p>Enter your information below to get a free, custom water report for your local area. Learn about what’s in your water and how it can be affecting your skin.<\/p><p>[code]<\/p>",
+            "column_content": 0,
             "classname": "free_report_info section_header px-0 text-start ms-0 pt-md-4 ps-md-4"
           }
         },
@@ -141,6 +162,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>[image_mobile]Tap into a whole new side of skincare<\/h2><p>[only_mobile_start] Get your maximum clean at the flip of a switch with the Q-urify Water Filter. It’s perfect for maximizing the effectiveness of your skincare products without any extra steps in your routine – giving your skin the best chance at natural radiance. [only_mobile_end][code]<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-0"
           }
         },
@@ -232,7 +254,8 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Clearer, hydrated skin, on tap"
+        "heading": "Clearer, hydrated skin, on tap",
+        "text_verified_customer": "Verified customer"
       }
     },
     "two_column_box_9KGBC4": {
@@ -242,6 +265,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>It’s time to look toward your faucet, not your ingredients list.<\/h2><p>Research has confirmed that water hardness is a major contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment, <\/a>including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema <\/a>and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis<\/a>. And not just from the well-known culprit chlorine – but also calcium and magnesium.[code_mobile][details_desktop]<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
@@ -249,6 +273,7 @@
           "type": "content",
           "settings": {
             "text": "<p>[code_desktop][details_mobile]<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
@@ -333,7 +358,8 @@
         "likes": "4.8K",
         "views": "192K views",
         "image": "shopify:\/\/shop_images\/trusted_main.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=QuJ3puVLKzU"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=QuJ3puVLKzU",
+        "video_label": "Click To Watch Review"
       }
     },
     "two_column_box_mjpNxF": {
@@ -351,6 +377,7 @@
           "type": "content",
           "settings": {
             "text": "<h2>Saves your skin from ‘hard water’ nasties.<\/h2><p>We’re serious about the science of your skin. That’s why our advanced filtering technology helps filter skin contaminants and metal ions that make your tap water “hard” – like calcium, magnesium and chlorine.<\/p><p>What you're left with is clean, purified water your skin drinks up, helping you kick dry, irritated, acne-prone to the curb (or shall we say – down the drain). [image_mobile][code]<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
@@ -465,42 +492,48 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify_use_s_1.webp",
-            "text": "<p>Remove faucet aerator. Simply attach and twist it off using the key                                                        for removal.<\/p>"
+            "text": "<p>Remove faucet aerator. Simply attach and twist it off using the key                                                        for removal.<\/p>",
+            "step": "STEP"
           }
         },
         "object_AcMGDz": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify_use_s_2.webp",
-            "text": "<p>Find the faucet thread accessory which best fits your faucet by size                                                        from the 7 provided. If none of the faucet thread accessories fit,                                                        then use the Universal Joint. <\/p>"
+            "text": "<p>Find the faucet thread accessory which best fits your faucet by size                                                        from the 7 provided. If none of the faucet thread accessories fit,                                                        then use the Universal Joint. <\/p>",
+            "step": "STEP"
           }
         },
         "object_YHXEeE": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify_use_s_3.webp",
-            "text": "<p>Find the silicone ring that best fits and place it inside the faucet                                                        thread accessory.<\/p>"
+            "text": "<p>Find the silicone ring that best fits and place it inside the faucet                                                        thread accessory.<\/p>",
+            "step": "STEP"
           }
         },
         "object_caB4Cq": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify_use_s_4.webp",
-            "text": "<p>Detach the mounting nut from the Q-urify Water Filter. Put the faucet                                                        thread accessory (with the silicone ring inside) through the                                                        mounting nut and secure it onto your faucet. <\/p>"
+            "text": "<p>Detach the mounting nut from the Q-urify Water Filter. Put the faucet                                                        thread accessory (with the silicone ring inside) through the                                                        mounting nut and secure it onto your faucet. <\/p>",
+            "step": "STEP"
           }
         },
         "object_Qmyt7M": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify_use_s_5.webp",
-            "text": "<p>Once tightened, secure the Q-urify Water Filter to the mounting nut.<\/p>"
+            "text": "<p>Once tightened, secure the Q-urify Water Filter to the mounting nut.<\/p>",
+            "step": "STEP"
           }
         },
         "object_P3gAdM": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify_use_s_6.webp",
-            "text": "<p>For filtered water, turn to “PUR” (short for purify). Turn to “TAP”                                                        if you prefer unfiltered water.                                                        Enjoy healthier, clearer skin!<\/p>"
+            "text": "<p>For filtered water, turn to “PUR” (short for purify). Turn to “TAP”                                                        if you prefer unfiltered water.                                                        Enjoy healthier, clearer skin!<\/p>",
+            "step": "STEP"
           }
         }
       },
@@ -542,6 +575,7 @@
           "type": "content",
           "settings": {
             "text": "<p>[code]<\/p>",
+            "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
@@ -644,7 +678,9 @@
       ],
       "settings": {
         "classname": "bg_yellow",
-        "heading": "The answers to your questions"
+        "heading": "The answers to your questions",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
       }
     },
     "pdm_product_social_proof_data_4iretp": {
