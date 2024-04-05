@@ -1,5 +1,5 @@
-<div class="ba-main__container">
-  <div class="main__wrapper">
+<div class="ba-container">
+  <div class="ba-container-wrapper">
     <div class="panel__container">
       {% comment %} data {% endcomment %}
       <div id="info-product" class="panel">
@@ -17,7 +17,7 @@
         {% endunless %}
       </div>
       {% comment %} real results {% endcomment %}
-      <div id="info-result" class="panel active">
+      <div id="info-result" class="panel ">
         {% for block in data %}
           {% if block.type == 'before_and_after' %}
             {% render 'endrock_real_results', block: block %}
@@ -55,7 +55,7 @@
         <li class="nav-item">
           <button
             id="resultButton"
-            class="nav-button active"
+            class="nav-button "
           >
             Real Results
           </button>
