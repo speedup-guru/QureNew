@@ -18,10 +18,10 @@
 
 
 <!-- -- main banner start -- -->
-<div class="refill_bl pt-0 tabSlider">
+<div class="refill_bl pt-0 tabSlider before-after-result-test">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-2 order-md-1 befor-after-main">
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start">
                         {% if section.settings.heading != blank %}
@@ -226,8 +226,10 @@
 
                 </div>
             </div>
+            {% comment %} component-original {% endcomment %}
             <div class="col-md-6  order-1 order-md-2">
-                <div class="refill_slider mw-mob-100">
+                
+                <div style="display: none" class="refill_slider mw-mob-100">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -289,6 +291,7 @@
                             </div>
                             {% if section.settings.before_after_images_limit > 0 %}
                                 <div 
+                                    data-test="product-water"
                                     class="tab-pane fade" 
                                     id="pills-profile" 
                                     role="tabpanel"
@@ -339,6 +342,10 @@
                         </div>
                     {% endif %}
                 </div>
+                
+            {% comment %} end component original {% endcomment %}
+            
+            {% render 'endrock_before_after', data: section.blocks %}
             </div>
         </div>
     </div>
@@ -544,7 +551,56 @@
                         "default": 0
                     }
                 ]
-		    }
+		    },
+            {
+                "type": "before_and_after",
+                "name": "before and after",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_1",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_1",
+                        "label": "Alt text Imagen 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_2",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_2",
+                        "label": "Alt text Imagen 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_3",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_3",
+                        "label": "Alt text Imagen 3"
+                    }
+                ]                  
+            },
+            {
+                "type": "video_before_and_after",
+                "name": "video before and after",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "video",
+                        "id": "video_new_section",
+                        "label": "video"
+                    }
+                ]
+            }          
         ]
     }
 {% endschema %}
