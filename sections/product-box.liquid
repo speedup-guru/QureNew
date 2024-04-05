@@ -38,15 +38,17 @@
                 {%- for block in section.blocks -%}
                     {% if block.type == 'product' %}
                         <div class="col-md-6 order-2 order-md-1">
-                                <div class="{% if images_count > 1 %}cg_desc pe-0 pe-md-3 pe-lg-5  pt-4 pt-md-0{% else %}pt-5{% endif %}">
-                                <div class="refill_review justify-content-start text-start mb-3">
-                                    {{ rating }}
-                                </div>
+                                <div class="{% if images_count > 1 %}cg_desc pe-0 pe-md-3 pe-lg-5  pt-4 pt-md-0{% else %}mb_contents text-start pt-3 mw-486{% endif %}">
+                                {% if rating != blank %}
+                                    <div class="refill_review justify-content-start text-start mb-3">
+                                        {{ rating }}
+                                    </div>                                    
+                                {% endif %}
+                                {% if block.settings.heading != blank %}
                                 <div class="section_header p-0 mb-3">
-                                    {% if block.settings.heading != blank %}
-                                        <h2 class="title-lg">{{ block.settings.heading }}</h2> 
-                                    {% endif %}
+                                    <h2 class="title-lg">{{ block.settings.heading }}</h2> 
                                 </div>
+                                {% endif %}
                                 {% if block.settings.text != blank %}
                                     {{ block.settings.text 
                                         |  replace: '<h2>', '<h2 class="title-lg">'
