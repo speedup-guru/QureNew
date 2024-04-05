@@ -950,8 +950,8 @@ body[data-variantc-upsell-carousel] {
         height: auto;
         display: flex;
         flex-direction: column;
-        height: auto;
-        min-height: 0;
+        height: 167px;
+        min-height: 167px;
         .upsell_title {
           font-family: "Canela Web",sans-serif;
           color: #000;
