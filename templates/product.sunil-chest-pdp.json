@@ -25,12 +25,30 @@
             "text": "<p>Due to high demand, our Neck & Décolletage LED device is sold out. Order now and secure yours from the next shipment.<\/p>",
             "html": "<div class=\"batch_h batch_h_fade mt-3 mt-md-4\">\n                                          <div class=\"batch_h_month\">February 2nd<\/div>\n                                          <div class=\"batch_h_info sold_out_h\" style=\"--bgPercent:100%;\"><span>SOLD\n                                                  OUT<\/span><\/div>\n                                      <\/div>\n                                      <div class=\"batch_h my-2\">\n                                          <div class=\"batch_h_month\">March 10th<\/div>\n                                          <div class=\"batch_h_info\" style=\"--bgPercent:52%;\">48% Reserved<\/div>\n                                      <\/div>\n                                      <div class=\"batch_h batch_h_fade\">\n                                          <div class=\"batch_h_month\">May 20th<\/div>\n                                          <div class=\"batch_h_info\" style=\"--bgPercent:0%;\"><span>In\n                                                  Production<\/span><\/div>\n                                      <\/div>"
           }
+        },
+        "before_and_after_d9ReDz": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/neck_decolletagel_1_x2_1e5ba7f5-ff60-48ad-b811-af6d7077228f.png",
+            "image_new_section_text_1": "neck result one",
+            "image_new_section_2": "shopify:\/\/shop_images\/neck_decolletagel_2_x2_e947985b-4c22-4992-b6b2-dfd72514c46a.png",
+            "image_new_section_text_2": "neck result two",
+            "image_new_section_text_3": ""
+          }
+        },
+        "video_before_and_after_dPc77J": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Neck edit_b34038da-2489-4c95-af0a-0a486968f588.mov"
+          }
         }
       },
       "block_order": [
         "rating_KDB67x",
         "list_azYRbY",
-        "supply_b9ppf8"
+        "supply_b9ppf8",
+        "before_and_after_d9ReDz",
+        "video_before_and_after_dPc77J"
       ],
       "settings": {
         "heading": "Neck & Décolletage LED Light Therapy",

@@ -24,12 +24,30 @@
             "plan": "4562682095",
             "discount": 1000
           }
+        },
+        "before_and_after_zYCwCN": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/water_filter_replacement_1_x2_cf7796b4-1bdf-4cc7-9eba-a63789ffeb7c.png",
+            "image_new_section_text_1": "",
+            "image_new_section_2": "shopify:\/\/shop_images\/water_filter_replacement_1_x2_cf7796b4-1bdf-4cc7-9eba-a63789ffeb7c.png",
+            "image_new_section_text_2": "",
+            "image_new_section_text_3": ""
+          }
+        },
+        "video_before_and_after_6QD74Y": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Water Filter Refill Edit.mov"
+          }
         }
       },
       "block_order": [
         "rating_bUyHqg",
         "list_wfDQn3",
-        "subscribe_qrzhkY"
+        "subscribe_qrzhkY",
+        "before_and_after_zYCwCN",
+        "video_before_and_after_6QD74Y"
       ],
       "settings": {
         "heading": "Q-urify Water Filter Replacement",
