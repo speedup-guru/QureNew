@@ -710,10 +710,13 @@
 				{% assign product_micro_infusion = all_products['micro-infusion-1-month-bundle-2x-beta-glucan-serum'] %}
 				{% assign product_hydra_soothing = all_products['micro-infusion-hydra-soothing-2-treatments'] %}
 				{% assign product_rejuvenating = all_products['micro-infusion-rejuvenating2-treatments'] %}
-				
+        {% assign product_q_rify = all_products['q-urify-water-filter'] %}
+        {% assign product_neck_decolletage = all_products['neck-decolletage-led'] %}
+        {% assign product_micro_infusion_rejuvenating = all_products['micro-infusion-1-month-bundle-2x-e-g-f-serum'] %}
+				{% assign product_rejuvalight_mask = all_products['q-rejuvalight-pro-facewear'] %}
+        {% assign product_patches_micro_infusion = all_products['micro-infusion-targeted-patches'] %}
 
-
-				<div class="custom_upsell">
+				<div class="custom_upsell original_v">
 					<h3 class="upsell_title">Add more to achieve your skin goals faster<span>SAVE up to 50%</span></h3>
 					{% assign maskProduct = false %}
 					{% assign neckProduct = false %}
@@ -721,6 +724,9 @@
 					{% assign FaceSerum = false %}
 					{% assign MicroRefill = false %}
 					{% assign MicroInfusion = false %}
+          {% comment %} upsell-carousel by Samu3le {% endcomment %}
+          {% assign Qurify = false %}
+          {% comment %} upsell-carousel by Samu3le {% endcomment %}
 					
 					{% for item in cart.items %}
 						{% if item.title contains 'Facewear' %}
@@ -742,11 +748,20 @@
 									{% assign MicroInfusion = true %}
 								{%- endif -%}
 						{% endif %}
+            {% if item.title contains 'Q-urify' %}
+              {% if item.title contains 'Replacement' %}
+                {% assign Qurify = true %}
+              {% else %}
+                {% assign waterFilter = true %}
+              {% endif %}
+              
+						{% endif %}
+            
 					{% endfor %}
 
 					{% if maskProduct %}
 						<div class="mask">
-							<div class="upsell_main">
+							<div class="upsell_main ">
 							<div class="upsell_image">
 								<div class="upsell_product">
 									<img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
@@ -769,7 +784,7 @@
 								</a>
 							</div>
 							</div>
-							<div class="upsell_main">
+							<div class="upsell_main ">
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_3227.png?v=1691562863">
@@ -794,7 +809,7 @@
 						</div>
 					{% elsif neckProduct %}
 						<div class="mask">
-							<div class="upsell_main">
+							<div class="upsell_main ">
 							<div class="upsell_image">
 								<div class="upsell_product">
 									<img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
@@ -817,7 +832,7 @@
 								</a>
 							</div>
 							</div>
-							<div class="upsell_main" data-product-id='7802911981807'>
+							<div class="upsell_main " data-product-id='7802911981807'>
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_3227.png?v=1691562863">
@@ -842,7 +857,7 @@
 						</div>
 					{% elsif waterFilter %}
 						<div class="mask">
-							<div class="upsell_main">
+							<div class="upsell_main ">
 							<div class="upsell_image">
 								<div class="upsell_product">
 									<img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
@@ -865,7 +880,7 @@
 								</a>
 							</div>
 							</div>
-							<div class="upsell_main" data-product-id='7802911981807'>
+							<div class="upsell_main " data-product-id='7802911981807'>
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_3227.png?v=1691562863">
@@ -890,7 +905,7 @@
 						</div>
 					{% elsif FaceSerum %}
 						<div class="face-serum">
-							<div class="upsell_main">
+							<div class="upsell_main ">
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_3227.png?v=1691562863">
@@ -912,10 +927,10 @@
 									</a>
 								</div>
 							</div>
-						</div> 
+						</div>
 					{% elsif MicroInfusion %}
 						<div class="micro-infusion">
-							<div class="upsell_main">
+							<div class="upsell_main ">
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_1833.png?v=1665737833">
@@ -938,8 +953,7 @@
 									</a>
 								</div>
 							</div>
-
-							<div class="upsell_main">
+							<div class="upsell_main ">
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_1833.png?v=1665737833">
@@ -965,7 +979,7 @@
 						</div>
 					{% elsif MicroRefill %}
 						<div class="micro-refill">
-							<div class="upsell_main">
+							<div class="upsell_main ">
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_1833.png?v=1665737833">
@@ -989,7 +1003,7 @@
 								</div>
 							</div>
 
-							<div class="upsell_main">
+							<div class="upsell_main ">
 								<div class="upsell_image">
 									<div class="upsell_product">
 										<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_1833.png?v=1665737833">
@@ -1014,10 +1028,10 @@
 							</div>
 						</div>
 					{%- else -%}
-						{%- if request.path contains 'bundle-deal' -%}
-							
+        
+						{%- if request.path contains 'bundle-deal'-%}
 								<div class="mask">
-									<div class="upsell_main">
+									<div class="upsell_main ">
 									<div class="upsell_image">
 										<div class="upsell_product">
 											<img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
@@ -1040,7 +1054,7 @@
 										</a>
 									</div>
 									</div>
-									<div class="upsell_main" data-product-id='7802911981807'>
+									<div class="upsell_main " data-product-id='7802911981807'>
 										<div class="upsell_image">
 											<div class="upsell_product">
 												<img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Group_3227.png?v=1691562863">
@@ -1061,13 +1075,13 @@
 												</svg>
 											</a>
 										</div>
-									</div>
-								</div>
+									</div>								
+              </div>
 								{% endif %}
 					{% endif %}
 				</div>
 			{%- endif -%}
-
+      {% render 'endrock_upsell_cards',cart:cart %}
 			<div class="custom-shadow">
 
 				{% assign price_checkInsurance = price_check %}

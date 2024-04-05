@@ -1,0 +1,680 @@
+
+{% if  cart.item_count > 0  %}
+  {% assign product_face_serum = all_products['face-serum'] %}
+  {% assign product_micro_infusion = all_products['micro-infusion-1-month-bundle-2x-beta-glucan-serum'] %}
+  {% assign product_hydra_soothing = all_products['micro-infusion-hydra-soothing-2-treatments'] %}
+  {% assign product_rejuvenating = all_products['micro-infusion-rejuvenating2-treatments'] %}
+  {% assign product_q_rify = all_products['q-urify-water-filter'] %}
+  {% assign product_neck_decolletage = all_products['neck-decolletage-led'] %}
+  {% assign product_micro_infusion_rejuvenating = all_products['micro-infusion-1-month-bundle-2x-e-g-f-serum'] %}
+  {% assign product_rejuvalight_mask = all_products['q-rejuvalight-pro-facewear'] %}
+  {% assign product_patches_micro_infusion = all_products['micro-infusion-targeted-patches'] %}
+
+  <div class="swiper custom_upsell variant_v">
+    <h3 class="upsell_title">Achieve your skin goals faster</h3>
+    {% assign maskProduct = false %}
+    {% assign neckProduct = false %}
+    {% assign waterFilter = false %}
+    {% assign FaceSerum = false %}
+    {% assign MicroRefill = false %}
+    {% assign MicroInfusion = false %}
+    {% comment %} upsell-carousel by Samu3le {% endcomment %}
+    {% assign Qurify = false %}
+    {% comment %} upsell-carousel by Samu3le {% endcomment %}
+    
+    {% for item in cart.items %}
+      {% if item.title contains 'Facewear' %}
+        {% assign maskProduct = true %}
+      {% endif %}
+      {% if item.title contains 'Neck' %}
+        {% assign neckProduct = true %}
+      {% endif %}
+      {% if item.title contains 'Q-urify Water Filter' %}
+        {% assign waterFilter = true %}
+      {% endif %}
+      {% if item.title contains 'Face Serum' %}
+        {% assign FaceSerum = true %}
+      {% endif %}
+      {% if item.title contains 'Micro-Infusion' %}
+          {%- if item.title contains 'Refill' -%}
+            {% assign MicroRefill = true %}
+          {%- else -%}
+            {% assign MicroInfusion = true %}
+          {%- endif -%}
+      {% endif %}
+      {% if item.title contains 'Q-urify' %}
+        {% if item.title contains 'Replacement' %}
+          {% assign Qurify = true %}
+        {% else %}
+          {% assign waterFilter = true %}
+        {% endif %}
+        
+      {% endif %}
+      
+    {% endfor %}
+
+    {% if maskProduct %}
+      <div class="swiper-wrapper mask">
+        {% comment %} upsell carousell test Start {% endcomment %}
+                      {% comment %} Neck & Décolletage LED Therapy {% endcomment %}              
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/neck_deck.jpg?v=1707754760">
+            </div>
+            <div class="upsell_content">
+              <h4>Neck & Décolletage LED Therapy</h4>
+              <p>Rejuvenate skin where the first signs of aging show</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_neck_decolletage.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_neck_decolletage.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_neck_decolletage.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_neck_decolletage.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_neck_decolletage.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+                      {% comment %} Micro-Infusion 1 Month Bundle (Rejuvenating) {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion 1 Month Bundle (Rejuvenating)</h4>
+              <p>Reveal smoother, radiant skin</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ 
+                product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ 
+              product_micro_infusion_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+                      {% comment %} All-In-One Face Serum {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>All-In-One Face Serum</h4>
+              <p>Boost your LED light therapy results</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif neckProduct %}
+      <div class="swiper-wrapper mask">
+  {% comment %} upsell carousell test Start {% endcomment %}
+          {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/LED-Mask---Mask-with-iPhone-red-blue-light-v2_73cfec5b-4c5c-4e64-a00d-8ac3f80c724f.png?v=1696572731" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Q-Rejuvalight LED Mask</h4>
+              <p>Rejuvenate skin where the first signs of aging show</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_rejuvalight_mask.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+            {% comment %} All-In-One Face Serum {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>All-In-One Face Serum</h4>
+              <p>Plump, smooth & brighten in just one step</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+         {% comment %} Micro-Infusion 1 Month Bundle (Rejuvenating) {% endcomment %}
+         <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion 1 Month Bundle (Rejuvenating)</h4>
+              <p>Reveal smoother, radiant skin</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ 
+                product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ 
+              product_micro_infusion_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+{% comment %} upsell carousell test End {% endcomment %}
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif waterFilter %}
+      <div class="swiper-wrapper mask">
+                {% comment %} upsell carousell test Start {% endcomment %}
+        {% comment %} Micro-Infusion 1 product_micro_infusion {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion 1 Month Bundle (Hydra-Soothing)</h4>
+              <p>Reveal dewy, glowing skin</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ 
+                product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ 
+              product_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+          {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/LED-Mask---Mask-with-iPhone-red-blue-light-v2_73cfec5b-4c5c-4e64-a00d-8ac3f80c724f.png?v=1696572731" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Q-Rejuvalight LED Mask</h4>
+              <p>Add the ultimate skincare investment to your routine</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_rejuvalight_mask.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif FaceSerum %}
+      <div class="swiper-wrapper face-serum">
+        {% comment %} upsell carousell test Start {% endcomment %}
+        {% comment %} Micro-Infusion 1 Month Bundle (Rejuvenating) {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion 1 Month Bundle (Rejuvenating)</h4>
+              <p>Transform dull-looking skin</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ 
+                product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ 
+              product_micro_infusion_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+          {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
+          <div class="swiper-slide upsell_main variant_v">
+            <div class="upsell_image">
+              <div class="upsell_product">
+                <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/LED-Mask---Mask-with-iPhone-red-blue-light-v2_73cfec5b-4c5c-4e64-a00d-8ac3f80c724f.png?v=1696572731" width="70">
+              </div>
+              <div class="upsell_content">
+                <h4>Q-Rejuvalight LED Mask</h4>
+                <p>Treat acne, fine lines, wrinkles & dark spots in 3 minutes a day</p>
+              </div>
+            </div>
+            <div class="upsell_price">
+              <div class="upsell_amt">
+                <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+              </div>
+              <a href="{{ routes.cart_add_url }}?id={{ product_rejuvalight_mask.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+                Add +
+                <div class="upsell_amt">
+                  <span>{{ product_rejuvalight_mask.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ product_rejuvalight_mask.price | money_without_trailing_zeros  }}</i>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
+          {% comment %} <div class="swiper-slide upsell_main variant_v">
+            <div class="upsell_image">
+              <div class="upsell_product">
+                <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" width="70">
+              </div>
+              <div class="upsell_content">
+                <h4>Micro-Infusion Targeted Patches (8 pairs)</h4>
+                <p>Smooth & firm stubborn areas</p>
+              </div>
+            </div>
+            <div class="upsell_price">
+              <div class="upsell_amt">
+                <span>{{ product_patches_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_patches_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
+              <a href="{{ routes.cart_add_url }}?id={{ product_patches_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+                Add +
+              </a>
+            </div>
+          </div> {% endcomment %}
+          
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div> 
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif MicroInfusion %}
+      <div class="swiper-wrapper micro-infusion">
+        {% comment %} micro-infusion-hydra-soothing-2-treatments {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-beta-x2.png?v=1690366121" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Hydra-Soothing Refill Treatments</h4>
+              <p>Plump & hydrate with two extra treatments</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_hydra_soothing.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_hydra_soothing.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_hydra_soothing.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_hydra_soothing.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_hydra_soothing.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} product_rejuvenating {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-egf-x2.png?v=1690366486" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Rejuvenating Refill Treatments</h4>
+              <p>Reclaim radiance with two extra treatments</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_rejuvenating.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
+        {% comment %} <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion Targeted Patches (8 pairs)</h4>
+              <p>Smooth & firm stubborn areas</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_patches_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_patches_micro_infusion.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_patches_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+            </a>
+          </div>
+        </div> {% endcomment %}
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    {% elsif MicroRefill %}
+      <div class="swiper-wrapper micro-refill">
+         {% comment %} product_q_rify {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/qurify-with-box.jpg?v=1707719035" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Q-urify Water Filter</h4>
+              <p>Clearer, hydrated skin on tap</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_q_rify.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_q_rify.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_q_rify.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_q_rify.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_q_rify.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} micro-infusion-hydra-soothing-2-treatments {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-beta-x2.png?v=1690366121" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Hydra-Soothing Refill Treatments</h4>
+              <p>Plump & hydrate with two extra treatments</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_hydra_soothing.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_hydra_soothing.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_hydra_soothing.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_hydra_soothing.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_hydra_soothing.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} product_rejuvenating {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-egf-x2.png?v=1690366486" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Rejuvenating Refill Treatments</h4>
+              <p>Reclaim radiance with two extra treatments</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_rejuvenating.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_rejuvenating.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_rejuvenating.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_rejuvenating.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} upsell carousell test End {% endcomment %}
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif Qurify %}  
+      <div class="swiper-wrapper mask">
+        {% comment %} All-In-One Face Serum {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>All-In-One Face Serum</h4>
+              <p>Boost your LED light therapy results</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} Micro-Infusion 1 product_micro_infusion {% endcomment %}
+        <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion 1 Month Bundle (Hydra-Soothing)</h4>
+              <p>Reveal dewy, glowing skin</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ 
+                product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ 
+              product_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
+        {% comment %} <div class="swiper-slide upsell_main variant_v">
+          <div class="upsell_image">
+            <div class="upsell_product">
+              <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" width="70">
+            </div>
+            <div class="upsell_content">
+              <h4>Micro-Infusion Targeted Patches (8 pairs)</h4>
+              <p>Smooth & firm stubborn areas</p>
+            </div>
+          </div>
+          <div class="upsell_price">
+            <div class="upsell_amt">
+              <span>{{ product_patches_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+              <i class="money">{{ product_patches_micro_infusion.price | money_without_trailing_zeros  }}</i>
+            </div>
+            <a href="{{ routes.cart_add_url }}?id={{ product_patches_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+              Add +
+            </a>
+          </div>
+        </div> {% endcomment %}
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {%- else -%}
+  
+      {%- if request.path contains 'bundle-deal'-%}
+        <div class="swiper-wrapper mask">          
+          {% comment %} All-In-One Face Serum {% endcomment %}
+          <div class="swiper-slide upsell_main variant_v">
+            <div class="upsell_image">
+              <div class="upsell_product">
+                <img src="https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" width="70">
+              </div>
+              <div class="upsell_content">
+                <h4>All-In-One Face Serum</h4>
+                <p>Boost your LED light therapy results</p>
+              </div>
+            </div>
+            <div class="upsell_price">
+              <div class="upsell_amt">
+                <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+              </div>
+              <a href="{{ routes.cart_add_url }}?id={{ product_face_serum.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+                Add +
+                <div class="upsell_amt">
+                  <span>{{ product_face_serum.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ product_face_serum.price | money_without_trailing_zeros  }}</i>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% comment %} Micro-Infusion 1 product_micro_infusion {% endcomment %}
+          <div class="swiper-slide upsell_main variant_v">
+            <div class="upsell_image">
+              <div class="upsell_product">
+                <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671">
+              </div>
+              <div class="upsell_content">
+                <h4>Micro-Infusion 1 Month Bundle (Hydra-Soothing)</h4>
+                <p>Reveal dewy, glowing skin</p>
+              </div>
+            </div>
+            <div class="upsell_price">
+              <div class="upsell_amt">
+                <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ 
+                  product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
+              <a href="{{ routes.cart_add_url }}?id={{ 
+                product_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+                Add +
+                <div class="upsell_amt">
+                  <span>{{ product_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ 
+                    product_micro_infusion.price | money_without_trailing_zeros  }}</i>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% comment %} upsell carousell test End {% endcomment %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+          {% endif %}
+    {% endif %}
+  </div>
+{%- endif -%}
