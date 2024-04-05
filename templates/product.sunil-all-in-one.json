@@ -43,40 +43,6 @@
         "underbutton_text_right": "Free Shipping Over $100"
       }
     },
-    "two_column_box_TyH4EK": {
-      "type": "two-column-box",
-      "blocks": {
-        "image_KK9rFk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/all_serum_difference-desk.png",
-            "image_mobile": "shopify:\/\/shop_images\/all_serum_difference-mob.png",
-            "classname": "mw-mob-100"
-          }
-        },
-        "content_3tryDW": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare experience.<\/p><p>[image_mobile]<\/p>",
-            "column_content": 0,
-            "classname": "it_info p-0 pt-0 pt-md-3"
-          }
-        }
-      },
-      "block_order": [
-        "image_KK9rFk",
-        "content_3tryDW"
-      ],
-      "custom_css": [
-        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
-        "@media (max-width: 767px) {.img-fluid {max-width: 153px; }}"
-      ],
-      "settings": {
-        "classname": "richtext_prog_section section",
-        "column_image": 5,
-        "column_content": 7
-      }
-    },
     "featuredin_MiWihW": {
       "type": "featuredin",
       "blocks": {
@@ -135,48 +101,38 @@
         "heading": "FEATURED IN"
       }
     },
-    "before_after_box_bQQL6y": {
-      "type": "before-after-box",
+    "two_column_box_TyH4EK": {
+      "type": "two-column-box",
       "blocks": {
-        "object_ikd9MX": {
-          "type": "object",
+        "image_KK9rFk": {
+          "type": "image",
           "settings": {
-            "heading": "<p><strong>Bethany <\/strong>(Vitamin B3 Derivative)<\/p>",
-            "text": "<p>All-star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.<\/p>",
-            "feedback": "<p><strong>…100% of subjects <\/strong>reported significant improvement in fine lines, radiance, acne breakouts and smoothness.<\/p>",
-            "popup_content": "<p>A 12-week clinical study demonstrated a 21% improvement in fine lines along with a 14% skin tone clarity and 15% radiance improvement. Improvements were reported as early as 2 weeks. Subjects reported no stinging, itching, dryness, or tingling after 10 weeks.<\/p><p><strong>In another Clinical Trial…<\/strong><\/p><p>Subjects experienced significantly lowered oil production after 2 and 4 weeks of application with reduced clogged pores and acne breakouts.<\/p><p>References: J Drugs Dermatol 2016 Jul 1;15(7):863-8 combined with 0.5% retinol. Int J Dermatol. 1995 Jun;34(6):434-7. doi: 10.1111\/j.1365-4362.1995.tb04449.x.<\/p>"
+            "image": "shopify:\/\/shop_images\/all_serum_difference-desk.png",
+            "image_mobile": "shopify:\/\/shop_images\/all_serum_difference-mob.png",
+            "classname": "mw-mob-100"
           }
         },
-        "object_LCb3tm": {
-          "type": "object",
+        "content_3tryDW": {
+          "type": "content",
           "settings": {
-            "heading": "<p><strong>Lactic & Mandelic acid <\/strong>(Gentle Exfoliators)<\/p>",
-            "text": "<p>Gentle chemical exfoliants gobble up the top layer of dead cells which can reveal clearer, smoother skin.<\/p>",
-            "feedback": "<p><strong>…100% of subjects <\/strong>reported firmer, smoother skin resulting in fewer fine lines and wrinkles, along with reduction of acne.<\/p>",
-            "popup_content": "<p>Participants using lactic acid experienced fimer, thicker skin and saw significant improvement in reduction of lines and wrinkles after application with boosted skin radiance. Along with reduction and prevention of acne lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and test participants applied lactic acid twice a day for 3 months. Changes in skin smoothness and texture, the depth and number of lines and wrinkles, and epidermal and dermal firmness and thickness were determined.<\/p><p>Reference: Rathi SK. Acne vulgaris treatment : The Current Scenario. Indian J Dermatol 2011;56:7-13<\/p>"
-          }
-        },
-        "object_e4attk": {
-          "type": "object",
-          "settings": {
-            "heading": "<p><strong>Retinol <\/strong>(Vitamin A)<\/p>",
-            "text": "<p>Encourages new cells to the surface to help reduce the visibility of wrinkles and age spots, and smooth skin texture.<\/p>",
-            "feedback": "<p><strong>…Reduction of facial wrinkles by up to 63.74%<\/strong>was experienced by<strong>100% of subjects,<\/strong>from induction of collagen production.<\/p>",
-            "popup_content": "<p>Topical retinol improves fine wrinkles associated with natural aging. Significant induction of increased collagen production, retinol-treated aged skin offers greater skin matrix synthesis and improved appearance. Facial wrinkles were reduced by 63.74% at the cheeks and 38.74% in the eye areas after 12 weeks of treatment.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included subjects between the ages of 35 and 55. A retinol formulation was applied for 12 weeks on the participants. The efficacy and results in improving skin appearance was assessed using digital image-based wrinkle analysis after 12 weeks of retinol application.<\/p><p>Reference: Rong Kong, PhD,1 Yilei Cui, PhD,2 Gary J. Fisher, PhD,2 Xiaojuan Wang, BS,3 Yinbei Chen, MS,3. Journal of Cosmetic Dermatology (2015).<\/p>"
+            "text": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare experience.<\/p><p>[image_mobile]<\/p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
           }
         }
       },
       "block_order": [
-        "object_ikd9MX",
-        "object_LCb3tm",
-        "object_e4attk"
+        "image_KK9rFk",
+        "content_3tryDW"
+      ],
+      "custom_css": [
+        ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
+        "@media (max-width: 767px) {.img-fluid {max-width: 153px; }}"
       ],
       "settings": {
-        "heading": "Uneven Skin Texture",
-        "text": "<p>Helps clarify and even skin tone, minimise enlarged pores, strengthen skin’s barrier, and reduce breakouts.<\/p>",
-        "image": "shopify:\/\/shop_images\/bethany_skincare.webp",
-        "image_country": "shopify:\/\/shop_images\/canada_f.svg",
-        "client": "Bethany N."
+        "classname": "richtext_prog_section section",
+        "column_image": 5,
+        "column_content": 7
       }
     },
     "before_after_box_J7Ee7E": {
@@ -247,10 +203,54 @@
       ],
       "settings": {
         "heading": "Fine Lines and Wrinkles",
-        "text": "<p>Add deep hydration to reduce the appearance of fine lines and boost the moisture of your skin!<\/p>",
+        "text": "<p>Reduces the appearance of fine lines and boost the moisture of your skin!<\/p>",
         "image": "shopify:\/\/shop_images\/shannon_skincare.webp",
         "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
         "client": "Shannon"
+      }
+    },
+    "before_after_box_bQQL6y": {
+      "type": "before-after-box",
+      "blocks": {
+        "object_ikd9MX": {
+          "type": "object",
+          "settings": {
+            "heading": "<p><strong>Bethany <\/strong>(Vitamin B3 Derivative)<\/p>",
+            "text": "<p>All-star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.<\/p>",
+            "feedback": "<p><strong>…100% of subjects <\/strong>reported significant improvement in fine lines, radiance, acne breakouts and smoothness.<\/p>",
+            "popup_content": "<p>A 12-week clinical study demonstrated a 21% improvement in fine lines along with a 14% skin tone clarity and 15% radiance improvement. Improvements were reported as early as 2 weeks. Subjects reported no stinging, itching, dryness, or tingling after 10 weeks.<\/p><p><strong>In another Clinical Trial…<\/strong><\/p><p>Subjects experienced significantly lowered oil production after 2 and 4 weeks of application with reduced clogged pores and acne breakouts.<\/p><p>References: J Drugs Dermatol 2016 Jul 1;15(7):863-8 combined with 0.5% retinol. Int J Dermatol. 1995 Jun;34(6):434-7. doi: 10.1111\/j.1365-4362.1995.tb04449.x.<\/p>"
+          }
+        },
+        "object_LCb3tm": {
+          "type": "object",
+          "settings": {
+            "heading": "<p><strong>Lactic & Mandelic acid <\/strong>(Gentle Exfoliators)<\/p>",
+            "text": "<p>Gentle chemical exfoliants gobble up the top layer of dead cells which can reveal clearer, smoother skin.<\/p>",
+            "feedback": "<p><strong>…100% of subjects <\/strong>reported firmer, smoother skin resulting in fewer fine lines and wrinkles, along with reduction of acne.<\/p>",
+            "popup_content": "<p>Participants using lactic acid experienced fimer, thicker skin and saw significant improvement in reduction of lines and wrinkles after application with boosted skin radiance. Along with reduction and prevention of acne lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and test participants applied lactic acid twice a day for 3 months. Changes in skin smoothness and texture, the depth and number of lines and wrinkles, and epidermal and dermal firmness and thickness were determined.<\/p><p>Reference: Rathi SK. Acne vulgaris treatment : The Current Scenario. Indian J Dermatol 2011;56:7-13<\/p>"
+          }
+        },
+        "object_e4attk": {
+          "type": "object",
+          "settings": {
+            "heading": "<p><strong>Retinol <\/strong>(Vitamin A)<\/p>",
+            "text": "<p>Encourages new cells to the surface to help reduce the visibility of wrinkles and age spots, and smooth skin texture.<\/p>",
+            "feedback": "<p><strong>…Reduction of facial wrinkles by up to 63.74%<\/strong>was experienced by<strong>100% of subjects,<\/strong>from induction of collagen production.<\/p>",
+            "popup_content": "<p>Topical retinol improves fine wrinkles associated with natural aging. Significant induction of increased collagen production, retinol-treated aged skin offers greater skin matrix synthesis and improved appearance. Facial wrinkles were reduced by 63.74% at the cheeks and 38.74% in the eye areas after 12 weeks of treatment.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included subjects between the ages of 35 and 55. A retinol formulation was applied for 12 weeks on the participants. The efficacy and results in improving skin appearance was assessed using digital image-based wrinkle analysis after 12 weeks of retinol application.<\/p><p>Reference: Rong Kong, PhD,1 Yilei Cui, PhD,2 Gary J. Fisher, PhD,2 Xiaojuan Wang, BS,3 Yinbei Chen, MS,3. Journal of Cosmetic Dermatology (2015).<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "object_ikd9MX",
+        "object_LCb3tm",
+        "object_e4attk"
+      ],
+      "settings": {
+        "heading": "Uneven Skin Texture",
+        "text": "<p>Helps clarify and even skin tone, minimise enlarged pores, strengthen skin’s barrier, and reduce breakouts.<\/p>",
+        "image": "shopify:\/\/shop_images\/bethany_skincare.webp",
+        "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+        "client": "Bethany N."
       }
     },
     "before_after_box_9qjQBW": {
@@ -327,27 +327,15 @@
     "results_8RA6RD": {
       "type": "results",
       "blocks": {
-        "result_6iEPHP": {
+        "result_aEQJMi": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_ebony.webp",
-            "heading": "I love this serum",
-            "text": "<p>“I rarely have the guts to try new skincare as I just hate wasting my money on products I don't like and haven't gotten to sample before. But I got recommended this from a girlfriend of mine and was so happy I took on her recommendation because i LOVE this serum. It's the perfect everyday serum that you can actually notice a difference in your skin with!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
-            "client": "Ebony",
-            "code": ""
-          }
-        },
-        "result_tQ6xTp": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_vanessa.webp",
-            "heading": "My cystic acne is gone.",
-            "text": "<p>\"So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/results_chery.webp",
+            "heading": "I SEE A DIFFERENCE!!",
+            "text": "<p>\"I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 2 weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.\"<\/p>",
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
-            "client": "Vanessa B.",
+            "client": "Cheryl T.",
             "code": ""
           }
         },
@@ -360,6 +348,18 @@
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Dona S.",
+            "code": ""
+          }
+        },
+        "result_AdLwAt": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_jessica.webp",
+            "heading": "Best experience",
+            "text": "<p>\"Best experience. I got an excellent costumer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100\/100 , My skin had a small breakout, enlarged pores and was tired, with just one micro-infusion treatment it changed radically in 3 days, I will buy it again”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jessica R.",
             "code": ""
           }
         },
@@ -387,6 +387,18 @@
             "code": ""
           }
         },
+        "result_tQ6xTp": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_vanessa.webp",
+            "heading": "My cystic acne is gone.",
+            "text": "<p>\"So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.\"<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Vanessa B.",
+            "code": ""
+          }
+        },
         "result_rzJmMH": {
           "type": "result",
           "settings": {
@@ -399,40 +411,28 @@
             "code": ""
           }
         },
-        "result_aEQJMi": {
+        "result_6iEPHP": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_chery.webp",
-            "heading": "I SEE A DIFFERENCE!!",
-            "text": "<p>\"I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 2 weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.\"<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Cheryl T.",
-            "code": ""
-          }
-        },
-        "result_AdLwAt": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_jessica.webp",
-            "heading": "Best experience",
-            "text": "<p>\"Best experience. I got an excellent costumer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100\/100 , My skin had a small breakout, enlarged pores and was tired, with just one micro-infusion treatment it changed radically in 3 days, I will buy it again”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Jessica R.",
+            "image": "shopify:\/\/shop_images\/results_ebony.webp",
+            "heading": "I love this serum",
+            "text": "<p>“I rarely have the guts to try new skincare as I just hate wasting my money on products I don't like and haven't gotten to sample before. But I got recommended this from a girlfriend of mine and was so happy I took on her recommendation because i LOVE this serum. It's the perfect everyday serum that you can actually notice a difference in your skin with!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Ebony",
             "code": ""
           }
         }
       },
       "block_order": [
-        "result_6iEPHP",
-        "result_tQ6xTp",
+        "result_aEQJMi",
         "result_UnxUQa",
+        "result_AdLwAt",
         "result_KdLc7q",
         "result_ehhnNV",
+        "result_tQ6xTp",
         "result_rzJmMH",
-        "result_aEQJMi",
-        "result_AdLwAt"
+        "result_6iEPHP"
       ],
       "settings": {
         "classname": "mi_landing_result",
@@ -586,7 +586,7 @@
           "type": "object",
           "settings": {
             "heading": "How and when do I use the Face Serum?",
-            "text": "<p>Apply a 1-2 pumps onto cleansed face (and neck, if applicable) with your fingertips, and rub in gently. For the best results use daily, in the evening or morning. To maximize the effectiveness apply after Q-Rejuvalight Pro light therapy treatment.<\/p>",
+            "text": "<p>Apply a 1-2 pumps onto cleansed face (and neck, if applicable) with your fingertips, and rub in gently. Start with applying every 2nd night. for 2 weeks until your skin builds a tolerance. Then use daily, in the evening or morning. To maximize the effectiveness apply after Q-Rejuvalight Pro light therapy treatment.<\/p>",
             "code": ""
           }
         },
@@ -692,10 +692,10 @@
   },
   "order": [
     "main",
-    "two_column_box_TyH4EK",
     "featuredin_MiWihW",
-    "before_after_box_bQQL6y",
+    "two_column_box_TyH4EK",
     "before_after_box_J7Ee7E",
+    "before_after_box_bQQL6y",
     "before_after_box_9qjQBW",
     "details_MgamBA",
     "results_8RA6RD",
