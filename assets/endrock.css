@@ -287,11 +287,13 @@ body[data-before-after='c']{
       display: flex;
       flex-direction: column;
       gap: 24px;
-      padding: 10px;
+      padding: 0 10px 10px 10px;
       @media screen and (max-width: 768px){
         gap: 8px;   
       }
-
+      @media screen and (max-width: 640px){
+        padding: 0px 0px 10px 0px;
+      }
       .panel__container{
         width: 100%;
         max-width: 550px;
@@ -345,7 +347,6 @@ body[data-before-after='c']{
               }
               .swiper-slide .popup-youtube{
                 height: 472px;
-                padding: 3px;
                 @media screen and (max-width: 768px){
                   height: 350px;
                 }
@@ -353,15 +354,15 @@ body[data-before-after='c']{
                   height: 265px;
                 }
                 .img-fluid{
-                  border-radius: 16px;
-                  padding: 2px;
+                  border-radius: 0 0 16px 16px;
+                  padding: 0 2px 2px 2px;
                 }
               }
 
               .banner-popup-link{
                 .img-fluid{
-                  border-radius: 16px;
-                  padding: 5px;
+                  border-radius: 0 0 16px 16px;
+                  padding: 0 2px 2px 2px;
                 
                 }
               }
@@ -400,8 +401,8 @@ body[data-before-after='c']{
               .img-fluid{
                 width: 100%;
                 height: 100%;
-                border-radius: 16px;
-                padding: 3px;
+                border-radius: 0 0 16px 16px;
+                padding: 0 3px 3px 3px;
               }
             }
             .swiper-page-product{
@@ -417,8 +418,8 @@ body[data-before-after='c']{
               }
               .swiper-slide .banner-popup-link{
                 .img-fluid{
-                  border-radius: 16px;
-                  padding: 5px;
+                  border-radius: 0 0 16px 16px;
+                  padding: 0 5px 5px 5px;
                 }
               }
               .swiper-slide .banner-popup-link::before{
@@ -490,6 +491,9 @@ body[data-before-after='c']{
               width: 100%;
               max-width: 600px;
               height: auto;
+              @media screen and (max-width: 640px){
+                padding: 0;
+              }
               .derma-video{
                 width: 100%;
                 height: auto;
@@ -530,17 +534,6 @@ body[data-before-after='c']{
               font-weight: 400;
               line-height: 30px;
               color: black;
-              &:visited{
-                color: black;
-              }
-              &:hover{
-                background-color: black;
-                color: white;
-              }
-              &.active{
-                background-color: black;
-                color: white;
-              }
               @media screen and (max-width: 1024px){
                 width: 150px;
               }
@@ -551,10 +544,27 @@ body[data-before-after='c']{
                 line-height: 16px;
                 padding: 0 10px;
               }
+              @media screen and (max-width: 640px) {
+                padding: 0 15px;
+              }
+              @media screen and (max-width: 375px) {
+                padding: 0 10px;
+              }
               @media screen and (max-width: 320px){
                 width: 100%;
                 height: 42px;
                 font-size: 10px;
+              }
+              &:visited{
+                color: black;
+              }
+              &:hover{
+                background-color: black;
+                color: white;
+              }
+              &.active{
+                background-color: black;
+                color: white;
               }
             }
           }

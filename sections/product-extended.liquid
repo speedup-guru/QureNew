@@ -344,7 +344,7 @@
                 
             {% comment %} end component original {% endcomment %}
             
-            {% render 'endrock_before_after', data: section.blocks %}
+            {% render 'endrock_before_after', data: section.blocks, dataSection: section.settings %}
             </div>
         </div>
     </div>
@@ -464,6 +464,29 @@
                 "id": "underbutton_text_right",
                 "label": "t:common.text.label",
                 "default": "Free Shipping Over $100"
+            },
+            {
+                "type": "header",
+                "content": "Test section first image",
+                "info": "the section only affect the test before and after first image"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_1",
+                "label": "label text real result button 1",
+                "default": "Product"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_2",
+                "label": "label text real result button 2",
+                "default": "Real Results"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_3",
+                "label": "label text real result button 3",
+                "default": "Dermatologist"
             }
         ],
         "blocks": [
