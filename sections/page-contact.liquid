@@ -82,6 +82,20 @@
                     <label for="c_email" class="qure_input_label"></label>
                 </div>
             </div>
+            <div class="qure_input mb-4">
+                <input 
+                    type="phone"
+                    name="contact[phone]"
+                    id="ContactFormEmail"
+                    value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                    spellcheck="false"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    class="qure_input_field"
+                    placeholder="Phone Number"
+                > 
+                <label for="c_phone" class="qure_input_label"></label>
+            </div>
             <div class="qure_input">
                 <label for="message" class="form-label qure_input_label"></label>
                 <textarea 
