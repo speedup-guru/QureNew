@@ -87,7 +87,7 @@
             "type": "link",
             "settings": {
               "image": "shopify:\/\/shop_images\/app_store.svg",
-              "link_url": "https:\/\/apps.apple.com\/nl\/app\/qure-skincare-pro\/id1670113821"
+              "link_url": "https:\/\/apps.apple.com\/nl\/app\/qure-skincare\/id1670113821"
             }
           },
           "link_wfYX8m": {
@@ -156,6 +156,12 @@
       "11945366711752539959": {
         "type": "shopify:\/\/apps\/zendesk\/blocks\/zendesk_web_widget\/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "4215564508307704909": {
+        "type": "shopify:\/\/apps\/sitemap-noindex-pro\/blocks\/app-embed\/4d815e2c-5af0-46ba-8301-d0f9cf660031",
+        "disabled": false,
         "settings": {
         }
       }

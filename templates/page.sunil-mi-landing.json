@@ -249,7 +249,7 @@
           "settings": {
             "text": "<h2>Unlock Dermatologist's<br\/>best kept secret<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
             "column_content": 0,
-            "classname": "secret_grid_wrap ps-0 ps-md-5 pt-5"
+            "classname": "secret_grid_wrap ps-0 ps-md-5"
           }
         },
         "code_ENeDfJ": {
@@ -265,6 +265,7 @@
         "code_ENeDfJ"
       ],
       "custom_css": [
+        ".row {align-items: center !important;}",
         "@media (max-width: 768px) {h2 {display: none; } .section_header {max-width: unset !important; } .secret_grid_wrap {top: -50px !important; }}"
       ],
       "settings": {
@@ -279,9 +280,9 @@
         "content_Hham8b": {
           "type": "content",
           "settings": {
-            "text": "<h2>“Hollywood” skin is finally accessible without the a-list budget<\/h2><p>[image_mobile]<\/p><p>Have you ever wondered how your skin would look and feel if you had access to the most advanced treatments?<\/p><p><\/p><p>The ones that only the “rich and famous” can afford, performed by the best dermatologists, only available at exclusive clinics.<\/p>",
+            "text": "<h2>“Hollywood” skin is finally accessible without the a-list budget[image_mobile]<\/h2><p>Have you ever wondered how your skin would look and feel if you had access to the most advanced treatments?<\/p><p><\/p><p>The ones that only the “rich and famous” can afford, performed by the best dermatologists, only available at exclusive clinics.<\/p>",
             "column_content": 0,
-            "classname": "it_info p-0 pt-0 pt-md-3"
+            "classname": "it_info p-0 pe-md-5"
           }
         },
         "image_VkznhH": {
@@ -297,7 +298,7 @@
         "image_VkznhH"
       ],
       "settings": {
-        "classname": "technology_light pt-30",
+        "classname": "imageText section",
         "column_image": 6,
         "column_content": 6
       }
@@ -315,9 +316,9 @@
         "content_XdKeWR": {
           "type": "content",
           "settings": {
-            "text": "<h2>Go to skin booster for confident<br\/>Make up free days<\/h2><p>[image_mobile]<\/p><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/p><p><\/p><p>The best part? You can enjoy it for roughly a fraction of the cost in the comfort of your home, with little to <strong>no downtime!<\/strong><\/p>",
+            "text": "<h2>Go to skin booster for confident<br\/>Make up free days[image_mobile] <\/h2><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/p><p><\/p><p>The best part? You can enjoy it for roughly a fraction of the cost in the comfort of your home, with little to <strong>no downtime!<\/strong><\/p>",
             "column_content": 0,
-            "classname": "it_info p-0 pt-0 pt-md-3"
+            "classname": "it_info p-0 ps-md-4"
           }
         }
       },
@@ -326,7 +327,7 @@
         "content_XdKeWR"
       ],
       "settings": {
-        "classname": "technology_light pt-30",
+        "classname": "imageText section",
         "column_image": 6,
         "column_content": 6
       }

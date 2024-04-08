@@ -5610,9 +5610,9 @@ p.title_mob {
         grid-template-columns: 57px 1fr;
     }
 
-    .mi_landing .imageText.buzz_about .secret_grid_wrap {
+    /* .mi_landing .imageText.buzz_about .secret_grid_wrap {
         margin: 0 -12px;
-    }
+    } */
 
     .imageText.buzz_about .secret_grid_wrap .secret_grid .secret_grid_info {
         margin-left: 10px;
@@ -5653,8 +5653,8 @@ p.title_mob {
 
     .mi_landing .imageText.buzz_about {
         padding: 0;
-        background-color: #fffaf1;
-        padding-top: 40px;
+        background-color: #fff;
+        /* padding-top: 40px; */
     }
 }
 
@@ -6082,7 +6082,7 @@ p.title_mob {
 
 .step_block .step_header h3 span {
     font-family: 'Poppins';
-    font-size: 13px;
+    font-size: 12px;
     margin-right: 10px;
     position: relative;
     top: -4px;
@@ -6472,6 +6472,7 @@ p.title_mob {
     .step_block .step_header h3 span {
         top: unset;
         display: block;
+        font-size: 10px;
     }
 }
 
