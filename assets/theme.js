@@ -1,6 +1,7 @@
 /* 
 * Common JS Start
 */
+
 var TwaSettingsSwiper = {
     init: function () {
         this.TwaSettingsCarousel();
@@ -773,7 +774,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 });
-
 setInterval(function () {
     var bnrImage = $('.banner-popup-link img');
     $.each(bnrImage, function (index, bnrImageHeight) {
