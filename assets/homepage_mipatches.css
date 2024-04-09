@@ -1,0 +1,70 @@
+.top_heading span.new_btn {
+    background: #008763;
+    padding: 0px 13px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.top_heading {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.homepage .main_banner .main_b_wrapper .m_b_content {
+    max-width: 544px;
+}
+
+.homepage .main_banner .main_b_wrapper .m_b_content .title-xl {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 57.4px;
+    letter-spacing: 0.45px;
+    max-width: 470px;
+    margin: 30px 0;
+}
+
+.btn_black {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.167px;
+}
+
+@media(max-width:767px) {
+    .homepage .main_banner .main_b_wrapper .m_b_content {
+        color: #fff;
+    }
+
+    .top_heading,
+    .top_heading span.new_btn {
+        font-size: 14px;
+    }
+
+    .homepage .main_banner .main_b_wrapper .m_b_content .title-xl {
+        font-size: 34px;
+        line-height: 40px;
+        margin: 9px 0;
+    }
+
+    .btn_black {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .main_banner .main_b_wrapper {
+        align-items: flex-end;
+        bottom: 35px;
+    }
+
+    .main_banner .main_b_wrapper .section_header {
+        margin-left: 0;
+    }
+}

@@ -2,25 +2,40 @@
 <div class="contact_wrapper section">
     <div class="container">
         <div class="contact_help">
-            <div class="section_header text-md-center">
-                <h2 class="title-xl">Contact Us</h2>
+            <div class="section_header text-md-center ms-0 ms-md-auto">
+                <h2 class="title-xl mb-3">Contact Us</h2>
                 <h5>We are here to help!</h5>
             </div>
             <div class="contact_info">
                 <div class="cnt_item">
                     <div class="cnt_img">
-                        <img src="{{ 'email.svg' | asset_url }}" alt="">
+                        <img src="{{ 'live-chat.svg' | asset_url }}" alt="">
                     </div>
-                    <h6>EMAIL</h6>
-                    <p>Send a Message to Customer Service below</p>
+                    <div class="cnt_desc">
+                        <h6>LIVE CHAT</h6>
+                        <p>Experts are Available: Mon-Fri</p>
+                        <p>9AM - 5PM EST</p>
+                    </div>
                 </div>
                 <div class="cnt_item">
                     <div class="cnt_img">
-                        <img src="{{ 'live-chat.svg' | asset_url }}" alt="">
+                        <img src="{{ 'call-us.svg' | asset_url }}" alt="">
                     </div>
-                    <h6>LIVE CHAT</h6>
-                    <p>Experts are Available: Mon-Sat</p>
-                    <p>9AM-5PM EST</p><p>9AM-6PM AEST</p>
+                    <div class="cnt_desc">
+                        <h6>CALL US</h6>
+                        <a href="">+1 (240) 702-2228</a>
+                        <p>Availability: Sat - Sun</p>
+                        <p>9AM - 5PM EST</p>
+                    </div>
+                </div>
+                <div class="cnt_item">
+                    <div class="cnt_img">
+                        <img src="{{ 'email.svg' | asset_url }}" alt="">
+                    </div>
+                    <div class="cnt_desc">
+                        <h6>EMAIL</h6>
+                        <p>Send a Message to Customer Service below</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,6 +81,20 @@
                     >
                     <label for="c_email" class="qure_input_label"></label>
                 </div>
+            </div>
+            <div class="qure_input mb-4">
+                <input 
+                    type="phone"
+                    name="contact[phone]"
+                    id="ContactFormEmail"
+                    value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                    spellcheck="false"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    class="qure_input_field"
+                    placeholder="Phone Number"
+                > 
+                <label for="c_phone" class="qure_input_label"></label>
             </div>
             <div class="qure_input">
                 <label for="message" class="form-label qure_input_label"></label>
