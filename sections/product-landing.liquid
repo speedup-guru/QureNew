@@ -33,7 +33,7 @@
 <div class="refill_bl pt-0 tabSlider before-after-result-test" id="page">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1 befor-after-main">
+            <div class="col-md-6 order-2 order-md-1 before-after-main">
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="col-md-6  order-1 order-md-2">
-                <div style='display: none' class="refill_slider mw-mob-100">
+                <div class="refill_slider mw-mob-100 before-after-original-component">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -393,7 +393,7 @@
                     {% endif %}
                 </div>
               {% comment %} end component original {% endcomment %}
-              {% render 'endrock_before_after', data: section.blocks %}
+              {% render 'endrock_before_after', data: section.blocks, dataSection: section.settings %}
             </div>
         </div>
     </div>
@@ -469,6 +469,29 @@
                 "id": "reserve",
                 "label": "t:common.reserve.label",
                 "default": false
+            },
+            {
+                "type": "header",
+                "content": "Test section first image",
+                "info": "the section only affect the test before and after first image"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_1",
+                "label": "label text real result button 1",
+                "default": "Product"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_2",
+                "label": "label text real result button 2",
+                "default": "Real Results"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_3",
+                "label": "label text real result button 3",
+                "default": "Dermatologist"
             }
         ],
         "blocks": [
@@ -627,7 +650,7 @@
             },
             {
               "type": "product_in_page",
-              "name": "Product in page",
+              "name": "Product in page test",
               "limit": 1,
               "settings": [
                 {
@@ -724,7 +747,7 @@
             },
             {
                 "type": "before_and_after",
-                "name": "before and after",
+                "name": "before and after test",
                 "limit": 1,
                 "settings": [
                     {
@@ -776,12 +799,22 @@
                         "type": "text",
                         "id": "image_new_section_text_5",
                         "label": "Alt text Imagen 5"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_6",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_6",
+                        "label": "Alt text Imagen 6"
                     }
                 ]                  
             },
             {
                 "type": "video_before_and_after",
-                "name": "video before and after",
+                "name": "video derm test",
                 "limit": 1,
                 "settings": [
                     {
