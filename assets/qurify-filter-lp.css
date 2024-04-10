@@ -725,7 +725,7 @@
 /* -- money back end -- */
 /* -- effective and safer than other filters start -- */
 .effective_table {
-    background-image: url(../assets/e_table_bg.webp);
+    /* background-image: url(../assets/e_table_bg.webp); */
     background-repeat: no-repeat;
     background-size: cover;
 }

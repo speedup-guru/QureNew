@@ -380,6 +380,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
           }
@@ -389,6 +390,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board Certified Dermatologist<\/h6>"
           }
@@ -398,6 +400,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maxfield_99f72bee-8b87-4244-a5b9-43323823b22a.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable.\"<\/p><h6><strong>Dr Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
           }
@@ -407,6 +410,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_greeney_76bc7346-026a-4350-96df-6fd73c5be00e.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney,<\/strong> Board Certified Dermatologist<\/h6>"
           }
@@ -430,6 +434,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
           }
@@ -439,6 +444,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_natasha.webp",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ebb5f0ed35b844f7b9f2486db670748b.mp4?_ga=2.232823709.263527484.1696998277-1098661776.1696998277",
+            "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment.\"<\/p><h6><strong>Dr Natasha Henry,<\/strong> Medical Doctor<\/h6>"
           }
@@ -460,7 +466,8 @@
         "likes": "7.1K",
         "views": "351K views",
         "image": "shopify:\/\/shop_images\/trusted_2.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg"
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg",
+        "video_label": "Click To Watch Review"
       }
     },
     "bestseller_zBUA8r": {
@@ -581,7 +588,7 @@
             "image": "shopify:\/\/shop_images\/beauty_ledmask.webp",
             "heading": "Q-Rejuvalight \\nPro LED Mask",
             "text": "<p><strong>one-time cost investment<\/strong><\/p>",
-            "price": "$329",
+            "price": "$349",
             "style": "correctCircle",
             "list": "<ul><li>saves you time<\/li><li>comfort and convenience of your own home<\/li><li><strong>unlimited treatments<\/strong><\/li><li><strong>only 3 minutes daily<\/strong><\/li><li>no ongoing payments<\/li><\/ul>"
           }
