@@ -84,6 +84,49 @@
           "settings": {
             "code": "{% render 'serums-months-form' with section_id: section.id %}"
           }
+        },
+        "product_in_page_x33rFD": {
+          "type": "product_in_page",
+          "settings": {
+            "image_product_1": "shopify:\/\/shop_images\/mi_pdp-product-1.webp",
+            "image_product_text_1": "product one",
+            "video_wistia_id_1": "",
+            "image_product_2": "shopify:\/\/shop_images\/mi_pdp-product-2.webp",
+            "image_product_text_2": "product two",
+            "video_wistia_id_2": "jg8c1a3bee",
+            "image_product_3": "shopify:\/\/shop_images\/mi_pdp-product-3.webp",
+            "image_product_text_3": "product three",
+            "video_wistia_id_3": "",
+            "image_product_4": "shopify:\/\/shop_images\/mi_pdp-product-4.webp",
+            "image_product_text_4": "producto fourth",
+            "video_wistia_id_4": "",
+            "image_product_5": "shopify:\/\/shop_images\/mi_pdp-product-5.webp",
+            "image_product_text_5": "product five",
+            "video_wistia_id_5": "",
+            "image_product_6": "shopify:\/\/shop_images\/mi_pdp-product-7.webp",
+            "image_product_text_6": "product six",
+            "video_wistia_id_6": ""
+          }
+        },
+        "before_and_after_i7mAeJ": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/micro_infusion_3_x2_14f2d314-7e94-488b-bc7e-7e108880231c.png",
+            "image_new_section_text_1": "micro infusion one",
+            "image_new_section_2": "shopify:\/\/shop_images\/micro_infusion_1_x2_23725eed-6cce-4bb9-8ff4-e5910b51b52c.png",
+            "image_new_section_text_2": "micro infusion two",
+            "image_new_section_3": "shopify:\/\/shop_images\/micro_infusion_2_x2_c64ce554-555a-4604-9cf3-2f0a5fcf0104.png",
+            "image_new_section_text_3": "micro infusion three",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": "",
+            "image_new_section_text_6": ""
+          }
+        },
+        "video_before_and_after_ww3Xa3": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify:\/\/files\/videos\/Micro infusion edit.mov"
+          }
         }
       },
       "block_order": [
@@ -98,7 +141,10 @@
         "media_dmxg7T",
         "media_kaCFw8",
         "media_bEn9Dc",
-        "liquid_6AqWXk"
+        "liquid_6AqWXk",
+        "product_in_page_x33rFD",
+        "before_and_after_i7mAeJ",
+        "video_before_and_after_ww3Xa3"
       ],
       "settings": {
         "heading": "Transform dull looking skin with Micro-Infusion System",
@@ -109,7 +155,10 @@
         "product_button_label": "Product",
         "before_after_images_limit": 3,
         "before_after_button_label": "Before & After",
-        "reserve": false
+        "reserve": false,
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist"
       }
     },
     "featuredin_kYtKUr": {

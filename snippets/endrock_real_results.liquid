@@ -1,0 +1,33 @@
+<div class="info-result__wrapper">
+  <div class="swiper swiper-info-result">
+    <div class="swiper-wrapper">
+      {% for i in (1..6) %}
+        {% assign image_id = 'image_new_section_' | append: i %}
+        {% assign text_id = 'image_new_section_text_' | append: i %}
+        {% if block.settings[image_id] != null %}
+          <div class="swiper-slide">
+            {% assign mediaImage = block.settings[image_id] %}
+            <a class="banner-popup-link" id="popup-link">
+              <picture id="image-id">
+                <source media="(min-width:1920px)" srcset="{{ mediaImage | img_url: 'master' }}">
+                <source media="(min-width:1600px)" srcset="{{ mediaImage | img_url: '1600x' }}">
+                <source media="(min-width:1100px)" srcset="{{ mediaImage | img_url: '1100x' }}">
+                <source media="(min-width:720px)" srcset="{{ mediaImage | img_url: '720x' }}">
+                <source media="(min-width:540px)" srcset="{{ mediaImage | img_url: '540x' }}">
+                <source media="(min-width:425px)" srcset="{{ mediaImage | img_url: '425x' }}">
+                <img
+                  width="100"
+                  height="auto"
+                  class="img-fluid tab_img"
+                  alt="{{ block.settings[text_id] }}"
+                  src="{{ mediaImage | img_url: '425x' }}"
+                >
+              </picture>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination-real-result"></div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+{% liquid
+  assign limitNew = 5
+  assign offsetNew = 3
+
+  if product.title == 'Q-urify Water Filter'
+    assign limitNew = 5
+    assign offsetNew = 3
+  else
+    assign limitNew = section.settings.product_images_limit
+    assign offsetNew = 1
+  endif
+%}
+
+<div class="swiper swiper-products">
+  <div class="swiper-wrapper">
+    {% for media in product.media limit: limitNew , offset: offsetNew %}
+      {% if media.media_type == 'video' %}
+        {% if media.sources[1].url != blank %}
+          {% assign video_source_url = media.sources[1].url %}
+        {% else %}
+          {% assign video_source_url = media.sources[0].url %}
+        {% endif %}
+
+        <div class="swiper-slide video_popup">
+          <a
+            class="popup-youtube d-block"
+            href="{{ video_source_url }}"
+          >
+            <picture id="image-id">
+              <source media="(min-width:1920px)" srcset="{{ media | img_url: 'master' }}">
+              <source media="(min-width:1600px)" srcset="{{ media | img_url: '1600x' }}">
+              <source media="(min-width:1100px)" srcset="{{ media | img_url: '1100x' }}">
+              <source media="(min-width:720px)" srcset="{{ media | img_url: '720x' }}">
+              <source media="(min-width:540px)" srcset="{{ media | img_url: '540x' }}">
+              <img
+                class="img-fluid"
+                src="{{ media | img_url: '540x' }}"
+                width="100"
+                height="auto"
+                alt="{{ block.settings.image.alt | escape }}"
+              >
+            </picture>
+          </a>
+        </div>
+      {% else %}
+        <div class="swiper-slide">
+          <a class="banner-popup-link" id="popup-link">
+            <picture id="image-id">
+              <source media="(min-width:1920px)" srcset="{{ media | img_url: 'master' }}">
+              <source media="(min-width:1600px)" srcset="{{ media | img_url: '1600x' }}">
+              <source media="(min-width:1100px)" srcset="{{ media | img_url: '1100x' }}">
+              <source media="(min-width:720px)" srcset="{{ media | img_url: '720x' }}">
+              <source media="(min-width:540px)" srcset="{{ media | img_url: '540x' }}">
+              <img
+                class="img-fluid tab_img"
+                src="{{ media | img_url: '540x' }}"
+                width="100"
+                height="auto"
+                alt="{{ block.settings.image.alt | escape }}"
+              >
+            </picture>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+    <div class="swiper-pagination-products"></div>
+</div>

@@ -52,114 +52,35 @@ const deliveryDate = (location) => {
   document.querySelector('.orderby-receiveby').classList.remove('hidden');
 }
 
-// bestseller section on hompage
-  const initSwiperBestSeller = () => {
-    swiper = new Swiper('.best-seller-section .swiper', {
-      spaceBetween: 16,
-      slidesPerView: 'auto',
-      mousewheel: {
-        forceToAxis: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        320: {
-          slidesPerGroup: 1,
-          slidesPerView: 'auto',
-          spaceBetween: 16,
-          slidesOffsetBefore: 24,
-          slidesOffsetAfter: 24
-        },
-        768: {
-          slidesPerGroup: 2,
-          slidesPerView: 2,
-          spaceBetween: 16,
-        },
-        1024: {
-          slidesPerGroup: 1,
-          slidesPerView: 'auto',
-          spaceBetween: 16,
-        }
-      }
-    });
-    return swiper;
-  }
 
-const initBestSellerSection = () => { 
-  const categoryButtons = document.querySelectorAll('.best-seller-section .best-seller-wrapper__categories .btn');
-  const productCardsContainer = document.querySelector('.best-seller-section .best-seller-wrapper__products-container');
-  const bestSellerFooter = document.querySelector('.best-seller-section .best-seller-wrapper__footer');
-  const productCards = document.querySelectorAll('.best-seller-section .best-seller-wrapper__products-container .product-link');
-  const swiperElements = document.querySelectorAll('.best-seller-section .swiper-element');
-  const isVariantCActive = document.body.hasAttribute('data-bestseller-c');
-  const isMobile = window.innerWidth <= 768;
-  
-  let swiper = initSwiperBestSeller();
+// swiper PDP: Before & After First Image 
 
-  // show product images on mobile - variant c
-  if ( isVariantCActive && isMobile ) {
-    const imagesContainer = document.querySelectorAll('.best-seller-section .product-wrapper .images-container');
-
-    imagesContainer.forEach(imageContainer => {
-      let images = imageContainer.querySelectorAll('img');
-      let nextImageIndex = 1;
-      
-      function showNextImage() {
-        images[nextImageIndex == 1 ?  0 : 1].style.display = 'none';
-        images[nextImageIndex].style.display = 'block';
-        nextImageIndex = (nextImageIndex + 1) % images.length;
-      }
-      setInterval(showNextImage, 3000); 
-    });
-  }
-
-  categoryButtons.forEach(categoryButton => {
-    categoryButton.addEventListener('click', e => {
-      let target = e.currentTarget;
-      let { category } = target.dataset;
-      
-      // set active button
-      categoryButtons.forEach(categoryButton => categoryButton.classList.remove('active'));
-      target.classList.add('active');
-
-      // show products according to active button
-      productCards.forEach(productCard => {
-        let { category:productCardCategory} = productCard.dataset;
-        productCard.classList.remove('best-seller-hidden');
-        if (category != productCardCategory) productCard.classList.add('best-seller-hidden');
-      });
-
-      // slider on desktop 
-      if ( !isMobile ) { 
-        if ( category !== "cat1" ) {
-          swiper.destroy(); 
-          swiperElements.forEach(swiperElement => {
-            swiperElement.classList.add('best-seller-hidden');
-          });
-          productCardsContainer.classList.add('not-slider');
-          bestSellerFooter.classList.add('not-slider');
-        } else {
-          initSwiperBestSeller();
-          swiperElements.forEach(swiperElement => {
-            swiperElement.classList.remove('best-seller-hidden');
-          });
-          productCardsContainer.classList.remove('not-slider');
-          bestSellerFooter.classList.remove('not-slider');
-        }  
-      } else {
-        // slider on mobile when switching between categoryButtons
-        swiper.destroy();
-        swiper = initSwiperBestSeller();
-        swiper.update();
-      }
-    });
+const swiperBeforeAfter = (selector, paginationClass) => {
+  const swiperInstance = new Swiper(`${selector}`, {
+    slidesPerView: 1,
+    pagination: {
+      el: `${paginationClass}`,
+      clickable: true,
+    }
   });
+
+  return swiperInstance;
 }
+
+swiperBeforeAfter('.swiper-products', '.swiper-pagination-products')
+swiperBeforeAfter('.swiper-page-product', '.swiper-pagination-product-page')
+
+const swiperResult = new Swiper('.swiper-info-result', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination-real-result',
+      clickable: true,
+    }
+  });
+
+// end swiper PDP: Before & After First Image
+
 
 window.addEventListener("ig:ready", () => { 
   if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
@@ -243,14 +164,74 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // End PDP Social Proof Data
 
-   // best-seller-section 
-   initBestSellerSection();
-
   // Start Order by Receive by
   const showReceiveBy = window.showOrderBy;
   if (showReceiveBy) {
     userLocationIP();
   }
+
+  //  PDP: Before & After First Image 
+
+  const productComponent = document.getElementById('info-product');
+  const resultComponent = document.getElementById('info-result');
+  const dermaComponent = document.getElementById('info-derma');
+
+  const productButton = document.getElementById('productButton');
+  const resultButton = document.getElementById('resultButton');
+  const dermaButton = document.getElementById('dermaButton');
+
+  if(document.querySelector('body').getAttribute('data-before-after') == 'b'){
+    resultComponent.classList.add('active');
+    resultButton.classList.add('active');
+  } else if(document.querySelector('body').getAttribute('data-before-after') == 'c'){
+    dermaComponent.classList.add('active');
+    dermaButton.classList.add('active');
+  } else {
+    productComponent.classList.add('active');
+    productButton.classList.add('active');
+  }
+  
+
+  /**
+   * Function to show a component and hide the others.
+   * @param {HTMLElement} component The component to be shown.
+   */
+  function showComponent(component) {
+    // Hide all components
+    document.querySelectorAll('[id^="info-"]').forEach(component => {
+      component.classList.remove('active');
+    });
+    // Show the specified component
+    component.classList.add('active');
+  }
+
+  // Add event listeners to all elements with the class 'nav-button'
+  document.querySelectorAll('.nav-button').forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the ID of the clicked button
+      const buttonId = this.id;
+      // Remove the 'active' class from all navigation buttons
+      document.querySelectorAll('.nav-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      // Add the 'active' class to the clicked button
+      this.classList.add('active');
+      // Show the corresponding component based on the clicked button
+      switch (buttonId) {
+        case 'productButton':
+          showComponent(productComponent);
+          break;
+        case 'resultButton':
+          showComponent(resultComponent);
+          break;
+        case 'dermaButton':
+          showComponent(dermaComponent);
+          break;
+      }
+    });
+  });
+ 
+  // end PDP: Before & After First Image 
 
 });
 
