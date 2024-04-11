@@ -37,12 +37,12 @@
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
-                            <h2 class="title-xl d-none d-md-block">{{ section.settings.heading }}</h2> 
+                            <h2 class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h2> 
                         {% endif %}
                         {% if section.settings.heading_mobile != blank %}
-                            <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile }}</h2>
+                            <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile | replace: '\n', '<br />' }}</h2>
                         {% elsif section.settings.heading != blank %}
-                            <h2 class="title-xl d-md-none">{{ section.settings.heading }}</h2>
+                            <h2 class="title-xl d-md-none">{{ section.settings.heading | replace: '\n', '<br />' }}</h2>
                         {% endif %}
                     </div>
                     {% if rating_count %}

@@ -166,8 +166,8 @@
         "video_HWTjXH"
       ],
       "settings": {
-        "heading": "Age like a PRO:See difference after one treatment",
-        "heading_mobile": "Age like a PRO:See difference after one treatment",
+        "heading": "Age like a PRO: \\n See difference after one treatment",
+        "heading_mobile": "Age like a PRO: \\n See difference after one treatment",
         "product": "",
         "product_images_offset": 0,
         "product_images_limit": 5,
@@ -390,7 +390,7 @@
         "icon_hQTWT9"
       ],
       "custom_css": [
-        "@media(min-width:1000px){.reasons_wrapper {grid-template-columns: repeat(4, 1fr);}}"
+        "@media (min-width: 1000px) {.reasons_wrapper {grid-template-columns: repeat(4, 1fr); }}"
       ],
       "settings": {
         "classname": "reasons section reasons_men bg-transparent",
