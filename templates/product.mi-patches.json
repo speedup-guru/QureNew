@@ -43,7 +43,10 @@
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false
+        "reserve": false,
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist"
       }
     },
     "featuredin_zGJF46": {
@@ -262,7 +265,7 @@
         "object_Pcbmim": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi-targeted-patches.webp",
+            "image": "shopify:\/\/shop_images\/Rectangle_188_2a078240-295d-4e92-a36f-2acb2c6b5c1f.png",
             "heading": "Micro-Infusion Targeted Patches",
             "text": "",
             "price": "",
@@ -407,6 +410,7 @@
       "settings": {
         "classname": "bg_yellow",
         "heading": "Your burning questions, our glowing answers",
+        "text": "",
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }
