@@ -621,6 +621,12 @@
           "settings": {
             "wistia_id": "tmooz7y6vc"
           }
+        },
+        "wistia_rF6WjY": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "oopy3t9jha"
+          }
         }
       },
       "block_order": [
@@ -628,7 +634,8 @@
         "wistia_NNkDBD",
         "video_pxN89b",
         "wistia_yR9UWX",
-        "wistia_LfBE3A"
+        "wistia_LfBE3A",
+        "wistia_rF6WjY"
       ],
       "settings": {
         "heading": "Confident skin starts here",
