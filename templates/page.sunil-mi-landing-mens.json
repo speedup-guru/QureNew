@@ -449,13 +449,26 @@
             "client": "Dylan B.",
             "code": ""
           }
+        },
+        "result_eTqtdF": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_jay.webp",
+            "heading": "Clearer skin overnight",
+            "text": "<p>I noticed huge improvements after using Qure’s micro infusion system with clearer skin overnight. It did hurt a little at the start but I got use to it quickly. Would definitely recommend this 👏🏽<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Jay",
+            "code": ""
+          }
         }
       },
       "block_order": [
         "result_MQjnrj",
         "result_EDVcg7",
         "result_mpxEzN",
-        "result_GGg7Kj"
+        "result_GGg7Kj",
+        "result_eTqtdF"
       ],
       "settings": {
         "classname": "mi_landing_result",
