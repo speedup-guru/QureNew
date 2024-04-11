@@ -178,6 +178,7 @@
                     {% endif %}
                 </div>
             </div>
+            {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "mobile" %}
             <div class="col-md-6  order-1 order-md-2">
                 <div class="refill_slider mw-mob-100 before-after-original-component">
                     <div class="refill_s_tab_content">
@@ -394,6 +395,7 @@
                 </div>
               {% comment %} end component original {% endcomment %}
               {% render 'endrock_before_after', data: section.blocks, dataSection: section.settings %}
+              {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "desktop" %}
             </div>
         </div>
     </div>
