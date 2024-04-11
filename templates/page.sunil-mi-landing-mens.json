@@ -437,12 +437,25 @@
             "client": "AJ B.",
             "code": ""
           }
+        },
+        "result_GGg7Kj": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_dylan.webp",
+            "heading": "Acne scars faded",
+            "text": "<p>“Qure Micro Infusion has been a game-changer for me. After struggling with acne scarring and dark spots for years, I can finally say goodbye to them. I feel more confident than ever before. It's a must-try for anyone dealing with similar skin concerns.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Dylan B.",
+            "code": ""
+          }
         }
       },
       "block_order": [
         "result_MQjnrj",
         "result_EDVcg7",
-        "result_mpxEzN"
+        "result_mpxEzN",
+        "result_GGg7Kj"
       ],
       "settings": {
         "classname": "mi_landing_result",
