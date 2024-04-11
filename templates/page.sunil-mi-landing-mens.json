@@ -183,12 +183,6 @@
     "featuredin_zWyY3U": {
       "type": "featuredin",
       "blocks": {
-        "heading_HiEfBz": {
-          "type": "heading",
-          "settings": {
-            "heading": "FEATURED IN"
-          }
-        },
         "image_CMHyhX": {
           "type": "image",
           "settings": {
@@ -223,23 +217,14 @@
             "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
             "mobile_hide": false
           }
-        },
-        "image_k7aY9B": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
-            "mobile_hide": false
-          }
         }
       },
       "block_order": [
-        "heading_HiEfBz",
         "image_CMHyhX",
         "image_CE8JHg",
         "image_DGN3zc",
         "image_wdPDGq",
-        "image_TXKk7A",
-        "image_k7aY9B"
+        "image_TXKk7A"
       ],
       "settings": {
         "heading": ""
