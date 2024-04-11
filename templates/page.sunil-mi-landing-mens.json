@@ -690,7 +690,7 @@
         "video_eqTzJU": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/demo.png",
+            "image": "shopify:\/\/shop_images\/demo-men.webp",
             "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4"
           }
         },
@@ -745,8 +745,8 @@
       ],
       "settings": {
         "classname": "",
-        "heading": "See it in action — an instant, effortless glow that looks as good as it feels",
-        "text": "<p>5 minutes total, every 2-4 weeks<\/p>"
+        "heading": "See how easy Micro-Infusion is — wake up with smoother-feeling skin",
+        "text": "<h5>5 minutes total, every 2-4 weeks<\/h5>"
       }
     },
     "line_a8KbFQ": {
