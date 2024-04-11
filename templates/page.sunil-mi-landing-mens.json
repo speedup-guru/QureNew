@@ -259,64 +259,6 @@
         "column_content": 6
       }
     },
-    "two_column_box_cqD687": {
-      "type": "two-column-box",
-      "blocks": {
-        "content_Hham8b": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>“Hollywood” skin is finally accessible without the a-list budget[image_mobile]<\/h2><p>Have you ever wondered how your skin would look and feel if you had access to the most advanced treatments?<\/p><p><\/p><p>The ones that only the “rich and famous” can afford, performed by the best dermatologists, only available at exclusive clinics.<\/p>",
-            "column_content": 0,
-            "classname": "it_info p-0 pe-md-5"
-          }
-        },
-        "image_VkznhH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/carpet_2.webp",
-            "classname": "mw-mob-100"
-          }
-        }
-      },
-      "block_order": [
-        "content_Hham8b",
-        "image_VkznhH"
-      ],
-      "settings": {
-        "classname": "imageText section",
-        "column_image": 6,
-        "column_content": 6
-      }
-    },
-    "two_column_box_wJmxTY": {
-      "type": "two-column-box",
-      "blocks": {
-        "image_NwMbgP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/after_treatment.png",
-            "classname": "mw-mob-100 pt-2"
-          }
-        },
-        "content_XdKeWR": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>Go to skin booster for confident<br\/>Make up free days[image_mobile] <\/h2><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/p><p><\/p><p>The best part? You can enjoy it for roughly a fraction of the cost in the comfort of your home, with little to <strong>no downtime!<\/strong><\/p>",
-            "column_content": 0,
-            "classname": "it_info p-0 ps-md-4"
-          }
-        }
-      },
-      "block_order": [
-        "image_NwMbgP",
-        "content_XdKeWR"
-      ],
-      "settings": {
-        "classname": "imageText section",
-        "column_image": 6,
-        "column_content": 6
-      }
-    },
     "line_M99hQR": {
       "type": "line",
       "settings": {
@@ -330,15 +272,15 @@
         "product_4qqcQV": {
           "type": "product",
           "settings": {
-            "heading": "",
-            "text": "<h2>Introducing the Qure <\/h2><h2>Micro-Infusion System<\/h2><p>Clinics, Dermatologists, and Celebrities Agree<strong>– It REALLY Works<\/strong><\/p><ul><li>Helps reduce appearance of fine lines<\/li><li>Wake up with <strong>dewy looking, glowing<\/strong> skin<\/li><li>Reveal <strong>brighter<\/strong> looking, <strong>firmer<\/strong> feeling skin<\/li><li>Help fade appearance of dark spots and <strong>acne marks<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
+            "heading": "Introducing the Qure Micro-Infusion System",
+            "text": "<ul><li>Reduce appearance of fine lines, wrinkles, pores and redness.<\/li><li>Wake up to firmer-looking, smoother-feeling skin.<\/li><li>Reveal <strong>more hydrated, fresh<\/strong> looking skin.<\/li><li>Help fade the look of dark spots and <strong>acne scars.<\/strong><\/li><\/ul>",
             "product": ""
           }
         },
         "image_gnyiNf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/micro_grid.webp"
+            "image": "shopify:\/\/shop_images\/micro_grid-men.webp"
           }
         },
         "button_rznYjF": {
@@ -1232,8 +1174,6 @@
     "main",
     "featuredin_zWyY3U",
     "two_column_box_DFqCGG",
-    "two_column_box_cqD687",
-    "two_column_box_wJmxTY",
     "line_M99hQR",
     "product_box_b3WBQC",
     "before_after_short_slider_pYmNqR",
