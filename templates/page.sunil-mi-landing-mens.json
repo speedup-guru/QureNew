@@ -76,6 +76,13 @@
             "wistia_id": ""
           }
         },
+        "media_fQFMpN": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_pdp-product-2-menmob.webp",
+            "wistia_id": "x10rtsz4v3"
+          }
+        },
         "media_KAAc3a": {
           "type": "media",
           "settings": {
@@ -103,6 +110,7 @@
         "button_L9q6wE",
         "list_pQxE9h",
         "media_H88egg",
+        "media_fQFMpN",
         "media_KAAc3a",
         "media_iX9UgP",
         "media_JDY3WA"
