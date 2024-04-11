@@ -592,10 +592,11 @@ body[data-variantb-upsell-carousel] {
 
     .drawer__overlay{
       opacity: .8;
+      z-index: 999;
     }
     
     form.my-cart { 
-      @media screen and (min-width:1140px) {
+      @media screen and (min-width:1180px) {
         overflow-y: hidden;
         display: flex;
         flex-direction: column;
@@ -773,7 +774,7 @@ body[data-variantb-upsell-carousel] {
         .align-slide{
           justify-content: flex-start;
         }
-        @media screen and (min-width:1140px) {
+        @media screen and (min-width:1180px) {
           position: fixed;
           transform: translate(-100%, 0%);
           height: 100vh;
@@ -911,6 +912,9 @@ body[data-variantb-upsell-carousel] {
         .swiper-pagination{
           display: block;
           margin: 0px;
+          @media screen and (min-width:1180px) {
+            display: none;
+          }
           .swiper-pagination-bullet {
             background: #FFF;
             opacity: 1;
@@ -944,7 +948,10 @@ body[data-variantc-upsell-carousel] {
     position: absolute;
     top: 0;
     bottom: 0;
-
+    .drawer__overlay{
+      opacity: .8;
+      z-index: 999;
+    }
     form.my-cart {
       display: flex;
       flex-direction: column;
@@ -1143,10 +1150,7 @@ body[data-variantc-upsell-carousel] {
       .custom_upsell.notVisible {
         display: none;
       }
-    .drawer__overlay{
-      opacity: .8;
-    }
-    @media screen and (min-width:769px){
+      @media screen and (min-width:769px){
       .swiper-button-disabled{
         opacity: 0;
       }
