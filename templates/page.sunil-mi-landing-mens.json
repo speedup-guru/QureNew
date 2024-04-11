@@ -390,6 +390,9 @@
         "icon_3jJA6X",
         "icon_hQTWT9"
       ],
+      "custom_css": [
+        ".reasons_wrapper {grid-template-columns: repeat(4, 1fr);}"
+      ],
       "settings": {
         "classname": "reasons section reasons_men bg-transparent",
         "heading": "4 Reasons why everyone can’t get enough",
