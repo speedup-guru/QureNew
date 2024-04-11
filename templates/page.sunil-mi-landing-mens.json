@@ -103,6 +103,41 @@
             "image": "shopify:\/\/shop_images\/mi_pdp-product-3.webp",
             "wistia_id": ""
           }
+        },
+        "media_ybipp6": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_refill-result-men-1.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_RbbRgj": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_refill-result-men-2.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_CcWwRM": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_refill-result-men-3.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_T3hK4m": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_refill-result-men-4.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_qLxHBj": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_refill-result-men-5.webp",
+            "wistia_id": ""
+          }
         }
       },
       "block_order": [
@@ -113,7 +148,12 @@
         "media_fQFMpN",
         "media_KAAc3a",
         "media_iX9UgP",
-        "media_JDY3WA"
+        "media_JDY3WA",
+        "media_ybipp6",
+        "media_RbbRgj",
+        "media_CcWwRM",
+        "media_T3hK4m",
+        "media_qLxHBj"
       ],
       "settings": {
         "heading": "Age like a PRO:See difference after one treatment",
