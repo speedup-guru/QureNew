@@ -529,16 +529,6 @@
             "text": "<p>\"In terms of <strong>safety<\/strong>, the micro stamping devices, this [Qure's Micro-Infusion] is great...\"<\/p><h6><strong>Dr Maxfield, MD,<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_pEM9DL": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_maren1.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=0DYmxvyKAVI",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>\"Qure’s system is far more affordable and convenient than the in office procedure because it’s done in the comfort of your home.\"<\/p><h6><strong>Dr Maren Locke<\/strong> Board-Certified Dermatologist<\/h6>"
-          }
-        },
         "video_XF3pgt": {
           "type": "video",
           "settings": {
@@ -583,7 +573,6 @@
       "block_order": [
         "feedback_9Aa4j6",
         "feedback_NVbkWM",
-        "video_pEM9DL",
         "video_XF3pgt",
         "video_C6tFxe",
         "video_jPYhQi",
