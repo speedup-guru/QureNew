@@ -399,6 +399,31 @@
         "text": "<p>The home facial your skincare routine is missing that saves you hundreds of dollars every month<\/p>"
       }
     },
+    "results_3LEkF7": {
+      "type": "results",
+      "blocks": {
+        "result_MQjnrj": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_david-men.webp",
+            "heading": "Amazing product",
+            "text": "<p>“I was skeptical at first, but after using the Micro Infusion Device for a few weeks, I'm blown away by the results. My skin looks and feels noticeably smoother. Highly recommend giving it a try!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "Australia",
+            "client": "David G.",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "result_MQjnrj"
+      ],
+      "settings": {
+        "classname": "mi_landing_result",
+        "heading": "Join the league and feel good about the skin you’re in",
+        "text_verified_customer": "Verified customer"
+      }
+    },
     "before_after_short_slider_pYmNqR": {
       "type": "before-after-short-slider",
       "blocks": {
@@ -622,135 +647,6 @@
         "image": "shopify:\/\/shop_images\/trusted_3.webp",
         "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8",
         "video_label": "Click To Watch Review"
-      }
-    },
-    "results_3LEkF7": {
-      "type": "results",
-      "blocks": {
-        "result_DckD68": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_glorija.webp",
-            "heading": "The best natural glow",
-            "text": "<p>“I was hesitant at first as I didn’t know how much it would hurt but to my surprise it was pretty painless. The 2nd day after the treatment, my skin has the best natural glow!<\/p><p>I was also happy to to see how much my pigmentation had lightened after 3rd treatment :) I switch between the serums depending on how my skin is before the treatment.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
-            "client": "Glorija",
-            "code": ""
-          }
-        },
-        "result_VCJwgD": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_ellie.webp",
-            "heading": "my skin RETURNED to LIFE!",
-            "text": "<p>\"I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Ellie V.",
-            "code": ""
-          }
-        },
-        "result_YbRNi7": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_mona.webp",
-            "heading": "After just TWO treatments!",
-            "text": "<p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Mona P.",
-            "code": ""
-          }
-        },
-        "result_BU6egp": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_ela.webp",
-            "heading": "Shocked at the results",
-            "text": "<p>\"Shocked at the results after just one treatment! I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!<\/p><p>Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Ela O.",
-            "code": ""
-          }
-        },
-        "result_ThnNPK": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_ann.webp",
-            "heading": "How easy it is to use",
-            "text": "<p>\"I heard about micro-infusion in clinics but couldn’t afford to fork out hundreds of dollars for a treatment. So when I saw this online I jumped at buying it instantly. Yes, it doesn’t stamp in botox and filler BUT personally I LOVE the results and how easy it is to use myself at home. It works great for my skin, I have noticed my skin texture is much smoother and brighter.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
-            "client": "Ann",
-            "code": ""
-          }
-        },
-        "result_URKRDq": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_jess1.webp",
-            "heading": "Totally worth it!!!",
-            "text": "<p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture.<\/p><p>My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Jess",
-            "code": ""
-          }
-        },
-        "result_TJXM8n": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_andrea-a.webp",
-            "heading": "Absolutely love it!",
-            "text": "<p>“I have used many topicals to help with post acne marks. This micro-infusion system has given me the most consistent results. Absolutely love it!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Andrea A.",
-            "code": ""
-          }
-        },
-        "result_6FrBJW": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_priya.webp",
-            "heading": "Plumper, more hydrated!",
-            "text": "<p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/england_f.webp",
-            "text_country": "United Kingdom",
-            "client": "Priya P.",
-            "code": ""
-          }
-        },
-        "result_xgWrGm": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_chelsea.webp",
-            "heading": "Amazing results!",
-            "text": "<p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Chelsea J.",
-            "code": ""
-          }
-        }
-      },
-      "block_order": [
-        "result_DckD68",
-        "result_VCJwgD",
-        "result_YbRNi7",
-        "result_BU6egp",
-        "result_ThnNPK",
-        "result_URKRDq",
-        "result_TJXM8n",
-        "result_6FrBJW",
-        "result_xgWrGm"
-      ],
-      "settings": {
-        "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes",
-        "text_verified_customer": "Verified customer"
       }
     },
     "liquid_9GnXBn": {
@@ -1223,11 +1119,11 @@
     "product_box_b3WBQC",
     "icons_list_i7HDNT",
     "reasons_khXbp7",
+    "results_3LEkF7",
     "before_after_short_slider_pYmNqR",
     "videos_list_9mL4h8",
     "two_column_box_f67akQ",
     "trusted_qGtbnC",
-    "results_3LEkF7",
     "liquid_9GnXBn",
     "compare_rGUQ9y",
     "guide_xibEe6",
