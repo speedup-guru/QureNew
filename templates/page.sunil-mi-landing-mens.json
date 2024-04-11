@@ -269,6 +269,13 @@
     "product_box_b3WBQC": {
       "type": "product-box",
       "blocks": {
+        "rating_inUD4c": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star4.8.svg",
+            "text": "4.8\/5 Based on 43,893 Users"
+          }
+        },
         "product_4qqcQV": {
           "type": "product",
           "settings": {
@@ -292,6 +299,7 @@
         }
       },
       "block_order": [
+        "rating_inUD4c",
         "product_4qqcQV",
         "image_gnyiNf",
         "button_rznYjF"
