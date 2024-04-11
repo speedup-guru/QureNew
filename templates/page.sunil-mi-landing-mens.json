@@ -230,42 +230,31 @@
         "heading": ""
       }
     },
-    "two_column_box_p7J7bk": {
+    "two_column_box_DFqCGG": {
       "type": "two-column-box",
       "blocks": {
-        "image_WeCezk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/microinfusion-animation.webp",
-            "classname": "it_img mw-mob-100"
-          }
-        },
-        "content_DLpMJ6": {
+        "content_KW9Ccr": {
           "type": "content",
           "settings": {
-            "text": "<h2>Unlock Dermatologist's<br\/>best kept secret<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
+            "text": "<h2>The go-to skin treatment for the ultimate confidence booster<\/h2><p>Skip the expensive and time consuming clinic visits, and stop paying hundreds of dollars on skincare products that can’t penetrate deep enough into your skin to fix your concerns...<\/p><p>We are making self-care <strong>affordable and convenient.<\/strong><\/p><p>You can now perform a Micro-Infusion facial, that was once only performed by dermatologists at exclusive clinics, from home for roughly a <strong>fraction of the ‘in-clinic’ cost.<\/strong><\/p><p>Men can’t get enough of this treatment!<\/p>",
             "column_content": 0,
-            "classname": "secret_grid_wrap ps-0 ps-md-5"
+            "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
-        "code_ENeDfJ": {
-          "type": "code",
+        "image_fRGQyR": {
+          "type": "image",
           "settings": {
-            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>1,000s of women are canceling their expensive facial appointments.\n                            <\/h6>\n                            <p>Estheticians blame this one at - home treatment.<\/p>\n                        <\/div>\n                    <\/div>"
+            "image": "shopify:\/\/shop_images\/before-after-landing-mens-transformed.jpg",
+            "classname": "mw-mob-100"
           }
         }
       },
       "block_order": [
-        "image_WeCezk",
-        "content_DLpMJ6",
-        "code_ENeDfJ"
-      ],
-      "custom_css": [
-        ".row {align-items: center !important;}",
-        "@media (max-width: 768px) {h2 {display: none; } .section_header {max-width: unset !important; } .secret_grid_wrap {top: -50px !important; }}"
+        "content_KW9Ccr",
+        "image_fRGQyR"
       ],
       "settings": {
-        "classname": "imageText buzz_about",
+        "classname": "technology_light pt-30 section",
         "column_image": 6,
         "column_content": 6
       }
@@ -1242,7 +1231,7 @@
     "header_landing_yzqaEc",
     "main",
     "featuredin_zWyY3U",
-    "two_column_box_p7J7bk",
+    "two_column_box_DFqCGG",
     "two_column_box_cqD687",
     "two_column_box_wJmxTY",
     "line_M99hQR",
