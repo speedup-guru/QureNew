@@ -476,6 +476,42 @@
         "text_verified_customer": "Verified customer"
       }
     },
+    "two_column_box_f67akQ": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_HGqFfY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img1-transformed.jpg",
+            "classname": "mw-mob-100 pt-4"
+          }
+        },
+        "content_PyFkn7": {
+          "type": "content",
+          "settings": {
+            "text": "<p>[code]<\/p>",
+            "column_content": 0,
+            "classname": ""
+          }
+        },
+        "code_3Ljyfa": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"it_info dual_bl\">\n                        <div class=\"dual_bl_steps\">\n                            <p>Qure’s Micro-Infusion System has a <strong>one-two punch,<\/strong> making it\n                                uniquely effective.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">1<\/div>\n                            <p>First, it allows you to <strong>“stamp” your skin with 24K gold clinical-grade\n                                    needles.<\/strong>\n                                This creates controlled trauma in your skin, which can help boost the feel of\n                                firmness and smooth the look of fine lines and wrinkles. The needles are thinner\n                                than human hair, so you will hardly even feel them.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">2<\/div>\n                            <p>Second, the invisible micro-channels infuse the top layer of your skin with\n                                <strong>serums, that are packed with science backed ingredients.<\/strong>\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <p>This helps ingredients to penetrate into your skin and increase\n                                <strong>absorption.<\/strong>\n                            <\/p>\n                        <\/div>\n                        <p>Perfect for anyone wanting to add a fresh, dewy glowing look to their skin,\n                            especially before an event or occasion.<\/p>\n\n                    <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "image_HGqFfY",
+        "content_PyFkn7",
+        "code_3Ljyfa"
+      ],
+      "settings": {
+        "classname": "imageText section pt-0 pt-md-5",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
     "before_after_short_slider_pYmNqR": {
       "type": "before-after-short-slider",
       "blocks": {
@@ -576,42 +612,6 @@
       "settings": {
         "heading": "Confident skin starts here",
         "classname": "section videosQure"
-      }
-    },
-    "two_column_box_f67akQ": {
-      "type": "two-column-box",
-      "blocks": {
-        "image_HGqFfY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dual.png",
-            "classname": "mw-mob-100 pt-4"
-          }
-        },
-        "content_PyFkn7": {
-          "type": "content",
-          "settings": {
-            "text": "<p>[code]<\/p>",
-            "column_content": 0,
-            "classname": ""
-          }
-        },
-        "code_3Ljyfa": {
-          "type": "code",
-          "settings": {
-            "code": "<div class=\"it_info dual_bl\">\n                        <div class=\"dual_bl_steps\">\n                            <p>Qure’s Micro-Infusion System has a <strong>one-two punch,<\/strong> making it\n                                uniquely effective.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">1<\/div>\n                            <p>First, it allows you to <strong>“stamp” your skin with 24K gold clinical-grade\n                                    needles.<\/strong>\n                                This creates controlled trauma in your skin, which can help boost the feel of\n                                firmness and smooth the look of fine lines and wrinkles. The needles are thinner\n                                than human hair, so you will hardly even feel them.\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">2<\/div>\n                            <p>Second, the invisible micro-channels infuse the top layer of your skin with\n                                <strong>serums, that are packed with science backed ingredients.<\/strong>\n                            <\/p>\n                        <\/div>\n                        <div class=\"dual_bl_steps\">\n                            <p>This helps ingredients to penetrate into your skin and increase\n                                <strong>absorption.<\/strong>\n                            <\/p>\n                        <\/div>\n                        <p>Perfect for anyone wanting to add a fresh, dewy glowing look to their skin,\n                            especially before an event or occasion.<\/p>\n\n                    <\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "image_HGqFfY",
-        "content_PyFkn7",
-        "code_3Ljyfa"
-      ],
-      "settings": {
-        "classname": "imageText section pt-0 pt-md-5",
-        "column_image": 6,
-        "column_content": 6
       }
     },
     "trusted_qGtbnC": {
@@ -1172,9 +1172,9 @@
     "icons_list_i7HDNT",
     "reasons_khXbp7",
     "results_3LEkF7",
+    "two_column_box_f67akQ",
     "before_after_short_slider_pYmNqR",
     "videos_list_9mL4h8",
-    "two_column_box_f67akQ",
     "trusted_qGtbnC",
     "liquid_9GnXBn",
     "compare_rGUQ9y",
