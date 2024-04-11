@@ -66,7 +66,7 @@
         "list_pQxE9h": {
           "type": "list",
           "settings": {
-            "text": "<ul><li><strong>Transforms dull-looking skin,<\/strong> helps reduce appearance of fine lines & smooths texture<\/li><li><strong>Easy<\/strong> 5-minute facial, serums <strong>customized<\/strong> to address your skin concerns for <strong>visible results<\/strong><\/li><li>Minimal to <strong>no downtime,<\/strong> virtually <strong>painless<\/strong> & perform conveniently from home<\/li><\/ul>"
+            "text": "<ul><li>Reduces appearance of fine lines, pores, dark spots and acne scars.<\/li><li><strong>Quick<\/strong> and <strong>effective<\/strong> DIY facial for visibly younger-looking skin.<\/li><li>Virtually <strong>painless <\/strong>and performed <strong>conveniently<\/strong> from home with fast results<\/li><\/ul>"
           }
         },
         "media_bfYhdk": {
@@ -158,8 +158,8 @@
         "video_GAjMEW"
       ],
       "settings": {
-        "heading": "50,000+ are making the change and transforming their skin at home",
-        "heading_mobile": "50,000+ are making the change and transforming their skin at home",
+        "heading": "Age like a PRO:See difference after one treatment",
+        "heading_mobile": "Age like a PRO:See difference after one treatment",
         "product": "",
         "product_images_offset": 0,
         "product_images_limit": 6,
@@ -1150,6 +1150,7 @@
       "settings": {
         "classname": "",
         "heading": "The answers to your questions",
+        "text": "",
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }
