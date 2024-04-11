@@ -271,6 +271,7 @@
       "blocks": {
         "rating_inUD4c": {
           "type": "rating",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/star4.8.svg",
             "text": "4.8\/5 Based on 43,893 Users"
