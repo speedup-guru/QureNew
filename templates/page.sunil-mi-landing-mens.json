@@ -616,24 +616,10 @@
             "wistia_id": "zp441cvgvj"
           }
         },
-        "video_PCt47J": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/videosQure_img10.webp",
-            "video": "shopify:\/\/files\/videos\/video.mp4"
-          }
-        },
-        "video_WCKqeb": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/videosQure_img11.webp",
-            "video": "shopify:\/\/files\/videos\/Snaptik.app_7172647262294723886.mp4"
-          }
-        },
-        "wistia_ctwd8i": {
+        "wistia_LfBE3A": {
           "type": "wistia",
           "settings": {
-            "wistia_id": "albsf16uog"
+            "wistia_id": "tmooz7y6vc"
           }
         }
       },
@@ -642,9 +628,7 @@
         "wistia_NNkDBD",
         "video_pxN89b",
         "wistia_yR9UWX",
-        "video_PCt47J",
-        "video_WCKqeb",
-        "wistia_ctwd8i"
+        "wistia_LfBE3A"
       ],
       "settings": {
         "heading": "Confident skin starts here",
