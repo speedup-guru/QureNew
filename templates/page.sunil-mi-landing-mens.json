@@ -610,6 +610,12 @@
             "video": "shopify:\/\/files\/videos\/insta_3.mp4"
           }
         },
+        "wistia_yR9UWX": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "zp441cvgvj"
+          }
+        },
         "video_PCt47J": {
           "type": "video",
           "settings": {
@@ -635,6 +641,7 @@
         "wistia_Pp7fLK",
         "wistia_NNkDBD",
         "video_pxN89b",
+        "wistia_yR9UWX",
         "video_PCt47J",
         "video_WCKqeb",
         "wistia_ctwd8i"
