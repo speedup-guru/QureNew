@@ -413,10 +413,23 @@
             "client": "David G.",
             "code": ""
           }
+        },
+        "result_EDVcg7": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_john-men.webp",
+            "heading": "My skin looks so healthy!",
+            "text": "<p>First time trying micro-infusion and wow, what a difference! Haven’t tried any other treatments but one day after Qure’s and my skin already feels firmer, looks plumper, and definitely healthier. Big fan already. Highly recommend giving it a go!<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "John M.",
+            "code": ""
+          }
         }
       },
       "block_order": [
-        "result_MQjnrj"
+        "result_MQjnrj",
+        "result_EDVcg7"
       ],
       "settings": {
         "classname": "mi_landing_result",
