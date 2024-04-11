@@ -425,11 +425,24 @@
             "client": "John M.",
             "code": ""
           }
+        },
+        "result_mpxEzN": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_aj.webp",
+            "heading": "Strengthened skin",
+            "text": "<p>\"My skin has definitely improved and strengthened since using the Micro-infusion device with serum as well. It is less costly than going to a cosmetic dermatologist and it is easy-to-use at home. So far I’m loving this! Didn’t hurt, skin wasn’t irritated after, feels and looks great! Looking forward to my next treatment!\"<\/p>",
+            "image_country": "shopify:\/\/shop_images\/philippines_f.webp",
+            "text_country": "Philippines",
+            "client": "AJ B.",
+            "code": ""
+          }
         }
       },
       "block_order": [
         "result_MQjnrj",
-        "result_EDVcg7"
+        "result_EDVcg7",
+        "result_mpxEzN"
       ],
       "settings": {
         "classname": "mi_landing_result",
