@@ -59,6 +59,11 @@
         <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'product-mi-landing-de.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.sunil-mi-landing-mens' %}
+        {% assign main_class = 'mi_landing mi_landing_men' %}
+        <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'qure-microinfusion-offer-men.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
     {% when 'page.faq-new' %}
         {% assign main_class = 'faqs' %}
         <link rel="stylesheet" href="{{ 'faq-page.css' | asset_url }}">
