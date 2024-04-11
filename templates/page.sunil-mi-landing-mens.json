@@ -549,24 +549,14 @@
             "text": "<p>\"The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.”<\/p><h6><strong>Dr Dylan Greeney<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         },
-        "video_jPYhQi": {
+        "video_tWi7k8": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "image": "shopify:\/\/shop_images\/trusted_scott.webp",
+            "video_url": "",
             "video_label": "Watch Video",
             "wistia_id": "",
-            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
-          }
-        },
-        "video_PECKPL": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_mona.webp",
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Internal Medicine<\/h6>"
+            "text": "<p>\"These needles in Qure's micro-infusion system are sterile and for one-time use only, safe to use, have minimal down time, and is effective!\"<\/p><h6><strong>Dr Scott Walter, MD<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         }
       },
@@ -575,8 +565,7 @@
         "feedback_NVbkWM",
         "video_XF3pgt",
         "video_C6tFxe",
-        "video_jPYhQi",
-        "video_PECKPL"
+        "video_tWi7k8"
       ],
       "settings": {
         "classname": "trusted_bl",
