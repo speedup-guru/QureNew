@@ -151,6 +151,18 @@
             "code": ""
           }
         },
+        "result_pLViWD": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi-patches-result-harper.webp",
+            "heading": "Plumped up wrinkles",
+            "text": "<p>“I've been using these patches once a week, I'm absolutely stoked with the results. They feel incredible on my skin, and I'm already noticing a gradual improvement in my laugh lines. I'm really looking forward to seeing even more progress as I keep using them in my routine.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Harper",
+            "code": ""
+          }
+        },
         "result_c3CAtk": {
           "type": "result",
           "settings": {
@@ -175,18 +187,6 @@
             "code": ""
           }
         },
-        "result_pLViWD": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mi-patches-result-harper.webp",
-            "heading": "Plumped up wrinkles",
-            "text": "<p>“I've been using Qure's Micro Infusion Targeted Patches once a week, I'm absolutely stoked with the results. They feel incredible on my skin, and I'm already noticing a gradual improvement in my laugh lines. I'm really looking forward to seeing even more progress as I keep using them in my routine.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
-            "client": "Harper",
-            "code": ""
-          }
-        },
         "result_NLCf8y": {
           "type": "result",
           "settings": {
@@ -202,9 +202,9 @@
       },
       "block_order": [
         "result_KKc4tD",
+        "result_pLViWD",
         "result_c3CAtk",
         "result_mF6ULQ",
-        "result_pLViWD",
         "result_NLCf8y"
       ],
       "settings": {
