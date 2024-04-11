@@ -37,12 +37,12 @@
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
-                            <h2 class="title-xl d-none d-md-block">{{ section.settings.heading }}</h2> 
+                            <h2 class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h2> 
                         {% endif %}
                         {% if section.settings.heading_mobile != blank %}
-                            <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile }}</h2>
+                            <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile | replace: '\n', '<br />' }}</h2>
                         {% elsif section.settings.heading != blank %}
-                            <h2 class="title-xl d-md-none">{{ section.settings.heading }}</h2>
+                            <h2 class="title-xl d-md-none">{{ section.settings.heading | replace: '\n', '<br />' }}</h2>
                         {% endif %}
                     </div>
                     {% if rating_count %}
@@ -153,7 +153,7 @@
                                             <img class="img-fluid d-none d-md-block" src="{{ block.settings.image | img_url: '500x' }}" alt="{{ block.settings.image.alt | escape }}">
                                         {% endif %}
                                         {% if block.settings.image_mobile != blank %}
-                                            <img class="img-fluid d-block d-md-none" src="{{ block.settings.image_mobile | img_url: '350x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                            <img class="img-fluid d-block d-md-none" src="{{ block.settings.image_mobile | img_url: '500x' }}" alt="{{ block.settings.image.alt | escape }}">
                                         {% endif %}
                                     {% endif %}
                                     <div class="play_btn">

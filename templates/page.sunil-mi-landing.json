@@ -1150,6 +1150,7 @@
       "settings": {
         "classname": "",
         "heading": "The answers to your questions",
+        "text": "",
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }

@@ -153,16 +153,27 @@
                                                 |  replace: '<h3>', '<h3 class="paddingB">' 
                                                 |  replace: '<ul>', '<div class="ss_list"><ul>' 
                                                 |  replace: '</ul>', '</ul></div>' 
-                                                |  replace: '[code]', code 
+                                                |  replace: '<p>[code]</p>', code
+                                                |  replace: '[code]', code
+                                                |  replace: '<p>[code_desktop]</p>', code_desktop 
                                                 |  replace: '[code_desktop]', code_desktop 
+                                                |  replace: '<p>[code_mobile]</p>', code_mobile 
                                                 |  replace: '[code_mobile]', code_mobile 
+                                                |  replace: '<p>[details]</p>', details
                                                 |  replace: '[details]', details
+                                                |  replace: '<p>[details_desktop]</p>', details_desktop 
                                                 |  replace: '[details_desktop]', details_desktop 
+                                                |  replace: '<p>[details_mobile]</p>', details_mobile 
                                                 |  replace: '[details_mobile]', details_mobile 
+                                                |  replace: '<p>[image_mobile]</p>', image_mobile
                                                 |  replace: '[image_mobile]', image_mobile
+                                                |  replace: '<p>[only_desktop_start]</p>', only_desktop_start
                                                 |  replace: '[only_desktop_start]', only_desktop_start
+                                                |  replace: '<p>[only_desktop_end]</p>', only_desktop_end
                                                 |  replace: '[only_desktop_end]', only_desktop_end
+                                                |  replace: '<p>[only_mobile_start]</p>', only_mobile_start
                                                 |  replace: '[only_mobile_start]', only_mobile_start
+                                                |  replace: '<p>[only_mobile_end]</p>', only_mobile_end
                                                 |  replace: '[only_mobile_end]', only_mobile_end
                                             }} 
                                         {% endif %}
