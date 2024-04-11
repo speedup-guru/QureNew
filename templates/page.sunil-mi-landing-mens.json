@@ -79,7 +79,7 @@
         "media_fQFMpN": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp-product-2-menmob.webp",
+            "image": "shopify://shop_images/img2-transformed.jpg",
             "wistia_id": "x10rtsz4v3"
           }
         },
@@ -390,7 +390,7 @@
         "icon_hQTWT9"
       ],
       "custom_css": [
-        ".reasons_wrapper {grid-template-columns: repeat(4, 1fr);}"
+        "@media(min-width:1000px){.reasons_wrapper {grid-template-columns: repeat(4, 1fr);}}"
       ],
       "settings": {
         "classname": "reasons section reasons_men bg-transparent",
@@ -504,6 +504,9 @@
         "image_HGqFfY",
         "content_PyFkn7",
         "code_3Ljyfa"
+      ],
+      "custom_css": [
+        ".row {align-items: center !important;}"
       ],
       "settings": {
         "classname": "imageText section pt-0 pt-md-5",
@@ -1045,7 +1048,7 @@
         "code_fXbXkm"
       ],
       "custom_css": [
-        ".mw-486 {margin-top: -70px !important;}"
+
       ],
       "settings": {
         "classname": "imageText joinMicro",
