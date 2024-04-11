@@ -1045,6 +1045,9 @@
         "image_fFdePg",
         "code_fXbXkm"
       ],
+      "custom_css": [
+        ".mw-486 {margin-top: -70px !important;}"
+      ],
       "settings": {
         "classname": "imageText joinMicro",
         "column_image": 6,
