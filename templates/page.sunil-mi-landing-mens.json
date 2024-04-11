@@ -138,6 +138,15 @@
             "image": "shopify:\/\/shop_images\/mi_refill-result-men-5.webp",
             "wistia_id": ""
           }
+        },
+        "video_HWTjXH": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/see_work-men.webp",
+            "image_mobile": "shopify:\/\/shop_images\/see_work-men-mob.webp",
+            "video": "shopify:\/\/files\/videos\/Qure Micro-infusing Applicate (Music).mp4",
+            "video_label": "Click To Watch"
+          }
         }
       },
       "block_order": [
@@ -153,7 +162,8 @@
         "media_RbbRgj",
         "media_CcWwRM",
         "media_T3hK4m",
-        "media_qLxHBj"
+        "media_qLxHBj",
+        "video_HWTjXH"
       ],
       "settings": {
         "heading": "Age like a PRO:See difference after one treatment",
