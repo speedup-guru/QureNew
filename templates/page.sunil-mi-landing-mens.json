@@ -352,6 +352,50 @@
       "settings": {
       }
     },
+    "reasons_khXbp7": {
+      "type": "reasons",
+      "blocks": {
+        "icon_kDV8nw": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi-lp-reason1.svg",
+            "text": "<p><strong>Saves time, money and hassle <\/strong>of attending in-clinic treatments.<\/p>"
+          }
+        },
+        "icon_LN8RVc": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi-lp-reason4-men.svg",
+            "text": "<p>Easy DIY facial performed from the <strong>comfort <\/strong>& <strong>convenience <\/strong>of home.<\/p>"
+          }
+        },
+        "icon_3jJA6X": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi-lp-reason2_66e76589-d448-49e2-9ff7-0c34d8c68e2e.svg",
+            "text": "<p><strong>Quick 5 minute <\/strong>way to help boost skin with little to <strong>no downtime.<\/strong><\/p>"
+          }
+        },
+        "icon_hQTWT9": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi-lp-reason2-men.svg",
+            "text": "<p><strong>Improved absorption <\/strong>of serum that’s customized to address your specific concerns.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_kDV8nw",
+        "icon_LN8RVc",
+        "icon_3jJA6X",
+        "icon_hQTWT9"
+      ],
+      "settings": {
+        "classname": "",
+        "heading": "4 Reasons why everyone can’t get enough",
+        "text": "<p>The home facial your skincare routine is missing that saves you hundreds of dollars every month<\/p>"
+      }
+    },
     "before_after_short_slider_pYmNqR": {
       "type": "before-after-short-slider",
       "blocks": {
@@ -488,58 +532,6 @@
         "classname": "imageText section pt-0 pt-md-5",
         "column_image": 6,
         "column_content": 6
-      }
-    },
-    "reasons_khXbp7": {
-      "type": "reasons",
-      "blocks": {
-        "icon_kDV8nw": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mi-lp-reason2.svg",
-            "text": "<p><strong>Saves time, money & hassle <\/strong>of attending in-clinic treatments.<\/p>"
-          }
-        },
-        "icon_LN8RVc": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mi-lp-reason2.svg",
-            "text": "<p><strong>Quick 5 minute <\/strong>way to help enhance skin with little to <strong>no downtime.<\/strong><\/p>"
-          }
-        },
-        "icon_3jJA6X": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mi-lp-reason3.svg",
-            "text": "<p>Perfect before your big event to <strong>transform dull-looking <\/strong>skin.<\/p>"
-          }
-        },
-        "icon_hQTWT9": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mi-lp-reason3.svg",
-            "text": "<p><strong>Easy<\/strong> DIY facial performed from the <strong>comfort & convenience <\/strong>of home.<\/p>"
-          }
-        },
-        "icon_6qiFmi": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mi-lp-reason3.svg",
-            "text": "<p><strong>Improved absorption <\/strong>of serum that’s customized to address your specific concerns.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_kDV8nw",
-        "icon_LN8RVc",
-        "icon_3jJA6X",
-        "icon_hQTWT9",
-        "icon_6qiFmi"
-      ],
-      "settings": {
-        "classname": "",
-        "heading": "5 Reasons why everyone can’t get enough",
-        "text": "<p>The home facial your skincare routine is missing that saves you hundreds of dollars every month<\/p>"
       }
     },
     "trusted_qGtbnC": {
@@ -1227,10 +1219,10 @@
     "line_M99hQR",
     "product_box_b3WBQC",
     "icons_list_i7HDNT",
+    "reasons_khXbp7",
     "before_after_short_slider_pYmNqR",
     "videos_list_9mL4h8",
     "two_column_box_f67akQ",
-    "reasons_khXbp7",
     "trusted_qGtbnC",
     "results_3LEkF7",
     "liquid_9GnXBn",
