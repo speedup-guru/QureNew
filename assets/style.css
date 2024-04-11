@@ -29787,6 +29787,10 @@ p {
     .py-86 {
         padding: 86px 0 !important;
     }
+
+    .md-bg-yellow {
+        background-color: var(--clr-yellow) !important;
+    }
 }
 
 
@@ -30447,9 +30451,6 @@ p {
     max-width: 630px;
 }
 
-.mw-680 {
-    max-width: 680px;
-}
 
 .mw-970 {
     max-width: 970px;
