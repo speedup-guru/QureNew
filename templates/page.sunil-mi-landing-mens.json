@@ -588,6 +588,62 @@
         "video_label": "Click To Watch Review"
       }
     },
+    "videos_list_9mL4h8": {
+      "type": "videos-list",
+      "blocks": {
+        "wistia_Pp7fLK": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "5ovbu5cxcr"
+          }
+        },
+        "wistia_NNkDBD": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "ren04vix0l"
+          }
+        },
+        "video_pxN89b": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/videosQure_img9.webp",
+            "video": "shopify:\/\/files\/videos\/insta_3.mp4"
+          }
+        },
+        "video_PCt47J": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/videosQure_img10.webp",
+            "video": "shopify:\/\/files\/videos\/video.mp4"
+          }
+        },
+        "video_WCKqeb": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/videosQure_img11.webp",
+            "video": "shopify:\/\/files\/videos\/Snaptik.app_7172647262294723886.mp4"
+          }
+        },
+        "wistia_ctwd8i": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "albsf16uog"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_Pp7fLK",
+        "wistia_NNkDBD",
+        "video_pxN89b",
+        "video_PCt47J",
+        "video_WCKqeb",
+        "wistia_ctwd8i"
+      ],
+      "settings": {
+        "heading": "Confident skin starts here",
+        "classname": "section videosQure"
+      }
+    },
     "before_after_short_slider_pYmNqR": {
       "type": "before-after-short-slider",
       "blocks": {
@@ -631,63 +687,6 @@
         "heading": "Achieve your skincare goals",
         "text": "",
         "text_verified_customer": "Verified customer"
-      }
-    },
-    "videos_list_9mL4h8": {
-      "type": "videos-list",
-      "blocks": {
-        "video_6Mp4ny": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/videosQure_img7.webp",
-            "video": "shopify:\/\/files\/videos\/insta-video.mp4"
-          }
-        },
-        "wistia_NNkDBD": {
-          "type": "wistia",
-          "settings": {
-            "wistia_id": "ren04vix0l"
-          }
-        },
-        "video_pxN89b": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/videosQure_img9.webp",
-            "video": "shopify:\/\/files\/videos\/insta_3.mp4"
-          }
-        },
-        "video_PCt47J": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/videosQure_img10.webp",
-            "video": "shopify:\/\/files\/videos\/video.mp4"
-          }
-        },
-        "video_WCKqeb": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/videosQure_img11.webp",
-            "video": "shopify:\/\/files\/videos\/Snaptik.app_7172647262294723886.mp4"
-          }
-        },
-        "wistia_ctwd8i": {
-          "type": "wistia",
-          "settings": {
-            "wistia_id": "albsf16uog"
-          }
-        }
-      },
-      "block_order": [
-        "video_6Mp4ny",
-        "wistia_NNkDBD",
-        "video_pxN89b",
-        "video_PCt47J",
-        "video_WCKqeb",
-        "wistia_ctwd8i"
-      ],
-      "settings": {
-        "heading": "Confident skin starts here",
-        "classname": "section videosQure"
       }
     },
     "liquid_9GnXBn": {
@@ -1163,8 +1162,8 @@
     "results_3LEkF7",
     "two_column_box_f67akQ",
     "trusted_qGtbnC",
-    "before_after_short_slider_pYmNqR",
     "videos_list_9mL4h8",
+    "before_after_short_slider_pYmNqR",
     "liquid_9GnXBn",
     "compare_rGUQ9y",
     "guide_xibEe6",
