@@ -558,6 +558,16 @@
             "wistia_id": "g9copo2fmc",
             "text": "<p>\"These needles in Qure's micro-infusion system are sterile and for one-time use only, safe to use, have minimal down time, and is effective!\"<\/p><h6><strong>Dr Scott Walter, MD<\/strong> Board-Certified Dermatologist<\/h6>"
           }
+        },
+        "video_3xAB4m": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_noman.webp",
+            "video_url": "",
+            "video_label": "Watch Video",
+            "wistia_id": "nnizgkby6d",
+            "text": "<p>Qure’s Micro-Infusion system stamps your skin in a perpendicular fashion, allows skin care ingredients to effectively penetrate.\"<\/p><h6><strong>Dr Noman Mohamed, MD<\/strong> Board-Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -565,7 +575,8 @@
         "feedback_NVbkWM",
         "video_XF3pgt",
         "video_C6tFxe",
-        "video_tWi7k8"
+        "video_tWi7k8",
+        "video_3xAB4m"
       ],
       "settings": {
         "classname": "trusted_bl",
