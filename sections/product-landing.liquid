@@ -179,7 +179,13 @@
                 </div>
             </div>
             <div class="col-md-6  order-1 order-md-2">
-                <div class="refill_slider mw-mob-100 before-after-original-component">
+                <div class="refill_slider mw-mob-100 before-after-original-component"
+                    style="
+                        {% if product.handle == 'micro-infusion-targeted-patches' or product.handle == 'micro-infusion-targeted-patches-single' %}
+                            display: block !important;
+                        {% endif %}
+                    "
+                >
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
