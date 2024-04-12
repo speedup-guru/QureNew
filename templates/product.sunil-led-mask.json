@@ -381,6 +381,18 @@
             "code": ""
           }
         },
+        "result_pmCAWA": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Terri-LEd-review.png",
+            "heading": "Wish I had this technology years ago!",
+            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old! Photos below are after 6 weeks.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Terri P.",
+            "code": ""
+          }
+        },
         "result_FcTEnw": {
           "type": "result",
           "settings": {
@@ -419,6 +431,7 @@
         },
         "result_GAd3YG": {
           "type": "result",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/results_jess.webp",
             "heading": "So much smoother",
@@ -457,6 +470,7 @@
       "block_order": [
         "result_LwfFir",
         "result_73PVKN",
+        "result_pmCAWA",
         "result_FcTEnw",
         "result_bbhV3X",
         "result_Bwe94z",
