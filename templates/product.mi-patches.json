@@ -198,6 +198,18 @@
             "client": "Lisa N.",
             "code": ""
           }
+        },
+        "result_KeXNgc": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1664_1_a95ed456-8db4-4597-92d4-4ed6d2619f8a.png",
+            "heading": "Tired under eyes",
+            "text": "<p>“I always struggled with puffy eyes and dark circles. The results I got with these patches were pretty remarkable. The puffiness visibly decreased, and the dark circles lightened, giving my eyes a much-needed boost and I no longer look tired all the time.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/Mask_Group_4ee3aa5e-884e-46d9-9f46-87012f2ff9a6.png",
+            "text_country": "United Kingdom",
+            "client": "Damiano",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -205,7 +217,8 @@
         "result_pLViWD",
         "result_c3CAtk",
         "result_mF6ULQ",
-        "result_NLCf8y"
+        "result_NLCf8y",
+        "result_KeXNgc"
       ],
       "settings": {
         "classname": "mi_landing_result",
