@@ -573,7 +573,7 @@
         "content_WQADAK": {
           "type": "content",
           "settings": {
-            "text": "<h2>Clinical-grade LED, personalized to your skin.<\/h2><h3>See transformative results in less than 12 weeks. [image_mobile]<\/h3><p>Safe, <strong>clinically proven<\/strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results<\/strong>.<\/p><p>The <strong>same technology used in professional clinics<\/strong> by dermatologists, giving you <strong>in-clinic results conveniently from home,<\/strong> without the clinical price tag.<\/p><p>[details]<\/p>",
+            "text": "<h2>Clinical-grade LED, personalized to your skin.<\/h2><h3>See transformative results in less than 12 weeks. [image_mobile]<\/h3><p>Safe, <strong>clinically proven<\/strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results<\/strong>.<\/p><p>The <strong>same technology used in clinics<\/strong> by dermatologists, giving you <strong>transformative results conveniently from home,<\/strong> without the clinical price tag.<\/p><p>[details]<\/p>",
             "column_content": 0,
             "classname": "section_header text-start pb-0"
           }
