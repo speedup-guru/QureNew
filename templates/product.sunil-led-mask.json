@@ -369,18 +369,6 @@
             "code": ""
           }
         },
-        "result_bbhV3X": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_michelle.webp",
-            "heading": "Zero Maskne for 8 weeks",
-            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/america_f.webp",
-            "text_country": "United States",
-            "client": "Michelle S.",
-            "code": ""
-          }
-        },
         "result_73PVKN": {
           "type": "result",
           "settings": {
@@ -402,6 +390,18 @@
             "image_country": "shopify:\/\/shop_images\/america_f.webp",
             "text_country": "United States",
             "client": "Aimee",
+            "code": ""
+          }
+        },
+        "result_bbhV3X": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_michelle.webp",
+            "heading": "Zero Maskne for 8 weeks",
+            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Michelle S.",
             "code": ""
           }
         },
@@ -481,9 +481,9 @@
       },
       "block_order": [
         "result_LwfFir",
-        "result_bbhV3X",
         "result_73PVKN",
         "result_TkKNU8",
+        "result_bbhV3X",
         "result_pmCAWA",
         "result_Mgz3yd",
         "result_FcTEnw",
