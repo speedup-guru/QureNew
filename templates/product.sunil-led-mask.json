@@ -393,6 +393,18 @@
             "code": ""
           }
         },
+        "result_TkKNU8": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amiee_LED.png",
+            "heading": "Highly recommend!",
+            "text": "<p>“I have only been using it for a month. Prior to using this my skin was flaky & dry. My skin barrier has been severely damaged for the past 2 years where almost anything I use burns, but in 1 month this mask has lightened my hyperpigmentation considerably as well as helped to give a bit of a boost to the area under my eye (a delightful surprise). My friends have mentioned that my skin is definitely glowing. Highly recommend!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Aimee",
+            "code": ""
+          }
+        },
         "result_pmCAWA": {
           "type": "result",
           "settings": {
@@ -402,6 +414,18 @@
             "image_country": "shopify:\/\/shop_images\/america_f.webp",
             "text_country": "United States",
             "client": "Terri P.",
+            "code": ""
+          }
+        },
+        "result_Mgz3yd": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_bj_nardi.webp",
+            "heading": "Completely qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br\/>face. I’ve been using my Qure for 1 month now and it has completely<br\/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "text_country": "Canada",
+            "client": "BJ Nardi",
             "code": ""
           }
         },
@@ -453,30 +477,19 @@
             "client": "John P.",
             "code": ""
           }
-        },
-        "result_Mgz3yd": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_bj_nardi.webp",
-            "heading": "Completely qured my acne",
-            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br\/>face. I’ve been using my Qure for 1 month now and it has completely<br\/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
-            "text_country": "Canada",
-            "client": "BJ Nardi",
-            "code": ""
-          }
         }
       },
       "block_order": [
         "result_LwfFir",
         "result_bbhV3X",
         "result_73PVKN",
+        "result_TkKNU8",
         "result_pmCAWA",
+        "result_Mgz3yd",
         "result_FcTEnw",
         "result_Bwe94z",
         "result_GAd3YG",
-        "result_U4khQD",
-        "result_Mgz3yd"
+        "result_U4khQD"
       ],
       "settings": {
         "classname": "mi_landing_result",
