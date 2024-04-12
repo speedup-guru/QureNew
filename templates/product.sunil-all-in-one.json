@@ -612,7 +612,7 @@
           "type": "object",
           "settings": {
             "heading": "How and when do I use the Face Serum?",
-            "text": "<p>Apply a 1-2 pumps onto cleansed face (and neck, if applicable) with your fingertips, and rub in gently. Start with applying every 2nd night. for 2 weeks until your skin builds a tolerance. Then use daily, in the evening or morning. To maximize the effectiveness apply after Q-Rejuvalight Pro light therapy treatment.<\/p>",
+            "text": "<p>Apply a 1-2 pumps onto cleansed face (and neck, if applicable) with your fingertips, and rub in gently. Start with applying every 2nd night for 2 weeks until your skin builds a tolerance. Then use daily, in the evening or morning. To maximize the effectiveness apply after Q-Rejuvalight Pro light therapy treatment.<\/p>",
             "code": ""
           }
         },
@@ -677,6 +677,7 @@
       "settings": {
         "classname": "bg_yellow",
         "heading": "The answers to your questions",
+        "text": "",
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }
