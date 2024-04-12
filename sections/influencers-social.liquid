@@ -18,6 +18,7 @@
                                     {% if block.settings.image != blank %}
                                         <img class="img-fluid insta_img" src="{{ block.settings.image | img_url: '450x' }}" alt="">
                                     {% endif %}
+                                    
                                     <a href="{{ block.settings.button_url }}" class="insta_tag" target="_blank">
                                         {% if block.settings.image != blank %}
                                             <img src="{{ block.settings.image | img_url: '120x' }}" alt="">
