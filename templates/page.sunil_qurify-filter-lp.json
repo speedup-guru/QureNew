@@ -58,16 +58,16 @@
             "text_second": "30-Day Money-Back Guarantee"
           }
         },
-        "image_FKfQWU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify-product-1.webp"
-          }
-        },
         "image_emn73m": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/qurify-product-2.webp"
+          }
+        },
+        "image_FKfQWU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify-product-1.webp"
           }
         },
         "image_hHtigq": {
@@ -103,8 +103,8 @@
       },
       "block_order": [
         "button_n4tNPP",
-        "image_FKfQWU",
         "image_emn73m",
+        "image_FKfQWU",
         "image_hHtigq",
         "image_aUPJnc",
         "image_rnNUM8",
