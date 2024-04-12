@@ -1,5 +1,11 @@
 {% if page.handle != 'qure-microinfusion-offer' and page.handle != 'qure-micro-infusion-landing-page-affiliate' and page.handle != 'qure-microinfusion-offer-de' %}
-  <section class="ba-container">
+  <section class="ba-container"
+  style="
+    {% if product.handle == 'micro-infusion-targeted-patches' or product.handle == 'micro-infusion-targeted-patches-single' %}
+        display: none !important;
+    {% endif %}
+  "
+  >
     <div class="ba-container-wrapper">
       <div class="panel__container">
         {% comment %} data {% endcomment %}
