@@ -27,6 +27,14 @@
             "link_url": "https:\/\/www.qureskincare.com\/products\/neck-decolletage-led"
           }
         },
+        "slide_9wpXXH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
+            "link_label": "Targeted Patches",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
+          }
+        },
         "slide_aKL6kD": {
           "type": "slide",
           "settings": {
@@ -50,24 +58,16 @@
             "link_label": "Micro-Infusion Refill",
             "link_url": "https:\/\/www.qureskincare.com\/pages\/micro-infusion-refill"
           }
-        },
-        "slide_9wpXXH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
-            "link_label": "Targeted Patches",
-            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
-          }
         }
       },
       "block_order": [
         "slide_eMzaPx",
         "slide_qqmpCY",
         "slide_iQgE8e",
+        "slide_9wpXXH",
         "slide_aKL6kD",
         "slide_9qAien",
-        "slide_GReD48",
-        "slide_9wpXXH"
+        "slide_GReD48"
       ],
       "settings": {
       }
