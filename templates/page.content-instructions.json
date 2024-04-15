@@ -37,7 +37,7 @@
       "custom_css": [
         ".row {align-items: center !important;}",
         "picture img {width: auto; border-radius: 18px; padding-bottom: 0px !important;}",
-        "@media(max-width:767px) {picture {padding-bottom: 10px; }}"
+        "@media (max-width: 767px) {picture {padding-top: 10px; }}"
       ],
       "settings": {
         "classname": "meet_your section",
