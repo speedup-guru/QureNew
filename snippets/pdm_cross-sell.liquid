@@ -34,7 +34,7 @@
           </div>
           <div class="cross-sell__product-content">
             <div class="cross-sell__product-content__top">
-              <p class="cross-sell__product-content--title">
+              <p class="cross-sell__product-content--title {%  if item.product.value.id == 7802912866543%}small-text{% endif %}">
                 {{ item.name }}
               </p>
               <p class="cross-sell__product-content--subtitle">
