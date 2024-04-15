@@ -175,12 +175,6 @@
     "featuredin_zWyY3U": {
       "type": "featuredin",
       "blocks": {
-        "heading_HiEfBz": {
-          "type": "heading",
-          "settings": {
-            "heading": "FEATURED IN"
-          }
-        },
         "image_CMHyhX": {
           "type": "image",
           "settings": {
@@ -213,19 +207,18 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         },
         "image_k7aY9B": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         }
       },
       "block_order": [
-        "heading_HiEfBz",
         "image_CMHyhX",
         "image_CE8JHg",
         "image_DGN3zc",
@@ -250,15 +243,15 @@
         "content_DLpMJ6": {
           "type": "content",
           "settings": {
-            "text": "<h2>Unlock Dermatologist's<br\/>best kept secret<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
+            "text": "<p>[code]<\/p><p>[image_mobile]<\/p>",
             "column_content": 0,
-            "classname": "secret_grid_wrap ps-0 ps-md-5"
+            "classname": ""
           }
         },
         "code_ENeDfJ": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>1,000s of women are canceling their expensive facial appointments.\n                            <\/h6>\n                            <p>Estheticians blame this one at - home treatment.<\/p>\n                        <\/div>\n                    <\/div>"
+            "code": "<div class=\"secret_grid_wrap ps-0 ps-md-5\">\n                            <h2 class=\"title-lg paddingB\">Unlock Dermatologist's <br>best kept\n                                secret\n                            <\/h2>\n                            <div class=\"secret_grid mw-mob-100\">\n                                <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                <div class=\"secret_grid_info\">\n                                    <h6>1,000s of women are canceling their expensive facial appointments.\n                                    <\/h6>\n                                    <p>Estheticians blame this one at - home treatment.<\/p>\n                                <\/div>\n                            <\/div>\n\n                        <\/div>"
           }
         }
       },
@@ -268,8 +261,7 @@
         "code_ENeDfJ"
       ],
       "custom_css": [
-        ".row {align-items: center !important;}",
-        "@media (max-width: 768px) {h2 {display: none; } .section_header {max-width: unset !important; } .secret_grid_wrap {top: -50px !important; }}"
+
       ],
       "settings": {
         "classname": "imageText buzz_about",
@@ -319,7 +311,7 @@
         "content_XdKeWR": {
           "type": "content",
           "settings": {
-            "text": "<h2>Go to skin booster for confident<br\/>Make up free days[image_mobile] <\/h2><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/p><p><\/p><p>The best part? You can enjoy it for roughly a fraction of the cost in the comfort of your home, with little to <strong>no downtime!<\/strong><\/p>",
+            "text": "<h2>Go to skin booster for confident<br\/>Make up free days[image_mobile] <\/h2><p>Micro-Infusion – <strong>a skin treatment loved by celebrities<\/strong> – is finally accessible to the general public.<\/p><p>Now you can experience Micro-Infusion facial to <strong>help clear complexion, smooth texture, and get a ‘red carpet’ ready glow.<\/strong><\/p><p>The best part? You can enjoy it for roughly a <strong>fraction of the cost in the comfort of your home,<\/strong> with little to no downtime!<\/p>",
             "column_content": 0,
             "classname": "it_info p-0 ps-md-4"
           }

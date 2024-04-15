@@ -8,7 +8,7 @@
         "image": "shopify:\/\/shop_images\/creative_guide.webp",
         "image_mobile": "shopify:\/\/shop_images\/creative_guide_mob.webp",
         "button_label": "See How",
-        "button_url": "#shopify-section-template--17627198554351__videos_list_GftQWh"
+        "button_url": "#shopify-section-template--17627198816495__videos_list_GftQWh"
       }
     },
     "two_column_box_jD4Pj4": {
@@ -36,7 +36,8 @@
       ],
       "custom_css": [
         ".row {align-items: center !important;}",
-        "picture img {width: auto; border-radius: 18px; padding-bottom: 0px !important;}"
+        "picture img {width: auto; border-radius: 18px; padding-bottom: 0px !important;}",
+        "@media (max-width: 767px) {img {margin-top: 20px; }}"
       ],
       "settings": {
         "classname": "meet_your section",
