@@ -39,16 +39,19 @@
                     {% if block.type == 'product' %}
                         <div class="col-md-6 order-2 order-md-1">
                                 <div class="{% if images_count > 1 %}cg_desc pe-0 pe-md-3 pe-lg-5  pt-4 pt-md-0{% else %}mb_contents text-start pt-3 mw-486{% endif %}">
-                                {% if rating != blank %}
-                                    <div class="refill_review justify-content-start text-start mb-3">
-                                        {{ rating }}
-                                    </div>                                    
-                                {% endif %}
+
                                 {% if block.settings.heading != blank %}
                                 <div class="section_header p-0 mb-3">
                                     <h2 class="title-lg">{{ block.settings.heading }}</h2> 
                                 </div>
                                 {% endif %}
+
+                                {% if rating != blank %}
+                                    <div class="refill_review justify-content-start text-start mb-3">
+                                        {{ rating }}
+                                    </div>                                    
+                                {% endif %}
+
                                 {% if block.settings.text != blank %}
                                     {{ block.settings.text 
                                         |  replace: '<h2>', '<h2 class="title-lg">'
@@ -74,17 +77,26 @@
                 {% if images_count > 0 %}
                     <div class="col-md-6 order-1 order-md-2">
                         <div class="img_grid">
-                            {%- for block in section.blocks -%}
-                                {% if block.type == 'image' %}
-                                    {% if forloop.index == 2 %}
-                                        <div class="{% if images_count > 1 %}cg_main{% else %}it_img mw-mob-100{% endif %}">
-                                            <img src="{{ block.settings.image | img_url: '500x' }}" alt="" class="img-fluid">
-                                        </div>
+                            {% if images_count == 1 %}
+                                {%- for block in section.blocks -%}
+                                    {% if block.type == 'image' %}
+                                            <div class="it_img mw-mob-100">
+                                                <img src="{{ block.settings.image | img_url: '500x' }}" alt="" class="img-fluid">
+                                            </div>
                                     {% endif %}
-                                {% endif %}
-                            {%- endfor -%}
+                                {%- endfor -%}                                
+                            {% endif %}
 
                             {% if images_count > 1 %}
+                                {%- for block in section.blocks -%}
+                                    {% if block.type == 'image' %}
+                                        {% if forloop.index == 2 %}
+                                            <div class="cg_main">
+                                                <img src="{{ block.settings.image | img_url: '500x' }}" alt="" class="img-fluid">
+                                            </div>
+                                        {% endif %}
+                                    {% endif %}
+                                {%- endfor -%}
                                 <div class="cg_thumnail cg_thumnail_right">
                                     {%- for block in section.blocks -%}
                                         {% if block.type == 'image' %}

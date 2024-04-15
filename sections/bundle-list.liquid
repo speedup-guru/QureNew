@@ -128,7 +128,9 @@
                             <div class="bf-bundles__item-price-wrapper">
                                 <div class="bf-bundles__item-before">{{ product_price_compare }}</div>
                                 <div class="bf-bundles__item-after">{{ product_price  }}</div>
-                                <div class="bf-bundles__item-save">YOU SAVE <span>{{ product_price_discount  }}</span></div>
+                                {% if product.compare_at_price %}
+                                    <div class="bf-bundles__item-save">YOU SAVE <span>{{ product_price_discount  }}</span></div>
+                                {% endif %}
                             </div>
                             {% if product.available %}
                                 {% if block.settings.percent == 0 %}

@@ -158,15 +158,18 @@
         "video_GAjMEW"
       ],
       "settings": {
-        "heading": "Der schnellste, einfachste, bequemste Weg, um eine \"Red Carpet ready\" Haut zu bekommen",
-        "heading_mobile": "Der schnellste, einfachste, bequemste Weg, um eine \"Red Carpet ready\" Haut zu bekommen",
+        "heading": "Bereits 50.000 Menschen behandeln und transformieren ihre Haut von Zuhause aus",
+        "heading_mobile": "Bereits 50.000 Menschen behandeln und transformieren ihre Haut von Zuhause aus",
         "product": "",
         "product_images_offset": 0,
         "product_images_limit": 6,
         "product_button_label": "Produkt",
         "before_after_images_limit": 3,
         "before_after_button_label": "Echte Resultate",
-        "reserve": false
+        "reserve": false,
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist"
       }
     },
     "featuredin_zWyY3U": {
@@ -465,7 +468,8 @@
         "wistia_ctwd8i"
       ],
       "settings": {
-        "heading": "Selbstbewusste Haut beginnt hier"
+        "heading": "Selbstbewusste Haut beginnt hier",
+        "classname": "section videosQure"
       }
     },
     "two_column_box_f67akQ": {
@@ -1127,6 +1131,7 @@
       "settings": {
         "classname": "",
         "heading": "Die Antworten auf deine Fragen",
+        "text": "",
         "button_label": "Weitere Fragen anzeigen",
         "button_hide_label": "Zusätzliche Fragen ausblenden"
       }

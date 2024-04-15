@@ -11,8 +11,12 @@
     filter: grayscale(1);
 }
 
-.mi-patches-pdf .rightCircle {
-    width: 456px;
+.mi-patches-pdf .bs_content {
+    border-bottom: 1px solid #EDE7DD;
+}
+
+.mi-patches-pdf .beauty_skincare .bs_item h4 {
+    border-bottom: none;
 }
 
 .mi-patches-pdf .result_c_info .star_gp p {
@@ -65,6 +69,11 @@
 
     .mi-patches-pdf .skincare_right {
         padding: 10px;
+    }
+
+    .mi-patches-pdf .beauty_skincare .bs_item h4 {
+        max-width: 146px;
+        margin: 0 auto;
     }
 }
 

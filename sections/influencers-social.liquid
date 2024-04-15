@@ -18,12 +18,13 @@
                                     {% if block.settings.image != blank %}
                                         <img class="img-fluid insta_img" src="{{ block.settings.image | img_url: '450x' }}" alt="">
                                     {% endif %}
-                                    <div class="insta_tag">
+                                    
+                                    <a href="{{ block.settings.button_url }}" class="insta_tag" target="_blank">
                                         {% if block.settings.image != blank %}
                                             <img src="{{ block.settings.image | img_url: '120x' }}" alt="">
                                         {% endif %}
                                         {{ block.settings.text }}
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         {% endif %}
@@ -87,6 +88,11 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
                     }
                 ]
 		    },

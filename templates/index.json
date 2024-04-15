@@ -27,6 +27,14 @@
             "link_url": "https:\/\/www.qureskincare.com\/products\/neck-decolletage-led"
           }
         },
+        "slide_9wpXXH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
+            "link_label": "Micro-Infusion Targeted Patches",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
+          }
+        },
         "slide_aKL6kD": {
           "type": "slide",
           "settings": {
@@ -56,6 +64,7 @@
         "slide_eMzaPx",
         "slide_qqmpCY",
         "slide_iQgE8e",
+        "slide_9wpXXH",
         "slide_aKL6kD",
         "slide_9qAien",
         "slide_GReD48"
@@ -69,21 +78,19 @@
         "link_crBjL9": {
           "type": "link",
           "settings": {
-            "link_label": "Get FREE Face Serum",
-            "link_url": "shopify:\/\/collections\/best-sellers"
+            "link_label": "Get Youthful-Looking Skin",
+            "link_url": "shopify:\/\/products\/micro-infusion-targeted-patches-single"
           }
         }
       },
       "block_order": [
         "link_crBjL9"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "HAPPY INTERNATIONAL WOMEN'S DAY",
-        "subheading": "Together, we con-Qure self-confidence",
-        "text": "<p>*(worth $79) with orders over $150<\/p>",
-        "image": "shopify:\/\/shop_images\/womens_banner_desk.webp",
-        "image_mobile": "shopify:\/\/shop_images\/womens_banner_mob.webp"
+        "heading": "Treat stubborn areas & say goodbye to wrinkles",
+        "text": "<p>MICRO-INFUSION <strong>TARGETED PATCHES<\/strong><\/p>",
+        "image": "shopify:\/\/shop_images\/mipatches_banner_desk_2f72a060-b075-4c66-862b-b6fd364e277c.webp",
+        "image_mobile": "shopify:\/\/shop_images\/mipatches_banner_mob_64dd7ec2-8dec-48ad-a880-42a624bbfc04.webp"
       }
     },
     "main_banner_rJmjKt": {
@@ -100,10 +107,11 @@
       "block_order": [
         "link_6iQ8RV"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Clinic-level results from home - minus the ‘clinical’ costs.",
         "subheading": "smoother, brighter, healthier skin",
-        "text": "<p><strong>+ 40,745 <\/strong>customers feel more confident in their own skin.<\/p>",
+        "text": "<p><strong>50,000+ <\/strong>customers feel more confident in their own skin.<\/p>",
         "image": "shopify:\/\/shop_images\/homepage_banner_desk1.webp",
         "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob1.webp"
       }
@@ -329,12 +337,12 @@
             "text_after": "AFTER 4 WEEKS",
             "image_country": "shopify:\/\/shop_images\/canada_f.svg",
             "client": "BJ Nardi.",
-            "progress": 83,
-            "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 8 weeks.<\/p>",
+            "progress": 81,
+            "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 12 weeks.<\/p>",
             "text": "",
-            "feedback_text": "<p><strong>...9 out of 10 <\/strong>subjects said they                                                      saw <strong>a reduction in the skin acne after 2 weeks<\/strong>.<\/p>",
+            "feedback_text": "<p>...Acne count was significantly <strong>reduced by 81%<\/strong> after 12 weeks <\/p>",
             "popup_link_text": "Read More About Clinical Study",
-            "popup_content": "<p>Improvement ranging up to 83.3% of moderate acne lesion count. A downward shift in the Burton                                                                  grade was seen overall. No adverse effects were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted with male and female subjects with acne grades at baseline ranging from                                                                  Burton grade 1 to 5. Subjects were treated with LED therapy, alternating between the blue (415 nm) and  near-IR (830 nm) heads. No other treatment was allowed. Results were assessed and compared with the baseline values at 1, 4 and 8 weeks post-treatment.<\/p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/p>"
+            "popup_content": "<p><strong>After 4 weeks: <\/strong>The mean lesion count reduction was significant at 46%<\/p><p><strong>After 12 weeks: <\/strong>The mean lesion count reduction was also significant at 81%.<\/p><p>Patient and dermatologist assessments were similar. Severe acne showed a marginally better response than mild acne. Side effects were minimal and transitory. Comedones did not respond as well as inflammatory lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted on twenty-four subjects, Fitzpatrick skin types II-V, with mild to severe symmetric facial acne vulgaris. Subjects were treated, alternating between 415 nm blue light and 633 nm red light from a light-emitting diode (LED)-based therapy system. Acne was assessed at baseline and at weeks 2, 4, 8 and 12.<\/p><p><em>Reference: J Cosmet Laser Ther. 2006 Jun;8(2):71-5. doi: 10.1080\/14764170600735912.<\/em><\/p>"
           }
         },
         "slide_B4zrcd": {

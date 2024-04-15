@@ -153,7 +153,7 @@
         "slide_Und9N8": {
           "type": "slide",
           "settings": {
-            "heading": "Pigmentation & Inflammation",
+            "heading": "Dark Spots and Uneven Skin Tone",
             "product": "",
             "product_title": "",
             "product_url": "",
@@ -165,10 +165,10 @@
             "client": "Jess.",
             "progress": 91,
             "progress_text": "<p><strong>improved <\/strong>skin tone and enhanced smoothness<\/p>",
-            "text": "<ul><li><strong>Soothing, anti-inflammatory<\/strong> benefits reduces redness and inflammation.<\/li><li><strong>Fades pigmentation<\/strong> and <strong>dark spots<\/strong> for more radiant, even-toned skin.<\/li><li><strong>Heals<\/strong> and <strong>rejuvenates<\/strong> skin, helping with sun damage, hyperpigmentation.<\/li><\/ul>",
-            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion and collagen density.<\/strong><\/p>",
+            "text": "<ul><li><strong>Soothing, anti-inflammatory<\/strong> benefits reduces redness and inflammation.<\/li><li><strong>Fades appearance of<\/strong> <strong>dark spots<\/strong> for more radiant, even-toned skin.<\/li><li><strong>Heals<\/strong> and <strong>rejuvenates<\/strong> skin, helping with sun damage, hyperpigmentation.<\/li><\/ul>",
+            "feedback_text": "<p><strong>...91%<\/strong> of subjects have a<strong> brighter skin tone<\/strong> and <strong>82%<\/strong> reported <strong>enhanced smoothness<\/strong> of skin after 12 weeks<\/p>",
             "popup_link_text": "Read more about clinical Study",
-            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Thirteen subjects with sun damage signs followed a 5-week course of LED therapy with combined wavelengths of 633 and 830 nm and assessed the subject's perception of the treatment. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference<\/em><em><strong>:<\/strong><\/em><em> J Cosmet Dermatol. 2007 Sep;6(3):189-94. doi: 10.1111\/j.1473-2165.2007.00329.x.<\/em><\/p>"
           }
         },
         "slide_gNaBhW": {
@@ -185,11 +185,11 @@
             "image_country": "shopify:\/\/shop_images\/canada_f.svg",
             "client": "BJ Nardi.",
             "progress": 83,
-            "progress_text": "<p><strong>reduction<\/strong>of acne breakouts<\/p>",
+            "progress_text": "<p><strong>reduction <\/strong>of acne breakouts<\/p>",
             "text": "<ul><li><strong>Reduces acne<\/strong> and <strong>prevents future breakouts<\/strong> by eliminating bacteria.<\/li><li>Heals and fades post breakout marks for more <strong>even tone skin.<\/strong><\/li><li>Rapidly <strong>reduces inflammation<\/strong> and regulates oil production.<\/li><\/ul>",
-            "feedback_text": "<p><strong>...9 out of 10 <\/strong>subjects said they                                                      saw <strong>a reduction in the skin acne after 2 weeks<\/strong>.<\/p>",
+            "feedback_text": "<p>...Acne count was significantly <strong>reduced by 46%<\/strong> after 4 weeks <\/p>",
             "popup_link_text": "Read more about clinical Study",
-            "popup_content": "<p>Improvement ranging up to 83.3% of moderate acne lesion count. A downward shift in the Burton                                                                  grade was seen overall. No adverse effects were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted with male and female subjects with acne grades at baseline ranging from                                                                  Burton grade 1 to 5. Subjects were treated with LED therapy, alternating between the blue (415 nm) and  near-IR (830 nm) heads. No other treatment was allowed. Results were assessed and compared with the baseline values at 1, 4 and 8 weeks post-treatment.<\/p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/p>"
+            "popup_content": "<p><strong>After 4 weeks: <\/strong>The mean lesion count reduction was significant at 46%<\/p><p><strong>After 12 weeks: <\/strong>The mean lesion count reduction was also significant at 81%.<\/p><p>Patient and dermatologist assessments were similar. Severe acne showed a marginally better response than mild acne. Side effects were minimal and transitory. Comedones did not respond as well as inflammatory lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted on twenty-four subjects, Fitzpatrick skin types II-V, with mild to severe symmetric facial acne vulgaris. Subjects were treated, alternating between 415 nm blue light and 633 nm red light from a light-emitting diode (LED)-based therapy system. Acne was assessed at baseline and at weeks 2, 4, 8 and 12.<\/p><p><em>Reference: J Cosmet Laser Ther. 2006 Jun;8(2):71-5. doi: 10.1080\/14764170600735912.<\/em><\/p>"
           }
         }
       },
@@ -381,15 +381,39 @@
             "code": ""
           }
         },
-        "result_FcTEnw": {
+        "result_TkKNU8": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_anton.webp",
-            "heading": "Can’t go a day without it",
-            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.<\/p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
-            "client": "Anton M.",
+            "image": "shopify:\/\/shop_images\/Amiee_LED.png",
+            "heading": "Highly recommend!",
+            "text": "<p>“I have only been using it for a month. Prior to using this my skin was flaky & dry. My skin barrier has been severely damaged for the past 2 years where almost anything I use burns, but in 1 month this mask has lightened my hyperpigmentation considerably as well as helped to give a bit of a boost to the area under my eye (a delightful surprise). My friends have mentioned that my skin is definitely glowing. Highly recommend!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Aimee",
+            "code": ""
+          }
+        },
+        "result_pmCAWA": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Terri_P_results.png",
+            "heading": "Wish I had this technology years ago!",
+            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old! Photos below are after 6 weeks.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Terri P.",
+            "code": ""
+          }
+        },
+        "result_Mgz3yd": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_bj_nardi.webp",
+            "heading": "Completely qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br\/>face. I’ve been using my Qure for 1 month now and it has completely<br\/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "text_country": "Canada",
+            "client": "BJ Nardi",
             "code": ""
           }
         },
@@ -402,6 +426,18 @@
             "image_country": "shopify:\/\/shop_images\/america_f.webp",
             "text_country": "United States",
             "client": "Michelle S.",
+            "code": ""
+          }
+        },
+        "result_FcTEnw": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_anton.webp",
+            "heading": "Can’t go a day without it",
+            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.<\/p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Anton M.",
             "code": ""
           }
         },
@@ -419,6 +455,7 @@
         },
         "result_GAd3YG": {
           "type": "result",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/results_jess.webp",
             "heading": "So much smoother",
@@ -440,29 +477,19 @@
             "client": "John P.",
             "code": ""
           }
-        },
-        "result_Mgz3yd": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_bj_nardi.webp",
-            "heading": "Completely qured my acne",
-            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br\/>face. I’ve been using my Qure for 1 month now and it has completely<br\/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
-            "text_country": "Canada",
-            "client": "BJ Nardi",
-            "code": ""
-          }
         }
       },
       "block_order": [
         "result_LwfFir",
         "result_73PVKN",
-        "result_FcTEnw",
+        "result_TkKNU8",
+        "result_pmCAWA",
+        "result_Mgz3yd",
         "result_bbhV3X",
+        "result_FcTEnw",
         "result_Bwe94z",
         "result_GAd3YG",
-        "result_U4khQD",
-        "result_Mgz3yd"
+        "result_U4khQD"
       ],
       "settings": {
         "classname": "mi_landing_result",
@@ -573,7 +600,7 @@
         "content_WQADAK": {
           "type": "content",
           "settings": {
-            "text": "<h2>Clinical-grade LED, personalized to your skin.<\/h2><h3>See transformative results in less than 12 weeks. [image_mobile]<\/h3><p>Safe, <strong>clinically proven<\/strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results<\/strong>.<\/p><p>The <strong>same technology used in professional clinics<\/strong> by dermatologists, giving you <strong>in-clinic results conveniently from home,<\/strong> without the clinical price tag.<\/p><p>[details]<\/p>",
+            "text": "<h2>Clinical-grade LED, personalized to your skin.<\/h2><h3>See transformative results in less than 12 weeks. [image_mobile]<\/h3><p>Safe, <strong>clinically proven<\/strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results<\/strong>.<\/p><p>The <strong>same technology used in clinics<\/strong> by dermatologists, giving you <strong>transformative results conveniently from home,<\/strong> without the clinical price tag.<\/p><p>[details]<\/p>",
             "column_content": 0,
             "classname": "section_header text-start pb-0"
           }
@@ -589,7 +616,7 @@
           "type": "details",
           "settings": {
             "heading": "Treatment details",
-            "text": "<p><strong>USE:<\/strong> Use daily after cleansing, before topical skincare<\/p><p><strong>ANTI-AGING TREATMENT:<\/strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<\/p><p><strong>ANTI-BREAKOUT TREATMENT:<\/strong>415nm (Blue), 630nm (Red)<\/p><p><strong>CUSTOMIZED TREATMENT:<\/strong> Choose treatment modes for each facial area<\/p><p><strong>SKIN TYPE:<\/strong> Most suitable for Fitzpatrick Skin Types I-IV<\/p>"
+            "text": "<p><strong>USE:<\/strong> Use daily after cleansing, before topical skincare<\/p><p><strong>ANTI-AGING TREATMENT:<\/strong> 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<\/p><p><strong>ANTI-BREAKOUT TREATMENT: <\/strong>415nm (Blue), 630nm (Red)<\/p><p><strong>CUSTOMIZED TREATMENT:<\/strong> Choose treatment modes on 5 different facial areas<\/p><p><strong>SKIN TYPE:<\/strong> Most suitable for Fitzpatrick Skin Types I-IV<\/p>"
           }
         }
       },
@@ -914,6 +941,7 @@
       "settings": {
         "classname": "bg_yellow",
         "heading": "The answers to your questions",
+        "text": "",
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }

@@ -35,6 +35,23 @@
 
     {% include 'social-meta-tags' %}
 
+    {% if request.path == 'index' %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Qure Skincare",
+          "url": "https://www.qureskincare.com/",
+          "logo": "",
+          "sameAs": [
+            "https://www.facebook.com/Qureskincare/",
+            "https://www.instagram.com/qureskincare/",
+            "https://www.youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA"
+          ]
+        }
+      </script>
+    {% endif %}
+
     {% if settings.favicon != blank %}
         <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {% endif %}

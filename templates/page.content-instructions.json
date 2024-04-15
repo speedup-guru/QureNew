@@ -8,7 +8,7 @@
         "image": "shopify:\/\/shop_images\/creative_guide.webp",
         "image_mobile": "shopify:\/\/shop_images\/creative_guide_mob.webp",
         "button_label": "See How",
-        "button_url": "#shopify-section-template--17627198554351__videos_list_GftQWh"
+        "button_url": "#shopify-section-template--17627198816495__videos_list_GftQWh"
       }
     },
     "two_column_box_jD4Pj4": {
@@ -36,7 +36,8 @@
       ],
       "custom_css": [
         ".row {align-items: center !important;}",
-        "picture img {width: auto; border-radius: 18px; padding-bottom: 0px !important;}"
+        "picture img {width: auto; border-radius: 18px; padding-bottom: 0px !important;}",
+        "@media (max-width: 767px) {img {margin-top: 20px; }}"
       ],
       "settings": {
         "classname": "meet_your section",
@@ -52,7 +53,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_1.webp",
             "image_icon": "shopify:\/\/shop_images\/vanidiy.webp",
-            "text": "<p>@vanidiy<\/p>"
+            "text": "<p>@vanidiy<\/p>",
+            "button_url": "https:\/\/www.instagram.com\/vanidiy\/"
           }
         },
         "object_3KJEKN": {
@@ -60,7 +62,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_2.webp",
             "image_icon": "shopify:\/\/shop_images\/dr_skinsanity.webp",
-            "text": "<p>@dr_skinsanity<\/p>"
+            "text": "<p>@dr_skinsanity<\/p>",
+            "button_url": "https:\/\/www.instagram.com\/dr_skinsanity\/"
           }
         },
         "object_7HhUXV": {
@@ -68,7 +71,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_3.webp",
             "image_icon": "shopify:\/\/shop_images\/thisthatbeauty.webp",
-            "text": "<p>@thisthatbeauty<\/p>"
+            "text": "<p>@thisthatbeauty<\/p>",
+            "button_url": "https:\/\/www.instagram.com\/thisthatbeauty\/"
           }
         },
         "object_hzGdCR": {
@@ -76,7 +80,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_4.webp",
             "image_icon": "shopify:\/\/shop_images\/beautyjunkymonkey.webp",
-            "text": "<p>@beautyjunkymonkey<\/p>"
+            "text": "<p>@beautyjunkymonkey<\/p>",
+            "button_url": "https:\/\/www.tiktok.com\/@beautyjunkymonkey"
           }
         },
         "object_GGtRMC": {
@@ -84,7 +89,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_5.webp",
             "image_icon": "shopify:\/\/shop_images\/tseitsvincent.webp",
-            "text": "<p>@tseitsvincent<\/p>"
+            "text": "<p>@tseitsvincent<\/p>",
+            "button_url": "https:\/\/www.instagram.com\/tseitsvincent\/"
           }
         }
       },
