@@ -238,13 +238,6 @@
 
 
 /*   PDP: Before & After First Image  */
-.before-after-original-component{
-  display: block;
-}
-
-.ba-container{
-  display: none;
-}
 
 @keyframes fadeInBa {
   0% {
@@ -255,8 +248,6 @@
   }
 }
 
-body[data-before-after='b'],
-body[data-before-after='c']{
 
   body.product.sunil-q-urify{
     #info-product{
@@ -354,15 +345,11 @@ body[data-before-after='c']{
 
   }
 
-  .before-after-original-component {
-    display: none;
-  } 
-
-  .before-after-result-test{
+  .before-after-result{
     .container {
       max-width: 100%;
       .row {
-        .before-after-main {
+        .before-after-left {
           display: flex;
           justify-content: center;
         }
@@ -383,8 +370,8 @@ body[data-before-after='c']{
     .ba-container-wrapper{
       display: flex;
       flex-direction: column;
-      gap: 24px;
-      padding: 0 10px 10px 10px;
+      gap: 14px;
+      padding: 0 10px 2rem 10px;
       @media screen and (max-width: 768px){
         gap: 8px;   
       }
@@ -728,7 +715,7 @@ body[data-before-after='c']{
       /* end navigation */
     }
   }
-}
+
 
 /* end PDP: Before & After First Image  */
 

@@ -176,22 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const resultComponent = document.getElementById('info-result');
   const dermaComponent = document.getElementById('info-derma');
 
-  const productButton = document.getElementById('productButton');
-  const resultButton = document.getElementById('resultButton');
-  const dermaButton = document.getElementById('dermaButton');
-
-  if(document.querySelector('body').getAttribute('data-before-after') == 'b'){
-    resultComponent.classList.add('active');
-    resultButton.classList.add('active');
-  } else if(document.querySelector('body').getAttribute('data-before-after') == 'c'){
-    dermaComponent.classList.add('active');
-    dermaButton.classList.add('active');
-  } else {
-    productComponent.classList.add('active');
-    productButton.classList.add('active');
-  }
-  
-
   /**
    * Function to show a component and hide the others.
    * @param {HTMLElement} component The component to be shown.

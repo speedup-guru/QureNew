@@ -28,12 +28,20 @@
     {% assign product = section.settings.product %}
 {% endif %}
 
+{%liquid
+    assign new_design = false
+    if section.settings.selected_design == 'new'
+        assign new_design = true
+    elsif section.settings.selected_design == 'old'
+        assign new_design = false
+    endif
+%}
 
 <!-- -- main banner start -- -->
-<div class="refill_bl pt-0 tabSlider {% unless product.handle == 'micro-infusion-targeted-patches' or product.handle == 'micro-infusion-targeted-patches-single' %} before-after-result-test {% endunless %}"  id="page">
+<div class="refill_bl pt-0 tabSlider {% if new_design == true %} before-after-result {% endif %}" id="page">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1 before-after-main">
+            <div class="col-md-6 order-2 order-md-1 {% if new_design == true %} before-after-left {% endif %}">
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
@@ -180,13 +188,8 @@
             </div>
             {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "mobile" %}
             <div class="col-md-6  order-1 order-md-2">
-                <div class="refill_slider mw-mob-100 before-after-original-component"
-                    style="
-                        {% if product.handle == 'micro-infusion-targeted-patches' or product.handle == 'micro-infusion-targeted-patches-single' %}
-                            display: block !important;
-                        {% endif %}
-                    "
-                >
+                {% if new_design == false %}
+                    <div class="refill_slider mw-mob-100 before-after-original-component">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -399,9 +402,12 @@
                         </div>
                     {% endif %}
                 </div>
-              {% comment %} end component original {% endcomment %}
-              {% render 'endrock_before_after', data: section.blocks, dataSection: section.settings %}
-              {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "desktop" %}
+                {% endif %}  
+                {% comment %} end component original {% endcomment %}
+                {% if new_design == true %}
+                    {% render 'pdm_before_after', data: section.blocks, dataSection: section.settings %}
+                {% endif %}
+                {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "desktop" %}
             </div>
         </div>
     </div>
@@ -480,8 +486,29 @@
             },
             {
                 "type": "header",
-                "content": "Test section first image",
-                "info": "the section only affect the test before and after first image"
+                "content": "Select Design",
+                "info": "Select the design for the images section, default is old design"
+            },
+            {
+                "type": "select",
+                "id": "selected_design",
+                "label": "Design",
+                "default": "old",
+                "options": [
+                    {
+                        "value": "old",
+                        "label": "Old"
+                    },
+                    {
+                        "value": "new",
+                        "label": "New"
+                    }
+                ]
+            },
+            {
+                "type": "header",
+                "content": "New design buttons",
+                "info": "Change the text of the buttons for the new design"
             },
             {
                 "type": "text",
