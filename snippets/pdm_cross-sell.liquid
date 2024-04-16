@@ -1,0 +1,58 @@
+{% comment %}
+  Render Cross Sell Section with two products and a button to add to cart.
+  The products came from metaobject for default but you can change it to a custom collection or to a product list.
+
+  Accepts:
+  - cross-sell-products: {Object} - The products to be rendered (Metafield).
+  - visibility: {String} - The visibility of the section. It can be 'desktop' or 'mobile'.
+
+  Usage:
+  {% render 'cross-sell',
+    cross-sell-products:  product.metafields.custom.cross_sell.value,
+    visibility: "desktop"
+  %}
+
+
+{% endcomment %}
+{% if cross-sell-products != nil %}
+  
+  <div class="cross-sell hidden {% if visibility == "desktop" %}d-none d-lg-block{% else %}d-lg-none order-3{% endif %}">
+    <div class="cross-sell__title">
+      Upgrade your routine
+    </div>
+    <div class="cross-sell__products">
+      {% for item in cross-sell-products %}
+        <div class="cross-sell__product">
+          <div class="cross-sell__product-content-image">
+          <img 
+          class="cross-sell__product--image"
+          src="{{ item.product.value.featured_image | image_url: width: 96, height: 80 }}" 
+          alt="{{ item.name }}"
+          loading="lazy"
+          width="96"
+          height="80">
+          </div>
+          <div class="cross-sell__product-content">
+            <div class="cross-sell__product-content__top">
+              <p class="cross-sell__product-content--title {%  if item.product.value.id == 7802912866543%}small-text{% endif %}">
+                {{ item.name }}
+              </p>
+              <p class="cross-sell__product-content--subtitle">
+                {{ item.description }}
+              </p>
+            </div>
+            <div class="cross-sell__product-content__bottom">
+              <span class="cross-sell__product-content--price"> {{ item.product.value.price | money_without_trailing_zeros  }}</span>
+              <a 
+              href="{{ routes.cart_add_url }}?id={{ item.product.value.variants.first.id }}&quantity=1"
+              class="btn btn-primary buy_btn event_btn cross-sell__product-content--button"
+              data-ajax-cart-request-button>
+                Add
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

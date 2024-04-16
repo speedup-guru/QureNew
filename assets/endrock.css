@@ -1423,3 +1423,109 @@ body[data-variantc-upsell-carousel] {
 }
 /* End Side Cart: Upsell Carousel A/B/C by samu3le*/
 
+/* CROSS SELL */
+  .cross-sell {
+    max-width: 550px;
+    margin: 0 auto 40px;
+  }
+  .cross-sell .cross-sell__products {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 520px;
+  }
+  .cross-sell .cross-sell__title {
+    font-family: "Canela Web", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+  .cross-sell .cross-sell__product {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    border-radius: 16px;
+    border: 1px solid #C8E6DC;
+    background: #E7F3EE;
+    overflow: hidden;
+  }
+  .cross-sell .cross-sell__product-content-image {
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    align-self: auto;
+    min-width: 128px;
+    display: flex;
+  }
+
+  .cross-sell .cross-sell__product-content {
+    flex: 1 1 auto;
+    align-self: auto;
+    padding: 8px 24px 8px 16px;
+    align-content: center;
+    min-height: 100px;
+  }
+
+  .cross-sell .cross-sell__product-content__top {
+    margin-bottom: 6px;
+  }
+  .cross-sell .cross-sell__product-content--title {
+    color: #000;
+    font-family: "Canela Web";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .cross-sell .cross-sell__product-content--subtitle {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .cross-sell .cross-sell__product-content__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .cross-sell .cross-sell__product-content--price {
+    color: #000;
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .cross-sell .cross-sell__product-content--button {
+    display: flex;
+    padding: 8px 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 12px;
+  }
+
+  @media screen and (max-width:767px) {
+    .cross-sell .cross-sell__title {
+      font-size: 20px;
+    }
+    .cross-sell .cross-sell__product-content--title.small-text {
+      font-size: 14px;
+    }
+  }
+/* CROSS SELL END */
