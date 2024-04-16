@@ -345,20 +345,6 @@
 
   }
 
-  .before-after-result{
-    .container {
-      max-width: 100%;
-      .row {
-        .before-after-left {
-          display: flex;
-          justify-content: center;
-        }
-      }
-    }
-  }
-
-
-
   /* main container */
 
   .ba-container{

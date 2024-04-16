@@ -38,10 +38,10 @@
 %}
 
 <!-- -- main banner start -- -->
-<div class="refill_bl pt-0 tabSlider {% if new_design == true %} before-after-result {% endif %}" id="page">
+<div class="refill_bl pt-0 tabSlider" id="page">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1 {% if new_design == true %} before-after-left {% endif %}">
+            <div class="col-md-6 order-2 order-md-1">
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
@@ -189,7 +189,7 @@
             {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "mobile" %}
             <div class="col-md-6  order-1 order-md-2">
                 {% if new_design == false %}
-                    <div class="refill_slider mw-mob-100 before-after-original-component">
+                    <div class="refill_slider mw-mob-100">
                     <div class="refill_s_tab_content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"

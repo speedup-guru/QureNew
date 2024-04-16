@@ -17,7 +17,7 @@
 
 <div class="swiper swiper-products">
   <div class="swiper-wrapper">
-    {% for media in product.media limit: limitNew offset: offsetNew %}
+    {% for media in product.media limit: limitNew, offset: offsetNew %}
       {% if media.media_type == 'video' %}
         {% if media.sources[1].url != blank %}
           {% assign video_source_url = media.sources[1].url %}
