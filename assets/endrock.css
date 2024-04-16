@@ -347,13 +347,13 @@
 
   /* main container */
 
-  .ba-container{
+  .before-after-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .ba-container-wrapper{
+    .before-after-container-wrapper{
       display: flex;
       flex-direction: column;
       gap: 14px;
