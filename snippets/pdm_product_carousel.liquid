@@ -7,13 +7,17 @@
     assign offsetNew = 3
   else
     assign limitNew = section.settings.product_images_limit
-    assign offsetNew = 1
+    if section.settings.product_images_offset > 0
+      assign offsetNew = section.settings.product_images_offset
+    else
+      assign offsetNew = 1
+    endif
   endif
 %}
 
 <div class="swiper swiper-products">
   <div class="swiper-wrapper">
-    {% for media in product.media limit: limitNew , offset: offsetNew %}
+    {% for media in product.media limit: limitNew, offset: offsetNew %}
       {% if media.media_type == 'video' %}
         {% if media.sources[1].url != blank %}
           {% assign video_source_url = media.sources[1].url %}
@@ -63,6 +67,6 @@
         </div>
       {% endif %}
     {% endfor %}
-    </div>
-    <div class="swiper-pagination-products"></div>
+  </div>
+  <div class="swiper-pagination-products"></div>
 </div>
