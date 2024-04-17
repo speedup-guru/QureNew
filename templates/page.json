@@ -2,9 +2,6 @@
   "sections": {
     "main": {
       "type": "page",
-      "custom_css": [
-        ".subscriptions_header_2 {display: none;}"
-      ],
       "settings": {
       }
     },
