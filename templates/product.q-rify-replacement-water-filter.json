@@ -6,21 +6,21 @@
         "rating_bUyHqg": {
           "type": "rating",
           "settings": {
-            "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>90% of customers don’t go back to tap water</p>"
+            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
+            "text": "<p>90% of customers don’t go back to tap water<\/p>"
           }
         },
         "list_wfDQn3": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Q-urify Water Filter replacement cartridge for 3 month supply of purified tap water.</li><li>Reduces known skin irritants like chlorine, calcium and magnesium from tap water.</li><li>Helps to keep redness, dryness, breakouts and irritation at bay.</li></ul>"
+            "text": "<ul><li>Q-urify Water Filter replacement cartridge for 3 month supply of purified tap water.<\/li><li>Reduces known skin irritants like chlorine, calcium and magnesium from tap water.<\/li><li>Helps to keep redness, dryness, breakouts and irritation at bay.<\/li><\/ul>"
           }
         },
         "subscribe_qrzhkY": {
           "type": "subscribe",
           "settings": {
             "heading": "Subscribe & save $10",
-            "text": "<p>Get a new replacement filter delivered every 90 days for just $35. Skip or cancel at any time.</p>",
+            "text": "<p>Get a new replacement filter delivered every 90 days for just $35. Skip or cancel at any time.<\/p>",
             "plan": "4562682095",
             "discount": 1000
           }
@@ -28,9 +28,9 @@
         "before_and_after_zYCwCN": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify://shop_images/water_filter_replacement_1_x2_cf7796b4-1bdf-4cc7-9eba-a63789ffeb7c.png",
+            "image_new_section_1": "shopify:\/\/shop_images\/water_filter_replacement_1_x2_cf7796b4-1bdf-4cc7-9eba-a63789ffeb7c.png",
             "image_new_section_text_1": "",
-            "image_new_section_2": "shopify://shop_images/B_A_-_D_ec2b58f0-5975-46e7-86d3-998d562d7751.png",
+            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D_ec2b58f0-5975-46e7-86d3-998d562d7751.png",
             "image_new_section_text_2": "",
             "image_new_section_text_3": "",
             "image_new_section_text_4": "",
@@ -41,7 +41,7 @@
         "video_before_and_after_6QD74Y": {
           "type": "video_before_and_after",
           "settings": {
-            "video_new_section": "shopify://files/videos/Water Filter Refill Edit.mov"
+            "video_new_section": "shopify:\/\/files\/videos\/Water Filter Refill Edit.mov"
           }
         }
       },
@@ -74,42 +74,42 @@
         "image_wrAVmV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/vogue.svg",
+            "image": "shopify:\/\/shop_images\/vogue.svg",
             "mobile_hide": false
           }
         },
         "image_nATyMp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/elle.svg",
+            "image": "shopify:\/\/shop_images\/elle.svg",
             "mobile_hide": false
           }
         },
         "image_4gJm4V": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/glamour.svg",
+            "image": "shopify:\/\/shop_images\/glamour.svg",
             "mobile_hide": false
           }
         },
         "image_xeEbwh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/grazia.svg",
+            "image": "shopify:\/\/shop_images\/grazia.svg",
             "mobile_hide": false
           }
         },
         "image_tm6kLW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/cosmopolitan.svg",
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
             "mobile_hide": true
           }
         },
         "image_d8yjQp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
             "mobile_hide": true
           }
         }
@@ -133,8 +133,8 @@
           "type": "heading",
           "settings": {
             "heading": "Once you get Q-urified water on tap, you’ll never go back",
-            "text": "<p>Filtered water for your skin is at its best when used consistently on the daily – so you’ll want to replace your filter about once every three months. Once you get used to your skin feeling cleaner, softer and more refreshed, you’ll never want to go back to tap water again.</p>",
-            "code": "<div class=\"unique_c_list mt-3\">\n                    <ul>\n                        <li><span><img src=\"{{ 'correct_circle.svg' | asset_url }}\" alt=\"\"></span>90-day\n                            supply</li>\n                        <li><span><img src=\"{{ 'correct_circle.svg' | asset_url }}\" alt=\"\"></span>Easy\n                            replacement </li>\n                        <li><span><img src=\"{{ 'correct_circle.svg' | asset_url }}\" alt=\"\"></span>Dermatologist tested</li>\n                    </ul>\n                </div>",
+            "text": "<p>Filtered water for your skin is at its best when used consistently on the daily – so you’ll want to replace your filter about once every three months. Once you get used to your skin feeling cleaner, softer and more refreshed, you’ll never want to go back to tap water again.<\/p>",
+            "code": "<div class=\"unique_c_list mt-3\">\n                    <ul>\n                        <li><span><img src=\"{{ 'correct_circle.svg' | asset_url }}\" alt=\"\"><\/span>90-day\n                            supply<\/li>\n                        <li><span><img src=\"{{ 'correct_circle.svg' | asset_url }}\" alt=\"\"><\/span>Easy\n                            replacement <\/li>\n                        <li><span><img src=\"{{ 'correct_circle.svg' | asset_url }}\" alt=\"\"><\/span>Dermatologist tested<\/li>\n                    <\/ul>\n                <\/div>",
             "classname": "section_header text-start text-md-center ms-0 m-md-auto mw-800"
           }
         }
@@ -154,10 +154,10 @@
         "result_tFkrLe": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_kim_l.webp",
+            "image": "shopify:\/\/shop_images\/results_kim_l.webp",
             "heading": "Source of my unclear skin",
-            "text": "<p>\"I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
-            "image_country": "shopify://shop_images/australia_f.webp",
+            "text": "<p>\"I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
             "text_country": "Australia",
             "client": "Kim L.",
             "code": ""
@@ -166,10 +166,10 @@
         "result_VCYX3B": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_hanna.webp",
+            "image": "shopify:\/\/shop_images\/results_hanna.webp",
             "heading": "Hydrated more than ever",
-            "text": "<p>\"I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used.<br/>I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”</p>",
-            "image_country": "shopify://shop_images/england_f.webp",
+            "text": "<p>\"I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used.<br\/>I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/england_f.webp",
             "text_country": "United Kingdom",
             "client": "Hanna",
             "code": ""
@@ -178,10 +178,10 @@
         "result_3c4GB4": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_josie.webp",
+            "image": "shopify:\/\/shop_images\/results_josie.webp",
             "heading": "Reduced acne scars",
-            "text": "<p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily, and it’s reduced my acne scars, making my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
-            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text": "<p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily, and it’s reduced my acne scars, making my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Josie",
             "code": ""
@@ -190,10 +190,10 @@
         "result_KBPXnT": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_stephany.webp",
+            "image": "shopify:\/\/shop_images\/results_stephany.webp",
             "heading": "Less irritation",
-            "text": "<p>\"A friend told me about the nasties in water and how much it can be affect our skin. I did some research and decided to invest into a filter since I used water everyday to clean my face. I’m so glad I tried Qure water filter because just after a week I’ve seen my redness go down and my skin look a less irritated and smoother. I’ll definitely be refiling and continue to use this daily!”</p>",
-            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text": "<p>\"A friend told me about the nasties in water and how much it can be affect our skin. I did some research and decided to invest into a filter since I used water everyday to clean my face. I’m so glad I tried Qure water filter because just after a week I’ve seen my redness go down and my skin look a less irritated and smoother. I’ll definitely be refiling and continue to use this daily!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Stephany",
             "code": ""
@@ -218,7 +218,7 @@
         "content_xWqQMa": {
           "type": "content",
           "settings": {
-            "text": "<h2>The proactive way to care for your skin</h2><p>Studies have shown that residue from sodium lauryl sulfate (SLS), a harsh detergent found in many everyday cleansers, causes skin irritation and skin barrier impairment. Two contaminants found in hard water – calcium and magnesium – affect the skin’s ability to wash away all those SLS deposits.</p><p>[image_mobile]</p><p>Your Q-urify Water Filter works to remove up to 99.9% of skin irritants like calcium, magnesium and chlorine from your faucet water, reducing SLS deposits on the skin and protecting it against further damage. You get the purest clean yet – maximizing skincare effectiveness, making daily use the most proactive way to care for your skin! </p>",
+            "text": "<h2>The proactive way to care for your skin<\/h2><p>Studies have shown that residue from sodium lauryl sulfate (SLS), a harsh detergent found in many everyday cleansers, causes skin irritation and skin barrier impairment. Two contaminants found in hard water – calcium and magnesium – affect the skin’s ability to wash away all those SLS deposits.<\/p><p>[image_mobile]<\/p><p>Your Q-urify Water Filter works to remove up to 99.9% of skin irritants like calcium, magnesium and chlorine from your faucet water, reducing SLS deposits on the skin and protecting it against further damage. You get the purest clean yet – maximizing skincare effectiveness, making daily use the most proactive way to care for your skin! <\/p>",
             "column_content": 0,
             "classname": "proactive_info"
           }
@@ -226,7 +226,7 @@
         "image_zjgpzW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/replacement_proactive.webp",
+            "image": "shopify:\/\/shop_images\/replacement_proactive.webp",
             "classname": "mw-mob-100"
           }
         }
@@ -247,36 +247,36 @@
         "icon_tnXfUY": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/replacement_proactive_1.svg",
-            "text": "<p><strong>Improveskin barrier</strong></p>"
+            "image": "shopify:\/\/shop_images\/replacement_proactive_1.svg",
+            "text": "<p><strong>Improveskin barrier<\/strong><\/p>"
           }
         },
         "icon_6UN8Tz": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/replacement_proactive_2.svg",
-            "text": "<p><strong>Helps to reducebreakouts</strong></p>"
+            "image": "shopify:\/\/shop_images\/replacement_proactive_2.svg",
+            "text": "<p><strong>Helps to reducebreakouts<\/strong><\/p>"
           }
         },
         "icon_rqPwcH": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/replacement_proactive_3.svg",
-            "text": "<p><strong>Increase skinhydration</strong></p>"
+            "image": "shopify:\/\/shop_images\/replacement_proactive_3.svg",
+            "text": "<p><strong>Increase skinhydration<\/strong><\/p>"
           }
         },
         "icon_CJJTXB": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/replacement_proactive_4.svg",
-            "text": "<p><strong>Enhance skin radiance</strong></p>"
+            "image": "shopify:\/\/shop_images\/replacement_proactive_4.svg",
+            "text": "<p><strong>Enhance skin radiance<\/strong><\/p>"
           }
         },
         "icon_HjVxjN": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/replacement_proactive_5.svg",
-            "text": "<p><strong>Improve redness & irritation</strong></p>"
+            "image": "shopify:\/\/shop_images\/replacement_proactive_5.svg",
+            "text": "<p><strong>Improve redness & irritation<\/strong><\/p>"
           }
         }
       },
@@ -305,24 +305,24 @@
         "object_ei6mHR": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/replacement_cartridge1.webp",
-            "text": "<p>Detach the Filter tube cover from the Filter base. Remove the filter cartridge and dispose of it safely.</p>",
+            "image": "shopify:\/\/shop_images\/replacement_cartridge1.webp",
+            "text": "<p>Detach the Filter tube cover from the Filter base. Remove the filter cartridge and dispose of it safely.<\/p>",
             "step": "STEP"
           }
         },
         "object_AWdVNb": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/replacement_cartridge2.webp",
-            "text": "<p>Open the new Q-urify Replacement Filter cartridge and remove the seal.</p>",
+            "image": "shopify:\/\/shop_images\/replacement_cartridge2.webp",
+            "text": "<p>Open the new Q-urify Replacement Filter cartridge and remove the seal.<\/p>",
             "step": "STEP"
           }
         },
         "object_rcnmj6": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/replacement_cartridge3.webp",
-            "text": "<p>Press and slightly twist the replacement filter cartridge into the Filter base. Once it’s secured, place the Filter tube cover back.</p>",
+            "image": "shopify:\/\/shop_images\/replacement_cartridge3.webp",
+            "text": "<p>Press and slightly twist the replacement filter cartridge into the Filter base. Once it’s secured, place the Filter tube cover back.<\/p>",
             "step": "STEP"
           }
         }
@@ -336,7 +336,7 @@
       "settings": {
         "classname": "",
         "heading": "How to replace your filter cartridge",
-        "text": "<p>You change the filter cartridge for the water you drink frequently, so change the one for your skin too. Easy replacement as 1-2-3.</p>"
+        "text": "<p>You change the filter cartridge for the water you drink frequently, so change the one for your skin too. Easy replacement as 1-2-3.<\/p>"
       }
     },
     "faq_3GchLg": {
@@ -346,7 +346,7 @@
           "type": "object",
           "settings": {
             "heading": "How does tap water harm my skin?",
-            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.</li></ul>",
+            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:<\/p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.<\/li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.<\/li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.<\/li><\/ul>",
             "code": ""
           }
         },
@@ -354,7 +354,7 @@
           "type": "object",
           "settings": {
             "heading": "What does it filter in the water?",
-            "text": "<p>Q-urify water filter uses both physical and chemical filtration components to remove up to 99% of contaminants, as small as 0.2 microns, known as skin irritants that make your tap water “hard” – like calcium, magnesium and chlorine.</p>",
+            "text": "<p>Q-urify water filter uses both physical and chemical filtration components to remove up to 99% of contaminants, as small as 0.2 microns, known as skin irritants that make your tap water “hard” – like calcium, magnesium and chlorine.<\/p>",
             "code": ""
           }
         },
@@ -362,7 +362,7 @@
           "type": "object",
           "settings": {
             "heading": "What skin types can benefit from Q-urify Water Filter?",
-            "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. </p>",
+            "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. <\/p>",
             "code": ""
           }
         },
@@ -370,7 +370,7 @@
           "type": "object",
           "settings": {
             "heading": "How often do I need to replace my filter?",
-            "text": "<p>With daily use, your Q-urify water filter needs to be replaced at least once every three months for your skin to look and feel its best. Once it gets past the 3 month mark, your filter starts to lose its efficacy. We wash our face everyday so make sure you are looking after your skin.</p>",
+            "text": "<p>With daily use, your Q-urify water filter needs to be replaced at least once every three months for your skin to look and feel its best. Once it gets past the 3 month mark, your filter starts to lose its efficacy. We wash our face everyday so make sure you are looking after your skin.<\/p>",
             "code": ""
           }
         },
@@ -378,7 +378,7 @@
           "type": "object",
           "settings": {
             "heading": "Where can I buy replacement filters?",
-            "text": "<p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer subscription plans for your convenience and ease.</p>",
+            "text": "<p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer subscription plans for your convenience and ease.<\/p>",
             "code": ""
           }
         },
@@ -386,7 +386,7 @@
           "type": "object",
           "settings": {
             "heading": "Can I turn OFF the filtered water?",
-            "text": "<p>Yes! The Q-urify Water Filter has the option of switching off filtered water. You can turn on and on the purified water by switching to this option on the right side. </p>",
+            "text": "<p>Yes! The Q-urify Water Filter has the option of switching off filtered water. You can turn on and on the purified water by switching to this option on the right side. <\/p>",
             "code": ""
           }
         },
@@ -394,7 +394,7 @@
           "type": "object",
           "settings": {
             "heading": "What’s the difference between ‘hard water’ and ‘soft water’?",
-            "text": "<p>Hard water is water that contains a high quantity of dissolved minerals (like calcium and magnesium). Where soft water has been treated, so that the only ion remaining is sodium. When rainwater falls, it is naturally soft. </p><p>However, as water makes its way through the ground and into our waterways, it picks up minerals like chalk, lime, calcium and magnesium and becomes hard water. Hard water is to blame for dishes with spots, dingy looking clothes, and residue and soap scums in bathrooms. Soap and cleansers are also less effective with hard water due to its reaction to the magnesium and calcium, which makes the lather not as rich and bubbly and leaves hair feeling sticky and dull.</p>",
+            "text": "<p>Hard water is water that contains a high quantity of dissolved minerals (like calcium and magnesium). Where soft water has been treated, so that the only ion remaining is sodium. When rainwater falls, it is naturally soft. <\/p><p>However, as water makes its way through the ground and into our waterways, it picks up minerals like chalk, lime, calcium and magnesium and becomes hard water. Hard water is to blame for dishes with spots, dingy looking clothes, and residue and soap scums in bathrooms. Soap and cleansers are also less effective with hard water due to its reaction to the magnesium and calcium, which makes the lather not as rich and bubbly and leaves hair feeling sticky and dull.<\/p>",
             "code": ""
           }
         }
