@@ -147,6 +147,7 @@
         "before_after_images_limit": 4,
         "before_after_button_label": "Before & After",
         "reserve": false,
+        "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
         "text_label_real_result_3": "Dermatologist"
