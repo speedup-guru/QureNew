@@ -54,13 +54,13 @@
                     </div>
                     <ul class="faq-menu">
 
-                        <li class="faq-menu__item{% if request.path == '/pages/faqs' %} active{% endif %}">
+                        <li class="faq-menu__item{% if request.path == '/pages/faqs' or request.path == '/pages/faq-orders-shipping' %} active{% endif %}">
                             <div class="faq-menu__item-img-wrapper">
                                 <img src="{{ 'faq-shipping.svg' | asset_url }}" alt="">
                                 <img src="{{ 'faq-shippingGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#shipping" class="faq-menu__url">
+                            <a href="/pages/faq-orders-shipping" class="faq-menu__url">
                                 Shipping &amp; Orders
                             </a>
                         </li>
@@ -71,7 +71,7 @@
                                 <img src="{{ 'faq-ledGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#qrejuvalight" class="faq-menu__url ">
+                            <a href="/pages/q-rejuvalight-pro-facewear" class="faq-menu__url ">
                                 Q-Rejuvalight Pro Facewear
                             </a>
                         </li>
@@ -82,7 +82,7 @@
                                 <img src="{{ 'faq-microGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#microinfusion" class="faq-menu__url ">
+                            <a href="/pages/faq-microinfusion" class="faq-menu__url ">
                                 Micro-Infusion System
                             </a>
                         </li>
@@ -93,7 +93,7 @@
                                 <img src="{{ 'faq-returnsGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#returns" class="faq-menu__url ">
+                            <a href="/pages/returns-refunds" class="faq-menu__url ">
                                 Returns &amp; Exchanges
                             </a>
                         </li>
@@ -104,7 +104,7 @@
                                 <img src="{{ 'faq-billingGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#billing" class="faq-menu__url ">
+                            <a href="/pages/billing-payments-1" class="faq-menu__url ">
                                 Billing &amp; Payments
                             </a>
                         </li>
@@ -115,18 +115,18 @@
                                 <img src="{{ 'faq-warrantyGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#warranty" class="faq-menu__url ">
+                            <a href="/pages/warranty" class="faq-menu__url ">
                                 Warranty
                             </a>
                         </li>
 
-                        <li class="faq-menu__item">
+                        <li class="faq-menu__item{% if request.path == '/pages/app-page' %} active{% endif %}">
                             <div class="faq-menu__item-img-wrapper">
                                 <img src="{{ 'faq-qureskincare.svg' | asset_url }}" alt="">
                                 <img src="{{ 'faq-qureskincareGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#skincareapp" class="faq-menu__url ">
+                            <a href="/pages/app-page" class="faq-menu__url ">
                                 Qure Skincare App
                             </a>
                         </li>
@@ -137,7 +137,7 @@
                                 <img src="{{ 'faq-troubleshotGreen.svg' | asset_url }}" alt="">
                             </div>
 
-                            <a href="#Troubleshooting" class="faq-menu__url ">
+                            <a href="/pages/faq-troubleshooting" class="faq-menu__url ">
                                 Troubleshooting
                             </a>
                         </li>
@@ -145,7 +145,11 @@
                     </ul>
                 </div>
             </div>
-            {{ page.content }}
+            <div class="col-md-8 faq__texts">
+                <div id="faq_page-custom-faq">
+                    {{ page.content }}
+                </div>
+            </div>
         </div>
     </div>
 </div>
