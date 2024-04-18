@@ -30435,7 +30435,7 @@ p {
 }
 
 .mw-546 {
-    max-width: 546px;
+    max-width: 546px !important;
 }
 
 .mw-590 {
@@ -31500,7 +31500,7 @@ li.dropdown.mega-dropdown.new-menu ul.dropdown-menu-hp.mega-dropdown-menu.row {
         padding: 8px 25px;
         border: 1px solid #000;
         display: grid;
-        grid-template-columns: repeat(3, 90px);
+        grid-template-columns: repeat(3, 96px);
         justify-content: center;
     }
 
