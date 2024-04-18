@@ -131,7 +131,7 @@
                                         <div class="subscriptionType" data-subscription="no-subscription">
                                             <div class="noSubscription">
                                                 <div class="noSubscriptionText">
-                                                    No subscription
+                                                    One time purchase
                                                 </div>
                                                 <div class="noSubscriptionPrice">
                                                     {{ product.price | money_without_trailing_zeros }}
@@ -219,15 +219,14 @@
                             </div>
                         {% endif %}
 
-                        <div class="shipping shipping_bg bg-transparent">
+                        <div class="shipping shipping_bg bg-transparent mt-2">
                             <div class="s_bx">
                                 <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
-
-                                <p class="d-none d-md-block">{{ section.settings.underbutton_text_left }}</p>
+                                <p>{{ section.settings.underbutton_text_left }}</p>
                             </div>
                             <div class="s_bx">
                                 <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-                                <p class="d-none d-md-block">{{ section.settings.underbutton_text_right }}</p>
+                                <p>{{ section.settings.underbutton_text_right }}</p>
                             </div>
                         </div>
                     </div>

@@ -649,6 +649,13 @@
       "blocks": {
       }
     },
+    "videos": {
+      "name": "Videos",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "videos-list": {
       "name": "Videos list",
       "settings": {

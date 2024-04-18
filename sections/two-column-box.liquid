@@ -19,20 +19,22 @@
             {%- assign image_count = image_count | plus: 1 -%}
             {% capture image %}
                 {% if block.settings.image != blank %}
-                    <picture>
-                        <source media="(min-width:1920px)" srcset="{{ block.settings.image | img_url: 'master' }}">
-                        <source media="(min-width:1600px)" srcset="{{ block.settings.image | img_url: '1600x' }}">
-                        <source media="(min-width:1100px)" srcset="{{ block.settings.image | img_url: '1100x' }}">
-                        {% if block.settings.image_mobile %}
-                            <source media="(min-width:720px)" srcset="{{ block.settings.image_mobile | img_url: '720x' }}">
-                            <source media="(min-width:540px)" srcset="{{ block.settings.image_mobile | img_url: '540x' }}">
-                        {% endif %}
-                        {% if block.settings.image_mobile %}
-                            <img class="img-fluid pb-3" src="{{ block.settings.image_mobile | img_url: '540x' }}" alt="{{ block.settings.image_mobile.alt | escape }}" width="125" height="173">
-                        {% else %}
-                            <img class="img-fluid pb-3" src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" width="125" height="173">
-                        {% endif %}
-                    </picture>
+                    <div class="{{ block.settings.classname }}">
+                        <picture>
+                            <source media="(min-width:1920px)" srcset="{{ block.settings.image | img_url: 'master' }}">
+                            <source media="(min-width:1600px)" srcset="{{ block.settings.image | img_url: '1600x' }}">
+                            <source media="(min-width:1100px)" srcset="{{ block.settings.image | img_url: '1100x' }}">
+                            {% if block.settings.image_mobile %}
+                                <source media="(min-width:720px)" srcset="{{ block.settings.image_mobile | img_url: '720x' }}">
+                                <source media="(min-width:540px)" srcset="{{ block.settings.image_mobile | img_url: '540x' }}">
+                            {% endif %}
+                            {% if block.settings.image_mobile %}
+                                <img class="img-fluid pb-3" src="{{ block.settings.image_mobile | img_url: '540x' }}" alt="{{ block.settings.image_mobile.alt | escape }}" width="125" height="173">
+                            {% else %}
+                                <img class="img-fluid pb-3" src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" width="125" height="173">
+                            {% endif %}
+                        </picture>
+                    </div>
                 {% endif %} 
             {% endcapture %}
         {% when 'content' %}
@@ -78,37 +80,11 @@
 {% endif %}
 
 {% if image != blank %}
-    {% capture image_desktop %}<div class="col-12 col-md-{{ section.settings.column_image }} d-none d-md-block"><div class="pt-md-0">{{ image }}</div></div>{% endcapture %}
     {% capture image_mobile %}<div class="d-block d-md-none">{{ image }}</div>{% endcapture %}
 {% endif %}
 
 {% capture only_desktop_start %}<div class="d-none d-md-block"><p>{% endcapture %}
 {% capture only_desktop_end %}</p></div>{% endcapture %}
-
-{% capture only_mobile_start %}<div class="d-block d-md-none"><p>{% endcapture %}
-{% capture only_mobile_end %}</p></div>{% endcapture %}
-
-{% comment %} <style>
-.section_header p:empty {
-    display: none;
-}
-</style> {% endcomment %}
-
-<style>
-    /* specical for desktop */
-    @media only screen and (min-width:769px){
-        p:empty {
-            height: 26px;
-        } 
-    }
-    /* special for mobile */
-    @media (max-width: 768px) {
-        p:empty {
-            height: 16px;
-        }
-    }
-</style>
-
 
 <div class="{{ section.settings.classname }}">
     <div class="container">
@@ -134,19 +110,20 @@
                 {%- for block in section.blocks -%}
                     {% case block.type %}
                         {% when 'image' %}
+                                {% comment %} custom view only for desktop image {% endcomment %}
                             {% if image_custom != blank %}
-                                {{ image_desktop }}
+                                <div class="col-12 col-md-{{ section.settings.column_image }} d-none d-md-block">
+                                    {{ image }}
+                                </div>
                             {% else %}
+                                {% comment %} default view for desktop-mobile images {% endcomment %}
                                 <div class="col-12 col-md-{{ section.settings.column_image }}">
-                                    <div class="{{ block.settings.classname }}">
-                                        {{ image }}
-                                    </div>
+                                    {{ image }}
                                 </div>
                             {% endif %}
                         {% when 'content' %}
                             <div class="col-12 col-md-{% if block.settings.column_content > 0 %}{{ block.settings.column_content }}{% else %}{{ section.settings.column_content }}{% endif %}">
                                 <div class="{{ block.settings.classname }}">
-                                    <!--<div class="section_header"> -->
                                         {% if block.settings.text != blank %}
                                             {{ block.settings.text 
                                                 |  replace: '<h2>', '<h2 class="title-lg mb-4">' 
@@ -171,13 +148,8 @@
                                                 |  replace: '[only_desktop_start]', only_desktop_start
                                                 |  replace: '<p>[only_desktop_end]</p>', only_desktop_end
                                                 |  replace: '[only_desktop_end]', only_desktop_end
-                                                |  replace: '<p>[only_mobile_start]</p>', only_mobile_start
-                                                |  replace: '[only_mobile_start]', only_mobile_start
-                                                |  replace: '<p>[only_mobile_end]</p>', only_mobile_end
-                                                |  replace: '[only_mobile_end]', only_mobile_end
                                             }} 
                                         {% endif %}
-                                    <!-- </div> -->
                                 </div>
                             </div>
                     {% endcase %}
