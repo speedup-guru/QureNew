@@ -141,7 +141,7 @@
       <div class="swiper-pagination"></div>
     {% elsif neckProduct %}
       <div class="swiper-wrapper mask">
-  {% comment %} upsell carousell test Start {% endcomment %}
+        {% comment %} upsell carousell test Start {% endcomment %}
           {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
         <div class="swiper-slide upsell_main variant_v">
           <div class="upsell_image">
@@ -220,7 +220,7 @@
             </a>
           </div>
         </div>
-{% comment %} upsell carousell test End {% endcomment %}
+      {% comment %} upsell carousell test End {% endcomment %}
 
       </div>
       <div class="swiper-button-next"></div>
@@ -344,7 +344,7 @@
             </div>
           </div>
           {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
-          {% comment %} <div class="swiper-slide upsell_main variant_v">
+          <div class="swiper-slide upsell_main variant_v">
             <div class="upsell_image">
               <div class="upsell_product">
                 <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" width="70">
@@ -361,9 +361,13 @@
               </div>
               <a href="{{ routes.cart_add_url }}?id={{ product_patches_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                 Add +
+                <div class="upsell_amt">
+                  <span>{{ product_patches_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                  <i class="money">{{ product_patches_micro_infusion.price | money_without_trailing_zeros  }}</i>
+                </div>
               </a>
             </div>
-          </div> {% endcomment %}
+          </div>
           
         {% comment %} upsell carousell test End {% endcomment %}
       </div> 
@@ -423,7 +427,7 @@
           </div>
         </div>
         {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
-        {% comment %} <div class="swiper-slide upsell_main variant_v">
+        <div class="swiper-slide upsell_main variant_v">
           <div class="upsell_image">
             <div class="upsell_product">
               <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" width="70">
@@ -440,9 +444,13 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_patches_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_patches_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_patches_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
-        </div> {% endcomment %}
+        </div>
         {% comment %} upsell carousell test End {% endcomment %}
       </div>
         <div class="swiper-button-next"></div>
@@ -587,7 +595,7 @@
           </div>
         </div>
         {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
-        {% comment %} <div class="swiper-slide upsell_main variant_v">
+        <div class="swiper-slide upsell_main variant_v">
           <div class="upsell_image">
             <div class="upsell_product">
               <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" width="70">
@@ -604,9 +612,13 @@
             </div>
             <a href="{{ routes.cart_add_url }}?id={{ product_patches_micro_infusion.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
               Add +
+              <div class="upsell_amt">
+                <span>{{ product_patches_micro_infusion.compare_at_price | money_without_trailing_zeros  }}</span>
+                <i class="money">{{ product_patches_micro_infusion.price | money_without_trailing_zeros  }}</i>
+              </div>
             </a>
           </div>
-        </div> {% endcomment %}
+        </div>
         {% comment %} upsell carousell test End {% endcomment %}
       </div>
       <div class="swiper-button-next"></div>
