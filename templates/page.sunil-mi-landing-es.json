@@ -558,6 +558,9 @@
         "icon_hQTWT9",
         "icon_6qiFmi"
       ],
+      "custom_css": [
+        ".section_header {max-width: 100% !important}"
+      ],
       "settings": {
         "classname": "reasons section bg-yellow",
         "heading": "5 Razones por las que todos no pueden obtener suficiente",
