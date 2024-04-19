@@ -801,22 +801,22 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty_micro.webp",
-            "heading": "Qure Micro-Infusion System",
+            "heading": "Sistema de microinfusión de Qure",
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>Stanzen <strong>schädigt die Haut nicht<\/strong> übermäßig.<\/li><li><strong>Geringe Ausfallzeiten<\/strong> und schnelle Erholung der Haut.<\/li><li>Neue Nadelköpfe bieten scharfe, gerade Nadeln für jede Behandlung - entwickelt für eine bessere Wirksamkeit.<\/li><li>Einwegköpfe minimieren das Risiko von Infektionen\/Reizungen.<\/li><li>Gibt das Serum direkt an die Haut ab, um seine <strong>Aufnahme und Ergebnisse zu verbessern.<\/strong><\/li><\/ul>"
+            "list": "<ul><li>El estampado no daña <strong>excesivamente la piel<\/strong><\/li><li><strong>Acción casi inmediata<\/strong> y <strong>rapida regeneración<\/strong> de la piel<\/li><li>Las nuevas cabezas de aguja las hacen afiladas y rectas para cada tratamiento - diseñadas para una <strong>mejor eficacia<\/strong><\/li><li>Las cabezas desechables <strong>minimizan el riesgo<\/strong> de infección\/irritación<\/li><li>Inyecta el suero directamente en la piel para ayudar <strong>a aumentar la absorción<\/strong> y los resultados<\/li><\/ul>"
           }
         },
         "object_THMRbY": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty_needle.webp",
-            "heading": "Andere At-Home Needling-Geräte",
+            "heading": "Otras decisiones sobre agujas en casa",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>Rollen kann die <strong>Haut unnötig schädigen<\/strong><\/li><li><strong>Langsamere Erholung<\/strong> und längere Heilungszeit<\/li><li>Nadeln stumpfen nach mehrfachem Gebrauch ab und können unnötige Hautschäden verursachen, was die Wirksamkeit verringert.<\/li><li>Infektions- und Reizungsrisiko steigt, wenn nicht gründlich desinfiziert wird.<\/li><li><strong>Weniger effektive Aufnahme<\/strong> des Serums bei topischer Anwendung.<\/li><\/ul>"
+            "list": "<ul><li>El rodillo puede causar <strong>daño innecesario<\/strong> de la piel<\/li><li><strong>Recuperación más lenta<\/strong> y tiempo de curación más largo<\/li><li>Las agujas se vuelven romas después de varios usos y crean <strong>trauma innecesario<\/strong> en la piel que puede <strong>disminuir la eficacia<\/strong><\/li><li>La infección\/irritación aumenta si no se desinfecta bien<\/li><li>Absorción <strong>menos efectiva del suero<\/strong> al aplicarse tópicamente<\/li><\/ul>"
           }
         }
       },
@@ -826,8 +826,8 @@
       ],
       "settings": {
         "classname": "beauty_skincare section",
-        "heading": "Wirksamer und sicherer als andere Microneedling-Systeme",
-        "text": "<p>Im Gegensatz zu den Nadelroller-Geräten für zu Hause erfordert die Micro-Infusion wenig bis<strong> gar keine Ausfallzeiten,<\/strong> ist praktisch <strong>schmerzfrei <\/strong>und minimiert das Risiko von Infektionen und Reizungen.<\/p>"
+        "heading": "Por lo general, más efectivo y seguro que otros dispositivos domésticos de agujas",
+        "text": "<p>A diferencia de los dispositivos domésticos de rodillo con aguja, la microinfusión apenas requiere<strong>tiempo para actuar,<\/strong>es prácticamente<strong>indolora y minimiza el riesgo de infección<\/strong>o irritación.<\/p>"
       }
     },
     "guide_xibEe6": {
