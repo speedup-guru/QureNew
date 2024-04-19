@@ -1095,8 +1095,8 @@
         "object_yjEtVU": {
           "type": "object",
           "settings": {
-            "heading": "Welche Länge haben die Nadeln?",
-            "text": "<p>Die Nadelköpfe des Mikroinfusionssystems von Qure haben eine Länge von 0,5 mm für \"epidermales Needling\", das die Aufnahme von Hautpflegestoffen und die Hautstruktur verbessern soll.<\/p>",
+            "heading": "¿Cuál es la longitud de las agujas?",
+            "text": "<p>Las cabezas de aguja del sistema de microinfusión de Qure tienen 0,5 mm de longitud para la \"punción epidérmica\", que está diseñada para mejorar la absorción de los ingredientes para el cuidado de la piel y la textura de la piel.<\/p>",
             "code": ""
           }
         },
