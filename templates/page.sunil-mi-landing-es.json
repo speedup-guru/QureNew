@@ -598,6 +598,16 @@
             "text": "<p>\"¡El Sistema de Qure es lo más cercano que puedes tener a llevar a tu esteticista a casa contigo!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Cirujano plástico certificado<\/h6>"
           }
         },
+        "video_PECKPL": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_mona.webp",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"Te verás con un aspecto luminoso y húmedo después de usarlo, pero en un par de días tu piel realmente se ve bastante increíble.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Medicina interna<\/h6>"
+          }
+        },
         "video_C6tFxe": {
           "type": "video",
           "settings": {
@@ -607,16 +617,6 @@
             "wistia_id": "",
             "text": "<p>\"El sistema de microinfusión Qure va un paso más allá, ya que no sólo aumenta la hidratación, sino que también suministra factores de regenerativos justo donde se necesitan\".<\/p><h6><strong>Dr Dylan Greeney<\/strong> Dermatólogo certificado<\/h6>"
           }
-        },
-        "video_PECKPL": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_mona.webp",
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
-            "video_label": "Ver vídeo",
-            "wistia_id": "",
-            "text": "<p>\"Man sieht eine Art strahlenden Teint nach der Anwendung, und innerhalb von ein paar Tagen sieht die Haut wirklich fantastisch aus.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Innere Medizin<\/h6>"
-          }
         }
       },
       "block_order": [
@@ -624,8 +624,8 @@
         "feedback_NVbkWM",
         "video_pEM9DL",
         "video_XF3pgt",
-        "video_C6tFxe",
-        "video_PECKPL"
+        "video_PECKPL",
+        "video_C6tFxe"
       ],
       "settings": {
         "classname": "trusted_bl",
