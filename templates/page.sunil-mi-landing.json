@@ -80,7 +80,7 @@
           "type": "media",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp-product-2.webp",
-            "wistia_id": ""
+            "wistia_id": "jg8c1a3bee"
           }
         },
         "media_BGGnJg": {
@@ -167,6 +167,7 @@
         "before_after_images_limit": 3,
         "before_after_button_label": "Before & After",
         "reserve": false,
+        "selected_design": "old",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
         "text_label_real_result_3": "Dermatologist"
