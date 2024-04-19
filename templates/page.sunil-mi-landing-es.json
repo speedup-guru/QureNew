@@ -556,9 +556,9 @@
         "icon_6qiFmi"
       ],
       "settings": {
-        "classname": "reasons section",
-        "heading": "Warum niemand genug bekommt",
-        "text": "<p>Die Gesichtsbehandlung für zu Hause, die deiner Hautpflegeroutine fehlt und dir jeden Monat Hunderte von Euros spart<\/p>"
+        "classname": "reasons section bg-yellow",
+        "heading": "5 Razones por las que todos no pueden obtener suficiente",
+        "text": "<p>El tratamiento facial doméstico que falta en tu rutina de cuidado de la piel y que te ahorra cientos de dólares cada mes<\/p>"
       }
     },
     "trusted_qGtbnC": {
