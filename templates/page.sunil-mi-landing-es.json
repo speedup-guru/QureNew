@@ -978,7 +978,7 @@
         "button_dAehhB": {
           "type": "button",
           "settings": {
-            "button_label": "Behandlungsprotokoll",
+            "button_label": "Ver Protocolo de Tratamiento",
             "button_url": "shopify:\/\/pages\/microinfusion-safety-guide"
           }
         }
