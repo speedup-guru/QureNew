@@ -852,8 +852,8 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step2.webp",
-            "text": "<p>Lege das Gerät für 1–2 Minuten auf den Kopf. Wasche in dieser Zeit dein Gesicht und achte darauf, dass deine Hände sauber sind.<\/p>",
-            "step": "SCHRITT"
+            "text": "<p>Deje el dispositivo boca abajo durante 1-2 minutos. Durante este tiempo, lave su cara y asegúrese de que sus manos estén limpias.<\/p>",
+            "step": "PASO"
           }
         },
         "object_QnrbNQ": {
