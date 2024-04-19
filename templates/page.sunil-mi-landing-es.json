@@ -163,14 +163,14 @@
         "product": "",
         "product_images_offset": 0,
         "product_images_limit": 6,
-        "product_button_label": "Produkt",
+        "product_button_label": "Producto",
         "before_after_images_limit": 3,
-        "before_after_button_label": "Echte Resultate",
+        "before_after_button_label": "Vea los resultados reales",
         "reserve": false,
         "selected_design": "old",
-        "text_label_real_result_1": "Product",
-        "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Dermatologist"
+        "text_label_real_result_1": "Producto",
+        "text_label_real_result_2": "Vea los resultados reales",
+        "text_label_real_result_3": "Dermatólogo"
       }
     },
     "featuredin_zWyY3U": {
