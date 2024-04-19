@@ -827,6 +827,9 @@
         "object_drRUDz",
         "object_THMRbY"
       ],
+      "custom_css": [
+        ".section_header {max-width: 800px !important;}"
+      ],
       "settings": {
         "classname": "beauty_skincare section",
         "heading": "Por lo general, más efectivo y seguro que otros dispositivos domésticos de agujas",
