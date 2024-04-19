@@ -410,6 +410,9 @@
         "slide_YFJAPx",
         "slide_qcrUGK"
       ],
+      "custom_css": [
+        ".section_header {max-width: 100% !important;}"
+      ],
       "settings": {
         "heading": "Logra tus objetivos de cuidado de la piel",
         "text": "",
