@@ -868,8 +868,8 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step4.webp",
-            "text": "<p>Beginnend in der Mitte des Gesichts nach außen arbeiten, um das gesamte Gesicht zu bedecken. Das restliche Serum aus dem System nehmen, auf Gesicht und Hals auftragen und über Nacht einwirken lassen.<\/p>",
-            "step": "SCHRITT"
+            "text": "<p>Comience en el centro de la cara y trabaje hacia afuera para cubrirla completamente. Tome cualquier suero restante del dispositivo y aplíquelo en su cara y cuello para dejarlo actuar durante la noche.<\/p>",
+            "step": "PASO"
           }
         },
         "object_tMTm7n": {
