@@ -860,8 +860,8 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step3.webp",
-            "text": "<p>Sobald das Serum genügend Zeit hatte, in die Nadeln einzudringen, kann der Deckel abgenommen werden und die Mikroinfusion beginnen!<\/p>",
-            "step": "SCHRITT"
+            "text": "<p>Una vez que el suero ha tenido suficiente tiempo para penetrar en las agujas, ¡puede quitar la tapa y comenzar la microinfusión!<\/p>",
+            "step": "PASO"
           }
         },
         "object_THFDbC": {
