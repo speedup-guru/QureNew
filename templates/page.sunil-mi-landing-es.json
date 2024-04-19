@@ -876,8 +876,8 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step5_f85c08be-1937-47f5-81e4-084b716d6352.webp",
-            "text": "<p>Nach Abschluss der Behandlung wird die Kappe auf den Nadelkopf gesetzt. Anschließend die Kappe abdrehen und sicher entsorgen. Einen neuen sterilen Nadelkopf öffnen und für die nächste Behandlung in das Gerät einsetzen.<\/p>",
-            "step": "SCHRITT"
+            "text": "<p>Una vez completado el tratamiento, vuelva a colocar la tapa en la cabeza de la aguja. Gire la tapa para quitarla y deséchela de forma segura. Abra una nueva cabeza de aguja estéril y colóquela en el dispositivo listo para su próximo tratamiento.<\/p>",
+            "step": "PASO"
           }
         }
       },
