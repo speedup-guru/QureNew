@@ -53,7 +53,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify:\/\/shop_images\/star-half_fill.svg",
-            "text": "<p>4.8\/5 von 43.893 Kunden<\/p>"
+            "text": "<p>4,8\/5 Basado en 43.893 usuarios<\/p>"
           }
         },
         "button_L9q6wE": {
@@ -158,8 +158,8 @@
         "video_GAjMEW"
       ],
       "settings": {
-        "heading": "Bereits 50.000 Menschen behandeln und transformieren ihre Haut von Zuhause aus",
-        "heading_mobile": "Bereits 50.000 Menschen behandeln und transformieren ihre Haut von Zuhause aus",
+        "heading": "Más de 50,000 personas están revolucionando su cuidado de la piel desde casa.",
+        "heading_mobile": "Más de 50,000 personas están revolucionando su cuidado de la piel desde casa.",
         "product": "",
         "product_images_offset": 0,
         "product_images_limit": 6,
@@ -167,6 +167,7 @@
         "before_after_images_limit": 3,
         "before_after_button_label": "Echte Resultate",
         "reserve": false,
+        "selected_design": "old",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
         "text_label_real_result_3": "Dermatologist"
