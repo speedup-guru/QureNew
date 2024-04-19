@@ -7,7 +7,7 @@
           "type": "button",
           "settings": {
             "button_label": "Join now",
-            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm",
+            "button_url": "#shopify-section-template--17601769439471__liquid_ebhnbf",
             "classname": "btn_white m-0"
           }
         }
@@ -175,7 +175,7 @@
             "heading": "Skincare Experts",
             "image": "shopify:\/\/shop_images\/affiliate_s_m_1.webp",
             "button_label": "Join now",
-            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+            "button_url": "#shopify-section-template--17601769439471__liquid_ebhnbf"
           }
         },
         "object_TpBnqU": {
@@ -184,7 +184,7 @@
             "heading": "Influencers",
             "image": "shopify:\/\/shop_images\/affiliate_s_m_2.webp",
             "button_label": "Join now",
-            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+            "button_url": "#shopify-section-template--17601769439471__liquid_ebhnbf"
           }
         },
         "object_yzhdrf": {
@@ -193,7 +193,7 @@
             "heading": "Dermatologists",
             "image": "shopify:\/\/shop_images\/affiliate_s_m_3.webp",
             "button_label": "Join now",
-            "button_url": "https:\/\/qure.postaffiliatepro.com\/affiliates\/signup.php#SignupForm"
+            "button_url": "#shopify-section-template--17601769439471__liquid_ebhnbf"
           }
         }
       },
@@ -213,7 +213,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_1.webp",
             "image_icon": "shopify:\/\/shop_images\/amandalee_hill.webp",
-            "text": "<p><strong>@amandalee_hill<\/strong><\/p>"
+            "text": "<p><strong>@amandalee_hill<\/strong><\/p>",
+            "button_url": ""
           }
         },
         "object_nMxKWh": {
@@ -221,7 +222,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_2.webp",
             "image_icon": "shopify:\/\/shop_images\/vanidiy.webp",
-            "text": "<p><strong>@vanidiy<\/strong><\/p>"
+            "text": "<p><strong>@vanidiy<\/strong><\/p>",
+            "button_url": ""
           }
         },
         "object_FNCfTr": {
@@ -229,7 +231,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_3.webp",
             "image_icon": "shopify:\/\/shop_images\/dr_skinsanity.webp",
-            "text": "<p>@<strong>dr_skinsanity<\/strong><\/p>"
+            "text": "<p>@<strong>dr_skinsanity<\/strong><\/p>",
+            "button_url": ""
           }
         },
         "object_TV4pBP": {
@@ -237,7 +240,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_4.webp",
             "image_icon": "shopify:\/\/shop_images\/skin_so_fabulous.webp",
-            "text": "<p><strong>@skin_so_fabulous<\/strong><\/p>"
+            "text": "<p><strong>@skin_so_fabulous<\/strong><\/p>",
+            "button_url": ""
           }
         },
         "object_PQez6x": {
@@ -245,7 +249,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/affiliate_insta_5.webp",
             "image_icon": "shopify:\/\/shop_images\/hilarykennedy.webp",
-            "text": "<p>@<strong>hilarykennedy<\/strong><\/p>"
+            "text": "<p>@<strong>hilarykennedy<\/strong><\/p>",
+            "button_url": ""
           }
         },
         "button_PxHQH3": {
