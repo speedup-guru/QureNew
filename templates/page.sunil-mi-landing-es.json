@@ -244,7 +244,7 @@
         "code_ENeDfJ": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>1.000 Frauen sagen ihre teuren Kosmetiktermine ab.\n                            <\/h6>\n                            <p>Kosmetikerinnen machen dafür eine Behandlung für zu Hause verantwortlich.<\/p>\n                        <\/div>\n                    <\/div>"
+            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>Miles de mujeres están cancelando sus costosos tratamientos faciales.<\/h6>\n                            <p>Los esteticistas culpan a este tratamiento doméstico.<\/p>\n                        <\/div>\n                    <\/div>"
           }
         }
       },
