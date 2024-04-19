@@ -286,7 +286,7 @@
         "image_VkznhH"
       ],
       "settings": {
-        "classname": "technology_light pt-30",
+        "classname": "imageText section",
         "column_image": 6,
         "column_content": 6
       }
