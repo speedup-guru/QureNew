@@ -1039,8 +1039,8 @@
         "object_b4xRkF": {
           "type": "object",
           "settings": {
-            "heading": "Wie viele Behandlungen kann ich mit einem Micro-Infusion-Gerät durchführen?",
-            "text": "<p>Jeder Nadelkopf ist nur einmal pro Behandlung zu verwenden und nach jeder Behandlung zu entsorgen. Dies minimiert das Risiko einer Infektion und einer unnötigen Schädigung der Haut. Verwende 1 volle Serum-Ampulle pro Behandlung.<\/p>",
+            "heading": "¿Cuántos tratamientos puedo realizar con un dispositivo Micro-Infusión?",
+            "text": "<p>Cada cabezal de aguja debe utilizarse una vez por tratamiento y desecharse después de cada uno. De este modo se minimiza el riesgo de infección y de daños innecesarios en la piel. Utiliza 1 ampolla de suero completa por tratamiento.<\/p>",
             "code": ""
           }
         },
