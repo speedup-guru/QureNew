@@ -1127,7 +1127,7 @@
         "button_F67Uh4": {
           "type": "button",
           "settings": {
-            "button_label": "Hast du weitere Fragen? Schreib uns",
+            "button_label": "¿Tienes otras dudas? Pregúntanos",
             "button_url": "shopify:\/\/pages\/faqs"
           }
         }
