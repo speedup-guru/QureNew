@@ -608,6 +608,16 @@
             "text": "<p>\"Te verás con un aspecto luminoso y húmedo después de usarlo, pero en un par de días tu piel realmente se ve bastante increíble.\"<\/p><h6><strong>Chris Gibson,<\/strong> Experto en cuidado de la piel<\/h6>"
           }
         },
+        "video_tEFAkm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"A diferencia de usar microagujas duras o dermarollers, este es súper seguro...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Dermatólogo certificado<\/h6>"
+          }
+        },
         "video_PECKPL": {
           "type": "video",
           "settings": {
@@ -635,6 +645,7 @@
         "video_pEM9DL",
         "video_XF3pgt",
         "video_8nkLFi",
+        "video_tEFAkm",
         "video_PECKPL",
         "video_C6tFxe"
       ],
