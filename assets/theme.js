@@ -243,11 +243,18 @@ const risk = document.querySelectorAll(".risk_expandable");
 risk.forEach((story) => {
     const button = story.querySelector(".risk__accordion");
     button.addEventListener("click", () => {
+
         const paragraph = story.querySelector(".risk__hidden-div");
+        const more_text = button.getAttribute("data-more") || "Read More...";
+        const less_text = button.getAttribute("data-less") || "Read Less...";
+
         paragraph.classList.toggle("hidden");
+
+
+
         const text = paragraph.classList.contains("hidden")
-            ? "Read More..."
-            : "Read Less...";
+            ? more_text
+            : less_text;
         button.textContent = text;
     });
 });
