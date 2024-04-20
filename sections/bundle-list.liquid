@@ -69,8 +69,6 @@
                                                         <div class="sale-bf-img">
                                                             <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x' }}" />
                                                             <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" />
-                                                            {% comment %} <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x620', crop: 'top' }}" /> {% endcomment %}
-                                                            {% comment %} <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x464', crop: 'top' }}" /> {% endcomment %}
                                                         </div>
                                                     </a>
                                                 </div>  
@@ -79,15 +77,8 @@
                                                     <div class="sale-bf-img">
                                                         <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x' }}" />
                                                         <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" />
-                                                        {% comment %} <img class="img-fluid d-none d-md-block" src="{{ media | img_url: '720x620', crop: 'top' }}" /> {% endcomment %}
-                                                        {% comment %} <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x464', crop: 'top' }}" /> {% endcomment %}
                                                         {% if block.settings.recommended == forloop.index %}
-                                                            <div class="doctorly_rec">
-                                                                <img src="{{ 'doctorly.png' | asset_url }}" alt="" class="img-fluid">
-                                                                <div class="doctorly_text">
-                                                                    <p>Doctorly <br><span>Recommended</span></p>
-                                                                </div>
-                                                            </div>
+                                                            {{ block.settings.recommended_code }}
                                                         {% endif %}
                                                     </div>
                                                     {% if block.settings.ppl_choise == forloop.index %}
@@ -238,6 +229,11 @@
                         "id": "recommended",
                         "label": "t:common.recommended.label",
                         "default": 0
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "recommended_code",
+                        "label": "t:common.code.label"
                     }
                 ]
 		    }

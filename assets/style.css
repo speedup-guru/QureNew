@@ -34441,12 +34441,16 @@ p.insurance__text--bottom {
 .announcement_bar {
     background: #fff;
 }
-
+.announcement_bar a:hover, 
+.announcement_bar a:active,
+.announcement_bar a:focus {
+    color: unset;
+}
 .announcement_bar p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 19px;
     text-align: center;
-    padding: 8px 0;
+    padding: 4px 0;
     font-weight: 400;
 }
 
@@ -34481,7 +34485,7 @@ p.insurance__text--bottom {
 
 @media(max-width:767px) {
     .announcement_bar p {
-        font-size: 10px;
+        font-size: 13px;
         line-height: 15px;
         letter-spacing: 0.3px;
     }

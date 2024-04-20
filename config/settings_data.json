@@ -1,10 +1,10 @@
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/qure_favicon.png",
-    "social_instagram_link": "https:\/\/www.instagram.com\/qureskincare\/",
-    "social_facebook_link": "https:\/\/www.facebook.com\/Qureskincare\/",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@qureskincare",
-    "social_youtube_link": "https:\/\/youtube.com\/channel\/UCGTi3BZn8GVlu30NtQ-reYA",
+    "favicon": "shopify://shop_images/qure_favicon.png",
+    "social_instagram_link": "https://www.instagram.com/qureskincare/",
+    "social_facebook_link": "https://www.facebook.com/Qureskincare/",
+    "social_tiktok_link": "https://www.tiktok.com/@qureskincare",
+    "social_youtube_link": "https://youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA",
     "product_list_microinfusion_refill": [
       "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum",
       "micro-infusion-3-month-refill-6x-hydra-soothing-serum",
@@ -22,28 +22,29 @@
       "header": {
         "type": "header",
         "blocks": {
-          "announcement_TPxBgi": {
-            "type": "announcement",
-            "settings": {
-              "heading": "<p><strong>FREE World-Wide Shipping <\/strong>All Orders Above $100<\/p>",
-              "button_label": "SAVE UPTO 55%",
-              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
-            }
-          },
           "announcement-promotion_L6B7qD": {
             "type": "announcement-promotion",
+            "settings": {
+              "heading": "MOTHER’S DAY",
+              "richtext": "",
+              "button_label": "SAVE UP TO 55%",
+              "button_mobile_label": "SAVE UP TO 55%",
+              "button_url": "shopify://pages/exclusive-holiday-bundle-deal"
+            }
+          },
+          "announcement_TPxBgi": {
+            "type": "announcement",
             "disabled": true,
             "settings": {
-              "heading": "EASTER OFFER",
-              "button_label": "Hunt 56% OFF Exclusive Easter Bundle",
-              "button_mobile_label": "Hunt Exclusive 56% OFF Bundle",
-              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+              "heading": "<p><strong>FREE World-Wide Shipping </strong>All Orders Above $100</p>",
+              "button_label": "SAVE UPTO 55%",
+              "button_url": "shopify://pages/exclusive-holiday-bundle-deal"
             }
           }
         },
         "block_order": [
-          "announcement_TPxBgi",
-          "announcement-promotion_L6B7qD"
+          "announcement-promotion_L6B7qD",
+          "announcement_TPxBgi"
         ],
         "settings": {
         }
@@ -86,15 +87,15 @@
           "link_c3yUqG": {
             "type": "link",
             "settings": {
-              "image": "shopify:\/\/shop_images\/app_store.svg",
-              "link_url": "https:\/\/apps.apple.com\/nl\/app\/qure-skincare\/id1670113821"
+              "image": "shopify://shop_images/app_store.svg",
+              "link_url": "https://apps.apple.com/nl/app/qure-skincare/id1670113821"
             }
           },
           "link_wfYX8m": {
             "type": "link",
             "settings": {
-              "image": "shopify:\/\/shop_images\/google_play.svg",
-              "link_url": "https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure"
+              "image": "shopify://shop_images/google_play.svg",
+              "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure"
             }
           }
         },
@@ -119,9 +120,9 @@
         "type": "footer-landing",
         "settings": {
           "heading": "Have More Questions? Contact Us!",
-          "text": "<p>Our beauty experts will answer any questions you may have and provide professional guidance in using your Qure Micro-Infusion System<\/p>",
+          "text": "<p>Our beauty experts will answer any questions you may have and provide professional guidance in using your Qure Micro-Infusion System</p>",
           "menu": "footer-bottom-menu",
-          "text_bottom": "<p>Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice.<\/p>"
+          "text_bottom": "<p>Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice.</p>"
         }
       }
     },
@@ -130,37 +131,37 @@
     ],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "8218531531362863771": {
-        "type": "shopify:\/\/apps\/kite-free-gift-discounts\/blocks\/app-embed\/2c7302c4-455d-4078-a829-48563ba26089",
+        "type": "shopify://apps/kite-free-gift-discounts/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
         "disabled": true,
         "settings": {
         }
       },
       "1291562577487733835": {
-        "type": "shopify:\/\/apps\/black-crow-more-new-customers\/blocks\/blackcrow_ai_script\/3e73f597-cb71-47a1-8a06-0c931482ecd2",
+        "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
         "disabled": false,
         "settings": {
         }
       },
       "7885500093077574326": {
-        "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/script_embed\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+        "type": "shopify://apps/videowise-video-platform-ugc/blocks/script_embed/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
         "disabled": true,
         "settings": {
         }
       },
       "11945366711752539959": {
-        "type": "shopify:\/\/apps\/zendesk\/blocks\/zendesk_web_widget\/c0b417b1-b90b-4754-baaf-f55627e6acd4",
+        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,
         "settings": {
         }
       },
       "4215564508307704909": {
-        "type": "shopify:\/\/apps\/sitemap-noindex-pro\/blocks\/app-embed\/4d815e2c-5af0-46ba-8301-d0f9cf660031",
+        "type": "shopify://apps/sitemap-noindex-pro/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
         "disabled": false,
         "settings": {
         }
