@@ -11,10 +11,12 @@
             {% endcapture %}
         {%- when 'rating' -%}
             {% capture rating %}
-                {% if block.settings.image != blank %}
-                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
-                {% endif %}
-                <p class="text-sm fw-normal mb-0 text-decoration-none">{{ block.settings.text }}</p>
+                <div class="refill_review justify-content-start text-start mb-3">
+                    {% if block.settings.image != blank %}
+                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                    {% endif %}
+                    <p class="text-sm fw-normal mb-0 text-decoration-none">{{ block.settings.text }}</p>
+                </div>
             {% endcapture %}    
     {%- endcase -%}
 {%- endfor -%}
@@ -46,17 +48,19 @@
                                 </div>
                                 {% endif %}
 
-                                {% if rating != blank %}
-                                    <div class="refill_review justify-content-start text-start mb-3">
-                                        {{ rating }}
-                                    </div>                                    
-                                {% endif %}
+                                {% unless block.settings.text contains '[rating]' %}
+                                    {% if rating != blank %}
+                                        {{ rating }}                                   
+                                    {% endif %}
+                                {% endunless %}
 
                                 {% if block.settings.text != blank %}
                                     {{ block.settings.text 
                                         |  replace: '<h2>', '<h2 class="title-lg">'
                                         |  replace: '<ul>', '<div class="ss_list"><ul>' 
                                         |  replace: '</ul>', '</ul></div>' 
+                                        |  replace: '<p>[rating]</p>', rating
+                                        |  replace: '[rating]', rating
                                     }}
                                 {% endif %}
 
