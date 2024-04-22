@@ -395,6 +395,7 @@
         },
         "video_zVFniz": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren_e150642f-391b-46c3-98e6-d57c44d7e9e8.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
