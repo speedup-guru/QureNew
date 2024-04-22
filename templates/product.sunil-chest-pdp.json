@@ -402,6 +402,7 @@
         },
         "video_bcjDBp": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
