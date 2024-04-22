@@ -429,7 +429,7 @@
             "percent": 34,
             "ppl_choise": 0,
             "recommended": 1,
-            "recommended_code": ""
+            "recommended_code": "<div class=\"doctorly_rec mothers_day_bundle\">\n                                                <img src=\"{{ 'mothers_day_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>MOTHER'S DAY <br><span>SPECIAL BUNDLE<\/span><\/p>\n                                                <\/div>\n                                            <\/div>"
           }
         },
         "product_aKUc4N": {
