@@ -365,6 +365,9 @@
         "button_rznYjF",
         "rating_PGdBXE"
       ],
+      "custom_css": [
+        ".mb_contents {max-width: unset !important;}"
+      ],
       "settings": {
         "classname": "main_banner section pt-0",
         "heading": "",
