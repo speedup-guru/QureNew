@@ -1708,6 +1708,27 @@
     letter-spacing: 0.091px;
 }
 
+.doctorly_rec.mothers_day_bundle {
+    left: 10px;
+}
+
+.mothers_day_bundle p {
+    font-size: 9.548px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13.845px;
+    letter-spacing: 0.477px;
+    color: #000;
+}
+
+.mothers_day_bundle p>span {
+    font-weight: 400;
+}
+
+.mothers_day_bundle .doctorly_text {
+    background: #C7E7DC;
+}
+
 @media(max-width:767px) {
     .doctorly_rec img {
         max-width: 63px;
@@ -1729,5 +1750,8 @@
 
     .doctorly_text p>span {
         font-size: 7.146px;
+    }
+    .mothers_day_bundle p {
+        font-size: 9.548px;
     }
 }
