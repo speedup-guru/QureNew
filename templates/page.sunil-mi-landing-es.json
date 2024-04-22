@@ -366,7 +366,8 @@
         "rating_PGdBXE"
       ],
       "custom_css": [
-        ".mb_contents {max-width: unset !important;}"
+        ".mb_contents {max-width: unset !important;}",
+        ".btn-primary {max-width: 100% !important;}"
       ],
       "settings": {
         "classname": "main_banner section pt-0",
