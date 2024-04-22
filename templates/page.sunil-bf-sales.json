@@ -373,7 +373,8 @@
             "comment_ammount": 202,
             "percent": 40,
             "ppl_choise": 0,
-            "recommended": 1
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
           }
         },
         "product_JVJkGj": {
@@ -383,7 +384,8 @@
             "comment_ammount": 202,
             "percent": 34,
             "ppl_choise": 0,
-            "recommended": 1
+            "recommended": 1,
+            "recommended_code": ""
           }
         },
         "product_3Frmww": {
@@ -393,7 +395,8 @@
             "comment_ammount": 729,
             "percent": 28,
             "ppl_choise": 1,
-            "recommended": 0
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_zF9wP9": {
@@ -403,7 +406,8 @@
             "comment_ammount": 212,
             "percent": 44,
             "ppl_choise": 0,
-            "recommended": 0
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_CnMwyU": {
@@ -413,7 +417,8 @@
             "comment_ammount": 514,
             "percent": 44,
             "ppl_choise": 0,
-            "recommended": 0
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_pCXqdM": {
@@ -423,7 +428,8 @@
             "comment_ammount": 283,
             "percent": 34,
             "ppl_choise": 0,
-            "recommended": 1
+            "recommended": 1,
+            "recommended_code": ""
           }
         },
         "product_aKUc4N": {
@@ -433,7 +439,8 @@
             "comment_ammount": 242,
             "percent": 36,
             "ppl_choise": 0,
-            "recommended": 0
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_nRhA4x": {
@@ -443,7 +450,8 @@
             "comment_ammount": 187,
             "percent": 42,
             "ppl_choise": 0,
-            "recommended": 0
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_iRt6LW": {
@@ -454,7 +462,8 @@
             "comment_ammount": 147,
             "percent": 46,
             "ppl_choise": 0,
-            "recommended": 0
+            "recommended": 0,
+            "recommended_code": ""
           }
         }
       },
