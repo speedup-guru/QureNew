@@ -254,6 +254,7 @@
         "code_ENeDfJ"
       ],
       "custom_css": [
+        ".row {align-items: center !important}",
         "@media (max-width: 768px) {h2 {display: none; } .section_header {max-width: unset !important; } .secret_grid_wrap {top: -50px !important; }}"
       ],
       "settings": {
