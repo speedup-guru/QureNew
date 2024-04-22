@@ -355,7 +355,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify:\/\/shop_images\/star4.8.svg",
-            "text": "4.8\/5 von 43.893 Kunden"
+            "text": ""
           }
         }
       },
