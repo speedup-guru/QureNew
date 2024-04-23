@@ -19,10 +19,10 @@
         "subscribe_8ThJCW": {
           "type": "subscribe",
           "settings": {
-            "heading": "Subscribe & save $20",
-            "text": "<p>All-In-One Face Serum delivers every 90 days for only $59. Skip or cancel anytime. <a href=\"https:\/\/www.qureskincare.com\/pages\/subscriptions\" target=\"_blank\">See more details<\/a><\/p>",
-            "plan": "4562551023",
-            "discount": 2000
+            "heading": "Subscribe & save 20%",
+            "text": "<p>All-In-One Face Serum delivers every 90 days for only [future_price]. Skip or cancel anytime. <a href=\"https:\/\/www.qureskincare.com\/pages\/subscriptions\" target=\"_blank\">See more details<\/a><\/p>",
+            "plan": "5012783343",
+            "discount": 20
           }
         },
         "before_and_after_z8mG4R": {
