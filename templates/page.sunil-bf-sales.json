@@ -531,6 +531,16 @@
             "wistia_id": "",
             "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Certified Dermatologist<\/h6>"
           }
+        },
+        "video_TMkBGh": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -538,7 +548,8 @@
         "feedback_4rqbDD",
         "video_H7pW4b",
         "video_JryNck",
-        "video_Rx4fxx"
+        "video_Rx4fxx",
+        "video_TMkBGh"
       ],
       "settings": {
         "classname": "trusted_bl",
