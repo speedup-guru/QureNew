@@ -541,6 +541,16 @@
             "wistia_id": "",
             "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
           }
+        },
+        "video_wd7xtq": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_w8yWCPeijg",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -549,7 +559,8 @@
         "video_H7pW4b",
         "video_JryNck",
         "video_Rx4fxx",
-        "video_TMkBGh"
+        "video_TMkBGh",
+        "video_wd7xtq"
       ],
       "settings": {
         "classname": "trusted_bl",
