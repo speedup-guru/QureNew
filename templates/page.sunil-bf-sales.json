@@ -249,7 +249,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Confidence changing results, from people just like you",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "two_column_box_FQCXGb": {
@@ -567,7 +568,7 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty_derma.webp",
-            "heading": "Derm\/ Clinic Treatments",
+            "heading": "Derm\/Clinic\\nTreatments",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
