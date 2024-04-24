@@ -581,6 +581,16 @@
             "wistia_id": "",
             "text": "<p>The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.<\/p><h6><strong>Dr Dylan Greeney, <\/strong>Board-Certified Dermatologist<\/h6>"
           }
+        },
+        "video_jNRqTh": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_q-urify-doctorly.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=QuJ3puVLKzU",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"You wanna look for something that’s gonna remove both <strong>calcium carbonate <\/strong>and chlorine from your water.\"<\/p><h6><strong>Dr Shah, MD <\/strong>Board-Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -593,7 +603,8 @@
         "video_TMkBGh",
         "video_wd7xtq",
         "video_YJbEzh",
-        "video_xNcPBw"
+        "video_xNcPBw",
+        "video_jNRqTh"
       ],
       "settings": {
         "classname": "trusted_bl",
