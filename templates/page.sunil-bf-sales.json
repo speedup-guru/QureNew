@@ -574,7 +574,6 @@
         },
         "video_yzhjt8": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_shah_max_main_ca589b9b-8b38-48eb-9587-8377e39e0d86.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk",
