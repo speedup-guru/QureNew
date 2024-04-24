@@ -167,6 +167,7 @@
         "before_after_images_limit": 3,
         "before_after_button_label": "Echte Resultate",
         "reserve": false,
+        "selected_design": "old",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
         "text_label_real_result_3": "Dermatologist"
@@ -333,7 +334,7 @@
           "type": "product",
           "settings": {
             "heading": "",
-            "text": "<h2>Kennst du schon das Qure Mikro-Infusions system?<\/h2><p>Kliniken, Dermatologen und Prominente sind sich einig -<strong>ES FUNKTIONIERT<\/strong><\/p><ul><li>Unterstützt bei der Reduzierung von Falten<\/li><li>Wache mit <strong>frischer, strahlender Haut <\/strong>auf<\/li><li>Die Haut sieht <strong>strahlender<\/strong> aus und fühlt sich <strong>straffer<\/strong> an<\/li><li>Unterstütze das Verblassen von dunklen Flecken und <strong>Aknenarben<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
+            "text": "<h2>Kennst du schon das Qure Mikro-Infusions system?<\/h2><p>[rating]<\/p><p>Kliniken, Dermatologen und Prominente sind sich einig -<strong>ES FUNKTIONIERT<\/strong><\/p><ul><li>Unterstützt bei der Reduzierung von Falten<\/li><li>Wache mit <strong>frischer, strahlender Haut <\/strong>auf<\/li><li>Die Haut sieht <strong>strahlender<\/strong> aus und fühlt sich <strong>straffer<\/strong> an<\/li><li>Unterstütze das Verblassen von dunklen Flecken und <strong>Aknenarben<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
             "product": ""
           }
         },
@@ -354,7 +355,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify:\/\/shop_images\/star4.8.svg",
-            "text": "4.8\/5 von 43.893 Kunden"
+            "text": ""
           }
         }
       },

@@ -580,6 +580,7 @@
         },
         "video_pEM9DL": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0DYmxvyKAVI",

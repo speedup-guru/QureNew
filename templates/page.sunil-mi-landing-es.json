@@ -334,7 +334,7 @@
           "type": "product",
           "settings": {
             "heading": "",
-            "text": "<h2>Presentación del Sistema de microinfusión Qure<\/h2><p>Clínicas, dermatólogos y famosos están de acuerdo: <strong>realmente funciona.<\/strong><\/p><ul><li>Ayuda a reducir las líneas de expresión<\/li><li>Despiértate con una <strong>piel radiante y con aspecto<\/strong> de rocío<\/li><li>Piel más <strong>luminosa y firme<\/strong><\/li><li>Ayuda a difuminar las manchas oscuras y las <strong>marcas de acné<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
+            "text": "<h2>Presentación del Sistema de microinfusión Qure<\/h2><p>[rating]<\/p><p>Clínicas, dermatólogos y famosos están de acuerdo: <strong>realmente funciona.<\/strong><\/p><ul><li>Ayuda a reducir las líneas de expresión<\/li><li>Despiértate con una <strong>piel radiante y con aspecto<\/strong> de rocío<\/li><li>Piel más <strong>luminosa y firme<\/strong><\/li><li>Ayuda a difuminar las manchas oscuras y las <strong>marcas de acné<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
             "product": ""
           }
         },
@@ -355,7 +355,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify:\/\/shop_images\/star4.8.svg",
-            "text": "4.8\/5 von 43.893 Kunden"
+            "text": ""
           }
         }
       },
