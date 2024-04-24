@@ -552,16 +552,6 @@
             "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
           }
         },
-        "video_TMkBGh": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
-          }
-        },
         "video_YJbEzh": {
           "type": "video",
           "settings": {
@@ -570,6 +560,16 @@
             "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel,<\/strong> Internal Medicine<\/h6>"
+          }
+        },
+        "video_TMkBGh": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8&t=1s",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
           }
         },
         "video_xNcPBw": {
@@ -611,8 +611,8 @@
         "video_Rx4fxx",
         "video_yzhjt8",
         "video_wd7xtq",
-        "video_TMkBGh",
         "video_YJbEzh",
+        "video_TMkBGh",
         "video_xNcPBw",
         "video_jNRqTh",
         "video_QAC7VY"
