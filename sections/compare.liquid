@@ -34,7 +34,7 @@
                                 </div>                               
                             {% endif %}
                             <h4 class="d-block d-md-none">{{ title | replace: '\n', '<br>' }}</h4>
-                            <h4 class="d-none d-md-block">{{ title | replace: '\n', '<br>' }}</h4>
+                            <h4 class="d-none d-md-block">{{ title | replace: '\n', '&nbsp;' }}</h4>
                             {% if block.settings.text != blank %}
                                 {{ block.settings.text |  replace:  '<p>', '<p class="price__label">'  }}
                             {% endif %}
