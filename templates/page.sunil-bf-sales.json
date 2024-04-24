@@ -522,16 +522,6 @@
             "text": "<p>This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield,<\/strong> Certified Dermatologist<\/h6>"
           }
         },
-        "video_yzhjt8": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_shah_max_main_ca589b9b-8b38-48eb-9587-8377e39e0d86.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>\"Qure has a <strong>really good serum,<\/strong> probably is the best known peptide complex...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
-          }
-        },
         "video_Rx4fxx": {
           "type": "video",
           "settings": {
@@ -540,6 +530,16 @@
             "video_label": "Watch Video",
             "wistia_id": "",
             "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_yzhjt8": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max_main_ca589b9b-8b38-48eb-9587-8377e39e0d86.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a <strong>really good serum,<\/strong> probably is the best known peptide complex...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
           }
         },
         "video_TMkBGh": {
@@ -588,8 +588,8 @@
         "feedback_4rqbDD",
         "video_H7pW4b",
         "video_JryNck",
-        "video_yzhjt8",
         "video_Rx4fxx",
+        "video_yzhjt8",
         "video_TMkBGh",
         "video_wd7xtq",
         "video_YJbEzh",
