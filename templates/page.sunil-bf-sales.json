@@ -571,6 +571,16 @@
             "wistia_id": "",
             "text": "<p>The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.<\/p><h6><strong>Dr Dylan Greeney, <\/strong>Board-Certified Dermatologist<\/h6>"
           }
+        },
+        "video_yzhjt8": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_shah_max_main.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"<\/p><h6><strong>Dr Shah & Dr Maxfield,<\/strong> Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -582,7 +592,8 @@
         "video_TMkBGh",
         "video_wd7xtq",
         "video_YJbEzh",
-        "video_xNcPBw"
+        "video_xNcPBw",
+        "video_yzhjt8"
       ],
       "settings": {
         "classname": "trusted_bl",
