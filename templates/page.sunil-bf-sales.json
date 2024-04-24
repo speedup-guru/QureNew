@@ -551,6 +551,16 @@
             "wistia_id": "",
             "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"<\/p><h6><strong>Dr Prem,<\/strong> Board Certified Dermatologist<\/h6>"
           }
+        },
+        "video_YJbEzh": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_mona.webp",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/71857fdec6b0497294117ed84cab480e.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel,<\/strong> Internal Medicine<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -560,7 +570,8 @@
         "video_JryNck",
         "video_Rx4fxx",
         "video_TMkBGh",
-        "video_wd7xtq"
+        "video_wd7xtq",
+        "video_YJbEzh"
       ],
       "settings": {
         "classname": "trusted_bl",
