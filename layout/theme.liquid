@@ -68,7 +68,11 @@
     <!-- styles endrock -->
     {% case template %}
         {% when 'page.sunil-mi-landing' %}
+            {{ 'endrock-landing.css' | asset_url | stylesheet_tag }}
+
         {% when 'page.sunil-mi-landing-de' %}
+            {{ 'endrock-landing.css' | asset_url | stylesheet_tag }}
+
         {% else %}
             {{ 'endrock.css' | asset_url | stylesheet_tag }}
     {% endcase %}

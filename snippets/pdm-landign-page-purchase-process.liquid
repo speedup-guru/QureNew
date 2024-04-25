@@ -1,0 +1,159 @@
+{% liquid
+  #######
+  # general settings
+  #######
+  assign general_settings = page.metafields.custom.general_information_purchase_process.value
+
+  #######
+  # metaFields / metaObjects
+  #######
+
+  # rejuvenating
+  assign rejuvenating = page.metafields.custom.landing_product_3.value
+  assign rejuvenating_type = rejuvenating.select_type.value
+
+
+  # hydra soothing
+  assign hydraSoothing = page.metafields.custom.landing_product_2.value
+  assign hydraSoothing_type = hydraSoothing.select_type.value
+
+  # mix
+  assign mix = page.metafields.custom.landing_product_one.value
+  assign mix_products = page.metafields.custom.landing_product_one.value.list_products.value
+  assign mix_product_1_month = null
+  assign mix_product_2_month = null
+  assign mix_product_3_month = null
+
+  ## type
+  assign mix_type = mix.select_type.value
+
+  # each mix product
+  ## for to split and general info
+  for data in mix_products
+    if forloop.index == 1
+      assign mix_product_1_month = data
+    elsif forloop.index == 2
+      assign mix_product_2_month = data
+    elsif forloop.index == 3
+      assign mix_product_3_month = data
+    endif
+  endfor
+  ## split info only for products
+  assign first_mix_product = mix_product_1_month.data.value
+  assign second_mix_product = mix_product_2_month.data.value
+  assign third_mix_product = mix_product_3_month.data.value
+
+
+  #######
+  # step2
+
+
+%}
+
+<script>
+  console.log("general_settings", {{ general_settings | json }});
+  // console.log("mix", {{ mix | json }});
+  // console.log("mix_products", {{ mix_products | json }});
+  // console.log("mix_type", {{ mix_type | json }});
+  // console.log("first_mix_product", {{ first_mix_product | json }});
+  // console.log("second_mix_product", {{ second_mix_product | json }});
+  // console.log("third_mix_product", {{ third_mix_product | json }});
+</script>
+
+<section id="new-landing-purchase" class="new-landing-purchase">
+  <div>
+    <div>
+      <h3>{{ general_settings.title }}</h3>
+      <p>{{ general_settings.subtitle }}</p>
+    </div>
+  </div>
+  <div>
+    <span>bread crumbs</span>
+  </div>
+  <div>
+    <div>
+      <h3>{{ general_settings.title_component }}</h3>
+    </div>
+    <input type="radio" id="opt3" name="opt3" value="">
+    <label for="opt3">
+      {% render 'pdm-landing-purchase-card-desktop',
+        type: 'mix',
+        mixProduct: third_mix_product,
+        mixProductInfo: mix_product_3_month
+      %}
+    </label>
+    <input type="radio" id="opt2" name="opt2" value="">
+    <label for="opt2">
+      {% render 'pdm-landing-purchase-card-desktop',
+        type: 'mix',
+        mixProduct: second_mix_product,
+        mixProductInfo: mix_product_2_month
+      %}
+    </label>
+    <input type="radio" id="opt1" name="opt1" value="">
+    <label for="opt1">
+      {% render 'pdm-landing-purchase-card-desktop',
+        type: 'mix',
+        mixProduct: first_mix_product,
+        mixProductInfo: mix_product_1_month
+      %}
+    </label>
+  </div>
+  <div>
+    <div>
+      <h3>{{ general_settings.step_2_title }}</h3>
+    </div>
+    <div>
+      <input type="radio" id="opt4" name="opt4" value="">
+      <label for="opt4">
+        {% render 'pdm-landing-purchase-serum',
+          data: rejuvenating_type
+        %}
+      </label>
+      <input type="radio" id="opt5" name="opt5" value="">
+      <label for="opt5">
+        {% render 'pdm-landing-purchase-serum' 
+          data: hydraSoothing_type
+        %}
+      </label>
+      <input type="radio" id="opt6" name="opt6" value="">
+      <label for="opt6">
+        {% render 'pdm-landing-purchase-serum' 
+          data: mix_type
+        %}
+      </label>
+
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3>{{ general_settings.step_3_title }}</h3>
+    </div>
+    <div>
+      <input type="radio" id="opt7" name="opt7" value="">
+      <label for="opt7">
+       
+      </label>
+      <input type="radio" id="opt8" name="opt8" value="">
+      <label for="opt8">
+        
+      </label>
+  
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3>{{ general_settings.step_4_title }}</h3>
+    </div>
+    <div>
+      <input type="radio" id="opt9" name="opt9" value="">
+      <label for="opt9">
+       
+      </label>
+      <input type="radio" id="opt9" name="opt9" value="">
+      <label for="opt9">
+       
+      </label>
+    </div>
+  </div>
+</section>
