@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-sunil-mask-guide",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
