@@ -75,8 +75,8 @@
 {% endif %}
 
 {% if code != blank %}
-    {% capture code_desktop %}<div class="header d-none d-md-block">{{ code }}</div>{% endcapture %}
-    {% capture code_mobile %}<div class="d-block d-md-none text-start">{{ code }}</div>{% endcapture %}
+    {% capture code_desktop %}<div class="header d-none d-md-block code_desktop">{{ code }}</div>{% endcapture %}
+    {% capture code_mobile %}<div class="d-block d-md-none text-start code_mobile">{{ code }}</div>{% endcapture %}
 {% endif %}
 
 {% if image != blank %}
