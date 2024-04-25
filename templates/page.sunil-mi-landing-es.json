@@ -304,7 +304,7 @@
         "content_XdKeWR": {
           "type": "content",
           "settings": {
-            "text": "<h2>El refuerzo de piel predilecto<br\/>creado para días seguros sin maquillaje[image_mobile]<\/h2><p>Microinfusión –<strong>un tratamiento de piel adorado por las celebridades<\/strong>– finalmente está accesible para el público general.<\/p><p>Ahora puedes experimentar el tratamiento facial de Microinfusión para<strong>ayudar a aclarar el cutis, suavizar la textura y obtener un brillo listo para la 'alfombra roja'.<\/strong><\/p><p>¿La mejor parte? ¡Puedes disfrutarlo por aproximadamente una<strong>fracción del costo en la comodidad de tu hogar,<\/strong>con un tiempo de acción casi inmediato!<\/p>",
+            "text": "<h2>El refuerzo de piel predilecto<br\/>creado para días seguros sin maquillaje[image_mobile]<\/h2><p>Microinfusión –<strong>un tratamiento de piel adorado por las celebridades<\/strong>– finalmente está accesible para el público general.<\/p><p>Ahora puedes experimentar el tratamiento facial de Microinfusión para <strong>ayudar a aclarar el cutis, suavizar la textura y obtener un brillo listo para la 'alfombra roja'.<\/strong><\/p><p>¿La mejor parte? ¡Puedes disfrutarlo por aproximadamente una <strong>fracción del costo en la comodidad de tu hogar, <\/strong>con un tiempo de acción casi inmediato!<\/p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -551,7 +551,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason5_61b38139-0048-433f-a998-91e57b8bf3e0.svg",
-            "text": "<p><strong>Mejora la absorción <\/strong>delsuero realizado para tus nescecidades específicas<\/p>"
+            "text": "<p><strong>Mejora la absorción <\/strong>delsuero realizado para tus nescecidades específicas.<\/p>"
           }
         }
       },
@@ -841,7 +841,7 @@
       "settings": {
         "classname": "beauty_skincare section",
         "heading": "Por lo general, más efectivo y seguro que otros dispositivos domésticos de agujas",
-        "text": "<p>A diferencia de los dispositivos domésticos de rodillo con aguja, la microinfusión apenas requiere <strong>tiempo para actuar, <\/strong>es prácticamente <strong>in dolora y minimiza el riesgo de infección<\/strong>o irritación.<\/p>"
+        "text": "<p>A diferencia de los dispositivos domésticos de rodillo con aguja, la microinfusión apenas requiere <strong>tiempo para actuar, <\/strong>es prácticamente <strong>in dolora y minimiza el riesgo de infección <\/strong>o irritación.<\/p>"
       }
     },
     "guide_xibEe6": {
