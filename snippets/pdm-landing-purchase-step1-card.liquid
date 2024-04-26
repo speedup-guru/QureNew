@@ -1,0 +1,43 @@
+
+{% liquid
+  assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0  
+%}
+
+<div class="purchase-card-container">
+  {% if productInfo.people_choise != blank %}
+    {{ productInfo.people_choise }}
+  {% endif %}
+  {% comment %} image {% endcomment %}
+  <div class="card-img-container">
+    {{ productData.featured_media | image_url: width: 400 | image_tag: alt: productData.title }}
+  </div>
+  <div>
+    {% if product_save != null %}
+      <div>
+        <p> SAVE {{ product_save }}%</p>
+      </div>
+    {% endif %}
+    <p>{{ productInfo.title_product }} {{ productData.compare_at_price |  money_without_trailing_zeros }} {{ productData.price | money_without_trailing_zeros }}</p>
+  </div>
+
+  <div>
+    {% comment %} value props {% endcomment %}
+    {% if productInfo.doctor_recommendation != blank %}
+      <div>
+        <p>{{ productInfo.doctor_recommendation }}</p>
+      </div>
+    {% endif %}
+    <div>
+      {{ productInfo.value_props |  metafield_tag }}
+    </div>
+    {% comment %} dropdown {% endcomment %}
+    <div>
+      <div>
+        <p>{{ productInfo.title_included }}</p>
+      </div>
+      <div>
+        {{ productInfo.value_props_included |  metafield_tag }}
+      </div>
+    </div>
+  </div>
+</div>

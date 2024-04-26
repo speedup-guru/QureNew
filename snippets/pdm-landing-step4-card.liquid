@@ -1,0 +1,39 @@
+<div>
+  {% if cardCase == 0 %}
+    {{ data.step_4_card_popular_text }}
+  {% endif %}
+  <div>
+    {{ data.step_4_card_titles.value[cardCase] }}
+  </div>
+  <div>
+    {% comment %} doctor {% endcomment %}
+    {% if cardCase == 0 %}
+      <div>
+        {{ data.step_4_image_doctor | image_url: width: 44 | image_tag: alt: 'doctor' }}
+        <p>
+          {{ data.step_4_doctor_description }}
+        </p>
+      </div>
+    {% endif %}
+    <div>
+      {% comment %} title {% endcomment %}
+      {{ data.step_4_card_sub_titles.value[cardCase] }}
+      {% comment %} value props {% endcomment %}
+      {% if cardCase == 0 %}
+        {{ data.step_4_card_value_props_1 | metafield_tag }}
+      {% else %}
+        {{ data.step_4_card_value_props_2 | metafield_tag }}
+      {% endif %}
+    </div>
+    {% comment %} dropwon {% endcomment %}
+    {% if cardCase == 0 %}
+      <div>
+        {{ data.step_4_card_dropdown_title }}
+      </div>
+      <div>
+        {{  data.step_4_card_dropdown_values | metafield_tag }}
+      </div>
+      
+    {% endif %}
+  </div>
+</div>

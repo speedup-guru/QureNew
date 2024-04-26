@@ -1,0 +1,35 @@
+<div id="inputs-{{name}}" class="inputs-{{name}} {% if name == 'mix' and productOneValue == '1' %}show-inputs{% endif %}">
+  <input
+    data-id-product="{{ productOne.id }}"
+    type="radio"
+    id="{{name}}-one"
+    name="{{ name }}"
+    value="{{ productOneValue }}"
+    {% if name == 'mix' and productOneValue == '1' %}
+      checked
+    {% endif %}
+  >
+  <label for="{{name}}-one">
+    {% render 'pdm-landing-purchase-step1-card', productData: productOne, productInfo: productOneInfo %}
+  </label>
+  <input
+    data-id-product="{{ productTwo.id }}"
+    type="radio"
+    id="{{name}}-two"
+    name="{{ name }}"
+    value="{{ productTwoValue }}"
+  >
+  <label for="{{name}}-two">
+    {% render 'pdm-landing-purchase-step1-card', productData: productTwo, productInfo: productTwoInfo %}
+  </label>
+  <input
+    data-id-product="{{ productThree.id }}"
+    type="radio"
+    id="{{name}}-three"
+    name="{{ name }}"
+    value="{{ productThreeValue }}"
+  >
+  <label for="{{name}}-three">
+    {% render 'pdm-landing-purchase-step1-card', productData: productThree, productInfo: productThreeInfo %}
+  </label>
+</div>

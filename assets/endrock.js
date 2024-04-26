@@ -217,6 +217,110 @@ document.addEventListener('DOMContentLoaded', function() {
  
   // end PDP: Before & After First Image 
 
+  // purchase landing page
+
+  class PurchaseLandingPage {
+    constructor(formId){
+      this.form = document.getElementById(formId);
+      this.panels = document.querySelectorAll('.landing-panel');
+      this.btnBack = document.getElementById('landing-back');
+      this.btnNext = document.getElementById('landing-next');
+      this.indexPanel = 0;
+
+      this.hidePanels();
+      this.showActualPanel(this.indexPanel);
+      this.updateButtons();
+      this.updateVisibilityFirstStep();
+
+      const radioButtons = document.querySelectorAll('#step2-select input[type="radio"]');
+      radioButtons.forEach(button => {
+        button.addEventListener('change', () => {
+          this.updateVisibilityFirstStep();
+        });
+      });
+
+      // buttons
+      this.btnNext.addEventListener('click', () =>{
+        this.nextPanel();
+      });
+
+      this.btnBack.addEventListener('click', () =>{
+        this.backPanel();
+      });
+    }
+
+      // functions
+      hidePanels() {
+        this.panels.forEach(panel =>{
+          panel.classList.add('panel-hidden');
+        });
+      }
+
+      showActualPanel(index) {
+        this.panels[index].classList.remove('panel-hidden');
+      }
+
+      hidePanel(index) {
+        this.panels[index].classList.add('panel-hidden');
+      }
+
+
+      nextPanel(){
+        this.hidePanel(this.indexPanel);
+        this.indexPanel++;
+        if(this.indexPanel >= this.panels.length){
+          this.indexPanel = 0;
+        }
+        this.showActualPanel(this.indexPanel);
+        this.updateButtons();
+      }
+
+      backPanel(){
+        this.hidePanel(this.indexPanel);
+        this.indexPanel--;
+        if(this.indexPanel < 0){
+          this.indexPanel = this.panels.length - 1;
+        }
+        this.showActualPanel(this.indexPanel);
+        this.updateButtons();
+      }
+
+      updateButtons(){
+        if(this.indexPanel === 0){
+          this.btnBack.classList.add('hidden');
+        }else{
+          this.btnBack.classList.remove('hidden');
+        }
+
+        if(this.indexPanel === this.panels.length - 1){
+          this.btnNext.classList.add('hidden');
+        } else {
+          this.btnNext.classList.remove('hidden');
+        }
+      }
+
+      updateVisibilityFirstStep(){
+        const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
+        const selectOption = secondRadioButtons.value;
+        console.log('selected 2', selectOption);
+
+        const allInputs = document.querySelectorAll('.inputs-mix, .inputs-silver, .inputs-gold');
+        allInputs.forEach(input => {
+          input.classList.remove('show-inputs');
+        });
+        const selectedInputs = document.querySelector(`#inputs-${selectOption}`);
+        selectedInputs.classList.add('show-inputs');
+       
+
+      }
+
+        
+  }
+
+  const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');
+
+  // end purchase landing page
+
 });
 
 

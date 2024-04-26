@@ -2,11 +2,14 @@
 
 
 /* card */
-
-  .new-landing-purchase{
-    input[type="radio"]{
+  .panel-hidden{
       display: none;
     }
+
+  .new-landing-purchase{
+    /* input[type="radio"]{
+      display: none;
+    } */
     .purchase-card-container{
       border: 1px solid #C8E6DC;
       width: 304px;
@@ -22,6 +25,24 @@
       }
     }
   }
+
+  /* inputs */
+
+  
+  .inputs-mix{
+    display: none;
+  }
+  .inputs-silver {
+    display: none;
+  }
+  .inputs-gold {
+    display: none;
+  }
+  .show-inputs{
+    display: block;
+  }
+
+
 
 
 /* endcard */
