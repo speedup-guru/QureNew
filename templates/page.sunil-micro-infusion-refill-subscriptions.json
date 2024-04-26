@@ -93,7 +93,8 @@
             "image_product_4": "shopify:\/\/shop_images\/mi_refill-product-4.webp",
             "image_product_text_4": "collage product",
             "video_wistia_id_4": "",
-            "image_product_text_5": "",
+            "image_product_5": "shopify:\/\/shop_images\/MI_refill_box.png",
+            "image_product_text_5": "MI refill box",
             "video_wistia_id_5": "",
             "image_product_text_6": "",
             "video_wistia_id_6": ""
@@ -395,7 +396,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Results you‘ll see with your own eyes",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "liquid_KHpx4x": {
