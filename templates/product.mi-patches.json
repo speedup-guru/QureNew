@@ -6,31 +6,31 @@
         "rating_zmEFgC": {
           "type": "rating",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star4.8.svg",
-            "text": "<p>97% customer satisfaction rate<\/p>"
+            "image": "shopify://shop_images/star4.8.svg",
+            "text": "<p>97% customer satisfaction rate</p>"
           }
         },
         "list_qEJGnV": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Reduces appearance of <strong>fine lines<\/strong> and <strong>wrinkles,<\/strong> under-eye darkness, and puffiness.<\/li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface<\/strong> for faster results.<\/li><li><strong>Science backed,<\/strong> age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.<\/li><\/ul><p><strong>16 PATCHES <\/strong>(8 pairs) \/ 1 month supply<\/p>"
+            "text": "<ul><li>Reduces appearance of <strong>fine</strong> <strong>lines</strong> and <strong>wrinkles</strong>, under-eye darkness, and puffiness.</li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface</strong> for faster results.</li><li><strong>Science backed,</strong> age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul><p><strong>16 PATCHES </strong>(8 pairs) / 1 month supply</p>"
           }
         },
         "icons_BdndQd": {
           "type": "icons",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dermatologist.svg",
+            "image": "shopify://shop_images/dermatologist.svg",
             "text": "Dermatologist Reviewed",
-            "image_second": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+            "image_second": "shopify://shop_images/free-shipping-ftr.svg",
             "text_second": "Free Shipping Over $100"
           }
         },
         "before_and_after_MpiVzf": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify:\/\/shop_images\/B_A_-_D_1.png",
+            "image_new_section_1": "shopify://shop_images/B_A_-_D_1.png",
             "image_new_section_text_1": "",
-            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D_2.png",
+            "image_new_section_2": "shopify://shop_images/B_A_-_D_2.png",
             "image_new_section_text_2": "",
             "image_new_section_text_3": "",
             "image_new_section_text_4": "",
@@ -41,7 +41,7 @@
         "video_before_and_after_jKbbmy": {
           "type": "video_before_and_after",
           "settings": {
-            "video_new_section": "shopify:\/\/files\/videos\/Inhouse - V - MI patches - YT - Influencer - Doctorly Q0047 - anti-aging - product intro V3 - 31_01_24.mp4"
+            "video_new_section": "shopify://files/videos/Inhouse - V - MI patches - YT - Influencer - Doctorly Q0047 - anti-aging - product intro V3 - 31_01_24.mp4"
           }
         }
       },
@@ -53,7 +53,8 @@
         "video_before_and_after_jKbbmy"
       ],
       "custom_css": [
-        ".ss_list .list p {padding: 10px 0 10px 0px;}"
+        ".ss_list .list p {padding: 10px 0 10px 0px;}",
+        ".ss_list ul li {padding-left: 28px !important;}"
       ],
       "settings": {
         "heading": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",
@@ -77,42 +78,42 @@
         "image_EmW3pU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "image": "shopify://shop_images/vogue.svg",
             "mobile_hide": false
           }
         },
         "image_UCfaNQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elle.svg",
+            "image": "shopify://shop_images/elle.svg",
             "mobile_hide": false
           }
         },
         "image_nhGhH7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "image": "shopify://shop_images/glamour.svg",
             "mobile_hide": false
           }
         },
         "image_WyNyMa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grazia.svg",
+            "image": "shopify://shop_images/grazia.svg",
             "mobile_hide": true
           }
         },
         "image_6UWxUT": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "image": "shopify://shop_images/cosmopolitan.svg",
             "mobile_hide": true
           }
         },
         "image_EFhPRe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "image": "shopify://shop_images/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
             "mobile_hide": true
           }
         }
@@ -135,7 +136,7 @@
         "content_CyDBCN": {
           "type": "content",
           "settings": {
-            "text": "<p>[code_desktop]<\/p>",
+            "text": "<p>[code_desktop]</p>",
             "column_content": 0,
             "classname": "it_img pe-md-4"
           }
@@ -143,7 +144,7 @@
         "content_GiwwRp": {
           "type": "content",
           "settings": {
-            "text": "<h2>80 Serum-Enriched Micro-Darts for precise improvement<\/h2><p>[code_mobile]<\/p><p>These fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target & treat wrinkles.<\/strong><\/p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin,<\/strong> infusing serum for <strong>deeper delivery.<\/strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin - <strong>for deeper, better, faster results!<\/strong><\/p>",
+            "text": "<h2>80 Serum-Enriched Micro-Darts for precise improvement</h2><p>[code_mobile]</p><p>These fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target & treat wrinkles.</strong></p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin,</strong> infusing serum for <strong>deeper delivery.</strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin - <strong>for deeper, better, faster results!</strong></p>",
             "column_content": 0,
             "classname": "section_header mb_contents text-start mw-525 p-0"
           }
@@ -151,7 +152,7 @@
         "code_heG6wK": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\">\n                                <div class=\"wistia_responsive_wrapper\"\n                                    style=\"height:100%;left:0;position:absolute;top:0;width:100%;\">\n                                    <div class=\"wistia_embed wistia_async_f4cj3x9e99 seo=false videoFoam=true\"\n                                        style=\"height:100%;position:relative;width:100%\">&nbsp;<\/div>\n                                <\/div>\n                            <\/div>"
+            "code": "<div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\">\n                                <div class=\"wistia_responsive_wrapper\"\n                                    style=\"height:100%;left:0;position:absolute;top:0;width:100%;\">\n                                    <div class=\"wistia_embed wistia_async_f4cj3x9e99 seo=false videoFoam=true\"\n                                        style=\"height:100%;position:relative;width:100%\">&nbsp;</div>\n                                </div>\n                            </div>"
           }
         }
       },
@@ -176,7 +177,7 @@
         "code_XWKhJX": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"patches_tech_grid\">\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"{{ 'patches_tech1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>1: DELIVER<\/h6>\n                            <p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into\n                                the\n                                skin for deeper delivery.<\/p>\n                        <\/div>\n                    <\/div>\n                    <div class=\"patches_tech_plus\">\n                        +\n                    <\/div>\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"{{ 'patches_tech2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>2: DISSOLVE<\/h6>\n                            <p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb\n                                into the skin.<\/p>\n                        <\/div>\n                    <\/div>\n                    <div class=\"patches_tech_plus\">\n                        +\n                    <\/div>\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"{{ 'patches_tech3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>3: PROTECT<\/h6>\n                            <p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients\n                                and\n                                delivering fast, visible results.<\/p>\n                        <\/div>\n                    <\/div>\n                <\/div>"
+            "code": "<div class=\"patches_tech_grid\">\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"{{ 'patches_tech1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>1: DELIVER</h6>\n                            <p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into\n                                the\n                                skin for deeper delivery.</p>\n                        </div>\n                    </div>\n                    <div class=\"patches_tech_plus\">\n                        +\n                    </div>\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"{{ 'patches_tech2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>2: DISSOLVE</h6>\n                            <p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb\n                                into the skin.</p>\n                        </div>\n                    </div>\n                    <div class=\"patches_tech_plus\">\n                        +\n                    </div>\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"{{ 'patches_tech3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>3: PROTECT</h6>\n                            <p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients\n                                and\n                                delivering fast, visible results.</p>\n                        </div>\n                    </div>\n                </div>"
           }
         }
       },
@@ -189,7 +190,7 @@
       ],
       "settings": {
         "heading": "Technology that delivers anti-aging ingredients directly to the source",
-        "text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential. <\/strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.<\/strong><\/p>",
+        "text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential. </strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.</strong></p>",
         "classname": "technolgy_source section"
       }
     },
@@ -199,10 +200,10 @@
         "result_KKc4tD": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi-patches-result-katie.webp",
+            "image": "shopify://shop_images/mi-patches-result-katie.webp",
             "heading": "Dark undereye",
-            "text": "<p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.\"<\/p>",
-            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text": "<p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.\"</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Katie P",
             "code": ""
@@ -211,10 +212,10 @@
         "result_c3CAtk": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi-patches-result-marry.webp",
+            "image": "shopify://shop_images/mi-patches-result-marry.webp",
             "heading": "Love these patches",
-            "text": "<p>“I started to see fine lines around my eyes and these patches work wonders! I wear them overnight and they don’t come off. I’VE SEEN A HUGE DIFFERENCE, leaving my skin smoother and firmer after just a few uses. Highly recommend.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text": "<p>“I started to see fine lines around my eyes and these patches work wonders! I wear them overnight and they don’t come off. I’VE SEEN A HUGE DIFFERENCE, leaving my skin smoother and firmer after just a few uses. Highly recommend.”</p>",
+            "image_country": "shopify://shop_images/australia_f.webp",
             "text_country": "Australia",
             "client": "Mary",
             "code": ""
@@ -223,10 +224,10 @@
         "result_mF6ULQ": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi-patches-result-shannon.webp",
+            "image": "shopify://shop_images/mi-patches-result-shannon.webp",
             "heading": "Stubborn laugh lines",
-            "text": "<p>“These impressed me so much that now I want to tape them all over my face to target all wrinkles. Patches have become an essential part of my skincare routine, and I highly recommend them to anyone seeking a non-invasive, effective solution for aging skin. I'm excited to see how they tackle wrinkles in other areas of my face.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text": "<p>“These impressed me so much that now I want to tape them all over my face to target all wrinkles. Patches have become an essential part of my skincare routine, and I highly recommend them to anyone seeking a non-invasive, effective solution for aging skin. I'm excited to see how they tackle wrinkles in other areas of my face.”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Shannon",
             "code": ""
@@ -235,10 +236,10 @@
         "result_pLViWD": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi-patches-result-harper.webp",
+            "image": "shopify://shop_images/mi-patches-result-harper.webp",
             "heading": "Plumped up wrinkles",
-            "text": "<p>“I've been using these patches once a week, I'm absolutely stoked with the results. They feel incredible on my skin, and I'm already noticing a gradual improvement in my laugh lines. I'm really looking forward to seeing even more progress as I keep using them in my routine.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text": "<p>“I've been using these patches once a week, I'm absolutely stoked with the results. They feel incredible on my skin, and I'm already noticing a gradual improvement in my laugh lines. I'm really looking forward to seeing even more progress as I keep using them in my routine.”</p>",
+            "image_country": "shopify://shop_images/australia_f.webp",
             "text_country": "Australia",
             "client": "Harper",
             "code": ""
@@ -247,10 +248,10 @@
         "result_NLCf8y": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1664_2_72adb2e4-8829-4419-b84a-76247a775beb.png",
+            "image": "shopify://shop_images/Frame_1664_2_72adb2e4-8829-4419-b84a-76247a775beb.png",
             "heading": "Thin skin feels hydrated",
-            "text": "<p>“I just tried out the Qure Micro Infusion Patches for one night, and let me tell you, my skin felt so refreshed when I woke up. I could even see a subtle improvement in my fine lines already. I can only imagine how much better it'll get with consistent use! For now, I can definitely say my skin looks smoother.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text": "<p>“I just tried out the Qure Micro Infusion Patches for one night, and let me tell you, my skin felt so refreshed when I woke up. I could even see a subtle improvement in my fine lines already. I can only imagine how much better it'll get with consistent use! For now, I can definitely say my skin looks smoother.”</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Lisa N.",
             "code": ""
@@ -259,10 +260,10 @@
         "result_V6dEdM": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_lucy.webp",
+            "image": "shopify://shop_images/results_lucy.webp",
             "heading": "Dark circles",
-            "text": "<p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for my dark circles and I don't look tired anymore! I used them 2x a week to get these results. The shipping was very fast too!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text": "<p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for my dark circles and I don't look tired anymore! I used them 2x a week to get these results. The shipping was very fast too!”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Lucy",
             "code": ""
@@ -271,10 +272,10 @@
         "result_Yz3yit": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_katharina.webp",
+            "image": "shopify://shop_images/results_katharina.webp",
             "heading": "Under-eye circles",
-            "text": "<p>“Waking up with these patches makes getting out of bed in the morning that much easier as I'm so excited to rush to the mirror and see the results! My usual under-eye wrinkles have visibly reduced and I finally feel more confident to step out of the house without concealer. Also, the patches feel super refreshing on the skin which I love!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/germany_f.webp",
+            "text": "<p>“Waking up with these patches makes getting out of bed in the morning that much easier as I'm so excited to rush to the mirror and see the results! My usual under-eye wrinkles have visibly reduced and I finally feel more confident to step out of the house without concealer. Also, the patches feel super refreshing on the skin which I love!”</p>",
+            "image_country": "shopify://shop_images/germany_f.webp",
             "text_country": "Germany",
             "client": "Katharina",
             "code": ""
@@ -283,10 +284,10 @@
         "result_KeXNgc": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1664_1_a95ed456-8db4-4597-92d4-4ed6d2619f8a.png",
+            "image": "shopify://shop_images/Frame_1664_1_a95ed456-8db4-4597-92d4-4ed6d2619f8a.png",
             "heading": "Tired under eyes",
-            "text": "<p>“I always struggled with puffy eyes and dark circles. The results I got with these patches were pretty remarkable. The puffiness visibly decreased, and the dark circles lightened, giving my eyes a much-needed boost and I no longer look tired all the time.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/Mask_Group_4ee3aa5e-884e-46d9-9f46-87012f2ff9a6.png",
+            "text": "<p>“I always struggled with puffy eyes and dark circles. The results I got with these patches were pretty remarkable. The puffiness visibly decreased, and the dark circles lightened, giving my eyes a much-needed boost and I no longer look tired all the time.”</p>",
+            "image_country": "shopify://shop_images/Mask_Group_4ee3aa5e-884e-46d9-9f46-87012f2ff9a6.png",
             "text_country": "United Kingdom",
             "client": "Damiano",
             "code": ""
@@ -295,10 +296,10 @@
         "result_CPGXbx": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_shammi.webp",
+            "image": "shopify://shop_images/results_shammi.webp",
             "heading": "I am so impressed!",
-            "text": "<p>“I only use these for two hours and I cannot wait to continue using them to see further results. I am so impressed that these were the results and in just two hours. Love how you can do this at home.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "text": "<p>“I only use these for two hours and I cannot wait to continue using them to see further results. I am so impressed that these were the results and in just two hours. Love how you can do this at home.”</p>",
+            "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
             "client": "Shammi",
             "code": ""
@@ -307,10 +308,10 @@
         "result_xnAADx": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_jay1.webp",
+            "image": "shopify://shop_images/results_jay1.webp",
             "heading": "There’s a clear improvement",
-            "text": "<p>My first test was on my “1” crease between my eyes, and I was impressed. I did 3 hours, and there’s a clear improvement upon removal (Before and afters). These are high-end in price, and it’s a get-what-you-pay-for situation. They work!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text": "<p>My first test was on my “1” crease between my eyes, and I was impressed. I did 3 hours, and there’s a clear improvement upon removal (Before and afters). These are high-end in price, and it’s a get-what-you-pay-for situation. They work!”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Jay",
             "code": ""
@@ -319,10 +320,10 @@
         "result_gUDpyX": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_ernie.webp",
+            "image": "shopify://shop_images/results_ernie.webp",
             "heading": "seen such a huge change",
-            "text": "<p>“I loved the microneedling patches so much, and seen such a huge change in my under eyes!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text": "<p>“I loved the microneedling patches so much, and seen such a huge change in my under eyes!”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Ernie",
             "code": ""
@@ -331,10 +332,10 @@
         "result_EGPDqD": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_tanya.webp",
+            "image": "shopify://shop_images/results_tanya.webp",
             "heading": "What a big difference!",
-            "text": "<p>\"I have dark circles under my eyes and I've been so excited to start using these since the day I received them. What a big difference I've noticed from my first 3 uses. They are easy to use and come in a well-organized box of 8 pairs which equals out to be 16 patches, enough for a month.\"<\/p>",
-            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "text": "<p>\"I have dark circles under my eyes and I've been so excited to start using these since the day I received them. What a big difference I've noticed from my first 3 uses. They are easy to use and come in a well-organized box of 8 pairs which equals out to be 16 patches, enough for a month.\"</p>",
+            "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
             "client": "Tanya",
             "code": ""
@@ -377,14 +378,14 @@
         "image_M97bYq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/micro_grid-combat-patches.webp",
+            "image": "shopify://shop_images/micro_grid-combat-patches.webp",
             "classname": ""
           }
         },
         "content_Tr9nYf": {
           "type": "content",
           "settings": {
-            "text": "<p>[code]<\/p>",
+            "text": "<p>[code]</p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -392,7 +393,7 @@
         "code_ywcMEL": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"swiper ingredients_slider combat_slider\">\n                            <div class=\"swiper-wrapper\">\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-fine_line.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Fine lines<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-wrinkles.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Wrinkles<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-dark_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Dark circles<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-puffiness.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Puffiness<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item mw-100\">\n                                        <img src=\"{{ 'mi-patches-under-eys.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Under-eye bags<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item mw-100\">\n                                        <img src=\"{{ 'mi-patches-heavy-skin.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Heavy skin feeling<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>\n                            <div class=\"swiper-pagination\"><\/div>\n                        <\/div>"
+            "code": "<div class=\"swiper ingredients_slider combat_slider\">\n                            <div class=\"swiper-wrapper\">\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-fine_line.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Fine lines</p>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-wrinkles.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Wrinkles</p>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-dark_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Dark circles</p>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-puffiness.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Puffiness</p>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item mw-100\">\n                                        <img src=\"{{ 'mi-patches-under-eys.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Under-eye bags</p>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item mw-100\">\n                                        <img src=\"{{ 'mi-patches-heavy-skin.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Heavy skin feeling</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"swiper-pagination\"></div>\n                        </div>"
           }
         }
       },
@@ -414,23 +415,23 @@
         "object_Pcbmim": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_188_2a078240-295d-4e92-a36f-2acb2c6b5c1f.png",
+            "image": "shopify://shop_images/Rectangle_188_2a078240-295d-4e92-a36f-2acb2c6b5c1f.png",
             "heading": "Micro-Infusion Targeted Patches",
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>Micro-Darts melt into the skin for <strong>deeper ingredient delivery<\/strong><\/li><li><strong>Versatile<\/strong> (11 lines, crow’s feet, under eye, laugh lines)<\/li><li><strong>Stay<\/strong> comfortably for 2-6 hours, or <strong>overnight<\/strong> for best results<\/li><li><strong>Continually works<\/strong> to give a rejuvenated look to your skin<\/li><\/ul>"
+            "list": "<ul><li>Micro-Darts melt into the skin for <strong>deeper ingredient delivery</strong></li><li><strong>Versatile</strong> (11 lines, crow’s feet, under eye, laugh lines)</li><li><strong>Stay</strong> comfortably for 2-6 hours, or <strong>overnight</strong> for best results</li><li><strong>Continually works</strong> to give a rejuvenated look to your skin</li></ul>"
           }
         },
         "object_e4htz7": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi-eye-patches.webp",
+            "image": "shopify://shop_images/mi-eye-patches.webp",
             "heading": "Alternative Eye Patches",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>Ingredients <strong>sit<\/strong> mostly <strong>on top of skin<\/strong><\/li><li>Created for <strong>eye area only<\/strong><\/li><li><strong>Slippery<\/strong>, move around on the face<\/li><li>Provides <strong>temporary results<\/strong><\/li><\/ul>"
+            "list": "<ul><li>Ingredients <strong>sit</strong> mostly <strong>on top of skin</strong></li><li>Created for <strong>eye area only</strong></li><li><strong>Slippery</strong>, move around on the face</li><li>Provides <strong>temporary results</strong></li></ul>"
           }
         }
       },
@@ -447,7 +448,7 @@
     "liquid_WdMeGQ": {
       "type": "liquid",
       "settings": {
-        "code": "<!-- mi-patches skincare_slider section start -->\n        <div class=\"patches_ingredients mw-949\">\n            <div class=\"container\">\n                <div class=\"section_header text-md-center\">\n                    <h2 class=\"title-lg paddingB\">Deeply replenishes the skin with these powerful, science-backed\n                        ingredients\n                    <\/h2>\n                <\/div>\n                <div class=\"accordion skincare_right\" id=\"accordionExample_pi\">\n                    <div class=\"pi_grid\">\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingOne\">\n                                <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_retinol.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Retinol<\/div>\n                                    <\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" aria-labelledby=\"headingOne\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>A natural derivative of vitamin A, this hero ingredient speeds up the removal\n                                        of\n                                        old skin cells to reveal your best, most rejuvenated skin underneath.<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingTwo\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_niacinamide.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Niacinamide<\/div>\n                                    <\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>A type of vitamin B3, this powerhouse ingredient helps maintain skin health\n                                        for a\n                                        brighter, more even skin tone. It also helps smooth the look of wrinkles –\n                                        especially when combined with retinol.<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingThree\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_caffeine.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Caffeine<\/div>\n                                    <\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseThree\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingThree\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Caffeine works through micro-circulation, helping to fade the look of dark\n                                        circles and under-eye bags – like a pick-me-up for the skin.<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                    <\/div>\n                    <div class=\"pi_grid\">\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingFour\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseFour\" aria-expanded=\"false\" aria-controls=\"collapseFour\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_acetyl.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Acetyl Hexapeptide-8 Peptides <\/div>\n                                    <\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseFour\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingFour\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>This safe, synthetic form of Botox visibly reduces the appearance of fine\n                                        lines\n                                        and wrinkles & boosts collagen production. It’s the first peptide designed\n                                        to\n                                        target expression lines.<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingFive\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseFive\" aria-expanded=\"false\" aria-controls=\"collapseFive\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_copper.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Copper Peptides<\/div>\n                                    <\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseFive\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingFive\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Copper peptides promote collagen and elastin production which helps plump and\n                                        tighten the skin. They also serve as an antioxidant, working to protect the\n                                        skin\n                                        against further barrier damage.<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingSix\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseSix\" aria-expanded=\"false\" aria-controls=\"collapseSix\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_licorice.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Licorice<\/div>\n                                    <\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseSix\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingSix\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Licorice boasts anti-inflammatory properties that work wonders in reducing\n                                        puffiness and soothing irritated skin.<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                        <div class=\"accordion-item u_item_question bg-grey\">\n                            <h2 class=\"accordion-header\" id=\"headingSeven\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseSeven\" aria-expanded=\"false\" aria-controls=\"collapseSeven\">\n                                    <div class=\"containers\">All Ingredients<\/div>\n                                <\/button>\n                            <\/h2>\n                            <div id=\"collapseSeven\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingSeven\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin,\n                                        Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil,\n                                        Allantoin,\n                                        Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica\n                                        Extract, \n                                        Acetyl Hexapeptide-8, BHT<\/p>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n        <!-- mi-patches skincare_slider section end -->"
+        "code": "<!-- mi-patches skincare_slider section start -->\n        <div class=\"patches_ingredients mw-949\">\n            <div class=\"container\">\n                <div class=\"section_header text-md-center\">\n                    <h2 class=\"title-lg paddingB\">Deeply replenishes the skin with these powerful, science-backed\n                        ingredients\n                    </h2>\n                </div>\n                <div class=\"accordion skincare_right\" id=\"accordionExample_pi\">\n                    <div class=\"pi_grid\">\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingOne\">\n                                <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_retinol.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Retinol</div>\n                                    </div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" aria-labelledby=\"headingOne\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>A natural derivative of vitamin A, this hero ingredient speeds up the removal\n                                        of\n                                        old skin cells to reveal your best, most rejuvenated skin underneath.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingTwo\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_niacinamide.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Niacinamide</div>\n                                    </div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>A type of vitamin B3, this powerhouse ingredient helps maintain skin health\n                                        for a\n                                        brighter, more even skin tone. It also helps smooth the look of wrinkles –\n                                        especially when combined with retinol.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingThree\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_caffeine.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Caffeine</div>\n                                    </div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseThree\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingThree\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Caffeine works through micro-circulation, helping to fade the look of dark\n                                        circles and under-eye bags – like a pick-me-up for the skin.</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"pi_grid\">\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingFour\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseFour\" aria-expanded=\"false\" aria-controls=\"collapseFour\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_acetyl.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Acetyl Hexapeptide-8 Peptides </div>\n                                    </div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseFour\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingFour\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>This safe, synthetic form of Botox visibly reduces the appearance of fine\n                                        lines\n                                        and wrinkles & boosts collagen production. It’s the first peptide designed\n                                        to\n                                        target expression lines.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingFive\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseFive\" aria-expanded=\"false\" aria-controls=\"collapseFive\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_copper.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Copper Peptides</div>\n                                    </div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseFive\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingFive\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Copper peptides promote collagen and elastin production which helps plump and\n                                        tighten the skin. They also serve as an antioxidant, working to protect the\n                                        skin\n                                        against further barrier damage.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"accordion-item pi-item\">\n                            <h2 class=\"accordion-header\" id=\"headingSix\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseSix\" aria-expanded=\"false\" aria-controls=\"collapseSix\">\n                                    <div class=\"pi_header\">\n                                        <img src=\"{{ 'pi_licorice.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <div class=\"pi_heading\">Licorice</div>\n                                    </div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseSix\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingSix\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Licorice boasts anti-inflammatory properties that work wonders in reducing\n                                        puffiness and soothing irritated skin.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"accordion-item u_item_question bg-grey\">\n                            <h2 class=\"accordion-header\" id=\"headingSeven\">\n                                <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"\n                                    data-bs-target=\"#collapseSeven\" aria-expanded=\"false\" aria-controls=\"collapseSeven\">\n                                    <div class=\"containers\">All Ingredients</div>\n                                </button>\n                            </h2>\n                            <div id=\"collapseSeven\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingSeven\"\n                                data-bs-parent=\"#accordionExample_pi\">\n                                <div class=\"accordion-body\">\n                                    <p>Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin,\n                                        Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil,\n                                        Allantoin,\n                                        Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica\n                                        Extract, \n                                        Acetyl Hexapeptide-8, BHT</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- mi-patches skincare_slider section end -->"
       }
     },
     "two_column_box_kCjBfM": {
@@ -456,7 +457,7 @@
         "content_nw7Bb9": {
           "type": "content",
           "settings": {
-            "text": "<p>[code]<\/p>",
+            "text": "<p>[code]</p>",
             "column_content": 0,
             "classname": "d-none d-md-block"
           }
@@ -464,7 +465,7 @@
         "content_FFmkGM": {
           "type": "content",
           "settings": {
-            "text": "<h2>How does it work?<\/h2><p>After cleansing, simply peel off the adhesive strips. Apply the patch on a desired area (11 lines, Crow’s feet, Under-eye area or Laugh lines).<\/p><p>Gently press for 5-10 seconds.<br\/><br\/>The micro-darts dissolve the concentrated serum directly into the skin!<br\/><br\/>Use 1-2 times per week for at least two hours. <br\/><strong>For best results, leave them on overnight!<\/strong><\/p><p>[code_mobile]<\/p>",
+            "text": "<h2>How does it work?</h2><p>After cleansing, simply peel off the adhesive strips. Apply the patch on a desired area (11 lines, Crow’s feet, Under-eye area or Laugh lines).</p><p>Gently press for 5-10 seconds.<br/><br/>The micro-darts dissolve the concentrated serum directly into the skin!<br/><br/>Use 1-2 times per week for at least two hours. <br/><strong>For best results, leave them on overnight!</strong></p><p>[code_mobile]</p>",
             "column_content": 7,
             "classname": "section_header mb_contents mw-525 text-start pt-5"
           }
@@ -472,7 +473,7 @@
         "code_tjhLHr": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"wistia_responsive_padding\" style=\"padding:87.92% 0 0 0;position:relative;\">\n                            <div class=\"wistia_responsive_wrapper rounded-20 overflow-hidden\"\n                                style=\"height:100%;left:0;position:absolute;top:0;width:100%;\">\n                                <div class=\"wistia_embed wistia_async_ahzo4pgo2w seo=false videoFoam=true autoplay=true\"\n                                    style=\"height:100%;position:relative;width:100%\">\n                                    <div class=\"wistia_swatch\"\n                                        style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\">\n                                        <img src=\"https:\/\/fast.wistia.com\/embed\/medias\/ahzo4pgo2w\/swatch\"\n                                            style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\"\n                                            aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" \/>\n                                    <\/div>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n\n    <script src=\"https:\/\/fast.wistia.com\/embed\/medias\/3ahwzg8wjz.jsonp\" async><\/script>\n    <script src=\"https:\/\/fast.wistia.com\/assets\/external\/E-v1.js\" async><\/script>"
+            "code": "<div class=\"wistia_responsive_padding\" style=\"padding:87.92% 0 0 0;position:relative;\">\n                            <div class=\"wistia_responsive_wrapper rounded-20 overflow-hidden\"\n                                style=\"height:100%;left:0;position:absolute;top:0;width:100%;\">\n                                <div class=\"wistia_embed wistia_async_ahzo4pgo2w seo=false videoFoam=true autoplay=true\"\n                                    style=\"height:100%;position:relative;width:100%\">\n                                    <div class=\"wistia_swatch\"\n                                        style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\">\n                                        <img src=\"https://fast.wistia.com/embed/medias/ahzo4pgo2w/swatch\"\n                                            style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\"\n                                            aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" />\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n\n    <script src=\"https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp\" async></script>\n    <script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script>"
           }
         }
       },
@@ -494,7 +495,7 @@
           "type": "object",
           "settings": {
             "heading": "Is there any discomfort when using the patches?",
-            "text": "<p>None whatsoever! All you’ll feel is a slight prickly sensation as you apply the patches and press down the micro darts onto your skin. Our Micro-Infusion patches are designed to penetrate the skin deeply to deliver active ingredients without causing any pain, or downtime.<\/p>",
+            "text": "<p>None whatsoever! All you’ll feel is a slight prickly sensation as you apply the patches and press down the micro darts onto your skin. Our Micro-Infusion patches are designed to penetrate the skin deeply to deliver active ingredients without causing any pain, or downtime.</p>",
             "code": ""
           }
         },
@@ -502,7 +503,7 @@
           "type": "object",
           "settings": {
             "heading": "How many patches come per box?",
-            "text": "<p>There are 8 patches (pairs) per box. We recommend using 1-2 times per week so there is 1 month supply!<\/p>",
+            "text": "<p>There are 8 patches (pairs) per box. We recommend using 1-2 times per week so there is 1 month supply!</p>",
             "code": ""
           }
         },
@@ -510,7 +511,7 @@
           "type": "object",
           "settings": {
             "heading": "How long should I apply the patches for?",
-            "text": "<p>For optimal results, we suggest applying the patches for a minimum of 2 hours, but preferably overnight. Leaving the patches on whilst you sleep ensures that the serum has ample time to dissolve and penetrate into the skin, maximizing its effectiveness to give you the best results.<\/p><p>Use 1-2 times per week.<\/p>",
+            "text": "<p>For optimal results, we suggest applying the patches for a minimum of 2 hours, but preferably overnight. Leaving the patches on whilst you sleep ensures that the serum has ample time to dissolve and penetrate into the skin, maximizing its effectiveness to give you the best results.</p><p>Use 1-2 times per week.</p>",
             "code": ""
           }
         },
@@ -518,7 +519,7 @@
           "type": "object",
           "settings": {
             "heading": "Are they safe?",
-            "text": "<p>Absolutely! Each of our patches undergoes rigorous dermatologist approval and testing. Our Micro-Infusion patches are crafted in a state-of-the-art facility laboratory in South Korea, adhering to the highest standards of safety.<\/p><p>For individuals with sensitive skin, we advise conducting a patch test before using our Micro-Infusion patches. Avoid applying them on open wounds, cuts, irritated, or infected skin. If you experience any irritation or rash then discontinue usage immediately.<\/p>",
+            "text": "<p>Absolutely! Each of our patches undergoes rigorous dermatologist approval and testing. Our Micro-Infusion patches are crafted in a state-of-the-art facility laboratory in South Korea, adhering to the highest standards of safety.</p><p>For individuals with sensitive skin, we advise conducting a patch test before using our Micro-Infusion patches. Avoid applying them on open wounds, cuts, irritated, or infected skin. If you experience any irritation or rash then discontinue usage immediately.</p>",
             "code": ""
           }
         },
@@ -526,7 +527,7 @@
           "type": "object",
           "settings": {
             "heading": "Can I use the patches whilst pregnant or breast-feeding?",
-            "text": "<p>Yes! Many pregnant women avoid  injectables, retinols, or any strong acids for anti-aging during this time, so many turn to Qure as a safer alternative. However we always recommend speaking with a medical professional for advice prior to use.<\/p>",
+            "text": "<p>Yes! Many pregnant women avoid  injectables, retinols, or any strong acids for anti-aging during this time, so many turn to Qure as a safer alternative. However we always recommend speaking with a medical professional for advice prior to use.</p>",
             "code": ""
           }
         },
@@ -534,7 +535,7 @@
           "type": "object",
           "settings": {
             "heading": "How are they packaged?",
-            "text": "<p>Each Micro-Infusion Targeted patch (2\/ pair) is packaged individually in a sealed container and then wrapped within a protective sealed foil pouch to prevent contamination and lock in moisture.<\/p>",
+            "text": "<p>Each Micro-Infusion Targeted patch (2/ pair) is packaged individually in a sealed container and then wrapped within a protective sealed foil pouch to prevent contamination and lock in moisture.</p>",
             "code": ""
           }
         },
@@ -542,7 +543,7 @@
           "type": "object",
           "settings": {
             "heading": "Are they suitable just for around the eyes only?",
-            "text": "<p>The best thing about our Micro-Infusion patches is that you can target different areas of concern. Whether it be under eyes, crows feet, smile lines or frown lines.<\/p>",
+            "text": "<p>The best thing about our Micro-Infusion patches is that you can target different areas of concern. Whether it be under eyes, crows feet, smile lines or frown lines.</p>",
             "code": ""
           }
         }
