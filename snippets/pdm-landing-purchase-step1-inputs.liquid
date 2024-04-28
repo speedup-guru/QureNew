@@ -1,33 +1,69 @@
-<div id="inputs-{{name}}" class="inputs-{{name}} {% if name == 'mix' and productOneValue == '1' %}show-inputs{% endif %}">
+
+{% liquid
+  assign price_3 = productThree.price | money_without_currency
+  if price_3 == blank
+    assign price_3 = 0
+  endif  
+%}
+
+<div
+  id="inputs-{{ name }}"
+  class="inputs-{{ name }} {% if name == 'products1' %} show-inputs {% endif %}"
+>
   <input
     data-id-product="{{ productOne.id }}"
+    data-identifier="1"
     type="radio"
     id="{{name}}-one"
     name="{{ name }}"
-    value="{{ productOneValue }}"
-    {% if name == 'mix' and productOneValue == '1' %}
-      checked
-    {% endif %}
+    value='{
+      "position":1, 
+      "id":{{ productOne.id }}, 
+      "quantity":1, 
+      "discountPrice": {{ productOne.price | money_without_currency }},
+      "price":{{ productOne.compare_at_price | money_without_currency }}, 
+      "discountPriceQuota": {{ productOne.price |  divided_by: 4 | money_without_currency }},
+      "input": "{{ name }}"
+    }'
+    checked
   >
   <label for="{{name}}-one">
     {% render 'pdm-landing-purchase-step1-card', productData: productOne, productInfo: productOneInfo %}
   </label>
   <input
     data-id-product="{{ productTwo.id }}"
+    data-identifier="2"
     type="radio"
     id="{{name}}-two"
     name="{{ name }}"
-    value="{{ productTwoValue }}"
+    value='{
+      "position":2, 
+      "id":{{ productTwo.id }}, 
+      "quantity":1,
+      "discountPrice": {{ productTwo.price | money_without_currency }},
+      "price":{{ productTwo.compare_at_price | money_without_currency }}, 
+      "discountPriceQuota": {{ productTwo.price | divided_by: 4 | money_without_currency  }},
+      "input": "{{ name }}"
+    }'
   >
   <label for="{{name}}-two">
     {% render 'pdm-landing-purchase-step1-card', productData: productTwo, productInfo: productTwoInfo %}
   </label>
   <input
     data-id-product="{{ productThree.id }}"
+    data-identifier="3"
     type="radio"
     id="{{name}}-three"
     name="{{ name }}"
-    value="{{ productThreeValue }}"
+    value='{
+      "position":3, 
+      "id":{{ productThree.id }}, 
+      "quantity":1, 
+      "discountPrice": {{ productThree.price | money_without_currency }},
+      "price":{{ price_3 }}, 
+      "discountPriceQuota": {{ productThree.price | divided_by: 4 | money_without_currency }},
+      "input": "{{ name }}"
+    }'
   >
   <label for="{{name}}-three">
     {% render 'pdm-landing-purchase-step1-card', productData: productThree, productInfo: productThreeInfo %}

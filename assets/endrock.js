@@ -225,17 +225,31 @@ document.addEventListener('DOMContentLoaded', function() {
       this.panels = document.querySelectorAll('.landing-panel');
       this.btnBack = document.getElementById('landing-back');
       this.btnNext = document.getElementById('landing-next');
+      this.bntTest = document.getElementById('landing-test');
+      this.selectedInputValue = null;
+      this.selectedInputValueJson = null;
       this.indexPanel = 0;
 
       this.hidePanels();
       this.showActualPanel(this.indexPanel);
       this.updateButtons();
       this.updateVisibilityFirstStep();
+      this.renderElementsStep3();
 
-      const radioButtons = document.querySelectorAll('#step2-select input[type="radio"]');
-      radioButtons.forEach(button => {
+      const radioButtonsStep2 = document.querySelectorAll('#step2-select input[type="radio"]');
+      radioButtonsStep2.forEach(button => {
         button.addEventListener('change', () => {
           this.updateVisibilityFirstStep();
+          this.renderElementsStep3();
+        });
+      });
+
+      const radioButtonsStep1 = document.querySelectorAll('.inputs-products1 input[type="radio"], .inputs-products2 input[type="radio"], .inputs-products3 input[type="radio"]');
+      radioButtonsStep1.forEach(button => {
+        button.addEventListener('change', () => {
+          this.syncRadioButtons(button.dataset.identifier);
+          this.updateSelectedInputValue();
+          this.renderElementsStep3();
         });
       });
 
@@ -246,6 +260,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
       this.btnBack.addEventListener('click', () =>{
         this.backPanel();
+      });
+
+      this.bntTest.addEventListener('click', () =>{
+        console.log('test');
+        console.log('Value of selected radio button):', JSON.parse((this.selectedInputValue)) );
       });
     }
 
@@ -299,26 +318,56 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
 
+      syncRadioButtons(value) {
+        const allInputs = document.querySelectorAll('.inputs-products1 input[type="radio"], .inputs-products2 input[type="radio"], .inputs-products3 input[type="radio"]');
+        allInputs.forEach(input => {
+          if (input.dataset.identifier === value) {
+            input.checked = true;
+          }
+        });
+      }
+
+      updateSelectedInputValue() {
+        const selectedRadioButton = document.querySelector('.inputs-products1 input[type="radio"]:checked, .inputs-products2 input[type="radio"]:checked, .inputs-products3 input[type="radio"]:checked');
+        this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
+        // console.log('Selected input value:', this.selectedInputValue);
+        // create json input value
+      }
+
       updateVisibilityFirstStep(){
         const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
         const selectOption = secondRadioButtons.value;
-        console.log('selected 2', selectOption);
+        // console.log('selected 2', selectOption);
 
-        const allInputs = document.querySelectorAll('.inputs-mix, .inputs-silver, .inputs-gold');
+        const allInputs = document.querySelectorAll('.inputs-products1, .inputs-products2, .inputs-products3');
         allInputs.forEach(input => {
           input.classList.remove('show-inputs');
         });
         const selectedInputs = document.querySelector(`#inputs-${selectOption}`);
         selectedInputs.classList.add('show-inputs');
-       
+
+        const selectedRadioButton = selectedInputs.querySelector('input[type="radio"]:checked');
+        this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
+        console.log('Selected input value 1:', this.selectedInputValue);
 
       }
 
+      renderElementsStep3(){
+        const selectedInputJson = JSON.parse(this.selectedInputValue);
+        console.log('Selected input value:', selectedInputJson);
+
+        const step3PriceNormal = document.getElementById('step3-price-normal');
+        const step3PriceQuota = document.getElementById('step3-price-quota');
+
+        if (step3PriceNormal && step3PriceQuota) {
+          step3PriceNormal.innerHTML = `<span> render price: ${selectedInputJson.price}</span>`;
+          step3PriceQuota.innerHTML = `<span> render quota: ${selectedInputJson.discountPriceQuota}</span>`;
+        }
+      }
         
   }
 
   const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');
-
   // end purchase landing page
 
 });

@@ -8,78 +8,78 @@
   # metaFields / metaObjects
   #######
 
-  # rejuvenating
-  assign rejuvenating = page.metafields.custom.landing_product_3.value
-  assign rejuvenating_type = rejuvenating.select_type.value
-  assign gold_products = page.metafields.custom.landing_product_3.value.list_products.value
-
-  for data in gold_products
-    if forloop.index == 1
-      assign gold_product_1_month = data
-    elsif forloop.index == 2
-      assign gold_product_2_month = data
-    elsif forloop.index == 3
-      assign gold_product_3_month = data
-    endif
-  endfor
-
-  assign first_gold_product = gold_product_1_month.data.value
-  assign second_gold_product = gold_product_2_month.data.value
-  assign third_gold_product = gold_product_3_month.data.value
-
-  # hydra soothing
-  assign hydraSoothing = page.metafields.custom.landing_product_2.value
-  assign silver_products = page.metafields.custom.landing_product_2.value.list_products.value
-  assign hydraSoothing_type = hydraSoothing.select_type.value
-
-  for data in silver_products
-    if forloop.index == 1
-      assign silver_product_1_month = data
-    elsif forloop.index == 2
-      assign silver_product_2_month = data
-    elsif forloop.index == 3
-      assign silver_product_3_month = data
-    endif
-  endfor
-
-  assign first_silver_product = silver_product_1_month.data.value
-  assign second_silver_product = silver_product_2_month.data.value
-  assign third_silver_product = silver_product_3_month.data.value
-
-  #end hydrasoothing / silver
-  
-  # mix
-  assign mix = page.metafields.custom.landing_product_one.value
-  assign mix_products = page.metafields.custom.landing_product_one.value.list_products.value
-  assign mix_type = mix.select_type.value
-
+  # product1 / mix
+  assign products1 = page.metafields.custom.landing_product_one.value
+  assign products1_products = page.metafields.custom.landing_product_one.value.list_products.value
+  assign products1_type = products1.select_type.value
 
   # each mix product
   ## for to split and general info
-  for data in mix_products
+  for data in products1_products
     if forloop.index == 1
-      assign mix_product_1_month = data
+      assign products1_product_1_month = data
     elsif forloop.index == 2
-      assign mix_product_2_month = data
+      assign products1_product_2_month = data
     elsif forloop.index == 3
-      assign mix_product_3_month = data
+      assign products1_product_3_month = data
     endif
   endfor
   ## split info only for products
-  assign first_mix_product = mix_product_1_month.data.value
-  assign second_mix_product = mix_product_2_month.data.value
-  assign third_mix_product = mix_product_3_month.data.value
-  ####### 
-  #end mix
+  assign first_products1_product = products1_product_1_month.data.value
+  assign second_products1_product = products1_product_2_month.data.value
+  assign third_products1_product = products1_product_3_month.data.value
+  #######
+  # end products1 / mix
+
+  # product2 / silver
+  assign products2 = page.metafields.custom.landing_product_2.value
+  assign products2_products = page.metafields.custom.landing_product_2.value.list_products.value
+  assign products2_type = products2.select_type.value
+
+  for data in products2_products
+    if forloop.index == 1
+      assign products2_product_1_month = data
+    elsif forloop.index == 2
+      assign products2_product_2_month = data
+    elsif forloop.index == 3
+      assign products2_product_3_month = data
+    endif
+  endfor
+
+  assign first_products2_product = products2_product_1_month.data.value
+  assign second_products2_product = products2_product_2_month.data.value
+  assign third_products2_product = products2_product_3_month.data.value
+
+  # end products2 / products2
+
+  # products3 / rejuvenating
+  assign products3 = page.metafields.custom.landing_product_3.value
+  assign products3_type = products3.select_type.value
+  assign products3_products = page.metafields.custom.landing_product_3.value.list_products.value
+
+  for data in products3_products
+    if forloop.index == 1
+      assign products3_product_1_month = data
+    elsif forloop.index == 2
+      assign products3_product_2_month = data
+    elsif forloop.index == 3
+      assign products3_product_3_month = data
+    endif
+  endfor
+
+  assign first_products3_product = products3_product_1_month.data.value
+  assign second_products3_product = products3_product_2_month.data.value
+  assign third_products3_product = products3_product_3_month.data.value
+
   #######
 %}
 
 <script>
-  console.log('hydraSoothing', {{hydraSoothing |  json}})
-  console.log('silver_products', {{silver_products |  json}})
-  console.log('hydraSoothing_type', {{hydraSoothing_type |  json}})
-  console.log('first_silver_product', {{first_silver_product |  json}})
   // console.log("general_settings", {{ general_settings | json }});
+  // console.log('products2', {{products2 |  json}})
+  // console.log('products2_products', {{products2_products |  json}})
+  // console.log('products2_type', {{products2_type |  json}})
+  // console.log('first_products2_product', {{first_products2_product |  json}})
   // console.log("mix", {{ mix | json }});
   // console.log("mix_products", {{ mix_products | json }});
   // console.log("mix_type", {{ mix_type | json }});
@@ -105,46 +105,36 @@
       <div>
         <h3>{{ general_settings.title_component }}</h3>
       </div>
-      {% comment %} mix {% endcomment %}
-      {% render 'pdm-landing-purchase-step1-inputs' 
-        productOne:  third_mix_product,
-        productOneInfo: mix_product_3_month,
-        productOneValue: "1",
-        productTwo: second_mix_product,
-        productTwoInfo: mix_product_2_month,
-        productTwoValue: "2",
-        productThree: first_mix_product,
-        productThreeInfo: mix_product_1_month,
-        productThreeValue: "3"
-        name: "mix"
+      {% comment %} products1 / mix {% endcomment %}
+      {% render 'pdm-landing-purchase-step1-inputs',
+        productOne: third_products1_product,
+        productOneInfo: products1_product_3_month,
+        productTwo: second_products1_product,
+        productTwoInfo: products1_product_2_month,
+        productThree: first_products1_product,
+        productThreeInfo: products1_product_1_month,
+        name: 'products1'
       %}
-      {% comment %} silver {% endcomment %}
-      {% render 'pdm-landing-purchase-step1-inputs' 
-        productOne:  third_silver_product,
-        productOneInfo: silver_product_3_month,
-        productOneValue: "4",
-        productTwo: second_silver_product,
-        productTwoInfo: silver_product_2_month,
-        productTwoValue: "5",
-        productThree: first_silver_product,
-        productThreeInfo: silver_product_1_month
-        productThreeValue: "6"
-        name: "silver"
+      {% comment %} products2 / silver {% endcomment %}
+      {% render 'pdm-landing-purchase-step1-inputs',
+        productOne: third_products2_product,
+        productOneInfo: products2_product_3_month,
+        productTwo: second_products2_product,
+        productTwoInfo: products2_product_2_month,
+        productThree: first_products2_product,
+        productThreeInfo: products2_product_1_month,
+        name: 'products2'
       %}
-      
-      {% comment %} gold {% endcomment %}
-      {% render 'pdm-landing-purchase-step1-inputs' 
-        productOne:  third_gold_product,
-        productOneInfo: gold_product_3_month,
-        productOneValue: "6",
-        productTwo: second_gold_product,
-        productTwoInfo: gold_product_2_month,
-        productTwoValue: "7",
-        productThree: first_gold_product,
-        productThreeInfo: gold_product_1_month
-        productThreeValue: "8"
-        name: "gold"
 
+      {% comment %} products3 / gold {% endcomment %}
+      {% render 'pdm-landing-purchase-step1-inputs',
+        productOne: third_products3_product,
+        productOneInfo: products3_product_3_month,
+        productTwo: second_products3_product,
+        productTwoInfo: products3_product_2_month,
+        productThree: first_products3_product,
+        productThreeInfo: products3_product_1_month,
+        name: 'products3'
       %}
     </div>
     {% comment %} panel 2 {% endcomment %}
@@ -153,17 +143,17 @@
         <h3>{{ general_settings.step_2_title }}</h3>
       </div>
       <div id="step2-select" class="">
-        <input type="radio" id="serum-1" name="step2" value="{{ rejuvenating_type.type }}">
+        <input type="radio" id="serum-1" name="step2" value="{{ products3_type.type }}">
         <label for="serum-1">
-          {% render 'pdm-landing-purchase-serum', data: rejuvenating_type %}
+          {% render 'pdm-landing-purchase-serum', data: products3_type %}
         </label>
-        <input type="radio" id="serum-2" name="step2" value="{{ hydraSoothing_type.type }}">
+        <input type="radio" id="serum-2" name="step2" value="{{ products2_type.type }}">
         <label for="serum-2">
-          {% render 'pdm-landing-purchase-serum', data: hydraSoothing_type %}
+          {% render 'pdm-landing-purchase-serum', data: products2_type %}
         </label>
-        <input type="radio" id="serum-3" name="step2" value="{{ mix_type.type }}" checked>
+        <input type="radio" id="serum-3" name="step2" value="{{ products1_type.type }}" checked>
         <label for="serum-3">
-          {% render 'pdm-landing-purchase-serum', data: mix_type %}
+          {% render 'pdm-landing-purchase-serum', data: products1_type %}
         </label>
       </div>
     </div>
@@ -202,6 +192,11 @@
   </div>
   {% comment %} buttons {% endcomment %}
   <div>
+    <button
+      id="landing-test"
+    >
+      test
+    </button>
     <button
       id="landing-back"
     >

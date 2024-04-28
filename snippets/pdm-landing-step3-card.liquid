@@ -1,15 +1,31 @@
-
-{% assign cardTitles = data.card_3_card_titles.value %}
-{% assign selectedTitle = cardTitles[cardCase] %}
+{% liquid
+  assign cardTitles = data.step_3_card_titles.value
+  assign paymentText = data.step_3_payment_texts.value 
+  assign selectedTitle = cardTitles[cardCase]
+  assign selectedPaymentText = paymentText[cardCase]
+ %}
 
 <div>
   <div>
-    <span>calc price</span>
+    {% if cardCase == 0 %}
+      <div id="step3-price-normal"></div>
+      {% else %}
+      <div id="step3-price-quota"></div>
+    {% endif %}
   </div>
   <div>
     {{ selectedTitle }}
   </div>
   <div>
-    texto e imagenes 
+    <div>
+      {{ selectedPaymentText }}
+    </div>
+    <div>
+      {% if cardCase == 0 %}
+        {{ data.step_3_payment_logos_1 |  image_url: width: 300 |  image_tag: alt: 'payment logos' }}
+      {% else %}
+        {{ data.step_3_payment_logos_2 |  image_url: width: 300 |  image_tag: alt: 'payment logos' }}
+      {% endif %}
+    </div>
   </div>
 </div>
