@@ -226,21 +226,24 @@ document.addEventListener('DOMContentLoaded', function() {
       this.btnBack = document.getElementById('landing-back');
       this.btnNext = document.getElementById('landing-next');
       this.bntTest = document.getElementById('landing-test');
+      this.btnSubmit = document.getElementById('landing-submit');
       this.selectedInputValue = null;
       this.selectedInputValueJson = null;
       this.indexPanel = 0;
 
       this.hidePanels();
       this.showActualPanel(this.indexPanel);
-      this.updateButtons();
       this.updateVisibilityFirstStep();
+      this.updateSelectedInputValueJson();
       this.renderElementsStep3();
+      this.updateButtons();
 
       const radioButtonsStep2 = document.querySelectorAll('#step2-select input[type="radio"]');
       radioButtonsStep2.forEach(button => {
         button.addEventListener('change', () => {
           this.updateVisibilityFirstStep();
           this.renderElementsStep3();
+          this.updateSelectedInputValueJson();
         });
       });
 
@@ -250,6 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
           this.syncRadioButtons(button.dataset.identifier);
           this.updateSelectedInputValue();
           this.renderElementsStep3();
+          this.updateSelectedInputValueJson();
         });
       });
 
@@ -264,7 +268,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
       this.bntTest.addEventListener('click', () =>{
         console.log('test');
-        console.log('Value of selected radio button):', JSON.parse((this.selectedInputValue)) );
+        console.log('Value of selected radio button):', this.selectedInputValueJson);
+      });
+
+      this.btnSubmit.addEventListener('click', () =>{
+        console.log('submit');
+        console.log('Value of selected radio button):', this.selectedInputValueJson);
+      
+        this.addToCart();
       });
     }
 
@@ -283,87 +294,144 @@ document.addEventListener('DOMContentLoaded', function() {
         this.panels[index].classList.add('panel-hidden');
       }
 
-
       nextPanel(){
-        this.hidePanel(this.indexPanel);
-        this.indexPanel++;
-        if(this.indexPanel >= this.panels.length){
-          this.indexPanel = 0;
-        }
-        this.showActualPanel(this.indexPanel);
-        this.updateButtons();
-      }
+        console.log('Position:', this.selectedInputValueJson.position);
+        console.log('Index:', this.indexPanel);
+        console.log('Length:', this.panels.length);
+        console.log('Selected input value:', this.selectedInputValueJson);
 
-      backPanel(){
-        this.hidePanel(this.indexPanel);
-        this.indexPanel--;
-        if(this.indexPanel < 0){
-          this.indexPanel = this.panels.length - 1;
+        if (this.indexPanel < this.panels.length - 1) {
+          this.hidePanel(this.indexPanel);
+          this.indexPanel++;
+          this.showActualPanel(this.indexPanel);
+          this.updateButtons();
         }
-        this.showActualPanel(this.indexPanel);
-        this.updateButtons();
-      }
-
-      updateButtons(){
-        if(this.indexPanel === 0){
+    }
+      
+    updateButtons(){
+      // Ocultar el botón de retroceso en el primer panel
+      if(this.indexPanel === 0){
           this.btnBack.classList.add('hidden');
-        }else{
+      } else {
           this.btnBack.classList.remove('hidden');
-        }
+      }
 
-        if(this.indexPanel === this.panels.length - 1){
+      if(this.selectedInputValueJson.position === 1){
+        if (this.indexPanel === this.panels.length - 1){
+          this.btnNext.classList.add('hidden');
+        } else {
+          this.btnNext.classList.remove('hidden');
+        }
+      } else if (this.selectedInputValueJson.position !== 1){
+        if (this.indexPanel === this.panels.length - 2){
           this.btnNext.classList.add('hidden');
         } else {
           this.btnNext.classList.remove('hidden');
         }
       }
+    }
 
-      syncRadioButtons(value) {
-        const allInputs = document.querySelectorAll('.inputs-products1 input[type="radio"], .inputs-products2 input[type="radio"], .inputs-products3 input[type="radio"]');
-        allInputs.forEach(input => {
-          if (input.dataset.identifier === value) {
-            input.checked = true;
-          }
-        });
+    backPanel(){
+      this.hidePanel(this.indexPanel);
+      this.indexPanel--;
+      if(this.indexPanel < 0){
+        this.indexPanel = this.panels.length - 1;
       }
+      this.showActualPanel(this.indexPanel);
+      this.updateButtons();
+    }     
 
-      updateSelectedInputValue() {
-        const selectedRadioButton = document.querySelector('.inputs-products1 input[type="radio"]:checked, .inputs-products2 input[type="radio"]:checked, .inputs-products3 input[type="radio"]:checked');
-        this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
-        // console.log('Selected input value:', this.selectedInputValue);
-        // create json input value
-      }
-
-      updateVisibilityFirstStep(){
-        const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
-        const selectOption = secondRadioButtons.value;
-        // console.log('selected 2', selectOption);
-
-        const allInputs = document.querySelectorAll('.inputs-products1, .inputs-products2, .inputs-products3');
-        allInputs.forEach(input => {
-          input.classList.remove('show-inputs');
-        });
-        const selectedInputs = document.querySelector(`#inputs-${selectOption}`);
-        selectedInputs.classList.add('show-inputs');
-
-        const selectedRadioButton = selectedInputs.querySelector('input[type="radio"]:checked');
-        this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
-        console.log('Selected input value 1:', this.selectedInputValue);
-
-      }
-
-      renderElementsStep3(){
-        const selectedInputJson = JSON.parse(this.selectedInputValue);
-        console.log('Selected input value:', selectedInputJson);
-
-        const step3PriceNormal = document.getElementById('step3-price-normal');
-        const step3PriceQuota = document.getElementById('step3-price-quota');
-
-        if (step3PriceNormal && step3PriceQuota) {
-          step3PriceNormal.innerHTML = `<span> render price: ${selectedInputJson.price}</span>`;
-          step3PriceQuota.innerHTML = `<span> render quota: ${selectedInputJson.discountPriceQuota}</span>`;
+    syncRadioButtons(value) {
+      const allInputs = document.querySelectorAll('.inputs-products1 input[type="radio"], .inputs-products2 input[type="radio"], .inputs-products3 input[type="radio"]');
+      allInputs.forEach(input => {
+        if (input.dataset.identifier === value) {
+          input.checked = true;
         }
+      });
+    }
+
+    updateSelectedInputValueJson() {
+      if(this.selectedInputValue){
+        try {
+          this.selectedInputValueJson = JSON.parse(this.selectedInputValue);
+        } catch (error) {
+          console.error('Error parsing JSON:', error);
+          this.selectedInputValueJson = null;
+        }
+      } else {
+        this.selectedInputValueJson = null;
       }
+    }
+
+    updateSelectedInputValue() {
+      const selectedRadioButton = document.querySelector('.inputs-products1 input[type="radio"]:checked, .inputs-products2 input[type="radio"]:checked, .inputs-products3 input[type="radio"]:checked');
+      this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
+      this.updateSelectedInputValueJson();
+      // console.log('Selected input value 1:', this.selectedInputValue);
+      // console.log('Selected input 1 value 2:', this.selectedInputValueJson);
+    }
+
+      
+
+    updateVisibilityFirstStep(){
+      const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
+      const selectOption = secondRadioButtons.value;
+      // console.log('selected 2', selectOption);
+
+      const allInputs = document.querySelectorAll('.inputs-products1, .inputs-products2, .inputs-products3');
+      allInputs.forEach(input => {
+        input.classList.remove('show-inputs');
+      });
+      const selectedInputs = document.querySelector(`#inputs-${selectOption}`);
+      selectedInputs.classList.add('show-inputs');
+
+      const selectedRadioButton = selectedInputs.querySelector('input[type="radio"]:checked');
+      this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
+      this.updateSelectedInputValueJson();
+      // console.log('Selected input value 1:', this.selectedInputValue);
+      // console.log('Selected input value 2:', this.selectedInputValueJson);
+
+    }
+
+    renderElementsStep3(){
+      // const selectedInputJson = JSON.parse(this.selectedInputValue);
+      // console.log('Selected input value:', selectedInputJson);
+
+      const step3PriceNormal = document.getElementById('step3-price-normal');
+      const step3PriceQuota = document.getElementById('step3-price-quota');
+
+      if (step3PriceNormal && step3PriceQuota) {
+        step3PriceNormal.innerHTML = `<span> render price: ${this.selectedInputValueJson.price}</span>`;
+        step3PriceQuota.innerHTML = `<span> render quota: ${this.selectedInputValueJson.discountPriceQuota}</span>`;
+      }
+    }
+
+
+    addToCart(){
+      console.log('Add to cart');
+      let formData = {
+        'items': [{
+          'id': this.selectedInputValueJson.id,
+          'quantity': 1
+        }]
+      }
+      console.log(formData)
+
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        console.log('Response:', response);
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
         
   }
 

@@ -80,132 +80,137 @@
   // console.log('products2_products', {{products2_products |  json}})
   // console.log('products2_type', {{products2_type |  json}})
   // console.log('first_products2_product', {{first_products2_product |  json}})
-  // console.log("mix", {{ mix | json }});
-  // console.log("mix_products", {{ mix_products | json }});
-  // console.log("mix_type", {{ mix_type | json }});
-  // console.log("first_mix_product", {{ first_mix_product | json }});
-  // console.log("second_mix_product", {{ second_mix_product | json }});
-  // console.log("third_mix_product", {{ third_mix_product | json }});
+  // console.log("products1", {{ products1 | json }});
+  // console.log("products1_products", {{ products1_products | json }});
+  // console.log("products1_type", {{ products1_type | json }});
+  // console.log("first_products1_product", {{ first_products1_product | json }});
+  // console.log("second_products1_product", {{ second_products1_product | json }});
+  // console.log("third_products1_product", {{ third_products1_product | json }});
 </script>
 
 <section id="new-landing-purchase" class="new-landing-purchase">
-  <div>
-    <div>
+  <div class="container">
+    <div class="landing-container-title">
       <h3>{{ general_settings.title }}</h3>
       <p>{{ general_settings.subtitle }}</p>
     </div>
-  </div>
-  <div>
-    <span>bread crumbs</span>
-  </div>
-  {% comment %} main panel container {% endcomment %}
-  <div id="main-panel-lading">
-    {% comment %} panel 1 {% endcomment %}
-    <div id="landing-step-one" class="landing-panel">
-      <div>
-        <h3>{{ general_settings.title_component }}</h3>
-      </div>
-      {% comment %} products1 / mix {% endcomment %}
-      {% render 'pdm-landing-purchase-step1-inputs',
-        productOne: third_products1_product,
-        productOneInfo: products1_product_3_month,
-        productTwo: second_products1_product,
-        productTwoInfo: products1_product_2_month,
-        productThree: first_products1_product,
-        productThreeInfo: products1_product_1_month,
-        name: 'products1'
-      %}
-      {% comment %} products2 / silver {% endcomment %}
-      {% render 'pdm-landing-purchase-step1-inputs',
-        productOne: third_products2_product,
-        productOneInfo: products2_product_3_month,
-        productTwo: second_products2_product,
-        productTwoInfo: products2_product_2_month,
-        productThree: first_products2_product,
-        productThreeInfo: products2_product_1_month,
-        name: 'products2'
-      %}
+    <div>
+      <span>bread crumbs</span>
+    </div>
+    {% comment %} main panel container {% endcomment %}
+    <div id="main-panel-lading">
+      {% comment %} panel 1 {% endcomment %}
+      <div id="landing-step-one " class="landing-panel panel-hidden">
+        <div class="lading-one-title-container">
+          <h3>{{ general_settings.title_component }}</h3>
+        </div>
+        {% comment %} products1 / mix {% endcomment %}
+        {% render 'pdm-landing-purchase-step1-inputs',
+          productOne: third_products1_product,
+          productOneInfo: products1_product_3_month,
+          productTwo: second_products1_product,
+          productTwoInfo: products1_product_2_month,
+          productThree: first_products1_product,
+          productThreeInfo: products1_product_1_month,
+          name: 'products1'
+        %}
+        {% comment %} products2 / silver {% endcomment %}
+        {% render 'pdm-landing-purchase-step1-inputs',
+          productOne: third_products2_product,
+          productOneInfo: products2_product_3_month,
+          productTwo: second_products2_product,
+          productTwoInfo: products2_product_2_month,
+          productThree: first_products2_product,
+          productThreeInfo: products2_product_1_month,
+          name: 'products2'
+        %}
 
-      {% comment %} products3 / gold {% endcomment %}
-      {% render 'pdm-landing-purchase-step1-inputs',
-        productOne: third_products3_product,
-        productOneInfo: products3_product_3_month,
-        productTwo: second_products3_product,
-        productTwoInfo: products3_product_2_month,
-        productThree: first_products3_product,
-        productThreeInfo: products3_product_1_month,
-        name: 'products3'
-      %}
+        {% comment %} products3 / gold {% endcomment %}
+        {% render 'pdm-landing-purchase-step1-inputs',
+          productOne: third_products3_product,
+          productOneInfo: products3_product_3_month,
+          productTwo: second_products3_product,
+          productTwoInfo: products3_product_2_month,
+          productThree: first_products3_product,
+          productThreeInfo: products3_product_1_month,
+          name: 'products3'
+        %}
+      </div>
+      {% comment %} panel 2 {% endcomment %}
+      <div id="landing-step-two" class="landing-panel panel-hidden">
+        <div>
+          <h3>{{ general_settings.step_2_title }}</h3>
+        </div>
+        <div id="step2-select" class="">
+          <input type="radio" id="serum-1" name="step2" value="{{ products3_type.type }}">
+          <label for="serum-1">
+            {% render 'pdm-landing-purchase-serum', data: products3_type %}
+          </label>
+          <input type="radio" id="serum-2" name="step2" value="{{ products2_type.type }}">
+          <label for="serum-2">
+            {% render 'pdm-landing-purchase-serum', data: products2_type %}
+          </label>
+          <input type="radio" id="serum-3" name="step2" value="{{ products1_type.type }}" checked>
+          <label for="serum-3">
+            {% render 'pdm-landing-purchase-serum', data: products1_type %}
+          </label>
+        </div>
+      </div>
+      {% comment %} panel 3 {% endcomment %}
+      <div id="landing-step-three" class="landing-panel panel-hidden">
+        <div>
+          <h3>{{ general_settings.step_3_title }}</h3>
+        </div>
+        <div>
+          <input type="radio" id="opt7" name="step3" value="">
+          <label for="opt7">
+            {% render 'pdm-landing-step3-card', data: general_settings, cardCase: 0 %}
+          </label>
+          <input type="radio" id="opt8" name="step3" value="">
+          <label for="opt8">
+            {% render 'pdm-landing-step3-card', data: general_settings, cardCase: 1 %}
+          </label>
+        </div>
+      </div>
+      {% comment %} panel 4 {% endcomment %}
+      <div id="landing-step-fourth" class="landing-panel panel-hidden">
+        <div>
+          <h3>{{ general_settings.step_4_title }}</h3>
+        </div>
+        <div style="display: flex; flex-direction:row">
+          <input type="radio" id="opt9" name="step4" value="">
+          <label for="opt9">
+            {% render 'pdm-landing-step4-card', data: general_settings, cardCase: 0 %}
+          </label>
+          <input type="radio" id="opt9" name="step4" value="">
+          <label for="opt9">
+            {% render 'pdm-landing-step4-card', data: general_settings, cardCase: 1 %}
+          </label>
+        </div>
+      </div>
     </div>
-    {% comment %} panel 2 {% endcomment %}
-    <div id="landing-step-two" class="landing-panel">
-      <div>
-        <h3>{{ general_settings.step_2_title }}</h3>
-      </div>
-      <div id="step2-select" class="">
-        <input type="radio" id="serum-1" name="step2" value="{{ products3_type.type }}">
-        <label for="serum-1">
-          {% render 'pdm-landing-purchase-serum', data: products3_type %}
-        </label>
-        <input type="radio" id="serum-2" name="step2" value="{{ products2_type.type }}">
-        <label for="serum-2">
-          {% render 'pdm-landing-purchase-serum', data: products2_type %}
-        </label>
-        <input type="radio" id="serum-3" name="step2" value="{{ products1_type.type }}" checked>
-        <label for="serum-3">
-          {% render 'pdm-landing-purchase-serum', data: products1_type %}
-        </label>
-      </div>
+    {% comment %} buttons {% endcomment %}
+    <div>
+      <button
+        id="landing-test"
+      >
+        test
+      </button>
+      <button
+        id="landing-back"
+      >
+        back
+      </button>
+      <button
+        id="landing-next"
+      >
+        next
+      </button>
+      <button
+        id="landing-submit"
+      >
+        submit
+      </button>
     </div>
-    {% comment %} panel 3 {% endcomment %}
-    <div id="landing-step-three" class="landing-panel">
-      <div>
-        <h3>{{ general_settings.step_3_title }}</h3>
-      </div>
-      <div>
-        <input type="radio" id="opt7" name="step3" value="">
-        <label for="opt7">
-          {% render 'pdm-landing-step3-card', data: general_settings, cardCase: 0 %}
-        </label>
-        <input type="radio" id="opt8" name="step3" value="">
-        <label for="opt8">
-          {% render 'pdm-landing-step3-card', data: general_settings, cardCase: 1 %}
-        </label>
-      </div>
-    </div>
-    {% comment %} panel 4 {% endcomment %}
-    <div id="landing-step-fourth" class="landing-panel">
-      <div>
-        <h3>{{ general_settings.step_4_title }}</h3>
-      </div>
-      <div style="display: flex; flex-direction:row">
-        <input type="radio" id="opt9" name="step4" value="">
-        <label for="opt9">
-          {% render 'pdm-landing-step4-card', data: general_settings, cardCase: 0 %}
-        </label>
-        <input type="radio" id="opt9" name="step4" value="">
-        <label for="opt9">
-          {% render 'pdm-landing-step4-card', data: general_settings, cardCase: 1 %}
-        </label>
-      </div>
-    </div>
-  </div>
-  {% comment %} buttons {% endcomment %}
-  <div>
-    <button
-      id="landing-test"
-    >
-      test
-    </button>
-    <button
-      id="landing-back"
-    >
-      back
-    </button>
-    <button
-      id="landing-next"
-    >
-      next
-    </button>
   </div>
 </section>

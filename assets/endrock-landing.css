@@ -7,23 +7,190 @@
     }
 
   .new-landing-purchase{
+    background: linear-gradient(180deg, #DBEFE8 -3.91%, #FFFFFF 51.05%);
+
+    /* title */
+
+    .landing-container-title {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      h3{
+        font-family: 'Canela Web';
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+      }
+      p{
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+      }
+    }
+
     /* input[type="radio"]{
       display: none;
     } */
-    .purchase-card-container{
-      border: 1px solid #C8E6DC;
-      width: 304px;
-      height: 600px;
-        .card-img-container{
-        width: 100%;
-        height: 236px;
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+
+    
+    #main-panel-lading{
+      width: 100%;
+      height: 800px;
+      /* step 1 */
+      .lading-one-title-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 32px;
+        h3{
+          font-family: 'Poppins';
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.05em;
+          text-align: center;
+          text-transform: uppercase;
         }
       }
+      .step1-purchase-card-container{
+        border: 2px solid #C8E6DC;
+        width: 304px;
+        height: 600px;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .step1-card-choise-container{
+          height: 22px;
+          position: absolute;
+          top: -23px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p{
+            background-color: black;
+            font-family: 'Poppins';
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: white;
+            padding: 3px 16px;
+            border-radius: 16px 16px 0px 0px;
+          }
+        }
+        .card-img-container{
+          width: 100%;
+          height: 236px;
+          border-radius: 24px 24px 0px 0px;
+          background-color: #f6f7f8;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .step1-card-price-container{
+          position: relative;
+          .step1-card-price-discount{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -28px;
+            p{
+              font-family: 'Poppins';
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.05em;
+              text-align: left;
+              background-color: #3B8566;
+              color: white;
+              border-radius: 16px 16px 0 0;
+              padding: 1px 16px 3px;
+              
+            }
+          }
+          .step1-card-price{
+            .step1-card-price-information{
+              padding: 12px 33px 12px;
+              display: flex;
+              flex-direction: row;
+              gap: 8px;
+              border: 1px solid #D6D6D6;
+              border-radius: 40px;
+              .step1-card-price__title{
+                font-family: 'Canela Web';
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-align: left;
+              }
+              .step1-card-price-wrapper{
+                display: flex;
+                gap: 4px;
+                flex-direction: row;
+                .step1-card-price-wrapper__real{
+                  font-family: 'Poppins';
+                  font-size: 14px;
+                  font-weight: 300;
+                  line-height: 24px;
+                  letter-spacing: 0.01em;
+                  text-align: left;
+                  text-decoration-line: line-through;
+                }
+                .step1-card-price-wrapper__discount{
+                  font-family: 'Poppins';
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  letter-spacing: 0.01em;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+
+        .step1-card-value-props{
+          .step1-value-props-dropdown{
+            border-top: 1px solid #C8E6DC;
+          }
+        }
+      }
+
+
+
+
+      input[type="radio"]:checked + label[for="products1-one"],
+      input[type="radio"]:checked + label[for="products1-two"],
+      input[type="radio"]:checked + label[for="products1-three"]{
+        .card-img-container{
+          background: linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%);
+          border-radius: 24px 24px 0px 0px;
+        }
+        .step1-card-price-information{
+          border-color: #C8E6DC;
+          background-color: #C8E6DC;
+        }
+      }
+
     }
+   
+    
   }
 
   /* inputs */

@@ -1,26 +1,38 @@
-
 {% liquid
-  assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0  
+  assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0
 %}
 
-<div class="purchase-card-container">
+<div class="step1-purchase-card-container">
   {% if productInfo.people_choise != blank %}
-    {{ productInfo.people_choise }}
+    <div class="step1-card-choise-container">
+      <p>
+        {{ productInfo.people_choise }}
+      </p>
+    </div>
   {% endif %}
   {% comment %} image {% endcomment %}
   <div class="card-img-container">
     {{ productData.featured_media | image_url: width: 400 | image_tag: alt: productData.title }}
   </div>
-  <div>
+  <div class="step1-card-price-container">
     {% if product_save != null %}
-      <div>
-        <p> SAVE {{ product_save }}%</p>
+      <div class="step1-card-price-discount">
+        <p>SAVE {{ product_save }}%</p>
       </div>
     {% endif %}
-    <p>{{ productInfo.title_product }} {{ productData.compare_at_price |  money_without_trailing_zeros }} {{ productData.price | money_without_trailing_zeros }}</p>
+    <div class="step1-card-price">
+      <div class="step1-card-price-information">
+        <span class="step1-card-price__title">{{ productInfo.title_product }}</span>
+        <div class="step1-card-price-wrapper">
+          <span class="step1-card-price-wrapper__real">{{ productData.compare_at_price | money_without_trailing_zeros }} </span>
+          <span class="step1-card-price-wrapper__discount">{{ productData.price | money_without_trailing_zeros }}</span>
+        </div>
+      </div>
+    </div>
+    
   </div>
 
-  <div>
+  <div class="step1-card-value-props">
     {% comment %} value props {% endcomment %}
     {% if productInfo.doctor_recommendation != blank %}
       <div>
@@ -28,15 +40,16 @@
       </div>
     {% endif %}
     <div>
-      {{ productInfo.value_props |  metafield_tag }}
+      {{ productInfo.value_props | metafield_tag }}
     </div>
     {% comment %} dropdown {% endcomment %}
-    <div>
+    
+    <div class="step1-value-props-dropdown">
       <div>
         <p>{{ productInfo.title_included }}</p>
       </div>
       <div>
-        {{ productInfo.value_props_included |  metafield_tag }}
+        {{ productInfo.value_props_included | metafield_tag }}
       </div>
     </div>
   </div>
