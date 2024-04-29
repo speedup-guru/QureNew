@@ -29,7 +29,7 @@
         "navigation_link_wMtKmt": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "PREGUNTAS FRECUENTES",
+            "link_label": "FOIRE AUX QUESTIONS",
             "link_url": "#faq_section",
             "image": "shopify:\/\/shop_images\/header_4.webp"
           }
