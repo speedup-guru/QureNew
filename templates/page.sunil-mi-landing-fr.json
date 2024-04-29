@@ -801,11 +801,11 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty_micro.webp",
-            "heading": "Sistema de microinfusión de Qure",
+            "heading": "Le système de microperfusion de Qure",
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>El estampado no daña <strong>excesivamente la piel<\/strong><\/li><li><strong>Acción casi inmediata<\/strong> y <strong>rapida regeneración<\/strong> de la piel<\/li><li>Las nuevas cabezas de aguja las hacen afiladas y rectas para cada tratamiento - diseñadas para una <strong>mejor eficacia<\/strong><\/li><li>Las cabezas desechables <strong>minimizan el riesgo<\/strong> de infección\/irritación<\/li><li>Inyecta el suero directamente en la piel para ayudar <strong>a aumentar la absorción<\/strong> y los resultados<\/li><\/ul>"
+            "list": "<ul><li>Le stamping <strong>n'abîme pas trop la peau<\/strong><\/li><li><strong>Peu ou pas de temps d'arrêt<\/strong> et récupération rapide de la peau<\/li><li><strong>Les nouvelles têtes d'aiguille permettent d'obtenir des aiguilles droites et tranchantes<\/strong> pour chaque traitement - conçues pour une meilleure efficacité<\/li><li>Les têtes jetables <strong>minimisent le risque d'infection\/ d'irritation<\/strong><\/li><li>Délivre le sérum directement à la peau pour <strong>augmenter l'absorption et les résultats<\/strong><\/li><\/ul>"
           }
         },
         "object_THMRbY": {
