@@ -1167,10 +1167,10 @@
       ],
       "settings": {
         "classname": "",
-        "heading": "Las respuestas a tus preguntas",
+        "heading": "Les réponses à vos questions",
         "text": "",
-        "button_label": "Mostrar más preguntas",
-        "button_hide_label": "Ocultar más preguntas"
+        "button_label": "Afficher plus de questions",
+        "button_hide_label": "Cacher de questions"
       }
     },
     "social_zwVAqW": {
