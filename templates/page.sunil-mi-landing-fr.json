@@ -958,7 +958,7 @@
     "liquid_86wfLd": {
       "type": "liquid",
       "settings": {
-        "code": "{% render 'serums-months-image-landing-form-es' with section_id: section.id %}"
+        "code": "{% render 'serums-months-image-landing-form-fr' with section_id: section.id %}"
       }
     },
     "compare_box_p4B7wy": {
