@@ -28,7 +28,7 @@ function updateButtonsHref(id, classname) {
 function updateFormValues(productId, sellingPlan, optionId, classname) {
     const form = document.querySelector(classname);
     if (form) {
-        form.setAttribute('data-smartrr-form-id', productId);
+        form.setAttribute('data-form-id', productId);
 
         const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
         if (sellingPlanInput) {
