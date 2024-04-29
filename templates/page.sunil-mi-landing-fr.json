@@ -608,6 +608,16 @@
             "text": "<p>\"¡El Sistema de Qure es lo más cercano que puedes tener a llevar a tu esteticista a casa contigo!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Cirujano plástico certificado<\/h6>"
           }
         },
+        "video_C6tFxe": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_dylan.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=mVdncsTAXiA",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"El sistema de microinfusión Qure va un paso más allá, ya que no sólo aumenta la hidratación, sino que también suministra factores de regenerativos justo donde se necesitan\".<\/p><h6><strong>Dr Dylan Greeney<\/strong> Dermatólogo certificado<\/h6>"
+          }
+        },
         "video_8nkLFi": {
           "type": "video",
           "settings": {
@@ -637,16 +647,6 @@
             "wistia_id": "",
             "text": "<p>\"Te verás con un aspecto luminoso y húmedo después de usarlo, pero en un par de días tu piel realmente se ve bastante increíble.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Medicina interna<\/h6>"
           }
-        },
-        "video_C6tFxe": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_dylan.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=mVdncsTAXiA",
-            "video_label": "Ver vídeo",
-            "wistia_id": "",
-            "text": "<p>\"El sistema de microinfusión Qure va un paso más allá, ya que no sólo aumenta la hidratación, sino que también suministra factores de regenerativos justo donde se necesitan\".<\/p><h6><strong>Dr Dylan Greeney<\/strong> Dermatólogo certificado<\/h6>"
-          }
         }
       },
       "block_order": [
@@ -654,10 +654,10 @@
         "feedback_NVbkWM",
         "video_pEM9DL",
         "video_XF3pgt",
+        "video_C6tFxe",
         "video_8nkLFi",
         "video_tEFAkm",
-        "video_PECKPL",
-        "video_C6tFxe"
+        "video_PECKPL"
       ],
       "settings": {
         "classname": "trusted_bl",
