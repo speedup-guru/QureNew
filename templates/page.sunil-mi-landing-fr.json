@@ -7,13 +7,13 @@
           "type": "announcement",
           "settings": {
             "heading": "Livraison GRATUITE dans le monde entier | ÉCONOMISE 43% Offre à durée limitée se terminant ce mois-ci",
-            "heading_mobile": "La oferta limitada acaba pronto!"
+            "heading_mobile": "Offre limitée ce mois-ci!"
           }
         },
         "navigation_link_97aJVY": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "BENEFICIOS",
+            "link_label": "BÉNÉFICES",
             "link_url": "#reasons_section",
             "image": "shopify:\/\/shop_images\/nav_1.png"
           }
