@@ -389,17 +389,6 @@
             "recommended_code": "<div class=\"doctorly_rec mothers_day_bundle\">\n                                                <img src=\"{{ 'mothers_day_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>MOTHER'S DAY <br><span>SPECIAL BUNDLE<\/span><\/p>\n                                                <\/div>\n                                            <\/div>"
           }
         },
-        "product_EQ6HJY": {
-          "type": "product",
-          "settings": {
-            "product": "skin-ssentials-set-doctorly-choice",
-            "comment_ammount": 202,
-            "percent": 40,
-            "ppl_choise": 0,
-            "recommended": 1,
-            "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
-          }
-        },
         "product_3Frmww": {
           "type": "product",
           "settings": {
@@ -420,6 +409,17 @@
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
+          }
+        },
+        "product_EQ6HJY": {
+          "type": "product",
+          "settings": {
+            "product": "skin-ssentials-set-doctorly-choice",
+            "comment_ammount": 202,
+            "percent": 40,
+            "ppl_choise": 0,
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
           }
         },
         "product_CnMwyU": {
@@ -471,9 +471,9 @@
       "block_order": [
         "product_JVJkGj",
         "product_pCXqdM",
-        "product_EQ6HJY",
         "product_3Frmww",
         "product_zF9wP9",
+        "product_EQ6HJY",
         "product_CnMwyU",
         "product_aKUc4N",
         "product_nRhA4x",
