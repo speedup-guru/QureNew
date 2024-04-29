@@ -244,7 +244,7 @@
         "code_ENeDfJ": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>Des milliers de femmes annulent leurs coûteux rendez-vous chez le coiffeur<\/h6>\n                            <p>Los esteticistas culpan a este tratamiento doméstico.<\/p>\n                        <\/div>\n                    <\/div>"
+            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>Des milliers de femmes annulent leurs coûteux rendez-vous chez le coiffeur<\/h6>\n                            <p>Les esthéticiennes reprochent à ce traitement d'être fait à la maison.<\/p>\n                        <\/div>\n                    <\/div>"
           }
         }
       },
