@@ -30270,7 +30270,13 @@ p {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    display: -webkit-box;
+    display: -webkit-inline-box;
+    word-break: break-word;
+}
+
+.ss_list ul li strong {
+    display: -webkit-inline-box;
+    word-break: break-word;
 }
 
 .ss_list ul li:before {
