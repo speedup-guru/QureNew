@@ -433,6 +433,7 @@
 .refill_bl.tabSlider .refill_info .section_header {
     padding: 0;
     max-width: 538px;
+    margin-left: 0;
 }
 
 .refill_bl.tabSlider .refill_info .section_header .title-xl {
@@ -487,6 +488,10 @@
     justify-content: center;
 }
 
+.refill_info .refill_review {
+    margin-top: 15px;
+}
+
 .refill_review p {
     font-size: 13px;
     line-height: 18px;
@@ -539,6 +544,9 @@
         line-height: 40px;
     }
 
+    .refill_info .refill_review .star_gp img {
+        max-width: 94px;
+    }
 }
 
 @media(max-width:650px) {
@@ -943,9 +951,9 @@
 
 .see_work .play_btn a span h6 {
     margin-bottom: 0;
-    padding-left: 8px;
+    padding-left: 10px;
     font-size: 16px;
-    line-height: 9px;
+    line-height: 16px;
     font-weight: 400;
 }
 
@@ -1891,6 +1899,10 @@
 
     .star {
         text-align: center;
+    }
+
+    .star img {
+        max-width: 90px;
     }
 
     .main_b_wrapper .app_item img {
@@ -3460,6 +3472,14 @@ p.border-r {
 }
 
 .wistia_responsive_wrapper [id*=".thumbnail_focus_indicator"] {
+    box-shadow: none !important;
+}
+
+[id*="._popover"] {
+    box-shadow: none !important;
+}
+
+.wistia_responsive_wrapper * {
     box-shadow: none !important;
 }
 
@@ -5587,6 +5607,7 @@ p.title_mob {
     color: #fff;
     top: 20px;
     left: 20px;
+    right: 20px;
 }
 
 .imageText .it_info.dual_bl {
@@ -6119,6 +6140,8 @@ p.title_mob {
     line-height: 32px;
     font-weight: 300;
     margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
 .step_block .step_header h3 span {
@@ -6418,8 +6441,8 @@ p.title_mob {
 
 .btn.btn-atc {
     display: block;
-    height: 60px;
-    padding: 20px 23px 20px 23px;
+    /* height: 60px; */
+    padding: 19px 23px 19px 23px;
     background: #000;
     width: 100%;
     border-radius: 100px;
@@ -6438,6 +6461,7 @@ p.title_mob {
     .btn.btn-atc {
         font-size: 18px;
         line-height: 20px;
+        padding: 8px 23px;
     }
 
     .supply_steps .step_block {
@@ -6513,6 +6537,7 @@ p.title_mob {
 
     .step_block .step_header h3 {
         font-size: 22px;
+        grid-template-columns: 1fr;
     }
 
     .step_block .step_header h3 span {

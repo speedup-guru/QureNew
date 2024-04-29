@@ -30270,6 +30270,7 @@ p {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
+    display: -webkit-box;
 }
 
 .ss_list ul li:before {
@@ -30492,6 +30493,7 @@ p {
     max-width: 970px;
     margin: 0 auto;
 }
+
 .mw-1050 {
     max-width: 1050px;
     margin: 0 auto;
