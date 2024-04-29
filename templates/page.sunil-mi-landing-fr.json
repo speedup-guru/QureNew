@@ -1050,8 +1050,8 @@
         "object_qfXzf3": {
           "type": "object",
           "settings": {
-            "heading": "¿Puedo usar cualquier suero?",
-            "text": "<p>Ten en cuenta que no todos los sueros son adecuados para la microinfusión. Algunos pueden causar irritación y deben evitarse. Hemos desarrollado nuestras potentes ampollas de suero que son perfectas para el sistema de micro infusión de Qure. Están formuladas para tener un bajo riesgo de irritación y sin fragancia.<\/p>",
+            "heading": "Puis-je utiliser n'importe quel sérum ?",
+            "text": "<p>Veuillez noter que tous les sérums ne conviennent pas à la micro-infusion - certains peuvent provoquer des irritations et doivent être évités ! Nous avons développé nos sérums puissants dans des ampoules qui conviennent parfaitement au système de micro-infusion Qure. Ils sont formulés pour présenter un faible risque d'irritation et sont sans parfum.<\/p>",
             "code": ""
           }
         },
