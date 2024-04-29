@@ -236,7 +236,7 @@
         "content_DLpMJ6": {
           "type": "content",
           "settings": {
-            "text": "<h2>Descubre lo que los<br\/>expertos no te cuentan<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
+            "text": "<h2>Découvrez le secret le mieux gardé des dermatologues<\/h2><p>[code]<\/p><p>[image_mobile]<\/p>",
             "column_content": 0,
             "classname": "secret_grid_wrap ps-0 ps-md-5"
           }
