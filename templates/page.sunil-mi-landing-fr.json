@@ -812,11 +812,11 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/beauty_needle.webp",
-            "heading": "Otras decisiones sobre agujas en casa",
+            "heading": "Autres techniques d'aiguilletage à domicile",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>El rodillo puede causar <strong>daño innecesario<\/strong> de la piel<\/li><li><strong>Recuperación más lenta<\/strong> y tiempo de curación más largo<\/li><li>Las agujas se vuelven romas después de varios usos y crean <strong>trauma innecesario<\/strong> en la piel que puede <strong>disminuir la eficacia<\/strong><\/li><li>La infección\/irritación aumenta si no se desinfecta bien<\/li><li>Absorción <strong>menos efectiva del suero<\/strong> al aplicarse tópicamente<\/li><\/ul>"
+            "list": "<ul><li>Le rouleau <strong>peut causer des dommages inutiles<\/strong> à la peau<\/li><li><strong>Récupération plus<\/strong> lente et temps de guérison plus long<\/li><li>Délivre le sérum directement à la peau afin <strong>d'augmenter l'absorption et les résultats<\/strong><\/li><li>Infection\/irritation accrue en cas de <strong>désinfection insuffisante<\/strong><\/li><li><strong>Absorption moins efficace du sérum<\/strong> en cas d'application topique<\/li><\/ul>"
           }
         }
       },
