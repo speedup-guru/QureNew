@@ -372,7 +372,7 @@
           "settings": {
             "product": "youth-boosting-bundle",
             "comment_ammount": 202,
-            "percent": 34,
+            "percent": 27,
             "ppl_choise": 0,
             "recommended": 1,
             "recommended_code": "<div class=\"doctorly_rec mothers_day_bundle\">\n                                                <img src=\"{{ 'mothers_day_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>MOTHER'S DAY <br><span>SPECIAL BUNDLE<\/span><\/p>\n                                                <\/div>\n                                            <\/div>"
@@ -494,6 +494,16 @@
             "text": "<p>\"<strong>These devices definitely work<\/strong> but using them safely is the key to long term results...\"<\/p><h6><strong>Dr Shah, MD<\/strong> Certified Dermatologist<\/h6>"
           }
         },
+        "video_RFQncL": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_anthony.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=gGVKgTHloXw",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"<\/p><h6><strong>Dr Anthony Youn,<\/strong> Board-Certified Plastic Surgeon<\/h6>"
+          }
+        },
         "feedback_4rqbDD": {
           "type": "feedback",
           "settings": {
@@ -524,6 +534,7 @@
         },
         "video_Rx4fxx": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_davim.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
@@ -589,7 +600,7 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=QuJ3puVLKzU",
             "video_label": "Watch Video",
             "wistia_id": "",
-            "text": "<p>\"You wanna look for something that’s gonna remove both <strong>calcium carbonate <\/strong>and chlorine from your water.\"<\/p><h6><strong>Dr Shah, MD <\/strong>Board-Certified Dermatologist<\/h6>"
+            "text": "<p>\"You wanna look for something that’s gonna [reduce] both <strong>calcium carbonate <\/strong>and chlorine from your water.\"<\/p><h6><strong>Dr Shah, MD <\/strong>Board-Certified Dermatologist<\/h6>"
           }
         },
         "video_QAC7VY": {
@@ -605,6 +616,7 @@
       },
       "block_order": [
         "feedback_mHiyFf",
+        "video_RFQncL",
         "feedback_4rqbDD",
         "video_H7pW4b",
         "video_JryNck",
