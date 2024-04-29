@@ -163,7 +163,7 @@
         "product": "",
         "product_images_offset": 0,
         "product_images_limit": 6,
-        "product_button_label": "Producto",
+        "product_button_label": "Produit",
         "before_after_images_limit": 3,
         "before_after_button_label": "Vea los resultados reales",
         "reserve": false,
