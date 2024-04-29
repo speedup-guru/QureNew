@@ -1042,8 +1042,8 @@
         "object_b4xRkF": {
           "type": "object",
           "settings": {
-            "heading": "¿Cuántos tratamientos puedo realizar con un dispositivo Micro-Infusión?",
-            "text": "<p>Cada cabezal de aguja debe utilizarse una vez por tratamiento y desecharse después de cada uno. De este modo se minimiza el riesgo de infección y de daños innecesarios en la piel. Utiliza 1 ampolla de suero completa por tratamiento.<\/p>",
+            "heading": "Combien de traitements puis-je effectuer avec un dispositif de microperfusion ?",
+            "text": "<p>Chaque tête d'aiguille doit être utilisée une fois par traitement et jetée après chaque traitement. Cela minimise le risque d'infection et de lésions cutanées inutiles. Utilisez une ampoule complète de sérum par traitement.<\/p>",
             "code": ""
           }
         },
