@@ -1098,8 +1098,8 @@
         "object_yjEtVU": {
           "type": "object",
           "settings": {
-            "heading": "¿Cuál es la longitud de las agujas?",
-            "text": "<p>Las cabezas de aguja del sistema de microinfusión de Qure tienen 0,5 mm de longitud para la \"punción epidérmica\", que está diseñada para mejorar la absorción de los ingredientes para el cuidado de la piel y la textura de la piel.<\/p>",
+            "heading": "Quelle est la longueur des aiguilles ?",
+            "text": "<p>Les têtes d'aiguilles du système de microinfusion de Qure ont une longueur de 0,5 mm pour le « micro-perçage épidermique », qui est conçu pour améliorer l'absorption des ingrédients de soins de la peau et la texture de la peau.<\/p>",
             "code": ""
           }
         },
