@@ -1114,8 +1114,8 @@
         "object_hkgHBN": {
           "type": "object",
           "settings": {
-            "heading": "¿Cómo limpio el dispositivo?",
-            "text": "<p>Una vez que hayas terminado de estampar para conseguir una piel más luminosa y tersa, sigue las siguientes instrucciones de limpieza:<\/p><ul><li>Desenrosque el cabezal de la aguja con el capuchón puesto y deséchelo de forma segura.<\/li><li>Lava la cámara con agua y un limpiador suave.<\/li><li>Deja que el aparato se seque completamente al aire sobre una superficie limpia antes de guardarlo.<\/li><li>Abre un cabezal de aguja nuevo y colócalo en el dispositivo. Asegúrate de tener las manos limpias y no abras el capuchón del cabezal de la aguja.<\/li><\/ul>",
+            "heading": "Comment nettoyer l'appareil ?",
+            "text": "<p>Une fois que vous avez fini de tamponner pour obtenir une peau plus éclatante et plus rebondie, suivez les instructions de nettoyage ci-dessous :<\/p><ul><li>Dévissez la tête de l'aiguille avec le capuchon qui y est attaché et jetez-le en toute sécurité.<\/li><li>Lavez la chambre avec de l'eau et un nettoyant doux.<\/li><li>Laissez l'appareil sécher complètement à l'air sur une surface propre avant de le ranger.<\/li><li>Ouvrez une nouvelle tête d'aiguille et placez-la dans le dispositif. Assurez-vous que vos mains sont propres et n'ouvrez pas le capuchon de la tête d'aiguille.<\/li><\/ul>",
             "code": ""
           }
         },
