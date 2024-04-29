@@ -593,7 +593,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren1.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0DYmxvyKAVI",
-            "video_label": "Ver vídeo",
+            "video_label": "Voir la vidéo",
             "wistia_id": "",
             "text": "<p>\"El sistema de Qure es mucho más asequible y conveniente que el procedimiento en la clínica porque se realiza en la comodidad de tu hogar.\"<\/p><h6><strong>Dr Maren Locke<\/strong> Dermatólogo certificado<\/h6>"
           }
@@ -603,7 +603,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_anthony.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=gGVKgTHloXw",
-            "video_label": "Ver vídeo",
+            "video_label": "Voir la vidéo",
             "wistia_id": "",
             "text": "<p>\"¡El Sistema de Qure es lo más cercano que puedes tener a llevar a tu esteticista a casa contigo!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Cirujano plástico certificado<\/h6>"
           }
@@ -616,16 +616,6 @@
             "video_label": "Ver vídeo",
             "wistia_id": "",
             "text": "<p>\"El sistema de microinfusión Qure va un paso más allá, ya que no sólo aumenta la hidratación, sino que también suministra factores de regenerativos justo donde se necesitan\".<\/p><h6><strong>Dr Dylan Greeney<\/strong> Dermatólogo certificado<\/h6>"
-          }
-        },
-        "video_8nkLFi": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_chris.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=OI1HL25GlHc",
-            "video_label": "Ver vídeo",
-            "wistia_id": "",
-            "text": "<p>\"Te verás con un aspecto luminoso y húmedo después de usarlo, pero en un par de días tu piel realmente se ve bastante increíble.\"<\/p><h6><strong>Chris Gibson,<\/strong> Experto en cuidado de la piel<\/h6>"
           }
         },
         "video_tEFAkm": {
@@ -655,7 +645,6 @@
         "video_pEM9DL",
         "video_XF3pgt",
         "video_C6tFxe",
-        "video_8nkLFi",
         "video_tEFAkm",
         "video_PECKPL"
       ],
