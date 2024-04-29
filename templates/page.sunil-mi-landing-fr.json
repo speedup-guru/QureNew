@@ -165,11 +165,11 @@
         "product_images_limit": 6,
         "product_button_label": "Produit",
         "before_after_images_limit": 3,
-        "before_after_button_label": "Vea los resultados reales",
+        "before_after_button_label": "Résultats réels",
         "reserve": false,
         "selected_design": "old",
-        "text_label_real_result_1": "Producto",
-        "text_label_real_result_2": "Vea los resultados reales",
+        "text_label_real_result_1": "Produit",
+        "text_label_real_result_2": "Résultats réels",
         "text_label_real_result_3": "Dermatólogo"
       }
     },
