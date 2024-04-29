@@ -863,7 +863,7 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi_pdp_step3.webp",
-            "text": "<p>Una vez que el suero ha tenido suficiente tiempo para penetrar en las agujas, ¡puede quitar la tapa y comenzar la microinfusión!<\/p>",
+            "text": "<p>Une fois que le sérum a eu le temps de pénétrer dans les aiguilles, vous pouvez retirer le capuchon et commencer la micro-infusion!<\/p>",
             "step": "Étape"
           }
         },
