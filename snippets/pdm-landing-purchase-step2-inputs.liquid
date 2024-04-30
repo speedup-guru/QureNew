@@ -1,0 +1,17 @@
+<div>
+  <h3>{{ generalSettings.step_2_title }}</h3>
+</div>
+<div id="step2-select" class="">
+  <input type="radio" id="serum-1" name="step2" value="{{ products3_type.type }}">
+  <label for="serum-1">
+    {% render 'pdm-landing-purchase-step2-card', data: products3_type %}
+  </label>
+  <input type="radio" id="serum-2" name="step2" value="{{ products2_type.type }}">
+  <label for="serum-2">
+    {% render 'pdm-landing-purchase-step2-card', data: products2_type %}
+  </label>
+  <input type="radio" id="serum-3" name="step2" value="{{ products1_type.type }}" checked>
+  <label for="serum-3">
+    {% render 'pdm-landing-purchase-step2-card', data: products1_type %}
+  </label>
+</div>

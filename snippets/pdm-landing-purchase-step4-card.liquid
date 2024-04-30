@@ -1,0 +1,53 @@
+<div class="step4-purchase-card-container">
+  <div>
+    {{ productInfo.popular_text }}
+  </div>
+  <div>
+    {% if cardTypeInfo == 'meta' %}
+      {{ productInfo.title }}
+    {% else %}
+      {{ generalSettings.step_4_card_title }}
+    {% endif %}
+  </div>
+  <div>
+    {% comment %} doctor {% endcomment %}
+    {% if cardTypeInfo == 'meta' %}
+      <div>
+        {{ productInfo.doctor_image | image_url: width: 44 | image_tag: alt: 'doctor' }}
+        <p>
+          {{ productInfo.doctor_description }}
+        </p>
+      </div>
+    {% endif %}
+    <div>
+      {% comment %} title {% endcomment %}
+      {% if cardTypeInfo == 'meta' %}
+        <div>
+          {{ productInfo.sub_title }}
+        </div>
+        {% comment %} value props {% endcomment %}
+        <div>
+          {{ productInfo.value_props | metafield_tag }}
+        </div>
+      {% else %}
+        <div>
+          {{ generalSettings.step_4_card_subtitle }}
+        </div>
+        <div>
+          {{ generalSettings.step_4_card_value_props_1 | metafield_tag }}
+        </div>
+      {% endif %}
+    </div>
+    {% comment %} dropwon {% endcomment %}
+    {% if cardTypeInfo == 'meta' %}
+      <div>
+        <div>
+          {{ productInfo.dropdown_title }}
+        </div>
+        <div>
+          {{ productInfo.dropdown_value_props | metafield_tag }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

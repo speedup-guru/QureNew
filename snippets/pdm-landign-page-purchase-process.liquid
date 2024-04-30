@@ -10,8 +10,11 @@
 
   # product1 / mix
   assign products1 = page.metafields.custom.landing_product_one.value
-  assign products1_products = page.metafields.custom.landing_product_one.value.list_products.value
+  assign products1_products = products1.list_products.value
   assign products1_type = products1.select_type.value
+  assign products1_refill_info = products1.refill_product.value
+  assign products1_refill_product = products1.refill_product.value.product_refill.value
+
 
   # each mix product
   ## for to split and general info
@@ -33,8 +36,10 @@
 
   # product2 / silver
   assign products2 = page.metafields.custom.landing_product_2.value
-  assign products2_products = page.metafields.custom.landing_product_2.value.list_products.value
+  assign products2_products = products2.list_products.value
   assign products2_type = products2.select_type.value
+  assign products2_refill_info = products2.refill_product.value
+  assign products2_refill_product = products2.refill_product.value.product_refill.value
 
   for data in products2_products
     if forloop.index == 1
@@ -55,7 +60,9 @@
   # products3 / rejuvenating
   assign products3 = page.metafields.custom.landing_product_3.value
   assign products3_type = products3.select_type.value
-  assign products3_products = page.metafields.custom.landing_product_3.value.list_products.value
+  assign products3_products = products3.list_products.value
+  assign products3_refill_info = products3.refill_product.value
+  assign products3_refill_product = products3.refill_product.value.product_refill.value
 
   for data in products3_products
     if forloop.index == 1
@@ -84,8 +91,18 @@
   // console.log("products1_products", {{ products1_products | json }});
   // console.log("products1_type", {{ products1_type | json }});
   // console.log("first_products1_product", {{ first_products1_product | json }});
+  // console.log("products1_refill_product", {{ products1_refill_product | json }})
+  // console.log("products1_refill_info", {{ products1_refill_info | json }})
   // console.log("second_products1_product", {{ second_products1_product | json }});
   // console.log("third_products1_product", {{ third_products1_product | json }});
+  // console.log("products3", {{ products3 | json }});
+  // console.log("products3_products", {{ products3_products | json }});
+  // console.log("products3_type", {{ products3_type | json }});
+  // console.log("products3_refill_product", {{ products3_refill_product | json }});
+  // console.log("products3_refill_info", {{ products3_refill_info | json }});
+  // console.log("first_products3_product", {{ first_products3_product | json }});
+  // console.log("second_products3_product", {{ second_products3_product | json }});
+  // console.log("third_products3_product", {{ third_products3_product | json }});
 </script>
 
 <section id="new-landing-purchase" class="new-landing-purchase">
@@ -138,23 +155,12 @@
       </div>
       {% comment %} panel 2 {% endcomment %}
       <div id="landing-step-two" class="landing-panel panel-hidden">
-        <div>
-          <h3>{{ general_settings.step_2_title }}</h3>
-        </div>
-        <div id="step2-select" class="">
-          <input type="radio" id="serum-1" name="step2" value="{{ products3_type.type }}">
-          <label for="serum-1">
-            {% render 'pdm-landing-purchase-serum', data: products3_type %}
-          </label>
-          <input type="radio" id="serum-2" name="step2" value="{{ products2_type.type }}">
-          <label for="serum-2">
-            {% render 'pdm-landing-purchase-serum', data: products2_type %}
-          </label>
-          <input type="radio" id="serum-3" name="step2" value="{{ products1_type.type }}" checked>
-          <label for="serum-3">
-            {% render 'pdm-landing-purchase-serum', data: products1_type %}
-          </label>
-        </div>
+        {% render 'pdm-landing-purchase-step2-inputs' 
+          products1_type: products1_type,
+          products2_type: products2_type,
+          products3_type: products3_type,
+          generalSettings: general_settings
+        %}
       </div>
       {% comment %} panel 3 {% endcomment %}
       <div id="landing-step-three" class="landing-panel panel-hidden">
@@ -178,14 +184,24 @@
           <h3>{{ general_settings.step_4_title }}</h3>
         </div>
         <div style="display: flex; flex-direction:row">
-          <input type="radio" id="opt9" name="step4" value="">
-          <label for="opt9">
-            {% render 'pdm-landing-step4-card', data: general_settings, cardCase: 0 %}
-          </label>
-          <input type="radio" id="opt9" name="step4" value="">
-          <label for="opt9">
-            {% render 'pdm-landing-step4-card', data: general_settings, cardCase: 1 %}
-          </label>
+          {% render 'pdm-landing-purchase-step-4-inputs' 
+            productRefill: products1_refill_product,
+            productRefillInfo: products1_refill_info,
+            generalSettings: general_settings,
+            name: 'step4-products1'
+          %}
+          {% render 'pdm-landing-purchase-step-4-inputs'
+            productRefill: products2_refill_product,
+            productRefillInfo: products2_refill_info,
+            generalSettings: general_settings,
+            name: 'step4-products2'
+          %}
+          {% render 'pdm-landing-purchase-step-4-inputs' 
+            productRefill: products3_refill_product,
+            productRefillInfo: products3_refill_info,
+            generalSettings: general_settings,
+            name: 'step4-products2'
+          %}
         </div>
       </div>
     </div>

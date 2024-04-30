@@ -1,0 +1,44 @@
+<div
+  id="inputs-{{ name }}"
+  class="inputs-{{ name }} {% if name == 'step4-products1' %} show-inputs {% endif %}"
+>
+  {% comment %} {% endcomment %}
+  <input
+    type="radio"
+    name="{{ name }}"
+    id="{{ name }}-refill"
+    data-position="1"
+    checked
+    data-product-id="{{ productRefill.id }}"
+    value='{
+      "position":1, 
+      "id":{{ productRefill.selected_or_first_available_variant.id }}, 
+      "discountPrice": {{ productRefill.price | money_without_currency }},
+      "price":{{ productRefill.compare_at_price | money_without_currency }}, 
+      "discountPriceQuota": {{ productRefill.price |  divided_by: 4 | money_without_currency }},
+      "input": "{{ name }}"
+    }'
+  >
+    <label for="{{name}}-refill">
+      {% render 'pdm-landing-purchase-step4-card' 
+        productInfo: productRefillInfo,
+        productData: productRefill,
+        cardTypeInfo: 'meta'      
+      %}
+    </label>
+
+    {% comment %} general card {% endcomment %}
+  <input
+    type="radio"
+    data-position="2"
+    name="{{ name }}"
+    id="{{ name }}-general"
+    value="false"
+  >
+    <label for="{{ name }}-general">
+      {% render 'pdm-landing-purchase-step4-card' 
+        generalSettings: generalSettings,
+        cardTypeInfo: 'general'
+      %}
+    </label>
+</div>

@@ -1,0 +1,13 @@
+<div class="step2-purchase-card-container">
+  <div class="step2-card-img-container">
+    {{ data.image | image_url: width: 300 | image_tag: alt: data.title }}
+  </div>
+  <div class="step2-card-title-container">   
+    <div class="step2-card-title">
+      <h3>{{ data.title }}</h3>
+    </div>
+  </div>
+  <div class="step2-card-value-props">
+    {{ data.value_props |  metafield_tag }}
+  </div>
+</div>
