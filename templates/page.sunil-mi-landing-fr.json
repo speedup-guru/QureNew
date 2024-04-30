@@ -475,6 +475,9 @@
         "video_WCKqeb",
         "wistia_ctwd8i"
       ],
+      "custom_css": [
+        ".section_header {text-align: center !important;}"
+      ],
       "settings": {
         "heading": "La confiance en soi commence ici",
         "classname": "section videosQure"
