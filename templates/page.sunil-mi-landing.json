@@ -609,16 +609,6 @@
             "text": "<p>\"The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.”<\/p><h6><strong>Dr Dylan Greeney<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         },
-        "video_jPYhQi": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
-          }
-        },
         "video_PECKPL": {
           "type": "video",
           "settings": {
@@ -628,6 +618,16 @@
             "wistia_id": "",
             "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Internal Medicine<\/h6>"
           }
+        },
+        "video_jPYhQi": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -636,8 +636,8 @@
         "video_pEM9DL",
         "video_XF3pgt",
         "video_C6tFxe",
-        "video_jPYhQi",
-        "video_PECKPL"
+        "video_PECKPL",
+        "video_jPYhQi"
       ],
       "settings": {
         "classname": "trusted_bl",
@@ -775,7 +775,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Results you‘ll see with your own eyes",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "liquid_9GnXBn": {
