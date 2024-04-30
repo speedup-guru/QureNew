@@ -781,6 +781,9 @@
         "result_NQdtBQ",
         "result_9zp48n"
       ],
+      "custom_css": [
+        ".result_s {padding-top: 0px !important;}"
+      ],
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Des résultats que vous verrez de vos propres yeux",
