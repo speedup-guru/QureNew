@@ -825,7 +825,8 @@
         "object_THMRbY"
       ],
       "custom_css": [
-        ".section_header {max-width: 941px !important;}"
+        ".section_header {max-width: 941px !important;}",
+        "@media (min-width: 768px) {.section_header p {margin-right: auto !important; margin-left: auto !important; }}"
       ],
       "settings": {
         "classname": "beauty_skincare section",
