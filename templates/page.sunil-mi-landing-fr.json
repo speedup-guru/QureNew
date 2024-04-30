@@ -367,10 +367,11 @@
       ],
       "custom_css": [
         ".mb_contents {max-width: unset !important;}",
+        ".mb_contents h2 {max-width: 464px !important;}",
         ".btn-primary {max-width: 100% !important;}"
       ],
       "settings": {
-        "classname": "main_banner section pt-0",
+        "classname": "main_banner pt-0",
         "heading": "",
         "text": ""
       }
