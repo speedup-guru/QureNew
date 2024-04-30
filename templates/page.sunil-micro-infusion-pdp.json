@@ -446,6 +446,7 @@
         },
         "video_kmVPyX": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_davim.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
@@ -646,7 +647,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Results you‘ll see with your own eyes",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "videos_list_fqNFJW": {
