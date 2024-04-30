@@ -368,6 +368,7 @@
       "custom_css": [
         ".mb_contents {max-width: unset !important;}",
         ".mb_contents h2 {max-width: 464px !important;}",
+        ".mb_contents p:first-child {max-width: 464px !important;}",
         ".btn-primary {max-width: 100% !important;}"
       ],
       "settings": {
