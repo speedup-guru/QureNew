@@ -277,7 +277,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/carpet_2.webp",
-            "classname": "it_img pb-md-0"
+            "classname": "it_img pb-md-0 pt-3"
           }
         }
       },
