@@ -277,7 +277,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/carpet_2.webp",
-            "classname": "pt-2"
+            "classname": "it_img pb-4 pb-md-0"
           }
         }
       },
@@ -287,8 +287,8 @@
       ],
       "settings": {
         "classname": "imageText section",
-        "column_image": 6,
-        "column_content": 6
+        "column_image": 5,
+        "column_content": 7
       }
     },
     "two_column_box_wJmxTY": {
