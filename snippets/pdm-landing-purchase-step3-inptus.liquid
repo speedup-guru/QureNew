@@ -1,0 +1,13 @@
+<div>
+  <h3>{{ generalSettings.step_3_title }}</h3>
+</div>
+<div>
+  <input type="radio" id="opt7" name="step3" value="" checked>
+  <label for="opt7">
+    {% render 'pdm-landing-purchase-step3-card', data: generalSettings, cardCase: 0 %}
+  </label>
+  <input type="radio" id="opt8" name="step3" value="">
+  <label for="opt8">
+    {% render 'pdm-landing-purchase-step3-card', data: generalSettings, cardCase: 1 %}
+  </label>
+</div>

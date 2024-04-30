@@ -24,12 +24,13 @@
       <div class="step1-card-price-information">
         <span class="step1-card-price__title">{{ productInfo.title_product }}</span>
         <div class="step1-card-price-wrapper">
-          <span class="step1-card-price-wrapper__real">{{ productData.compare_at_price | money_without_trailing_zeros }} </span>
+          <span class="step1-card-price-wrapper__real">
+            {{- productData.compare_at_price | money_without_trailing_zeros }}
+          </span>
           <span class="step1-card-price-wrapper__discount">{{ productData.price | money_without_trailing_zeros }}</span>
         </div>
       </div>
     </div>
-    
   </div>
 
   <div class="step1-card-value-props">
@@ -41,19 +42,42 @@
       </div>
     {% endif %}
     <div class="step1-value-static-props">
-      {{ productInfo.value_props | metafield_tag }}
+      {{
+        productInfo.value_props
+        | metafield_tag
+        | replace: '(check)',
+          '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.08703 8.06541L2.01589 5.99427C1.90429 5.88267 1.75292 5.81997 1.59509 5.81997C1.43726 5.81997 1.2859 5.88267 1.1743 5.99427C1.0627 6.10587 1 6.25724 1 6.41507C1 6.49322 1.01539 6.5706 1.0453 6.6428C1.07521 6.715 1.11904 6.7806 1.1743 6.83586L3.66922 9.33078C3.902 9.56356 4.27803 9.56356 4.51081 9.33078L10.8257 3.01589C10.9373 2.90429 11 2.75292 11 2.59509C11 2.43726 10.9373 2.2859 10.8257 2.1743C10.7141 2.0627 10.5627 2 10.4049 2C10.2471 2 10.0957 2.0627 9.98411 2.1743L4.08703 8.06541Z" fill="#3B8566"/>
+      </svg>'
+        | replace: '(cross)',
+          '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.8228 2.18326C9.76667 2.12701 9.69999 2.08238 9.62658 2.05193C9.55318 2.02148 9.47448 2.00581 9.39501 2.00581C9.31554 2.00581 9.23685 2.02148 9.16345 2.05193C9.09004 2.08238 9.02336 2.12701 8.96722 2.18326L6 5.14442L3.03278 2.1772C2.9766 2.12102 2.90991 2.07646 2.8365 2.04605C2.7631 2.01565 2.68443 2 2.60499 2C2.52554 2 2.44687 2.01565 2.37347 2.04605C2.30007 2.07646 2.23337 2.12102 2.1772 2.1772C2.12102 2.23337 2.07646 2.30007 2.04605 2.37347C2.01565 2.44687 2 2.52554 2 2.60499C2 2.68443 2.01565 2.7631 2.04605 2.8365C2.07646 2.90991 2.12102 2.9766 2.1772 3.03278L5.14442 6L2.1772 8.96722C2.12102 9.0234 2.07646 9.0901 2.04605 9.1635C2.01565 9.2369 2 9.31557 2 9.39501C2 9.47446 2.01565 9.55313 2.04605 9.62653C2.07646 9.69993 2.12102 9.76663 2.1772 9.8228C2.23337 9.87898 2.30007 9.92355 2.37347 9.95395C2.44687 9.98435 2.52554 10 2.60499 10C2.68443 10 2.7631 9.98435 2.8365 9.95395C2.90991 9.92355 2.9766 9.87898 3.03278 9.8228L6 6.85558L8.96722 9.8228C9.0234 9.87898 9.0901 9.92355 9.1635 9.95395C9.2369 9.98435 9.31557 10 9.39501 10C9.47446 10 9.55313 9.98435 9.62653 9.95395C9.69993 9.92355 9.76663 9.87898 9.8228 9.8228C9.87898 9.76663 9.92355 9.69993 9.95395 9.62653C9.98435 9.55313 10 9.47446 10 9.39501C10 9.31557 9.98435 9.2369 9.95395 9.1635C9.92355 9.0901 9.87898 9.0234 9.8228 8.96722L6.85558 6L9.8228 3.03278C10.0534 2.80219 10.0534 2.41385 9.8228 2.18326Z" fill="#D44D52"/>
+      </svg>'
+      }}
     </div>
     {% comment %} dropdown {% endcomment %}
-    
     <div class="step1-value-props-dropdown">
-      <div class="step1-value-dropdown-title">
+      <div
+        class="step1-value-dropdown-title"
+        data-bs-toggle="collapse"
+        data-bs-target="#{{ uniqueId }}"
+        aria-expanded="false"
+        aria-controls="{{ uniqueId }}"
+      >
         <div class="step1-value-dropdown-title-wrapper">
           <span class="step1-value-dropdown-title-wrapper__title">{{ productInfo.title_included }}</span>
-          <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>  
-        </div> 
-        {% render 'pdm-landing-purchase-icons', icon: 'collapse-arrow' %}
+          <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
+        </div>
+        <button class="" type="button">
+          {% render 'pdm-landing-purchase-icons', icon: 'collapse-arrow' %}
+        </button>
       </div>
-      <div class="step1-value-dropdown-information">
+      <div
+        id="{{ uniqueId }}"
+        class="step1-value-dropdown-information collapse"
+        aria-labelledby="headingOne"
+        data-bs-parent=".{{parentContainer}}"
+      >
         {{ productInfo.value_props_included | metafield_tag }}
       </div>
     </div>

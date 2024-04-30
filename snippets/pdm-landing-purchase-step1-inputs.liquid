@@ -28,7 +28,12 @@
     checked
   >
   <label for="{{name}}-one">
-    {% render 'pdm-landing-purchase-step1-card', productData: productOne, productInfo: productOneInfo %}
+    {% render 'pdm-landing-purchase-step1-card', 
+      productData: productOne, 
+      productInfo: productOneInfo
+      uniqueId: 'collapseOne'
+      parentContainer: 'parent-{{ name }}'
+    %}
   </label>
   <input
     data-id-product="{{ productTwo.id }}"
@@ -47,7 +52,12 @@
     }'
   >
   <label for="{{name}}-two">
-    {% render 'pdm-landing-purchase-step1-card', productData: productTwo, productInfo: productTwoInfo %}
+    {% render 'pdm-landing-purchase-step1-card', 
+      productData: productTwo, 
+      productInfo: productTwoInfo 
+      uniqueId: 'collapseTwo'
+      parentContainer: 'parent-{{ name }}'
+    %}
   </label>
   <input
     data-id-product="{{ productThree.id }}"
@@ -66,6 +76,11 @@
     }'
   >
   <label for="{{name}}-three">
-    {% render 'pdm-landing-purchase-step1-card', productData: productThree, productInfo: productThreeInfo %}
+    {% render 'pdm-landing-purchase-step1-card', 
+      productData: productThree, 
+      productInfo: productThreeInfo 
+      uniqueId: 'collapseThree'
+      parentContainer: 'parent-{{ name }}'
+    %}
   </label>
 </div>

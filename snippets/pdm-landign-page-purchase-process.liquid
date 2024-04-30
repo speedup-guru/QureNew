@@ -112,7 +112,7 @@
       <p>{{ general_settings.subtitle }}</p>
     </div>
     <div>
-      <span>bread crumbs</span>
+      
     </div>
     {% comment %} main panel container {% endcomment %}
     <div id="main-panel-lading">
@@ -164,19 +164,9 @@
       </div>
       {% comment %} panel 3 {% endcomment %}
       <div id="landing-step-three" class="landing-panel panel-hidden">
-        <div>
-          <h3>{{ general_settings.step_3_title }}</h3>
-        </div>
-        <div>
-          <input type="radio" id="opt7" name="step3" value="">
-          <label for="opt7">
-            {% render 'pdm-landing-step3-card', data: general_settings, cardCase: 0 %}
-          </label>
-          <input type="radio" id="opt8" name="step3" value="">
-          <label for="opt8">
-            {% render 'pdm-landing-step3-card', data: general_settings, cardCase: 1 %}
-          </label>
-        </div>
+       {% render 'pdm-landing-purchase-step3-inptus', 
+        generalSettings: general_settings,
+       %}
       </div>
       {% comment %} panel 4 {% endcomment %}
       <div id="landing-step-fourth" class="landing-panel panel-hidden">
@@ -188,19 +178,19 @@
             productRefill: products1_refill_product,
             productRefillInfo: products1_refill_info,
             generalSettings: general_settings,
-            name: 'step4-products1'
+            name: 'products4'
           %}
           {% render 'pdm-landing-purchase-step-4-inputs'
             productRefill: products2_refill_product,
             productRefillInfo: products2_refill_info,
             generalSettings: general_settings,
-            name: 'step4-products2'
+            name: 'products5'
           %}
           {% render 'pdm-landing-purchase-step-4-inputs' 
             productRefill: products3_refill_product,
             productRefillInfo: products3_refill_info,
             generalSettings: general_settings,
-            name: 'step4-products2'
+            name: 'products6'
           %}
         </div>
       </div>
@@ -222,11 +212,22 @@
       >
         next
       </button>
-      <button
-        id="landing-submit"
-      >
-        submit
-      </button>
+      <div style="padding: 20px 20px">
+        <a
+          hidden
+          href="{{ routes.cart_add_url }}"
+          id="landing-add-sidecard"
+          class="btn btn-primary buy_btn event_btn"
+          data-ajax-cart-request-button
+        >
+          add to sidecard
+        </a>
+        <button
+          id="landing-submit"
+        >
+          submit
+        </button>
+      </div>
     </div>
   </div>
 </section>

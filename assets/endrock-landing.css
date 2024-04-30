@@ -9,8 +9,11 @@
 
     /* variables */
 
+    --no-active-color: #D7D9D9;
+    --active-color: #C8E6DC;
     /* images background colors - gradient */
     --img-color-gold: #fffaf0;
+    --img-color-silver: #f5f5f5;
     --img-gradient-gold-silver:linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%); 
 
     /* title card gradiant */
@@ -76,7 +79,7 @@
         }
       }
       .step1-purchase-card-container{
-        border: 2px solid #C8E6DC;
+        border: 2px solid var(--no-active-color);
         width: 304px;
         height: 600px;
         border-radius: 24px;
@@ -147,7 +150,7 @@
               justify-content: center;
               align-items: center;
               gap: 8px;
-              border: 1px solid #D6D6D6;
+              border: 1px solid var(--no-active-color);
               border-radius: 40px;
               .step1-card-price__title{
                 font-family: 'Canela Web';
@@ -280,13 +283,16 @@
       input[type="radio"]:checked + label[for="products1-one"],
       input[type="radio"]:checked + label[for="products1-two"],
       input[type="radio"]:checked + label[for="products1-three"]{
+        .step1-purchase-card-container{
+          border: 2px solid var(--active-color);
+        }
         .card-img-container{
           background: linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%);
           border-radius: 24px 24px 0px 0px;
         }
         .step1-card-price-information{
-          border-color: #C8E6DC;
-          background-color: #C8E6DC;
+          border-color: var(--active-color);
+          background-color: var(--active-color);
         }
       }
 
@@ -294,8 +300,8 @@
       input[type="radio"]:checked + label[for="products2-two"],
       input[type="radio"]:checked + label[for="products2-three"]{
         .step1-card-price-information{
-          border-color: #C8E6DC;
-          background-color: #C8E6DC;
+          border-color: var(--active-color);
+          background-color: var(--active-color);
         }
       }
 
@@ -311,8 +317,8 @@
           border-radius: 24px 24px 0px 0px;
         }
         .step1-card-price-information{
-          border-color: #C8E6DC;
-          background-color: #C8E6DC;
+          border-color: var(--active-color);
+          background-color: var(--active-color);
         }
       }
 
@@ -325,7 +331,7 @@
         width: 304px;
         height: auto;
         border-radius: 24px;
-        border: 2px solid #D7D9D9;
+        border: 2px solid var(--no-active-color);
         display: flex;
         flex-direction: column;
         .step2-card-img-container{
@@ -343,7 +349,7 @@
           background: var(--gradiant-color-silver);
           .step2-card-title{
             padding: 16px 24px 16px;
-            border: 1px solid #D7D9D9;
+            border: 1px solid var(--no-active-color);
             border-radius: 24px;
             background-color: white;
             h3{
@@ -413,6 +419,44 @@
         }
       }
     }
+
+
+    /* step3 */
+    #landing-step-three{
+      .step3-purchase-card-container{
+        width: 304px;
+        height: auto;
+        border-radius: 24px;
+        border: 2px solid var(--no-active-color);
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        .step3-card-price-container{
+          width: 100%;
+          height: 108px;
+          background: var(--img-color-silver);
+          border-radius: 22px 22px 0px 0px;
+        }
+        .step3-card-title-container{
+          background: var(--gradiant-color-silver);
+          .step3-card-title{
+            padding: 16px 24px 16px;
+            border: 1px solid var(--no-active-color);
+            border-radius: 24px;
+            background-color: white;
+            h3{
+              font-family: 'Canela Web';
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.01em;
+              text-align: center;
+              text-transform: capitalize;
+              margin: 0;
+            }
+        }      
+      }
+    }
    
     
   }
@@ -431,21 +475,18 @@
   }
 
   /* step4 */
-  .inputs-step4-products1{
+  .inputs-products4{
     display: none;
   }
-  .inputs-step4-products2 {
+  .inputs-products5 {
     display: none;
   }
-  .inputs-step4-products3 {
+  .inputs-products6 {
     display: none;
   }
   /* class added */
   .show-inputs{
     display: block;
   }
-
-
-
-
-/* endcard */
+  
+}

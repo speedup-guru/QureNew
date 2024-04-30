@@ -5,22 +5,24 @@
   assign selectedPaymentText = paymentText[cardCase]
  %}
 
-<div>
-  <div>
+<div class="step3-purchase-card-container">
+  <div class="step3-card-price-container">
     {% if cardCase == 0 %}
       <div id="step3-price-normal"></div>
       {% else %}
       <div id="step3-price-quota"></div>
     {% endif %}
   </div>
-  <div>
-    {{ selectedTitle }}
+  <div class="step3-card-title-container">
+    <div class="step3-card-title">
+      <h3>{{ selectedTitle }}</h3>
+    </div>
   </div>
-  <div>
-    <div>
+  <div class="step3-card-information-container">
+    <div class="step3-information-text">
       {{ selectedPaymentText }}
     </div>
-    <div>
+    <div class="step-information-img-container">
       {% if cardCase == 0 %}
         {{ data.step_3_payment_logos_1 |  image_url: width: 300 |  image_tag: alt: 'payment logos' }}
       {% else %}

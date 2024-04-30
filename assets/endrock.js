@@ -230,6 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.selectedInputValue = null;
       this.selectedInputValueStep4 = null;
       this.selectedInputValueJson = null;
+      this.selectedInputValueJsonStep4 = null;
       this.indexPanel = 0;
 
       this.hidePanels();
@@ -238,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.updateSelectedInputValueJson();
       this.renderElementsStep3();
       this.updateVisibilityAndValueFourthStep();
+      this.updateSelectedInputValueJsonStep4();
       this.updateButtons();
 
       const radioButtonsStep2 = document.querySelectorAll('#step2-select input[type="radio"]');
@@ -247,6 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
           this.updateSelectedInputValueJson();
           this.updateVisibilityAndValueFourthStep();
           this.updateSelectedInputValueStep4()
+          this.updateSelectedInputValueJsonStep4();
           this.renderElementsStep3();
         });
       });
@@ -261,11 +264,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
 
-      const radioButtonsStep4 = document.querySelectorAll('.inputs-step4-products1, .inputs-step4-products2, .inputs-step4-products3');
+      const radioButtonsStep4 = document.querySelectorAll('.inputs-products4 input[type="radio"], .inputs-products5 input[type="radio"], .inputs-products6 input[type="radio"]');
       radioButtonsStep4.forEach(button => {
         button.addEventListener('change', () => {
           this.syncRadioButtonsStep4(button.dataset.identifier);
           this.updateSelectedInputValueStep4();
+          this.updateSelectedInputValueJsonStep4();
         });
       });
 
@@ -281,13 +285,14 @@ document.addEventListener('DOMContentLoaded', function() {
       this.bntTest.addEventListener('click', () =>{
         console.log('test');
         console.log('Value of selected radio button):', this.selectedInputValueJson);
+        console.log('Value of selected radio button 4):', this.selectedInputValueJsonStep4);
       });
 
       this.btnSubmit.addEventListener('click', () =>{
         console.log('submit');
         console.log('Value of selected radio button):', this.selectedInputValueJson);
       
-        this.addToCart();
+        this.updateAnchorValue();
       });
     }
 
@@ -364,7 +369,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     syncRadioButtonsStep4(value) {
-      const allInputsStep4 = document.querySelectorAll('.inputs-step4-products1 input[type="radio"], .inputs-step4-products2 input[type="radio"], .inputs-step4-products3 input[type="radio"]');
+      const allInputsStep4 = document.querySelectorAll('.inputs-products4 input[type="radio"], .inputs-products5 input[type="radio"], .inputs-products6 input[type="radio"]');
       allInputsStep4.forEach(input => {
         if (input.dataset.identifier === value) {
           input.checked = true;
@@ -386,6 +391,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
+    updateSelectedInputValueJsonStep4() {
+      if(this.selectedInputValueStep4){
+        try {
+          this.selectedInputValueJsonStep4 = JSON.parse(this.selectedInputValueStep4);
+        } catch (error) {
+          console.error('Error parsing JSON:', error);
+          this.selectedInputValueJsonStep4 = null;
+        }
+      }
+    }
+
     updateSelectedInputValue() {
       const selectedRadioButton = document.querySelector('.inputs-products1 input[type="radio"]:checked, .inputs-products2 input[type="radio"]:checked, .inputs-products3 input[type="radio"]:checked');
       this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
@@ -395,9 +411,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     updateSelectedInputValueStep4() {
-      const selectedRadioButtonStep4 = document.querySelector('.inputs-step4-products1 input[type="radio"]:checked, .inputs-step4-products2 input[type="radio"]:checked, .inputs-step4-products3 input[type="radio"]:checked');
+      const selectedRadioButtonStep4 = document.querySelector('.inputs-products4 input[type="radio"]:checked, .inputs-products5 input[type="radio"]:checked, .inputs-products6 input[type="radio"]:checked');
       this.selectedInputValueStep4 = selectedRadioButtonStep4 ? selectedRadioButtonStep4.value : null;
-      console.log('Selected input value 4:', this.selectedInputValueStep4);
+      // console.log('Selected input value 4:', this.selectedInputValueStep4);
     }
 
       
@@ -405,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateVisibilityFirstStep(){
       const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
       const selectOption = secondRadioButtons.value;
-      // console.log('selected 2', selectOption);
+      console.log('selected 2', selectOption);
 
       const allInputs = document.querySelectorAll('.inputs-products1, .inputs-products2, .inputs-products3');
       allInputs.forEach(input => {
@@ -417,28 +433,28 @@ document.addEventListener('DOMContentLoaded', function() {
       const selectedRadioButton = selectedInputs.querySelector('input[type="radio"]:checked');
       this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
       this.updateSelectedInputValueJson();
-      console.log('Selected input value 1:', this.selectedInputValue);
+      // console.log('Selected input value 1:', this.selectedInputValue);
       // console.log('Selected input value 2:', this.selectedInputValueJson);
     }
 
     updateVisibilityAndValueFourthStep(){
       const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
-      const selectOption = secondRadioButtons ? secondRadioButtons.value : null;
-      
+      const selectOption = secondRadioButtons ?  secondRadioButtons.dataset.step4Product : null;
+      // console.log('selected 2 for 4step', selectOption);
       // Ocultar todos los elementos del cuarto paso
-      const allFourthPanelInputs = document.querySelectorAll('.inputs-step4-products1, .inputs-step4-products2, .inputs-step4-products3');
-      allFourthPanelInputs.forEach(input => {
+      const allStep4Inputs = document.querySelectorAll('.inputs-products4, .inputs-products5, .inputs-products6');
+      allStep4Inputs.forEach(input => {
         input.classList.remove('show-inputs');
       });
 
-      const selectedInputsStep4 = document.querySelector(`#inputs-step4-${selectOption}`);
-      if (selectedInputsStep4) {
-        selectedInputsStep4.classList.add('show-inputs');
-      
-        const selectedRadioButtonStep4 = selectedInputsStep4.querySelector('input[type="radio"]:checked');
-        this.selectedInputValueStep4 = selectedRadioButtonStep4 ? selectedRadioButtonStep4.value : null;
-        console.log('Selected input value 4:', this.selectedInputValueStep4);
-      }
+      const selectedInputsStep4 = document.querySelector(`#inputs-${selectOption}`);
+      selectedInputsStep4.classList.add('show-inputs');
+
+      const selectedRadioButtonStep4 = selectedInputsStep4.querySelector('input[type="radio"]:checked');
+      this.selectedInputValueStep4 = selectedRadioButtonStep4 ? selectedRadioButtonStep4.value : null;
+      this.updateSelectedInputValueJsonStep4();
+      // console.log('Selected input value 4:', this.selectedInputValueStep4);
+
     }
 
     renderElementsStep3(){
@@ -449,36 +465,57 @@ document.addEventListener('DOMContentLoaded', function() {
       const step3PriceQuota = document.getElementById('step3-price-quota');
 
       if (step3PriceNormal && step3PriceQuota) {
-        step3PriceNormal.innerHTML = `<span> render price: ${this.selectedInputValueJson.price}</span>`;
-        step3PriceQuota.innerHTML = `<span> render quota: ${this.selectedInputValueJson.discountPriceQuota}</span>`;
+        step3PriceNormal.innerHTML = `
+        <div>
+          <span class=''>$ ${this.selectedInputValueJson.price}</span>
+          <span class=''>$ ${this.selectedInputValueJson.discountPrice}</span>
+        </div>`;
+        step3PriceQuota.innerHTML = `<span>$ ${this.selectedInputValueJson.discountPriceQuota}</span>`;
       }
     }
 
 
-    addToCart(){
+    updateAnchorValue(){
       console.log('Add to cart');
-      let formData = {
-        'items': [{
-          'id': this.selectedInputValueJson.id,
-          'quantity': 1
-        }]
-      }
-      console.log(formData)
+      const anchorID = document.getElementById('landing-add-sidecard');
+      const productIdStep1 = this.selectedInputValueJson;
+      const productIdStep4 = this.selectedInputValueJsonStep4;
+      console.log('productIdStep1', productIdStep1);
+      console.log('productIdStep4', productIdStep4);
+      let currentHref = anchorID.getAttribute('href');
 
-      fetch(window.Shopify.routes.root + 'cart/add.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(response => {
-        console.log('Response:', response);
-        return response.json();
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+
+
+      // Obtener el producto correspondiente según la posición
+      const selectedProductId = (productIdStep1.position === 1 && productIdStep4.position === 1) 
+      ? productIdStep4.id 
+      : (productIdStep1.position === 1 && productIdStep4.position !== 1) 
+        ? productIdStep1.id 
+        : productIdStep1.id;
+
+        console.log(currentHref, selectedProductId)
+      // if (currentHref.includes(`?id`)) {
+      //   currentHref = currentHref.replace(`?id=${selectedProductId}&quantity=1`, '');
+      // } else {
+      //   currentHref += `?id=${selectedProductId}&quantity=1`;
+      // }
+
+
+      // anchorID.setAttribute('href', currentHref);
+      // console.log('anchor', anchorID);
+
+
+      const href = currentHref.split('add')[0]
+      currentHref = `${href}add?id=${selectedProductId}&quantity=1`
+      console.log('currentHref', currentHref);
+      anchorID.setAttribute('href', currentHref);
+      console.log('anchor', anchorID);
+
+      setTimeout(() => {
+        anchorID.click();
+      }, 2000);
+
+
     }
         
   }
