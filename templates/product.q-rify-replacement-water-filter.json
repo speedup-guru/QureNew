@@ -19,10 +19,10 @@
         "subscribe_qrzhkY": {
           "type": "subscribe",
           "settings": {
-            "heading": "Subscribe & save $10",
-            "text": "<p>Get a new replacement filter delivered every 90 days for just $35. Skip or cancel at any time.<\/p>",
-            "plan": "4562682095",
-            "discount": 1000
+            "heading": "Subscribe & save 30%",
+            "text": "<p>Get a new replacement filter delivered every 90 days for just [future_price]. Skip or cancel at any time.<\/p>",
+            "plan": "5012848879",
+            "discount": 30
           }
         },
         "before_and_after_zYCwCN": {
