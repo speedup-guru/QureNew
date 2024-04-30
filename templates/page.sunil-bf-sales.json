@@ -669,6 +669,9 @@
         "object_XmfpXd",
         "object_YbyEzH"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "classname": "beauty_skincare section",
         "heading": "Hello make up free days, goodbye clinical costs",
@@ -735,6 +738,12 @@
       "type": "faq-extended",
       "settings": {
       }
+    },
+    "liquid_6ytqfF": {
+      "type": "liquid",
+      "settings": {
+        "code": "<script>\ndocument.querySelector(\"ul.wrongCircle li:last-child\").classList.add(\"correct\");\n<\/script>"
+      }
     }
   },
   "order": [
@@ -748,6 +757,7 @@
     "trusted_bJ9rM6",
     "compare_DUM6Ff",
     "details_sliders_BwedTq",
-    "faq_extended_GUWQH4"
+    "faq_extended_GUWQH4",
+    "liquid_6ytqfF"
   ]
 }
