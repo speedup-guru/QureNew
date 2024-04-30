@@ -831,6 +831,7 @@
         "object_THMRbY"
       ],
       "custom_css": [
+        ".beauty_skincare {background-color: white !important;}",
         ".section_header {max-width: 941px !important;}",
         "@media (min-width: 768px) {.section_header p {margin-right: auto !important; margin-left: auto !important; }}"
       ],
