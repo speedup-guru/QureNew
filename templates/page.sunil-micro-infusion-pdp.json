@@ -498,15 +498,15 @@
     "results_BxwbR3": {
       "type": "results",
       "blocks": {
-        "result_nahUd6": {
+        "result_9WDtdX": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results_ellie.webp",
-            "heading": "my skin RETURNED to LIFE!",
-            "text": "<p>\"I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<\/p>",
+            "image": "shopify:\/\/shop_images\/results_chelsea.webp",
+            "heading": "Amazing results!",
+            "text": "<p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"<\/p>",
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
-            "client": "Ellie V.",
+            "client": "Chelsea J.",
             "code": ""
           }
         },
@@ -519,6 +519,18 @@
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Ramandeep",
+            "code": ""
+          }
+        },
+        "result_nahUd6": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_ellie.webp",
+            "heading": "my skin RETURNED to LIFE!",
+            "text": "<p>\"I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ellie V.",
             "code": ""
           }
         },
@@ -618,18 +630,6 @@
             "code": ""
           }
         },
-        "result_9WDtdX": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_chelsea.webp",
-            "heading": "Amazing results!",
-            "text": "<p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Chelsea J.",
-            "code": ""
-          }
-        },
         "result_jb3R8J": {
           "type": "result",
           "settings": {
@@ -644,8 +644,9 @@
         }
       },
       "block_order": [
-        "result_nahUd6",
+        "result_9WDtdX",
         "result_zTrGjn",
+        "result_nahUd6",
         "result_KJTymA",
         "result_A7ewhj",
         "result_kWQCUn",
@@ -654,7 +655,6 @@
         "result_gjbAwg",
         "result_XaHkFR",
         "result_kynacj",
-        "result_9WDtdX",
         "result_jb3R8J"
       ],
       "settings": {
