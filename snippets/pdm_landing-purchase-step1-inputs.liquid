@@ -18,7 +18,8 @@
     id="{{name}}-one"
     name="{{ name }}"
     value='{
-      "position":1, 
+      "position":1,
+      "titleBundle":"{{ productOneInfo.title_product }}", 
       "id":{{ productOne.selected_or_first_available_variant.id }}, 
       "discountPrice": {{ productOne.price | money_without_currency }},
       "price":{{ productOne.compare_at_price | money_without_currency }}, 
@@ -28,7 +29,7 @@
     checked
   >
   <label for="{{name}}-one">
-    {% render 'pdm-landing-purchase-step1-card', 
+    {% render 'pdm_landing-purchase-step1-card', 
       productData: productOne, 
       productInfo: productOneInfo
       uniqueId: 'collapseOne'
@@ -45,7 +46,8 @@
     id="{{name}}-two"
     name="{{ name }}"
     value='{
-      "position":2, 
+      "position":2,
+      "titleBundle":"{{ productTwoInfo.title_product }}",
       "id":{{ productTwo.selected_or_first_available_variant.id }}, 
       "discountPrice": {{ productTwo.price | money_without_currency }},
       "price":{{ productTwo.compare_at_price | money_without_currency }}, 
@@ -54,7 +56,7 @@
     }'
   >
   <label for="{{name}}-two">
-    {% render 'pdm-landing-purchase-step1-card', 
+    {% render 'pdm_landing-purchase-step1-card', 
       productData: productTwo, 
       productInfo: productTwoInfo 
       uniqueId: 'collapseTwo'
@@ -71,7 +73,8 @@
     id="{{name}}-three"
     name="{{ name }}"
     value='{
-      "position":3, 
+      "position":3,
+      "titleBundle":"{{ productThreeInfo.title_product }}",
       "id":{{ productThree.selected_or_first_available_variant.id }}, 
       "discountPrice": {{ productThree.price | money_without_currency }},
       "price":{{ price_3 }}, 
@@ -80,7 +83,7 @@
     }'
   >
   <label for="{{name}}-three">
-    {% render 'pdm-landing-purchase-step1-card', 
+    {% render 'pdm_landing-purchase-step1-card', 
       productData: productThree, 
       productInfo: productThreeInfo 
       uniqueId: 'collapseThree'

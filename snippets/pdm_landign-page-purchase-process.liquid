@@ -82,12 +82,12 @@
 
   assign checkIcon = ''
   capture checkIcon
-    render 'pdm-landing-purchase-icons', icon: 'check-value'
+    render 'pdm_landing-purchase-icons', icon: 'check-value'
   endcapture
 
   assign crossIcon = ''
   capture crossIcon
-    render 'pdm-landing-purchase-icons', icon: 'cross-value'
+    render 'pdm_landing-purchase-icons', icon: 'cross-value'
   endcapture
 %}
 
@@ -122,7 +122,7 @@
       <p>{{ general_settings.subtitle }}</p>
     </div>
     <div id="landing-breadcrumbs" class="landing-breadcrumbs-main">
-      {% render 'pdm-landing-purchase-breadcrumbs'
+      {% render 'pdm_landing-purchase-breadcrumbs'
         generalSettings: general_settings,
         
       %}
@@ -135,7 +135,7 @@
           <h3>{{ general_settings.title_component }}</h3>
         </div>
         {% comment %} products1 / mix {% endcomment %}
-        {% render 'pdm-landing-purchase-step1-inputs',
+        {% render 'pdm_landing-purchase-step1-inputs',
           productOne: third_products1_product,
           productOneInfo: products1_product_3_month,
           productTwo: second_products1_product,
@@ -147,7 +147,7 @@
           crossIcon: crossIcon
         %}
         {% comment %} products2 / silver {% endcomment %}
-        {% render 'pdm-landing-purchase-step1-inputs',
+        {% render 'pdm_landing-purchase-step1-inputs',
           productOne: third_products2_product,
           productOneInfo: products2_product_3_month,
           productTwo: second_products2_product,
@@ -160,7 +160,7 @@
         %}
 
         {% comment %} products3 / gold {% endcomment %}
-        {% render 'pdm-landing-purchase-step1-inputs',
+        {% render 'pdm_landing-purchase-step1-inputs',
           productOne: third_products3_product,
           productOneInfo: products3_product_3_month,
           productTwo: second_products3_product,
@@ -174,7 +174,7 @@
       </div>
       {% comment %} panel 2 {% endcomment %}
       <div id="landing-step-two" class="landing-panel panel-hidden">
-        {% render 'pdm-landing-purchase-step2-inputs' 
+        {% render 'pdm_landing-purchase-step2-inputs' 
           products1_type: products1_type,
           products2_type: products2_type,
           products3_type: products3_type,
@@ -183,7 +183,7 @@
       </div>
       {% comment %} panel 3 {% endcomment %}
       <div id="landing-step-three" class="landing-panel panel-hidden">
-       {% render 'pdm-landing-purchase-step3-inptus', 
+       {% render 'pdm_landing-purchase-step3-inptus', 
         generalSettings: general_settings,
        %}
       </div>
@@ -193,7 +193,7 @@
           <h3>{{ general_settings.step_4_title }}</h3>
         </div>
         <div style="display: flex; flex-direction:row">
-          {% render 'pdm-landing-purchase-step-4-inputs' 
+          {% render 'pdm_landing-purchase-step-4-inputs' 
             productRefill: products1_refill_product,
             productRefillInfo: products1_refill_info,
             generalSettings: general_settings,
@@ -201,7 +201,7 @@
             crossIcon: crossIcon,
             name: 'products4'
           %}
-          {% render 'pdm-landing-purchase-step-4-inputs'
+          {% render 'pdm_landing-purchase-step-4-inputs'
             productRefill: products2_refill_product,
             productRefillInfo: products2_refill_info,
             generalSettings: general_settings,
@@ -209,7 +209,7 @@
             crossIcon: crossIcon,
             name: 'products5'
           %}
-          {% render 'pdm-landing-purchase-step-4-inputs' 
+          {% render 'pdm_landing-purchase-step-4-inputs' 
             productRefill: products3_refill_product,
             productRefillInfo: products3_refill_info,
             generalSettings: general_settings,

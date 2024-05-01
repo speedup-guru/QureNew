@@ -71,24 +71,24 @@ swiperBeforeAfter('.swiper-products', '.swiper-pagination-products')
 swiperBeforeAfter('.swiper-page-product', '.swiper-pagination-product-page')
 
 const swiperResult = new Swiper('.swiper-info-result', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    pagination: {
-      el: '.swiper-pagination-real-result',
-      clickable: true,
-    }
-  });
+  slidesPerView: 1,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination-real-result',
+    clickable: true,
+  }
+});
 
 // end swiper PDP: Before & After First Image
 
 
-window.addEventListener("ig:ready", () => { 
-  if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
+window.addEventListener("ig:ready", () => {
+  if (document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')) {
     initUpsellSwiper();
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
   // Start PDP Social Proof Data
   const socialProofContainer = document.querySelector('.social-proof-data-container');
@@ -97,66 +97,66 @@ document.addEventListener('DOMContentLoaded', function() {
   const containerAtcButton = document.querySelector('.nav_e-commerce .cart-custom');
   const containerAtcButtonProdFaceSerum = document.querySelectorAll('.button_sticky_wrapper');
 
-  if ( socialProofContainer ) {
-    let { productId, productHandle, productList } = socialProofContainer.dataset; 
+  if (socialProofContainer) {
+    let { productId, productHandle, productList } = socialProofContainer.dataset;
     let url = `https://webhooks.endrock.software/endrockapi/v3/app/analytics/reportsGA4.php?filterBy=productId&store=qure&name=Qure: GA4&productId=`;
-    
+
     // render products purchased quantity and show the social proof container 
-    const renderQuantity = (quantity) => { 
-      setTimeout(()=>{
+    const renderQuantity = (quantity) => {
+      setTimeout(() => {
         const chatIcon = document.querySelector('iframe#launcher');
-        if ( chatIcon ) chatIcon.classList.add('new-bottom');
-      },1000);
-      
+        if (chatIcon) chatIcon.classList.add('new-bottom');
+      }, 1000);
+
 
       quantityElement.innerText = quantity;
-      if (containerAtcButton) containerAtcButton.setAttribute('style', "bottom: 44px !important"); 
-      if (containerAtcButtonProdFaceSerum) containerAtcButtonProdFaceSerum.forEach(btn => btn.classList.add('new-bottom'));  
-      
+      if (containerAtcButton) containerAtcButton.setAttribute('style', "bottom: 44px !important");
+      if (containerAtcButtonProdFaceSerum) containerAtcButtonProdFaceSerum.forEach(btn => btn.classList.add('new-bottom'));
+
       socialProofContainer.classList.remove('hidden');
-    
+
 
       closeIcon.addEventListener('click', function () {
         socialProofContainer.classList.add('hidden');
-        if ( containerAtcButton ) containerAtcButton.setAttribute('style', "bottom: 25px !important"); 
-        if ( document.querySelector('iframe#launcher') ) document.querySelector('iframe#launcher').classList.remove('new-bottom');  
+        if (containerAtcButton) containerAtcButton.setAttribute('style', "bottom: 25px !important");
+        if (document.querySelector('iframe#launcher')) document.querySelector('iframe#launcher').classList.remove('new-bottom');
       });
 
     }
 
     // handle requests for 1 product or some of them
-    if ( productHandle && productList ) {
+    if (productHandle && productList) {
       let arrProductList = productList.split(', ');
       const requests = arrProductList.map(id => {
         return fetchData(url, id);
       });
       Promise.all(requests)
         .then(responses => {
-          let sumPurchased = responses.reduce((acum,cur)=>{
-            return acum + cur.data.itemsPurchased; 
-          },0);
-          if ( sumPurchased > 0) {
+          let sumPurchased = responses.reduce((acum, cur) => {
+            return acum + cur.data.itemsPurchased;
+          }, 0);
+          if (sumPurchased > 0) {
             renderQuantity(sumPurchased);
           }
         })
         .catch(error => console.log('error', error));
-    } else if ( productId )  {
+    } else if (productId) {
       fetchData(url, productId)
         .then(response => {
-          if ( response.code == 200 ) {
+          if (response.code == 200) {
             renderQuantity(response.data.itemsPurchased);
           }
         })
     }
 
     // fetch items purchased data
-    function fetchData (url, id) {
+    function fetchData(url, id) {
       let requestOptions = {
         method: 'GET',
         redirect: 'follow'
       };
 
-      return fetch(url+id, requestOptions)
+      return fetch(url + id, requestOptions)
         .then(response => response.json())
         .catch(error => console.log('error', error));
     }
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Add event listeners to all elements with the class 'nav-button'
   document.querySelectorAll('.nav-button').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       // Get the ID of the clicked button
       const buttonId = this.id;
       // Remove the 'active' class from all navigation buttons
@@ -214,13 +214,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
- 
+
   // end PDP: Before & After First Image 
 
   // purchase landing page
 
   class PurchaseLandingPage {
-    constructor(formId){
+    constructor(formId) {
       this.form = document.getElementById(formId);
       this.panels = document.querySelectorAll('.landing-panel');
       this.btnBack = document.getElementById('landing-back');
@@ -245,6 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.updateSelectedInputValueJsonStep4();
       this.updateButtons();
       this.updateVisibilityBreadcrumb();
+      // this.updateBreadcrumbContent();
 
       // assing
       const firstStep2RadioButton = document.querySelector('#step2-select input[type="radio"]:checked');
@@ -287,13 +288,14 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       // buttons
-      this.btnNext.addEventListener('click', () =>{
+      this.btnNext.addEventListener('click', () => {
         this.nextPanel();
-        
+        this.updateBreadcrumbContent();
       });
 
-      this.btnBack.addEventListener('click', () =>{
+      this.btnBack.addEventListener('click', () => {
         this.backPanel();
+        this.updateBreadcrumbContent();
       });
 
       this.breadCrumbsButtons.forEach((button, index) => {
@@ -302,17 +304,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
 
-      this.btnSubmit.addEventListener('click', () =>{
+      this.btnSubmit.addEventListener('click', () => {
         console.log('submit');
         console.log('Value of selected radio button):', this.selectedInputValueJson);
-      
+
         this.updateAnchorValue();
       });
     }
 
-      // functions
+    // functions
     hidePanels() {
-      this.panels.forEach(panel =>{
+      this.panels.forEach(panel => {
         panel.classList.add('panel-hidden');
       });
     }
@@ -325,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.panels[index].classList.add('panel-hidden');
     }
 
-    nextPanel(){
+    nextPanel() {
       if (this.indexPanel < this.panels.length - 1) {
         this.breadCrumbsItems[this.indexPanel].classList.remove('active-breadcrumb');
 
@@ -338,8 +340,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    showPanelBread(index){
-      if(index >= 0 && index < this.panels.length){
+    showPanelBread(index) {
+      if (index >= 0 && index < this.panels.length) {
         this.breadCrumbsItems[this.indexPanel].classList.remove('active-breadcrumb');
         this.hidePanels();
         this.showActualPanel(index);
@@ -354,25 +356,25 @@ document.addEventListener('DOMContentLoaded', function() {
         this.indexPanel = index;
         this.updateButtons();
       }
-     
+
     }
-      
-    updateButtons(){
+
+    updateButtons() {
       // Ocultar el botón de retroceso en el primer panel
-      if(this.indexPanel === 0){
-          this.btnBack.classList.add('hidden');
+      if (this.indexPanel === 0) {
+        this.btnBack.classList.add('hidden');
       } else {
-          this.btnBack.classList.remove('hidden');
+        this.btnBack.classList.remove('hidden');
       }
 
-      if(this.selectedInputValueJson.position === 1){
-        if (this.indexPanel === this.panels.length - 1){
+      if (this.selectedInputValueJson.position === 1) {
+        if (this.indexPanel === this.panels.length - 1) {
           this.btnNext.classList.add('hidden');
         } else {
           this.btnNext.classList.remove('hidden');
         }
-      } else if (this.selectedInputValueJson.position !== 1){
-        if (this.indexPanel === this.panels.length - 2){
+      } else if (this.selectedInputValueJson.position !== 1) {
+        if (this.indexPanel === this.panels.length - 2) {
           this.btnNext.classList.add('hidden');
         } else {
           this.btnNext.classList.remove('hidden');
@@ -380,20 +382,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    backPanel(){
+    backPanel() {
       this.breadCrumbsItems[this.indexPanel].classList.remove('active-breadcrumb');
 
       this.breadCrumbsButtons[this.indexPanel].setAttribute('disabled', 'disabled');
       this.hidePanel(this.indexPanel);
       this.indexPanel--;
-      if(this.indexPanel < 0){
+      if (this.indexPanel < 0) {
         this.indexPanel = this.panels.length - 1;
       }
       this.showActualPanel(this.indexPanel);
       this.updateButtons();
       this.breadCrumbsItems[this.indexPanel].classList.add('active-breadcrumb');
-      
-    }     
+    }
 
     syncRadioButtons(value) {
       const allInputs = document.querySelectorAll('.inputs-products1 input[type="radio"], .inputs-products2 input[type="radio"], .inputs-products3 input[type="radio"]');
@@ -415,7 +416,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     updateSelectedInputValueJson() {
-      if(this.selectedInputValue){
+      if (this.selectedInputValue) {
         try {
           this.selectedInputValueJson = JSON.parse(this.selectedInputValue);
         } catch (error) {
@@ -428,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     updateSelectedInputValueJsonStep4() {
-      if(this.selectedInputValueStep4){
+      if (this.selectedInputValueStep4) {
         try {
           this.selectedInputValueJsonStep4 = JSON.parse(this.selectedInputValueStep4);
         } catch (error) {
@@ -452,10 +453,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // console.log('Selected input value 4:', this.selectedInputValueStep4);
     }
 
-    
+
     // ? tratar de unir estas dos funciones en una sola
 
-    updateVisibilityFirstStep(){
+    updateVisibilityFirstStep() {
       const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
       const selectOption = secondRadioButtons.value;
 
@@ -471,9 +472,9 @@ document.addEventListener('DOMContentLoaded', function() {
       this.updateSelectedInputValueJson();
     }
 
-    updateVisibilityAndValueFourthStep(){
+    updateVisibilityAndValueFourthStep() {
       const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
-      const selectOption = secondRadioButtons ?  secondRadioButtons.dataset.step4Product : null;
+      const selectOption = secondRadioButtons ? secondRadioButtons.dataset.step4Product : null;
 
       const allStep4Inputs = document.querySelectorAll('.inputs-products4, .inputs-products5, .inputs-products6');
       allStep4Inputs.forEach(input => {
@@ -490,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // ? end
 
-    renderElementsStep3(){
+    renderElementsStep3() {
       const step3PriceNormal = document.getElementById('step3-price-normal');
       const step3PriceQuota = document.getElementById('step3-price-quota');
 
@@ -503,20 +504,44 @@ document.addEventListener('DOMContentLoaded', function() {
         step3PriceQuota.innerHTML = `<span>$ ${this.selectedInputValueJson.discountPriceQuota}</span>`;
       }
     }
+    
 
-    updateVisibilityBreadcrumb(){
+    
+
+    updateVisibilityBreadcrumb() {
       const breadCrumb4 = document.querySelector('.breadStep-4');
       console.log('Selected input value in bread fx:', this.selectedInputValueJson);
       console.log('bread', breadCrumb4)
-      if(this.selectedInputValueJson.position !== 1){
-        breadCrumb4.classList.add('hidden');
+      if (this.selectedInputValueJson.position !== 1) {
+        breadCrumb4.classList.add('hide-breadcrumbs');
       } else {
-        breadCrumb4.classList.remove('hidden');
+        breadCrumb4.classList.remove('hide-breadcrumbs');
       }
     }
 
+    updateBreadcrumbContent() {
+      // Obtener todos los elementos de las migas de pan
+      const breadcrumbItems = document.querySelectorAll('.landing-breadcrumbs-item');
+      console.log('this.selectedInputValueJson', this.selectedInputValueJson);
+      // Iterar sobre cada elemento de las migas de pan
+      breadcrumbItems.forEach((item, index) => {
+        const button = item.querySelector('.landing-breadcrumbs-item__btn');
+        const buttonTextSelect = button.querySelector('.landing-breadcrumbs-item__text--select' + (index + 1));
 
-    updateAnchorValue(){
+        if (!item.classList.contains('active-breadcrumb') && !button.hasAttribute('disabled')) {
+          if (index === 0) {
+            buttonTextSelect.textContent = `${this.selectedInputValueJson.titleBundle}`;
+          } else if (index === 1) {
+            buttonTextSelect.textContent = `${this.selectedInputStep2Title}`;
+          } else if (index === 2) {
+            buttonTextSelect.textContent = "hola";
+          }
+        }
+      });
+    }
+
+
+    updateAnchorValue() {
       console.log('Add to cart');
       const anchorID = document.getElementById('landing-add-sidecard');
       const productIdStep1 = this.selectedInputValueJson;
@@ -536,9 +561,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (productIdStep1.position === 1) {
         if (productIdStep4.position === 1) {
-            selectedProductId = productIdStep4.id;
+          selectedProductId = productIdStep4.id;
         } else {
-            selectedProductId = productIdStep1.id;
+          selectedProductId = productIdStep1.id;
         }
       }
 
@@ -555,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     }
-        
+
   }
 
   const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');

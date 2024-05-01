@@ -37,7 +37,7 @@
     {% comment %} value props {% endcomment %}
     {% if productInfo.doctor_recommendation != blank %}
       <div class="step1-value-doctor">
-        {% render 'pdm-landing-purchase-icons', icon: 'check-doctor' %}
+        {% render 'pdm_landing-purchase-icons', icon: 'check-doctor' %}
         <p>{{ productInfo.doctor_recommendation }}</p>
       </div>
     {% endif %}
@@ -58,7 +58,7 @@
           <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
         </div>
         <button class="" type="button">
-          {% render 'pdm-landing-purchase-icons', icon: 'collapse-arrow' %}
+          {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
         </button>
       </div>
       <div
