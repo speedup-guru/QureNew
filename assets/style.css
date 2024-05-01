@@ -30272,12 +30272,9 @@ p {
     font-weight: 400;
     display: -webkit-inline-box;
     word-break: break-word;
+    inline-size: -webkit-fill-available;
 }
 
-.ss_list ul li strong {
-    display: -webkit-inline-box;
-    word-break: break-word;
-}
 
 .ss_list ul li:before {
     position: absolute;

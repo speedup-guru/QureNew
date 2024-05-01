@@ -100,7 +100,7 @@
 
 <script type="module"> import { configureCart, subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
 	configureCart('addToCartCssClass', 'js-my-cart-open'); 
-  initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
+  	initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
 	subscribeToCartSectionsUpdate( sections => {
 		updateShippingInsurance();
 		if(typeof startCartTimer == 'function') {

@@ -661,13 +661,16 @@
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li><strong>time-consuming<\/strong> commute to clinic <\/li><li>when (if) you get an appointment<\/li><li><strong>limited treatments<\/strong><\/li><li>requires <strong>regular visits<\/strong><\/li><li>ongoing payments required<\/li><\/ul>"
+            "list": "<ul><li>time-consuming commute to clinic <\/li><li>according to clinic's availiablity<\/li><li>less treatments - less results<\/li><li>customized approach<\/li><\/ul>"
           }
         }
       },
       "block_order": [
         "object_XmfpXd",
         "object_YbyEzH"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "classname": "beauty_skincare section",
@@ -735,6 +738,12 @@
       "type": "faq-extended",
       "settings": {
       }
+    },
+    "liquid_6ytqfF": {
+      "type": "liquid",
+      "settings": {
+        "code": "<script>\ndocument.querySelector(\"ul.wrongCircle li:last-child\").classList.add(\"correct\");\n<\/script>"
+      }
     }
   },
   "order": [
@@ -748,6 +757,7 @@
     "trusted_bJ9rM6",
     "compare_DUM6Ff",
     "details_sliders_BwedTq",
-    "faq_extended_GUWQH4"
+    "faq_extended_GUWQH4",
+    "liquid_6ytqfF"
   ]
 }
