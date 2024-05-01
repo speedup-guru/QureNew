@@ -81,6 +81,32 @@ const swiperResult = new Swiper('.swiper-info-result', {
 
 // end swiper PDP: Before & After First Image
 
+/**
+ * Verifies if the customer has visited the website before.
+ * If the customer has not visited before, a cookie is set.
+ * If the customer has visited before, a CSS class is removed from an element.
+ */
+const verifyCustomer = () => {
+  const cookieValue = document.cookie
+  .split("; ")
+  .find((row) => row.startsWith("newCustomer="))
+  ?.split("=")[1];
+
+  console.log("cookieValue",cookieValue);
+  if (!cookieValue) {
+    console.log("new customer");
+    document.cookie = "newCustomer=true; max-age=2592000; path=/";
+  } else {
+    console.log("returning customer");
+    const crossSell = document.querySelectorAll('.cross-sell');
+
+    crossSell.forEach((element) => {
+      element.classList.remove('hidden');
+    });
+  }
+  
+}
+
 
 window.addEventListener("ig:ready", () => { 
   if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
@@ -89,6 +115,24 @@ window.addEventListener("ig:ready", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+
+  // Start Cross-sell page targeting validation
+  const pageTaregting = [
+    "/products/q-rejuvalight-pro-facewear",
+    "/pages/microinfusion",
+    "/products/neck-decolletage-led",
+    "/products/micro-infusion-targeted-patches",
+    "/products/face-serum",
+    "/pages/micro-infusion-refill",
+    "products/q-rify-replacement-water-filter"
+  ]
+
+  const currentPath = window.location.pathname;
+
+  console.log('currentPath',currentPath);
+  if(pageTaregting.includes(currentPath)){
+    verifyCustomer();
+  }
 
   // Start PDP Social Proof Data
   const socialProofContainer = document.querySelector('.social-proof-data-container');
@@ -188,6 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Show the specified component
     component.classList.add('active');
   }
+
 
   // Add event listeners to all elements with the class 'nav-button'
   document.querySelectorAll('.nav-button').forEach(button => {
