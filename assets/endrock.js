@@ -117,20 +117,21 @@ window.addEventListener("ig:ready", () => {
 document.addEventListener('DOMContentLoaded', function() {
 
   // Start Cross-sell page targeting validation
-  const pageTaregting = [
+  const pageTargeting = [
     "/products/q-rejuvalight-pro-facewear",
     "/pages/microinfusion",
     "/products/neck-decolletage-led",
     "/products/micro-infusion-targeted-patches",
     "/products/face-serum",
     "/pages/micro-infusion-refill",
-    "products/q-rify-replacement-water-filter"
+    "/products/q-rify-replacement-water-filter",
+    "/products/q-urify-water-filter"
   ]
 
   const currentPath = window.location.pathname;
 
   console.log('currentPath',currentPath);
-  if(pageTaregting.includes(currentPath)){
+  if(pageTargeting.includes(currentPath)){
     verifyCustomer();
   }
 
