@@ -82,11 +82,12 @@ const swiperResult = new Swiper('.swiper-info-result', {
 // end swiper PDP: Before & After First Image
 
 
-window.addEventListener("ig:ready", () => { 
-  if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
-    initUpsellSwiper();
-  }
-});
+//aaaaqqqq_disable_endrock
+// window.addEventListener("ig:ready", () => { 
+//   if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
+//     initUpsellSwiper();
+//   }
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
 
