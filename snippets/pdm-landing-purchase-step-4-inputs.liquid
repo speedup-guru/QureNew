@@ -23,7 +23,8 @@
       {% render 'pdm-landing-purchase-step4-card' 
         productInfo: productRefillInfo,
         productData: productRefill,
-        cardTypeInfo: 'meta'      
+        cardTypeInfo: 'meta'
+        checkIcon: checkIcon,
       %}
     </label>
 
@@ -43,7 +44,8 @@
     <label for="{{ name }}-five">
       {% render 'pdm-landing-purchase-step4-card' 
         generalSettings: generalSettings,
-        cardTypeInfo: 'general'
+        cardTypeInfo: 'general',
+        crossIcon: crossIcon
       %}
     </label>
 </div>

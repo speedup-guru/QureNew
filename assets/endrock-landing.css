@@ -54,6 +54,71 @@
       }
     }
 
+    /* breadcrumbs */
+    #landing-breadcrumbs{
+      .landing-breadcrumbs-container{
+        .landing-breadcrumbs-wrapper{
+          display: flex;
+          gap: 8px;
+        }
+
+        .landing-breadcrumbs-item{
+          width: 244px;
+          height: 52px;
+          border: 2px solid #D7D9D9;
+          background-color: rgb(217, 202, 202);
+          position: relative;
+          /* border-radius: 26px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &.active-breadcrumb{
+            background-color: #C8E6DC;
+            border: 2px solid #C8E6DC;
+          }
+        }
+
+        .breadCrumb-arrow-shape-start-cricle::before,
+        .breadCrumb-arrow-shape-start-cricle::after{
+          content: '';
+          position: absolute;
+          top:0;
+        }
+
+        .breadCrumb-arrow-shape-start-cricle::before {
+          height: 100%;
+          background: red;
+          left: 0;
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+          border: 12px solid transparent;
+          transform: translateX(-36%);
+        }
+        
+        .breadCrumb-arrow-shape-start-cricle::after {
+          height: 100%;
+          right: 0;
+          border-top: 25px solid red;
+          border-bottom: 25px solid red;
+          border-left: 14px solid transparent;
+          transform: translateX(100%);
+        }
+        /* /
+
+        .breadCrumb-arrow-shape-end-cricle{}
+
+        .breadCrumb-arrow-shape{
+          
+        } */
+
+
+      }
+
+      .hide-breadcrumbs{
+        display: none;
+      }
+    }
+
     /* input[type="radio"]{
       display: none;
     } */
@@ -61,7 +126,7 @@
     
     #main-panel-lading{
       width: 100%;
-      height: 800px;
+      height: 700px;
       /* step 1 */
       .lading-one-title-container{
         display: flex;
@@ -115,7 +180,7 @@
           img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
           }
         }
 
@@ -339,6 +404,7 @@
           height: 236px;
           background-color: #f5f5f5;
           border-radius: 24px 24px 0px 0px;
+          padding: 24px 0;
           img{
             width: 100%;
             height: 100%;

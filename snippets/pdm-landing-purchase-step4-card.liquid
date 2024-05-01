@@ -27,14 +27,14 @@
         </div>
         {% comment %} value props {% endcomment %}
         <div>
-          {{ productInfo.value_props | metafield_tag }}
+          {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon }}
         </div>
       {% else %}
         <div>
           {{ generalSettings.step_4_card_subtitle }}
         </div>
         <div>
-          {{ generalSettings.step_4_card_value_props_1 | metafield_tag }}
+          {{ generalSettings.step_4_card_value_props_1 | metafield_tag | replace: '(cross)', crossIcon}}
         </div>
       {% endif %}
     </div>

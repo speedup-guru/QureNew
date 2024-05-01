@@ -79,13 +79,23 @@
   assign third_products3_product = products3_product_3_month.data.value
 
   #######
+
+  assign checkIcon = ''
+  capture checkIcon
+    render 'pdm-landing-purchase-icons', icon: 'check-value'
+  endcapture
+
+  assign crossIcon = ''
+  capture crossIcon
+    render 'pdm-landing-purchase-icons', icon: 'cross-value'
+  endcapture
 %}
 
 <script>
   // console.log("general_settings", {{ general_settings | json }});
   // console.log('products2', {{products2 |  json}})
   // console.log('products2_products', {{products2_products |  json}})
-  // console.log('products2_type', {{products2_type |  json}})
+  console.log('products2_type', {{products2_type |  json}})
   // console.log('first_products2_product', {{first_products2_product |  json}})
   // console.log("products1", {{ products1 | json }});
   // console.log("products1_products", {{ products1_products | json }});
@@ -111,8 +121,11 @@
       <h3>{{ general_settings.title }}</h3>
       <p>{{ general_settings.subtitle }}</p>
     </div>
-    <div>
-      
+    <div id="landing-breadcrumbs" class="landing-breadcrumbs-main">
+      {% render 'pdm-landing-purchase-breadcrumbs'
+        generalSettings: general_settings,
+        
+      %}
     </div>
     {% comment %} main panel container {% endcomment %}
     <div id="main-panel-lading">
@@ -129,7 +142,9 @@
           productTwoInfo: products1_product_2_month,
           productThree: first_products1_product,
           productThreeInfo: products1_product_1_month,
-          name: 'products1'
+          name: 'products1',
+          checkIcon: checkIcon,
+          crossIcon: crossIcon
         %}
         {% comment %} products2 / silver {% endcomment %}
         {% render 'pdm-landing-purchase-step1-inputs',
@@ -139,7 +154,9 @@
           productTwoInfo: products2_product_2_month,
           productThree: first_products2_product,
           productThreeInfo: products2_product_1_month,
-          name: 'products2'
+          name: 'products2',
+          checkIcon: checkIcon,
+          crossIcon: crossIcon
         %}
 
         {% comment %} products3 / gold {% endcomment %}
@@ -150,7 +167,9 @@
           productTwoInfo: products3_product_2_month,
           productThree: first_products3_product,
           productThreeInfo: products3_product_1_month,
-          name: 'products3'
+          name: 'products3',
+          checkIcon: checkIcon,
+          crossIcon: crossIcon
         %}
       </div>
       {% comment %} panel 2 {% endcomment %}
@@ -178,18 +197,24 @@
             productRefill: products1_refill_product,
             productRefillInfo: products1_refill_info,
             generalSettings: general_settings,
+            checkIcon: checkIcon,
+            crossIcon: crossIcon,
             name: 'products4'
           %}
           {% render 'pdm-landing-purchase-step-4-inputs'
             productRefill: products2_refill_product,
             productRefillInfo: products2_refill_info,
             generalSettings: general_settings,
+            checkIcon: checkIcon,
+            crossIcon: crossIcon,
             name: 'products5'
           %}
           {% render 'pdm-landing-purchase-step-4-inputs' 
             productRefill: products3_refill_product,
             productRefillInfo: products3_refill_info,
             generalSettings: general_settings,
+            checkIcon: checkIcon,
+            crossIcon: crossIcon,
             name: 'products6'
           %}
         </div>
