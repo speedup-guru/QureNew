@@ -342,14 +342,14 @@
           "type": "product",
           "settings": {
             "heading": "",
-            "text": "<h2>Introducing the Qure <\/h2><h2>Micro-Infusion System<\/h2><p>Clinics, Dermatologists, and Celebrities Agree<strong>– It REALLY Works<\/strong><\/p><ul><li>Helps reduce appearance of fine lines<\/li><li>Wake up with <strong>dewy looking, glowing<\/strong> skin<\/li><li>Reveal <strong>brighter<\/strong> looking, <strong>firmer<\/strong> feeling skin<\/li><li>Help fade appearance of dark spots and <strong>acne marks<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
+            "text": "<h2>Introducing the Qure <\/h2><h2>Micro-Infusion System<\/h2><p>Clinics, Dermatologists, and Celebrities Agree<strong>– It REALLY Works<\/strong><\/p><ul><li>Helps reduce appearance of fine lines and wrinkles<\/li><li>Wake up with <strong>dewy looking, glowing<\/strong> skin<\/li><li>Reveal <strong>brighter<\/strong> looking, <strong>firmer<\/strong> feeling skin<\/li><li>Help fade appearance of dark spots and <strong>acne marks<\/strong><\/li><\/ul><p><strong> <\/strong><\/p>",
             "product": ""
           }
         },
         "image_gnyiNf": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/micro_grid.webp"
+            "image": "shopify:\/\/shop_images\/mi-lp-mature.png"
           }
         },
         "button_rznYjF": {
@@ -736,6 +736,18 @@
             "code": ""
           }
         },
+        "result_cGAEkd": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results-Ramandeep.png",
+            "heading": "I definitely see a difference",
+            "text": "<p>“I have done 2 treatments - 1 for rejuvenating and 2 for hydration with 3 week gap in between treatments. I definitely see a difference in before and after pictures. I am sure I need 4-8 more treatments but this did make a difference.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ramandeep",
+            "code": ""
+          }
+        },
         "result_6FrBJW": {
           "type": "result",
           "settings": {
@@ -769,6 +781,7 @@
         "result_ThnNPK",
         "result_URKRDq",
         "result_TJXM8n",
+        "result_cGAEkd",
         "result_6FrBJW",
         "result_xgWrGm"
       ],
