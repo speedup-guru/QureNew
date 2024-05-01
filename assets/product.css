@@ -2849,6 +2849,7 @@
     font-weight: 300;
     font-family: 'Canela Light';
     letter-spacing: 0.16px;
+    margin-bottom: 20px;
 }
 
 .unique_c_item .u_item_wrapper .u_item_header p {
@@ -2920,6 +2921,10 @@
 
 .u_item_question .accordion-body {
     padding: 0 20px 20px;
+}
+
+.u_item_question .accordion-body p {
+    font-size: 13px;
 }
 
 .u_item_question .accordion-button::after {
@@ -3111,6 +3116,7 @@
 
     .u_ftr_item p {
         font-size: 11px;
+        letter-spacing: 0;
     }
 
     .unique_c_item .u_item_wrapper .u_ftr {
@@ -3153,6 +3159,18 @@
         line-height: 28px;
         font-weight: 300;
         font-family: 'Canela Light';
+    }
+
+    .u_item_wrapper {
+        padding: 25px 8px;
+    }
+
+    .u_item_question .accordion-body p {
+        font-size: 12px;
+    }
+
+    .u_item_wrapper .u_item_header h3 {
+        margin-bottom: 10px;
     }
 }
 
