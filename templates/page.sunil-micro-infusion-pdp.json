@@ -522,6 +522,18 @@
             "code": ""
           }
         },
+        "result_A7ewhj": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_mona.webp",
+            "heading": "After just TWO treatments!",
+            "text": "<p>\"I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Mona P.",
+            "code": ""
+          }
+        },
         "result_nahUd6": {
           "type": "result",
           "settings": {
@@ -543,18 +555,6 @@
             "image_country": "shopify:\/\/shop_images\/australia_f.webp",
             "text_country": "Australia",
             "client": "Glorija",
-            "code": ""
-          }
-        },
-        "result_A7ewhj": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_mona.webp",
-            "heading": "After just TWO treatments!",
-            "text": "<p>\"I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
-            "client": "Mona P.",
             "code": ""
           }
         },
@@ -646,9 +646,9 @@
       "block_order": [
         "result_9WDtdX",
         "result_zTrGjn",
+        "result_A7ewhj",
         "result_nahUd6",
         "result_KJTymA",
-        "result_A7ewhj",
         "result_kWQCUn",
         "result_WMb64K",
         "result_LJ8XRH",
