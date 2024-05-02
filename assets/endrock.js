@@ -243,6 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateSelectedInputValueJson();
       this.renderElementsStep3();
       this.updateVisibilityAndValueFourthStep();
+      this.updateSelectedInputValueStep4();
       this.updateSelectedInputValueJsonStep4();
       this.updateButtons();
       this.updateVisibilityBreadcrumb();
@@ -260,8 +261,8 @@ document.addEventListener('DOMContentLoaded', function () {
           this.selectedInputStep2Title = title;
           this.updateVisibilityFirstStep();
           this.updateSelectedInputValueJson();
-          this.updateVisibilityAndValueFourthStep();
           this.updateSelectedInputValueStep4()
+          this.updateVisibilityAndValueFourthStep();
           this.updateSelectedInputValueJsonStep4();
           this.renderElementsStep3();
         });
@@ -322,10 +323,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       this.btnSubmit.addEventListener('click', () => {
         console.log('submit');
-        console.log('Value of selected radio button):', this.selectedInputValueJson);
-
-        this.updateAnchorValue();
+        console.log('Value of selected radio button:', this.selectedInputValueJson);
+        console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
+        // this.updateAnchorValue();
       });
+
     }
 
     // functions
@@ -502,6 +504,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const selectedRadioButtonStep4 = selectedInputsStep4.querySelector('input[type="radio"]:checked');
       this.selectedInputValueStep4 = selectedRadioButtonStep4 ? selectedRadioButtonStep4.value : null;
+      console.log('Selected input value 4:', this.selectedInputValueStep4);
       this.updateSelectedInputValueJsonStep4();
 
     }
@@ -585,12 +588,14 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Add to cart');
       const anchorID = document.getElementById('landing-add-sidecard');
       const productIdStep1 = this.selectedInputValueJson;
-      const productIdStep4 = this.selectedInputValueJsonStep4;
+      const valeStep4 = this.selectedInputValueStep4;
+      const productIdStep4 = this.selectedInputValueJsonStep4 ? this.selectedInputValueJsonStep4 : null;
       console.log('productIdStep1', productIdStep1);
+      console.log('valeStep4', valeStep4)
       console.log('productIdStep4', productIdStep4);
       let currentHref = anchorID.getAttribute('href');
       let selectedProductId = productIdStep1.id;
-
+      console.log('selectedProductId', selectedProductId);
 
       // Obtener el producto correspondiente según la posición
       // const selectedProductId = (productIdStep1.position === 1 && productIdStep4.position === 1) 
@@ -600,24 +605,62 @@ document.addEventListener('DOMContentLoaded', function () {
       //   : productIdStep1.id;
       
 
-      if (productIdStep1.position === 1) {
-        if (productIdStep4.position === 1) {
-          selectedProductId = productIdStep4.id;
-        } else {
-          selectedProductId = productIdStep1.id;
-        }
-      }
+      // if (productIdStep1.position === 1) {
+      //   if (productIdStep4.position === 1) {
+      //     selectedProductId = productIdStep4.id;
+      //   } else {
+      //     selectedProductId = productIdStep1.id;
+      //   }
+      // }
 
-      console.log(currentHref, selectedProductId)
+      // console.log(currentHref, selectedProductId)
       const href = currentHref.split('add')[0]
-      currentHref = `${href}add?id=${selectedProductId}&quantity=1`
-      console.log('currentHref', currentHref);
-      anchorID.setAttribute('href', currentHref);
-      console.log('anchor', anchorID);
+      // currentHref = `${href}add?id=${selectedProductId}&quantity=1`
+      // console.log('currentHref', currentHref);
+      // anchorID.setAttribute('href', currentHref);
+      // console.log('anchor', anchorID);
 
-      setTimeout(() => {
-        anchorID.click();
-      }, 2000);
+      // currentHref = `${href}add?id=${selectedProductId}&selling_plan=5012914415&quantity=1`
+      // anchorID.href = currentHref;
+      // console.log('hola')
+      // console.log('currentHref', currentHref);
+      // console.log('anchor', anchorID);
+
+      // setTimeout(() => {
+      //   anchorID.click();
+      // }, 2000);
+
+      
+      //  let formData2 = {
+      //   'items': [{
+      //    'id': 43216377217263,
+      //    'selling_plan': 5012914415,
+      //    'quantity': 1
+      //    }]
+      //  }
+      //  let formData = {
+      //   'items': [{
+      //    'id': 43216377217263,
+      //    'quantity': 1
+      //    }]
+      //  }
+
+      // fetch(window.Shopify.routes.root + 'cart/add.js', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify(formData)
+      // })
+      // .then(response => {
+      //   console.log('response', response);
+      //   return response.json();
+      // })
+      // .catch((error) => {
+      //   console.error('Error:', error);
+      // });
+
+
 
 
     }

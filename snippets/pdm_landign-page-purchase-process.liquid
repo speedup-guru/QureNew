@@ -110,7 +110,7 @@
   // console.log("products1_refill_product", {{ products1_refill_product | json }})
   // console.log("products1_refill_info", {{ products1_refill_info | json }})
   // console.log("second_products1_product", {{ second_products1_product | json }});
-  // console.log("third_products1_product", {{ third_products1_product | json }});
+  console.log("third_products1_product", {{ third_products1_product.selling_plan_groups[0].selling_plans[0].id | json }});
   // console.log("products3", {{ products3 | json }});
   // console.log("products3_products", {{ products3_products | json }});
   // console.log("products3_type", {{ products3_type | json }});
@@ -118,8 +118,8 @@
   // console.log("products3_refill_info", {{ products3_refill_info | json }});
   // console.log("first_products3_product", {{ first_products3_product | json }});
   // console.log("second_products3_product", {{ second_products3_product | json }});
-  // console.log("third_products3_product", {{ third_products3_product | json }});
-</script>
+  // console.log("third_product3_product", {{ third_products3_product | json }});
+</script>s
 
 <section id="new-landing-purchase" class="new-landing-purchase">
   <div class="container">
@@ -197,9 +197,10 @@
       </div>
       {% comment %} panel 4 {% endcomment %}
       <div id="landing-step-fourth" class="landing-panel panel-hidden">
-        <div class="step-4-">
+        <div class="landing-fourth-title-container">
           <h3>{{ general_settings.step_4_title }}</h3>
         </div>
+        <div class="landing-fourth-inputs-container">
           {% render 'pdm_landing-purchase-step-4-inputs' 
             productRefill: products1_refill_product,
             productRefillInfo: products1_refill_info,
@@ -233,6 +234,7 @@
             uniqueId: 'collapseSix',
             name: 'products6'
           %}
+        </div>
       </div>
     </div>
     {% comment %} buttons {% endcomment %}

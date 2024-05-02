@@ -4,15 +4,9 @@
       "type": "product",
       "settings": {
       }
-    },
-    "171467347878bf7bb4": {
-      "type": "apps",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "171467347878bf7bb4"
+    "main"
   ]
 }

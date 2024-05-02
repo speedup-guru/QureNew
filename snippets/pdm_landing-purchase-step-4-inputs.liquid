@@ -13,10 +13,12 @@
     value='{
       "position":1, 
       "id":{{ productRefill.selected_or_first_available_variant.id }}, 
-      "discountPrice": {{ productRefill.price | money_without_currency }},
+      "sellingPlanId":{{ productRefill.selling_plan_groups[0].selling_plans[0].id }},
+      "discountPrice":{{ productRefill.price | money_without_currency }},
       "price":{{ productRefill.compare_at_price | money_without_currency }}, 
-      "discountPriceQuota": {{ productRefill.price |  divided_by: 4 | money_without_currency }},
-      "input": "{{ name }}"
+      "discountPriceQuota":{{ productRefill.price |  divided_by: 4 | money_without_currency }},
+      "titleBundle":"{{ productRefill.title }}",
+      "input":"{{ name }}"
     }'
   >
     <label for="{{name}}-fourth">
@@ -40,8 +42,8 @@
     id="{{ name }}-five"
     value='{
       "position":2,
-      "value": 2,
-      "input": "{{ name }}"
+      "value":2,
+      "input":"{{ name }}"
     }'
   >
     <label for="{{ name }}-five">

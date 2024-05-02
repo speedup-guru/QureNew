@@ -551,6 +551,9 @@
       .inputs-products5,
       .inputs-products6{
         gap: 24px;
+        @media screen and (max-width: 768px){
+          flex-direction: column;
+        }
       }
       .step4-purchase-card-container{
         width: 304px;
@@ -561,6 +564,9 @@
         border: 2px solid var(--no-active-color);
         background-color: white;
         position: relative;
+        @media screen and (max-width: 768px){
+          width: 100%;
+        }
         .step4-card-choise-container{
           position: absolute;
           height: 22px;
