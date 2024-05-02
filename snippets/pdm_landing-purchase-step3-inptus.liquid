@@ -1,13 +1,13 @@
 <div>
   <h3>{{ generalSettings.step_3_title }}</h3>
 </div>
-<div>
-  <input type="radio" id="opt7" name="step3" value="{{ generalSettings.step_3_card_titles.value[0] }}" checked>
-  <label for="opt7">
+<div id="inputs-landing-step3">
+  <input type="radio" id="{{ nameOne }}" name="step3" value="{{ generalSettings.step_3_card_titles.value[0] }}" checked>
+  <label for="{{ nameOne }}">
     {% render 'pdm_landing-purchase-step3-card', data: generalSettings, cardCase: 0 %}
   </label>
-  <input type="radio" id="opt8" name="step3" value="{{ generalSettings.step_3_card_titles.value[1] }}">
-  <label for="opt8">
+  <input type="radio" id="{{ nameTwo }}" name="step3" value="{{ generalSettings.step_3_card_titles.value[1] }}">
+  <label for="{{ nameTwo }}">
     {% render 'pdm_landing-purchase-step3-card', data: generalSettings, cardCase: 1 %}
   </label>
 </div>

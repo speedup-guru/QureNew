@@ -1,6 +1,6 @@
 <div class="step4-purchase-card-container">
   <div>
-    {{ productInfo.popular_text }}
+    {{ productInfo.popular_text | replace: '(star)', starIcon }}
   </div>
   <div>
     {% if cardTypeInfo == 'meta' %}
@@ -40,11 +40,25 @@
     </div>
     {% comment %} dropwon {% endcomment %}
     {% if cardTypeInfo == 'meta' %}
-      <div>
-        <div>
-          {{ productInfo.dropdown_title }}
+      <div class="step4-value-props-dropdown">
+        <div
+          class="step4-value-dropdown-title"
+          data-bs-toggle="collapse"
+          data-bs-target="#{{ uniqueId }}"
+          aria-expanded="false"
+          aria-controls="{{ uniqueId }}"        
+        >
+          <div>
+              <span>{{ productInfo.dropdown_title }}</span>
+              <button class="" type="button"> {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}</button>
+          </div>
         </div>
-        <div>
+        <div
+          class="step4-value-dropdown-content collapse"
+          id="{{ uniqueId }}"
+          aria-labelledby="headingFourth"
+          data-bs-parent=".{{ parentContainer }}"
+        >
           {{ productInfo.dropdown_value_props | metafield_tag }}
         </div>
       </div>

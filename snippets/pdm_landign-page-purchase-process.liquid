@@ -89,7 +89,13 @@
   capture crossIcon
     render 'pdm_landing-purchase-icons', icon: 'cross-value'
   endcapture
+
+  assign starIcon = ''
+  capture starIcon
+    render 'pdm_landing-purchase-icons', icon: 'star'
+  endcapture
 %}
+
 
 <script>
   // console.log("general_settings", {{ general_settings | json }});
@@ -185,6 +191,8 @@
       <div id="landing-step-three" class="landing-panel panel-hidden">
        {% render 'pdm_landing-purchase-step3-inptus', 
         generalSettings: general_settings,
+        nameOne: 'step3-price-one',
+        nameTwo: 'step3-price-two',
        %}
       </div>
       {% comment %} panel 4 {% endcomment %}
@@ -192,13 +200,15 @@
         <div>
           <h3>{{ general_settings.step_4_title }}</h3>
         </div>
-        <div style="display: flex; flex-direction:row">
           {% render 'pdm_landing-purchase-step-4-inputs' 
             productRefill: products1_refill_product,
             productRefillInfo: products1_refill_info,
             generalSettings: general_settings,
             checkIcon: checkIcon,
             crossIcon: crossIcon,
+            starIcon: starIcon,
+            uniqueId: 'collapseFour',
+            parentContainer: 'parent-products4',
             name: 'products4'
           %}
           {% render 'pdm_landing-purchase-step-4-inputs'
@@ -207,6 +217,9 @@
             generalSettings: general_settings,
             checkIcon: checkIcon,
             crossIcon: crossIcon,
+            starIcon: starIcon,
+            uniqueId: 'collapseFive',
+            parentContainer: 'parent-products5',
             name: 'products5'
           %}
           {% render 'pdm_landing-purchase-step-4-inputs' 
@@ -215,9 +228,11 @@
             generalSettings: general_settings,
             checkIcon: checkIcon,
             crossIcon: crossIcon,
+            starIcon: starIcon,
+            parentContainer: 'parent-products6',
+            uniqueId: 'collapseSix',
             name: 'products6'
           %}
-        </div>
       </div>
     </div>
     {% comment %} buttons {% endcomment %}

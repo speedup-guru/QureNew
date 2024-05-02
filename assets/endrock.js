@@ -234,6 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.selectedInputValueJson = null;
       this.selectedInputValueJsonStep4 = null;
       this.selectedInputStep2Title = null;
+      this.selectedInputStep3Title = null;
       this.indexPanel = 0;
 
       this.hidePanels();
@@ -245,7 +246,6 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateSelectedInputValueJsonStep4();
       this.updateButtons();
       this.updateVisibilityBreadcrumb();
-      // this.updateBreadcrumbContent();
 
       // assing
       const firstStep2RadioButton = document.querySelector('#step2-select input[type="radio"]:checked');
@@ -278,6 +278,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
 
+      const firstStrep3RadioButton = document.querySelector('#inputs-landing-step3 input[type="radio"]:checked');
+
+      if (firstStrep3RadioButton) {
+        this.selectedInputStep3Title = firstStrep3RadioButton.value;
+      }
+
+      const radioButtonsStep3 = document.querySelectorAll('#inputs-landing-step3 input[type="radio"]');
+      radioButtonsStep3.forEach(button => {
+        button.addEventListener('change', () => {
+          console.log('change');
+          console.log(button.value);
+          this.selectedInputStep3Title = button.value;
+        });
+      });
+
       const radioButtonsStep4 = document.querySelectorAll('.inputs-products4 input[type="radio"], .inputs-products5 input[type="radio"], .inputs-products6 input[type="radio"]');
       radioButtonsStep4.forEach(button => {
         button.addEventListener('change', () => {
@@ -290,17 +305,18 @@ document.addEventListener('DOMContentLoaded', function () {
       // buttons
       this.btnNext.addEventListener('click', () => {
         this.nextPanel();
-        this.updateBreadcrumbContent();
+        this.updateBreadcrumbContent('addText');
       });
 
       this.btnBack.addEventListener('click', () => {
         this.backPanel();
-        this.updateBreadcrumbContent();
+        this.updateBreadcrumbContent('removeText');
       });
 
       this.breadCrumbsButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
           this.showPanelBread(index);
+          this.updateBreadcrumbContent('removeText');
         });
       });
 
@@ -519,25 +535,50 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    updateBreadcrumbContent() {
+    updateBreadcrumbContent(action) {
       // Obtener todos los elementos de las migas de pan
       const breadcrumbItems = document.querySelectorAll('.landing-breadcrumbs-item');
-      console.log('this.selectedInputValueJson', this.selectedInputValueJson);
+      console.log('title step', this.selectedInputStep3Title);
       // Iterar sobre cada elemento de las migas de pan
-      breadcrumbItems.forEach((item, index) => {
-        const button = item.querySelector('.landing-breadcrumbs-item__btn');
-        const buttonTextSelect = button.querySelector('.landing-breadcrumbs-item__text--select' + (index + 1));
-
-        if (!item.classList.contains('active-breadcrumb') && !button.hasAttribute('disabled')) {
-          if (index === 0) {
-            buttonTextSelect.textContent = `${this.selectedInputValueJson.titleBundle}`;
-          } else if (index === 1) {
-            buttonTextSelect.textContent = `${this.selectedInputStep2Title}`;
-          } else if (index === 2) {
-            buttonTextSelect.textContent = "hola";
-          }
-        }
-      });
+      switch (action) {
+        case 'addText':
+          breadcrumbItems.forEach((item, index) => {
+            const button = item.querySelector('.landing-breadcrumbs-item__btn');
+            const buttonTextSelect = button.querySelector('.landing-breadcrumbs-item__text--select' + (index + 1));
+            if (!item.classList.contains('active-breadcrumb') && !button.hasAttribute('disabled')) {
+              if (index === 0) {
+                buttonTextSelect.textContent = `${this.selectedInputValueJson.titleBundle}`;
+                buttonTextSelect.setAttribute('data-bc-title', 'true');
+              } else if (index === 1) {
+                buttonTextSelect.textContent = `${this.selectedInputStep2Title}`;
+                buttonTextSelect.setAttribute('data-bc-title', 'true');
+              } else if (index === 2) {
+                buttonTextSelect.textContent = `${this.selectedInputStep3Title}`;
+                buttonTextSelect.setAttribute('data-bc-title', 'true');
+              }
+            }
+          });
+          break;
+        case 'removeText':
+          console.log('removeText');
+          breadcrumbItems.forEach((item, index) => {
+            const button = item.querySelector('.landing-breadcrumbs-item__btn');
+            const buttonTextSelect = button.querySelector('.landing-breadcrumbs-item__text--select' + (index + 1));
+            if (button.hasAttribute('disabled')) {
+              buttonTextSelect.textContent = "";
+              buttonTextSelect.removeAttribute('data-bc-title');
+            }
+            if (buttonTextSelect.getAttribute('data-bc-title') === 'true' && item.classList.contains('active-breadcrumb')) {
+              buttonTextSelect.textContent = "";
+              buttonTextSelect.removeAttribute('data-bc-title');
+            }
+          });
+          break;
+      
+        default:
+          break;
+      }
+      
     }
 
 
@@ -558,6 +599,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // : (productIdStep1.position === 1 && productIdStep4.position !== 1) 
       //   ? productIdStep1.id 
       //   : productIdStep1.id;
+      
 
       if (productIdStep1.position === 1) {
         if (productIdStep4.position === 1) {
