@@ -125,7 +125,7 @@
         "image_wHtnFJ"
       ],
       "settings": {
-        "heading": "FEATURED IN"
+        "heading": ""
       }
     },
     "two_column_box_TyH4EK": {
@@ -142,7 +142,7 @@
         "content_3tryDW": {
           "type": "content",
           "settings": {
-            "text": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare experience.<\/p><p>[image_mobile]<\/p>",
+            "text": "<h2>Everything you need in one serum<\/h2><p>Unique blend of active ingredients work together to brighten, plump and smooth skin.<\/p><p>Treat various skin concerns in just one step.<\/p><p>Fragrance, Paraben & PEG Free.<\/p><p>[image_mobile]<\/p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -464,7 +464,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Thousands are out-glowing their skin insecurities...",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "trusted_6Vj7xW": {
