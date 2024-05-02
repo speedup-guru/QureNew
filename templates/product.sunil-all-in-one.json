@@ -124,6 +124,9 @@
         "image_JE6tfj",
         "image_wHtnFJ"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": ""
       }
@@ -154,6 +157,7 @@
       ],
       "custom_css": [
         ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
+        ".richtext_prog_section .it_info p {margin-bottom: 30px !important;}",
         "@media (max-width: 767px) {.img-fluid {max-width: 153px; }}"
       ],
       "settings": {
