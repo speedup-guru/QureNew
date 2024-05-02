@@ -1,39 +1,49 @@
 <div class="step4-purchase-card-container">
-  <div>
-    {{ productInfo.popular_text | replace: '(star)', starIcon }}
-  </div>
-  <div>
+  {% if productInfo.popular_text != blank %}
+    <div class="step4-card-choise-container">
+      <p>
+        {{ productInfo.popular_text | replace: '(star)', starIcon }}
+      </p>
+    </div>
+  {% endif %}
+  <div class="step4-card-title-container">
     {% if cardTypeInfo == 'meta' %}
-      {{ productInfo.title }}
+      <h3>
+        {{ productInfo.title }}
+      </h3>
     {% else %}
+    <h3>
       {{ generalSettings.step_4_card_title }}
+    </h3>
     {% endif %}
   </div>
-  <div>
+  <div class="step4-card-information-container">
     {% comment %} doctor {% endcomment %}
     {% if cardTypeInfo == 'meta' %}
-      <div>
+      <div class="step4-card-doctor-container">
         {{ productInfo.doctor_image | image_url: width: 44 | image_tag: alt: 'doctor' }}
         <p>
           {{ productInfo.doctor_description }}
         </p>
       </div>
     {% endif %}
-    <div>
+    <div class="step4-card-value-props-container">
       {% comment %} title {% endcomment %}
       {% if cardTypeInfo == 'meta' %}
-        <div>
-          {{ productInfo.sub_title }}
+        <div class="step4-card-value-props__title">
+          <h3>
+            {{ productInfo.sub_title }}
+          </h3>
         </div>
         {% comment %} value props {% endcomment %}
-        <div>
+        <div class="step4-card-value-props__information">
           {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon }}
         </div>
       {% else %}
-        <div>
+        <div class="step4-card-value-props__title">
           {{ generalSettings.step_4_card_subtitle }}
         </div>
-        <div>
+        <div class="step4-card-value-props__information">
           {{ generalSettings.step_4_card_value_props_1 | metafield_tag | replace: '(cross)', crossIcon}}
         </div>
       {% endif %}
@@ -48,10 +58,8 @@
           aria-expanded="false"
           aria-controls="{{ uniqueId }}"        
         >
-          <div>
-              <span>{{ productInfo.dropdown_title }}</span>
-              <button class="" type="button"> {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}</button>
-          </div>
+          <h3>{{ productInfo.dropdown_title }}</h3>
+          <button class="" type="button"> {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}</button>
         </div>
         <div
           class="step4-value-dropdown-content collapse"

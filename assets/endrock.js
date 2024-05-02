@@ -513,10 +513,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (step3PriceNormal && step3PriceQuota) {
         step3PriceNormal.innerHTML = `
-        <div>
           <span class=''>$ ${this.selectedInputValueJson.price}</span>
           <span class=''>$ ${this.selectedInputValueJson.discountPrice}</span>
-        </div>`;
+        `;
         step3PriceQuota.innerHTML = `<span>$ ${this.selectedInputValueJson.discountPriceQuota}</span>`;
       }
     }

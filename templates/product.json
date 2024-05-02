@@ -4,9 +4,52 @@
       "type": "product",
       "settings": {
       }
+    },
+    "17146736213fbf56c1": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "171467376407e23d6f": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "171467859897aee8f6": {
+      "type": "apps",
+      "blocks": {
+        "skio_subscriptions_yc_s20_app_block_e4JEHY": {
+          "type": "shopify:\/\/apps\/skio-subscriptions-yc-s20\/blocks\/app-block\/de50f7a4-0bb0-4d4c-84e2-c03dce83436d",
+          "settings": {
+            "form_id": "product-form-{{section.id}}",
+            "start_onetime": "true",
+            "onetime_first": "true",
+            "default_subscription": "",
+            "group_border_radius": 5,
+            "group_border_shadow": true,
+            "group_border_selected_color": "#000",
+            "onetime_title": "One Time",
+            "subscription_title": "Subscribe",
+            "prepaid_title": "Prepaid",
+            "discount_format": "percent",
+            "discount_style": "bubble",
+            "discount_prefix": "Save",
+            "discount_suffix": "",
+            "discount_color": "#0fa573"
+          }
+        }
+      },
+      "block_order": [
+        "skio_subscriptions_yc_s20_app_block_e4JEHY"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "17146736213fbf56c1",
+    "171467376407e23d6f",
+    "171467859897aee8f6"
   ]
 }
