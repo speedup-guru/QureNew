@@ -6,7 +6,8 @@
     }
 
   .new-landing-purchase{
-
+    /* resets */
+    
     /* variables */
 
     --no-active-color: #D7D9D9;
@@ -14,12 +15,14 @@
     /* images background colors - gradient */
     --img-color-gold: #fffaf0;
     --img-color-silver: #f5f5f5;
-    --img-gradient-gold-silver:linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%); 
+    --img-gradient-gold-silver: linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%); 
 
     /* title card gradiant */
 
     --gradiant-color-silver: linear-gradient(to bottom, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);;
     --gradiant-color-gold: linear-gradient(to bottom, #fffaf0 0%, #fffaf0 50%, #ffffff 50%, #ffffff 100%);
+    --gradiant-color-gold-mobile: radial-gradient(circle at bottom left, #fffaf0, white),radial-gradient(circle at bottom right, #fffaf0, white);
+    --gradiant-color-silver-mobile: radial-gradient(circle at bottom left, #f5f5f5, white),radial-gradient(circle at bottom right, #f5f5f5, white);
     --gradient-corners-gold-silver: radial-gradient(circle at top left, #FFFAF1, transparent),radial-gradient(circle at top right, #F5F5F5, transparent);
     --gradient-distribution: 100% 50%;
     --gradient-repeat: no-repeat;
@@ -29,6 +32,10 @@
     background: linear-gradient(180deg, #DBEFE8 -3.91%, #FFFFFF 51.05%);
 
     /* title */
+
+    h3{
+      margin: 0;
+    }
 
     .landing-container-title {
       padding-top: 50px;
@@ -391,84 +398,208 @@
     }
 
     /* step2 */
-    /* !cambiar las imagenes de paul */
     #landing-step-two{
-      .step2-purchase-card-container{
-        width: 304px;
-        height: auto;
-        border-radius: 24px;
-        border: 2px solid var(--no-active-color);
+      .landing-two-inputs-container{
         display: flex;
-        flex-direction: column;
-        .step2-card-img-container{
-          width: 100%;
-          height: 236px;
-          background-color: #f5f5f5;
-          border-radius: 24px 24px 0px 0px;
-          padding: 24px 0;
-          img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        @media screen and (max-width: 768px){
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
         }
-        .step2-card-title-container{
-          background: var(--gradiant-color-silver);
-          .step2-card-title{
-            padding: 16px 24px 16px;
-            border: 1px solid var(--no-active-color);
+        .step2-purchase-card-container-mobile{
+          display: none;
+          @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            height: auto;
             border-radius: 24px;
-            background-color: white;
-            h3{
-              font-family: 'Canela Web';
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 24px;
-              letter-spacing: 0.01em;
-              text-align: center;
-              text-transform: capitalize;
-              margin: 0;
+            border: 2px solid var(--no-active-color);
+            background: var(--img-color-silver);
+            .step2-card-title-container{
+              background: var(--gradiant-color-silver-mobile);
+              background-size: 100% 50%;
+              background-repeat: var(--gradient-repeat);
+              background-position: bottom;
+              .step2-card-title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 0;
+                border: 1px solid var(--no-active-color);
+                border-radius: 24px;
+                background-color: white;
+                h3{
+                  font-family: 'Canela Web';
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  text-align: center;
+                  text-transform: capitalize;
+                }
+              }
+            }
+            .step2-card-information-container{
+              display: flex;
+              flex-direction: row;
+              .step2-card-img-container{
+                width: 40%;
+                height: 160px;
+                background-color: var(--img-color-silver);
+                border-radius: 0px 0px 0px 24px;
+                padding: 24px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+              .step2-card-value-props{
+                width: 60%;
+                background-color: white;
+                padding: 13px 24px 15px;
+                border-radius: 0 0 24px 0;
+                ul{
+                  li{
+                    list-style: initial;
+                    font-family: 'Poppins';
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                  }
+                }
+              }
             }
           }
-        }
-        
 
-        .step2-card-value-props{
-          padding: 14px 24px 20px;
-          background-color: white;
-          border-radius: 0 0 24px 24px;
-          ul{
-            li{
-              list-style: initial;
-              font-family: 'Poppins';
-              font-size: 12px;
-              font-weight: 400;
-              line-height: 24px;
-              text-align: left;
+
+        }
+
+        
+        .step2-purchase-card-container-desktop{
+          width: 304px;
+          height: auto;
+          border-radius: 24px;
+          border: 2px solid var(--no-active-color);
+          display: flex;
+          flex-direction: column;
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+          .step2-card-img-container{
+            width: 100%;
+            height: 236px;
+            background-color: #f5f5f5;
+            border-radius: 24px 24px 0px 0px;
+            padding: 24px 0;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+          .step2-card-title-container{
+            background: var(--gradiant-color-silver);
+            .step2-card-title{
+              padding: 16px 24px 16px;
+              border: 1px solid var(--no-active-color);
+              border-radius: 24px;
+              background-color: white;
+              h3{
+                font-family: 'Canela Web';
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-align: center;
+                text-transform: capitalize;
+                margin: 0;
+              }
+            }
+          }
+          
+  
+          .step2-card-value-props{
+            padding: 14px 24px 20px;
+            background-color: white;
+            border-radius: 0 0 24px 24px;
+            ul{
+              li{
+                list-style: initial;
+                font-family: 'Poppins';
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+              }
             }
           }
         }
       }
 
       input[type="radio"]:checked + label[for="serum-1"]{
-        .step2-card-img-container{
-          background-color: var(--img-color-gold);
-          border-radius: 24px 24px 0px 0px;
+        .step2-purchase-card-container-mobile{
+          .step2-card-img-container{
+            background-color: var(--img-color-gold);
+            border-radius: 0px 0px 0px 24px;
+          }
+          .step2-card-title-container{
+            background: radial-gradient(circle at bottom left, #fffaf0, white),radial-gradient(circle at bottom right, #fffaf0, white);
+            background-size: 100% 50%;
+            background-repeat: var(--gradient-repeat);
+            background-position: bottom;
+          }
         }
-        .step2-card-title-container{
-          background: var(--gradiant-color-gold);
+        .step2-purchase-card-container-desktop{
+          .step2-card-img-container{
+            background-color: var(--img-color-gold);
+            border-radius: 24px 24px 0px 0px;
+          }
+          .step2-card-title-container{
+            background: var(--gradiant-color-gold);
+          }
+        }
+      }
+
+      input[type="radio"]:checked + label[for="serum-2"]{
+        .step2-purchase-card-container-mobile{
+          .step2-card-title-container{
+            background: var(--gradiant-color-silver-mobile);
+            background-size: 100% 50%;
+            background-repeat: var(--gradient-repeat);
+            background-position: bottom;
+          }
         }
       }
 
       input[type="radio"]:checked + label[for="serum-3"]{
-        .step2-card-img-container{
-          background: var(--img-gradient-gold-silver);
-          border-radius: 24px 24px 0px 0px;
+        .step2-purchase-card-container-mobile{
+          .step2-card-img-container{
+            background: var(--img-gradient-gold-silver);
+            border-radius: 0px 0px 0px 24px;
+          }
+          .step2-card-title-container{
+            background: var(--gradiant-color-gold-mobile);
+            background-size: 100% 50%;
+            background-repeat: var(--gradient-repeat);
+            background-position: bottom;
+          }
+
         }
-        .step2-card-title-container{
-          background: var(--gradient-corners-gold-silver);
-          background-size: var(--gradient-distribution);
-          background-repeat: var(--gradient-repeat);
+        .step2-purchase-card-container-desktop{
+          .step2-card-img-container{
+            background: var(--img-gradient-gold-silver);
+            border-radius: 24px 24px 0px 0px;
+          }
+          .step2-card-title-container{
+            background: var(--gradient-corners-gold-silver);
+            background-size: var(--gradient-distribution);
+            background-repeat: var(--gradient-repeat);
+          }
         }
       
       }
@@ -476,7 +607,11 @@
       input[type="radio"]:checked + label[for="serum-1"],
       input[type="radio"]:checked + label[for="serum-2"],
       input[type="radio"]:checked + label[for="serum-3"]{
-        .step2-purchase-card-container{
+        .step2-purchase-card-container-desktop{
+          border: 2px solid #C8E6DC;
+        }
+
+        .step2-purchase-card-container-mobile{
           border: 2px solid #C8E6DC;
         }
         
@@ -490,40 +625,154 @@
 
     /* step3 */
     #landing-step-three{
-      .step3-purchase-card-container{
-        width: 304px;
-        height: auto;
-        border-radius: 24px;
-        border: 2px solid var(--no-active-color);
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      .landing-three-title-container{
         display: flex;
-        flex-direction: column;
-        background-color: white;
-        .step3-card-price-container{
-          width: 100%;
-          height: 108px;
-          background: var(--img-color-silver);
-          border-radius: 22px 22px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 32px;
+        h3{
+            font-family: 'Poppins';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            text-transform: uppercase;
+          }
         }
-        .step3-card-title-container{
-          background: var(--gradiant-color-silver);
-          .step3-card-title{
-            padding: 16px 24px 16px;
-            border: 1px solid var(--no-active-color);
-            border-radius: 24px;
-            background-color: white;
-            h3{
-              font-family: 'Canela Web';
-              font-size: 18px;
+      }
+      .landing-three-inputs-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        @media screen and (max-width: 768px){
+          flex-direction: column;
+        }
+        .step3-purchase-card-container{
+          width: 304px;
+          height: auto;
+          border-radius: 24px;
+          border: 2px solid var(--no-active-color);
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          .step3-card-price-container{
+            width: 100%;
+            height: 108px;
+            background: var(--img-color-silver);
+            border-radius: 22px 22px 0px 0px;
+            .step3-price-normal-container{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 8px;
+              width: 100%;
+              height: 100%;
+              .step3-card-price-full{
+                font-family: 'Poppins';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: #939393;
+                text-decoration: line-through;
+              }
+              .step3-card-price-discount{
+                font-family: 'Poppins';
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: black;
+              }
+            }
+            .step3-price-quota-cotainer{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              .step3-card-price-quota{
+                font-family: 'Poppins';
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+                text-align: left;
+              }
+            }
+  
+          }
+          .step3-card-title-container{
+            background: var(--gradiant-color-silver);
+            .step3-card-title{
+              padding: 16px 24px 16px;
+              border: 1px solid var(--no-active-color);
+              border-radius: 24px;
+              background-color: white;
+              h3{
+                font-family: 'Canela Web';
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-align: center;
+                text-transform: capitalize;
+                margin: 0;
+              }
+          }      
+        }
+        .step3-card-information-container{
+          padding: 12px 51px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .step3-information-text{
+            p{
+              font-family: 'Poppins';
+              font-size: 12px;
               font-weight: 500;
               line-height: 24px;
-              letter-spacing: 0.01em;
-              text-align: center;
-              text-transform: capitalize;
-              margin: 0;
+              letter-spacing: 0.05em;
+              text-align: left;
             }
-        }      
+          }
+          .step-information-img-container{
+            img{
+              width: 100%;
+              height: auto;
+              object-fit: contain;
+            }
+          }
+        }
+      }   
       }
-    }   
+
+    input[type="radio"]:checked + label[for="step3-price-one"],
+    input[type="radio"]:checked + label[for="step3-price-two"]{
+      .step3-purchase-card-container{
+        border-color: var(--active-color);
+        .step3-card-price-container{
+          background: white;
+        }
+      }
+      .step3-card-title-container{
+        background: white;
+        .step3-card-title{
+          background: var(--active-color);
+          border-color: var(--active-color);
+        }
+      
+      }
+    }
   }
 
   /* step4 */

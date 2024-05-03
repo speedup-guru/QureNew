@@ -230,8 +230,8 @@ document.addEventListener('DOMContentLoaded', function () {
       this.breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
       this.breadCrumbsButtons = document.querySelectorAll('.landing-breadcrumbs-item__btn');
       this.selectedInputValue = null;
-      this.selectedInputValueStep4 = null;
       this.selectedInputValueJson = null;
+      this.selectedInputValueStep4 = null;
       this.selectedInputValueJsonStep4 = null;
       this.selectedInputStep2Title = null;
       this.selectedInputStep3Title = null;
@@ -242,9 +242,9 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateVisibilityFirstStep();
       this.updateSelectedInputValueJson();
       this.renderElementsStep3();
-      this.updateVisibilityAndValueFourthStep();
       this.updateSelectedInputValueStep4();
       this.updateSelectedInputValueJsonStep4();
+      this.updateVisibilityAndValueFourthStep();
       this.updateButtons();
       this.updateVisibilityBreadcrumb();
 
@@ -262,8 +262,8 @@ document.addEventListener('DOMContentLoaded', function () {
           this.updateVisibilityFirstStep();
           this.updateSelectedInputValueJson();
           this.updateSelectedInputValueStep4()
-          this.updateVisibilityAndValueFourthStep();
           this.updateSelectedInputValueJsonStep4();
+          this.updateVisibilityAndValueFourthStep();
           this.renderElementsStep3();
         });
       });
@@ -300,6 +300,10 @@ document.addEventListener('DOMContentLoaded', function () {
           this.syncRadioButtonsStep4(button.dataset.identifier);
           this.updateSelectedInputValueStep4();
           this.updateSelectedInputValueJsonStep4();
+          this.updateVisibilityAndValueFourthStep();
+          console.log('change');
+          console.log('Selected input value 4:', this.selectedInputValueStep4);
+          console.log('Selected input 4 value json:', this.selectedInputValueJsonStep4);
         });
       });
 
@@ -323,9 +327,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       this.btnSubmit.addEventListener('click', () => {
         console.log('submit');
-        console.log('Value of selected radio button:', this.selectedInputValueJson);
-        console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
-        // this.updateAnchorValue();
+        // console.log('Value of selected radio button:', this.selectedInputValueJson);
+        // console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
+        this.updateAnchorValue();
       });
 
     }
@@ -516,10 +520,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (step3PriceNormal && step3PriceQuota) {
         step3PriceNormal.innerHTML = `
-          <span class=''>$ ${this.selectedInputValueJson.price}</span>
-          <span class=''>$ ${this.selectedInputValueJson.discountPrice}</span>
+          <span class='step3-card-price-full'>$${this.selectedInputValueJson.price}</span>
+          <span class='step3-card-price-discount'>$${this.selectedInputValueJson.discountPrice}</span>
         `;
-        step3PriceQuota.innerHTML = `<span>$ ${this.selectedInputValueJson.discountPriceQuota}</span>`;
+        step3PriceQuota.innerHTML =`
+        <span class='step3-card-price-quota'>
+          $${this.selectedInputValueJson.discountPriceQuota}
+        </span>
+        `;
       }
     }
     
@@ -589,7 +597,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const anchorID = document.getElementById('landing-add-sidecard');
       const productIdStep1 = this.selectedInputValueJson;
       const valeStep4 = this.selectedInputValueStep4;
-      const productIdStep4 = this.selectedInputValueJsonStep4 ? this.selectedInputValueJsonStep4 : null;
+      const productIdStep4 = this.selectedInputValueJsonStep4;
       console.log('productIdStep1', productIdStep1);
       console.log('valeStep4', valeStep4)
       console.log('productIdStep4', productIdStep4);
@@ -603,21 +611,23 @@ document.addEventListener('DOMContentLoaded', function () {
       // : (productIdStep1.position === 1 && productIdStep4.position !== 1) 
       //   ? productIdStep1.id 
       //   : productIdStep1.id;
-      
 
-      // if (productIdStep1.position === 1) {
-      //   if (productIdStep4.position === 1) {
-      //     selectedProductId = productIdStep4.id;
-      //   } else {
-      //     selectedProductId = productIdStep1.id;
-      //   }
-      // }
-
-      // console.log(currentHref, selectedProductId)
       const href = currentHref.split('add')[0]
+
+      if (productIdStep1.position === 1) {
+        if (productIdStep4.position === 1) {
+          selectedProductId = productIdStep4.id;
+          currentHref = `${href}add?id=${selectedProductId}&selling_plan=${productIdStep4.sellingPlanId}&quantity=1`
+        } else {
+          selectedProductId = productIdStep1.id;
+          currentHref = `${href}add?id=${selectedProductId}&quantity=1`
+        }
+      }
+
+      console.log(currentHref, selectedProductId)
+      anchorID.setAttribute('href', currentHref);
       // currentHref = `${href}add?id=${selectedProductId}&quantity=1`
       // console.log('currentHref', currentHref);
-      // anchorID.setAttribute('href', currentHref);
       // console.log('anchor', anchorID);
 
       // currentHref = `${href}add?id=${selectedProductId}&selling_plan=5012914415&quantity=1`
@@ -626,9 +636,9 @@ document.addEventListener('DOMContentLoaded', function () {
       // console.log('currentHref', currentHref);
       // console.log('anchor', anchorID);
 
-      // setTimeout(() => {
-      //   anchorID.click();
-      // }, 2000);
+      setTimeout(() => {
+        anchorID.click();
+      }, 2000);
 
       
       //  let formData2 = {

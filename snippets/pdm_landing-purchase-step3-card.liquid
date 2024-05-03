@@ -8,9 +8,9 @@
 <div class="step3-purchase-card-container">
   <div class="step3-card-price-container">
     {% if cardCase == 0 %}
-      <div id="step3-price-normal"></div>
+      <div id="step3-price-normal" class="step3-price-normal-container"></div>
       {% else %}
-      <div id="step3-price-quota"></div>
+      <div id="step3-price-quota" class="step3-price-quota-cotainer"></div>
     {% endif %}
   </div>
   <div class="step3-card-title-container">
@@ -20,7 +20,7 @@
   </div>
   <div class="step3-card-information-container">
     <div class="step3-information-text">
-      {{ selectedPaymentText }}
+      <p>{{ selectedPaymentText }}</p>
     </div>
     <div class="step-information-img-container">
       {% if cardCase == 0 %}
