@@ -229,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.btnSubmit = document.getElementById('landing-submit');
       this.breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
       this.breadCrumbsButtons = document.querySelectorAll('.landing-breadcrumbs-item__btn');
+      this.mobileCardContainer = document.getElementById('landing-purchase-mobile');
       this.selectedInputValue = null;
       this.selectedInputValueJson = null;
       this.selectedInputValueStep4 = null;
@@ -247,6 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateVisibilityAndValueFourthStep();
       this.updateButtons();
       this.updateVisibilityBreadcrumb();
+      this.renderElementMobileStep1();
 
       // assing
       const firstStep2RadioButton = document.querySelector('#step2-select input[type="radio"]:checked');
@@ -588,8 +590,25 @@ document.addEventListener('DOMContentLoaded', function () {
         default:
           break;
       }
-      
     }
+
+    renderElementMobileStep1() {
+      // console.log('renderElementMobileStep1');
+      // console.log('mobile container', this.mobileCardContainer);
+      // console.log('first step', this.selectedInputValueJson);
+      // console.log('first position', this.selectedInputValueJson.position);
+      // console.log('first input', this.selectedInputValueJson.input);
+
+      const elements = this.mobileCardContainer.querySelectorAll('[data-position][data-input]');
+      // console.log('elements', elements);
+      elements.forEach(element =>{
+        const positionElement = element.dataset.position;
+        const inputElement = element.dataset.input;
+        if(positionElement == this.selectedInputValueJson.position && inputElement == this.selectedInputValueJson.input){
+          element.classList.add('show-inputs-important')
+        }
+      })
+    };
 
 
     updateAnchorValue() {

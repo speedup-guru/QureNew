@@ -96,8 +96,8 @@
   endcapture
 %}
 
-
 <script>
+  console.log('mobileProducts1', {{ mobileProducts1 | json }})
   // console.log("general_settings", {{ general_settings | json }});
   // console.log('products2', {{products2 |  json}})
   // console.log('products2_products', {{products2_products |  json}})
@@ -136,7 +136,7 @@
     {% comment %} main panel container {% endcomment %}
     <div id="main-panel-lading">
       {% comment %} panel 1 {% endcomment %}
-      <div id="landing-step-one " class="landing-panel panel-hidden">
+      <div id="landing-step-one" class="landing-panel panel-hidden">
         <div class="lading-one-title-container">
           <h3>{{ general_settings.title_component }}</h3>
         </div>
@@ -177,6 +177,47 @@
           checkIcon: checkIcon,
           crossIcon: crossIcon
         %}
+        {% comment %} mobile {% endcomment %}
+        <div id="landing-purchase-mobile" class="landing-purchase-mobile">
+          {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+           productOne: third_products1_product,
+           productOneInfo: products1_product_3_month,
+           productTwo: second_products1_product,
+           productTwoInfo: products1_product_2_month,
+           productThree: first_products1_product,
+           productThreeInfo: products1_product_1_month,
+           name: 'products1',
+           checkIcon: checkIcon,
+           crossIcon: crossIcon
+          %}
+         {% comment %} products2 / silver {% endcomment %}
+          {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+           productOne: third_products2_product,
+           productOneInfo: products2_product_3_month,
+           productTwo: second_products2_product,
+           productTwoInfo: products2_product_2_month,
+           productThree: first_products2_product,
+           productThreeInfo: products2_product_1_month,
+           name: 'products2',
+           checkIcon: checkIcon,
+           crossIcon: crossIcon
+          %}
+ 
+         {% comment %} products3 / gold {% endcomment %}
+         {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+           productOne: third_products3_product,
+           productOneInfo: products3_product_3_month,
+           productTwo: second_products3_product,
+           productTwoInfo: products3_product_2_month,
+           productThree: first_products3_product,
+           productThreeInfo: products3_product_1_month,
+           name: 'products3',
+           checkIcon: checkIcon,
+           crossIcon: crossIcon
+         %}
+        </div>
+           
+          
       </div>
       {% comment %} panel 2 {% endcomment %}
       <div id="landing-step-two" class="landing-panel panel-hidden">
