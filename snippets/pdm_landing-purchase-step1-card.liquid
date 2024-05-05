@@ -1,12 +1,24 @@
 {% liquid
   assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0
+
+  assign nameProp = parentContainer
+
+  assign parentName =  nameProp
 %}
+
+<script>
+  console.log("parentName = {{ parentName }}");
+</script>
+
 
 <div class="step1-purchase-card-container">
   {% if productInfo.people_choise != blank %}
     <div class="step1-card-choise-container">
-      <p>
+      <p class="step1-card-choise-desk_text">
         {{ productInfo.people_choise }}
+      </p>
+      <p class="step1-card-choise-mobile_text">
+        {{ productInfo.people_choise_mobile | replace: '(star)', starIcon  }}
       </p>
     </div>
   {% endif %}
@@ -22,6 +34,7 @@
     {% endif %}
     <div class="step1-card-price">
       <div class="step1-card-price-information">
+        <span class="step1-card-price__title-mobile">{{ productInfo.title_product_mobile }}</span>
         <span class="step1-card-price__title">{{ productInfo.title_product }}</span>
         <div class="step1-card-price-wrapper">
           <span class="step1-card-price-wrapper__real">
@@ -57,7 +70,7 @@
           <span class="step1-value-dropdown-title-wrapper__title">{{ productInfo.title_included }}</span>
           <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
         </div>
-        <button class="" type="button">
+        <button id="svg-btn-landing-card-{{ uniqueId }}" class="landing-rotate-svg-button" type="button">
           {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
         </button>
       </div>
@@ -65,7 +78,7 @@
         id="{{ uniqueId }}"
         class="step1-value-dropdown-information collapse"
         aria-labelledby="headingOne"
-        data-bs-parent=".{{parentContainer}}"
+        data-bs-parent=".{{parentName}}"
       >
         {{ productInfo.value_props_included | metafield_tag }}
       </div>

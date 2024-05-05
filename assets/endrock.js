@@ -230,6 +230,8 @@ document.addEventListener('DOMContentLoaded', function () {
       this.breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
       this.breadCrumbsButtons = document.querySelectorAll('.landing-breadcrumbs-item__btn');
       this.mobileCardContainer = document.getElementById('landing-purchase-mobile');
+      this.svgButtonsCard = document.querySelectorAll('.step1-value-dropdown-title');
+      this.btnSubmitPanel = document.getElementById('landing-submit-2');
       this.selectedInputValue = null;
       this.selectedInputValueJson = null;
       this.selectedInputValueStep4 = null;
@@ -267,6 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
           this.updateSelectedInputValueJsonStep4();
           this.updateVisibilityAndValueFourthStep();
           this.renderElementsStep3();
+          this.renderElementMobileStep1();
         });
       });
 
@@ -278,6 +281,7 @@ document.addEventListener('DOMContentLoaded', function () {
           this.renderElementsStep3();
           this.updateSelectedInputValueJson();
           this.updateVisibilityBreadcrumb();
+          this.renderElementMobileStep1();
         });
       });
 
@@ -332,6 +336,26 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log('Value of selected radio button:', this.selectedInputValueJson);
         // console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
         this.updateAnchorValue();
+      });
+
+
+      this.svgButtonsCard.forEach(container => {
+        container.addEventListener('click', function () {
+          let button = this.querySelector('.landing-rotate-svg-button');
+          let collapseId = this.getAttribute('data-bs-target');
+          let collapseElement = document.querySelector(collapseId);
+          let isCollapseVisible = collapseElement.classList.contains('show');
+          let isButtonRotated = button.classList.contains('rotate-svg-btn');
+      
+          button.classList.toggle('rotate-svg-btn');
+      
+          if (!isCollapseVisible && !isButtonRotated) {
+            collapseElement.classList.add('show');
+          } 
+          else if (isCollapseVisible && isButtonRotated) {
+            collapseElement.classList.remove('show');
+          }
+        });
       });
 
     }
@@ -394,14 +418,18 @@ document.addEventListener('DOMContentLoaded', function () {
       if (this.selectedInputValueJson.position === 1) {
         if (this.indexPanel === this.panels.length - 1) {
           this.btnNext.classList.add('hidden');
+          this.btnSubmitPanel.classList.add('show-lading-button')
         } else {
           this.btnNext.classList.remove('hidden');
+          this.btnSubmitPanel.classList.remove('show-lading-button')
         }
       } else if (this.selectedInputValueJson.position !== 1) {
         if (this.indexPanel === this.panels.length - 2) {
           this.btnNext.classList.add('hidden');
+          this.btnSubmitPanel.classList.add('show-lading-button')
         } else {
           this.btnNext.classList.remove('hidden');
+          this.btnSubmitPanel.classList.remove('show-lading-button')
         }
       }
     }
@@ -538,8 +566,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateVisibilityBreadcrumb() {
       const breadCrumb4 = document.querySelector('.breadStep-4');
-      console.log('Selected input value in bread fx:', this.selectedInputValueJson);
-      console.log('bread', breadCrumb4)
+      // console.log('Selected input value in bread fx:', this.selectedInputValueJson);
+      // console.log('bread', breadCrumb4)
       if (this.selectedInputValueJson.position !== 1) {
         breadCrumb4.classList.add('hide-breadcrumbs');
       } else {
@@ -593,11 +621,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     renderElementMobileStep1() {
-      // console.log('renderElementMobileStep1');
-      // console.log('mobile container', this.mobileCardContainer);
-      // console.log('first step', this.selectedInputValueJson);
-      // console.log('first position', this.selectedInputValueJson.position);
-      // console.log('first input', this.selectedInputValueJson.input);
+      console.log('renderElementMobileStep1');
+      console.log('mobile container', this.mobileCardContainer);
+      console.log('first step', this.selectedInputValueJson);
+      console.log('first position', this.selectedInputValueJson.position);
+      console.log('first input', this.selectedInputValueJson.input);
 
       const elements = this.mobileCardContainer.querySelectorAll('[data-position][data-input]');
       // console.log('elements', elements);
@@ -606,6 +634,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const inputElement = element.dataset.input;
         if(positionElement == this.selectedInputValueJson.position && inputElement == this.selectedInputValueJson.input){
           element.classList.add('show-inputs-important')
+        } else{
+          element.classList.remove('show-inputs-important')
         }
       })
     };

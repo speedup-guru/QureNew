@@ -67,6 +67,8 @@
         display: none !important;
       }
       .landing-breadcrumbs-container{
+        padding-top: 40px;
+        padding-bottom: 32px;
         .landing-breadcrumbs-wrapper{
           display: flex;
           gap: 8px;
@@ -134,7 +136,7 @@
     
     #main-panel-lading{
       width: 100%;
-      height: 1200px;
+      height: 700px;
     }
 
       /* step 1 */
@@ -154,80 +156,328 @@
             text-transform: uppercase;
           }
         }
-        .step1-purchase-card-container{
-          border: 2px solid var(--no-active-color);
-          width: 304px;
-          height: 600px;
-          border-radius: 24px;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          .step1-card-choise-container{
-            height: 22px;
-            position: absolute;
-            top: -23px;
-            width: 100%;
+        .landing-one-container{
+          gap: 24px;
+          justify-content: center;
+          align-items: center;
+          @media screen and (max-width: 768px){
+            gap: 4px;
+            padding-bottom: 16px;          
+          }
+          .step1-purchase-card-container{
+            border: 2px solid var(--no-active-color);
+            width: 304px;
+            height: auto;
+            border-radius: 24px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            p{
-              background-color: black;
-              font-family: 'Poppins';
-              font-size: 10px;
-              font-weight: 500;
-              line-height: 16px;
-              letter-spacing: 0.05em;
-              text-align: left;
-              color: white;
-              padding: 3px 16px;
-              border-radius: 16px 16px 0px 0px;
-            }
-          }
-          .card-img-container{
-            width: 100%;
-            height: 236px;
-            border-radius: 24px 24px 0px 0px;
-            background-color: #f6f7f8;
-            img{
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
-            }
-          }
-  
-          .step1-card-price-container{
+            flex-direction: column;
             position: relative;
-            .step1-card-price-discount{
+            @media screen and (max-width: 768px){
+              width: 106.33px;
+              border-radius: 16px;
+            }
+            .step1-card-choise-container{
+              height: 22px;
               position: absolute;
+              top: -23px;
               width: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
-              top: -28px;
-              p{
+              .step1-card-choise-desk_text{
+                background-color: black;
                 font-family: 'Poppins';
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: 500;
-                line-height: 24px;
+                line-height: 16px;
                 letter-spacing: 0.05em;
                 text-align: left;
-                background-color: #3B8566;
                 color: white;
-                border-radius: 16px 16px 0 0;
-                padding: 1px 16px 3px;
-                
+                padding: 3px 16px;
+                border-radius: 16px 16px 0px 0px;
+                @media screen and (max-width: 768px){
+                  display: none;
+                }
               }
+              .step1-card-choise-mobile_text{
+                background-color: black;
+                font-family: 'Poppins';
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: white;
+                padding-top: 4px;
+                padding-bottom: 2px;
+                padding-left: 12px;
+                padding-right: 4.38px;
+                border-radius: 16px 16px 0px 0px;
+                display: none;
+                @media screen and (max-width: 768px){
+                  display: block;
+                }
+              }
+            }
+            .card-img-container{
+              width: 100%;
+              height: 236px;
+              border-radius: 24px 24px 0px 0px;
+              background-color: #f6f7f8;
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+              @media screen and (max-width: 768px){
+                width: 99%;
+                height: auto;
+              }
+            }
+    
+            .step1-card-price-container{
+              position: relative;
+              .step1-card-price-discount{
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: -28px;
+                @media screen and (max-width: 768px){
+                  display: none;                  
+                }
+                p{
+                  font-family: 'Poppins';
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  letter-spacing: 0.05em;
+                  text-align: left;
+                  background-color: #3B8566;
+                  color: white;
+                  border-radius: 16px 16px 0 0;
+                  padding: 1px 16px 3px;
+                  
+                }
+              }
+              .step1-card-price{
+                .step1-card-price-information{
+                  padding: 12px 33px 12px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 8px;
+                  border: 1px solid var(--no-active-color);
+                  border-radius: 40px;
+                  @media screen and (max-width: 768px){
+                    padding: 4px 0 2px;
+                  }
+                  .step1-card-price__title{
+                    font-family: 'Canela Web';
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0.01em;
+                    text-align: left;
+                    @media screen and (max-width: 768px){
+                      display: none;                      
+                    }
+                  }
+                  .step1-card-price__title-mobile{
+                    display: none;
+                    @media screen and (max-width: 768px){
+                      display: block;
+                      font-family: 'Canela Web';
+                      font-size: 14px;
+                      font-weight: 500;
+                      line-height: 20px;
+                      letter-spacing: 0.01em;
+                      text-align: left;
+                                         
+                    }
+                  }
+                  .step1-card-price-wrapper{
+                    display: flex;
+                    gap: 4px;
+                    flex-direction: row;
+                    @media screen and (max-width: 768px){
+                      display: none;                      
+                    }
+                    .step1-card-price-wrapper__real{
+                      font-family: 'Poppins';
+                      font-size: 14px;
+                      font-weight: 300;
+                      line-height: 24px;
+                      letter-spacing: 0.01em;
+                      text-align: left;
+                      text-decoration-line: line-through;
+                    }
+                    .step1-card-price-wrapper__discount{
+                      font-family: 'Poppins';
+                      font-size: 18px;
+                      font-weight: 500;
+                      line-height: 24px;
+                      letter-spacing: 0.01em;
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+            }
+    
+            .step1-card-value-props{
+              padding: 10px 16px 10px;
+              @media screen and (max-width: 768px){
+                display: none;                
+              }
+              .step1-value-doctor{
+                background-color: #F6F6F6;
+                margin-bottom: 8px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                padding: 4px 12px 4px 8px;
+                border-radius: 8px;
+                p{
+                  font-family: 'Poppins';
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  text-align: left;
+                }
+              }
+              .step1-value-static-props{
+                padding-right: 13px;
+                padding-bottom: 8px;
+                .metafield-rich_text_field{
+                  ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    li{
+                      font-family: 'Poppins';
+                      font-size: 12px;
+                      font-weight: 500;
+                      line-height: 16px;
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+              .step1-value-props-dropdown{
+                border-top: 1px solid #C8E6DC;
+                .step1-value-dropdown-title{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: 32px;
+                  .step1-value-dropdown-title-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    .step1-value-dropdown-title-wrapper__title{
+                      font-family: 'Poppins';
+                      font-size: 12px;
+                      font-weight: 600;
+                      line-height: 24px;
+                      letter-spacing: 0.02em;
+                      text-align: left;
+                    }
+                    .step1-value-dropdown-title-wrapper__text{
+                      font-family: 'Poppins';
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      letter-spacing: 0.02em;
+                      text-align: left;
+                    }
+                  }
+                  .landing-rotate-svg-button{
+                    background-color: transparent;
+                    border: none;
+                  }
+                }
+                .step1-value-dropdown-information{
+                  padding-top: 4px;
+                  .metafield-rich_text_field{
+                    ul{
+                      display: flex;
+                      flex-direction: column;
+                      li{
+                        font-family: 'Poppins';
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-align: left;
+                        strong {
+                          font-family: 'Poppins';
+                          font-size: 10px;
+                          font-weight: 500;
+                          line-height: 20px;
+                          text-align: left;
+                        }
+                      }
+                    }
+                  
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .landing-purchase-mobile{
+          display: none;
+          @media screen and (max-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 32px;
+          }
+          .step1-purchase-card-container{
+            display: none;
+            width: 327px;
+            height: auto;
+            flex-direction: column;
+            border: 2px solid var(--active-color);
+            border-radius: 24px;
+            .step1-card-price-container{
+              position: relative;
+              .step1-card-price-discount{
+                position: absolute;
+                top: -30px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                  font-family: 'Poppins';
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  letter-spacing: 0.05em;
+                  text-align: left;
+                  background-color: #3B8566;
+                  color: white;
+                  border-radius: 16px 16px 0 0;
+                  padding: 1px 16px 3px;
+                }
+              }
+
             }
             .step1-card-price{
               .step1-card-price-information{
-                padding: 12px 33px 12px;
                 display: flex;
-                flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                padding: 12px 0;
+                background-color: var(--active-color);
+                border-color: var(--active-color);
+                border-radius: 22px;
                 gap: 8px;
-                border: 1px solid var(--no-active-color);
-                border-radius: 40px;
                 .step1-card-price__title{
                   font-family: 'Canela Web';
                   font-size: 20px;
@@ -238,8 +488,9 @@
                 }
                 .step1-card-price-wrapper{
                   display: flex;
+                  align-items: center;
                   gap: 4px;
-                  flex-direction: row;
+                  justify-content: center;
                   .step1-card-price-wrapper__real{
                     font-family: 'Poppins';
                     font-size: 14px;
@@ -247,7 +498,7 @@
                     line-height: 24px;
                     letter-spacing: 0.01em;
                     text-align: left;
-                    text-decoration-line: line-through;
+                    text-decoration-line: line-through;                    
                   }
                   .step1-card-price-wrapper__discount{
                     font-family: 'Poppins';
@@ -260,115 +511,104 @@
                 }
               }
             }
-          }
-  
-          .step1-card-value-props{
-            padding: 10px 16px 10px;
-            .step1-value-doctor{
-              background-color: #F6F6F6;
-              margin-bottom: 8px;
+            .step1-card-value-props{
+              padding: 14px 24px;
               display: flex;
+              flex-direction: column;
               gap: 8px;
-              align-items: center;
-              padding: 4px 12px 4px 8px;
-              border-radius: 8px;
-              p{
-                font-family: 'Poppins';
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 16px;
-                text-align: left;
-              }
-            }
-            .step1-value-static-props{
-              padding-right: 13px;
-              padding-bottom: 8px;
-              .metafield-rich_text_field{
-                ul{
-                  display: flex;
-                  flex-direction: column;
-                  gap: 8px;
-                  li{
-                    font-family: 'Poppins';
-                    font-size: 12px;
-                    font-weight: 500;
-                    line-height: 16px;
-                    text-align: left;
-                  }
-                }
-              }
-            }
-            .step1-value-props-dropdown{
-              border-top: 1px solid #C8E6DC;
-              .step1-value-dropdown-title{
+              .step1-value-doctor{
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                gap: 8px;
                 align-items: center;
-                height: 32px;
-                .step1-value-dropdown-title-wrapper{
-                  display: flex;
-                  flex-direction: row;
-                  gap: 8px;
-                  .step1-value-dropdown-title-wrapper__title{
-                    font-family: 'Poppins';
-                    font-size: 12px;
-                    font-weight: 600;
-                    line-height: 24px;
-                    letter-spacing: 0.02em;
-                    text-align: left;
-                  }
-                  .step1-value-dropdown-title-wrapper__text{
-                    font-family: 'Poppins';
-                    font-size: 12px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0.02em;
-                    text-align: left;
-                  }
+                padding: 4px 22px;
+                border-radius: 8px;
+                background-color: #F6F6F6;
+                p{
+                  font-family: 'Poppins';
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  text-align: left;
+                  font-weight: bold;
                 }
               }
-              .step1-value-dropdown-information{
-                padding-top: 4px;
+              .step1-value-static-props{
                 .metafield-rich_text_field{
                   ul{
                     display: flex;
                     flex-direction: column;
+                    gap: 8px;
                     li{
                       font-family: 'Poppins';
-                      font-size: 10px;
-                      font-weight: 400;
-                      line-height: 20px;
+                      font-size: 12px;
+                      font-weight: 500;
+                      line-height: 16px;
                       text-align: left;
-                      strong {
+                    }
+                  }
+                }
+              }
+              .step1-value-props-dropdown{
+                .step1-value-dropdown-title{
+                  border-top: 1px solid var(--active-color);
+                  padding-top: 12px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: 32px;
+                  .step1-value-dropdown-title-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    .step1-value-dropdown-title-wrapper__title{
+                      font-family: 'Poppins';
+                      font-size: 12px;
+                      font-weight: 600;
+                      line-height: 24px;
+                      letter-spacing: 0.02em;
+                      text-align: left;
+                    }
+                    .step1-value-dropdown-title-wrapper__text{
+                      font-family: 'Poppins';
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      letter-spacing: 0.02em;
+                      text-align: left;
+                    }
+                  }
+                  .landing-rotate-svg-button{
+                    background-color: transparent;
+                    border: none;
+                  }
+                }
+                .step1-value-dropdown-information{
+                  padding-top: 4px;
+                  .metafield-rich_text_field{
+                    ul{
+                      display: flex;
+                      flex-direction: column;
+                      gap: 2px;
+                      li{
                         font-family: 'Poppins';
-                        font-size: 10px;
-                        font-weight: 500;
-                        line-height: 20px;
+                        font-size: 11px;
+                        font-weight: 400;
+                        line-height: 22px;
                         text-align: left;
+                        strong {
+                          font-family: 'Poppins';
+                          font-size: 11px;
+                          font-weight: 500;
+                          line-height: 22px;
+                          text-align: left;
+                        }
                       }
                     }
+                  
                   }
                 
                 }
-              }
-            }
-          }
-        }
-
-        .landing-purchase-mobile{
-          .step1-purchase-card-container{
-            display: none;
-            height: auto;
-            border-color: var(--active-color);
-            .step1-card-price-discount{
-              top: -32px
-            }
-            .step1-card-price{
-              .step1-card-price-information{
-                background-color: var(--active-color);
-                border-color: var(--active-color);
-                border-radius: 22px;
               }
             }
           }
@@ -1001,6 +1241,122 @@
   }
   .show-inputs-important{
     display: flex !important;
+  }
+
+  .rotate-svg-btn{
+    transform: rotate(180deg);
+  }
+
+  /* buttons */
+
+  /* left */
+  .landing-back-btn{
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid #D7D9D9;
+    width: 92px;
+    height: 40px;
+    .landing-back-btn-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      .landing-arrow-left{
+        position: relative;
+      }
+      span{
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: #797D7C;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .landing-back-btn:hover{
+    border-color: black;
+    .landing-back-btn-wrapper{
+      .landing-arrow-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+          g{
+            path{
+              stroke: black;
+            }
+          }
+        }
+      }
+      .landing-arrow-left::after{
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 1px;
+        background-color: black;
+        transition: width 0.3s ease;
+      }
+      span{
+        color: black;
+      }
+    }
+  }
+
+  /* right */
+  .landing-next-btn{
+    background-color: black;
+    border-radius: 24px;
+    border: 1px solid black;
+    width: 92px;
+    height: 40px;
+    .landing-next-btn-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      span{
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        text-align: left;
+        color: white;
+        text-transform: uppercase;
+      }
+      .landing-arrow-right{
+        position: relative;
+      }
+    }
+  }
+  .landing-next-btn:hover{
+    .landing-next-btn-wrapper{
+      .landing-arrow-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .landing-arrow-right::before{
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 1px;
+        background-color: white;
+        transition: width 0.3s ease;
+      }
+    }
+  }
+  
+  /* submit */
+  .lading-button-submit{
+    display: none;
+    &.show-lading-button{
+      display: block;
+    }
   }
   
 }

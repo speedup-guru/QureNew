@@ -150,7 +150,8 @@
           productThreeInfo: products1_product_1_month,
           name: 'products1',
           checkIcon: checkIcon,
-          crossIcon: crossIcon
+          crossIcon: crossIcon,
+          starIcon: starIcon
         %}
         {% comment %} products2 / silver {% endcomment %}
         {% render 'pdm_landing-purchase-step1-inputs',
@@ -162,7 +163,8 @@
           productThreeInfo: products2_product_1_month,
           name: 'products2',
           checkIcon: checkIcon,
-          crossIcon: crossIcon
+          crossIcon: crossIcon,
+          starIcon: starIcon
         %}
 
         {% comment %} products3 / gold {% endcomment %}
@@ -175,7 +177,8 @@
           productThreeInfo: products3_product_1_month,
           name: 'products3',
           checkIcon: checkIcon,
-          crossIcon: crossIcon
+          crossIcon: crossIcon,
+          starIcon: starIcon
         %}
         {% comment %} mobile {% endcomment %}
         <div id="landing-purchase-mobile" class="landing-purchase-mobile">
@@ -277,6 +280,12 @@
           %}
         </div>
       </div>
+      <button
+          id="landing-submit-2"
+          class="lading-button-submit"
+        >
+          submit
+        </button>
     </div>
     {% comment %} buttons {% endcomment %}
     <div>
@@ -286,14 +295,28 @@
         test
       </button>
       <button
+        class="landing-back-btn"
         id="landing-back"
       >
-        back
+        <div class="landing-back-btn-wrapper">
+          <div class="landing-arrow-left">
+            {% render 'pdm_landing-purchase-icons', icon: 'arrow-left' %}
+          </div>
+          <span>{{ general_settings.button_back }}</span>
+        </div>
       </button>
       <button
         id="landing-next"
+        class="landing-next-btn"
       >
-        next
+      <div class="landing-next-btn-wrapper">
+        <span>
+          {{ general_settings.button_next }}
+        </span>
+        <div class="landing-arrow-right">
+          {% render 'pdm_landing-purchase-icons', icon: 'arrow-right' %}
+        </div>  
+      </div>
       </button>
       <div style="padding: 20px 20px">
         <a

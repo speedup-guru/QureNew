@@ -4,11 +4,14 @@
   if price_3 == blank
     assign price_3 = 0
   endif
-%}
 
+  assign parentContainer = 'parent' | append: '-' | append: name
+  assign parentContainer2 = 'parent' | append: '-' | append: name
+  assign parentContainer3 = 'parent' | append: '-' | append: name
+%}
 <div
   id="inputs-{{ name }}"
-  class="inputs-{{ name }} {% if name == 'products1' %} show-inputs {% endif %}"
+  class="inputs-{{ name }} landing-one-container {% if name == 'products1' %} show-inputs {% endif %}"
 >
   <input
     data-id-product="{{ productOne.selected_variant.id }}"
@@ -33,9 +36,10 @@
       productData: productOne, 
       productInfo: productOneInfo
       uniqueId: 'collapseOne'
-      parentContainer: 'parent-{{ name }}',
+      parentContainer: parentContainer,
       checkIcon: checkIcon,
-      crossIcon: crossIcon
+      crossIcon: crossIcon,
+      starIcon: starIcon
     %}
   </label>
   <input
@@ -60,9 +64,10 @@
       productData: productTwo, 
       productInfo: productTwoInfo 
       uniqueId: 'collapseTwo'
-      parentContainer: 'parent-{{ name }}',
+      parentContainer: parentContainer,
       checkIcon: checkIcon,
-      crossIcon: crossIcon
+      crossIcon: crossIcon,
+      starIcon: starIcon
     %}
   </label>
   <input
@@ -87,9 +92,10 @@
       productData: productThree, 
       productInfo: productThreeInfo 
       uniqueId: 'collapseThree'
-      parentContainer: 'parent-{{ name }}',
+      parentContainer: parentContainer,
       checkIcon: checkIcon,
-      crossIcon: crossIcon
+      crossIcon: crossIcon,
+      starIcon: starIcon
     %}
   </label>
 </div>
