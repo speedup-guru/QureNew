@@ -552,6 +552,16 @@
             "text": "<p>\"Qure’s system is far more affordable and convenient than the in office procedure because it’s done in the comfort of your home.\"<\/p><h6><strong>Dr Maren Locke<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         },
+        "video_R7fmpe": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Aleksandra_Brown_1.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d5d0c051b43e4117be7b6308e06e8f66.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>I have liked this in between my in-office treatments. It’s convenient, great before events, and safe even for beginners.<\/p><h6><strong>Dr Aleksandra Brown, <\/strong>Board-Certified Dermatologist<\/h6>"
+          }
+        },
         "video_D7zBLA": {
           "type": "video",
           "settings": {
@@ -587,6 +597,7 @@
         "feedback_7TxNa9",
         "feedback_mKipFz",
         "video_76qkgq",
+        "video_R7fmpe",
         "video_D7zBLA",
         "video_EN37N8",
         "video_zTx4mk"
