@@ -639,6 +639,16 @@
             "text": "<p>\"It’s an amazing 5-minute facial with minimal to no downtime! I absolutely love this. Ten out of ten from me.\"<\/p><h6><strong>Dr Doireann O’Leary, <\/strong>Medical Doctor<\/h6>"
           }
         },
+        "video_BMBJXV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Prasanthi_Purusothaman_1.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5537bcc1d93146b2a7f84e09b1c41b4b.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>”..safe for generally all skin tones and types to perform at home without any risk of infection or trauma.” <\/p><h6><strong>Dr Prasanthi Purusothman, <\/strong>General Practitioner & Cosmetic Doctor<\/h6>"
+          }
+        },
         "video_jPYhQi": {
           "type": "video",
           "settings": {
@@ -659,6 +669,7 @@
         "video_C6tFxe",
         "video_PECKPL",
         "video_dyArxL",
+        "video_BMBJXV",
         "video_jPYhQi"
       ],
       "settings": {
