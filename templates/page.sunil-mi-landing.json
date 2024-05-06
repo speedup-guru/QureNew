@@ -599,6 +599,16 @@
             "text": "<p>\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Board-Certified Plastic Surgeon<\/h6>"
           }
         },
+        "video_cBVzEm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Aleksandra_Brown_1.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d5d0c051b43e4117be7b6308e06e8f66.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"I have liked this in between my in-office treatments. It’s convenient, great before events, and safe even for beginners.\"<\/p><h6><strong>Dr Aleksandra Brown, <\/strong>Board-Certified Dermatologist<\/h6>"
+          }
+        },
         "video_C6tFxe": {
           "type": "video",
           "settings": {
@@ -635,6 +645,7 @@
         "feedback_NVbkWM",
         "video_pEM9DL",
         "video_XF3pgt",
+        "video_cBVzEm",
         "video_C6tFxe",
         "video_PECKPL",
         "video_jPYhQi"
