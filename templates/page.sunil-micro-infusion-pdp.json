@@ -489,6 +489,16 @@
             "wistia_id": "",
             "text": "<p>I have liked this in between my in-office treatments. It’s convenient, great before events, and safe even for beginners.<\/p><h6><strong>Dr Aleksandra Brown, <\/strong>Board-Certified Dermatologist<\/h6>"
           }
+        },
+        "video_ptTnVF": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Prasanthi_Purusothaman.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5537bcc1d93146b2a7f84e09b1c41b4b.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>..safe for generally all skin tones and types to perform at home without any risk of infection or trauma. <\/p><h6><strong>Dr Prasanthi Purusothman, <\/strong>General Practitioner & Cosmetic Doctor<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -499,7 +509,8 @@
         "video_kmVPyX",
         "video_d8Uixm",
         "video_VYhrrF",
-        "video_DmNX4M"
+        "video_DmNX4M",
+        "video_ptTnVF"
       ],
       "settings": {
         "classname": "trusted_bl",
