@@ -226,12 +226,13 @@ document.addEventListener('DOMContentLoaded', function () {
       this.btnBack = document.getElementById('landing-back');
       this.btnNext = document.getElementById('landing-next');
       this.bntTest = document.getElementById('landing-test');
-      this.btnSubmit = document.getElementById('landing-submit');
+      this.btnSubmitPanel = document.getElementById('landing-submit');
+      this.btnSumbitText = document.getElementById('landing-submit-text');
       this.breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
       this.breadCrumbsButtons = document.querySelectorAll('.landing-breadcrumbs-item__btn');
       this.mobileCardContainer = document.getElementById('landing-purchase-mobile');
       this.svgButtonsCard = document.querySelectorAll('.step1-value-dropdown-title');
-      this.btnSubmitPanel = document.getElementById('landing-submit-2');
+      // this.btnSubmitPanel = document.getElementById('landing-submit-2');
       this.selectedInputValue = null;
       this.selectedInputValueJson = null;
       this.selectedInputValueStep4 = null;
@@ -251,6 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateButtons();
       this.updateVisibilityBreadcrumb();
       this.renderElementMobileStep1();
+      this.updateSubmitTextBtn();
 
       // assing
       const firstStep2RadioButton = document.querySelector('#step2-select input[type="radio"]:checked');
@@ -270,6 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
           this.updateVisibilityAndValueFourthStep();
           this.renderElementsStep3();
           this.renderElementMobileStep1();
+          this.updateSubmitTextBtn();
         });
       });
 
@@ -282,6 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
           this.updateSelectedInputValueJson();
           this.updateVisibilityBreadcrumb();
           this.renderElementMobileStep1();
+          this.updateSubmitTextBtn();
         });
       });
 
@@ -331,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
 
-      this.btnSubmit.addEventListener('click', () => {
+      this.btnSubmitPanel.addEventListener('click', () => {
         console.log('submit');
         // console.log('Value of selected radio button:', this.selectedInputValueJson);
         // console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
@@ -640,54 +644,84 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     };
 
+    updateSubmitTextBtn() {
+      const oneProuduct = document.querySelector('.landing-button-submit-one')
+      const bundleProduct = document.querySelector('.landing-button-submit-bundle')
+
+      console.log('Selected input value in submit text:', this.selectedInputValueJson);
+      
+      if (this.selectedInputValueJson.position !== 3) {
+        bundleProduct.classList.add('show-lading-submit-btn');
+        oneProuduct.classList.remove('show-lading-submit-btn');
+      } else {
+        bundleProduct.classList.remove('show-lading-submit-btn');
+        oneProuduct.classList.add('show-lading-submit-btn');
+      }
+
+      this.btnSumbitText.innerHTML =
+        `
+          <span class="landing-submit-text__discount">${this.selectedInputValueJson.discountPercent} $</span>
+        `;
+    }
 
     updateAnchorValue() {
       console.log('Add to cart');
       const anchorID = document.getElementById('landing-add-sidecard');
       const productIdStep1 = this.selectedInputValueJson;
-      const valeStep4 = this.selectedInputValueStep4;
+      // const valeStep4 = this.selectedInputValueStep4;
       const productIdStep4 = this.selectedInputValueJsonStep4;
+      // console.log('valeStep4', valeStep4)
       console.log('productIdStep1', productIdStep1);
-      console.log('valeStep4', valeStep4)
       console.log('productIdStep4', productIdStep4);
       let currentHref = anchorID.getAttribute('href');
-      let selectedProductId = productIdStep1.id;
-      console.log('selectedProductId', selectedProductId);
+      // let selectedProductId = productIdStep1.id;
+      // console.log('selectedProductId', selectedProductId);
 
       // Obtener el producto correspondiente según la posición
-      // const selectedProductId = (productIdStep1.position === 1 && productIdStep4.position === 1) 
-      // ? productIdStep4.id 
-      // : (productIdStep1.position === 1 && productIdStep4.position !== 1) 
-      //   ? productIdStep1.id 
-      //   : productIdStep1.id;
+      const selectedProductId = (productIdStep1.position === 1 && productIdStep4.position === 1) 
+      ? productIdStep4.id 
+      : (productIdStep1.position === 1 && productIdStep4.position !== 1) 
+        ? productIdStep1.id 
+        : productIdStep1.id;
+
 
       const href = currentHref.split('add')[0]
 
       if (productIdStep1.position === 1) {
         if (productIdStep4.position === 1) {
-          selectedProductId = productIdStep4.id;
           currentHref = `${href}add?id=${selectedProductId}&selling_plan=${productIdStep4.sellingPlanId}&quantity=1`
         } else {
-          selectedProductId = productIdStep1.id;
           currentHref = `${href}add?id=${selectedProductId}&quantity=1`
         }
+      } else {
+        currentHref = `${href}add?id=${selectedProductId}&quantity=1`
       }
 
+      // if (productIdStep1.position === 1) {
+      //   if (productIdStep4.position === 1) {
+      //     selectedProductId = productIdStep4.id;
+      //     currentHref = `${href}add?id=${selectedProductId}&selling_plan=${productIdStep4.sellingPlanId}&quantity=1`
+      //   } else {
+      //     selectedProductId = productIdStep1.id;
+      //     currentHref = `${href}add?id=${selectedProductId}&quantity=1`
+      //   }
+      // }
+      console.log('selectedProductId', selectedProductId);
       console.log(currentHref, selectedProductId)
-      anchorID.setAttribute('href', currentHref);
+      // anchorID.setAttribute('href', currentHref);
       // currentHref = `${href}add?id=${selectedProductId}&quantity=1`
       // console.log('currentHref', currentHref);
       // console.log('anchor', anchorID);
 
       // currentHref = `${href}add?id=${selectedProductId}&selling_plan=5012914415&quantity=1`
-      // anchorID.href = currentHref;
+      anchorID.href = currentHref;
       // console.log('hola')
       // console.log('currentHref', currentHref);
-      // console.log('anchor', anchorID);
+      console.log('anchor', anchorID);
 
       setTimeout(() => {
         anchorID.click();
-      }, 2000);
+      }, 2200);
 
       
       //  let formData2 = {

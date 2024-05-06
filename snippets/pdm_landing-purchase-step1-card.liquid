@@ -48,14 +48,16 @@
 
   <div class="step1-card-value-props">
     {% comment %} value props {% endcomment %}
-    {% if productInfo.doctor_recommendation != blank %}
-      <div class="step1-value-doctor">
-        {% render 'pdm_landing-purchase-icons', icon: 'check-doctor' %}
-        <p>{{ productInfo.doctor_recommendation }}</p>
+    <div class="step1-card-value-props-wrapper">
+      {% if productInfo.doctor_recommendation != blank %}
+        <div class="step1-value-doctor">
+          {% render 'pdm_landing-purchase-icons', icon: 'check-doctor' %}
+          <p>{{ productInfo.doctor_recommendation }}</p>
+        </div>
+      {% endif %}
+      <div class="step1-value-static-props">
+        {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon | replace: '(cross)', crossIcon }}
       </div>
-    {% endif %}
-    <div class="step1-value-static-props">
-      {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon | replace: '(cross)', crossIcon }}
     </div>
     {% comment %} dropdown {% endcomment %}
     <div class="step1-value-props-dropdown">

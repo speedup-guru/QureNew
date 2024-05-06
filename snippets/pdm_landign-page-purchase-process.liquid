@@ -15,7 +15,6 @@
   assign products1_refill_info = products1.refill_product.value
   assign products1_refill_product = products1.refill_product.value.product_refill.value
 
-
   # each mix product
   ## for to split and general info
   for data in products1_products
@@ -97,11 +96,11 @@
 %}
 
 <script>
-  console.log('mobileProducts1', {{ mobileProducts1 | json }})
+  // console.log('mobileProducts1', {{ mobileProducts1 | json }})
   // console.log("general_settings", {{ general_settings | json }});
   // console.log('products2', {{products2 |  json}})
   // console.log('products2_products', {{products2_products |  json}})
-  console.log('products2_type', {{products2_type |  json}})
+  // console.log('products2_type', {{products2_type |  json}})
   // console.log('first_products2_product', {{first_products2_product |  json}})
   // console.log("products1", {{ products1 | json }});
   // console.log("products1_products", {{ products1_products | json }});
@@ -110,7 +109,7 @@
   // console.log("products1_refill_product", {{ products1_refill_product | json }})
   // console.log("products1_refill_info", {{ products1_refill_info | json }})
   // console.log("second_products1_product", {{ second_products1_product | json }});
-  console.log("third_products1_product", {{ third_products1_product.selling_plan_groups[0].selling_plans[0].id | json }});
+  // console.log("third_products1_product", {{ third_products1_product.selling_plan_groups[0].selling_plans[0].id | json }});
   // console.log("products3", {{ products3 | json }});
   // console.log("products3_products", {{ products3_products | json }});
   // console.log("products3_type", {{ products3_type | json }});
@@ -128,10 +127,7 @@
       <p>{{ general_settings.subtitle }}</p>
     </div>
     <div id="landing-breadcrumbs" class="landing-breadcrumbs-main">
-      {% render 'pdm_landing-purchase-breadcrumbs'
-        generalSettings: general_settings,
-        
-      %}
+      {% render 'pdm_landing-purchase-breadcrumbs', generalSettings: general_settings %}
     </div>
     {% comment %} main panel container {% endcomment %}
     <div id="main-panel-lading">
@@ -183,48 +179,46 @@
         {% comment %} mobile {% endcomment %}
         <div id="landing-purchase-mobile" class="landing-purchase-mobile">
           {% render 'pdm_landing-purchase-step1-cards-container-mobile',
-           productOne: third_products1_product,
-           productOneInfo: products1_product_3_month,
-           productTwo: second_products1_product,
-           productTwoInfo: products1_product_2_month,
-           productThree: first_products1_product,
-           productThreeInfo: products1_product_1_month,
-           name: 'products1',
-           checkIcon: checkIcon,
-           crossIcon: crossIcon
+            productOne: third_products1_product,
+            productOneInfo: products1_product_3_month,
+            productTwo: second_products1_product,
+            productTwoInfo: products1_product_2_month,
+            productThree: first_products1_product,
+            productThreeInfo: products1_product_1_month,
+            name: 'products1',
+            checkIcon: checkIcon,
+            crossIcon: crossIcon
           %}
-         {% comment %} products2 / silver {% endcomment %}
+          {% comment %} products2 / silver {% endcomment %}
           {% render 'pdm_landing-purchase-step1-cards-container-mobile',
-           productOne: third_products2_product,
-           productOneInfo: products2_product_3_month,
-           productTwo: second_products2_product,
-           productTwoInfo: products2_product_2_month,
-           productThree: first_products2_product,
-           productThreeInfo: products2_product_1_month,
-           name: 'products2',
-           checkIcon: checkIcon,
-           crossIcon: crossIcon
+            productOne: third_products2_product,
+            productOneInfo: products2_product_3_month,
+            productTwo: second_products2_product,
+            productTwoInfo: products2_product_2_month,
+            productThree: first_products2_product,
+            productThreeInfo: products2_product_1_month,
+            name: 'products2',
+            checkIcon: checkIcon,
+            crossIcon: crossIcon
           %}
- 
-         {% comment %} products3 / gold {% endcomment %}
-         {% render 'pdm_landing-purchase-step1-cards-container-mobile',
-           productOne: third_products3_product,
-           productOneInfo: products3_product_3_month,
-           productTwo: second_products3_product,
-           productTwoInfo: products3_product_2_month,
-           productThree: first_products3_product,
-           productThreeInfo: products3_product_1_month,
-           name: 'products3',
-           checkIcon: checkIcon,
-           crossIcon: crossIcon
-         %}
+
+          {% comment %} products3 / gold {% endcomment %}
+          {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+            productOne: third_products3_product,
+            productOneInfo: products3_product_3_month,
+            productTwo: second_products3_product,
+            productTwoInfo: products3_product_2_month,
+            productThree: first_products3_product,
+            productThreeInfo: products3_product_1_month,
+            name: 'products3',
+            checkIcon: checkIcon,
+            crossIcon: crossIcon
+          %}
         </div>
-           
-          
       </div>
       {% comment %} panel 2 {% endcomment %}
       <div id="landing-step-two" class="landing-panel panel-hidden">
-        {% render 'pdm_landing-purchase-step2-inputs' 
+        {% render 'pdm_landing-purchase-step2-inputs',
           products1_type: products1_type,
           products2_type: products2_type,
           products3_type: products3_type,
@@ -233,11 +227,11 @@
       </div>
       {% comment %} panel 3 {% endcomment %}
       <div id="landing-step-three" class="landing-panel panel-hidden">
-       {% render 'pdm_landing-purchase-step3-inptus', 
-        generalSettings: general_settings,
-        nameOne: 'step3-price-one',
-        nameTwo: 'step3-price-two',
-       %}
+        {% render 'pdm_landing-purchase-step3-inptus',
+          generalSettings: general_settings,
+          nameOne: 'step3-price-one',
+          nameTwo: 'step3-price-two'
+        %}
       </div>
       {% comment %} panel 4 {% endcomment %}
       <div id="landing-step-fourth" class="landing-panel panel-hidden">
@@ -245,7 +239,7 @@
           <h3>{{ general_settings.step_4_title }}</h3>
         </div>
         <div class="landing-fourth-inputs-container">
-          {% render 'pdm_landing-purchase-step4-inputs' 
+          {% render 'pdm_landing-purchase-step4-inputs',
             productRefill: products1_refill_product,
             productRefillInfo: products1_refill_info,
             generalSettings: general_settings,
@@ -256,7 +250,7 @@
             parentContainer: 'parent-products4',
             name: 'products4'
           %}
-          {% render 'pdm_landing-purchase-step4-inputs'
+          {% render 'pdm_landing-purchase-step4-inputs',
             productRefill: products2_refill_product,
             productRefillInfo: products2_refill_info,
             generalSettings: general_settings,
@@ -267,7 +261,7 @@
             parentContainer: 'parent-products5',
             name: 'products5'
           %}
-          {% render 'pdm_landing-purchase-step4-inputs' 
+          {% render 'pdm_landing-purchase-step4-inputs',
             productRefill: products3_refill_product,
             productRefillInfo: products3_refill_info,
             generalSettings: general_settings,
@@ -280,61 +274,26 @@
           %}
         </div>
       </div>
-      <button
+      {% comment %}
+        <button
           id="landing-submit-2"
           class="lading-button-submit"
         >
           submit
         </button>
-    </div>
-    {% comment %} buttons {% endcomment %}
-    <div>
-      <button
-        id="landing-test"
-      >
-        test
-      </button>
-      <button
-        class="landing-back-btn"
-        id="landing-back"
-      >
-        <div class="landing-back-btn-wrapper">
-          <div class="landing-arrow-left">
-            {% render 'pdm_landing-purchase-icons', icon: 'arrow-left' %}
-          </div>
-          <span>{{ general_settings.button_back }}</span>
-        </div>
-      </button>
-      <button
-        id="landing-next"
-        class="landing-next-btn"
-      >
-      <div class="landing-next-btn-wrapper">
-        <span>
-          {{ general_settings.button_next }}
-        </span>
-        <div class="landing-arrow-right">
-          {% render 'pdm_landing-purchase-icons', icon: 'arrow-right' %}
-        </div>  
+      {% endcomment %}
+      <div class="landing-buttons-container">
+        {% comment %} left {% endcomment %}
+          <a 
+            hidden
+            href="{{ routes.cart_add_url }}"
+            id="landing-add-sidecard"
+            class="btn btn-primary buy_btn event_btn"
+            data-ajax-cart-request-button
+          >
+          </a>
+        {% render 'pdm_landing-purchase-buttons', generalSettings: general_settings %}
       </div>
-      </button>
-      <div style="padding: 20px 20px">
-        <a
-          hidden
-          href="{{ routes.cart_add_url }}"
-          id="landing-add-sidecard"
-          class="btn btn-primary buy_btn event_btn"
-          data-ajax-cart-request-button
-        >
-          add to sidecard
-        </a>
-        <button
-          id="landing-submit"
-        >
-          submit
-        </button>
-      </div>
-    </div>
+    </div>  
   </div>
-
 </section>
