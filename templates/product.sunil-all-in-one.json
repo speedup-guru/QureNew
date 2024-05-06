@@ -155,6 +155,7 @@
         "image_KK9rFk",
         "content_3tryDW"
       ],
+      "disabled": true,
       "custom_css": [
         ".img-fluid {max-width: 250px; display: block; margin: 0 auto;}",
         ".richtext_prog_section .it_info p {margin-bottom: 30px !important;}",
@@ -164,6 +165,14 @@
         "classname": "richtext_prog_section section",
         "column_image": 5,
         "column_content": 7
+      }
+    },
+    "one_column_box_km8xV4": {
+      "type": "one-column-box",
+      "settings": {
+        "heading": "Everything you need in one serum",
+        "text": "<p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare<\/p>",
+        "classname": "skincare_routine section"
       }
     },
     "before_after_box_J7Ee7E": {
@@ -727,6 +736,7 @@
     "main",
     "featuredin_MiWihW",
     "two_column_box_TyH4EK",
+    "one_column_box_km8xV4",
     "before_after_box_J7Ee7E",
     "before_after_box_bQQL6y",
     "before_after_box_9qjQBW",
