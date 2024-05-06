@@ -439,6 +439,16 @@
             "text": "<p>\"Qure’s system is far more affordable and convenient than the in office procedure because it’s done in the comfort of your home.\"<\/p><h6><strong>Dr Maren Locke,<\/strong> Board-Certified Dermatologist<\/h6>"
           }
         },
+        "video_DmNX4M": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Aleksandra_Brown.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d5d0c051b43e4117be7b6308e06e8f66.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>I have liked this in between my in-office treatments. It’s convenient, great before events, and safe even for beginners.<\/p><h6><strong>Dr Aleksandra Brown, <\/strong>Board-Certified Dermatologist<\/h6>"
+          }
+        },
         "video_iBtttp": {
           "type": "video",
           "settings": {
@@ -490,16 +500,6 @@
             "text": "<p>The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.<\/p><h6><strong>Dr Dylan Greeney, <\/strong>Board-Certified Dermatologist<\/h6>"
           }
         },
-        "video_DmNX4M": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Dr._Aleksandra_Brown.png",
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d5d0c051b43e4117be7b6308e06e8f66.mp4",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>I have liked this in between my in-office treatments. It’s convenient, great before events, and safe even for beginners.<\/p><h6><strong>Dr Aleksandra Brown, <\/strong>Board-Certified Dermatologist<\/h6>"
-          }
-        },
         "video_ptTnVF": {
           "type": "video",
           "settings": {
@@ -515,12 +515,12 @@
         "feedback_8HdWhe",
         "feedback_kBwhbe",
         "video_KX3Nyw",
+        "video_DmNX4M",
         "video_iBtttp",
         "video_kmVPyX",
         "video_d8Uixm",
         "video_rhRLDB",
         "video_VYhrrF",
-        "video_DmNX4M",
         "video_ptTnVF"
       ],
       "settings": {
