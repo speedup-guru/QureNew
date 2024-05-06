@@ -572,16 +572,6 @@
             "text": "<p>\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"<\/p><h6><strong>Dr Anthony Youn<\/strong> Board-Certified Plastic Surgeon<\/h6>"
           }
         },
-        "video_EN37N8": {
-          "type": "video",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
-            "video_label": "Watch Video",
-            "wistia_id": "",
-            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
-          }
-        },
         "video_zTx4mk": {
           "type": "video",
           "settings": {
@@ -611,6 +601,16 @@
             "wistia_id": "",
             "text": "<p>\"..safe for generally all skin tones and types to perform at home without any risk of infection or trauma.\" <\/p><h6><strong>Dr Prasanthi Purusothman, <\/strong>General Practitioner & Cosmetic Doctor<\/h6>"
           }
+        },
+        "video_EN37N8": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trusted_davim.webp",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=0Lxofv19620",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"<\/p><h6><strong>Dr Davin Lim<\/strong> Board-Certified Dermatologist<\/h6>"
+          }
         }
       },
       "block_order": [
@@ -619,10 +619,10 @@
         "video_76qkgq",
         "video_R7fmpe",
         "video_D7zBLA",
-        "video_EN37N8",
         "video_zTx4mk",
         "video_dcczF3",
-        "video_fbrc7r"
+        "video_fbrc7r",
+        "video_EN37N8"
       ],
       "settings": {
         "classname": "trusted_bl",
