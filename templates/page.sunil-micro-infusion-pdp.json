@@ -441,6 +441,7 @@
         },
         "video_DmNX4M": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Dr._Aleksandra_Brown_4d4a4702-e5b9-41a3-91ee-9adab663c611.png",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d5d0c051b43e4117be7b6308e06e8f66.mp4",
@@ -482,6 +483,7 @@
         },
         "video_rhRLDB": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Dr._Doireann_O_Leary.png",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c6cede4f9b8540ae95912dbc66ab48df.mp4",
@@ -502,6 +504,7 @@
         },
         "video_ptTnVF": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Dr._Prasanthi_Purusothaman.png",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5537bcc1d93146b2a7f84e09b1c41b4b.mp4",
