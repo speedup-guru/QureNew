@@ -502,8 +502,8 @@
         },
         "video_ptTnVF": {
           "type": "video",
-          "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Prasanthi_Purusothaman_1.png",
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5537bcc1d93146b2a7f84e09b1c41b4b.mp4",
             "video_label": "Watch Video",
             "wistia_id": "",
