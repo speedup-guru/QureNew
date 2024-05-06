@@ -629,6 +629,16 @@
             "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"<\/p><h6><strong>Dr Mona Patel<\/strong> Internal Medicine<\/h6>"
           }
         },
+        "video_dyArxL": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dr._Doireann_O_Leary_1.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c6cede4f9b8540ae95912dbc66ab48df.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"It’s an amazing 5-minute facial with minimal to no downtime! I absolutely love this. Ten out of ten from me.\"<\/p><h6><strong>Dr Doireann O’Leary, <\/strong>Medical Doctor<\/h6>"
+          }
+        },
         "video_jPYhQi": {
           "type": "video",
           "settings": {
@@ -648,6 +658,7 @@
         "video_cBVzEm",
         "video_C6tFxe",
         "video_PECKPL",
+        "video_dyArxL",
         "video_jPYhQi"
       ],
       "settings": {
