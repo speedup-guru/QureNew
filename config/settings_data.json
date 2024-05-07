@@ -148,12 +148,6 @@
         "settings": {
         }
       },
-      "7885500093077574326": {
-        "type": "shopify:\/\/apps\/videowise-video-platform-ugc\/blocks\/script_embed\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "11945366711752539959": {
         "type": "shopify:\/\/apps\/zendesk\/blocks\/zendesk_web_widget\/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,

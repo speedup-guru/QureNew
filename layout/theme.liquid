@@ -143,6 +143,7 @@
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'vendor.js' | asset_url }}"></script>
     <script src="{{ 'theme.js' | asset_url }}"></script>
+    <script src="{{ 'custom.js' | asset_url }}"></script>
     <script src="{{ 'qurify-filter-lp.js' | asset_url }}"></script>
     <script src="{{ 'slideLogin.js' | asset_url }}"></script>
     <script src="{{ '__app_trackObject.js' | asset_url }}"></script>
@@ -251,6 +252,9 @@
         {% endif %}
     </script> {% endcomment %}
 
+    <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', sId: '198244' }); }</script>
+    <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+  
 </body>
 
 </html>

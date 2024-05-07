@@ -2,7 +2,7 @@
     <div class="blogs_tab_wrapper">
         <div class="container">
             <ul>
-                {% for link in linklists.new-blog-menu.links %}
+                {% for link in linklists.blog-menu.links %}
                     <li class="blogs_tab">
                         <a href="{{ link.url }}"{% if link.current %} class="active"{% endif %}>{{ link.title }}</a>
                     </li>

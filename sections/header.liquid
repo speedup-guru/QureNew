@@ -19,6 +19,47 @@
     </div>
 </div>
 
+{% for block in section.blocks %}
+    {%- case block.type -%}
+        {% when 'tab' %}
+            {% if block.settings.heading != blank %}
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        $(function() {
+                            var origTitle, animatedTitle, timer;
+                            origTitle = document.title;
+                
+                            function animateTitle(newTitle) {
+                            var currentState = false;
+                            origTitle = document.title; 
+                            animatedTitle = "{{ block.settings.heading }}";
+                            timer = setInterval(startAnimation, 2000);
+                
+                            function startAnimation() {
+                                document.title = currentState ? origTitle : animatedTitle;
+                                currentState = !currentState;
+                                }
+                            }
+                
+                            function restoreTitle() {
+                                clearInterval(timer);
+                                document.title = origTitle; 
+                            }
+                
+                            $(window).blur(function() {
+                                animateTitle();
+                            });
+                
+                            $(window).focus(function() {
+                                restoreTitle();
+                            });
+                        });
+                    });
+                </script> 
+            {% endif %}
+    {%- endcase -%}
+{% endfor %}
+
 <style>
     @media (min-width:1199px) {
         .navbar-nav>li>.dropdown-menu {
@@ -232,6 +273,18 @@
                     "type": "url",
                     "id": "button_url",
                     "label": "t:common.button.url.label"
+                }
+			]
+		},
+		{
+			"type": "tab",
+			"name": "t:sections.header.blocks.tab.name",
+            "limit": 1,
+			"settings": [
+                {
+                    "type" : "text",
+                    "id" : "heading",
+                    "label" : "t:common.heading.label"
                 }
 			]
 		}

@@ -256,6 +256,11 @@
           "name": "Announcement promo",
           "settings": {
           }
+        },
+        "tab": {
+          "name": "Tab title changer",
+          "settings": {
+          }
         }
       }
     },
