@@ -5,7 +5,7 @@
       display: none;
     }
 
-  .new-landing-purchase{
+.new-landing-purchase{
     /* resets */
     
     /* variables */
@@ -331,7 +331,6 @@
       }
 
       
-    }
 
     input[type="radio"]{
       display: none;
@@ -1130,128 +1129,126 @@
 
     /* step3 */
     #landing-step-three{
-      flex-direction: column;
-      gap: 24px;
-      align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    .landing-three-title-container{
+      display: flex;
       justify-content: center;
-      .landing-three-title-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 32px;
-        h3{
-            font-family: 'Poppins';
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.05em;
-            text-align: center;
-            text-transform: uppercase;
-          }
+      align-items: center;
+      padding-bottom: 32px;
+      h3{
+          font-family: 'Poppins';
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.05em;
+          text-align: center;
+          text-transform: uppercase;
         }
       }
-      .landing-three-inputs-container{
+    .landing-three-inputs-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding-bottom: 32px;
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+      }
+      .step3-purchase-card-container{
+        width: 304px;
+        height: auto;
+        border-radius: 24px;
+        border: 2px solid var(--no-active-color);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        padding-bottom: 32px;
-        @media screen and (max-width: 768px){
-          flex-direction: column;
-        }
-        .step3-purchase-card-container{
-          width: 304px;
-          height: auto;
-          border-radius: 24px;
-          border: 2px solid var(--no-active-color);
-          display: flex;
-          flex-direction: column;
-          background-color: white;
-          .step3-card-price-container{
+        flex-direction: column;
+        background-color: white;
+        .step3-card-price-container{
+          width: 100%;
+          height: 108px;
+          background: var(--img-color-silver);
+          border-radius: 22px 22px 0px 0px;
+          .step3-price-normal-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
             width: 100%;
-            height: 108px;
-            background: var(--img-color-silver);
-            border-radius: 22px 22px 0px 0px;
-            .step3-price-normal-container{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap: 8px;
-              width: 100%;
-              height: 100%;
-              .step3-card-price-full{
-                font-family: 'Poppins';
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 32px;
-                letter-spacing: 0.05em;
-                text-align: left;
-                color: #939393;
-                text-decoration: line-through;
-              }
-              .step3-card-price-discount{
-                font-family: 'Poppins';
-                font-size: 32px;
-                font-weight: 500;
-                line-height: 40px;
-                letter-spacing: 0.05em;
-                text-align: left;
-                color: black;
-              }
-            }
-            .step3-price-quota-cotainer{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              height: 100%;
-              .step3-card-price-quota{
-                font-family: 'Poppins';
-                font-size: 32px;
-                font-weight: 500;
-                line-height: 40px;
-                letter-spacing: 0.05em;
-                text-align: left;
-              }
-            }
-  
-          }
-          .step3-card-title-container{
-            background: var(--gradiant-color-silver);
-            .step3-card-title{
-              padding: 16px 24px 16px;
-              border: 1px solid var(--no-active-color);
-              border-radius: 24px;
-              background-color: white;
-              h3{
-                font-family: 'Canela Web';
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 24px;
-                letter-spacing: 0.01em;
-                text-align: center;
-                text-transform: capitalize;
-                margin: 0;
-              }
-          }      
-        }
-        .step3-card-information-container{
-          padding: 12px 51px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .step3-information-text{
-            p{
+            height: 100%;
+            .step3-card-price-full{
               font-family: 'Poppins';
-              font-size: 12px;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 32px;
+              letter-spacing: 0.05em;
+              text-align: left;
+              color: #939393;
+              text-decoration: line-through;
+            }
+            .step3-card-price-discount{
+              font-family: 'Poppins';
+              font-size: 32px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 40px;
+              letter-spacing: 0.05em;
+              text-align: left;
+              color: black;
+            }
+          }
+          .step3-price-quota-cotainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            .step3-card-price-quota{
+              font-family: 'Poppins';
+              font-size: 32px;
+              font-weight: 500;
+              line-height: 40px;
               letter-spacing: 0.05em;
               text-align: left;
             }
           }
-          .step-information-img-container{
+        }
+        .step3-card-title-container{
+          background: var(--gradiant-color-silver);
+          .step3-card-title{
+            padding: 16px 24px 16px;
+            border: 1px solid var(--no-active-color);
+            border-radius: 24px;
+            background-color: white;
+            h3{
+              font-family: 'Canela Web';
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.01em;
+              text-align: center;
+              text-transform: capitalize;
+              margin: 0;
+            }
+          }      
+        }
+      .step3-card-information-container{
+        padding: 12px 51px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .step3-information-text{
+          p{
+            font-family: 'Poppins';
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            text-align: left;
+          }
+        }
+        .step-information-img-container{
             img{
               width: 100%;
               height: auto;
@@ -1260,8 +1257,7 @@
           }
         }
       }   
-      }
-
+    }
     input[type="radio"]:checked + label[for="step3-price-one"],
     input[type="radio"]:checked + label[for="step3-price-two"]{
       .step3-purchase-card-container{
@@ -1276,11 +1272,13 @@
           background: var(--active-color);
           border-color: var(--active-color);
         }
-      
       }
     }
+  }
+
   /* step4 */
   #landing-step-fourth{
+    padding-bottom: 20px;
     .landing-fourth-title-container{
       display: flex;
       justify-content: center;
@@ -1304,6 +1302,7 @@
       @media screen and (max-width: 768px){
         flex-direction: column;
         height: auto;
+        align-items: center;
       }
       .inputs-products4,
       .inputs-products5,
@@ -1322,9 +1321,6 @@
         border: 2px solid var(--no-active-color);
         background-color: white;
         position: relative;
-        @media screen and (max-width: 768px){
-          width: 100%;
-        }
         .step4-card-choise-container{
           position: absolute;
           height: 22px;
@@ -1508,6 +1504,7 @@
 
   /* buttons */
   .landing-buttons-container{
+    padding: 10px 0;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -1702,6 +1699,9 @@
         letter-spacing: 0.04em;
         text-align: left;
         color: white;
+        @media screen and (max-width: 325px){
+          font-size: 12px;
+        }
       }
       svg{
         width: 16px;
@@ -1714,5 +1714,6 @@
       display: block;
     }
   }
+
   
 }
