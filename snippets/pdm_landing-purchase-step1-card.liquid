@@ -61,27 +61,16 @@
     </div>
     {% comment %} dropdown {% endcomment %}
     <div class="step1-value-props-dropdown">
-      <div
-        class="step1-value-dropdown-title"
-        data-bs-toggle="collapse"
-        data-bs-target="#{{ uniqueId }}"
-        aria-expanded="false"
-        aria-controls="{{ uniqueId }}"
-      >
+      <button class="step1-value-dropdown-title" id="{{ parentName }}">
         <div class="step1-value-dropdown-title-wrapper">
           <span class="step1-value-dropdown-title-wrapper__title">{{ productInfo.title_included }}</span>
           <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
         </div>
-        <button id="svg-btn-landing-card-{{ uniqueId }}" class="landing-rotate-svg-button" type="button">
+        <div id="svg-btn-landing-card-{{ uniqueId }}" class="landing-rotate-svg-button">
           {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
-        </button>
-      </div>
-      <div
-        id="{{ uniqueId }}"
-        class="step1-value-dropdown-information collapse"
-        aria-labelledby="headingOne"
-        data-bs-parent=".{{parentName}}"
-      >
+        </div>
+      </button>
+      <div class="step1-value-dropdown-information ">
         {{ productInfo.value_props_included | metafield_tag }}
       </div>
     </div>

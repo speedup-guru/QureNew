@@ -12,9 +12,9 @@
         {{ productInfo.title }}
       </h3>
     {% else %}
-    <h3>
-      {{ generalSettings.step_4_card_title }}
-    </h3>
+      <h3>
+        {{ generalSettings.step_4_card_title }}
+      </h3>
     {% endif %}
   </div>
   <div class="step4-card-information-container">
@@ -44,29 +44,20 @@
           {{ generalSettings.step_4_card_subtitle }}
         </div>
         <div class="step4-card-value-props__information">
-          {{ generalSettings.step_4_card_value_props_1 | metafield_tag | replace: '(cross)', crossIcon}}
+          {{ generalSettings.step_4_card_value_props_1 | metafield_tag | replace: '(cross)', crossIcon }}
         </div>
       {% endif %}
     </div>
     {% comment %} dropwon {% endcomment %}
     {% if cardTypeInfo == 'meta' %}
       <div class="step4-value-props-dropdown">
-        <div
-          class="step4-value-dropdown-title"
-          data-bs-toggle="collapse"
-          data-bs-target="#{{ uniqueId }}"
-          aria-expanded="false"
-          aria-controls="{{ uniqueId }}"        
-        >
+        <button class="step4-value-dropdown-title" >
           <h3>{{ productInfo.dropdown_title }}</h3>
-          <button class="" type="button"> {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}</button>
-        </div>
-        <div
-          class="step4-value-dropdown-content collapse"
-          id="{{ uniqueId }}"
-          aria-labelledby="headingFourth"
-          data-bs-parent=".{{ parentContainer }}"
-        >
+          <div class="landing-rotate-svg-button">
+            {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
+          </div>
+        </button>
+        <div class="step4-value-dropdown-content">
           {{ productInfo.dropdown_value_props | metafield_tag }}
         </div>
       </div>

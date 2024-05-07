@@ -585,6 +585,9 @@
                   justify-content: space-between;
                   align-items: center;
                   height: 32px;
+                  width: 100%;
+                  background-color: transparent;
+                  border: none;
                   .step1-value-dropdown-title-wrapper{
                     display: flex;
                     flex-direction: row;
@@ -611,8 +614,14 @@
                     border: none;
                   }
                 }
+                                  
                 .step1-value-dropdown-information{
+                  display: none;
                   padding-top: 4px;
+                &.show-dropdown{
+                  display: block;
+                  max-height: 60px;
+                }
                   .metafield-rich_text_field{
                     ul{
                       display: flex;
@@ -759,16 +768,19 @@
                   }
                 }
               }
-              .step1-value-props-dropdown{
-                .step1-value-dropdown-title{
-                  border-top: 1px solid var(--active-color);
-                  padding-top: 12px;
+              .step1-mobile-value-props-dropdown{
+                border-top: 1px solid var(--active-color);
+                .step1-mobile-value-dropdown-title{
                   display: flex;
                   flex-direction: row;
                   justify-content: space-between;
+                  width: 100%;
                   align-items: center;
                   height: 32px;
-                  .step1-value-dropdown-title-wrapper{
+                  background-color: transparent;
+                  border: none;
+                  padding-top: 4px;
+                  .step1-mobile-value-dropdown-title-wrapper{
                     display: flex;
                     flex-direction: row;
                     gap: 8px;
@@ -794,8 +806,13 @@
                     border: none;
                   }
                 }
-                .step1-value-dropdown-information{
-                  padding-top: 4px;
+                .step1-mobile-value-dropdown-information{
+                  padding-top: 6px;
+                  display: none;
+                  &.show-dropdown{
+                    display: block;
+                    max-height: 100px;
+                  }
                   .metafield-rich_text_field{
                     ul{
                       display: flex;
@@ -1390,11 +1407,15 @@
           .step4-value-props-dropdown{
             height: auto;
             border-top: 1px solid #C8E6DC;
-            padding-top: 8px;
+            padding-top: 4px;
             .step4-value-dropdown-title{
+              width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: space-between;
+              border: none;
+              background-color: transparent;
+
               h3{
                 font-family: 'Poppins';
                 font-size: 12px;
@@ -1406,7 +1427,12 @@
               }
             }
             .step4-value-dropdown-content{
+              display: none;
               padding-top: 4px;
+              &.show-dropdown{
+                display: block;
+                max-height: 60px;
+              }
               .metafield-rich_text_field{
                 ul{
                   display: flex;

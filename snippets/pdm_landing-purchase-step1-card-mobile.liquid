@@ -34,27 +34,20 @@
     {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon | replace: '(cross)', crossIcon }}
   </div>
   {% comment %} dropdown {% endcomment %}
-  <div class="step1-value-props-dropdown">
-    <div
-      class="step1-value-dropdown-title"
-      data-bs-toggle="collapse"
-      data-bs-target="#{{ uniqueId }}"
-      aria-expanded="false"
-      aria-controls="{{ uniqueId }}"
+  <div class="step1-mobile-value-props-dropdown">
+    <button
+      class="step1-mobile-value-dropdown-title"
     >
-      <div class="step1-value-dropdown-title-wrapper">
+      <div class="step1-mobile-value-dropdown-title-wrapper">
         <span class="step1-value-dropdown-title-wrapper__title">{{ productInfo.title_included }}</span>
         <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
       </div>
-      <button class="" type="button">
+      <div class="landing-rotate-svg-button">
         {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
-      </button>
-    </div>
+      </div>
+    </button>
     <div
-      id="{{ uniqueId }}"
-      class="step1-value-dropdown-information collapse"
-      aria-labelledby="headingOne"
-      data-bs-parent=".{{parentContainer}}"
+      class="step1-mobile-value-dropdown-information"
     >
       {{ productInfo.value_props_included | metafield_tag }}
     </div>

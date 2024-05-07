@@ -4,10 +4,10 @@
   if price_3 == blank
     assign price_3 = 0
   endif
+  assign dropdownId1 = name | append: '-collapse-' | append: '1'
+  assign dropdownId2 = name | append: '-collapse-' | append: '2'
+  assign dropdownId3 = name | append: '-collapse-' | append: '3'
 
-  assign parentContainer = 'parent' | append: '-' | append: name
-  assign parentContainer2 = 'parent' | append: '-' | append: name
-  assign parentContainer3 = 'parent' | append: '-' | append: name
 %}
 <div
   id="inputs-{{ name }}"
@@ -36,8 +36,8 @@
     {% render 'pdm_landing-purchase-step1-card', 
       productData: productOne, 
       productInfo: productOneInfo
-      uniqueId: 'collapseOne'
-      parentContainer: parentContainer,
+      uniqueId: 'collapse1'
+      parentContainer: dropdownId1,
       checkIcon: checkIcon,
       crossIcon: crossIcon,
       starIcon: starIcon
@@ -66,7 +66,7 @@
       productData: productTwo, 
       productInfo: productTwoInfo 
       uniqueId: 'collapseTwo'
-      parentContainer: parentContainer,
+      parentContainer: dropdownId2,
       checkIcon: checkIcon,
       crossIcon: crossIcon,
       starIcon: starIcon
@@ -95,7 +95,7 @@
       productData: productThree, 
       productInfo: productThreeInfo 
       uniqueId: 'collapseThree'
-      parentContainer: parentContainer,
+      parentContainer: dropdownId3,
       checkIcon: checkIcon,
       crossIcon: crossIcon,
       starIcon: starIcon

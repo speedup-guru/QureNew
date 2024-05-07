@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
       this.breadCrumbsButtons = document.querySelectorAll('.landing-breadcrumbs-item__btn');
       this.mobileCardContainer = document.getElementById('landing-purchase-mobile');
-      this.svgButtonsCard = document.querySelectorAll('.step1-value-dropdown-title');
+      // this.svgButtonsCard = document.querySelectorAll('.step1-value-dropdown-title');
       // this.btnSubmitPanel = document.getElementById('landing-submit-2');
       this.selectedInputValue = null;
       this.selectedInputValueJson = null;
@@ -343,24 +343,24 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
 
-      this.svgButtonsCard.forEach(container => {
-        container.addEventListener('click', function () {
-          let button = this.querySelector('.landing-rotate-svg-button');
-          let collapseId = this.getAttribute('data-bs-target');
-          let collapseElement = document.querySelector(collapseId);
-          let isCollapseVisible = collapseElement.classList.contains('show');
-          let isButtonRotated = button.classList.contains('rotate-svg-btn');
+      // this.svgButtonsCard.forEach(container => {
+      //   container.addEventListener('click', function () {
+      //     let button = this.querySelector('.landing-rotate-svg-button');
+      //     let collapseId = this.getAttribute('data-bs-target');
+      //     let collapseElement = document.querySelector(collapseId);
+      //     let isCollapseVisible = collapseElement.classList.contains('show');
+      //     let isButtonRotated = button.classList.contains('rotate-svg-btn');
       
-          button.classList.toggle('rotate-svg-btn');
+      //     button.classList.toggle('rotate-svg-btn');
       
-          if (!isCollapseVisible && !isButtonRotated) {
-            collapseElement.classList.add('show');
-          } 
-          else if (isCollapseVisible && isButtonRotated) {
-            collapseElement.classList.remove('show');
-          }
-        });
-      });
+      //     if (!isCollapseVisible && !isButtonRotated) {
+      //       collapseElement.classList.add('show');
+      //     } 
+      //     else if (isCollapseVisible && isButtonRotated) {
+      //       collapseElement.classList.remove('show');
+      //     }
+      //   });
+      // });
 
     }
 
@@ -565,9 +565,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
     
-
-    
-
     updateVisibilityBreadcrumb() {
       const breadCrumb4 = document.querySelector('.breadStep-4');
       // console.log('Selected input value in bread fx:', this.selectedInputValueJson);
@@ -763,6 +760,74 @@ document.addEventListener('DOMContentLoaded', function () {
   const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');
   // end purchase landing page
 
-});
+  // works better outside of the class
+  // dropsdown
+  
+  // step1
+  // const dropdownContainersStep1 = document.querySelectorAll('.step1-value-props-dropdown');
+  // if(dropdownContainersStep1){
+  //   dropdownContainersStep1.forEach(function(container) {
+  //     const dropdownButton = container.querySelector('.step1-value-dropdown-title');
+  //     const dropdownContent = container.querySelector('.step1-value-dropdown-information');
+  //     const button = container.querySelector('.landing-rotate-svg-button');
+  
+  //     dropdownButton.addEventListener('click', function() {
+  //       dropdownContent.classList.toggle('show-dropdown');
+  //       button.classList.toggle('rotate-svg-btn');
+  //     });
+  //   });
+  // }
 
+  // // mobile
+  // const dropdownContainersStep1Mobile = document.querySelectorAll('.step1-mobile-value-props-dropdown');
+  // if(dropdownContainersStep1Mobile){
+  //   dropdownContainersStep1Mobile.forEach(function(container) {
+  //     const dropdownButton = container.querySelector('.step1-mobile-value-dropdown-title');
+  //     const dropdownContent = container.querySelector('.step1-mobile-value-dropdown-information');
+  //     const button = container.querySelector('.landing-rotate-svg-button');
+  
+  //     dropdownButton.addEventListener('click', function() {
+  //       dropdownContent.classList.toggle('show-dropdown');
+  //       button.classList.toggle('rotate-svg-btn');
+  //     });
+  //   });
+  // }
+
+  // // step4
+  // const dropdownContainersStep4 = document.querySelectorAll('.step4-value-props-dropdown');
+  // if(dropdownContainersStep4){
+  //   dropdownContainersStep4.forEach(function(container) {
+  //     const dropdownButton = container.querySelector('.step4-value-dropdown-title');
+  //     const dropdownContent = container.querySelector('.step4-value-dropdown-content');
+  //     const button = container.querySelector('.landing-rotate-svg-button');
+  
+  //     dropdownButton.addEventListener('click', function() {
+  //       dropdownContent.classList.toggle('show-dropdown');
+  //       button.classList.toggle('rotate-svg-btn');
+  //     });
+  //   });
+  // }
+  function setupDropdowns(containerSelector, buttonSelector, contentSelector) {
+    const dropdownContainers = document.querySelectorAll(containerSelector);
+    if (dropdownContainers) {
+      dropdownContainers.forEach(function(container) {
+        const dropdownButton = container.querySelector(buttonSelector);
+        const dropdownContent = container.querySelector(contentSelector);
+        const button = container.querySelector('.landing-rotate-svg-button');
+  
+        dropdownButton.addEventListener('click', function() {
+          dropdownContent.classList.toggle('show-dropdown');
+          button.classList.toggle('rotate-svg-btn');
+        });
+      });
+    }
+  }
+  
+  setupDropdowns('.step1-value-props-dropdown', '.step1-value-dropdown-title', '.step1-value-dropdown-information');
+  setupDropdowns('.step1-mobile-value-props-dropdown', '.step1-mobile-value-dropdown-title', '.step1-mobile-value-dropdown-information');
+  setupDropdowns('.step4-value-props-dropdown', '.step4-value-dropdown-title', '.step4-value-dropdown-content');
+
+  // end dropdown
+
+});
 
