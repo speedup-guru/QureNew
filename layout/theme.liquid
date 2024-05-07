@@ -251,40 +251,6 @@
         {% endif %}
     </script> {% endcomment %}
 
-    <script>
-        console.log('aaaaqqqq7771');
-        $(function() {
-            console.log('aaaaqqqq777');
-            var origTitle, animatedTitle, timer;
-            origTitle = document.title;
-
-            function animateTitle(newTitle) {
-            var currentState = false;
-            origTitle = document.title; 
-            animatedTitle = "🧡 we miss u!";
-            timer = setInterval(startAnimation, 2000);
-
-            function startAnimation() {
-                document.title = currentState ? origTitle : animatedTitle;
-                currentState = !currentState;
-                }
-            }
-
-            function restoreTitle() {
-                clearInterval(timer);
-                document.title = origTitle; 
-            }
-
-            $(window).blur(function() {
-                animateTitle();
-            });
-
-            $(window).focus(function() {
-                restoreTitle();
-            });
-        });
-    </script>
-
     <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', sId: '198244' }); }</script>
     <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
   
