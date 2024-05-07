@@ -33,4 +33,7 @@
     .mi_landing .shipping.one_line .s_bx p {
         width: 130px;
     }
+    .bf-bundles__item-before:has-text("€") {
+        font-size: 26px;
+    }    
 }
