@@ -40,18 +40,11 @@
               "button_label": "SAVE UPTO 55%",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
-          },
-          "tab_gtC6HE": {
-            "type": "tab",
-            "settings": {
-              "heading": "🧡 we miss you so much!"
-            }
           }
         },
         "block_order": [
           "announcement-promotion_L6B7qD",
-          "announcement_TPxBgi",
-          "tab_gtC6HE"
+          "announcement_TPxBgi"
         ],
         "settings": {
         }
