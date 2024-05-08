@@ -1,0 +1,37 @@
+{% comment %} 
+
+This Shopify snippet is used to display a single slide within an upsell product carousel. The following parameters are expected:
+
+- image_slide: String. URL of the product image.
+- title_copy: String. Title of the product.
+- description_copy: String. Description of the product.
+- product: Object. Contains details of the product, including pricing and variant information. Utilized for displaying prices and adding the product to the cart.
+
+usage: {% render 'endrock_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_neck_decolletage   %}
+
+{% endcomment %}
+
+<div class="swiper-slide upsell_main">
+  <div class="upsell_image">
+    <div class="upsell_product">
+      <img src="{{ image_slide }}">
+    </div>
+    <div class="upsell_content">
+      <h4>{{ title_copy }}</h4>
+      <p>{{ description_copy }}</p>
+    </div>
+  </div>
+  <div class="upsell_price">
+    <div class="upsell_amt">
+      <span>{{ product_slide.compare_at_price | money_without_trailing_zeros  }}</span>
+      <i class="money">{{ product_slide.price | money_without_trailing_zeros  }}</i>
+    </div>
+    <a href="{{ routes.cart_add_url }}?id={{ product_slide.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+      {{ 'sections.cart.upsell_add' | t }}
+      <div class="upsell_amt">
+        <span>{{ product_slide.compare_at_price | money_without_trailing_zeros  }}</span>
+        <i class="money">{{ product_slide.price | money_without_trailing_zeros  }}</i>
+      </div>
+    </a>
+  </div>
+</div>
