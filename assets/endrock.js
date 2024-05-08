@@ -107,11 +107,6 @@ const verifyCustomer = () => {
   
 }
 
-
-window.addEventListener("ig:ready", () => { 
-  
-});
-
 document.addEventListener('DOMContentLoaded', function() {
 
   // Start Cross-sell page targeting validation
