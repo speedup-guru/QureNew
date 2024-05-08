@@ -22,18 +22,16 @@
   <script>
     // align cards center when they nedded
     const displayCard = () => {
-      if(document.body.hasAttribute("data-variantb-upsell-carousel")){
         const customUpsell = document.querySelector(".my-floating-cart form.my-cart .custom_upsell .swiper-wrapper");
         if (!customUpsell) return;
         const shouldCenterSlide = customUpsell.querySelectorAll(".swiper-slide").length <= 2;
         customUpsell.classList.toggle('align-slide', shouldCenterSlide);
-      }
     }
     //create swiper Upsell 
     const upsellSwiper = () => {
       const isMobile = window.innerWidth <= 768;
       if(isMobile){
-        return new Swiper('.swiper.custom_upsell.variant_v', {
+        return new Swiper('.swiper.custom_upsell', {
           slidesPerView: "auto",
           centeredSlides: false,
           slidesOffsetAfter: 20, 
@@ -46,7 +44,7 @@
           }
         });
       }else{
-        return new Swiper('.swiper.custom_upsell.variant_v', {
+        return new Swiper('.swiper.custom_upsell', {
           slidesPerView: "auto",
           centeredSlides: false,
           slidesOffsetAfter: 20, 
@@ -66,34 +64,25 @@
     }
     //show upsell data only if the contain product
     const showUpsell = () => {
-      if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
         const myCart = document.querySelector('form.my-cart');
         if (myCart) {
           const upsell = myCart.querySelector('.swiper.custom_upsell');
           if (upsell) {
-            const upsellProducts = document.querySelectorAll('.swiper-slide.upsell_main.variant_v');
+            const upsellProducts = document.querySelectorAll('.swiper-slide.upsell_main');
             const hasUpsellProducts = upsellProducts.length == 0;
             upsell.classList.toggle('notVisible', hasUpsellProducts);
           }
         }
-      }
     };
     //init functionalities swiper upsell by pdm
     const initUpsellSwiper = () => {
       displayCard();
       showUpsell();
       const upsell = upsellSwiper();
-      if(document.body.hasAttribute('data-variantc-upsell-carousel')){
-        if(upsell){
-          upsell.init();
-        }
-      }
-      if(document.body.hasAttribute('data-variantb-upsell-carousel')){
         const isMobile = window.innerWidth <= 1179;
         if(isMobile && upsell){
           upsell.init();
         }
-      }
     }
     window.initUpsellSwiper =   initUpsellSwiper; 
   </script>

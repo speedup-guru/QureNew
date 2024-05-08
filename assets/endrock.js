@@ -109,9 +109,7 @@ const verifyCustomer = () => {
 
 
 window.addEventListener("ig:ready", () => { 
-  if(document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')){
-    initUpsellSwiper();
-  }
+  
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -263,6 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
   // end PDP: Before & After First Image 
 
+  initUpsellSwiper(); //swiper for carousel upsell
 });
 
 
