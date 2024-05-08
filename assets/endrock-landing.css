@@ -170,8 +170,8 @@
               position: relative;
             }
 
-            .landing-breadcrumbs-item:hover::after,
-            .landing-breadcrumbs-item:hover::before {
+            .landing-breadcrumbs-item.active-arrow::after,
+            .landing-breadcrumbs-item.active-arrow::before {
               background-color: #c8e6dc;
             }
 
@@ -189,8 +189,8 @@
               border-bottom: #c8e6dc 2px solid;
               z-index: -1;
             }
-
-            .breadcrumb-arrow-shape-start-cricle:hover
+            
+            .breadcrumb-arrow-shape-start-cricle.active-start-circle
               .landing-breadcrumbs-item__btn::after {
               background-color: #c8e6dc;
             }
@@ -203,10 +203,12 @@
               background-color: unset;
             }
 
-            .breadcrumb-arrow-shape-start-cricle.landing-breadcrumbs-item:hover::after,
-            .breadcrumb-arrow-shape-start-cricle.landing-breadcrumbs-item:hover::before {
+            .breadcrumb-arrow-shape-start-cricle.active-start-circle.landing-breadcrumbs-item::after,
+            .breadcrumb-arrow-shape-start-cricle.active-start-circle.landing-breadcrumbs-item::before {
               background: linear-gradient(to right, transparent 50%, #c8e6dc 50%);
             }
+
+            
 
             .breadcrumb-arrow-shape-end-cricle .landing-breadcrumbs-item__btn::after {
               content: '';
@@ -223,7 +225,7 @@
               z-index: -1;
             }
 
-            .breadcrumb-arrow-shape-end-cricle:hover .landing-breadcrumbs-item__btn::after {
+            .breadcrumb-arrow-shape-end-cricle.active-end-circle .landing-breadcrumbs-item__btn::after {
               background-color: #c8e6dc;
             }
 
@@ -234,8 +236,8 @@
               width: 90%;
             }
 
-            .breadcrumb-arrow-shape-end-cricle.landing-breadcrumbs-item:hover::after,
-            .breadcrumb-arrow-shape-end-cricle.landing-breadcrumbs-item:hover::before {
+            .breadcrumb-arrow-shape-end-cricle.landing-breadcrumbs-item.active-end-circle::after,
+            .breadcrumb-arrow-shape-end-cricle.landing-breadcrumbs-item.active-end-circle::before {
               background: linear-gradient(to left, transparent 50%, #c8e6dc 50%);
             }
 

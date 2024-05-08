@@ -253,6 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateVisibilityBreadcrumb();
       this.renderElementMobileStep1();
       this.updateSubmitTextBtn();
+      // this.fillBreadCrumbs();
 
       // assing
       const firstStep2RadioButton = document.querySelector('#step2-select input[type="radio"]:checked');
@@ -320,11 +321,15 @@ document.addEventListener('DOMContentLoaded', function () {
       // buttons
       this.btnNext.addEventListener('click', () => {
         this.nextPanel();
+        // this.fillBreadCrumbs();
+
         this.updateBreadcrumbContent('addText');
       });
 
       this.btnBack.addEventListener('click', () => {
         this.backPanel();
+        // this.fillBreadCrumbs();
+
         this.updateBreadcrumbContent('removeText');
       });
 
@@ -408,8 +413,38 @@ document.addEventListener('DOMContentLoaded', function () {
         this.indexPanel = index;
         this.updateButtons();
       }
-
     }
+
+    // fillBreadCrumbs() {
+    //   console.log('fillBreadCrumbs');
+    //   const breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
+    
+    //   breadCrumbsItems.forEach((item, index) => {
+    //     if (item.classList.contains('active-breadcrumb')) {
+    //       item.classList.add(`breadStep-${index + 1}`);
+    //       if (index === 0) {
+    //         item.classList.add('active-start-circle');
+    //       } else {
+    //         item.classList.remove('active-start-circle');
+    //       }
+    //       if (index === breadCrumbsItems.length - 1) {
+    //         item.classList.add('active-end-circle');
+    //       } else {
+    //         item.classList.remove('active-end-circle');
+    //       }
+    //       if (index > 0 && index < breadCrumbsItems.length - 1) {
+    //         item.classList.add('active-arrow');
+    //       } else {
+    //         item.classList.remove('active-arrow');
+    //       }
+    //     } else {
+    //       item.classList.remove(`breadStep-${index + 1}`);
+    //       item.classList.remove('active-start-circle');
+    //       item.classList.remove('active-end-circle');
+    //       item.classList.remove('active-arrow');
+    //     }
+    //   });
+    // }
 
     updateButtons() {
       // Ocultar el botón de retroceso en el primer panel
