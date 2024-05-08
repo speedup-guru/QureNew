@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.updateVisibilityBreadcrumb();
       this.renderElementMobileStep1();
       this.updateSubmitTextBtn();
-      // this.fillBreadCrumbs();
+      this.fillBreadCrumbs();
 
       // assing
       const firstStep2RadioButton = document.querySelector('#step2-select input[type="radio"]:checked');
@@ -285,6 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
           this.renderElementsStep3();
           this.updateSelectedInputValueJson();
           this.updateVisibilityBreadcrumb();
+          this.fillBreadCrumbs();
           this.renderElementMobileStep1();
           this.updateSubmitTextBtn();
         });
@@ -321,15 +322,13 @@ document.addEventListener('DOMContentLoaded', function () {
       // buttons
       this.btnNext.addEventListener('click', () => {
         this.nextPanel();
-        // this.fillBreadCrumbs();
-
+        this.fillBreadCrumbs();
         this.updateBreadcrumbContent('addText');
       });
 
       this.btnBack.addEventListener('click', () => {
         this.backPanel();
-        // this.fillBreadCrumbs();
-
+        this.fillBreadCrumbs();
         this.updateBreadcrumbContent('removeText');
       });
 
@@ -346,26 +345,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
         this.updateAnchorValue();
       });
-
-
-      // this.svgButtonsCard.forEach(container => {
-      //   container.addEventListener('click', function () {
-      //     let button = this.querySelector('.landing-rotate-svg-button');
-      //     let collapseId = this.getAttribute('data-bs-target');
-      //     let collapseElement = document.querySelector(collapseId);
-      //     let isCollapseVisible = collapseElement.classList.contains('show');
-      //     let isButtonRotated = button.classList.contains('rotate-svg-btn');
-      
-      //     button.classList.toggle('rotate-svg-btn');
-      
-      //     if (!isCollapseVisible && !isButtonRotated) {
-      //       collapseElement.classList.add('show');
-      //     } 
-      //     else if (isCollapseVisible && isButtonRotated) {
-      //       collapseElement.classList.remove('show');
-      //     }
-      //   });
-      // });
 
     }
 
@@ -410,41 +389,11 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         })
         this.breadCrumbsItems[index].classList.add('active-breadcrumb');
+        this.fillBreadCrumbs();
         this.indexPanel = index;
         this.updateButtons();
       }
     }
-
-    // fillBreadCrumbs() {
-    //   console.log('fillBreadCrumbs');
-    //   const breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
-    
-    //   breadCrumbsItems.forEach((item, index) => {
-    //     if (item.classList.contains('active-breadcrumb')) {
-    //       item.classList.add(`breadStep-${index + 1}`);
-    //       if (index === 0) {
-    //         item.classList.add('active-start-circle');
-    //       } else {
-    //         item.classList.remove('active-start-circle');
-    //       }
-    //       if (index === breadCrumbsItems.length - 1) {
-    //         item.classList.add('active-end-circle');
-    //       } else {
-    //         item.classList.remove('active-end-circle');
-    //       }
-    //       if (index > 0 && index < breadCrumbsItems.length - 1) {
-    //         item.classList.add('active-arrow');
-    //       } else {
-    //         item.classList.remove('active-arrow');
-    //       }
-    //     } else {
-    //       item.classList.remove(`breadStep-${index + 1}`);
-    //       item.classList.remove('active-start-circle');
-    //       item.classList.remove('active-end-circle');
-    //       item.classList.remove('active-arrow');
-    //     }
-    //   });
-    // }
 
     updateButtons() {
       // Ocultar el botón de retroceso en el primer panel
@@ -601,15 +550,53 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     updateVisibilityBreadcrumb() {
+      const breadCrumbWrapper = document.querySelector('.landing-breadcrumbs-wrapper');
       const breadCrumb4 = document.querySelector('.breadStep-4');
+      const breadCrumb3 = document.querySelector('.breadStep-3');
       // console.log('Selected input value in bread fx:', this.selectedInputValueJson);
       // console.log('bread', breadCrumb4)
       if (this.selectedInputValueJson.position !== 1) {
+        breadCrumbWrapper.setAttribute('data-hide-breadcrumb4', 'true')
         breadCrumb4.classList.add('hide-breadcrumbs');
+        breadCrumb3.classList.add('breadcrumb-arrow-shape-end-cricle')
       } else {
+        breadCrumbWrapper.removeAttribute('data-hide-breadcrumb4');
         breadCrumb4.classList.remove('hide-breadcrumbs');
+        breadCrumb3.classList.remove('breadcrumb-arrow-shape-end-cricle')
       }
     }
+
+    fillBreadCrumbs() {
+      const activeBreadcrumbIndex = Array.from(document.querySelectorAll('.landing-breadcrumbs-item')).findIndex(item => item.classList.contains('active-breadcrumb'));
+    
+      const breadCrumbWrapper = document.querySelector('.landing-breadcrumbs-wrapper');
+      const hideBreadcrumb4 = breadCrumbWrapper.getAttribute('data-hide-breadcrumb4') === 'true';
+    
+      const breadCrumbs = document.querySelectorAll('.landing-breadcrumbs-item');
+      breadCrumbs.forEach((breadCrumb, index) => {
+        breadCrumb.classList.remove('active-start-circle', 'active-arrow', 'active-end-circle');
+    
+        if (index === activeBreadcrumbIndex) {
+          if (index === 0) {
+            breadCrumb.classList.add('active-start-circle');
+          } else if (index === breadCrumbs.length - 1 && !hideBreadcrumb4) {
+            breadCrumb.classList.add('active-end-circle');
+          } else if (index === breadCrumbs.length - 2 && hideBreadcrumb4) {
+            breadCrumb.classList.add('active-end-circle');
+          } else {
+            breadCrumb.classList.add('active-arrow');
+          }
+        }
+    
+        if (index === breadCrumbs.length - 1 && hideBreadcrumb4) {
+          breadCrumb.classList.add('hide-breadcrumbs');
+        } else {
+          breadCrumb.classList.remove('hide-breadcrumbs');
+        }
+      });
+    }
+
+   
 
     updateBreadcrumbContent(action) {
       // Obtener todos los elementos de las migas de pan
@@ -625,12 +612,15 @@ document.addEventListener('DOMContentLoaded', function () {
               if (index === 0) {
                 buttonTextSelect.textContent = `${this.selectedInputValueJson.titleBundle}`;
                 buttonTextSelect.setAttribute('data-bc-title', 'true');
+                buttonTextSelect.parentNode.parentNode.classList.add('breadcrumb-was-active');
               } else if (index === 1) {
                 buttonTextSelect.textContent = `${this.selectedInputStep2Title}`;
                 buttonTextSelect.setAttribute('data-bc-title', 'true');
+                buttonTextSelect.parentNode.parentNode.classList.add('breadcrumb-was-active');
               } else if (index === 2) {
                 buttonTextSelect.textContent = `${this.selectedInputStep3Title}`;
                 buttonTextSelect.setAttribute('data-bc-title', 'true');
+                buttonTextSelect.parentNode.parentNode.classList.add('breadcrumb-was-active');
               }
             }
           });
@@ -643,10 +633,13 @@ document.addEventListener('DOMContentLoaded', function () {
             if (button.hasAttribute('disabled')) {
               buttonTextSelect.textContent = "";
               buttonTextSelect.removeAttribute('data-bc-title');
+              buttonTextSelect.parentNode.parentNode.classList.remove('breadcrumb-was-active');
             }
             if (buttonTextSelect.getAttribute('data-bc-title') === 'true' && item.classList.contains('active-breadcrumb')) {
               buttonTextSelect.textContent = "";
               buttonTextSelect.removeAttribute('data-bc-title');
+              buttonTextSelect.parentNode.parentNode.classList.remove('breadcrumb-was-active');
+
             }
           });
           break;
