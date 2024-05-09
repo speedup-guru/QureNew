@@ -231,8 +231,6 @@ document.addEventListener('DOMContentLoaded', function () {
       this.breadCrumbsItems = document.querySelectorAll('.landing-breadcrumbs-item');
       this.breadCrumbsButtons = document.querySelectorAll('.landing-breadcrumbs-item__btn');
       this.mobileCardContainer = document.getElementById('landing-purchase-mobile');
-      // this.svgButtonsCard = document.querySelectorAll('.step1-value-dropdown-title');
-      // this.btnSubmitPanel = document.getElementById('landing-submit-2');
       this.selectedInputValue = null;
       this.selectedInputValueJson = null;
       this.selectedInputValueStep4 = null;
@@ -300,8 +298,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const radioButtonsStep3 = document.querySelectorAll('#inputs-landing-step3 input[type="radio"]');
       radioButtonsStep3.forEach(button => {
         button.addEventListener('change', () => {
-          console.log('change');
-          console.log(button.value);
           this.selectedInputStep3Title = button.value;
         });
       });
@@ -313,9 +309,6 @@ document.addEventListener('DOMContentLoaded', function () {
           this.updateSelectedInputValueStep4();
           this.updateSelectedInputValueJsonStep4();
           this.updateVisibilityAndValueFourthStep();
-          console.log('change');
-          console.log('Selected input value 4:', this.selectedInputValueStep4);
-          console.log('Selected input 4 value json:', this.selectedInputValueJsonStep4);
         });
       });
 
@@ -340,9 +333,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       this.btnSubmitPanel.addEventListener('click', () => {
-        console.log('submit');
-        // console.log('Value of selected radio button:', this.selectedInputValueJson);
-        // console.log('Value of selected radio button step 4:', this.selectedInputValueJsonStep4);
         this.updateAnchorValue();
       });
 
@@ -396,7 +386,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     updateButtons() {
-      // Ocultar el botón de retroceso en el primer panel
       if (this.indexPanel === 0) {
         this.btnBack.classList.add('hidden');
       } else {
@@ -483,18 +472,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const selectedRadioButton = document.querySelector('.inputs-products1 input[type="radio"]:checked, .inputs-products2 input[type="radio"]:checked, .inputs-products3 input[type="radio"]:checked');
       this.selectedInputValue = selectedRadioButton ? selectedRadioButton.value : null;
       this.updateSelectedInputValueJson();
-      // console.log('Selected input value 1:', this.selectedInputValue);
-      // console.log('Selected input 1 value 2:', this.selectedInputValueJson);
     }
 
     updateSelectedInputValueStep4() {
       const selectedRadioButtonStep4 = document.querySelector('.inputs-products4 input[type="radio"]:checked, .inputs-products5 input[type="radio"]:checked, .inputs-products6 input[type="radio"]:checked');
       this.selectedInputValueStep4 = selectedRadioButtonStep4 ? selectedRadioButtonStep4.value : null;
-      // console.log('Selected input value 4:', this.selectedInputValueStep4);
     }
 
 
-    // ? tratar de unir estas dos funciones en una sola
 
     updateVisibilityFirstStep() {
       const secondRadioButtons = document.querySelector('#step2-select input[name="step2"]:checked');
@@ -526,11 +511,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const selectedRadioButtonStep4 = selectedInputsStep4.querySelector('input[type="radio"]:checked');
       this.selectedInputValueStep4 = selectedRadioButtonStep4 ? selectedRadioButtonStep4.value : null;
-      console.log('Selected input value 4:', this.selectedInputValueStep4);
       this.updateSelectedInputValueJsonStep4();
 
     }
-    // ? end
 
     renderElementsStep3() {
       const step3PriceNormal = document.getElementById('step3-price-normal');
@@ -553,8 +536,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const breadCrumbWrapper = document.querySelector('.landing-breadcrumbs-wrapper');
       const breadCrumb4 = document.querySelector('.breadStep-4');
       const breadCrumb3 = document.querySelector('.breadStep-3');
-      // console.log('Selected input value in bread fx:', this.selectedInputValueJson);
-      // console.log('bread', breadCrumb4)
       if (this.selectedInputValueJson.position !== 1) {
         breadCrumbWrapper.setAttribute('data-hide-breadcrumb4', 'true')
         breadCrumb4.classList.add('hide-breadcrumbs');
@@ -599,10 +580,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
 
     updateBreadcrumbContent(action) {
-      // Obtener todos los elementos de las migas de pan
       const breadcrumbItems = document.querySelectorAll('.landing-breadcrumbs-item');
-      console.log('title step', this.selectedInputStep3Title);
-      // Iterar sobre cada elemento de las migas de pan
       switch (action) {
         case 'addText':
           breadcrumbItems.forEach((item, index) => {
@@ -629,7 +607,6 @@ document.addEventListener('DOMContentLoaded', function () {
           });
           break;
         case 'removeText':
-          console.log('removeText');
           breadcrumbItems.forEach((item, index) => {
             const button = item.querySelector('.landing-breadcrumbs-item__btn');
             const buttonTextSelect = button.querySelector('.landing-breadcrumbs-item__text--select' + (index + 1));
@@ -654,14 +631,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     renderElementMobileStep1() {
-      console.log('renderElementMobileStep1');
-      console.log('mobile container', this.mobileCardContainer);
-      console.log('first step', this.selectedInputValueJson);
-      console.log('first position', this.selectedInputValueJson.position);
-      console.log('first input', this.selectedInputValueJson.input);
-
       const elements = this.mobileCardContainer.querySelectorAll('[data-position][data-input]');
-      // console.log('elements', elements);
       elements.forEach(element =>{
         const positionElement = element.dataset.position;
         const inputElement = element.dataset.input;
@@ -676,9 +646,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateSubmitTextBtn() {
       const oneProuduct = document.querySelector('.landing-button-submit-one')
       const bundleProduct = document.querySelector('.landing-button-submit-bundle')
-
-      console.log('Selected input value in submit text:', this.selectedInputValueJson);
-      
+    
       if (this.selectedInputValueJson.position !== 3) {
         bundleProduct.classList.add('show-lading-submit-btn');
         oneProuduct.classList.remove('show-lading-submit-btn');
@@ -694,19 +662,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     updateAnchorValue() {
-      console.log('Add to cart');
+
       const anchorID = document.getElementById('landing-add-sidecard');
       const productIdStep1 = this.selectedInputValueJson;
-      // const valeStep4 = this.selectedInputValueStep4;
       const productIdStep4 = this.selectedInputValueJsonStep4;
-      // console.log('valeStep4', valeStep4)
-      console.log('productIdStep1', productIdStep1);
-      console.log('productIdStep4', productIdStep4);
       let currentHref = anchorID.getAttribute('href');
-      // let selectedProductId = productIdStep1.id;
-      // console.log('selectedProductId', selectedProductId);
 
-      // Obtener el producto correspondiente según la posición
       const selectedProductId = (productIdStep1.position === 1 && productIdStep4.position === 1) 
       ? productIdStep4.id 
       : (productIdStep1.position === 1 && productIdStep4.position !== 1) 
@@ -726,67 +687,11 @@ document.addEventListener('DOMContentLoaded', function () {
         currentHref = `${href}add?id=${selectedProductId}&quantity=1`
       }
 
-      // if (productIdStep1.position === 1) {
-      //   if (productIdStep4.position === 1) {
-      //     selectedProductId = productIdStep4.id;
-      //     currentHref = `${href}add?id=${selectedProductId}&selling_plan=${productIdStep4.sellingPlanId}&quantity=1`
-      //   } else {
-      //     selectedProductId = productIdStep1.id;
-      //     currentHref = `${href}add?id=${selectedProductId}&quantity=1`
-      //   }
-      // }
-      console.log('selectedProductId', selectedProductId);
-      console.log(currentHref, selectedProductId)
-      // anchorID.setAttribute('href', currentHref);
-      // currentHref = `${href}add?id=${selectedProductId}&quantity=1`
-      // console.log('currentHref', currentHref);
-      // console.log('anchor', anchorID);
-
-      // currentHref = `${href}add?id=${selectedProductId}&selling_plan=5012914415&quantity=1`
       anchorID.href = currentHref;
-      // console.log('hola')
-      // console.log('currentHref', currentHref);
-      console.log('anchor', anchorID);
-
       setTimeout(() => {
         anchorID.click();
       }, 2200);
-
-      
-      //  let formData2 = {
-      //   'items': [{
-      //    'id': 43216377217263,
-      //    'selling_plan': 5012914415,
-      //    'quantity': 1
-      //    }]
-      //  }
-      //  let formData = {
-      //   'items': [{
-      //    'id': 43216377217263,
-      //    'quantity': 1
-      //    }]
-      //  }
-
-      // fetch(window.Shopify.routes.root + 'cart/add.js', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   },
-      //   body: JSON.stringify(formData)
-      // })
-      // .then(response => {
-      //   console.log('response', response);
-      //   return response.json();
-      // })
-      // .catch((error) => {
-      //   console.error('Error:', error);
-      // });
-
-
-
-
     }
-
   }
 
   const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');
@@ -795,50 +700,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // works better outside of the class
   // dropsdown
   
-  // step1
-  // const dropdownContainersStep1 = document.querySelectorAll('.step1-value-props-dropdown');
-  // if(dropdownContainersStep1){
-  //   dropdownContainersStep1.forEach(function(container) {
-  //     const dropdownButton = container.querySelector('.step1-value-dropdown-title');
-  //     const dropdownContent = container.querySelector('.step1-value-dropdown-information');
-  //     const button = container.querySelector('.landing-rotate-svg-button');
-  
-  //     dropdownButton.addEventListener('click', function() {
-  //       dropdownContent.classList.toggle('show-dropdown');
-  //       button.classList.toggle('rotate-svg-btn');
-  //     });
-  //   });
-  // }
-
-  // // mobile
-  // const dropdownContainersStep1Mobile = document.querySelectorAll('.step1-mobile-value-props-dropdown');
-  // if(dropdownContainersStep1Mobile){
-  //   dropdownContainersStep1Mobile.forEach(function(container) {
-  //     const dropdownButton = container.querySelector('.step1-mobile-value-dropdown-title');
-  //     const dropdownContent = container.querySelector('.step1-mobile-value-dropdown-information');
-  //     const button = container.querySelector('.landing-rotate-svg-button');
-  
-  //     dropdownButton.addEventListener('click', function() {
-  //       dropdownContent.classList.toggle('show-dropdown');
-  //       button.classList.toggle('rotate-svg-btn');
-  //     });
-  //   });
-  // }
-
-  // // step4
-  // const dropdownContainersStep4 = document.querySelectorAll('.step4-value-props-dropdown');
-  // if(dropdownContainersStep4){
-  //   dropdownContainersStep4.forEach(function(container) {
-  //     const dropdownButton = container.querySelector('.step4-value-dropdown-title');
-  //     const dropdownContent = container.querySelector('.step4-value-dropdown-content');
-  //     const button = container.querySelector('.landing-rotate-svg-button');
-  
-  //     dropdownButton.addEventListener('click', function() {
-  //       dropdownContent.classList.toggle('show-dropdown');
-  //       button.classList.toggle('rotate-svg-btn');
-  //     });
-  //   });
-  // }
   function setupDropdowns(containerSelector, buttonSelector, contentSelector) {
     const dropdownContainers = document.querySelectorAll(containerSelector);
     if (dropdownContainers) {

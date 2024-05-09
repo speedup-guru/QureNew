@@ -95,30 +95,6 @@
   endcapture
 %}
 
-<script>
-  // console.log('mobileProducts1', {{ mobileProducts1 | json }})
-  // console.log("general_settings", {{ general_settings | json }});
-  // console.log('products2', {{products2 |  json}})
-  // console.log('products2_products', {{products2_products |  json}})
-  // console.log('products2_type', {{products2_type |  json}})
-  // console.log('first_products2_product', {{first_products2_product |  json}})
-  // console.log("products1", {{ products1 | json }});
-  // console.log("products1_products", {{ products1_products | json }});
-  // console.log("products1_type", {{ products1_type | json }});
-  // console.log("first_products1_product", {{ first_products1_product | json }});
-  // console.log("products1_refill_product", {{ products1_refill_product | json }})
-  // console.log("products1_refill_info", {{ products1_refill_info | json }})
-  // console.log("second_products1_product", {{ second_products1_product | json }});
-  // console.log("third_products1_product", {{ third_products1_product.selling_plan_groups[0].selling_plans[0].id | json }});
-  // console.log("products3", {{ products3 | json }});
-  // console.log("products3_products", {{ products3_products | json }});
-  // console.log("products3_type", {{ products3_type | json }});
-  // console.log("products3_refill_product", {{ products3_refill_product | json }});
-  // console.log("products3_refill_info", {{ products3_refill_info | json }});
-  // console.log("first_products3_product", {{ first_products3_product | json }});
-  // console.log("second_products3_product", {{ second_products3_product | json }});
-  // console.log("third_product3_product", {{ third_products3_product | json }});
-</script>
 
 <section id="new-landing-purchase" class="new-landing-purchase serumTestVariant">
   <div class="container">
@@ -275,16 +251,7 @@
           %}
         </div>
       </div>
-      {% comment %}
-        <button
-          id="landing-submit-2"
-          class="lading-button-submit"
-        >
-          submit
-        </button>
-      {% endcomment %}
       <div class="landing-buttons-container">
-        {% comment %} left {% endcomment %}
           <a 
             hidden
             href="{{ routes.cart_add_url }}"
