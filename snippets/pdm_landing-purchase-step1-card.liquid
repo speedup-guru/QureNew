@@ -2,14 +2,8 @@
   assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0
 
   assign nameProp = parentContainer
-
   assign parentName =  nameProp
 %}
-
-<script>
-  console.log("parentName = {{ parentName }}");
-</script>
-
 
 <div class="step1-purchase-card-container">
   {% if productInfo.people_choise != blank %}

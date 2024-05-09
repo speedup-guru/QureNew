@@ -612,14 +612,17 @@ document.addEventListener('DOMContentLoaded', function () {
               if (index === 0) {
                 buttonTextSelect.textContent = `${this.selectedInputValueJson.titleBundle}`;
                 buttonTextSelect.setAttribute('data-bc-title', 'true');
+                buttonTextSelect.previousElementSibling.classList.add('no-show-text-mobile');
                 buttonTextSelect.parentNode.parentNode.classList.add('breadcrumb-was-active');
               } else if (index === 1) {
                 buttonTextSelect.textContent = `${this.selectedInputStep2Title}`;
                 buttonTextSelect.setAttribute('data-bc-title', 'true');
+                buttonTextSelect.previousElementSibling.classList.add('no-show-text-mobile');
                 buttonTextSelect.parentNode.parentNode.classList.add('breadcrumb-was-active');
               } else if (index === 2) {
                 buttonTextSelect.textContent = `${this.selectedInputStep3Title}`;
                 buttonTextSelect.setAttribute('data-bc-title', 'true');
+                buttonTextSelect.previousElementSibling.classList.add('no-show-text-mobile');
                 buttonTextSelect.parentNode.parentNode.classList.add('breadcrumb-was-active');
               }
             }
@@ -633,13 +636,14 @@ document.addEventListener('DOMContentLoaded', function () {
             if (button.hasAttribute('disabled')) {
               buttonTextSelect.textContent = "";
               buttonTextSelect.removeAttribute('data-bc-title');
+              buttonTextSelect.previousElementSibling.classList.remove('no-show-text-mobile');
               buttonTextSelect.parentNode.parentNode.classList.remove('breadcrumb-was-active');
             }
             if (buttonTextSelect.getAttribute('data-bc-title') === 'true' && item.classList.contains('active-breadcrumb')) {
               buttonTextSelect.textContent = "";
               buttonTextSelect.removeAttribute('data-bc-title');
+              buttonTextSelect.previousElementSibling.classList.remove('no-show-text-mobile');
               buttonTextSelect.parentNode.parentNode.classList.remove('breadcrumb-was-active');
-
             }
           });
           break;

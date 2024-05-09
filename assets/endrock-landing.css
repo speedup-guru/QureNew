@@ -1,4 +1,18 @@
 /* landing purchase */
+.serumTestVariant{
+  display: none;
+}
+
+
+body[data-serumTest = 'true']{
+  .serumTestOriginal{
+    display: none;
+  }
+
+  .serumTestVariant{
+    display: block;
+  }
+}
 
 /* card */
 .panel-hidden{
@@ -150,6 +164,9 @@
                   text-align: center;
                   color: #797D7C;
                 }
+                .landing-breadcrumbs-item__text.mobile-text-breadcrumb{
+                  display: none;
+                }
                 .landing-breadcrumbs-item__text--select1,
                 .landing-breadcrumbs-item__text--select2,
                 .landing-breadcrumbs-item__text--select3,
@@ -168,6 +185,15 @@
                     line-height: 14px;
                     letter-spacing: 0.01em;
                     text-align: center;
+                  }
+                  .landing-breadcrumbs-item__text.desktop-text-breadcrumb{
+                    display: none;
+                  }
+                  .landing-breadcrumbs-item__text.mobile-text-breadcrumb{
+                    display: block;
+                  }
+                  .landing-breadcrumbs-item__text.mobile-text-breadcrumb.no-show-text-mobile{
+                    display: none;
                   }
 
                   .landing-breadcrumbs-item__text--select1,
@@ -355,8 +381,17 @@
     #main-panel-lading{
       width: 100%;
       height: 700px;
+      display: flex;
+      justify-content: center;
       @media screen and (max-width: 768px){
         height: auto;
+      }
+      .main-panel-wrapper{
+        max-width: 990px;
+        @media screen and (max-width: 768px){
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
 
@@ -495,6 +530,9 @@
                   border-radius: 40px;
                   @media screen and (max-width: 768px){
                     padding: 4px 0 2px;
+                    border-bottom: none;
+                    border-left: none;
+                    border-right: none;
                   }
                   .step1-card-price__title{
                     font-family: 'Canela Web';
@@ -634,7 +672,8 @@
                   padding-top: 4px;
                 &.show-dropdown{
                   display: block;
-                  max-height: 60px;
+                  /* max-height: 60px; */
+                  height: auto;
                 }
                   .metafield-rich_text_field{
                     ul{
@@ -709,6 +748,7 @@
                 align-items: center;
                 padding: 12px 0;
                 background-color: var(--active-color);
+                border: 1px solid var(--active-color);
                 border-color: var(--active-color);
                 border-radius: 22px;
                 gap: 8px;
@@ -763,7 +803,6 @@
                   font-weight: 500;
                   line-height: 16px;
                   text-align: left;
-                  font-weight: bold;
                 }
               }
               .step1-value-static-props{
@@ -825,7 +864,8 @@
                   display: none;
                   &.show-dropdown{
                     display: block;
-                    max-height: 100px;
+                    /* max-height: 100px; */
+                    height: auto;
                   }
                   .metafield-rich_text_field{
                     ul{
@@ -861,6 +901,10 @@
         input[type="radio"]:checked + label[for="products1-three"]{
           .step1-purchase-card-container{
             border: 2px solid var(--active-color);
+            .step1-card-price-information{
+              border-color: var(--active-color);
+              background-color: var(--active-color);
+            }
           }
           .card-img-container{
             background: linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%);
@@ -954,6 +998,9 @@
                 border: 1px solid var(--no-active-color);
                 border-radius: 24px;
                 background-color: white;
+                @media screen and (max-width: 768px){
+                  border-top: none;
+                }
                 h3{
                   font-family: 'Canela Web';
                   font-size: 18px;
@@ -1257,6 +1304,8 @@
         justify-content: center;
         align-items: center;
         .step3-information-text{
+          white-space: nowrap;
+          height: 35px;
           p{
             font-family: 'Poppins';
             font-size: 12px;
@@ -1357,6 +1406,7 @@
         .step4-card-title-container{
           border-radius: 24px;
           border: 1px solid var(--no-active-color);
+          border-top: none;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1445,7 +1495,8 @@
               padding-top: 4px;
               &.show-dropdown{
                 display: block;
-                max-height: 60px;
+                /* max-height: 60px; */
+                height: auto;
               }
               .metafield-rich_text_field{
                 ul{
@@ -1479,7 +1530,8 @@
         border: 2px solid var(--active-color);
       }
       .step4-card-title-container{
-        border: 2px solid var(--active-color);
+        border: 1px solid var(--active-color);
+        border-top: none;
         background-color: var(--active-color);
       }
     }

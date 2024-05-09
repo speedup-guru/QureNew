@@ -5,6 +5,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             selectProduct('{{ section_id }}_');
+            console.log('ct', {{ page.handle | json }} );
         });
     </script>
 
@@ -13,7 +14,7 @@
         <p>AVAILABLE UNTIL STOCK LASTS</p>
     </div>
 
-    <div class="section productSubscription choose_serum" id="productSubscription">
+<div class="section productSubscription choose_serum {% if page.handle == 'qure-microinfusion-offer' %} serumTestOriginal {% endif %}" id="productSubscription">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">

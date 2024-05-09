@@ -120,7 +120,7 @@
   // console.log("third_product3_product", {{ third_products3_product | json }});
 </script>
 
-<section id="new-landing-purchase" class="new-landing-purchase">
+<section id="new-landing-purchase" class="new-landing-purchase serumTestVariant">
   <div class="container">
     <div class="landing-container-title">
       <h3>{{ general_settings.title }}</h3>
@@ -131,6 +131,7 @@
     </div>
     {% comment %} main panel container {% endcomment %}
     <div id="main-panel-lading">
+      <div class='main-panel-wrapper'>      
       {% comment %} panel 1 {% endcomment %}
       <div id="landing-step-one" class="landing-panel panel-hidden">
         <div class="lading-one-title-container">
@@ -293,6 +294,7 @@
           >
           </a>
         {% render 'pdm_landing-purchase-buttons', generalSettings: general_settings %}
+      </div>
       </div>
     </div>  
   </div>
