@@ -304,7 +304,7 @@
         "content_XdKeWR": {
           "type": "content",
           "settings": {
-            "text": "<h2>El refuerzo de piel predilecto<br\/>creado para días seguros sin maquillaje[image_mobile]<\/h2><p>Microinfusión –<strong>un tratamiento de piel adorado por las celebridades<\/strong>– finalmente está accesible para el público general.<\/p><p>Ahora puedes experimentar el tratamiento facial de Microinfusión para<strong>ayudar a aclarar el cutis, suavizar la textura y obtener un brillo listo para la 'alfombra roja'.<\/strong><\/p><p>¿La mejor parte? ¡Puedes disfrutarlo por aproximadamente una<strong>fracción del costo en la comodidad de tu hogar,<\/strong>con un tiempo de acción casi inmediato!<\/p>",
+            "text": "<h2>El refuerzo de piel predilecto<br\/>creado para días seguros sin maquillaje[image_mobile]<\/h2><p>Microinfusión –<strong>un tratamiento de piel adorado por las celebridades<\/strong>– finalmente está accesible para el público general.<\/p><p>Ahora puedes experimentar el tratamiento facial de Microinfusión para <strong>ayudar a aclarar el cutis, suavizar la textura y obtener un brillo listo para la 'alfombra roja'.<\/strong><\/p><p>¿La mejor parte? ¡Puedes disfrutarlo por aproximadamente una <strong>fracción del costo en la comodidad de tu hogar, <\/strong>con un tiempo de acción casi inmediato!<\/p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -551,7 +551,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-lp-reason5_61b38139-0048-433f-a998-91e57b8bf3e0.svg",
-            "text": "<p><strong>Mejora la absorción <\/strong>delsuero realizado para tus nescecidades específicas<\/p>"
+            "text": "<p><strong>Mejora la absorción <\/strong>delsuero realizado para tus nescecidades específicas.<\/p>"
           }
         }
       },
@@ -795,7 +795,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Resultados que verás con tus propios ojos",
-        "text_verified_customer": "Cliente verificado"
+        "text_verified_customer": "Cliente verificado",
+        "text_reviewed": "Evaluado en"
       }
     },
     "liquid_9GnXBn": {
@@ -840,7 +841,7 @@
       "settings": {
         "classname": "beauty_skincare section",
         "heading": "Por lo general, más efectivo y seguro que otros dispositivos domésticos de agujas",
-        "text": "<p>A diferencia de los dispositivos domésticos de rodillo con aguja, la microinfusión apenas requiere <strong>tiempo para actuar, <\/strong>es prácticamente <strong>in dolora y minimiza el riesgo de infección<\/strong>o irritación.<\/p>"
+        "text": "<p>A diferencia de los dispositivos domésticos de rodillo con aguja, la microinfusión apenas requiere <strong>tiempo para actuar, <\/strong>es prácticamente <strong>in dolora y minimiza el riesgo de infección <\/strong>o irritación.<\/p>"
       }
     },
     "guide_xibEe6": {
@@ -1225,40 +1226,10 @@
         "text": "<h5>@qureskincare<\/h5>"
       }
     },
-    "two_column_box_LCKkjE": {
-      "type": "two-column-box",
-      "blocks": {
-        "content_awPwam": {
-          "type": "content",
-          "settings": {
-            "text": "<ul><li><strong>Transforma la piel de aspecto opaco,<\/strong> ayuda a reducir la aparición de líneas finas y suaviza la textura<\/li><li>Tratamiento facial <strong>sencillo<\/strong> de 5 minutos, sueros <strong>personalizados<\/strong> para abordar los problemas de tu piel con resultados visibles<\/li><li>Tiempo de acción casi inmediato, prácticamente <strong>indoloro<\/strong> y <strong>fácil <\/strong>de realizar desde casa<\/li><\/ul><p>[image_mobile]<\/p><p>[code]<\/p>",
-            "column_content": 0,
-            "classname": "ba_wrapper"
-          }
-        },
-        "image_fFdePg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/micro_grid_1-es.webp",
-            "classname": "mw-mob-100"
-          }
-        },
-        "code_fXbXkm": {
-          "type": "code",
-          "settings": {
-            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center mw-100\"\n                                    href=\"#productSubscription\">COMPRA AHORA AHORRA HASTA UN 43%<\/a>\n                                <div class=\"progress_bar progress_bar d-block d-md-block\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        <\/div>\n                                    <\/div>\n                                    <p>Se está agotando RÁPIDO<\/p>\n                                <\/div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>Garantía de devolución<br> de dinero de 90 días <\/p>\n                                    <\/div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        <p>Envío internacional <br> gratuito en compras mayores a 100 €<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "content_awPwam",
-        "image_fFdePg",
-        "code_fXbXkm"
-      ],
+    "liquid_4mHpUK": {
+      "type": "liquid",
       "settings": {
-        "classname": "imageText joinMicro",
-        "column_image": 6,
-        "column_content": 6
+        "code": "<!-- -- image with text start -- -->\n        <div class=\"imageText joinMicro\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-6 order-2 order-md-1\">\n                        <div class=\"ba_wrapper\">\n                            <div class=\"ss_list d-none d-md-block\">\n                                <ul>\n                                    <li><strong>Transforma la piel de aspecto opaco,<\/strong> ayuda a reducir la\n                                        aparición de líneas finas y suaviza la textura\n                                    <\/li>\n                                    <li>Tratamiento facial <strong>sencillo<\/strong> de 5 minutos, sueros\n                                        <strong>personalizados<\/strong> para abordar los problemas de tu piel con resultados visibles\n                                    <\/li>\n                                    <li>Tiempo de acción casi inmediato, prácticamente <strong>indoloro<\/strong> y\n                                        <strong>fácil <\/strong>de realizar desde casa\n                                    <\/li>\n                                <\/ul>\n                            <\/div>\n                            <div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center mw-100\"\n                                    href=\"#productSubscription\">COMPRA AHORA AHORRA HASTA UN 43%<\/a>\n                                <div class=\"progress_bar progress_bar d-block d-md-block\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        <\/div>\n                                    <\/div>\n                                    <p>Se está agotando RÁPIDO<\/p>\n                                <\/div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>Garantía de devolución<br> de dinero de 90 días <\/p>\n                                    <\/div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        \n<p>Envío internacional <br> gratuito en compras mayores a 100 €<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>\n\n                        <\/div>\n                    <\/div>\n                    <div class=\"col-12 col-md-6 order-1 order-md-2\">\n                        <div class=\"ss_list d-block d-md-none\">\n                            <ul>\n                                <li><strong>Transforma la piel de aspecto opaco,<\/strong> ayuda a reducir la aparición\n                                    de líneas finas y suaviza la textura\n                                <\/li>\n                                <li>Tratamiento facial\n                                    <strong>sencillo<\/strong> de 5 minutos, sueros <strong>personalizados<\/strong> para\n                                    abordar los problemas de tu piel con resultados visibles\n                                <\/li>\n                                <li>\n                                    Tiempo de acción casi inmediato, prácticamente <strong>indoloro<\/strong> y\n                                    <strong>fácil <\/strong>\n                                    de realizar desde casa\n                                <\/li>\n                            <\/ul>\n                        <\/div>\n                        <div class=\"it_img position-relative mw-mob-100\">\n                            <div class=\"aboveText mw-394\">\n                                <h2 class=\"title-lg\">Únete a la revolución de la Micro-Infusión<\/h2>\n                            <\/div>\n                            <img src=\"{{ 'micro_grid_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n        <!-- -- image with text end -- -->"
       }
     }
   },
@@ -1287,6 +1258,6 @@
     "compare_box_p4B7wy",
     "faq_ABfhyg",
     "social_zwVAqW",
-    "two_column_box_LCKkjE"
+    "liquid_4mHpUK"
   ]
 }

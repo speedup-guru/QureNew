@@ -201,7 +201,7 @@ window.addEventListener('load', function () {
 // =================================== js for same height ===============================
 $(function () {
     //setTimeout(function () {
-    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap').matchHeight({
+    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img').matchHeight({
         property: 'height',
         target: null,
         remove: false
@@ -243,15 +243,10 @@ const risk = document.querySelectorAll(".risk_expandable");
 risk.forEach((story) => {
     const button = story.querySelector(".risk__accordion");
     button.addEventListener("click", () => {
-
         const paragraph = story.querySelector(".risk__hidden-div");
-        const more_text = button.getAttribute("data-more") || "Read More...";
-        const less_text = button.getAttribute("data-less") || "Read Less...";
-
+        const more_text = button.getAttribute("data-more") || "Read More..";
+        const less_text = button.getAttribute("data-less") || "Read Less..";
         paragraph.classList.toggle("hidden");
-
-
-
         const text = paragraph.classList.contains("hidden")
             ? more_text
             : less_text;
@@ -522,13 +517,13 @@ $(".hamburger-container").on("click", function () {
     }
 });
 
-$("#menu li > a").click(function () {
-    $('body').removeClass("openmenu");
-    bottomBar.removeClass("hidden");
-})
+// $("#menu li > a").click(function () {
+//     $('body').removeClass("openmenu");
+//     bottomBar.removeClass("hidden");
+// })
 
 
-// Tab Slider 
+// // Tab Slider 
 $(".tabing-new .tab .tablinks").each(function (e) {
     if (e != 0) $(this).hide();
 });
@@ -545,7 +540,10 @@ $(".tab_button .next-btn").click(function () {
     $(window).scrollTop($(".tabing-new").offset().top - 100); // Scroll to the top of the section
     return false;
 });
-
+$(".let_start").click(function () {
+    $(window).scrollTop($(".tabing-new").offset().top - 100); // Scroll to the top of the section
+    return false;
+});
 $(".tab_button .preview-btn").click(function () {
     var count = $(".tabing-new .tab .tablinks:visible").next().addClass('active');
 
@@ -814,6 +812,30 @@ $('.subscriptionType').click(function () {
 /*
 * See Slider with 3 slides Start 
 */
+// var swiper = new Swiper(".see_slider3", {
+//     slidesPerView: 1,
+//     spaceBetween: 20,
+//     autoplay: false,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//         renderBullet: function (index, className) {
+//             return '<span class="' + className + '"><span class="pg_counter counter_title">STEP</span><span class="pg_counter counter_dot"></span>' + '<span class="pg_counter  counter_block">0' + (index + 1) + "</span></span>";
+//         },
+//     },
+//     breakpoints: {
+//         556: {
+//             slidesPerView: 1,
+
+//         },
+//         768: {
+//             slidesPerView: 2,
+//         },
+//         1024: {
+//             slidesPerView: 3,
+//         },
+//     },
+// });
 var swiper = new Swiper(".see_slider3", {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -822,7 +844,8 @@ var swiper = new Swiper(".see_slider3", {
         el: ".swiper-pagination",
         clickable: true,
         renderBullet: function (index, className) {
-            return '<span class="' + className + '"><span class="pg_counter counter_title">STEP</span><span class="pg_counter counter_dot"></span>' + '<span class="pg_counter  counter_block">0' + (index + 1) + "</span></span>";
+            var title = $('.step_slider').data('counter-title') || 'STEP'; // Get title from data attribute of .step_slider or default to 'STEP'
+            return '<span class="' + className + '"><span class="pg_counter counter_title">' + title + '</span><span class="pg_counter counter_dot"></span>' + '<span class="pg_counter  counter_block">0' + (index + 1) + "</span></span>";
         },
     },
     breakpoints: {
@@ -838,6 +861,8 @@ var swiper = new Swiper(".see_slider3", {
         },
     },
 });
+
+
 /*
 * See Slider with 3 slides Start 
 */
@@ -1403,3 +1428,37 @@ document.addEventListener('DOMContentLoaded', function () {
 /*
 * gift card js end
 */
+
+var initMicro = false;
+var swiperMicro;
+function swiperMicro() {
+    if (window.innerWidth <= 767) {
+        if (!initMicro) {
+            initMicro = true;
+            swiperMicro = new Swiper(".mobile_micro-slider", {
+                slidesPerView: "1",
+                // autoplay: {
+                //   delay: 2000,
+                //   disableOnInteraction: false,
+                // },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+    } else if (initMicro) {
+        swiperMicro.destroy();
+        initMicro = false;
+    }
+}
+swiperMicro();
+window.addEventListener("resize", swiperMicro);
+
+//rpelacing &nbsp with blank space
+var listItems = document.querySelectorAll('.ss_list li');
+listItems.forEach(function (item) {
+    if (item.innerHTML.includes('&nbsp;')) {
+        item.innerHTML = item.innerHTML.replace(/&nbsp;/g, ' ');
+    }
+});

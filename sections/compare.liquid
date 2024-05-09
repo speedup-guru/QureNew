@@ -25,7 +25,7 @@
                         <div class="bs_img">
                             <img class="img-fluid beauty_img" src="{{ block.settings.image | img_url: '600x' }}" alt="">
                         </div>
-                        <div class="bs_content d-block d-md-none">
+                        <div class="bs_content">
                             {% if price != blank %}
                                 <div class="bs_price">
                                     <h3>
@@ -33,12 +33,13 @@
                                     </h3>
                                 </div>                               
                             {% endif %}
-                            <h4>{{ title | replace: '\n', '<br>' }}</h4>
+                            <h4 class="d-block d-md-none">{{ title | replace: '\n', '<br>' }}</h4>
+                            <h4 class="d-none d-md-block">{{ title | replace: '\n', '&nbsp;' }}</h4>
                             {% if block.settings.text != blank %}
                                 {{ block.settings.text |  replace:  '<p>', '<p class="price__label">'  }}
                             {% endif %}
                         </div>
-                        <div class="bs_content d-none d-md-block">
+                        {% comment %} <div class="bs_content d-none d-md-block">
                             <h4>{{ title | replace: '\n', '&nbsp;' }}</h4>
                             {% if price != blank %}
                                 <div class="bs_price">
@@ -50,7 +51,7 @@
                                     {% endif %}
                                 </div>
                             {% endif %}
-                        </div>
+                        </div> {% endcomment %}
                         <div class="bs_feature {{ block.settings.style }}">
                             {% capture list %}
                                 {{ 

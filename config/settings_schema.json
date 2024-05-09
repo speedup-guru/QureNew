@@ -51,16 +51,16 @@
     "name": "Product",
     "settings": [
       {
-        "type":"checkbox",
-        "id":"show_social_proof",
-        "label":"Show Social Proof Component",
+        "type": "checkbox",
+        "id": "show_social_proof",
+        "label": "Show Social Proof Component",
         "default": true
       },
       {
         "type": "text",
         "id": "social_proof_label",
         "label": "Social Proof Label",
-        "default":"purchased in the last 48 hours"
+        "default": "purchased in the last 48 hours"
       },
       {
         "type": "product_list",

@@ -1,3 +1,9 @@
+<style>
+    .subscribe_save_wrapper .subscribe_save_bx {
+        grid-template-columns: 67% 33%;
+    }
+</style>
+
 {%- assign rating_count = 0 -%}
 {%- assign list_count = 0 -%}
 {%- assign supply_count = 0 -%}
@@ -100,11 +106,11 @@
                         {% if subscribe_count > 0 %}
                             {%- for block in section.blocks -%}
                                 {% if block.type == 'subscribe' %}
-
+                                    {% assign discount_value = block.settings.discount | divided_by: 100.0 | times: product.price | minus: product.price | abs %}
                                     {% if product.compare_at_price %}
                                         {% assign product_price_discount = product.compare_at_price %}
                                     {% else %}
-                                        {% assign product_price_discount = product.price | minus: block.settings.discount %}
+                                        {% assign product_price_discount = discount_value %}
                                     {% endif %}
 
                                     <div class="subscribe_save_wrapper with_subscription mt-2">
@@ -118,8 +124,15 @@
                                                         {% if block.settings.heading != blank %}
                                                             <h6>{{ block.settings.heading }}</h6>
                                                         {% endif %}
+                                                        
+                                                        {%- if product.handle contains 'q-urify-water-filter' -%}
+                                                            {%- assign future_price = 0.8 | times: all_products['q-rify-replacement-water-filter'].price | money_without_trailing_zeros %}
+                                                        {%- else -%}
+                                                            {%- assign future_price = discount_value | money_without_trailing_zeros -%}
+                                                        {%- endif -%}
+
                                                         {% if block.settings.text != blank %}
-                                                            {{ block.settings.text }}
+                                                            {{ block.settings.text | replace: '[future_price]', future_price }}
                                                         {% endif %}
                                                     </label>
                                                 </div>
@@ -166,8 +179,8 @@
                                         {% unless supply_count > 0 %}
                                             {% render 'pdm_orderby' %}
                                         {% endunless %}
-                                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-smartrr-form-id="{{ product.id }}">
-                                            <input type="hidden" name="selling_plan" data-smartrr-selling-plan-input="" value="{{ block.settings.plan }}">
+                                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-form-id="{{ product.id }}">
+                                            <input type="hidden" name="selling_plan" value="{{ block.settings.plan }}">
                                             <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn" name="Submit" value="Submit">
                                                 Subscribe Now - {{ product_price_discount | money_without_trailing_zeros  }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                                             </button>

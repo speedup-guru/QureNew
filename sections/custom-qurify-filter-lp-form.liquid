@@ -164,8 +164,8 @@
                     </script>
 
                     <div id="subscription_button">
-                        {% form 'product', product, data-smartrr-form-id: product.id %}
-                            <input type="hidden" name="selling_plan" data-smartrr-selling-plan-input="" value="4496589039">
+                        {% form 'product', product, data-form-id: product.id %}
+                            <input type="hidden" name="selling_plan" value="4980998383">
                             <button type="submit" class="btn btn-lg btn-primary btn_green mw-100" name="Submit" value="Submit">Subscribe Now | {{ discount_price | money_without_trailing_zeros  }} <span
                                 style="text-decoration: line-through;font-weight: 400;color:#C6E4DC">{{ product.price | money_without_trailing_zeros }}</span>
                             </button>

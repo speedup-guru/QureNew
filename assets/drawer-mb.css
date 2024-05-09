@@ -2651,7 +2651,7 @@
   }
   
   .review_main p.cart-revi a {
-		  margin-left: 5px
+		  margin-left: 3px
   }
   
   .review_main .ship-icon {
@@ -3029,6 +3029,9 @@
   }
   
   @media (max-width: 767px) {
+		  .review_main p.cart-revi a {
+			margin-left: 5px
+		  }
 		  .drawer__cart-free-shipping>p,.empty-product .empty-main .empty-content ul li,.percentage>p,p.invest-txt {
 				  font-size:10px;
 				  letter-spacing: .1px

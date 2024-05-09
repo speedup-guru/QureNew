@@ -42,7 +42,7 @@
         "video_before_and_after_kUMR9A": {
           "type": "video_before_and_after",
           "settings": {
-            "video_new_section": "shopify:\/\/files\/videos\/Led Mask edit.mov"
+            "video_new_section": "shopify:\/\/files\/videos\/0424(1).mov"
           }
         }
       },
@@ -234,6 +234,7 @@
         },
         "video_XTbFJw": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_maren.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso",
@@ -495,7 +496,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Results you‘ll see with your own eyes",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "two_column_box_xCB6mV": {

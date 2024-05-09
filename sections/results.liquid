@@ -42,7 +42,7 @@
                                             {% endif %}
                                         </div>
                                         <div class="reviewed">
-                                            <p>Reviewed in {{ block.settings.text_country |  default: 'United States' }}</p>
+                                            <p>{{ section.settings.text_reviewed | default: 'Reviewed in' }} {{ block.settings.text_country |  default: 'United States' }}</p>
                                         </div>
                                         <div class="verified_img">
                                             <img src="{{ 'verified.svg' | asset_url }}" alt="">
@@ -93,6 +93,12 @@
                 "id": "text_verified_customer",
                 "label": "t:common.text.label",
                 "default": "Verified customer"
+            },
+            {
+                "type": "text",
+                "id": "text_reviewed",
+                "label": "t:common.text.label",
+                "default": "Reviewed in"
             }
         ],
         "blocks": [
