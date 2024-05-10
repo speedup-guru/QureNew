@@ -779,9 +779,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 });
-
-console.log('aaaqqqq1234');
-
 setInterval(function () {
     var bnrImage = $('.banner-popup-link img');
     $.each(bnrImage, function (index, bnrImageHeight) {
