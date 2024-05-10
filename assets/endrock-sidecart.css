@@ -9,9 +9,15 @@
     opacity: .8;
     z-index: 999;
   }
+
+  @media (max-height: 778px) {
+    .drawer__wrapper {
+        overflow-y: visible !important;
+    }
+  }
   
   form.my-cart { 
-    @media screen and (min-width:1180px) and (min-height: 779px) {
+    @media screen and (min-width:1180px) {
         overflow-y: hidden;
         display: flex;
         flex-direction: column;
@@ -190,7 +196,7 @@
       .align-slide{
         justify-content: flex-start;
       }
-      @media screen and (min-width:1180px) and (min-height: 779px) {
+      @media screen and (min-width:1180px) {
         position: fixed;
         transform: translate(-100%, 0%);
         height: 100vh;
@@ -328,7 +334,7 @@
       .swiper-pagination{
         display: block;
         margin: 0px;
-        @media screen and (min-width:1180px) and (min-height: 779px) {
+        @media screen and (min-width:1180px) {
           display: none;
         }
         .swiper-pagination-bullet {
