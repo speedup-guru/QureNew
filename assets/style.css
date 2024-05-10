@@ -30270,9 +30270,9 @@ p {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    display: -webkit-inline-box;
+    /* display: -webkit-inline-box;
     word-break: break-word;
-    inline-size: -webkit-fill-available;
+    inline-size: -webkit-fill-available; */
 }
 
 
