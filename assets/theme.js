@@ -779,18 +779,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 });
+setInterval(function () {
+    var bnrImage = $('.banner-popup-link img');
+    $.each(bnrImage, function (index, bnrImageHeight) {
+        var parentElement = bnrImageHeight.parentNode;
+        var bnnerHeight = bnrImageHeight.clientHeight;
+        this.parentElement.style.setProperty('--aspect-ratio', `${bnnerHeight}px`);
+    });
 
-console.log('aaaaqqqq9999');
-
-// setInterval(function () {
-//     var bnrImage = $('.banner-popup-link img');
-//     $.each(bnrImage, function (index, bnrImageHeight) {
-//         var parentElement = bnrImageHeight.parentNode;
-//         var bnnerHeight = bnrImageHeight.clientHeight;
-//         this.parentElement.style.setProperty('--aspect-ratio', `${bnnerHeight}px`);
-//     });
-
-// }, 10)
+}, 10)
 /* 
 * Common JS End
 */

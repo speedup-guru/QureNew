@@ -37,7 +37,7 @@
         {% if block.settings[image_id] != null %}
           {% assign mediaImage = block.settings[image_id] %}
           <div class="swiper-slide">
-            <a class="banner-popup-link aaaaqqqq2" id="popup-link">
+            <a class="banner-popup-link" id="popup-link">
               <picture id="image-id">
                 <source media="(min-width:1920px)" srcset="{{ mediaImage | img_url: 'master' }}">
                 <source media="(min-width:1600px)" srcset="{{ mediaImage | img_url: '1600x' }}">
