@@ -7,7 +7,7 @@
           "type": "button",
           "settings": {
             "button_label": "Submit                                        stockist enquiry",
-            "button_url": "#",
+            "button_url": "#stocklist_form",
             "classname": "btn_white m-0"
           }
         }
