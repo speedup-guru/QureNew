@@ -40,11 +40,18 @@
               "button_label": "SAVE UPTO 55%",
               "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
             }
+          },
+          "tab_3Wyyea": {
+            "type": "tab",
+            "settings": {
+              "heading": "🤍 Rediscover The Qure"
+            }
           }
         },
         "block_order": [
           "announcement-promotion_L6B7qD",
-          "announcement_TPxBgi"
+          "announcement_TPxBgi",
+          "tab_3Wyyea"
         ],
         "settings": {
         }

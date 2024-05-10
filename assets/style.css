@@ -30270,9 +30270,9 @@ p {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    display: -webkit-inline-box;
+    /* display: -webkit-inline-box;
     word-break: break-word;
-    inline-size: -webkit-fill-available;
+    inline-size: -webkit-fill-available; */
 }
 
 
@@ -30518,11 +30518,11 @@ p {
     }
 
     .mw-mob-100 {
-        margin: 0 -24px
+        margin: 0 -24px !important;
     }
 
     .mw-mob-70 {
-        margin: 0 -10px
+        margin: 0 -10px !important;
     }
 }
 
@@ -30619,12 +30619,12 @@ p {
 }
 
 /* -- common css for payment icons end -- */
-.swiper.dot_pagination .swiper-pagination {
+.dot_pagination .swiper-pagination {
     position: relative;
     padding-top: 50px;
 }
 
-.swiper.dot_pagination .swiper-pagination-bullet-active {
+.dot_pagination .swiper-pagination-bullet-active {
     background-color: #000;
 }
 
@@ -30632,26 +30632,26 @@ p {
     background-color: #fff;
 }
 
-.swiper.dot_pagination .swiper-pagination-bullet {
+.dot_pagination .swiper-pagination-bullet {
     margin: 0 11px !important;
     height: 14px;
     width: 14px;
 }
 
 @media (max-width: 767px) {
-    .swiper.dot_pagination .swiper-pagination {
+    .dot_pagination .swiper-pagination {
         padding-top: 20px;
     }
 
-    .trusted_wrapper .swiper.dot_pagination .swiper-pagination {
+    .trusted_wrapper .dot_pagination .swiper-pagination {
         padding-top: 30px;
     }
 
-    .videosQure .swiper.dot_pagination .swiper-pagination {
+    .videosQure .dot_pagination .swiper-pagination {
         padding-top: 30px;
     }
 
-    .swiper.dot_pagination .swiper-pagination-bullet {
+    .dot_pagination .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
         margin: 0 4px !important;
@@ -34469,7 +34469,7 @@ p.insurance__text--bottom {
 }
 
 .announcement_bar p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 19px;
     text-align: center;
     padding: 4px 0;
@@ -34507,7 +34507,7 @@ p.insurance__text--bottom {
 
 @media(max-width:767px) {
     .announcement_bar p {
-        font-size: 13px;
+        font-size: 10px;
         line-height: 15px;
         letter-spacing: 0.3px;
     }
