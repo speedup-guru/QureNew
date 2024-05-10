@@ -780,7 +780,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-console.log('aaaqqqq123');
+console.log('aaaqqqq1234');
 
 setInterval(function () {
     var bnrImage = $('.banner-popup-link img');
