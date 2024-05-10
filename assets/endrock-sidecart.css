@@ -11,13 +11,14 @@
   }
   
   form.my-cart { 
-    @media screen and (min-width:1180px) {
-      overflow-y: hidden;
-      display: flex;
-      flex-direction: column;
-      .my-cart__info{
-        overflow-y: auto;
-        flex: 1;
+    @media screen and (min-width:1180px) and (min-height: 779px) {
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        .my-cart__info{
+          overflow-y: auto;
+          flex: 1;
+        }
       }
     }
     .custom_upsell {
@@ -189,7 +190,7 @@
       .align-slide{
         justify-content: flex-start;
       }
-      @media screen and (min-width:1180px) {
+      @media screen and (min-width:1180px) and (min-height: 779px) {
         position: fixed;
         transform: translate(-100%, 0%);
         height: 100vh;
@@ -327,7 +328,7 @@
       .swiper-pagination{
         display: block;
         margin: 0px;
-        @media screen and (min-width:1180px) {
+        @media screen and (min-width:1180px) and (min-height: 779px) {
           display: none;
         }
         .swiper-pagination-bullet {
