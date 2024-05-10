@@ -638,6 +638,7 @@ body[data-serumTest='true']{
               }
               .step1-value-props-dropdown{
                 border-top: 1px solid #C8E6DC;
+                color: black;
                 .step1-value-dropdown-title{
                   display: flex;
                   flex-direction: row;
@@ -843,6 +844,7 @@ body[data-serumTest='true']{
                   background-color: transparent;
                   border: none;
                   padding-top: 4px;
+                  color: black;
                   .step1-mobile-value-dropdown-title-wrapper{
                     display: flex;
                     flex-direction: row;
@@ -1008,8 +1010,8 @@ body[data-serumTest='true']{
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                gap: 2px;
-                padding: 2px 0;
+                gap: 1px;
+                padding: 6px 0;
                 border: 1px solid var(--no-active-color);
                 border-radius: 24px;
                 background-color: white;
@@ -1538,6 +1540,7 @@ body[data-serumTest='true']{
             height: auto;
             border-top: 1px solid #C8E6DC;
             padding-top: 4px;
+            color: black;
             .step4-value-dropdown-title{
               width: 100%;
               display: flex;
