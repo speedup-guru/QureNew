@@ -27,7 +27,7 @@
       "discountPrice":{{ productOne.price | money_without_currency }},
       "price":{{ productOne.compare_at_price | money_without_currency }}, 
       "discountPriceQuota":{{ productOne.price |  divided_by: 4 | money_without_currency }},
-      "discountPercent":{{ productOne.compare_at_price | minus: productOne.price | times: 100 | divided_by: productOne.compare_at_price | round: 0 }},
+      "discountPercent":{{ productOne.compare_at_price | minus: productOne.price | times: 100.0 | divided_by: productOne.compare_at_price | round }},
       "input": "{{ name }}"
     }'
     checked
@@ -57,7 +57,7 @@
       "discountPrice":{{ productTwo.price | money_without_currency }},
       "price":{{ productTwo.compare_at_price | money_without_currency }}, 
       "discountPriceQuota":{{ productTwo.price | divided_by: 4 | money_without_currency  }},
-      "discountPercent":{{ productTwo.compare_at_price | minus: productTwo.price | times: 100 | divided_by: productTwo.compare_at_price | round: 0 }},
+      "discountPercent":{{ productTwo.compare_at_price | minus: productTwo.price | times: 100.0 | divided_by: productTwo.compare_at_price | round }},
       "input":"{{ name }}"
     }'
   >

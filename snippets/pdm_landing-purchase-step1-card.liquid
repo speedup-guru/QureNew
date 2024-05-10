@@ -1,6 +1,5 @@
 {% liquid
-  assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0
-
+  assign product_save = productData.compare_at_price | minus: productData.price | times: 100.0 | divided_by: productData.compare_at_price | round
   assign nameProp = parentContainer
   assign parentName =  nameProp
 %}
