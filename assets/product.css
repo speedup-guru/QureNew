@@ -3481,9 +3481,9 @@ p.border-r {
     display: none !important;
 }
 
-.w-bottom-bar.w-css-reset {
+/* .w-bottom-bar.w-css-reset {
     display: none !important;
-}
+} */
 
 .wistia_placebo_close_button {
     opacity: 1 !important;
@@ -3504,7 +3504,20 @@ p.border-r {
 .wistia_placebo_close_button {
     outline: none !important;
 }
+.w-bottom-bar.w-css-reset {
+    display: block !important;
+}
 
+.w-bottom-bar-lower .w-css-reset {
+    background-color: transparent !important;
+    color: #000 !important;
+}
+.w-bottom-bar-lower.w-css-reset  div div+div{
+    background: transparent !important;
+}
+.w-bottom-bar{
+    bottom:8px !important;
+}
 @media(min-width:1199px) {
     .trusted_left {
         max-width: 490px;
@@ -4345,9 +4358,9 @@ input[type=range]::-moz-range-thumb {
     background: none !important;
 }
 
-.w-bottom-bar.w-css-reset {
+/* .w-bottom-bar.w-css-reset {
     display: none !important;
-}
+} */
 
 .actVideo_block .ctmVideo__block .player {
     border-radius: 10px;
