@@ -26,8 +26,8 @@
             "type": "announcement",
             "settings": {
               "heading": "<p><strong>FREE World-Wide Shipping <\/strong>All Orders Above $100<\/p>",
-              "button_label": "SAVE UPTO 55%",
-              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+              "button_label": "SHOP NOW",
+              "button_url": "shopify:\/\/collections\/best-sellers"
             }
           },
           "tab_3Wyyea": {
