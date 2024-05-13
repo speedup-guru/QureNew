@@ -420,50 +420,50 @@ $(document).ready(function () {
 });
 
 // Image PopUp Refill Banner
-document.addEventListener('DOMContentLoaded', function () {
-    const sourceImage = document.querySelectorAll('source.tab_img');
-    const images = document.querySelectorAll('img.tab_img');
-    let popupLink = Array.from(images);
-    popupLink.map((popupUrl) => {
-        popupUrl.addEventListener('click', function (event) {
-            event.preventDefault();
-            var dynamicImageUrl = popupUrl.src;
-            console.log(dynamicImageUrl);
-            $.magnificPopup.open({
-                type: 'image',
-                items: {
-                    src: dynamicImageUrl
-                }
-            });
-        });
-    });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const sourceImage = document.querySelectorAll('source.tab_img');
+//     const images = document.querySelectorAll('img.tab_img');
+//     let popupLink = Array.from(images);
+//     popupLink.map((popupUrl) => {
+//         popupUrl.addEventListener('click', function (event) {
+//             event.preventDefault();
+//             var dynamicImageUrl = popupUrl.src;
+//             console.log(dynamicImageUrl);
+//             $.magnificPopup.open({
+//                 type: 'image',
+//                 items: {
+//                     src: dynamicImageUrl
+//                 }
+//             });
+//         });
+//     });
+// });
 
-$(document).ready(function () {
-    var imageElement = document.getElementById('image-id');
-    if (imageElement) {
-        imageElement.addEventListener('click', function () {
-            var imageUrl = '';
-            var sources = this.getElementsByTagName('source');
-            for (var i = 0; i < sources.length; i++) {
-                if (window.matchMedia(sources[i].getAttribute('media')).matches) {
-                    imageUrl = sources[i].getAttribute('srcset');
-                    break;
-                }
-            }
-            if (!imageUrl) {
-                imageUrl = this.getElementsByTagName('img')[0].src;
-            }
+// $(document).ready(function () {
+//     var imageElement = document.getElementById('image-id');
+//     if (imageElement) {
+//         imageElement.addEventListener('click', function () {
+//             var imageUrl = '';
+//             var sources = this.getElementsByTagName('source');
+//             for (var i = 0; i < sources.length; i++) {
+//                 if (window.matchMedia(sources[i].getAttribute('media')).matches) {
+//                     imageUrl = sources[i].getAttribute('srcset');
+//                     break;
+//                 }
+//             }
+//             if (!imageUrl) {
+//                 imageUrl = this.getElementsByTagName('img')[0].src;
+//             }
 
-            $.magnificPopup.open({
-                items: {
-                    src: imageUrl
-                },
-                type: 'image'
-            });
-        });
-    }
-});
+//             $.magnificPopup.open({
+//                 items: {
+//                     src: imageUrl
+//                 },
+//                 type: 'image'
+//             });
+//         });
+//     }
+// });
 
 //Skin Slider Pop Up
 $(function () {
