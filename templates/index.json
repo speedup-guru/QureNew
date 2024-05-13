@@ -14,7 +14,7 @@
         "slide_qqmpCY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepageslide-2.jpg",
+            "image": "shopify:\/\/shop_images\/homepageslide-2.webp",
             "link_label": "Micro-Infusion System",
             "link_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
           }
@@ -27,20 +27,20 @@
             "link_url": "https:\/\/www.qureskincare.com\/products\/neck-decolletage-led"
           }
         },
-        "slide_9wpXXH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
-            "link_label": "Micro-Infusion Targeted Patches",
-            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
-          }
-        },
         "slide_aKL6kD": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/homepageslide-4.jpg",
             "link_label": "All-In-One Face Serum",
             "link_url": "https:\/\/www.qureskincare.com\/products\/face-serum"
+          }
+        },
+        "slide_9wpXXH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
+            "link_label": "Micro-Infusion Targeted Patches",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
           }
         },
         "slide_9qAien": {
@@ -64,8 +64,8 @@
         "slide_eMzaPx",
         "slide_qqmpCY",
         "slide_iQgE8e",
-        "slide_9wpXXH",
         "slide_aKL6kD",
+        "slide_9wpXXH",
         "slide_9qAien",
         "slide_GReD48"
       ],
