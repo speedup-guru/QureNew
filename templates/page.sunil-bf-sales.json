@@ -59,9 +59,9 @@
     "main": {
       "type": "product-landing-sales",
       "settings": {
-        "heading": "<h2>Save Up To 55%<\/h2><h3>Exclusive Holiday Bundles<\/h3>",
-        "image": "shopify:\/\/shop_images\/bf-sale_desk.webp",
-        "image_mobile": "shopify:\/\/shop_images\/bf-sale_mob.webp",
+        "heading": "<h3>EXCLUSIVE <strong>HOLIDAY<\/strong> BUNDLES<\/h3><h2>Save Up To 55%<\/h2>",
+        "image": "shopify:\/\/shop_images\/holiday_banner_desk.webp",
+        "image_mobile": "shopify:\/\/shop_images\/holiday_banner_mob.webp",
         "button_label": "Shop now",
         "button_url": "#bf-bundles"
       }
@@ -367,23 +367,23 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
+        "product_EQ6HJY": {
+          "type": "product",
+          "settings": {
+            "product": "skin-ssentials-set-doctorly-choice",
+            "comment_ammount": 202,
+            "percent": 40,
+            "ppl_choise": 0,
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
+          }
+        },
         "product_JVJkGj": {
           "type": "product",
           "settings": {
             "product": "youth-boosting-bundle",
             "comment_ammount": 202,
             "percent": 24,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
-        "product_pCXqdM": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "comment_ammount": 283,
-            "percent": 29,
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
@@ -411,23 +411,23 @@
             "recommended_code": ""
           }
         },
-        "product_EQ6HJY": {
-          "type": "product",
-          "settings": {
-            "product": "skin-ssentials-set-doctorly-choice",
-            "comment_ammount": 202,
-            "percent": 40,
-            "ppl_choise": 0,
-            "recommended": 1,
-            "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
-          }
-        },
         "product_CnMwyU": {
           "type": "product",
           "settings": {
             "product": "youthify-or-glow-set",
             "comment_ammount": 514,
             "percent": 44,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_pCXqdM": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "comment_ammount": 283,
+            "percent": 29,
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
@@ -455,29 +455,28 @@
             "recommended_code": ""
           }
         },
-        "product_iRt6LW": {
+        "product_DgMQiP": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "easter-bundle",
-            "comment_ammount": 147,
-            "percent": 46,
+            "product": "mi-bundle-may",
+            "comment_ammount": 100,
+            "percent": 34,
             "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
           }
         }
       },
       "block_order": [
+        "product_EQ6HJY",
         "product_JVJkGj",
-        "product_pCXqdM",
         "product_3Frmww",
         "product_zF9wP9",
-        "product_EQ6HJY",
         "product_CnMwyU",
+        "product_pCXqdM",
         "product_aKUc4N",
         "product_nRhA4x",
-        "product_iRt6LW"
+        "product_DgMQiP"
       ],
       "settings": {
         "heading": "Choose your bundle.",
