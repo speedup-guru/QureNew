@@ -940,10 +940,7 @@ body[data-serumTest='true']{
         input[type="radio"]:checked + label[for="products3-one"],
         input[type="radio"]:checked + label[for="products3-two"],
         input[type="radio"]:checked + label[for="products3-three"]{
-          /* cambiar las imagnes si esta funcionando pero la imagen que existe tiene fondo blanco
-            !cambiar todas las imagenes
-  
-          */
+          
           .card-img-container{
             background: linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%);
             border-radius: 24px 24px 0px 0px;
@@ -1056,6 +1053,9 @@ body[data-serumTest='true']{
                 background-color: white;
                 padding: 13px 24px 15px;
                 border-radius: 0 0 24px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 ul{
                   li{
                     list-style: initial;
@@ -1490,10 +1490,18 @@ body[data-serumTest='true']{
           .step4-card-doctor-container{
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
             background-color: #F6F6F6;
             gap: 12px;
             padding: 8px 8.5px;
             border-radius: 8px;
+            img{
+              width: 44px;
+              height: 44px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
             p{
               font-family: 'Poppins';
               font-size: 10px;
@@ -1548,7 +1556,7 @@ body[data-serumTest='true']{
               justify-content: space-between;
               border: none;
               background-color: transparent;
-
+              color: black;
               h3{
                 font-family: 'Poppins';
                 font-size: 12px;
