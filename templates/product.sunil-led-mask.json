@@ -260,7 +260,7 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA",
             "video_label": "Watch Video",
             "wistia_id": "",
-            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
+            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr Maxfield,<\/strong> Board Certified Dermatologist<\/h6>"
           }
         },
         "video_rVzjQy": {
@@ -290,7 +290,17 @@
             "video_url": "",
             "video_label": "Watch Video",
             "wistia_id": "gpf4liwnyn",
-            "text": "<p>\"It's the only LED mask on the market that pairs with an app and is customizable\"<\/p><h6><strong>Dr. Zeitany,<\/strong> Board Certified Dermatologist<\/h6>"
+            "text": "<p>\"It's the only LED mask on the market that pairs with an app and is customizable\"<\/p><h6><strong>Dr Zeitany,<\/strong> Board Certified Dermatologist<\/h6>"
+          }
+        },
+        "video_63bzGN": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hunter.png",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/af8d3f37480346a5b2061c6cb225e2d8.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.\"<\/p><h6><strong>Dr Hunter, <\/strong>NHS &Aesthetics Doctor<\/h6>"
           }
         }
       },
@@ -303,7 +313,8 @@
         "video_JznTqy",
         "video_rVzjQy",
         "video_9pKekb",
-        "video_kkYG7b"
+        "video_kkYG7b",
+        "video_63bzGN"
       ],
       "settings": {
         "classname": "trusted_bl",

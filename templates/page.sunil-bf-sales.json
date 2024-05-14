@@ -374,8 +374,8 @@
             "comment_ammount": 202,
             "percent": 24,
             "ppl_choise": 0,
-            "recommended": 1,
-            "recommended_code": "<div class=\"doctorly_rec mothers_day_bundle\">\n                                                <img src=\"{{ 'mothers_day_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>MOTHER'S DAY <br><span>SPECIAL BUNDLE<\/span><\/p>\n                                                <\/div>\n                                            <\/div>"
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_pCXqdM": {
@@ -385,8 +385,8 @@
             "comment_ammount": 283,
             "percent": 29,
             "ppl_choise": 0,
-            "recommended": 1,
-            "recommended_code": "<div class=\"doctorly_rec mothers_day_bundle\">\n                                                <img src=\"{{ 'mothers_day_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>MOTHER'S DAY <br><span>SPECIAL BUNDLE<\/span><\/p>\n                                                <\/div>\n                                            <\/div>"
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_3Frmww": {
