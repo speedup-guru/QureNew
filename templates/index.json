@@ -14,7 +14,7 @@
         "slide_qqmpCY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepageslide-2.jpg",
+            "image": "shopify:\/\/shop_images\/homepageslide-2.webp",
             "link_label": "Micro-Infusion System",
             "link_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
           }
@@ -27,20 +27,20 @@
             "link_url": "https:\/\/www.qureskincare.com\/products\/neck-decolletage-led"
           }
         },
-        "slide_9wpXXH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
-            "link_label": "Micro-Infusion Targeted Patches",
-            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
-          }
-        },
         "slide_aKL6kD": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/homepageslide-4.jpg",
             "link_label": "All-In-One Face Serum",
             "link_url": "https:\/\/www.qureskincare.com\/products\/face-serum"
+          }
+        },
+        "slide_9wpXXH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/M.I_Patches_Mobile.png",
+            "link_label": "Micro-Infusion Targeted Patches",
+            "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
           }
         },
         "slide_9qAien": {
@@ -64,8 +64,8 @@
         "slide_eMzaPx",
         "slide_qqmpCY",
         "slide_iQgE8e",
-        "slide_9wpXXH",
         "slide_aKL6kD",
+        "slide_9wpXXH",
         "slide_9qAien",
         "slide_GReD48"
       ],
@@ -78,8 +78,8 @@
         "link_crBjL9": {
           "type": "link",
           "settings": {
-            "link_label": "SHOP NOW & SAVE",
-            "link_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+            "link_label": "Shop Best Sellers",
+            "link_url": "shopify:\/\/collections\/best-sellers"
           }
         }
       },
@@ -87,10 +87,10 @@
         "link_crBjL9"
       ],
       "settings": {
-        "heading": "CELEBRATING MOM",
-        "text": "<h2>Nurture Her\\n Natural Beauty<\/h2><p><strong>Save up to 55% <\/strong>on Mother's Day Bundles<\/p>",
-        "image": "shopify:\/\/shop_images\/homepage_mothersday_h_desk.webp",
-        "image_mobile": "shopify:\/\/shop_images\/homepage_mothersday_mob.webp"
+        "heading": "Get clinic-level results from home- minus the ‘clinical’ costs.",
+        "text": "<p><strong>50,000+ <\/strong>customers feel more confident in their own skin.<\/p>",
+        "image": "shopify:\/\/shop_images\/homepage_banner_desk_5a394355-a35f-4911-ad68-df2ef1c021df.webp",
+        "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_098b63eb-bcc4-4cd1-9cf1-30c41a61fb0a.webp"
       }
     },
     "main_banner_rJmjKt": {
@@ -488,7 +488,7 @@
             "image": "shopify:\/\/shop_images\/bestseller_micro.webp",
             "heading": "Micro-Infusion System",
             "text": "<p>At-home facial treatment that <strong>transforms dull-looking skin<\/strong>. Designed to reduce the look of fine lines and pores with minimal to <strong>no downtime<\/strong> for <strong>visibly glowing skin<\/strong>!<\/p>",
-            "button_label": "Learn more",
+            "button_label": "Shop Now",
             "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
           }
         },
@@ -498,7 +498,7 @@
             "image": "shopify:\/\/shop_images\/bestseller_mask.webp",
             "heading": "Light Therapy Mask",
             "text": "<p><strong>FDA cleared,<\/strong> dermatologist recommended, at-home LED Light<br\/>Therapy Mask that’s proven to reduce fine lines, wrinkles, redness, pigmentation, and acne. Connects with app to customize, plan and track treatments.<\/p>",
-            "button_label": "Learn more",
+            "button_label": "Shop Now",
             "button_url": "shopify:\/\/products\/q-rejuvalight-pro-facewear"
           }
         },
@@ -508,7 +508,7 @@
             "image": "shopify:\/\/shop_images\/bestseller_serum.webp",
             "heading": "All-In-One Face Serum",
             "text": "<p>Multi-tasking face serum <strong>reduces appearance of fine lines <\/strong>and<strong><br\/><\/strong>improves look of <strong>dark spots<\/strong> with Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.     <\/p>",
-            "button_label": "Learn more",
+            "button_label": "Shop Now",
             "button_url": "shopify:\/\/products\/face-serum"
           }
         }

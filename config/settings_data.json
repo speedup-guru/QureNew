@@ -22,23 +22,12 @@
       "header": {
         "type": "header",
         "blocks": {
-          "announcement-promotion_L6B7qD": {
-            "type": "announcement-promotion",
-            "settings": {
-              "heading": "MOTHER’S DAY",
-              "text": "SHOW HER YOU CARE WITH SKINCARE",
-              "button_label": "SAVE UP TO 55%",
-              "button_mobile_label": "SAVE UP TO 55%",
-              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
-            }
-          },
           "announcement_TPxBgi": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "heading": "<p><strong>FREE World-Wide Shipping <\/strong>All Orders Above $100<\/p>",
-              "button_label": "SAVE UPTO 55%",
-              "button_url": "shopify:\/\/pages\/exclusive-holiday-bundle-deal"
+              "button_label": "SHOP NOW",
+              "button_url": "shopify:\/\/collections\/best-sellers"
             }
           },
           "tab_3Wyyea": {
@@ -49,7 +38,6 @@
           }
         },
         "block_order": [
-          "announcement-promotion_L6B7qD",
           "announcement_TPxBgi",
           "tab_3Wyyea"
         ],
@@ -163,6 +151,12 @@
       },
       "4215564508307704909": {
         "type": "shopify:\/\/apps\/sitemap-noindex-pro\/blocks\/app-embed\/4d815e2c-5af0-46ba-8301-d0f9cf660031",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2728461494843721857": {
+        "type": "shopify:\/\/apps\/amped-email-sms-popups\/blocks\/app-embed\/d9d8f140-4443-4f6c-a16a-95357ecc2125",
         "disabled": false,
         "settings": {
         }
