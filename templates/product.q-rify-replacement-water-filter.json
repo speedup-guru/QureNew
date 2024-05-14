@@ -28,9 +28,9 @@
         "before_and_after_zYCwCN": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify:\/\/shop_images\/water_filter_replacement_1_x2_cf7796b4-1bdf-4cc7-9eba-a63789ffeb7c.png",
+            "image_new_section_1": "shopify:\/\/shop_images\/B_A_-_D_29.png",
             "image_new_section_text_1": "",
-            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D_ec2b58f0-5975-46e7-86d3-998d562d7751.png",
+            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D_30.png",
             "image_new_section_text_2": "",
             "image_new_section_text_3": "",
             "image_new_section_text_4": "",
@@ -209,7 +209,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Clearer, hydrated skin, on tap",
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "two_column_box_kz3jTU": {
