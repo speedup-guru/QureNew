@@ -1,5 +1,289 @@
 <!-- BF Bundle Banner start -->
-<div class="bfBundle__banner pt-0 pt-md-4 py-4">
+<div class="bfBundle__banner">
+    {% if section.settings.image != blank %}
+        <picture>
+            <source media="(min-width:1100px)" srcset="{{ section.settings.image | img_url: 'master' }}">
+            {% if section.settings.image_mobile %}
+                <source media="(min-width:720px)" srcset="{{ section.settings.image_mobile | img_url: '720x' }}">
+                <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | img_url: '540x' }}">
+            {% endif %}
+            {% if section.settings.image_mobile %}
+                <img class="img-fluid bg_banner" src="{{ section.settings.image_mobile | img_url: '540x' }}" alt="{{ section.settings.image_mobile.alt | escape }}" width="125" height="173">
+            {% else %}
+                <img class="img-fluid bg_banner" src="{{ section.settings.image | img_url: '540x' }}" alt="{{ section.settings.image.alt | escape }}" width="125" height="173">
+            {% endif %}
+        </picture>
+    {% endif %}
+    <div class="bfBundle__bannerBlock">
+        <div class="container">
+            <div class="bfBundle__content  bfBundle__content-mob pb-md-5 pb-0">
+                <div class="bfBundle_bnr_hdr">
+                    {% if section.settings.heading != blank %}
+                        {{ section.settings.heading 
+                            |  replace: '<h3>', '<div class="subHeading"><h3 class="bfSub_heading">'
+                            |  replace: '</h3>', '</h3></div>'
+                            |  replace: '<h2>', '<h2 class="bfHeading">'
+                        }} 
+                    {% endif %}
+                    {% if section.settings.button_label != blank %}
+                        <a href="{{ section.settings.button_url }}" class="btn btn-bfBundle">{{ section.settings.button_label }}</a>
+                    {% endif %}
+                </div>
+
+                <div class="bundleCycle d-none d-lg-block">
+                    <div class="swiper bundleCycleSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'daily_essentials_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $79</span>
+                                        <h4 class="cycle-hdr">Daily Essentials Bundle </h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'pure_radiance_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $176</span>
+                                        <h4 class="cycle-hdr">Pure Radiance Bundle </h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'best_seller_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $99</span>
+                                        <h4 class="cycle-hdr">Best Seller Bundle</h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'daily_essentials.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $49</span>
+                                        <h4 class="cycle-hdr">All-In-One Face Serum Bundle</h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'yothfull_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $188</span>
+                                        <h4 class="cycle-hdr">Youthful You Bundle</h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'hydra_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $59</span>
+                                        <h4 class="cycle-hdr">Hydra Glow Bundle </h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'confidence_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $216</span>
+                                        <h4 class="cycle-hdr">Confidence Booster Bundle </h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'ageless_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $117</span>
+                                        <h4 class="cycle-hdr">Ageless Glow Bundle</h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cycle-slide">
+                                    <div class="cycle_img">
+                                        <img src="{{ 'micro_infusion_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="cycle_cnt">
+                                        <span class="cycle-save">Save $167</span>
+                                        <h4 class="cycle-hdr">Micro Infusion Bundle</h4>
+                                        <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-arrow swiper-button-next">
+                            <img src="{{ 'swiper_next_btn.svg' | asset_url }}" alt="">
+                        </div>
+                        <div class="swiper-arrow swiper-button-prev">
+                            <img src="{{ 'swiper_prev_btn.svg' | asset_url }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bundleCycleSlider1">
+        <div class="bundleCycle d-block d-lg-none">
+            <div class="swiper bundleCycleSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'daily_essentials_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $79</span>
+                                <h4 class="cycle-hdr">Daily Essentials Bundle </h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'pure_radiance_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $176</span>
+                                <h4 class="cycle-hdr">Pure Radiance Bundle </h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'best_seller_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $99</span>
+                                <h4 class="cycle-hdr">Best Seller Bundle</h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'daily_essentials.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $49</span>
+                                <h4 class="cycle-hdr">All-In-One Face Serum Bundle</h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'yothfull_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $188</span>
+                                <h4 class="cycle-hdr">Youthful You Bundle</h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'hydra_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $59</span>
+                                <h4 class="cycle-hdr">Hydra Glow Bundle </h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'confidence_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $216</span>
+                                <h4 class="cycle-hdr">Confidence Booster Bundle </h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'ageless_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $117</span>
+                                <h4 class="cycle-hdr">Ageless Glow Bundle</h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cycle-slide">
+                            <div class="cycle_img">
+                                <img src="{{ 'micro_infusion_sl.webp' | asset_url }}" alt="" class="img-fluid" />
+                            </div>
+                            <div class="cycle_cnt">
+                                <span class="cycle-save">Save $167</span>
+                                <h4 class="cycle-hdr">Micro Infusion Bundle</h4>
+                                <a href="#bf-bundles" class="btn-cycle">Get yours ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-arrow swiper-button-next">
+                    <img src="{{ 'swiper_next_btn.svg' | asset_url }}" alt="">
+                </div>
+                <div class="swiper-arrow swiper-button-prev">
+                    <img src="{{ 'swiper_prev_btn.svg' | asset_url }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- BF Bundle Banner end -->
+
+
+<!-- BF Bundle Banner start -->
+{% comment %} <div class="bfBundle__banner pt-0 pt-md-4 py-4">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1">
@@ -159,7 +443,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- BF Bundle Banner end -->
 
 

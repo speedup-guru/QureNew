@@ -312,7 +312,7 @@
   }
   
   .drawer__cart-title {
-		  color: #000!important
+		  color: #000!important;
   }
   
   .drawer__cart-product-info {
@@ -2455,8 +2455,8 @@
   }
   
   .drawer__cart-empty-text h4,.drawer__cart-title,.empty-product .empty-title h4 {
-		  font-family: canela_webmedium;
-		  font-weight: 500
+		font-family: 'Canela Web';
+		font-weight: 500
   }
   
   .drawer__cart-empty-text h4 {
