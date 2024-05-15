@@ -367,6 +367,17 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
+        "product_DgMQiP": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
+          }
+        },
         "product_EQ6HJY": {
           "type": "product",
           "settings": {
@@ -454,20 +465,10 @@
             "recommended": 0,
             "recommended_code": ""
           }
-        },
-        "product_DgMQiP": {
-          "type": "product",
-          "settings": {
-            "product": "mi-bundle-may",
-            "comment_ammount": 100,
-            "percent": 34,
-            "ppl_choise": 0,
-            "recommended": 1,
-            "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
-          }
         }
       },
       "block_order": [
+        "product_DgMQiP",
         "product_EQ6HJY",
         "product_JVJkGj",
         "product_3Frmww",
@@ -475,8 +476,7 @@
         "product_CnMwyU",
         "product_pCXqdM",
         "product_aKUc4N",
-        "product_nRhA4x",
-        "product_DgMQiP"
+        "product_nRhA4x"
       ],
       "settings": {
         "heading": "Choose your bundle.",
