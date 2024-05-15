@@ -378,6 +378,17 @@
             "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
           }
         },
+        "product_3Frmww": {
+          "type": "product",
+          "settings": {
+            "product": "best-seller-bundle",
+            "comment_ammount": 729,
+            "percent": 30,
+            "ppl_choise": 1,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
         "product_EQ6HJY": {
           "type": "product",
           "settings": {
@@ -396,17 +407,6 @@
             "comment_ammount": 202,
             "percent": 24,
             "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
-        "product_3Frmww": {
-          "type": "product",
-          "settings": {
-            "product": "best-seller-bundle",
-            "comment_ammount": 729,
-            "percent": 30,
-            "ppl_choise": 1,
             "recommended": 0,
             "recommended_code": ""
           }
@@ -469,9 +469,9 @@
       },
       "block_order": [
         "product_DgMQiP",
+        "product_3Frmww",
         "product_EQ6HJY",
         "product_JVJkGj",
-        "product_3Frmww",
         "product_zF9wP9",
         "product_CnMwyU",
         "product_pCXqdM",
