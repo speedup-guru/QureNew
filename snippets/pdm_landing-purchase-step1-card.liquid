@@ -1,5 +1,4 @@
 {% liquid
-  assign product_save = productData.compare_at_price | minus: productData.price | times: 100.0 | divided_by: productData.compare_at_price | round
   assign nameProp = parentContainer
   assign parentName =  nameProp
 %}
@@ -20,11 +19,16 @@
     {{ productInfo.image | image_url: width: 400 | image_tag: alt: productData.title }}
   </div>
   <div class="step1-card-price-container">
-    {% if product_save != null %}
+    {% unless productInfo.discount_product == 0 %}
+      <div class="step1-card-price-discount">
+        <p>SAVE {{ productInfo.discount_product }}%</p>
+      </div>
+    {% endunless %}
+    {% comment %} {% if product_save != null %}
       <div class="step1-card-price-discount">
         <p>SAVE {{ product_save }}%</p>
       </div>
-    {% endif %}
+    {% endif %} {% endcomment %}
     <div class="step1-card-price">
       <div class="step1-card-price-information">
         <span class="step1-card-price__title-mobile">{{ productInfo.title_product_mobile }}</span>
@@ -69,3 +73,4 @@
     </div>
   </div>
 </div>
+

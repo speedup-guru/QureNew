@@ -1,14 +1,57 @@
 
 {% liquid
+
+  ###price 1
+
+  assign price_1_discount = productOne.price | money_without_currency
+  if price_1_discount == blank
+    assign price_1_discount = 0
+  endif
+
+  assign price_1 = productOne.compare_at_price | money_without_currency
+  if price_1 == blank
+    assign price_1 = 0
+  endif
+
+  assign price_1_quota = productOne.price |  divided_by: 4 | money_without_currency
+
+  ### price 2 
+
+  assign price_2_discount = productTwo.price | money_without_currency
+  if price_2_discount == blank
+    assign price_2_discount = 0
+  endif
+
+  assign price_2 = productTwo.compare_at_price | money_without_currency
+  if price_2 == blank
+    assign price_2 = 0
+  endif
+
+  assign price_2_quota = productTwo.price |  divided_by: 4 | money_without_currency
+
+  ### price 3
+
+
+  assign price_3_discount = productThree.compare_at_price | money_without_currency
+  if price_3_discount == blank
+    assign price_3_discount = 0
+  endif
+
+
   assign price_3 = productThree.price | money_without_currency
   if price_3 == blank
     assign price_3 = 0
   endif
+
+  assign price_3_quota = productThree.price |  divided_by: 4 | money_without_currency
+
+
   assign dropdownId1 = name | append: '-collapse-' | append: '1'
   assign dropdownId2 = name | append: '-collapse-' | append: '2'
   assign dropdownId3 = name | append: '-collapse-' | append: '3'
 
 %}
+
 <div
   id="inputs-{{ name }}"
   class="inputs-{{ name }} landing-one-container {% if name == 'products1' %} show-inputs {% endif %}"
@@ -24,11 +67,12 @@
       "position":1,
       "titleBundle":"{{ productOneInfo.title_product }}", 
       "id":{{ productOne.selected_or_first_available_variant.id }}, 
-      "discountPrice":{{ productOne.price | money_without_currency }},
-      "price":{{ productOne.compare_at_price | money_without_currency }}, 
-      "discountPriceQuota":{{ productOne.price |  divided_by: 4 | money_without_currency }},
-      "discountPercent":{{ productOne.compare_at_price | minus: productOne.price | times: 100.0 | divided_by: productOne.compare_at_price | round }},
-      "input": "{{ name }}"
+      "discountPrice":"{{ price_1_discount }}",
+      "price":"{{ price_1 }}", 
+      "discountPriceQuota":"{{ price_1_quota }}",
+      "discountPercent":"{{ productOneInfo.discount_product }}",
+      "input": "{{ name }}",
+      "name":"{{ productOneInfo.name }}"
     }'
     checked
   >
@@ -54,11 +98,12 @@
       "position":2,
       "titleBundle":"{{ productTwoInfo.title_product }}",
       "id":{{ productTwo.selected_or_first_available_variant.id }}, 
-      "discountPrice":{{ productTwo.price | money_without_currency }},
-      "price":{{ productTwo.compare_at_price | money_without_currency }}, 
-      "discountPriceQuota":{{ productTwo.price | divided_by: 4 | money_without_currency  }},
-      "discountPercent":{{ productTwo.compare_at_price | minus: productTwo.price | times: 100.0 | divided_by: productTwo.compare_at_price | round }},
-      "input":"{{ name }}"
+      "discountPrice":"{{ price_2_discount }}",
+      "price":"{{ price_2 }}", 
+      "discountPriceQuota":"{{ price_2_quota }}",
+      "discountPercent":"{{ productTwoInfo.discount_product }}",
+      "input":"{{ name }}",
+      "name":"{{ productTwoInfo.name }}"
     }'
   >
   <label for="{{name}}-two">
@@ -83,11 +128,12 @@
       "position":3,
       "titleBundle":"{{ productThreeInfo.title_product }}",
       "id":{{ productThree.selected_or_first_available_variant.id }}, 
-      "discountPrice":{{ productThree.price | money_without_currency }},
-      "price":{{ price_3 }}, 
-      "discountPriceQuota":{{ productThree.price | divided_by: 4 | money_without_currency }},
-      "discountPercent":0,
-      "input":"{{ name }}"
+      "discountPrice":"{{ price_3 }}",
+      "price":"{{ price_3_discount }}", 
+      "discountPriceQuota":"{{ price_3_quota }}",
+      "discountPercent":"{{ productThreeInfo.discount_product }}",
+      "input":"{{ name }}",
+      "name":"{{ productThreeInfo.name }}"
     }'
   >
   <label for="{{name}}-three">
