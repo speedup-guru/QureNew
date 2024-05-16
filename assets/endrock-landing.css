@@ -1824,7 +1824,7 @@ body[data-serumTest='true']{
       span{
         font-family: 'Poppins';
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 20px;
         letter-spacing: 0.04em;
         text-align: left;
@@ -1833,6 +1833,11 @@ body[data-serumTest='true']{
       svg{
         width: 16px;
         height: 16px;
+        g{
+          path{
+            stroke-width: 3px;
+          }
+        }
       }
 
     }
