@@ -1,4 +1,5 @@
-<div class="app_slider_bl section">
+<!-- -- app out slider start -- -->
+<div class="app_out section">
     <div class="container">
         <div class="section_header text-center mb-3">
             {% if section.settings.heading != blank %}
@@ -9,44 +10,42 @@
                 {{ section.settings.text }}
             {% endif %}
         </div>
-        {% if section.blocks.size > 0 %}
-            <div class="app_slider_wrapper">
-                <div class="swiper dot_pagination app_slider twa__swiper" id="twa__swiper-app_slider"
-                    data-section-id="app_slider" data-autoplay="false" data-loop="false" data-centerslide="false"
-                    data-mobile="1" data-tablet="2" data-desktop="2.3" data-spacing="100"
-                    data-arrowleft="app_slider-swiper-prev" data-arrowright="app_slider-swiper-next">
-                    <div class="swiper-wrapper">
-                        {%- for block in section.blocks -%}
-                            <div class="swiper-slide">
-                                <div class="app_s_item">
-                                    {% if block.settings.image != blank %}
-                                        <div class="as_img order-2 order-md-1 order-2 order-md-1">
-                                            <img src="{{ block.settings.image | img_url: '450x' }}" alt="" class="img-fluid">
-                                        </div>
-                                    {% endif %}
-
-                                    {% if block.settings.heading != blank %}
-                                        <div class="as_info order-1 order-md-2 order-1 order-md-2">
-                                            <h3>{{ block.settings.heading }}</h3>
-                                        </div>
-                                    {% endif %}
-
-                                    {% if block.settings.text != blank %}
-                                        <div class="as_desc order-3 order-3">
-                                            {{ block.settings.text }}
-                                        </div>  
-                                    {% endif %}
-                                </div>
-                            </div>
-                        {%- endfor -%}
+    </div>
+    <div class="gallery mw-mob-1001">
+        <div class="swiper-container gallery-slider">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    <div class="swiper-slide">
+                        {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | img_url: '450x' }}" alt="" class="img-fluid">
+                        {% endif %}
                     </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+                {%- endfor -%}
             </div>
-        {% endif %}
+        </div>
+
+        <div class="swiper-container gallery-thumbs dot_pagination">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    <div class="swiper-slide">
+                        <div class="app_out_content">
+                            {% if block.settings.heading != blank %}
+                                <div class="app_subhheading">
+                                    {{ block.settings.heading }}
+                                </div>
+                            {% endif %}
+                            {{ block.settings.text }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination pt-2"></div>
+        </div>
     </div>
 </div>
+<!-- -- app out slider end -- -->
 
+<script src="{{ '__app_slider.js' | asset_url }}"></script>
 
 {% schema %}
     {
