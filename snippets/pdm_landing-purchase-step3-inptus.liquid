@@ -1,0 +1,13 @@
+<div class="landing-three-title-container">
+  <h3>{{ generalSettings.step_3_title }}</h3>
+</div>
+<div id="inputs-landing-step3" class="landing-three-inputs-container">
+  <input type="radio" id="{{ nameOne }}" name="step3" value="{{ generalSettings.step_3_card_titles.value[0] }}" checked>
+  <label for="{{ nameOne }}">
+    {% render 'pdm_landing-purchase-step3-card', data: generalSettings, cardCase: 0 %}
+  </label>
+  <input type="radio" id="{{ nameTwo }}" name="step3" value="{{ generalSettings.step_3_card_titles.value[1] }}">
+  <label for="{{ nameTwo }}">
+    {% render 'pdm_landing-purchase-step3-card', data: generalSettings, cardCase: 1 %}
+  </label>
+</div>
