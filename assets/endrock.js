@@ -562,24 +562,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     renderElementsStep3() {
-      console.log('renderElementsStep3');
       const step3PriceNormal = document.getElementById('step3-price-normal');
       const step3PriceQuota = document.getElementById('step3-price-quota');
 
       if (step3PriceNormal && step3PriceQuota) {
         if (Number(this.selectedInputValueJson.price) == 0) {
           step3PriceNormal.innerHTML = `
-            <span class='step3-card-price-discount'>$${this.selectedInputValueJson.discountPrice}</span>
+            <span class='step3-card-price-discount'>${this.selectedInputValueJson.discountPrice}</span>
           `;
         } else {
           step3PriceNormal.innerHTML = `
-            <span class='step3-card-price-full'>$${this.selectedInputValueJson.price}</span>
-            <span class='step3-card-price-discount'>$${this.selectedInputValueJson.discountPrice}</span>
+            <span class='step3-card-price-full'>${this.selectedInputValueJson.price}</span>
+            <span class='step3-card-price-discount'>${this.selectedInputValueJson.discountPrice}</span>
           `;
         }
         step3PriceQuota.innerHTML =`
         <span class='step3-card-price-quota'>
-          $${this.selectedInputValueJson.discountPriceQuota}
+          ${this.selectedInputValueJson.discountPriceQuota}
         </span>
         `;
       }
@@ -741,8 +740,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       anchorID.href = currentHref;
-      // console.log('input1', this.selectedInputValueJson )
-      // console.log('anchorID', anchorID);
       setTimeout(() => {
         anchorID.click();
       }, 2200);

@@ -3,47 +3,47 @@
 
   ###price 1
 
-  assign price_1_discount = productOne.price | money_without_currency
+  assign price_1_discount = productOne.price | money_without_trailing_zeros
   if price_1_discount == blank
     assign price_1_discount = 0
   endif
 
-  assign price_1 = productOne.compare_at_price | money_without_currency
+  assign price_1 = productOne.compare_at_price | money_without_trailing_zeros
   if price_1 == blank
     assign price_1 = 0
   endif
 
-  assign price_1_quota = productOne.price |  divided_by: 4 | money_without_currency
+  assign price_1_quota = productOne.price |  divided_by: 4 | money_without_trailing_zeros
 
   ### price 2 
 
-  assign price_2_discount = productTwo.price | money_without_currency
+  assign price_2_discount = productTwo.price | money_without_trailing_zeros
   if price_2_discount == blank
     assign price_2_discount = 0
   endif
 
-  assign price_2 = productTwo.compare_at_price | money_without_currency
+  assign price_2 = productTwo.compare_at_price | money_without_trailing_zeros
   if price_2 == blank
     assign price_2 = 0
   endif
 
-  assign price_2_quota = productTwo.price |  divided_by: 4 | money_without_currency
+  assign price_2_quota = productTwo.price |  divided_by: 4 | money_without_trailing_zeros
 
   ### price 3
 
 
-  assign price_3_discount = productThree.compare_at_price | money_without_currency
+  assign price_3_discount = productThree.compare_at_price | money_without_trailing_zeros
   if price_3_discount == blank
     assign price_3_discount = 0
   endif
 
 
-  assign price_3 = productThree.price | money_without_currency
+  assign price_3 = productThree.price | money_without_trailing_zeros
   if price_3 == blank
     assign price_3 = 0
   endif
 
-  assign price_3_quota = productThree.price |  divided_by: 4 | money_without_currency
+  assign price_3_quota = productThree.price |  divided_by: 4 | money_without_trailing_zeros
 
 
   assign dropdownId1 = name | append: '-collapse-' | append: '1'
