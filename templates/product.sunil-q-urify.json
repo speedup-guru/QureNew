@@ -17,339 +17,20 @@
     "pdm_product_social_proof_data_4iretp"
   ],
   "sections": {
-    "compare_yQKzP4": {
-      "type": "compare",
-      "blocks": {
-        "object_beMBx9": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/alternative_filters.png",
-            "heading": "Alternative\\nFilters",
-            "text": "",
-            "price": "",
-            "style": "incorrectCircle",
-            "list": "<p><em>Reduces chlorine<\/em><\/p><ul><li>Reduces calcium<\/li><li>Reduces magnesium<\/li><\/ul>"
-          }
-        },
-        "object_jWtKpX": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beauty_qurifyTap.webp",
-            "heading": "Q-urify Water\\nFilter ",
-            "text": "",
-            "price": "",
-            "style": "correctCircle",
-            "list": "<ul><li>Reduces chlorine<\/li><li>Reduces calcium<\/li><li>Reduces magnesium<\/li><\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "object_jWtKpX",
-        "object_beMBx9"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "classname": "beauty_skincare section bg-white beauty_ftrs_center",
-        "heading": "More effective and safer than other filters",
-        "text": "<p>Other filtration systems focus on just chlorine removal, but calcium and magnesium are the true skin-barrier disruptors. With the Q-urify Water Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin...<\/p>"
-      }
-    },
-    "faq_NrT9Hx": {
-      "type": "faq",
-      "blocks": {
-        "object_4VFAPN": {
-          "type": "object",
-          "settings": {
-            "heading": "Where can I buy replacement filters?",
-            "text": "<p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer subscription plans for your convenience and ease.<\/p>",
-            "code": ""
-          }
-        },
-        "object_A6tABB": {
-          "type": "object",
-          "settings": {
-            "heading": "What’s the difference between \"hard water\" and \"soft water\"?",
-            "text": "<p>Hard water is water that contains a high quantity of dissolved minerals (like calcium and magnesium). Where soft water has been treated, so that the only ion remaining is sodium. When rainwater falls, it is naturally soft. <\/p><p>However, as water makes its way through the ground and into our waterways, it picks up minerals like chalk, lime, calcium and magnesium and becomes hard water. Hard water is to blame for dishes with spots, dingy looking clothes, and residue and soap scums in bathrooms. Soap and cleansers are also less effective with hard water due to its reaction to the magnesium and calcium, which makes the lather not as rich and bubbly and leaves hair feeling sticky and dull.<\/p>",
-            "code": ""
-          }
-        },
-        "object_aYKEc9": {
-          "type": "object",
-          "settings": {
-            "heading": "How does tap water harm my skin?",
-            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:<\/p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.<\/li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.<\/li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.<\/li><\/ul>",
-            "code": ""
-          }
-        },
-        "object_bEXBbc": {
-          "type": "object",
-          "settings": {
-            "heading": "How often do I need to replace my filter?",
-            "text": "<p>With daily use, your Q-urify water filter needs to be replaced at least once every three months for your skin to look and feel its best. Once it gets past the 3 month mark, your filter starts to lose its efficacy. We wash our face everyday so make sure you are looking after your skin.<\/p>",
-            "code": ""
-          }
-        },
-        "object_BnpcqK": {
-          "type": "object",
-          "settings": {
-            "heading": "What does it filter in the water?",
-            "text": "<p>Q-urify water filter uses both physical and chemical filtration components to help remove known as skin irritants that make your tap water “hard” – like calcium, magnesium and chlorine.<\/p>",
-            "code": ""
-          }
-        },
-        "object_DB36gV": {
-          "type": "object",
-          "settings": {
-            "heading": "What skin types can benefit from Q-urify Water Filter?",
-            "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. <\/p>",
-            "code": ""
-          }
-        },
-        "object_hNd63i": {
-          "type": "object",
-          "settings": {
-            "heading": "Can I turn OFF the filtered water?",
-            "text": "<p>Yes! The Q-urify Water Filter has the option of switching off filtered water. You can turn on and on the purified water by switching to this option on the right side.<\/p>",
-            "code": ""
-          }
-        },
-        "object_hXMBYd": {
-          "type": "object",
-          "settings": {
-            "heading": "Will it fit my faucet?",
-            "text": "<p>It’s compatible with almost every circular removable aerator! Each Q-urify Water Filter kit comes with 8 adaptors to help fit different faucet sizes. Please note that it will NOT fit faucets that are square shaped, pull out, hand-held, spray-style, or faucets with a sensor.<\/p>",
-            "code": "<div class=\"faq_img_wrap\">\n                                            <img src=\"{{ 'qurify_faq_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_4.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_5.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_6.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_7.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <\/div>"
-          }
-        },
-        "object_igexDf": {
-          "type": "object",
-          "settings": {
-            "heading": "What’s included?",
-            "text": "",
-            "code": "<div class=\"container\">\n                                    <div class=\"chest_pdp_ftr1\">\n                                        <div class=\"cp_ftr_wrapper p-0\">\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_filter-device.svg' | asset_url }}\" alt=\"\">\n                                                <p>Water Filter Device with 3 month filter inside <\/p>\n                                            <\/div>\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_faucet.svg' | asset_url }}\" alt=\"\">\n                                                <p>Different attachments included to match your faucet<\/p>\n                                            <\/div>\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_user-manual.svg' | asset_url }}\" alt=\"\">\n                                                <p>Step by step user manual <\/p>\n                                            <\/div>\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_all-in-one.svg' | asset_url }}\" alt=\"\">\n                                                <p>All-In-One tool for installing<\/p>\n                                            <\/div>\n                                        <\/div>\n                                    <\/div>\n                                <\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "object_aYKEc9",
-        "object_BnpcqK",
-        "object_hXMBYd",
-        "object_DB36gV",
-        "object_bEXBbc",
-        "object_4VFAPN",
-        "object_hNd63i",
-        "object_A6tABB",
-        "object_igexDf"
-      ],
-      "settings": {
-        "classname": "bg_yellow",
-        "heading": "The answers to your questions",
-        "text": "",
-        "button_label": "Show More Questions",
-        "button_hide_label": "Hide More Questions"
-      }
-    },
-    "featuredin_RKtJRq": {
-      "type": "featuredin",
-      "blocks": {
-        "image_4bdHwm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/elle.svg",
-            "mobile_hide": true
-          }
-        },
-        "image_e7ixGF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.svg",
-            "mobile_hide": false
-          }
-        },
-        "image_gcw7eg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/grazia.svg",
-            "mobile_hide": true
-          }
-        },
-        "image_p6AHPH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
-            "mobile_hide": false
-          }
-        },
-        "image_TXxYRf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/glamour.svg",
-            "mobile_hide": true
-          }
-        },
-        "image_UtkdcJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
-            "mobile_hide": false
-          }
-        }
-      },
-      "block_order": [
-        "image_p6AHPH",
-        "image_e7ixGF",
-        "image_UtkdcJ",
-        "image_4bdHwm",
-        "image_TXxYRf",
-        "image_gcw7eg"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
-    "guide_7WfJ8X": {
-      "type": "guide",
-      "blocks": {
-        "object_AcMGDz": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify_use_s_2.webp",
-            "text": "<p>Find the faucet thread accessory which best fits your faucet by size                                                        from the 7 provided. If none of the faucet thread accessories fit,                                                        then use the Universal Joint. <\/p>",
-            "step": "STEP"
-          }
-        },
-        "object_caB4Cq": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify_use_s_4.webp",
-            "text": "<p>Detach the mounting nut from the Q-urify Water Filter. Put the faucet                                                        thread accessory (with the silicone ring inside) through the                                                        mounting nut and secure it onto your faucet. <\/p>",
-            "step": "STEP"
-          }
-        },
-        "object_P3gAdM": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify_use_s_6.webp",
-            "text": "<p>For filtered water, turn to “PUR” (short for purify). Turn to “TAP”                                                        if you prefer unfiltered water.                                                        Enjoy healthier, clearer skin!<\/p>",
-            "step": "STEP"
-          }
-        },
-        "object_Qmyt7M": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify_use_s_5.webp",
-            "text": "<p>Once tightened, secure the Q-urify Water Filter to the mounting nut.<\/p>",
-            "step": "STEP"
-          }
-        },
-        "object_Y6Wt7U": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify_use_s_1.webp",
-            "text": "<p>Remove faucet aerator. Simply attach and twist it off using the key                                                        for removal.<\/p>",
-            "step": "STEP"
-          }
-        },
-        "object_YHXEeE": {
-          "type": "object",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/qurify_use_s_3.webp",
-            "text": "<p>Find the silicone ring that best fits and place it inside the faucet                                                        thread accessory.<\/p>",
-            "step": "STEP"
-          }
-        },
-        "wistia_mM7gtG": {
-          "type": "wistia",
-          "settings": {
-            "wistia_id": "qi96cehl7z"
-          }
-        }
-      },
-      "block_order": [
-        "wistia_mM7gtG",
-        "object_Y6Wt7U",
-        "object_AcMGDz",
-        "object_YHXEeE",
-        "object_caB4Cq",
-        "object_Qmyt7M",
-        "object_P3gAdM"
-      ],
-      "settings": {
-        "classname": "",
-        "heading": "How to install",
-        "text": ""
-      }
-    },
-    "icons_list_y8yF3M": {
-      "type": "icons-list",
-      "blocks": {
-        "icon_b4iEDD": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/science-ftr.svg",
-            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
-          }
-        },
-        "icon_KKMcJJ": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
-            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
-          }
-        },
-        "icon_mQJhED": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
-            "text": "<p>Dermatologist<\/p><p>Tested & Approved<\/p>"
-          }
-        },
-        "icon_QLBprj": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_QLBprj",
-        "icon_KKMcJJ",
-        "icon_mQJhED",
-        "icon_b4iEDD"
-      ],
-      "settings": {
-      }
-    },
     "main": {
       "type": "product-extended",
       "blocks": {
-        "before_and_after_7iFzry": {
-          "type": "before_and_after",
+        "rating_KQGPaL": {
+          "type": "rating",
           "settings": {
-            "image_new_section_1": "shopify:\/\/shop_images\/purify_water_1_x2_5ec53536-d536-49b2-a02d-ce400900ccee.png",
-            "image_new_section_text_1": "water purify one",
-            "image_new_section_2": "shopify:\/\/shop_images\/purify_water_2_x2_e6ec6a32-f42f-4792-b744-21d2838dccba.png",
-            "image_new_section_text_2": "water purify two",
-            "image_new_section_text_3": "",
-            "image_new_section_text_4": "",
-            "image_new_section_text_5": "",
-            "image_new_section_text_6": ""
+            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
+            "text": "<p>90% of customers don’t go back to tap water<\/p>"
           }
         },
         "list_BDhCQ7": {
           "type": "list",
           "settings": {
             "text": "<ul><li>Filters your faucet water for the most purified cleanse.<\/li><li>Aids in reducing known skin irritants like chlorine, calcium and magnesium.<\/li><li>Boosts skin hydration, reduces appearance of wrinkles and prevents pre-mature aging without any extra steps in your routine.<\/li><\/ul>"
-          }
-        },
-        "rating_KQGPaL": {
-          "type": "rating",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
-            "text": "<p>90% of customers don’t go back to tap water<\/p>"
           }
         },
         "subscribe_J9Afdq": {
@@ -359,6 +40,19 @@
             "text": "<p>3 Month Replacement Filter delivers every 90 days for only [future_price]. Skip or cancel anytime. <a href=\"https:\/\/www.qureskincare.com\/pages\/subscriptions\" target=\"_blank\">See more details<\/a><\/p>",
             "plan": "4980998383",
             "discount": 30
+          }
+        },
+        "before_and_after_7iFzry": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/B_A_-_D_27.png",
+            "image_new_section_text_1": "water purify one",
+            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D_28.png",
+            "image_new_section_text_2": "water purify two",
+            "image_new_section_text_3": "",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": "",
+            "image_new_section_text_6": ""
           }
         },
         "video_before_and_after_mQBbUX": {
@@ -391,9 +85,109 @@
         "text_label_real_result_3": "Dermatologist"
       }
     },
-    "pdm_product_social_proof_data_4iretp": {
-      "type": "pdm_product-social-proof-data",
+    "featuredin_RKtJRq": {
+      "type": "featuredin",
+      "blocks": {
+        "image_p6AHPH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_e7ixGF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_UtkdcJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "mobile_hide": false
+          }
+        },
+        "image_4bdHwm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle.svg",
+            "mobile_hide": true
+          }
+        },
+        "image_TXxYRf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "mobile_hide": true
+          }
+        },
+        "image_gcw7eg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia.svg",
+            "mobile_hide": true
+          }
+        }
+      },
+      "block_order": [
+        "image_p6AHPH",
+        "image_e7ixGF",
+        "image_UtkdcJ",
+        "image_4bdHwm",
+        "image_TXxYRf",
+        "image_gcw7eg"
+      ],
       "settings": {
+        "heading": ""
+      }
+    },
+    "two_column_box_L6gnTR": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_7zKDRt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/newside.webp",
+            "classname": "it_img pb-3 pb-md-0 pe-0 pe-md-5 mw-mob-100"
+          }
+        },
+        "content_eWtXM9": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>5 Reasons why everyone is tapping into a whole new side of skincare<\/h2><p>[code]<\/p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-0"
+          }
+        },
+        "code_yDHdYe": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"newside_list\">\n                                <ul>\n                                    <li>\n                                        <img src=\"{{ 'newside_barrier.svg' | asset_url }}\" alt=\"\">\n                                        <p>Enhances the effectiveness of topical products with a clean skin base<\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_breakouts.svg' | asset_url }}\" alt=\"\">\n                                        <p>Reduces appearance of wrinkles and prevents premature ageing <\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_moisture.svg' | asset_url }}\" alt=\"\">\n                                        <p>Increases skin hydration and improves skin barrier<\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_radiance.svg' | asset_url }}\" alt=\"\">\n                                        <p>Reduces pore clogging contaminants for less breakouts and clearer skin<\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_irritation.svg' | asset_url }}\" alt=\"\">\n                                        <p>Decreases redness and irritation, great for sensitive skin<\/p>\n                                    <\/li>\n                                <\/ul>\n                            <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "image_7zKDRt",
+        "content_eWtXM9",
+        "code_yDHdYe"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "classname": "imageText new_side p-0 pt-md-5",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "skin_hydration_NmJkjQ": {
+      "type": "skin-hydration",
+      "settings": {
+        "heading": "Clinically proven to improve skin hydration in just 2 weeks",
+        "text": "<p>The object of this test was to define the influence of the tested product on the <strong>level of skin hydration <\/strong>and <strong>appearance of wrinkles.<\/strong><\/p><p>Test subjects range in age between 25-65 with normal and sensitive skin.<\/p><p>Study conducted by Regulatory Consultants. <\/p>",
+        "image": "shopify:\/\/shop_images\/skin_hydration.webp"
       }
     },
     "results_ApY4eq": {
@@ -408,6 +202,18 @@
             "image_country": "shopify:\/\/shop_images\/australia_f.webp",
             "text_country": "Australia",
             "client": "Kim L.",
+            "code": ""
+          }
+        },
+        "result_VAcBJg": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_hanna.webp",
+            "heading": "Hydrated more than ever",
+            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used. <\/p><p>I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”                             <\/p>",
+            "image_country": "shopify:\/\/shop_images\/england_f.webp",
+            "text_country": "United Kingdom",
+            "client": "Tiffany L.",
             "code": ""
           }
         },
@@ -434,18 +240,6 @@
             "client": "Stephany",
             "code": ""
           }
-        },
-        "result_VAcBJg": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_hanna.webp",
-            "heading": "Hydrated more than ever",
-            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used. <\/p><p>I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”                             <\/p>",
-            "image_country": "shopify:\/\/shop_images\/england_f.webp",
-            "text_country": "United Kingdom",
-            "client": "Tiffany L.",
-            "code": ""
-          }
         }
       },
       "block_order": [
@@ -457,15 +251,8 @@
       "settings": {
         "classname": "mi_landing_result",
         "heading": "Clearer, hydrated skin, on tap",
-        "text_verified_customer": "Verified customer"
-      }
-    },
-    "skin_hydration_NmJkjQ": {
-      "type": "skin-hydration",
-      "settings": {
-        "heading": "Clinically proven to improve skin hydration in just 2 weeks",
-        "text": "<p>The object of this test was to define the influence of the tested product on the <strong>level of skin hydration <\/strong>and <strong>appearance of wrinkles.<\/strong><\/p><p>Test subjects range in age between 25-65 with normal and sensitive skin.<\/p><p>Study conducted by Regulatory Consultants. <\/p>",
-        "image": "shopify:\/\/shop_images\/skin_hydration.webp"
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
       }
     },
     "trusted_F8P8xL": {
@@ -500,13 +287,157 @@
         "video_label": "Click To Watch Review"
       }
     },
+    "videos_PfhR49": {
+      "type": "videos",
+      "blocks": {
+        "wistia_GyWU4e": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "kc6exz5vhj"
+          }
+        },
+        "wistia_Q8mNUr": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "va6eyhm4v0"
+          }
+        },
+        "wistia_az7KJp": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "wgi1stvd8c"
+          }
+        },
+        "wistia_GbdbJj": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "y7zo1envmx"
+          }
+        },
+        "wistia_7CGQKT": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "ipd5pzekbg"
+          }
+        },
+        "wistia_RPkKm6": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "ehc0n9atb7"
+          }
+        },
+        "wistia_A3g7GL": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "mprugrn2b7"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_GyWU4e",
+        "wistia_Q8mNUr",
+        "wistia_az7KJp",
+        "wistia_GbdbJj",
+        "wistia_7CGQKT",
+        "wistia_RPkKm6",
+        "wistia_A3g7GL"
+      ],
+      "settings": {
+        "heading": "No filters were used in the making of these videos",
+        "text": "<p>To clarify, we mean no editing filters were used in the making of these videos:<\/p>",
+        "classname": "bg-yellow"
+      }
+    },
+    "compare_yQKzP4": {
+      "type": "compare",
+      "blocks": {
+        "object_jWtKpX": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beauty_qurifyTap.webp",
+            "heading": "Q-urify Water\\nFilter ",
+            "text": "",
+            "price": "",
+            "style": "correctCircle",
+            "list": "<ul><li>Reduces chlorine<\/li><li>Reduces calcium<\/li><li>Reduces magnesium<\/li><\/ul>"
+          }
+        },
+        "object_beMBx9": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/alternative_filters.png",
+            "heading": "Alternative\\nFilters",
+            "text": "",
+            "price": "",
+            "style": "incorrectCircle",
+            "list": "<p><em>Reduces chlorine<\/em><\/p><ul><li>Reduces calcium<\/li><li>Reduces magnesium<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_jWtKpX",
+        "object_beMBx9"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "classname": "beauty_skincare section bg-white beauty_ftrs_center",
+        "heading": "More effective and safer than other filters",
+        "text": "<p>Other filtration systems focus on just chlorine removal, but calcium and magnesium are the true skin-barrier disruptors. With the Q-urify Water Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin...<\/p>"
+      }
+    },
+    "two_column_box_fMJLLc": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_cGGk64": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free_report.webp",
+            "classname": "free_report_img mw-mob-100"
+          }
+        },
+        "content_AzCjy3": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>What contaminants is your skin absorbing everyday?<\/h2><p>Enter your information below to get a free, custom water report for your local area. Learn about what’s in your water and how it can be affecting your skin.<\/p><p>[code]<\/p>",
+            "column_content": 0,
+            "classname": "free_report_info section_header px-0 text-start ms-0 pt-md-4 ps-md-4"
+          }
+        },
+        "code_RekAEF": {
+          "type": "code",
+          "settings": {
+            "code": "<form>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form klaviyo-desktop\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form-SVbDx9\"><\/div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form klaviyo-mobile\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form-WezUbv\"><\/div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"only-desktop\">By submitting this form, you agree to receive recurring automated promotional and\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tpersonalized marketing Emails from Qure to the Email used when signing up. See\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a target=\"_blank\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\thref=\"https:\/\/www.qureskincare.com\/pages\/terms-and-conditions?_ga=2.8994934.238572732.1701676238-1116108182.1699606045\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstyle=\"text-decoration: underline;\">Terms<\/a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t& <a target=\"_blank\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\thref=\"https:\/\/www.qureskincare.com\/pages\/privacy-page?_ga=2.8994934.238572732.1701676238-1116108182.1699606045\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstyle=\"text-decoration: underline;\">Privacy.<\/a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<\/form>"
+          }
+        }
+      },
+      "block_order": [
+        "image_cGGk64",
+        "content_AzCjy3",
+        "code_RekAEF"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {.klaviyo-mobile {display: none; } .klaviyo-form {padding-bottom: 0px; }}",
+        "@media (max-width: 768px) {.klaviyo-desktop, .only-desktop {display: none; }}",
+        ".klaviyo-form {min-height: 200px;}",
+        ".needsclick.kl-private-reset-css-Xuajs1 {min-height: auto !important;}"
+      ],
+      "settings": {
+        "classname": "free_report section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
     "two_column_box_9KGBC4": {
       "type": "two-column-box",
       "blocks": {
-        "code_4rEj6H": {
-          "type": "code",
+        "content_VXVFMC": {
+          "type": "content",
           "settings": {
-            "code": "<div class=\"swiper ingredients_slider\">\n                                <div class=\"swiper-wrapper\">\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_micro-organism.svg' | asset_url }}\" alt=\"\">\n                                            <p>Micro Organisms<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_chlorine.svg' | asset_url }}\" alt=\"\">\n                                            <p>Chlorine<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_micro-plastics.svg' | asset_url }}\" alt=\"\">\n                                            <p>Micro Plastics<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_magnesium.svg' | asset_url }}\" alt=\"\">\n                                            <p>Magnesium<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_algae.svg' | asset_url }}\" alt=\"\">\n                                            <p>Algae<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_calcium.svg' | asset_url }}\" alt=\"\">\n                                            <p>Calcium<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_lead-particles.svg' | asset_url }}\" alt=\"\">\n                                            <p>Lead Particles<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_rust.svg' | asset_url }}\" alt=\"\">\n                                            <p>Rust<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_many-more.svg' | asset_url }}\" alt=\"\">\n                                            <p>And many more...<\/p>\n                                        <\/div>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-pagination\"><\/div>\n                            <\/div>"
+            "text": "<h2>It’s time to look toward your faucet, not your ingredients list.<\/h2><p>Research has confirmed that water hardness is a major contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment, <\/a>including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema <\/a>and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis<\/a>. And not just from the well-known culprit chlorine – but also calcium and magnesium.[code_mobile][details_desktop]<\/p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
         "content_CTmaPK": {
@@ -517,12 +448,11 @@
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
-        "content_VXVFMC": {
-          "type": "content",
+        "details_KFUN4G": {
+          "type": "details",
           "settings": {
-            "text": "<h2>It’s time to look toward your faucet, not your ingredients list.<\/h2><p>Research has confirmed that water hardness is a major contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment, <\/a>including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema <\/a>and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis<\/a>. And not just from the well-known culprit chlorine – but also calcium and magnesium.[code_mobile][details_desktop]<\/p>",
-            "column_content": 0,
-            "classname": "it_info p-0 pt-0 pt-md-3"
+            "heading": "Chlorine",
+            "text": "<p>Traditionally added to kill bacteria. Chlorine can deplete the skin of the natural oils that hold moisture in, leading to dry and itchy skin.<\/p>"
           }
         },
         "details_7YLaDX": {
@@ -539,11 +469,10 @@
             "text": "<p>Magnesium can result in the formation of free radicals which damage healthy skin cells and break down collagen, resulting in fine lines and wrinkles.<\/p>"
           }
         },
-        "details_KFUN4G": {
-          "type": "details",
+        "code_4rEj6H": {
+          "type": "code",
           "settings": {
-            "heading": "Chlorine",
-            "text": "<p>Traditionally added to kill bacteria. Chlorine can deplete the skin of the natural oils that hold moisture in, leading to dry and itchy skin.<\/p>"
+            "code": "<div class=\"swiper ingredients_slider\">\n                                <div class=\"swiper-wrapper\">\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_micro-organism.svg' | asset_url }}\" alt=\"\">\n                                            <p>Micro Organisms<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_chlorine.svg' | asset_url }}\" alt=\"\">\n                                            <p>Chlorine<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_micro-plastics.svg' | asset_url }}\" alt=\"\">\n                                            <p>Micro Plastics<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_magnesium.svg' | asset_url }}\" alt=\"\">\n                                            <p>Magnesium<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_algae.svg' | asset_url }}\" alt=\"\">\n                                            <p>Algae<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_calcium.svg' | asset_url }}\" alt=\"\">\n                                            <p>Calcium<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_lead-particles.svg' | asset_url }}\" alt=\"\">\n                                            <p>Lead Particles<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_rust.svg' | asset_url }}\" alt=\"\">\n                                            <p>Rust<\/p>\n                                        <\/div>\n                                    <\/div>\n                                    <div class=\"swiper-slide\">\n                                        <div class=\"ingredients_item\">\n                                            <img src=\"{{ 'ingredients_many-more.svg' | asset_url }}\" alt=\"\">\n                                            <p>And many more...<\/p>\n                                        <\/div>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-pagination\"><\/div>\n                            <\/div>"
           }
         }
       },
@@ -564,94 +493,15 @@
         "column_content": 6
       }
     },
-    "two_column_box_fMJLLc": {
-      "type": "two-column-box",
-      "blocks": {
-        "code_RekAEF": {
-          "type": "code",
-          "settings": {
-            "code": "<form>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form klaviyo-desktop\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form-SVbDx9\"><\/div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form klaviyo-mobile\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"klaviyo-form-WezUbv\"><\/div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"only-desktop\">By submitting this form, you agree to receive recurring automated promotional and\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tpersonalized marketing Emails from Qure to the Email used when signing up. See\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a target=\"_blank\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\thref=\"https:\/\/www.qureskincare.com\/pages\/terms-and-conditions?_ga=2.8994934.238572732.1701676238-1116108182.1699606045\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstyle=\"text-decoration: underline;\">Terms<\/a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t& <a target=\"_blank\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\thref=\"https:\/\/www.qureskincare.com\/pages\/privacy-page?_ga=2.8994934.238572732.1701676238-1116108182.1699606045\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tstyle=\"text-decoration: underline;\">Privacy.<\/a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\t\t<\/form>"
-          }
-        },
-        "content_AzCjy3": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>What contaminants is your skin absorbing everyday?<\/h2><p>Enter your information below to get a free, custom water report for your local area. Learn about what’s in your water and how it can be affecting your skin.<\/p><p>[code]<\/p>",
-            "column_content": 0,
-            "classname": "free_report_info section_header px-0 text-start ms-0 pt-md-4 ps-md-4"
-          }
-        },
-        "image_cGGk64": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/free_report.webp",
-            "classname": "free_report_img mw-mob-100"
-          }
-        }
-      },
-      "block_order": [
-        "image_cGGk64",
-        "content_AzCjy3",
-        "code_RekAEF"
-      ],
-      "custom_css": [
-        "@media only screen and (min-width:769px){.klaviyo-mobile {display:none;}.klaviyo-form {padding-bottom: 0px;}}",
-        "@media (max-width: 768px) {.klaviyo-desktop , .only-desktop{display:none;}}",
-        ".klaviyo-form {min-height: 200px;}",
-        ".needsclick.kl-private-reset-css-Xuajs1 {min-height:auto !important;}"
-      ],
-      "settings": {
-        "classname": "free_report section",
-        "column_image": 6,
-        "column_content": 6
-      }
-    },
-    "two_column_box_L6gnTR": {
-      "type": "two-column-box",
-      "blocks": {
-        "code_yDHdYe": {
-          "type": "code",
-          "settings": {
-            "code": "<div class=\"newside_list\">\n                                <ul>\n                                    <li>\n                                        <img src=\"{{ 'newside_barrier.svg' | asset_url }}\" alt=\"\">\n                                        <p>Enhances the effectiveness of topical products with a clean skin base<\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_breakouts.svg' | asset_url }}\" alt=\"\">\n                                        <p>Reduces appearance of wrinkles and prevents premature ageing <\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_moisture.svg' | asset_url }}\" alt=\"\">\n                                        <p>Increases skin hydration and improves skin barrier<\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_radiance.svg' | asset_url }}\" alt=\"\">\n                                        <p>Reduces pore clogging contaminants for less breakouts and clearer skin<\/p>\n                                    <\/li>\n                                    <li>\n                                        <img src=\"{{ 'newside_irritation.svg' | asset_url }}\" alt=\"\">\n                                        <p>Decreases redness and irritation, great for sensitive skin<\/p>\n                                    <\/li>\n                                <\/ul>\n                            <\/div>"
-          }
-        },
-        "content_eWtXM9": {
-          "type": "content",
-          "settings": {
-            "text": "<h2>5 Reasons why everyone is tapping into a whole new side of skincare<\/h2><p>[code]<\/p>",
-            "column_content": 0,
-            "classname": "it_info p-0 pt-0 pt-md-0"
-          }
-        },
-        "image_7zKDRt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/newside.webp",
-            "classname": "it_img pb-3 pb-md-0 pe-0 pe-md-5 mw-mob-100"
-          }
-        }
-      },
-      "block_order": [
-        "image_7zKDRt",
-        "content_eWtXM9",
-        "code_yDHdYe"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "classname": "imageText new_side p-0 pt-md-5",
-        "column_image": 6,
-        "column_content": 6
-      }
-    },
     "two_column_box_mjpNxF": {
       "type": "two-column-box",
       "blocks": {
-        "code_hCrWaj": {
-          "type": "code",
+        "image_RcCKdg": {
+          "type": "image",
           "settings": {
-            "code": "<div class=\"tag_l_wrapper\">\n                                    <h4>Perfect for:<\/h4>\n                                    <div class=\"tag_list_wrap\">\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Acne prone<\/p>\n                                        <\/div>\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Rosacea<\/p>\n                                        <\/div>\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Dry skin<\/p>\n                                        <\/div>\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Sensitive skin<\/p>\n                                        <\/div>\n                                    <\/div>\n                                <\/div>"
+            "image": "shopify:\/\/shop_images\/hardwater.webp",
+            "image_mobile": "shopify:\/\/shop_images\/hardwater-mob.webp",
+            "classname": "it_img pb-3 pb-md-0 pe-0 pe-md-5"
           }
         },
         "content_wEqE9h": {
@@ -662,12 +512,10 @@
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
         },
-        "image_RcCKdg": {
-          "type": "image",
+        "code_hCrWaj": {
+          "type": "code",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hardwater.webp",
-            "image_mobile": "shopify:\/\/shop_images\/hardwater-mob.webp",
-            "classname": "it_img pb-3 pb-md-0 pe-0 pe-md-5"
+            "code": "<div class=\"tag_l_wrapper\">\n                                    <h4>Perfect for:<\/h4>\n                                    <div class=\"tag_list_wrap\">\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Acne prone<\/p>\n                                        <\/div>\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Rosacea<\/p>\n                                        <\/div>\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Dry skin<\/p>\n                                        <\/div>\n                                        <div class=\"tag_list\">\n                                            <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\">\n                                            <p>Sensitive skin<\/p>\n                                        <\/div>\n                                    <\/div>\n                                <\/div>"
           }
         }
       },
@@ -682,65 +530,218 @@
         "column_content": 6
       }
     },
-    "videos_PfhR49": {
-      "type": "videos",
+    "icons_list_y8yF3M": {
+      "type": "icons-list",
       "blocks": {
-        "wistia_7CGQKT": {
-          "type": "wistia",
+        "icon_QLBprj": {
+          "type": "icon",
           "settings": {
-            "wistia_id": "ipd5pzekbg"
+            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
           }
         },
-        "wistia_A3g7GL": {
-          "type": "wistia",
+        "icon_KKMcJJ": {
+          "type": "icon",
           "settings": {
-            "wistia_id": "mprugrn2b7"
+            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
+            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
           }
         },
-        "wistia_az7KJp": {
-          "type": "wistia",
+        "icon_mQJhED": {
+          "type": "icon",
           "settings": {
-            "wistia_id": "wgi1stvd8c"
+            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
+            "text": "<p>Dermatologist<\/p><p>Tested & Approved<\/p>"
           }
         },
-        "wistia_GbdbJj": {
-          "type": "wistia",
+        "icon_b4iEDD": {
+          "type": "icon",
           "settings": {
-            "wistia_id": "y7zo1envmx"
-          }
-        },
-        "wistia_GyWU4e": {
-          "type": "wistia",
-          "settings": {
-            "wistia_id": "kc6exz5vhj"
-          }
-        },
-        "wistia_Q8mNUr": {
-          "type": "wistia",
-          "settings": {
-            "wistia_id": "va6eyhm4v0"
-          }
-        },
-        "wistia_RPkKm6": {
-          "type": "wistia",
-          "settings": {
-            "wistia_id": "ehc0n9atb7"
+            "image": "shopify:\/\/shop_images\/science-ftr.svg",
+            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
           }
         }
       },
       "block_order": [
-        "wistia_GyWU4e",
-        "wistia_Q8mNUr",
-        "wistia_az7KJp",
-        "wistia_GbdbJj",
-        "wistia_7CGQKT",
-        "wistia_RPkKm6",
-        "wistia_A3g7GL"
+        "icon_QLBprj",
+        "icon_KKMcJJ",
+        "icon_mQJhED",
+        "icon_b4iEDD"
       ],
       "settings": {
-        "heading": "No filters were used in the making of these videos",
-        "text": "<p>To clarify, we mean no editing filters were used in the making of these videos:<\/p>",
-        "classname": "bg-yellow"
+      }
+    },
+    "guide_7WfJ8X": {
+      "type": "guide",
+      "blocks": {
+        "wistia_mM7gtG": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "qi96cehl7z"
+          }
+        },
+        "object_Y6Wt7U": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify_use_s_1.webp",
+            "text": "<p>Remove faucet aerator. Simply attach and twist it off using the key                                                        for removal.<\/p>",
+            "step": "STEP"
+          }
+        },
+        "object_AcMGDz": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify_use_s_2.webp",
+            "text": "<p>Find the faucet thread accessory which best fits your faucet by size                                                        from the 7 provided. If none of the faucet thread accessories fit,                                                        then use the Universal Joint. <\/p>",
+            "step": "STEP"
+          }
+        },
+        "object_YHXEeE": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify_use_s_3.webp",
+            "text": "<p>Find the silicone ring that best fits and place it inside the faucet                                                        thread accessory.<\/p>",
+            "step": "STEP"
+          }
+        },
+        "object_caB4Cq": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify_use_s_4.webp",
+            "text": "<p>Detach the mounting nut from the Q-urify Water Filter. Put the faucet                                                        thread accessory (with the silicone ring inside) through the                                                        mounting nut and secure it onto your faucet. <\/p>",
+            "step": "STEP"
+          }
+        },
+        "object_Qmyt7M": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify_use_s_5.webp",
+            "text": "<p>Once tightened, secure the Q-urify Water Filter to the mounting nut.<\/p>",
+            "step": "STEP"
+          }
+        },
+        "object_P3gAdM": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qurify_use_s_6.webp",
+            "text": "<p>For filtered water, turn to “PUR” (short for purify). Turn to “TAP”                                                        if you prefer unfiltered water.                                                        Enjoy healthier, clearer skin!<\/p>",
+            "step": "STEP"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_mM7gtG",
+        "object_Y6Wt7U",
+        "object_AcMGDz",
+        "object_YHXEeE",
+        "object_caB4Cq",
+        "object_Qmyt7M",
+        "object_P3gAdM"
+      ],
+      "settings": {
+        "classname": "",
+        "heading": "How to install",
+        "text": ""
+      }
+    },
+    "faq_NrT9Hx": {
+      "type": "faq",
+      "blocks": {
+        "object_aYKEc9": {
+          "type": "object",
+          "settings": {
+            "heading": "How does tap water harm my skin?",
+            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:<\/p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.<\/li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.<\/li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.<\/li><\/ul>",
+            "code": ""
+          }
+        },
+        "object_BnpcqK": {
+          "type": "object",
+          "settings": {
+            "heading": "What does it filter in the water?",
+            "text": "<p>Q-urify water filter uses both physical and chemical filtration components to help remove known as skin irritants that make your tap water “hard” – like calcium, magnesium and chlorine.<\/p>",
+            "code": ""
+          }
+        },
+        "object_hXMBYd": {
+          "type": "object",
+          "settings": {
+            "heading": "Will it fit my faucet?",
+            "text": "<p>It’s compatible with almost every circular removable aerator! Each Q-urify Water Filter kit comes with 8 adaptors to help fit different faucet sizes. Please note that it will NOT fit faucets that are square shaped, pull out, hand-held, spray-style, or faucets with a sensor.<\/p>",
+            "code": "<div class=\"faq_img_wrap\">\n                                            <img src=\"{{ 'qurify_faq_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_4.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_5.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_6.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_7.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <\/div>"
+          }
+        },
+        "object_DB36gV": {
+          "type": "object",
+          "settings": {
+            "heading": "What skin types can benefit from Q-urify Water Filter?",
+            "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. <\/p>",
+            "code": ""
+          }
+        },
+        "object_bEXBbc": {
+          "type": "object",
+          "settings": {
+            "heading": "How often do I need to replace my filter?",
+            "text": "<p>With daily use, your Q-urify water filter needs to be replaced at least once every three months for your skin to look and feel its best. Once it gets past the 3 month mark, your filter starts to lose its efficacy. We wash our face everyday so make sure you are looking after your skin.<\/p>",
+            "code": ""
+          }
+        },
+        "object_4VFAPN": {
+          "type": "object",
+          "settings": {
+            "heading": "Where can I buy replacement filters?",
+            "text": "<p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer subscription plans for your convenience and ease.<\/p>",
+            "code": ""
+          }
+        },
+        "object_hNd63i": {
+          "type": "object",
+          "settings": {
+            "heading": "Can I turn OFF the filtered water?",
+            "text": "<p>Yes! The Q-urify Water Filter has the option of switching off filtered water. You can turn on and on the purified water by switching to this option on the right side.<\/p>",
+            "code": ""
+          }
+        },
+        "object_A6tABB": {
+          "type": "object",
+          "settings": {
+            "heading": "What’s the difference between \"hard water\" and \"soft water\"?",
+            "text": "<p>Hard water is water that contains a high quantity of dissolved minerals (like calcium and magnesium). Where soft water has been treated, so that the only ion remaining is sodium. When rainwater falls, it is naturally soft. <\/p><p>However, as water makes its way through the ground and into our waterways, it picks up minerals like chalk, lime, calcium and magnesium and becomes hard water. Hard water is to blame for dishes with spots, dingy looking clothes, and residue and soap scums in bathrooms. Soap and cleansers are also less effective with hard water due to its reaction to the magnesium and calcium, which makes the lather not as rich and bubbly and leaves hair feeling sticky and dull.<\/p>",
+            "code": ""
+          }
+        },
+        "object_igexDf": {
+          "type": "object",
+          "settings": {
+            "heading": "What’s included?",
+            "text": "",
+            "code": "<div class=\"container\">\n                                    <div class=\"chest_pdp_ftr1\">\n                                        <div class=\"cp_ftr_wrapper p-0\">\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_filter-device.svg' | asset_url }}\" alt=\"\">\n                                                <p>Water Filter Device with 3 month filter inside <\/p>\n                                            <\/div>\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_faucet.svg' | asset_url }}\" alt=\"\">\n                                                <p>Different attachments included to match your faucet<\/p>\n                                            <\/div>\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_user-manual.svg' | asset_url }}\" alt=\"\">\n                                                <p>Step by step user manual <\/p>\n                                            <\/div>\n                                            <div class=\"cp_item\">\n                                                <img src=\"{{ 'qurify_all-in-one.svg' | asset_url }}\" alt=\"\">\n                                                <p>All-In-One tool for installing<\/p>\n                                            <\/div>\n                                        <\/div>\n                                    <\/div>\n                                <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "object_aYKEc9",
+        "object_BnpcqK",
+        "object_hXMBYd",
+        "object_DB36gV",
+        "object_bEXBbc",
+        "object_4VFAPN",
+        "object_hNd63i",
+        "object_A6tABB",
+        "object_igexDf"
+      ],
+      "settings": {
+        "classname": "bg_yellow",
+        "heading": "The answers to your questions",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
+      }
+    },
+    "pdm_product_social_proof_data_4iretp": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
       }
     }
   }

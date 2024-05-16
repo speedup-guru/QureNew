@@ -1,0 +1,280 @@
+
+{% if  cart.item_count > 0  %}
+  {% assign product_face_serum = all_products['face-serum'] %}
+  {% assign product_micro_infusion = all_products['micro-infusion-1-month-bundle-2x-beta-glucan-serum'] %}
+  {% assign product_hydra_soothing = all_products['micro-infusion-hydra-soothing-2-treatments'] %}
+  {% assign product_rejuvenating = all_products['micro-infusion-rejuvenating2-treatments'] %}
+  {% assign product_q_rify = all_products['q-urify-water-filter'] %}
+  {% assign product_neck_decolletage = all_products['neck-decolletage-led'] %}
+  {% assign product_micro_infusion_rejuvenating = all_products['micro-infusion-1-month-bundle-2x-e-g-f-serum'] %}
+  {% assign product_rejuvalight_mask = all_products['q-rejuvalight-pro-facewear'] %}
+  {% assign product_patches_micro_infusion = all_products['micro-infusion-targeted-patches'] %}
+
+  <div class="swiper custom_upsell ">
+    <h3 class="upsell_title">Achieve your skin goals faster</h3>
+    {% assign maskProduct = false %}
+    {% assign neckProduct = false %}
+    {% assign waterFilter = false %}
+    {% assign FaceSerum = false %}
+    {% assign MicroRefill = false %}
+    {% assign MicroInfusion = false %}
+    {% comment %} upsell-carousel by Samu3le {% endcomment %}
+    {% assign Qurify = false %}
+    {% comment %} upsell-carousel by Samu3le {% endcomment %}
+    {% assign cartItem = "" %}
+
+    {% for item in cart.items %}
+      {% if item.title contains 'Facewear' %}
+        {% assign maskProduct = true %}
+      {% endif %}
+      {% if item.title contains 'Neck' %}
+        {% assign neckProduct = true %}
+      {% endif %}
+      {% if item.title contains 'Q-urify Water Filter' %}
+        {% assign waterFilter = true %}
+      {% endif %}
+      {% if item.title contains 'Face Serum' %}
+        {% assign FaceSerum = true %}
+      {% endif %}
+      {% if item.title contains 'Micro-Infusion' %}
+          {%- if item.title contains 'Refill' -%}
+            {% assign MicroRefill = true %}
+          {%- else -%}
+            {% assign MicroInfusion = true %}
+          {%- endif -%}
+      {% endif %}
+      {% if item.title contains 'Q-urify' %}
+        {% if item.title contains 'Replacement' %}
+          {% assign Qurify = true %}
+        {% else %}
+          {% assign waterFilter = true %}
+        {% endif %}
+        
+      {% endif %}
+      {% assign cartItem = item.title %}
+      {% break %}
+    {% endfor %}
+
+    {% if maskProduct %}
+      <div class="swiper-wrapper mask">
+        {% comment %} upsell carousell test Start {% endcomment %}
+                      {% comment %} Neck & Décolletage LED Therapy {% endcomment %}              
+        {% if cartItem != "" and cartItem != product_neck_decolletage.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/neck_deck.jpg?v=1707754760" %}
+          {% assign title_copy = "Neck & Décolletage LED Therapy" %}
+          {% assign description_copy = "Rejuvenate skin where the first signs of aging show" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_neck_decolletage   %}
+        {% endif %}
+        {% comment %} Micro-Infusion 1 Month Bundle (Rejuvenating) {% endcomment %}
+        {% if cartItem != "" and cartItem != product_micro_infusion_rejuvenating.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671" %}
+          {% assign title_copy = "Micro-Infusion 1 Month Bundle (Rejuvenating)" %}
+          {% assign description_copy = "Reveal smoother, radiant skin" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_micro_infusion_rejuvenating   %}
+        {% endif %}
+        {% comment %} All-In-One Face Serum {% endcomment %}
+        {% if cartItem != "" and cartItem != product_face_serum.title%}
+          {% assign image_slide = "https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" %}
+          {% assign title_copy = "All-In-One Face Serum" %}
+          {% assign description_copy = "Boost your LED light therapy results" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_face_serum   %}
+        {% endif %}
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif neckProduct %}
+      <div class="swiper-wrapper mask">
+        {% comment %} upsell carousell test Start {% endcomment %}
+        {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
+        {% if cartItem != "" and cartItem != product_rejuvalight_mask.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/LED-Mask---Mask-with-iPhone-red-blue-light-v2_73cfec5b-4c5c-4e64-a00d-8ac3f80c724f.png?v=1696572731" %}
+          {% assign title_copy = "Q-Rejuvalight LED Mask" %}
+          {% assign description_copy = "Rejuvenate skin where the first signs of aging show" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_rejuvalight_mask   %}
+        {% endif %}
+        {% comment %} All-In-One Face Serum {% endcomment %}
+        {% if cartItem != "" and cartItem != product_face_serum.title%}
+          {% assign image_slide = "https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" %}
+          {% assign title_copy = "All-In-One Face Serum" %}
+          {% assign description_copy = "Plump, smooth & brighten in just one step" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_face_serum   %}
+        {% endif %}
+        {% comment %} Micro-Infusion 1 Month Bundle (Rejuvenating) {% endcomment %}
+        {% if cartItem != "" and cartItem != product_micro_infusion_rejuvenating.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671" %}
+          {% assign title_copy = "Micro-Infusion 1 Month Bundle (Rejuvenating)" %}
+          {% assign description_copy = "Reveal smoother, radiant skin" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_micro_infusion_rejuvenating   %}
+        {% endif %}
+        {% comment %} upsell carousell test End {% endcomment %}
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif waterFilter %}
+      <div class="swiper-wrapper mask">
+        {% comment %} upsell carousell test Start {% endcomment %}
+        {% comment %} Micro-Infusion 1 product_micro_infusion {% endcomment %}
+        {% if cartItem != "" and cartItem != product_micro_infusion.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671" %}
+          {% assign title_copy = "Micro-Infusion 1 Month Bundle (Hydra-Soothing)" %}
+          {% assign description_copy = "Reveal dewy, glowing skin" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_micro_infusion   %}
+        {% endif %}
+        {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
+        {% if cartItem != "" and cartItem != product_rejuvalight_mask.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/LED-Mask---Mask-with-iPhone-red-blue-light-v2_73cfec5b-4c5c-4e64-a00d-8ac3f80c724f.png?v=1696572731" %}
+          {% assign title_copy = "Q-Rejuvalight LED Mask" %}
+          {% assign description_copy = "Add the ultimate skincare investment to your routine" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_rejuvalight_mask   %}
+        {% endif %}
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif FaceSerum %}
+      <div class="swiper-wrapper face-serum">
+        {% comment %} upsell carousell test Start {% endcomment %}
+        {% comment %} Micro-Infusion 1 Month Bundle (Rejuvenating) {% endcomment %}
+        {% if cartItem != "" and cartItem != product_micro_infusion_rejuvenating.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671" %}
+          {% assign title_copy = "Micro-Infusion 1 Month Bundle (Rejuvenating)" %}
+          {% assign description_copy = "Transform dull-looking skin" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_micro_infusion_rejuvenating   %}
+        {% endif %}
+        {% comment %} Q-Rejuvalight LED Mask {% endcomment %}
+        {% if cartItem != "" and cartItem != product_rejuvalight_mask.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/LED-Mask---Mask-with-iPhone-red-blue-light-v2_73cfec5b-4c5c-4e64-a00d-8ac3f80c724f.png?v=1696572731" %}
+          {% assign title_copy = "Q-Rejuvalight LED Mask" %}
+          {% assign description_copy = "Treat acne, fine lines, wrinkles & dark spots in 3 minutes a day" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_rejuvalight_mask   %}
+        {% endif %}
+        {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
+        {% if cartItem != "" and cartItem != product_patches_micro_infusion.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" %}
+          {% assign title_copy = "Micro-Infusion Targeted Patches (8 pairs)" %}
+          {% assign description_copy = "Smooth & firm stubborn areas" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_patches_micro_infusion   %}
+        {% endif %}
+          
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div> 
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif MicroInfusion %}
+      <div class="swiper-wrapper micro-infusion">
+        {% comment %} micro-infusion-hydra-soothing-2-treatments {% endcomment %}
+        {% if cartItem != "" and cartItem != product_hydra_soothing.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-beta-x2.png?v=1690366121" %}
+          {% assign title_copy = "Hydra-Soothing Refill Treatments" %}
+          {% assign description_copy = "Plump & hydrate with two extra treatments" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_hydra_soothing   %}
+        {% endif %}  
+        {% comment %} product_rejuvenating {% endcomment %}
+        {% if cartItem != "" and cartItem != product_rejuvenating.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-egf-x2.png?v=1690366486" %}
+          {% assign title_copy = "Rejuvenating Refill Treatments" %}
+          {% assign description_copy = "Reclaim radiance with two extra treatments" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_rejuvenating   %}
+        {% endif %} 
+        {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
+        {% if cartItem != "" and cartItem != product_patches_micro_infusion.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" %}
+          {% assign title_copy = "Micro-Infusion Targeted Patches (8 pairs)" %}
+          {% assign description_copy = "Smooth & firm stubborn areas" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_patches_micro_infusion   %}
+        {% endif %} 
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    {% elsif MicroRefill %}
+      <div class="swiper-wrapper micro-refill">
+        {% comment %} product_q_rify {% endcomment %}
+        {% if cartItem != "" and cartItem != product_q_rify.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/qurify-with-box.jpg?v=1707719035" %}
+          {% assign title_copy = "Q-urify Water Filter" %}
+          {% assign description_copy = "Clearer, hydrated skin on tap" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_q_rify   %}
+        {% endif %}
+        {% comment %} micro-infusion-hydra-soothing-2-treatments {% endcomment %}
+        {% if cartItem != "" and cartItem != product_hydra_soothing.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-beta-x2.png?v=1690366121" %}
+          {% assign title_copy = "Hydra-Soothing Refill Treatments" %}
+          {% assign description_copy = "Plump & hydrate with two extra treatments" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_hydra_soothing   %}
+        {% endif %}
+        {% comment %} product_rejuvenating {% endcomment %}
+        {% if cartItem != "" and cartItem != product_rejuvenating.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MicroinfusionSystem-refill-egf-x2.png?v=1690366486" %}
+          {% assign title_copy = "Rejuvenating Refill Treatments" %}
+          {% assign description_copy = "Reclaim radiance with two extra treatments" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_rejuvenating   %}
+        {% endif %}
+        {% comment %} upsell carousell test End {% endcomment %}
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {% elsif Qurify %}  
+      <div class="swiper-wrapper mask">
+        {% comment %} All-In-One Face Serum {% endcomment %}
+        {% if cartItem != "" and cartItem != product_face_serum.title%}
+          {% assign image_slide = "https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" %}
+          {% assign title_copy = "All-In-One Face Serum" %}
+          {% assign description_copy = "Boost your LED light therapy results" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_face_serum   %}
+        {% endif %}
+        {% comment %} Micro-Infusion 1 product_micro_infusion {% endcomment %}
+        {% if cartItem != "" and cartItem != product_micro_infusion.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671" %}
+          {% assign title_copy = "Micro-Infusion 1 Month Bundle (Hydra-Soothing)" %}
+          {% assign description_copy = "Reveal dewy, glowing skin" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_micro_infusion   %}
+        {% endif %}
+        {% comment %} Micro-Infusion Targeted Patches (8 pairs) {% endcomment %}
+        {% if cartItem != "" and cartItem != product_patches_micro_infusion.title%}
+          {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Micro-InfusionTPRender.jpg?v=1702386608" %}
+          {% assign title_copy = "Micro-Infusion Targeted Patches (8 pairs)" %}
+          {% assign description_copy = "Smooth & firm stubborn areas" %}
+          {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_patches_micro_infusion   %}
+        {% endif %}
+        {% comment %} upsell carousell test End {% endcomment %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    {%- else -%}
+  
+      {%- if request.path contains 'bundle-deal'-%}
+        <div class="swiper-wrapper mask">          
+          {% comment %} All-In-One Face Serum {% endcomment %}
+          {% if cartItem != "" and cartItem != product_face_serum.title%}
+            {% assign image_slide = "https://www.qureskincare.com/cdn/shop/files/serumwithbox_150x.jpg" %}
+            {% assign title_copy = "All-In-One Face Serum" %}
+            {% assign description_copy = "Boost your LED light therapy results" %}
+            {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_face_serum   %}
+          {% endif %}
+          {% comment %} Micro-Infusion 1 product_micro_infusion {% endcomment %}
+          {% if cartItem != "" and cartItem != product_micro_infusion.title%}
+            {% assign image_slide = "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/MI2x-rejuv.jpg?v=1695657671" %}
+            {% assign title_copy = "Micro-Infusion 1 Month Bundle (Hydra-Soothing)" %}
+            {% assign description_copy = "Reveal dewy, glowing skin" %}
+            {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: product_micro_infusion   %}
+          {% endif %}
+          {% comment %} upsell carousell test End {% endcomment %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+          {% endif %}
+    {% endif %}
+  </div>
+{%- endif -%}

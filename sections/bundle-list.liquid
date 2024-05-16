@@ -15,6 +15,12 @@
     opacity: 0.8;
     margin-right: 5px;
 }
+
+@media(max-width:767px) {
+    .bf-bundles__img {
+        min-height: 430px;
+    }
+}
 </style>
 
 <!-- Black Friday -->
@@ -52,7 +58,7 @@
                     {% assign discount_percentage = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price %}
                     {% assign discount_percentage_rounded = discount_percentage | ceil %}
 
-                    <div class="bf-bundles__item bundles__item-{{ forloop.index }}{%  unless product.available %} sold_out{% endunless %}">
+                    <div id="{{ product.handle }}" class="bf-bundles__item bundles__item-{{ forloop.index }}{%  unless product.available %} sold_out{% endunless %}">
                         <div class="bf-bundles__img position-relative">
                             <div class="swiper bf-bundle_slider dot_pagination twa__swiper"
                                 id="twa__swiper-bf-bundle_slider{{ forloop.index }}" data-section-id="bf-bundle_slider{{ forloop.index }}"

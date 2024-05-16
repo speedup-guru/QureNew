@@ -107,14 +107,7 @@ const verifyCustomer = () => {
   
 }
 
-
-window.addEventListener("ig:ready", () => {
-  if (document.body.hasAttribute('data-variantb-upsell-carousel') || document.body.hasAttribute('data-variantc-upsell-carousel')) {
-    initUpsellSwiper();
-  }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
 
   // Start Cross-sell page targeting validation
   const pageTargeting = [
@@ -774,5 +767,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // end dropdown
 
+  initUpsellSwiper(); //swiper for carousel upsell
 });
 

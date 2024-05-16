@@ -272,7 +272,8 @@
       "login": {
         "title": "Have an account?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in<\/a> to check out faster."
-      }
+      },
+      "upsell_add": "Add +"
     },
     "footer": {
       "payment": "Payment methods"

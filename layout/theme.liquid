@@ -51,7 +51,6 @@
         }
       </script>
     {% endif %}
-
     {% if settings.favicon != blank %}
         <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {% endif %}
@@ -76,6 +75,8 @@
         {% else %}
             {{ 'endrock.css' | asset_url | stylesheet_tag }}
     {% endcase %}
+    {{ 'endrock-sidecart.css' | asset_url | stylesheet_tag }}
+    
     <!-- end styles endrock -->
 
     {% render 'header-scripts' %}
