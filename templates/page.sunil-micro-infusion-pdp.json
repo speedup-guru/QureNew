@@ -115,13 +115,14 @@
         "before_and_after_i7mAeJ": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify:\/\/shop_images\/B_A_-_D_35.png",
+            "image_new_section_1": "shopify:\/\/shop_images\/Before_after_MI.png",
             "image_new_section_text_1": "micro infusion one",
-            "image_new_section_2": "shopify:\/\/shop_images\/B_A_-_D_37.png",
+            "image_new_section_2": "shopify:\/\/shop_images\/Before_after_MI2.png",
             "image_new_section_text_2": "micro infusion two",
-            "image_new_section_3": "shopify:\/\/shop_images\/B_A_-_D_36.png",
+            "image_new_section_3": "shopify:\/\/shop_images\/B_A_MI3.png",
             "image_new_section_text_3": "micro infusion three",
-            "image_new_section_text_4": "",
+            "image_new_section_4": "shopify:\/\/shop_images\/B_A_MI4.png",
+            "image_new_section_text_4": "micro infusion four",
             "image_new_section_text_5": "",
             "image_new_section_text_6": ""
           }
