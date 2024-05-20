@@ -2,6 +2,18 @@
   "sections": {
     "header_landing_haHwKF": {
       "type": "header-landing",
+      "blocks": {
+        "navigation_link_ncBhkt": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "Shop",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_ncBhkt"
+      ],
       "settings": {
         "button_label": "Get Clearer Skin",
         "button_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop"
