@@ -1,5 +1,12 @@
 {
   "sections": {
+    "header_landing_haHwKF": {
+      "type": "header-landing",
+      "settings": {
+        "button_label": "Get Clearer Skin",
+        "button_url": "#productSubscription"
+      }
+    },
     "main": {
       "type": "temp-why-qurify",
       "settings": {
@@ -7,6 +14,7 @@
     }
   },
   "order": [
+    "header_landing_haHwKF",
     "main"
   ]
 }
