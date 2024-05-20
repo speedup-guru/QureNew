@@ -7,7 +7,8 @@
           "type": "navigation-link",
           "settings": {
             "link_label": "Shop",
-            "link_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop"
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop",
+            "image": "shopify:\/\/shop_images\/header-lp-shop_7387e6cf-34d3-49b7-b695-f71022d8c817.webp"
           }
         }
       },
