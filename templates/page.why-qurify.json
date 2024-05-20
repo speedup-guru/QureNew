@@ -10,10 +10,19 @@
             "link_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop",
             "image": "shopify:\/\/shop_images\/header-lp-shop_7387e6cf-34d3-49b7-b695-f71022d8c817.webp"
           }
+        },
+        "navigation_link_qMRNqA": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "WHY Q-URIFY",
+            "link_url": "#benefits",
+            "image": "shopify:\/\/shop_images\/headerLanding-2.png"
+          }
         }
       },
       "block_order": [
-        "navigation_link_ncBhkt"
+        "navigation_link_ncBhkt",
+        "navigation_link_qMRNqA"
       ],
       "settings": {
         "button_label": "Get Clearer Skin",
