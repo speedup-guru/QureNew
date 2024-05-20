@@ -8,9 +8,9 @@
 {% assign product_handle = product.handle %}
 
 {% if product.compare_at_price %}
-	{% assign discount_price = product.compare_at_price %}
+	{% assign discount_price = product.price | times: 0.7 %}
 {% else %}
-	{% assign discount_price = product.price | minus: 3000 %}
+	{% assign discount_price = product.price | times: 0.7 %}
 {% endif %}
 
 {% capture images %}
@@ -108,7 +108,7 @@
                             <label class="form-check-label d-block" for="flexRadioDefault1">
                                 <div class="tq_form_label">
                                     <div class="tqf_wrap">
-                                        <div class="tqf_wrap_title">Subscribe & SAVE $30</div>
+                                        <div class="tqf_wrap_title">Subscribe & SAVE 30%</div>
                                         <div class="tqf_price">
                                             <div class="tqf_salesPrice">{{ discount_price | money_without_trailing_zeros  }}</div>
                                             <div class="tqf_oldPrice">{{ product.price | money_without_trailing_zeros }}</div>

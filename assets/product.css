@@ -3504,6 +3504,7 @@ p.border-r {
 .wistia_placebo_close_button {
     outline: none !important;
 }
+
 .w-bottom-bar.w-css-reset {
     display: block !important;
 }
@@ -3512,12 +3513,15 @@ p.border-r {
     background-color: transparent !important;
     color: #000 !important;
 }
-.w-bottom-bar-lower.w-css-reset  div div+div{
+
+.w-bottom-bar-lower.w-css-reset div div+div {
     background: transparent !important;
 }
-.w-bottom-bar{
-    bottom:8px !important;
+
+.w-bottom-bar {
+    bottom: 8px !important;
 }
+
 @media(min-width:1199px) {
     .trusted_left {
         max-width: 490px;
@@ -3882,6 +3886,16 @@ input[type=range]::-moz-range-thumb {
     padding-left: 95px;
 }
 
+.affect_skin .affect_skin_block {
+    max-width: 378px;
+}
+
+.affect_skin .affect_skinContent {
+    flex: 0 0 auto;
+    width: calc(100% - 378px);
+    padding-left: 95px;
+}
+
 @media(max-width:991px) {
     .actVideo_block {
         padding: 0;
@@ -3902,6 +3916,22 @@ input[type=range]::-moz-range-thumb {
         width: calc(100%);
         padding-left: 0px;
     }
+
+    .affect_skin .dsn-right-container {
+        padding: 0;
+    }
+
+    .affect_skin .affect_skin_block {
+        max-width: 100%;
+        padding: 0 24px;
+    }
+
+    .affect_skin .affect_skinContent {
+        flex: 0 0 auto;
+        width: calc(100%);
+        padding: 0 0 0 24px;
+    }
+
 }
 
 

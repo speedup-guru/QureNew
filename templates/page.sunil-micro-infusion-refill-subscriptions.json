@@ -81,20 +81,20 @@
         "product_in_page_gkYdxK": {
           "type": "product_in_page",
           "settings": {
-            "image_product_1": "shopify:\/\/shop_images\/mi_refill-product-1.webp",
-            "image_product_text_1": "mi refill product with a man",
+            "image_product_1": "shopify:\/\/shop_images\/Lola_2serums.png",
+            "image_product_text_1": "lola with MI serums",
             "video_wistia_id_1": "",
-            "image_product_2": "shopify:\/\/shop_images\/MI_Refillx4.png",
+            "image_product_2": "shopify:\/\/shop_images\/Box_with_serums.png",
             "image_product_text_2": "collection refill product",
             "video_wistia_id_2": "",
-            "image_product_3": "shopify:\/\/shop_images\/mi_refill-product-2.webp",
-            "image_product_text_3": "using refill product",
+            "image_product_3": "shopify:\/\/shop_images\/mi_refill-product-1_310d39f6-1b72-49d9-842e-d5991eec3f55.webp",
+            "image_product_text_3": "men with serums",
             "video_wistia_id_3": "",
-            "image_product_4": "shopify:\/\/shop_images\/mi_refill-product-3.webp",
+            "image_product_4": "shopify:\/\/shop_images\/mi_refill-product-2.webp",
             "image_product_text_4": "collage product",
             "video_wistia_id_4": "",
-            "image_product_5": "shopify:\/\/shop_images\/mi_refill-product-4.webp",
-            "image_product_text_5": "MI refill box",
+            "image_product_5": "shopify:\/\/shop_images\/Sharen_serum.png",
+            "image_product_text_5": "sharen using MI",
             "video_wistia_id_5": "",
             "image_product_text_6": "",
             "video_wistia_id_6": "",
@@ -232,7 +232,7 @@
           "settings": {
             "heading": "Visible results, minimal downtime",
             "text": "<p>Other needle heads that are reused become blunt and cause unnecessary damage to the skin, therefore prolonging recovery. New (sharp, straight) needle heads provide <strong>clean micro-injuries <\/strong>every treatment and allows <strong>minimal downtime <\/strong>due to less unnecessary skin damage.<\/p>",
-            "image": "shopify:\/\/shop_images\/mi_refill-use_2.webp"
+            "image": "shopify:\/\/shop_images\/Lola_MI.png"
           }
         },
         "column_Q3DXky": {
@@ -240,7 +240,7 @@
           "settings": {
             "heading": "Boost Serum Absorption",
             "text": "<p>0.5mm needles infuse your skin with serum during the stamping process.<\/p><p>This enhanced serum penetration allows for better <strong>absorption<\/strong> and better results.<\/p>",
-            "image": "shopify:\/\/shop_images\/mi_refill-use_3.webp"
+            "image": "shopify:\/\/shop_images\/sharen_with_serum.png"
           }
         },
         "column_EUUCCQ": {
