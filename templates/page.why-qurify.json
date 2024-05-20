@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-why-qurify",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
