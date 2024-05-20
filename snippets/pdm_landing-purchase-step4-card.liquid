@@ -1,0 +1,66 @@
+<div class="step4-purchase-card-container">
+  {% if productInfo.popular_text != blank %}
+    <div class="step4-card-choise-container">
+      <p>
+        {{ productInfo.popular_text | replace: '(star)', starIcon }}
+      </p>
+    </div>
+  {% endif %}
+  <div class="step4-card-title-container">
+    {% if cardTypeInfo == 'meta' %}
+      <h3>
+        {{ productInfo.title }}
+      </h3>
+    {% else %}
+      <h3>
+        {{ generalSettings.step_4_card_title }}
+      </h3>
+    {% endif %}
+  </div>
+  <div class="step4-card-information-container">
+    {% comment %} doctor {% endcomment %}
+    {% if cardTypeInfo == 'meta' %}
+      <div class="step4-card-doctor-container">
+        {{ productInfo.doctor_image | image_url: width: 600 | image_tag: alt: 'doctor' }}
+        <p>
+          {{ productInfo.doctor_description }}
+        </p>
+      </div>
+    {% endif %}
+    <div class="step4-card-value-props-container">
+      {% comment %} title {% endcomment %}
+      {% if cardTypeInfo == 'meta' %}
+        <div class="step4-card-value-props__title">
+          <h3>
+            {{ productInfo.sub_title }}
+          </h3>
+        </div>
+        {% comment %} value props {% endcomment %}
+        <div class="step4-card-value-props__information">
+          {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon }}
+        </div>
+      {% else %}
+        <div class="step4-card-value-props__title">
+          {{ generalSettings.step_4_card_subtitle }}
+        </div>
+        <div class="step4-card-value-props__information">
+          {{ generalSettings.step_4_card_value_props_1 | metafield_tag | replace: '(cross)', crossIcon }}
+        </div>
+      {% endif %}
+    </div>
+    {% comment %} dropwon {% endcomment %}
+    {% if cardTypeInfo == 'meta' %}
+      <div class="step4-value-props-dropdown">
+        <button class="step4-value-dropdown-title" >
+          <h3>{{ productInfo.dropdown_title }}</h3>
+          <div class="landing-rotate-svg-button">
+            {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
+          </div>
+        </button>
+        <div class="step4-value-dropdown-content">
+          {{ productInfo.dropdown_value_props | metafield_tag }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

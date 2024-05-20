@@ -65,11 +65,17 @@
     {% include 'config-layout' %}
 
     <!-- styles endrock -->
+
+    {% if template == 'page.sunil-mi-landing' %}
+        {{ 'endrock-landing.css' | asset_url | stylesheet_tag }}
+    {% endif %}
+
+    
     {% case template %}
-        {% when 'page.sunil-mi-landing' %}
-        {% when 'page.sunil-mi-landing-de' %}
-        {% else %}
-            {{ 'endrock.css' | asset_url | stylesheet_tag }}
+    {% when 'page.sunil-mi-landing' %}
+    {% when 'page.sunil-mi-landing-de' %}
+    {% else %}
+        {{ 'endrock.css' | asset_url | stylesheet_tag }}
     {% endcase %}
     {{ 'endrock-sidecart.css' | asset_url | stylesheet_tag }}
     

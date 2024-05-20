@@ -201,7 +201,7 @@ window.addEventListener('load', function () {
 // =================================== js for same height ===============================
 $(function () {
     //setTimeout(function () {
-    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img').matchHeight({
+    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img, .q_water_card').matchHeight({
         property: 'height',
         target: null,
         remove: false
@@ -1462,3 +1462,65 @@ listItems.forEach(function (item) {
         item.innerHTML = item.innerHTML.replace(/&nbsp;/g, ' ');
     }
 });
+
+
+
+//  why should qurify your water start -- show more accordion
+
+if (window.matchMedia("(max-width: 767px)").matches) {
+    const qwCard = document.querySelectorAll(".qwCard_expandable");
+    qwCard.forEach((story) => {
+        const button = story.querySelector(".qwCard__accordion");
+        button.addEventListener("click", () => {
+            const paragraph = story.querySelector(".qwCard__hidden-div");
+            const more_text = button.getAttribute("data-more") || "Show More..";
+            const less_text = button.getAttribute("data-less") || "Show Less..";
+            paragraph.classList.toggle("hidden");
+            const text = paragraph.classList.contains("hidden")
+                ? more_text
+                : less_text;
+            button.textContent = text;
+        });
+    });
+}
+
+
+// affect your skin start
+const swiperAffect = new Swiper(".swiper-containerAffect", {
+    // loop: true,
+    slidesPerView: "2.5",
+    spaceBetween: 20,
+    breakpoints: {
+        300: {
+            slidesPerView: 1.1
+        },
+        600: {
+            slidesPerView: 2.5,
+            spaceBetween: 40,
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
+var initQWater = false;
+var swiperQWater;
+function swiperQWater() {
+    if (window.innerWidth >= 767) {
+        if (!initQWater) {
+            initQWater = true;
+            swiperQWater = new Swiper(".q_w_slider", {
+                slidesPerView: "3",
+                spaceBetween: 45
+            });
+        }
+    } else if (initQWater) {
+        swiperQWater.destroy();
+        initQWater = false;
+    }
+}
+swiperQWater();
+window.addEventListener("resize", swiperQWater);

@@ -1,0 +1,51 @@
+
+{% liquid
+  assign price_3 = productThree.price | money_without_currency
+  if price_3 == blank
+    assign price_3 = 0
+  endif
+%}
+
+  <div
+    data-position="1"
+    data-input="{{ name }}"
+    class="step1-purchase-card-container"
+  >
+    {% render 'pdm_landing-purchase-step1-card-mobile', 
+      productData: productOne, 
+      productInfo: productOneInfo
+      parentContainer: 'parent-mobile-{{ name }}',
+      uniqueId: 'collapseOneMobile'
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+  </div>
+
+  <div
+    data-position="2"
+    data-input="{{ name }}"
+    class="step1-purchase-card-container"
+  >
+    {% render 'pdm_landing-purchase-step1-card-mobile', 
+      productData: productTwo, 
+      productInfo: productTwoInfo 
+      uniqueId: 'collapseTwo'
+      parentContainer: 'parent-{{ name }}',
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+  </div>
+  <div
+    data-position="3"
+    data-input="{{ name }}"
+    class="step1-purchase-card-container"
+  >
+    {% render 'pdm_landing-purchase-step1-card-mobile', 
+      productData: productThree, 
+      productInfo: productThreeInfo 
+      uniqueId: 'collapseThree'
+      parentContainer: 'parent-{{ name }}',
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+  </div>

@@ -110,6 +110,11 @@
         {% assign main_class = 'stocklist' %}
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'become-stocklist.css' | asset_url }}">
+    {% when 'page.why-qurify' %}
+        {% assign main_class = 'why_qurify qurify_lp1' %}
+        <link rel="stylesheet" href="https://qureskincaredns.com/new/assets/qurify-filter-lp.css">
+        <link rel="stylesheet" href="https://qureskincaredns.com/new/assets/product-offers.css">
+        <link rel="stylesheet" href="https://qureskincaredns.com/new/assets/why_qurify.css">
     {% when 'blog' %}
         {% assign main_class = 'blogs' %}
         <link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
