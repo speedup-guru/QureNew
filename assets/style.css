@@ -30471,6 +30471,7 @@ p {
 
 .mw-736 {
     max-width: 736px !important;
+    margin: 0 auto;
 }
 
 
@@ -30486,7 +30487,10 @@ p {
 .mw-800 {
     max-width: 800px !important;
 }
-
+.mw-849 {
+    max-width: 849px !important;
+    margin: 0 auto;
+}
 .mw-949 {
     max-width: 949px;
     margin: 0 auto;
