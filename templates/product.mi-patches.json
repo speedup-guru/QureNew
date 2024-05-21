@@ -378,7 +378,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/micro_grid-combat-patches_12efc9c2-5dc1-4d8c-9e23-bb08433a78b2.webp",
-            "classname": ""
+            "classname": "it_img pb-4"
           }
         },
         "content_Tr9nYf": {
