@@ -201,7 +201,7 @@ window.addEventListener('load', function () {
 // =================================== js for same height ===============================
 $(function () {
     //setTimeout(function () {
-    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img, .q_water_card_off').matchHeight({
+    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img, .q_water_card').matchHeight({
         property: 'height',
         target: null,
         remove: false
