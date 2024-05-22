@@ -15,7 +15,7 @@
   endif
 %}
 
-<div class="swiper swiper-products">
+<div class="swiper swiper-products dot_pagination">
   <div class="swiper-wrapper">
     {% for media in product.media limit: limitNew, offset: offsetNew %}
       {% if media.media_type == 'video' %}
