@@ -78,8 +78,8 @@
         "link_crBjL9": {
           "type": "link",
           "settings": {
-            "link_label": "Shop Best Sellers",
-            "link_url": "shopify:\/\/collections\/best-sellers"
+            "link_label": "Shop Micro-Infusion",
+            "link_url": "shopify:\/\/pages\/microinfusion"
           }
         }
       },
@@ -87,10 +87,10 @@
         "link_crBjL9"
       ],
       "settings": {
-        "heading": "Get clinic-level results from home- minus the ‘clinical’ costs.",
-        "text": "<p><strong>50,000+ <\/strong>customers feel more confident in their own skin.<\/p>",
-        "image": "shopify:\/\/shop_images\/homepage_banner_desk_5a394355-a35f-4911-ad68-df2ef1c021df.webp",
-        "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_098b63eb-bcc4-4cd1-9cf1-30c41a61fb0a.webp"
+        "heading": "Natural Skin Is in Full Bloom",
+        "text": "<p>Get dewy, radiant skin and keep your cover-up on the shelf.<\/p>",
+        "image": "shopify:\/\/shop_images\/homepage_banner_desk_f99d37af-4fa3-4c7e-83b3-e9a84907915b.webp",
+        "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_8cb05b33-b308-47c4-9173-cfb499a640e0.webp"
       }
     },
     "main_banner_rJmjKt": {

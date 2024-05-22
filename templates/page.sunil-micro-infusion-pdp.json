@@ -115,13 +115,13 @@
         "before_and_after_i7mAeJ": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify:\/\/shop_images\/before_and_after_-_MI.png",
+            "image_new_section_1": "shopify:\/\/shop_images\/before_and_after_-_m1.png",
             "image_new_section_text_1": "micro infusion one",
-            "image_new_section_2": "shopify:\/\/shop_images\/before_and_after_-_MI2.png",
+            "image_new_section_2": "shopify:\/\/shop_images\/before_and_after_-_m2.png",
             "image_new_section_text_2": "micro infusion two",
-            "image_new_section_3": "shopify:\/\/shop_images\/before_and_after_-_MI3.png",
+            "image_new_section_3": "shopify:\/\/shop_images\/before_and_after_-_m3.png",
             "image_new_section_text_3": "micro infusion three",
-            "image_new_section_4": "shopify:\/\/shop_images\/before_and_after_-_MI4.png",
+            "image_new_section_4": "shopify:\/\/shop_images\/before_and_after_-_m4.png",
             "image_new_section_text_4": "micro infusion four",
             "image_new_section_text_5": "",
             "image_new_section_text_6": ""
@@ -365,9 +365,55 @@
         "slide_TjgeBk",
         "slide_QMYjFm"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Qure’s 2-In-1 System isn’t like any other at-home needling treatment",
         "text": "<p>Qure’s Micro-Infusion System <strong>stimulates and infuses,<\/strong> making it uniquely effective.<\/p><p>First, it “stamps” your skin with 24K gold 0.5mm needles. This helps create controlled trauma in your skin which can help <strong>boost the feel of firmness and smooth the look of fine lines and wrinkles.<\/strong> The needles are thinner than the average human hair, so you will hardly even feel them.<\/p><p>Second, the invisible micro-channels help “infuse” serums, with science-backed ingredients, of your choice, into the top layer of your skin, aiding absorption for <strong>visible results.<\/strong><\/p>"
+      }
+    },
+    "before_after_short_slider_6m7xzD": {
+      "type": "before-after-short-slider",
+      "blocks": {
+        "slide_rmKBAW": {
+          "type": "slide",
+          "settings": {
+            "heading": "Fine Lines and Wrinkles",
+            "text": "<ul><li>Helps reduce the appearance of <strong>fine lines and wrinkles<\/strong><\/li><li>Promotes <strong>hydration<\/strong> for dewey, plump-looking skin<\/li><li>Supports the skin barrier for a <strong>boost in firmness<\/strong> you can feel<\/li><\/ul>",
+            "image": "shopify:\/\/shop_images\/results_jess1.webp",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "client": "Jess"
+          }
+        },
+        "slide_BrJtwX": {
+          "type": "slide",
+          "settings": {
+            "heading": "Skin Tone and Texture",
+            "text": "<ul><li>Assists in <strong>fading<\/strong> the appearance of <strong>dark spots<\/strong> and post-acne marks<\/li><li>Promotes skin renewal and <strong>smooths rough texture<\/strong><\/li><li>Helps <strong>minimize<\/strong> the appearance of <strong>pores<\/strong> for a clearer-looking complexion<\/li><\/ul>",
+            "image": "shopify:\/\/shop_images\/results_monika.webp",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "client": "Monika"
+          }
+        },
+        "slide_CDzJ3D": {
+          "type": "slide",
+          "settings": {
+            "heading": "Overall Transformation",
+            "text": "<ul><li><strong>Brightens the skin<\/strong> for a healthier, more rodient complexion<\/li><li>Helps with <strong>better serum absorption<\/strong> for results you can see<\/li><li>Skin appears <strong>firmer, smoother<\/strong>, and more <strong>youthful<\/strong><\/li><\/ul>",
+            "image": "shopify:\/\/shop_images\/results_ellie1.webp",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "client": "Ellie V."
+          }
+        }
+      },
+      "block_order": [
+        "slide_rmKBAW",
+        "slide_BrJtwX",
+        "slide_CDzJ3D"
+      ],
+      "settings": {
+        "heading": "Achieve your skincare goals",
+        "text": "",
+        "text_verified_customer": "Verified customer"
       }
     },
     "icons_list_JTnW7Q": {
@@ -1064,6 +1110,7 @@
     "two_column_box_ahdeKc",
     "reasons_cHUBTr",
     "before_after_easy_slider_jLT3Bw",
+    "before_after_short_slider_6m7xzD",
     "icons_list_JTnW7Q",
     "trusted_NMh3L7",
     "results_BxwbR3",

@@ -3,7 +3,7 @@
 {% case template %}
     {% when 'index' %}
         {% assign main_class = 'homepage' %}
-        <link rel="stylesheet" href="{{ 'product-homepage.css' | asset_url }}">
+        {% comment %} <link rel="stylesheet" href="{{ 'product-homepage.css' | asset_url }}"> {% endcomment %}
     {% when 'collection' %}
         {% assign main_class = 'collection_page' %}
         <link rel="stylesheet" href="{{ 'collections.css' | asset_url }}">

@@ -126,7 +126,7 @@
                                                         {% endif %}
                                                         
                                                         {%- if product.handle contains 'q-urify-water-filter' -%}
-                                                            {%- assign future_price = 0.8 | times: all_products['q-rify-replacement-water-filter'].price | money_without_trailing_zeros %}
+                                                            {%- assign future_price = all_products['q-rify-replacement-water-filter'].price | times: 0.7 | money_without_trailing_zeros %}
                                                         {%- else -%}
                                                             {%- assign future_price = discount_value | money_without_trailing_zeros -%}
                                                         {%- endif -%}

@@ -33,4 +33,7 @@
     .mi_landing .shipping.one_line .s_bx p {
         width: 130px;
     }
+    .q_water_card {
+        height: auto !important;
+    }
 }
