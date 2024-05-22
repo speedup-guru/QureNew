@@ -10,7 +10,6 @@ const userLocationIP = () => {
   fetch(url, requestOptions)
     .then(response => response.json())
     .then(result => {
-      console.log('result', result);
       return deliveryDate(result);
     })
     .catch(error => console.log('error', error));
@@ -92,12 +91,9 @@ const verifyCustomer = () => {
   .find((row) => row.startsWith("newCustomer="))
   ?.split("=")[1];
 
-  console.log("cookieValue",cookieValue);
   if (!cookieValue) {
-    console.log("new customer");
     document.cookie = "newCustomer=true; max-age=2592000; path=/";
   } else {
-    console.log("returning customer");
     const crossSell = document.querySelectorAll('.cross-sell');
 
     crossSell.forEach((element) => {
@@ -107,7 +103,28 @@ const verifyCustomer = () => {
   
 }
 
+
+/* ATC NO PRICES PDP */
+const atcNoPricesPdp = () => {
+
+  const subscriptionTypes = document.querySelectorAll('.subscriptionType');
+  if (subscriptionTypes) {
+    subscriptionTypes.forEach((element) => {
+      element.addEventListener('click', function(e) {
+        const subscriptionType = e.currentTarget.getAttribute('data-subscription');
+        const subscriptionPrices = document.querySelectorAll('.subscriptions-prices');
+        
+        subscriptionPrices.forEach((element) => { element.classList.add('hidden'); });
+        document.getElementById(`${subscriptionType}`).classList.remove('hidden');
+      });
+    });
+  }
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
+  /* ATC NO PRICE TEST PDP */
+  atcNoPricesPdp();
 
   // Start Cross-sell page targeting validation
   const pageTargeting = [
@@ -123,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const currentPath = window.location.pathname;
 
-  console.log('currentPath',currentPath);
   if(pageTargeting.includes(currentPath)){
     verifyCustomer();
   }
@@ -768,5 +784,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // end dropdown
 
   initUpsellSwiper(); //swiper for carousel upsell
-});
 
+});
