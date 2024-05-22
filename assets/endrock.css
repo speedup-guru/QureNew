@@ -818,7 +818,7 @@ this have to be on intelligems
 .price-test-original {
   display: none !important;
 } */
-:not([data-price-test="true"]) .price-test {
+body:not([data-price-test="true"]) .price-test {
   display: none !important;
 }
 [data-price-test="true"] .price-test {
