@@ -818,8 +818,11 @@ this have to be on intelligems
 .price-test-original {
   display: none !important;
 } */
-.price-test {
+:not([data-price-test="true"]) .price-test {
   display: none !important;
+}
+[data-price-test="true"] .price-test {
+  display: none;
 }
 
 .product-price {
