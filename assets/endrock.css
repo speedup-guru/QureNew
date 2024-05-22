@@ -742,8 +742,14 @@
     align-items: center;
     flex: 0 1 auto;
     align-self: auto;
-    min-width: 128px;
+    width: 100px;
+    min-width: 100px;
     display: flex;
+  }
+  .cross-sell .cross-sell__product--image {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
   }
 
   .cross-sell .cross-sell__product-content {
@@ -827,6 +833,10 @@ body:not([data-price-test="true"]) .price-test {
 
 .product-price {
   margin-top: 16px;
+}
+
+.subscriptionType:not(.active)[data-subscription="no-subscription"] .price-test {
+  display: none !important;
 }
 
 .product-price, .product-price .subscriptions-prices {
