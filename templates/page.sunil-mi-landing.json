@@ -804,6 +804,18 @@
             "client": "Chelsea J.",
             "code": ""
           }
+        },
+        "result_JjTHyx": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jenn_Nay_b_a.png",
+            "heading": "Works better then I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jennifer Nay",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -816,7 +828,8 @@
         "result_URKRDq",
         "result_TJXM8n",
         "result_6FrBJW",
-        "result_xgWrGm"
+        "result_xgWrGm",
+        "result_JjTHyx"
       ],
       "settings": {
         "classname": "mi_landing_result",
