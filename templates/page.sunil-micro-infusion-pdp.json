@@ -690,18 +690,6 @@
             "code": ""
           }
         },
-        "result_XaHkFR": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_priya.webp",
-            "heading": "Plumper, more hydrated!",
-            "text": "<p>\"After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/england_f_03ba570c-9a33-4213-9712-9e5ff8ab08a6.webp",
-            "text_country": "United Kingdom",
-            "client": "Priya P.",
-            "code": ""
-          }
-        },
         "result_kynacj": {
           "type": "result",
           "settings": {
@@ -725,6 +713,18 @@
             "client": "Akina M.",
             "code": ""
           }
+        },
+        "result_LVp6xH": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jenn_Nay_b_a.png",
+            "heading": "Works better then I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jennifer Nay",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -737,9 +737,9 @@
         "result_WMb64K",
         "result_LJ8XRH",
         "result_gjbAwg",
-        "result_XaHkFR",
         "result_kynacj",
-        "result_jb3R8J"
+        "result_jb3R8J",
+        "result_LVp6xH"
       ],
       "settings": {
         "classname": "mi_landing_result",
