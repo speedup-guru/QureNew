@@ -184,7 +184,7 @@
                                         {% unless supply_count > 0 %}
                                             {% render 'pdm_orderby' %}
                                         {% endunless %}
-                                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-form-id="{{ product.id }}">
+                                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }} form-test-id" enctype="multipart/form-data" data-form-id="{{ product.id }}">
                                             <input type="hidden" name="selling_plan" value="{{ block.settings.plan }}">
                                             <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn price-test-original" name="Submit" value="Submit">
                                                 Subscribe Now - {{ product_price_discount | money_without_trailing_zeros  }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
