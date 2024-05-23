@@ -108,8 +108,6 @@ const verifyCustomer = () => {
 const atcNoPricesPdp = () => {
 
   const subscriptionTypes = document.querySelectorAll('.subscriptionType');    
-  
-  const button = document.querySelector('.button_sticky.event_btn');
 
   if (subscriptionTypes) {
     subscriptionTypes.forEach((element) => {
@@ -122,19 +120,15 @@ const atcNoPricesPdp = () => {
       });
     });
   }
-  if (button) {
-    button.childNodes.forEach(node => {
-        if (node.nodeType === Node.TEXT_NODE) {
-            node.nodeValue = node.nodeValue.replace(' - ', ' ');
-        }
-    });
-  }
 }
+
+document.addEventListener('ig:ready', function() {
+  /* ATC NO PRICE TEST PDP */
+  atcNoPricesPdp();
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  /* ATC NO PRICE TEST PDP */
-  atcNoPricesPdp();
 
   // Start Cross-sell page targeting validation
   const pageTargeting = [

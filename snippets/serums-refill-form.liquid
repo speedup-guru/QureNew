@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         {% render 'pdm_orderby' %}
-                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-form-id="{{ product.id }}">
+                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }} form-test-id" enctype="multipart/form-data" data-form-id="{{ product.id }}">
                             <input type="hidden" name="form_type" value="product">
                             <input type="hidden" name="utf8" value="✓">
                             <input type="hidden" name="selling_plan" value="{{ selling_plan }}">

@@ -1,11 +1,14 @@
 <div class="button_sticky_wrapper" data-product-id="{{ product.id }}">
-    <a href="javascript:void(0)" onclick="formSubmit('{{ form_classname }}')" class="button_sticky {{ button_classname }} event_btn">
+    <a href="javascript:void(0)" onclick="formSubmit('{{ form_classname }}')" class="button_sticky {{ button_classname }} event_btn price-test-original">
         {% if current_price != original_price %}
             {{ current_price | money_without_trailing_zeros }}<span id="original-price">{{ original_price | money_without_trailing_zeros }}</span>
         {% else %}
             {{ current_price | money_without_trailing_zeros }}
         {% endif %}
         - ADD TO BAG
+    </a>
+    <a href="javascript:void(0)" onclick="formSubmit('{{ form_classname }}')" class="button_sticky {{ button_classname }} event_btn price-test">
+ADD TO BAG
     </a>
 </div>
 

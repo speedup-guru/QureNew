@@ -824,11 +824,15 @@ this have to be on intelligems
 .price-test-original {
   display: none !important;
 } */
+
 body:not([data-price-test="true"]) .price-test {
   display: none !important;
 }
+[data-price-test="true"] .price-test-original {
+  display: none !important;
+}
 [data-price-test="true"] .price-test {
-  display: none;
+  display: block !important;
 }
 
 [data-price-test="true"] #sale-price {
@@ -840,6 +844,9 @@ body:not([data-price-test="true"]) .price-test {
 }
 
 .subscriptionType:not(.active)[data-subscription="no-subscription"] .price-test {
+  display: none !important;
+}
+.subscriptionType.active[data-subscription="no-subscription"] ~ form.form-test-id .price-test {
   display: none !important;
 }
 
