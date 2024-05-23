@@ -107,7 +107,10 @@ const verifyCustomer = () => {
 /* ATC NO PRICES PDP */
 const atcNoPricesPdp = () => {
 
-  const subscriptionTypes = document.querySelectorAll('.subscriptionType');
+  const subscriptionTypes = document.querySelectorAll('.subscriptionType');    
+  
+  const button = document.querySelector('.button_sticky.event_btn');
+
   if (subscriptionTypes) {
     subscriptionTypes.forEach((element) => {
       element.addEventListener('click', function(e) {
@@ -117,6 +120,13 @@ const atcNoPricesPdp = () => {
         subscriptionPrices.forEach((element) => { element.classList.add('hidden'); });
         document.getElementById(`${subscriptionType}`).classList.remove('hidden');
       });
+    });
+  }
+  if (button) {
+    button.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            node.nodeValue = node.nodeValue.replace(' - ', ' ');
+        }
     });
   }
 }

@@ -831,6 +831,10 @@ body:not([data-price-test="true"]) .price-test {
   display: none;
 }
 
+[data-price-test="true"] #sale-price {
+  display: none;
+}
+
 .product-price {
   margin-top: 16px;
 }
