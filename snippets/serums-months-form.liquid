@@ -17,7 +17,33 @@
                         <div class="step_content step_serum">
                             <div class="serumBlock {{ section_id }}_productTypeObject">
                                 <input type="radio" name="mBanner_serum"
-                                    id="mBanner_rejuvenating-hydra">
+                                    id="mBanner_rejuvenating">
+                                <label class="serum_prd pdt_bg_yellow"
+                                    for="mBanner_rejuvenating">
+                                    <div class="serum_img product_type" data-product-type="2">
+                                        <img src="{{ 'reju.webp' | asset_url }}" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="serum_ttl">Rejuvenating
+                                        <span>for dark spots</span>
+                                    </h4>
+                                </label>
+                            </div>
+                            <div class="serumBlock {{ section_id }}_productTypeObject">
+                                <input type="radio" name="mBanner_serum"
+                                    id="mBanner_hydra-soothing">
+                                <label class="serum_prd pdt_bg_grey"
+                                    for="mBanner_hydra-soothing">
+                                    <div class="serum_img product_type" data-product-type="3">
+                                        <img src="{{ 'hydra.webp' | asset_url }}" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="serum_ttl">Hydra-Soothing
+                                        <span>wrinkles</span>
+                                    </h4>
+                                </label>
+                            </div>
+                            <div class="serumBlock {{ section_id }}_productTypeObject">
+                                <input type="radio" name="mBanner_serum"
+                                    id="mBanner_rejuvenating-hydra" checked>
                                 <label class="serum_prd pdt_bg_gradient"
                                     for="mBanner_rejuvenating-hydra">
                                     <div class="serum_img product_type" data-product-type="1">
@@ -27,29 +53,6 @@
                                     </h4>
                                 </label>
                             </div>
-                            <div class="serumBlock {{ section_id }}_productTypeObject">
-                                <input type="radio" name="mBanner_serum"
-                                    id="mBanner_rejuvenating">
-                                <label class="serum_prd pdt_bg_yellow"
-                                    for="mBanner_rejuvenating">
-                                    <div class="serum_img product_type" data-product-type="2">
-                                        <img src="{{ 'reju.webp' | asset_url }}" alt="" class="img-fluid">
-                                    </div>
-                                    <h4 class="serum_ttl">Rejuvenating </h4>
-                                </label>
-                            </div>
-                            <div class="serumBlock {{ section_id }}_productTypeObject">
-                                <input type="radio" name="mBanner_serum"
-                                    id="mBanner_hydra-soothing" checked>
-                                <label class="serum_prd pdt_bg_grey"
-                                    for="mBanner_hydra-soothing">
-                                    <div class="serum_img product_type" data-product-type="3">
-                                        <img src="{{ 'hydra.webp' | asset_url }}" alt="" class="img-fluid">
-                                    </div>
-                                    <h4 class="serum_ttl">Hydra-Soothing</h4>
-                                </label>
-                            </div>
-
                         </div>
                     </div>
                 </div>

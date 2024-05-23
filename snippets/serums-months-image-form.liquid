@@ -74,7 +74,33 @@
                                 </div>
                                 <div class="step_content step_serum">
                                     <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="rejuvenating-hydra" />
+                                        <input type="radio" class="" name="serum" id="rejuvenating" />
+                                        <label class="serum_prd bg-yellow" for="rejuvenating">
+                                            <div class="serum_img active product_type" data-product-type="2" data-month1-image="{{ 'MI2x-rejuv.webp' | asset_url }}"
+                                                data-month2-image="{{ 'MI4x-rejuv.webp' | asset_url }}"
+                                                data-month3-image="{{ 'MI6x-rejuv.webp' | asset_url }}">
+                                                <img src="{{ 'mc_2.webp' | asset_url }}" alt="" class="img-fluid" />
+                                            </div>
+                                            <h4 class="serum_ttl">Rejuvenating
+                                                <span>for dark spots</span>
+                                            </h4>
+                                        </label>
+                                    </div>
+                                    <div class="serumBlock {{ section_id }}_productTypeObject">
+                                        <input type="radio" class="" name="serum" id="hydra-soothing" />
+                                        <label class="serum_prd bg-grey" for="hydra-soothing">
+                                            <div class="serum_img product_type" data-product-type="3" data-month1-image="{{ 'MI2x-hydra.webp' | asset_url }}"
+                                                data-month2-image="{{ 'MI4x-hydra.webp' | asset_url }}"
+                                                data-month3-image="{{ 'MI6x-hydra.webp' | asset_url }}">
+                                                <img src="{{ 'mc_1.webp' | asset_url }}" alt="" class="img-fluid" />
+                                            </div>
+                                            <h4 class="serum_ttl">Hydra-Soothing
+                                                <span>for wrinkles</span>
+                                            </h4>
+                                        </label>
+                                    </div>
+                                    <div class="serumBlock {{ section_id }}_productTypeObject">
+                                        <input type="radio" class="" name="serum" id="rejuvenating-hydra" checked />
                                         <label class="serum_prd bg-yellowGrey" for="rejuvenating-hydra">
                                             <div class="serum_img product_type" data-product-type="1" data-month1-image="{{ 'MI2x-mixed.webp' | asset_url }}"
                                                 data-month2-image="{{ 'MI4x-mixed.webp' | asset_url }}"
@@ -84,30 +110,6 @@
                                             <h4 class="serum_ttl">Rejuvenating + Hydra-Soothing </h4>
                                         </label>
                                     </div>
-                                    <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="rejuvenating" />
-                                        <label class="serum_prd bg-yellow" for="rejuvenating">
-                                            <div class="serum_img active product_type" data-product-type="2" data-month1-image="{{ 'MI2x-rejuv.webp' | asset_url }}"
-                                                data-month2-image="{{ 'MI4x-rejuv.webp' | asset_url }}"
-                                                data-month3-image="{{ 'MI6x-rejuv.webp' | asset_url }}">
-                                                <img src="{{ 'mc_2.webp' | asset_url }}" alt="" class="img-fluid" />
-                                            </div>
-                                            <h4 class="serum_ttl">Rejuvenating</h4>
-                                        </label>
-                                    </div>
-                                    <div class="serumBlock {{ section_id }}_productTypeObject">
-                                        <input type="radio" class="" name="serum" id="hydra-soothing" checked />
-                                        <label class="serum_prd bg-grey" for="hydra-soothing">
-                                            <div class="serum_img product_type" data-product-type="3" data-month1-image="{{ 'MI2x-hydra.webp' | asset_url }}"
-                                                data-month2-image="{{ 'MI4x-hydra.webp' | asset_url }}"
-                                                data-month3-image="{{ 'MI6x-hydra.webp' | asset_url }}">
-                                                <img src="{{ 'mc_1.webp' | asset_url }}" alt="" class="img-fluid" />
-                                            </div>
-                                            <h4 class="serum_ttl">Hydra-Soothing</h4>
-                                        </label>
-                                    </div>
-
-
                                 </div>
                             </div>
                         </div>
