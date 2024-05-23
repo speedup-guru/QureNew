@@ -14,6 +14,7 @@
   assign products1_type = products1.select_type.value
   assign products1_refill_info = products1.refill_product.value
   assign products1_refill_product = products1.refill_product.value.product_refill.value
+  assign products1_refill_product_2 = products1.refill_product.value.product_refill_2.value
 
   # each mix product
   ## for to split and general info
@@ -39,6 +40,7 @@
   assign products2_type = products2.select_type.value
   assign products2_refill_info = products2.refill_product.value
   assign products2_refill_product = products2.refill_product.value.product_refill.value
+  assign products2_refill_product_2 = products2.refill_product.value.product_refill_2.value
 
   for data in products2_products
     if forloop.index == 1
@@ -62,6 +64,7 @@
   assign products3_products = products3.list_products.value
   assign products3_refill_info = products3.refill_product.value
   assign products3_refill_product = products3.refill_product.value.product_refill.value
+  assign products3_refill_product_2 = products3.refill_product.value.product_refill_2.value
 
   for data in products3_products
     if forloop.index == 1
@@ -94,6 +97,12 @@
     render 'pdm_landing-purchase-icons', icon: 'star'
   endcapture
 %}
+
+<script>
+  console.log('p1_refill_2', {{ products1_refill_product_2 | json }})
+  console.log('p2_refill_2', {{ products2_refill_product_2 | json }})
+  console.log('p3_refill_2', {{ products3_refill_product_2 | json }})
+</script>
 
 <section id="new-landing-purchase" class="new-landing-purchase serumTestVariant">
   <div class="container">
@@ -217,6 +226,7 @@
         <div class="landing-fourth-inputs-container">
           {% render 'pdm_landing-purchase-step4-inputs',
             productRefill: products1_refill_product,
+            productRefill2: products1_refill_product_2,
             productRefillInfo: products1_refill_info,
             generalSettings: general_settings,
             checkIcon: checkIcon,
@@ -228,6 +238,7 @@
           %}
           {% render 'pdm_landing-purchase-step4-inputs',
             productRefill: products2_refill_product,
+            productRefill2: products2_refill_product_2,
             productRefillInfo: products2_refill_info,
             generalSettings: general_settings,
             checkIcon: checkIcon,
@@ -239,6 +250,7 @@
           %}
           {% render 'pdm_landing-purchase-step4-inputs',
             productRefill: products3_refill_product,
+            productRefill2: products3_refill_product_2,
             productRefillInfo: products3_refill_info,
             generalSettings: general_settings,
             checkIcon: checkIcon,

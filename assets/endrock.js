@@ -257,7 +257,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // end PDP: Before & After First Image 
 
   // purchase landing page
+  const mewLandingProccess = document.querySelector('#new-landing-purchase')
 
+  if(mewLandingProccess){
   class PurchaseLandingPage {
     constructor(formId) {
       this.form = document.getElementById(formId);
@@ -739,33 +741,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');
-  // end purchase landing page
+    const purchaseLandingPage = new PurchaseLandingPage('main-panel-lading');
+    // end purchase landing page
 
-  // works better outside of the class
-  // dropsdown
+    // works better outside of the class
+    // dropsdown
   
-  function setupDropdowns(containerSelector, buttonSelector, contentSelector) {
-    const dropdownContainers = document.querySelectorAll(containerSelector);
-    if (dropdownContainers) {
-      dropdownContainers.forEach(function(container) {
-        const dropdownButton = container.querySelector(buttonSelector);
-        const dropdownContent = container.querySelector(contentSelector);
-        const button = container.querySelector('.landing-rotate-svg-button');
-  
-        dropdownButton.addEventListener('click', function() {
-          dropdownContent.classList.toggle('show-dropdown');
-          button.classList.toggle('rotate-svg-btn');
+    function setupDropdowns(containerSelector, buttonSelector, contentSelector) {
+      const dropdownContainers = document.querySelectorAll(containerSelector);
+      if (dropdownContainers) {
+        dropdownContainers.forEach(function(container) {
+          const dropdownButton = container.querySelector(buttonSelector);
+          const dropdownContent = container.querySelector(contentSelector);
+          const button = container.querySelector('.landing-rotate-svg-button');
+    
+          dropdownButton.addEventListener('click', function() {
+            dropdownContent.classList.toggle('show-dropdown');
+            button.classList.toggle('rotate-svg-btn');
+          });
         });
-      });
+      }
     }
-  }
   
-  setupDropdowns('.step1-value-props-dropdown', '.step1-value-dropdown-title', '.step1-value-dropdown-information');
-  setupDropdowns('.step1-mobile-value-props-dropdown', '.step1-mobile-value-dropdown-title', '.step1-mobile-value-dropdown-information');
-  setupDropdowns('.step4-value-props-dropdown', '.step4-value-dropdown-title', '.step4-value-dropdown-content');
+    setupDropdowns('.step1-value-props-dropdown', '.step1-value-dropdown-title', '.step1-value-dropdown-information');
+    setupDropdowns('.step1-mobile-value-props-dropdown', '.step1-mobile-value-dropdown-title', '.step1-mobile-value-dropdown-information');
+    setupDropdowns('.step4-value-props-dropdown', '.step4-value-dropdown-title', '.step4-value-dropdown-content');
 
-  // end dropdown
+    // end dropdown
+  }
 
   initUpsellSwiper(); //swiper for carousel upsell
 });

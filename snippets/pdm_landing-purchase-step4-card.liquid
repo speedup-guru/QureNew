@@ -1,3 +1,5 @@
+{% assign product2_discount = productData2.price | times: 0.80 %}
+
 <div class="step4-purchase-card-container">
   {% if productInfo.popular_text != blank %}
     <div class="step4-card-choise-container">
@@ -37,6 +39,16 @@
         </div>
         {% comment %} value props {% endcomment %}
         <div class="step4-card-value-props__information">
+          <ul>
+            <li>
+              {{- checkIcon -}}
+              <span class="step4-card-value-props__information-price">{{ productData2.price |  money_without_trailing_zeros  }}</span>
+              <span class="step4-card-value-props__information-discount"> {{ product2_discount | money_without_trailing_zeros }}</span>
+              <span>
+                {{ productInfo.subscription_delivery }}
+              </span>
+            </li>
+          </ul>
           {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon }}
         </div>
       {% else %}
