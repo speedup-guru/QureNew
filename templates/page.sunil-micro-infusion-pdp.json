@@ -993,6 +993,14 @@
             "code": ""
           }
         },
+        "object_9NRV36": {
+          "type": "object",
+          "settings": {
+            "heading": "Is this treatment suitable for sensitive and rosacea skin?",
+            "text": "<p>We recommend avoiding Micro-Infusion treatments if you have sensitive skin, or active rosacea flare-ups. <\/p>",
+            "code": ""
+          }
+        },
         "object_UFGfFB": {
           "type": "object",
           "settings": {
@@ -1065,14 +1073,6 @@
             "button_label": "Don’t see your question? Ask us",
             "button_url": "shopify:\/\/pages\/faqs"
           }
-        },
-        "object_9NRV36": {
-          "type": "object",
-          "settings": {
-            "heading": "Is this treatment suitable for sensitive and rosacea skin?",
-            "text": "<p>We recommend avoiding Micro-Infusion treatments if you have sensitive skin, or active rosacea flare-ups. <\/p>",
-            "code": ""
-          }
         }
       },
       "block_order": [
@@ -1082,6 +1082,7 @@
         "object_eNwFNH",
         "object_AemyD4",
         "object_CTEVqW",
+        "object_9NRV36",
         "object_UFGfFB",
         "object_tCEdpR",
         "object_Gf8DdA",
@@ -1090,8 +1091,7 @@
         "object_TtFbyk",
         "object_hKQ7GW",
         "object_AmtYTe",
-        "button_WyPm98",
-        "object_9NRV36"
+        "button_WyPm98"
       ],
       "settings": {
         "classname": "bg_yellow",
