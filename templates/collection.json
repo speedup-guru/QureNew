@@ -71,11 +71,23 @@
             "client": "Dr Shah, MD Certified Dermatologist",
             "position": "4"
           }
+        },
+        "brand_card_ynEhKC": {
+          "type": "brand_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collectionVogue.webp",
+            "header": "VOGUE",
+            "text": "<p>One of VOGUE's top LED masks<\/p>",
+            "button_label": "Discover Now",
+            "button_url": "https:\/\/www.qureskincare.com\/collections\/best-sellers",
+            "position": "7"
+          }
         }
       },
       "block_order": [
         "client_card_BHKtXC",
-        "doctor_card_mikzkG"
+        "doctor_card_mikzkG",
+        "brand_card_ynEhKC"
       ],
       "settings": {
       }
