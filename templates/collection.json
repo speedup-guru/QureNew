@@ -61,10 +61,21 @@
             "client": "Ela O.",
             "position": "1"
           }
+        },
+        "doctor_card_mikzkG": {
+          "type": "doctor_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collection_drShah.webp",
+            "header": "Trusted and recommended by world-leading dermatologists",
+            "text": "<p>\"The best LED mask on the market in my opinion at this time, that being said you do need to use this consistently to see results...\"<\/p>",
+            "client": "Dr Shah, MD Certified Dermatologist",
+            "position": "4"
+          }
         }
       },
       "block_order": [
-        "client_card_BHKtXC"
+        "client_card_BHKtXC",
+        "doctor_card_mikzkG"
       ],
       "settings": {
       }
