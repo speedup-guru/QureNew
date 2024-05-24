@@ -52,42 +52,19 @@
     "main_results": {
       "type": "collection-results",
       "blocks": {
-        "client_card_VhAMRW": {
+        "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/collection-ela.webp",
             "image_mobile": "shopify:\/\/shop_images\/collection-ela-mobile.webp",
-            "text": "<p>I was shocked at how my skin looked the <strong>morning after my first Micro-Infusion <\/strong>treatment! It was so easy to use, can’t wait until my next treatment.<\/p>",
+            "text": "<p>I was shocked at how my skin looked the<strong>morning after my first Micro-Infusion<\/strong>treatment! It was so easy to use, can’t wait until my next treatment.<\/p>",
             "client": "Ela O.",
             "position": "1"
-          }
-        },
-        "doctor_card_7wkVqU": {
-          "type": "doctor_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/collection_drShah.webp",
-            "header": "Trusted and recommended by world-leading dermatologists",
-            "text": "<p>\"The best LED mask on the market in my opinion at this time, that being said you do need to use this consistently to see results...\"<\/p>",
-            "client": "Dr Shah, MD Certified Dermatologist",
-            "position": "4"
-          }
-        },
-        "brand_card_zxGe3V": {
-          "type": "brand_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/collectionVogue.webp",
-            "header": "VOGUE",
-            "text": "<p>One of VOGUE's top LED masks<\/p>",
-            "button_label": "Discover Now",
-            "button_url": "",
-            "position": "7"
           }
         }
       },
       "block_order": [
-        "client_card_VhAMRW",
-        "doctor_card_7wkVqU",
-        "brand_card_zxGe3V"
+        "client_card_BHKtXC"
       ],
       "settings": {
       }
