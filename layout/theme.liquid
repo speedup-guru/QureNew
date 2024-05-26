@@ -55,6 +55,8 @@
         <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {% endif %}
 
+    <link rel="preload" href="{{ 'liquid-ajax-cart-v1.11.1.js' | asset_url }}" as="script" fetchpriority="high">
+
     <!--== CSS ==-->
     <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'product.css' | asset_url }}">
