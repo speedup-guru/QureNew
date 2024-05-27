@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // end PDP: Before & After First Image 
-
+  /*
   // purchase landing page
   class PurchaseLandingPage {
     constructor(formId) {
@@ -765,7 +765,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setupDropdowns('.step4-value-props-dropdown', '.step4-value-dropdown-title', '.step4-value-dropdown-content');
 
   // end dropdown
-
+ */
   initUpsellSwiper(); //swiper for carousel upsell
 
   /* QR- Shopify 2.0 Features Adjustments  */
