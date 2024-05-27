@@ -81,7 +81,7 @@
         "product_in_page_gkYdxK": {
           "type": "product_in_page",
           "settings": {
-            "image_product_1": "shopify:\/\/shop_images\/Lola_2serums.png",
+            "image_product_1": "shopify:\/\/shop_images\/Lola_mi_serums.png",
             "image_product_text_1": "lola with MI serums",
             "video_wistia_id_1": "",
             "image_product_2": "shopify:\/\/shop_images\/Box_with_serums.png",
@@ -383,6 +383,18 @@
             "client": "Chelsea J.",
             "code": ""
           }
+        },
+        "result_zHPFqU": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jenn_Nay_b_a.png",
+            "heading": "Works better then I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jennifer Nay",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -395,7 +407,8 @@
         "result_rwc7kD",
         "result_bkVjix",
         "result_rhcQKL",
-        "result_g6zQgr"
+        "result_g6zQgr",
+        "result_zHPFqU"
       ],
       "settings": {
         "classname": "mi_landing_result",
