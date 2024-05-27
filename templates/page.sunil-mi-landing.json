@@ -1005,7 +1005,7 @@
     "liquid_86wfLd": {
       "type": "liquid",
       "settings": {
-        "code": "{% render 'serums-months-image-landing-form' with section_id: section.id %}\n\n{% render 'pdm_landing-page-purchase-process' %}"
+        "code": "{% render 'pdm_landing-page-purchase-process' %}"
       }
     },
     "compare_box_p4B7wy": {

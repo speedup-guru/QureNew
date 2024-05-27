@@ -1,3 +1,29 @@
+{% comment %} 
+  Render Purchase Step 4 Card with title, value props and dropdown.
+  Accepts: 
+  - productInfo: {Object} - The product data to be rendered (Metafield). 
+  - productData: {Object} - The product data to be rendered (Metafield). 
+  - productData2: {Object} - The product data to be rendered (Metafield). 
+  - cardTypeInfo: {String} - The type of card to be rendered. It can be 'meta' or 'general'. 
+  - checkIcon: {String} - The check icon. 
+  - starIcon: {String} - The star icon. 
+  - uniqueId: {String} - The unique id of the section. 
+  - parentContainer: {String} - The parent container of the section. 
+  - generalSettings: {Object} - The general settings of the section. 
+  - crossIcon: {String} - The cross icon. 
+  Usage: 
+  {% render 'pdm_landing-purchase-step4-card' 
+    productInfo: product.metafields.custom.purchase_step_4.value, 
+    productData: product.metafields.custom.purchase_step_4_product_1.value, 
+    productData2: product.metafields.custom.purchase_step_4_product_2.value, 
+    cardTypeInfo: 'meta' 
+    checkIcon: checkIcon, 
+    starIcon: starIcon, 
+    uniqueId: uniqueId, 
+    parentContainer: parentContainer 
+  %} 
+{% endcomment %}
+
 {% assign product2_discount = productData2.price | times: 0.80 %}
 
 <div class="step4-purchase-card-container">

@@ -1,3 +1,18 @@
+{% comment %}  
+  Render Purchase Buttons
+
+  Note: This snippet is used to render the buttons of the purchase process.
+
+  Need:
+
+  Accepts:
+  - generalSettings: {Object} - The general settings of the section.
+
+  Usage:
+  {% render 'pdm_landing-purchase-buttons', generalSettings: page.metafields.custom.general_information_purchase_process.value %}
+{% endcomment %}
+
+
 <button
   class="landing-back-btn"
   id="landing-back"

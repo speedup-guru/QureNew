@@ -1,3 +1,34 @@
+{% comment %} 
+  Render Purchase Step 4 Inputs
+
+  Note: This snippet is used to render the inputs of the fourth step of the purchase process.
+  Need:
+
+  Accepts:
+  - name: {String} - The input name.
+  - productRefill: {Object} - The product data to be rendered (Metafield).
+  - productRefill2: {Object} - The product data to be rendered (Metafield).
+  - productRefillInfo: {Object} - The product data to be rendered (Metafield).
+  - checkIcon: {String} - The check icon.
+  - starIcon: {String} - The star icon.
+  - uniqueId: {String} - The unique id.
+  - parentContainer: {String} - The parent container.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step4-inputs',
+    name: 'products4',
+    productRefill: product.metafields.custom.purchase_step_4.value.product_refill,
+    productRefill2: product.metafields.custom.purchase_step_4.value.product_refill_2,
+    productRefillInfo: product.metafields.custom.purchase_step_4.value.product_refill_info,
+    checkIcon: checkIcon,
+    starIcon: starIcon,
+    uniqueId: uniqueId,
+    parentContainer: parentContainer
+  %}
+
+{% endcomment %}
+
+
 <div
   id="inputs-{{ name }}"
   class="inputs-{{ name }} {% if name == 'products4' %} show-inputs {% endif %}"
