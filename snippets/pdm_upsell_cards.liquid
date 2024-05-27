@@ -24,35 +24,37 @@
     {% assign cartItem = "" %}
 
     {% for item in cart.items %}
-      {% if item.title contains 'Facewear' %}
-        {% assign maskProduct = true %}
-      {% endif %}
-      {% if item.title contains 'Neck' %}
-        {% assign neckProduct = true %}
-      {% endif %}
-      {% if item.title contains 'Q-urify Water Filter' %}
-        {% assign waterFilter = true %}
-      {% endif %}
-      {% if item.title contains 'Face Serum' %}
-        {% assign FaceSerum = true %}
-      {% endif %}
-      {% if item.title contains 'Micro-Infusion' %}
-          {%- if item.title contains 'Refill' -%}
-            {% assign MicroRefill = true %}
-          {%- else -%}
-            {% assign MicroInfusion = true %}
-          {%- endif -%}
-      {% endif %}
-      {% if item.title contains 'Q-urify' %}
-        {% if item.title contains 'Replacement' %}
-          {% assign Qurify = true %}
-        {% else %}
+      {% unless item.title contains 'Shipping Insurance' %}
+        {% if item.title contains 'Facewear' %}
+          {% assign maskProduct = true %}
+        {% endif %}
+        {% if item.title contains 'Neck' %}
+          {% assign neckProduct = true %}
+        {% endif %}
+        {% if item.title contains 'Q-urify Water Filter' %}
           {% assign waterFilter = true %}
         {% endif %}
-        
-      {% endif %}
-      {% assign cartItem = item.title %}
-      {% break %}
+        {% if item.title contains 'Face Serum' %}
+          {% assign FaceSerum = true %}
+        {% endif %}
+        {% if item.title contains 'Micro-Infusion' %}
+            {%- if item.title contains 'Refill' -%}
+              {% assign MicroRefill = true %}
+            {%- else -%}
+              {% assign MicroInfusion = true %}
+            {%- endif -%}
+        {% endif %}
+        {% if item.title contains 'Q-urify' %}
+          {% if item.title contains 'Replacement' %}
+            {% assign Qurify = true %}
+          {% else %}
+            {% assign waterFilter = true %}
+          {% endif %}
+          
+        {% endif %}
+        {% assign cartItem = item.title %}
+        {% break %}    
+      {% endunless %}
     {% endfor %}
 
     {% if maskProduct %}
