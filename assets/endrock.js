@@ -257,7 +257,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // end PDP: Before & After First Image 
 
   // purchase landing page
-
   class PurchaseLandingPage {
     constructor(formId) {
       this.form = document.getElementById(formId);
@@ -768,5 +767,19 @@ document.addEventListener('DOMContentLoaded', function() {
   // end dropdown
 
   initUpsellSwiper(); //swiper for carousel upsell
+
+  /* QR- Shopify 2.0 Features Adjustments  */
+
+  const greenBtn = document.querySelector('#green-product-sticky-btn');
+  const centerGreenBtn = (btn) => {
+    const totalLeft = (window.innerWidth - btn.offsetWidth) / 2;
+    btn.style.left = `${totalLeft}px`;
+  };
+  if(greenBtn){
+    centerGreenBtn(greenBtn);
+    window.onresize = () => centerGreenBtn(greenBtn);
+  }
+
+  /* end QR- Shopify 2.0 Features Adjustments  */
 });
 
