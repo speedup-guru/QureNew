@@ -604,7 +604,7 @@
 
 										{% if free_gift %}
 											<div class="drawer__cart-item-price">
-												<p class="old-price"><span class="money">{{ item.original_price | money_without_trailing_zeros }}</span></p>
+												<p class="old-price"><span class="money">{{ item.original_line_price | money_without_trailing_zeros }}</span></p>
 												<p class="new-price test"><span class="money">$0</span></p>
 											</div>
 										{% else %}
@@ -907,3 +907,71 @@
 		</form>
 	</div>
 </section>
+
+
+{% assign giftProduct = false %}
+{% assign giftPriceLimit = 0 %}
+{% assign giftQuantity = 0 %}
+{% assign giftDiscount = 0 %}
+
+{% if section.blocks.size > 0 %}
+	{%- for block in section.blocks -%}
+		{% if block.type == 'gift' %}
+			{% if block.settings.disable == false %}
+				{% assign giftProduct = block.settings.product %}
+				{% assign giftPriceLimit = block.settings.price_limit %}
+				{% assign giftQuantity = block.settings.quantity %}
+				{% assign giftDiscount = block.settings.discount %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{% render 'slidecart-insert', giftProduct: giftProduct, giftPriceLimit: giftPriceLimit, giftQuantity: giftQuantity, giftDiscount: giftDiscount %}
+
+{% schema %}
+	{
+		"name": "t:sections.slidecart.name",
+		"class": "section-slidecart",
+		"settings": [
+	
+		],
+		"blocks": [
+			{
+				"type": "gift",
+				"name": "t:sections.slidecart.blocks.gift.name",
+				"limit": 1,
+				"settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product.label"
+                    },
+					{
+						"type": "text",
+						"id": "price_limit",
+						"label": "t:sections.slidecart.blocks.gift.settings.price_limit.label",
+						"default": "200"
+					},
+					{
+						"type": "text",
+						"id": "quantity",
+						"label": "t:sections.slidecart.blocks.gift.settings.quantity.label",
+						"default": "1"
+					},
+					{
+						"type": "text",
+						"id": "discount",
+						"label": "t:sections.slidecart.blocks.gift.settings.discount.label"
+					},
+					{
+						"type": "checkbox",
+						"id": "disable",
+						"label": "t:sections.slidecart.blocks.gift.settings.disable.label",
+						"default": false
+					}
+				]
+			}
+		]
+	}
+{% endschema %}

@@ -26,11 +26,11 @@
           <div class="cross-sell__product-content-image">
           <img 
           class="cross-sell__product--image"
-          src="{{ item.product.value.featured_image | image_url: width: 96, height: 80 }}" 
+          src="{{ item.feature_image | image_url: width: 400, height: 400 }}" 
           alt="{{ item.name }}"
           loading="lazy"
-          width="96"
-          height="80">
+          width="auto"
+          height="auto">
           </div>
           <div class="cross-sell__product-content">
             <div class="cross-sell__product-content__top">

@@ -76,6 +76,20 @@
     "icons": {
       "label": "Icons"
     },
+    "card": {
+      "client": {
+        "label": "Client card"
+      },
+      "doctor": {
+        "label": "Doctor card"
+      },
+      "brand": {
+        "label": "Brand card"
+      }
+    },
+    "position": {
+      "label": "Position"
+    },
     "form": {
       "label": "Klaviyo form",
       "id": {
@@ -795,6 +809,30 @@
         "link": {
           "name": "Link",
           "settings": {
+          }
+        }
+      }
+    },
+    "slidecart": {
+      "name": "Slidecart",
+      "settings": {
+      },
+      "blocks": {
+        "gift": {
+          "name": "Gift",
+          "settings": {
+            "price_limit": {
+              "label": "Price limit"
+            },
+            "quantity": {
+              "label": "Quantity"
+            },
+            "discount": {
+              "label": "Discount code"
+            },
+            "disable": {
+              "label": "Disable"
+            }
           }
         }
       }
