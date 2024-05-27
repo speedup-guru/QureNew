@@ -144,8 +144,8 @@
         <link rel="stylesheet" href="{{ 'account-table.css' | asset_url }}">
 {% endcase %}
 
-{% if template.name contains 'collection' %}
-    {% if template.name != 'collection' %}
+{% if template contains 'collection' %}
+    {% if template != 'collection' %}
         {% assign main_class = 'collection_page' %}
         <link rel="stylesheet" href="{{ 'collections.css' | asset_url }}">
     {% endif %}
