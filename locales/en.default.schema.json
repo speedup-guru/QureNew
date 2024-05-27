@@ -826,7 +826,7 @@
             },
             "quantity": {
               "label": "Quantity"
-            },  
+            },
             "discount": {
               "label": "Discount code"
             },
