@@ -67,8 +67,7 @@
                             {% endif %}
                         {%- endfor -%}
                     {% endif %}
-                    {% unless page.handle == 'microinfusion'%}
-                        
+                    {% unless page.handle == 'microinfusion' or page.handle == 'qure-microinfusion-offer'%}
                         <div class="product-price price-test">
                             {% render 'no-price-atc' subscribe_count: 1, section: section, landing:true %}
                         </div>

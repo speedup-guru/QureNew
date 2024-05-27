@@ -129,7 +129,7 @@ document.addEventListener('ig:ready', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-
+  atcNoPricesPdp();
   // Start Cross-sell page targeting validation
   const pageTargeting = [
     "/products/q-rejuvalight-pro-facewear",
