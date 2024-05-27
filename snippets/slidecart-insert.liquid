@@ -111,7 +111,8 @@
 				var gift = cart.items.some(item => item.id === +(productId));
 
                 if (total_price > priceLimit && !gift) {
-					cartRequestAdd({ 
+					fetch('/discount/' + discountCode).then(async () => {
+						cartRequestAdd({ 
 						items: [
 							{
 								id: productId,
@@ -123,6 +124,7 @@
 							}
 						]  
 					}, {} )
+					});
                 }
 				else if(total_price <= priceLimit && gift)
 				{

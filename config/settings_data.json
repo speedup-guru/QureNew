@@ -116,7 +116,7 @@
               "price_limit": "200",
               "quantity": "2",
               "discount": "FREEPATCH",
-              "disable": false
+              "disable": true
             }
           }
         },
