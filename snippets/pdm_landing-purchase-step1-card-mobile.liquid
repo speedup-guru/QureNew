@@ -1,3 +1,26 @@
+{% comment %} 
+  Render Purchase Step 1 Card Mobile
+
+  Note: This snippet is used to render the card of the first step of the purchase process.
+
+  Need:
+  
+  Accepts:
+  - productInfo: {Object} - The product information.
+  - productData: {Object} - The product data.
+  - checkIcon: {String} - The check icon.
+  - crossIcon: {String} - The cross icon.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step1-card-mobile',
+    productInfo: productInfo,
+    productData: productData,
+    checkIcon: checkIcon,
+    crossIcon: crossIcon
+  %}
+
+ {% endcomment %}
+
 {% liquid
   assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0
 %}

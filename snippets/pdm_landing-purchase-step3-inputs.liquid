@@ -1,3 +1,24 @@
+{% comment %} 
+
+  Render Purchase Step 3 Inputs
+
+  Note: This snippet is used to render the inputs of the third step of the purchase process.
+  Need:
+
+  Accepts:
+  - nameOne: {String} - The first input name.
+  - nameTwo: {String} - The second input name.
+  - generalSettings: {Object} - The general settings of the section. 
+
+  Usage:
+  {% render 'pdm_landing-purchase-step3-inputs',
+    nameOne: 'step3-price-one',
+    nameTwo: 'step3-price-two'
+    generalSettings: page.metafields.custom.general_information_purchase_process.value
+  %}
+{% endcomment %}
+
+
 <div class="landing-three-title-container">
   <h3>{{ generalSettings.step_3_title }}</h3>
 </div>

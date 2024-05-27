@@ -1,3 +1,38 @@
+{% comment %} 
+  Render Purchase Step 1 Inputs
+
+  Note: This snippet is used to render the inputs of the first step of the purchase process.
+  Need:
+
+  Accepts:
+  - name: {String} - The input name.
+  - productOne: {Object} - The first product data to be rendered.
+  - productTwo: {Object} - The second product data to be rendered.
+  - productThree: {Object} - The third product data to be rendered.
+  - productOneInfo: {Object} - The first product info to be rendered.
+  - productTwoInfo: {Object} - The second product info to be rendered.
+  - productThreeInfo: {Object} - The third product info to be rendered.
+  - checkIcon: {String} - The check icon.
+  - crossIcon: {String} - The cross icon.
+  - starIcon: {String} - The star icon.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step1-inputs',
+    name: 'products1',
+    productOne: products1_product_3_month.data.value,
+    productTwo: products1_product_2_month.data.value,
+    productThree: products1_product_1_month.data.value,
+    productOneInfo:  products1_product_3_month.data.value,
+    productTwoInfo: products1_product_2_month.data.value,
+    productThreeInfo: products1_product_1_month.data.value,
+    checkIcon: checkIcon,
+    crossIcon: crossIcon,
+    starIcon: starIcon
+  %}
+
+ {% endcomment %}
+
+
 
 {% liquid
 

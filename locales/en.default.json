@@ -490,6 +490,11 @@
       "send_on_label": "Send on (optional)"
     }
   },
+  "microInfusionLandingPage":{
+    "redLabel":{
+      "title": "AVAILABLE UNTIL STOCK LASTS"
+    }
+  },
   "shopify": {
     "checkout": {
       "subscriptions": {

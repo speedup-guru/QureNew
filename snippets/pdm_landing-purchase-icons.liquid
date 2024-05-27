@@ -1,3 +1,19 @@
+{% comment %} 
+  
+  Render Purchase Icons
+
+  Note: This snippet is used to render the icons of the purchase process.
+
+  Need:
+
+  Accepts:
+  - icon: {String} - The icon to render.
+
+  Usage:
+  {% render 'pdm_landing-purchase-icons', icon: 'arrow-left' %}
+
+{% endcomment %}
+
 {% case icon %}
   {% when 'check-doctor' %}
     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">

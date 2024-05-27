@@ -1,3 +1,17 @@
+{% comment %} 
+  Render Purchase Breadcrumbs
+
+  Note: This snippet is used to render the breadcrumbs of the purchase process.
+
+  Need: 
+
+  Accepts:
+  - generalSettings: {Object} - The general settings of the section. 
+
+  Usage:
+  {% render 'pdm_landing-purchase-breadcrumbs', generalSettings: page.metafields.custom.general_information_purchase_process.value %}
+{% endcomment %}
+
 <nav class="landing-breadcrumbs-container">
   <ul class="landing-breadcrumbs-wrapper">
     <li class="landing-breadcrumbs-item active-breadcrumb breadcrumb-arrow-shape-start-cricle breadStep-1">

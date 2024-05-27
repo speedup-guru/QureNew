@@ -1,18 +1,4 @@
 /* landing purchase */
-.serumTestVariant{
-  display: none;
-}
-
-
-body[data-serumTest='true']{
-  .serumTestOriginal{
-    display: none;
-  }
-
-  .serumTestVariant{
-    display: block;
-  }
-}
 
 /* card */
 .panel-hidden{
@@ -20,6 +6,7 @@ body[data-serumTest='true']{
 }
 
 .new-landing-purchase{
+    display: block;
     /* resets */
     
     /* variables */
@@ -942,8 +929,7 @@ body[data-serumTest='true']{
         input[type="radio"]:checked + label[for="products3-three"]{
           
           .card-img-container{
-            background: linear-gradient(90deg, #FFFAF1 0.66%, #F5F5F5 100%);
-            border-radius: 24px 24px 0px 0px;
+            background: var(--img-color-gold)
           }
           .step1-card-price-information{
             border-color: var(--active-color);
@@ -1530,16 +1516,19 @@ body[data-serumTest='true']{
               }
             }
             .step4-card-value-props__information{
+              .step4-card-value-props__information-price{
+                text-decoration: line-through;
+              }
               ul{
                 display: flex;
                 flex-direction: column;
-                gap: 8px;
                 li{
                   font-family: 'Poppins';
                   font-size: 12px;
                   font-weight: 400;
                   line-height: 14px;
                   text-align: left;
+                  padding-bottom: 8px;
                 }
               }
             }
