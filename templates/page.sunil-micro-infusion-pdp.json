@@ -100,7 +100,7 @@
             "image_product_4": "shopify:\/\/shop_images\/MI_System_x4_ad45ae06-5dd5-46fa-9e60-b067c2fcc0c3.png",
             "image_product_text_4": "producto fourth",
             "video_wistia_id_4": "",
-            "image_product_5": "shopify:\/\/shop_images\/Sharen_MI.png",
+            "image_product_5": "shopify:\/\/shop_images\/sharen_refill.png",
             "image_product_text_5": "product five",
             "video_wistia_id_5": "",
             "image_product_6": "shopify:\/\/shop_images\/mi_pdp-product-5.webp",
@@ -690,18 +690,6 @@
             "code": ""
           }
         },
-        "result_XaHkFR": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_priya.webp",
-            "heading": "Plumper, more hydrated!",
-            "text": "<p>\"After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/england_f_03ba570c-9a33-4213-9712-9e5ff8ab08a6.webp",
-            "text_country": "United Kingdom",
-            "client": "Priya P.",
-            "code": ""
-          }
-        },
         "result_kynacj": {
           "type": "result",
           "settings": {
@@ -725,6 +713,18 @@
             "client": "Akina M.",
             "code": ""
           }
+        },
+        "result_LVp6xH": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jenn_Nay_b_a.png",
+            "heading": "Works better then I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jennifer Nay",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -737,9 +737,9 @@
         "result_WMb64K",
         "result_LJ8XRH",
         "result_gjbAwg",
-        "result_XaHkFR",
         "result_kynacj",
-        "result_jb3R8J"
+        "result_jb3R8J",
+        "result_LVp6xH"
       ],
       "settings": {
         "classname": "mi_landing_result",
@@ -949,7 +949,7 @@
           "type": "object",
           "settings": {
             "heading": "When will I see results?",
-            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.<\/p><p>The more treatments you perform the greater skin benefits over time you’ll receive! This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.<\/p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Microinfusion results and keep skin healthy, hydrated, and glowing long-term.<\/p><h2><\/h2>",
+            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll notice a radiance boost, smaller pores, more hydrated and overall a healthy fresh complexion in the next day or two.<\/p><p>The more treatments you perform the greater skin benefits over time you’ll receive! This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.<\/p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin  glowing long-term.<\/p><h2><\/h2>",
             "code": ""
           }
         },
@@ -993,6 +993,14 @@
             "code": ""
           }
         },
+        "object_9NRV36": {
+          "type": "object",
+          "settings": {
+            "heading": "Is this treatment suitable for sensitive and rosacea skin?",
+            "text": "<p>We recommend avoiding Micro-Infusion treatments if you have sensitive skin, or active rosacea flare-ups. <\/p>",
+            "code": ""
+          }
+        },
         "object_UFGfFB": {
           "type": "object",
           "settings": {
@@ -1011,6 +1019,7 @@
         },
         "object_Gf8DdA": {
           "type": "object",
+          "disabled": true,
           "settings": {
             "heading": "What are the benefits of Micro-Infusion?",
             "text": "<p>The needles of the Micro-Infusion device and the stamping action triggers the body’s natural healing process and in turn boosts the production of collage, making your skin look firmer and fine lines look softer.<\/p><p>The serum booster that you choose to infuse during your Micro-Infusion will determine the major benefits of your treatment. Very fine needles infuse micro-droplets of concentrated serum at a specific depth into the dermis (top layer) of your skin precisely where they are needed to accelerate absorption of active ingredients that target specific skin concerns.<\/p><p>You can switch up your treatments and even mix the two serums together!<\/p><p>A few more benefits:<\/p><ul><li>More even skin tone and texture<\/li><li>Glowing, fresh complexion<\/li><li>Softer fine lines<\/li><li>Firmer, rejuvenated skin<\/li><\/ul>",
@@ -1051,6 +1060,7 @@
         },
         "object_AmtYTe": {
           "type": "object",
+          "disabled": true,
           "settings": {
             "heading": "How does the 90-day money back guarantee work?",
             "text": "<p>You have 90 days to try Qure’s Micro Infusion System and see the results for yourself. If you don’t see any difference in your skin— if you do not experience firmer, brighter, younger-looking skin, simply contact us and we will gladly refund your money. This guarantee applies to the 3 month supply bundle. You’ll just need to provide before and after photos after each 2 week treatment to qualify.<\/p>",
@@ -1072,6 +1082,7 @@
         "object_eNwFNH",
         "object_AemyD4",
         "object_CTEVqW",
+        "object_9NRV36",
         "object_UFGfFB",
         "object_tCEdpR",
         "object_Gf8DdA",

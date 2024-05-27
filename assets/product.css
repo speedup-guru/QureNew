@@ -6252,7 +6252,7 @@ p.title_mob {
     width: 100%;
     position: relative;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 2px solid #D6D6D6;
 }
 
 .supply_steps .lnr_grdnt_bg .serum_prd {
@@ -6286,6 +6286,14 @@ p.title_mob {
     font-family: 'Poppins', sans-serif;
     padding: 5px;
     text-wrap: wrap;
+    flex-direction: column;
+}
+
+.supply_steps .step_block .serum_prd .serum_ttl span {
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 300;
+    opacity: 0.8;
 }
 
 .supply-detail-2 .supply_steps .step_block .serum_prd .serum_ttl {
@@ -6296,7 +6304,7 @@ p.title_mob {
 }
 
 .supply_steps .step_block input:checked+.serum_prd {
-    border: 1px solid #C7E7DC;
+    border: 2px solid #C7E7DC;
 }
 
 .supply_steps .step_block input:checked+.serum_prd .serum_ttl {
@@ -6637,9 +6645,10 @@ p.title_mob {
     flex-wrap: wrap;
     padding: 10px 15px 10px 15px;
     /* background: #FFFAF1; */
-    border-radius: 30px 100px 100px 30px;
+    border-radius: 70px 100px 100px 70px;
     /* border: none; */
     height: 70px;
+    border: 2px solid #DBDBDB;
 }
 
 .pdt_bg_yellow {
@@ -6663,13 +6672,14 @@ p.title_mob {
     flex: 0 0 auto;
     width: calc(100% - 60px);
     position: absolute;
-    height: 100%;
-    top: 0;
+    height: 106%;
+    top: -2px;
     bottom: 0;
     right: 0;
-    left: 60px;
+    left: 62px;
     background: #fff;
     border-radius: 100px;
+    flex-direction: column;
 }
 
 .supply-detail.supply-detail-without-counter .step_block .serumBlock input:checked+.serum_prd .serum_ttl {
@@ -6677,7 +6687,7 @@ p.title_mob {
 }
 
 .supply-detail.supply-detail-without-counter .step_block .step_serum .serum_prd .serum_img img {
-    max-height: 45px;
+    max-height: 50px;
     min-height: unset;
     object-fit: contain;
 }

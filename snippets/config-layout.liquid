@@ -12,15 +12,12 @@
         <link rel="stylesheet" href="{{ 'product-led-mask.css' | asset_url }}">
     {% when 'product.mi-patches' %}
         {% assign main_class = 'mi_landing mi-patches-pdf' %}
-        {% comment %} <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}"> {% endcomment %}
-        {% comment %} <link rel="stylesheet" href="{{ 'product_q-urify-water.css' | asset_url }}"> {% endcomment %}
         <link rel="stylesheet" href="{{ 'mi-patches-pdp.css' | asset_url }}">
     {% when 'product.sunil-q-urify' %}
         {% assign main_class = 'qurify_water' %}
         <link rel="stylesheet" href="{{ 'product_q-urify-water.css' | asset_url }}">
     {% when 'product.sunil-bundle-pdp' %}
         {% assign main_class = 'bundle_pdp' %}
-        {% comment %} <link rel="stylesheet" href="{{ 'product-bf-sales.css' | asset_url }}"> {% endcomment %}
     {% when 'product.sunil-chest-pdp' %}
         {% assign main_class = 'chest_pdp' %}
         <link rel="stylesheet" href="{{ 'product-chest-pdp.css' | asset_url }}">
@@ -146,3 +143,10 @@
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'account-table.css' | asset_url }}">
 {% endcase %}
+
+{% if template contains 'collection' %}
+    {% if template != 'collection' %}
+        {% assign main_class = 'collection_page' %}
+        <link rel="stylesheet" href="{{ 'collections.css' | asset_url }}">
+    {% endif %}
+{% endif %}

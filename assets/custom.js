@@ -7,6 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.style.fontSize = '25px';
             }
         });
+
+        document.querySelectorAll('.subscribePrice p').forEach(item => {
+            const currency = '€';
+            if (item.textContent.includes(currency)) {
+                item.style.fontSize = '14px';
+            }
+        });
+
+        document.querySelectorAll('.subscribePrice p span').forEach(item => {
+            const currency = '€';
+            if (item.textContent.includes(currency)) {
+                item.style.fontSize = '14px';
+            }
+        });
+
     }
     else {
         document.querySelectorAll('.bf-bundles__item-before').forEach(item => {
@@ -15,5 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.style.fontSize = '19px';
             }
         }); 
+
+        document.querySelectorAll('.subscribePrice p span').forEach(item => {
+            const currency = '€';
+            if (item.textContent.includes(currency)) {
+                item.style.fontSize = '16px';
+            }
+        });
     }
 });
