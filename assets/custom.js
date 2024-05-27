@@ -37,5 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.style.fontSize = '16px';
             }
         });
+
+        document.querySelectorAll('.planBlock .price').forEach(item => {
+            const currency = '€';
+            if (item.textContent.includes(currency)) {
+                item.style.fontSize = '14px';
+            }
+        });
     }
 });

@@ -813,6 +813,30 @@
         }
       }
     },
+    "slidecart": {
+      "name": "Slidecart",
+      "settings": {
+      },
+      "blocks": {
+        "gift": {
+          "name": "Gift",
+          "settings": {
+            "price_limit": {
+              "label": "Price limit"
+            },
+            "quantity": {
+              "label": "Quantity"
+            },  
+            "discount": {
+              "label": "Discount code"
+            },
+            "disable": {
+              "label": "Disable"
+            }
+          }
+        }
+      }
+    },
     "footer-landing": {
       "name": "Footer landing",
       "settings": {

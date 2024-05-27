@@ -92,7 +92,9 @@
   	initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
 
 	subscribeToCartSectionsUpdate( sections => {
-		// gift(43216377217263, 50, 'AMIE'); //variant_id, price_limit, discount code
+		{% if giftProduct != blank and giftQuantity != blank and giftPriceLimit != blank and giftDiscount != blank %}
+			gift('{{ giftProduct.variants.first.id }}', '{{ giftQuantity }}', '{{ giftPriceLimit }}', '{{ giftDiscount }}');
+		{% endif %}
 
 		updateShippingInsurance();
 		if(typeof startCartTimer == 'function') {
@@ -101,18 +103,18 @@
     	initUpsellSwiper();
 	});
 
-    function gift(giftProductId, price_limit, discountCode = '') {
+    function gift(productId, productQuantity, priceLimit, discountCode = '') {
         fetch('/cart.js')
             .then(response => response.json())
             .then(cart => {
 				var total_price = cart.total_price / 100;
-				var gift = cart.items.some(item => item.id === giftProductId);
-                if (total_price > price_limit && !gift) {
+				var gift = cart.items.some(item => item.id === productId);
+                if (total_price > priceLimit && !gift) {
 					cartRequestAdd({ 
 						items: [
 							{
-								id: giftProductId,
-								quantity: 1,
+								id: productId,
+								quantity: productQuantity,
 								properties: {
 									_discount_code: discountCode,
 								}
@@ -120,9 +122,9 @@
 						]  
 					}, {} )
                 }
-				else if(total_price <= price_limit && gift)
+				else if(total_price <= priceLimit && gift)
 				{
-					const giftInCart = cart.items.find(item => item.id === giftProductId);
+					const giftInCart = cart.items.find(item => item.id === productId);
 					cartRequestChange({ 
 						id: giftInCart.key,
 						quantity: 0
