@@ -108,7 +108,8 @@
             .then(response => response.json())
             .then(cart => {
 				var total_price = cart.total_price / 100;
-				var gift = cart.items.some(item => item.id === productId);
+				var gift = cart.items.some(item => item.id === +(productId));
+
                 if (total_price > priceLimit && !gift) {
 					cartRequestAdd({ 
 						items: [
@@ -117,6 +118,7 @@
 								quantity: productQuantity,
 								properties: {
 									_discount_code: discountCode,
+									_free_product: true
 								}
 							}
 						]  
@@ -124,7 +126,7 @@
                 }
 				else if(total_price <= priceLimit && gift)
 				{
-					const giftInCart = cart.items.find(item => item.id === productId);
+					const giftInCart = cart.items.find(item => item.id === +(productId));
 					cartRequestChange({ 
 						id: giftInCart.key,
 						quantity: 0

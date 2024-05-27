@@ -112,11 +112,11 @@
           "gift_ccQgi4": {
             "type": "gift",
             "settings": {
-              "product": "micro-infusion-targeted-patches",
+              "product": "micro-infusion-targeted-patches-single",
               "price_limit": "200",
               "quantity": "2",
               "discount": "FREEPATCH",
-              "disable": true
+              "disable": false
             }
           }
         },
