@@ -92,7 +92,6 @@ const verifyCustomer = () => {
     .find((row) => row.startsWith("newCustomer="))
     ?.split("=")[1];
 
-  console.log("cookieValue", cookieValue);
   if (!cookieValue) {
     console.log("new customer");
     document.cookie = "newCustomer=true; max-age=2592000; path=/";
@@ -123,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const currentPath = window.location.pathname;
 
-  console.log('currentPath', currentPath);
   if (pageTargeting.includes(currentPath)) {
     verifyCustomer();
   }
