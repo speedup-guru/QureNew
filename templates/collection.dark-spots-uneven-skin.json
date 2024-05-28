@@ -55,10 +55,10 @@
         "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collection-ela.webp",
-            "image_mobile": "shopify:\/\/shop_images\/collection-ela-mobile.webp",
-            "text": "<p>I was shocked at how my skin looked the<strong>morning after my first Micro-Infusion<\/strong>treatment! It was so easy to use, can’t wait until my next treatment.<\/p>",
-            "client": "Ela O.",
+            "image": "shopify:\/\/shop_images\/collection-darkspots.png",
+            "image_mobile": "shopify:\/\/shop_images\/img_97139eb9-1588-4473-925c-759542f3ee7f.png",
+            "text": "<p>“I’ve tried numerous serums for my <strong>sun spots<\/strong> but <strong>nothing worked until I used this mask.<\/strong> Definitely worth the money.\"<\/p>",
+            "client": "Teresa S.",
             "position": "1"
           }
         },
@@ -75,11 +75,11 @@
         "brand_card_ynEhKC": {
           "type": "brand_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collectionVogue.webp",
-            "header": "VOGUE",
-            "text": "<p>One of VOGUE's top LED masks<\/p>",
+            "image": "shopify:\/\/shop_images\/IC_-_6_a563e08c-6dbc-4b11-9ec4-0a5a6898d8fc.png",
+            "header": "",
+            "text": "",
             "button_label": "Discover Now",
-            "button_url": "https:\/\/www.qureskincare.com\/products\/q-rejuvalight-pro-facewear",
+            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion",
             "position": "7"
           }
         }
