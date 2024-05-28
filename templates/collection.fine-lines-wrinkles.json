@@ -57,7 +57,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/imgcollection-finelines.png",
             "image_mobile": "shopify:\/\/shop_images\/imgcollection-finelines-mob.png",
-            "text": "<p>“This is an amazing product that you will not regret in purchasing it. \u2028I really see the change in my skin.”<\/p>",
+            "text": "<p>“This is an amazing product that you will not regret in purchasing it. \u2028I really see the change in my skin. Outstanding job QURE!”<\/p>",
             "client": "Ellie V.",
             "position": "1"
           }
@@ -67,7 +67,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/collection_drShah.webp",
             "header": "Trusted and recommended by world-leading dermatologists",
-            "text": "<p>\"The best LED mask on the market in my opinion at this time, that being said you do need to use this consistently to see results...\"<\/p>",
+            "text": "<p>\"...[Qure's Micro-Infusion] will help your products penetrate better\"<\/p>",
             "client": "Dr Shah, MD Certified Dermatologist",
             "position": "4"
           }
@@ -76,7 +76,6 @@
           "type": "brand_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/collectionVogue.webp",
-            "image_mobile": "shopify:\/\/shop_images\/collectionVogue.webp",
             "header": "VOGUE",
             "text": "<p>One of VOGUE's top LED masks<\/p>",
             "button_label": "Discover Now",

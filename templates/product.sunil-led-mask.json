@@ -660,7 +660,7 @@
         "image_Qzkxgd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/led_qure_mobile_app.webp",
+            "image": "shopify:\/\/shop_images\/LED_mask_mob_app.png",
             "classname": "mw-mob-100"
           }
         }
@@ -739,7 +739,7 @@
         "object_mDA6qy": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/led_quick_step_1.webp",
+            "image": "shopify:\/\/shop_images\/LED_mask_app_step1.png",
             "text": "<p>Download the Qure Skincare app and follow the instructions to set up your profile. Then turn on your Bluetooth and pair your Q-Rejuvalight Pro Facewear with the app.<\/p>"
           }
         },
@@ -753,7 +753,7 @@
         "object_LqkmQ4": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/led_quick_step_3.webp",
+            "image": "shopify:\/\/shop_images\/LED_mask_app_step3.png",
             "text": "<p>Open the Qure Skincare app and customize your treatment by selecting which treatment (Anti-Aging or Anti-Breakout) you want on 5 facial areas. Once programmed, then press start.<\/p>"
           }
         },

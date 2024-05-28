@@ -76,7 +76,6 @@
           "type": "brand_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/collectionVogue.webp",
-            "image_mobile": "shopify:\/\/shop_images\/collectionVogue.webp",
             "header": "VOGUE",
             "text": "<p>One of VOGUE's top LED masks<\/p>",
             "button_label": "Discover Now",
