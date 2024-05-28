@@ -1,3 +1,29 @@
+{% comment %} 
+  Render Purchase Step 1 Card with image, price, value props and dropdown.
+  Accepts:
+  - productData: {Object} - The product data to be rendered (Metafield).
+  - productInfo: {Object} - The product information to be rendered (Metafield).
+  - parentContainer: {String} - The parent container name.
+  - uniqueId: {String} - The unique id of the card.
+  - starIcon: {String} - The star icon.
+  - checkIcon: {String} - The check icon.
+  - crossIcon: {String} - The cross icon.
+  - nameProp: {String} - The name of the parent container.
+  - parentName: {String} - The name of the parent container.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step1-card',
+    productData: product.metafields.custom.purchase_step_1_product_1.value,
+    productInfo: product.metafields.custom.purchase_step_1.value,
+    parentContainer: 'parent-{{ name }}',
+    uniqueId: 'collapseOne',
+    starIcon: starIcon,
+    checkIcon: checkIcon,
+    crossIcon: crossIcon
+  %}
+
+{% endcomment %}
+
 {% liquid
   assign nameProp = parentContainer
   assign parentName =  nameProp
@@ -24,11 +50,6 @@
         <p>SAVE {{ productInfo.discount_product }}%</p>
       </div>
     {% endunless %}
-    {% comment %} {% if product_save != null %}
-      <div class="step1-card-price-discount">
-        <p>SAVE {{ product_save }}%</p>
-      </div>
-    {% endif %} {% endcomment %}
     <div class="step1-card-price">
       <div class="step1-card-price-information">
         <span class="step1-card-price__title-mobile">{{ productInfo.title_product_mobile }}</span>
