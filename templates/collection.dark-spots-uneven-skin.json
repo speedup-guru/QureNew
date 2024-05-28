@@ -55,10 +55,10 @@
         "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collection-ela.webp",
+            "image": "shopify:\/\/shop_images\/collection-darkspots.png",
             "image_mobile": "shopify:\/\/shop_images\/collection-ela-mobile.webp",
-            "text": "<p>I was shocked at how my skin looked the<strong>morning after my first Micro-Infusion<\/strong>treatment! It was so easy to use, can’t wait until my next treatment.<\/p>",
-            "client": "Ela O.",
+            "text": "<p>“I’ve tried numerous serums for my <strong>sun spots<\/strong> but <strong>nothing worked until I used this mask.<\/strong> Definitely worth the money.\"<\/p>",
+            "client": "Teresa S.",
             "position": "1"
           }
         },
