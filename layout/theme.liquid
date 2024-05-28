@@ -55,6 +55,8 @@
         <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
     {% endif %}
 
+    <link rel="preload" href="{{ 'liquid-ajax-cart-v1.11.1.js' | asset_url }}" as="script" fetchpriority="high">
+
     <!--== CSS ==-->
     <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'product.css' | asset_url }}">
@@ -112,7 +114,6 @@
 
     {% section 'newsletter' %}
     {% include 'config-footer' %}
-    {% section 'slidecart' %}
     {% include 'slidelogin' %}
 
     <script>
@@ -163,9 +164,6 @@
     <script src="{{ '__app_trackObject.js' | asset_url }}"></script>
     <script src="{{ '__app_serums-months-form.js' | asset_url }}"></script>
     <script src="{{ '__app_serums-refill-form.js' | asset_url }}"></script>
-
-
-    {% render 'slidecart-insert' %}
 
     <script async type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
 
@@ -268,6 +266,8 @@
 
     <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', sId: '198244' }); }</script>
     <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+
+    {% section 'slidecart' %}
   
 </body>
 

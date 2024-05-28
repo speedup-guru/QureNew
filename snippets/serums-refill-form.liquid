@@ -8,7 +8,7 @@
     <p>Please provide section_id property to use this snippet</p>
 {% else %}
 
-    {% assign product = all_products['micro-infusion-3-month-refill-6x-hydra-soothing-serum'] %}
+    {% assign product = all_products['micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum'] %}
 
     {% case product.handle %}
         {% when 'micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum' %}
@@ -42,32 +42,35 @@
                 <div class="step_block">
 
                     <div class="step_content step_serum">
-                        <div class="serumBlock lnr_grdnt_bg">
-                        <input type="radio" name="serum-{{ section_id }}" id="mBanner_hydra-soothing" value="43821031031023" data-product-id="8015038873839" data-selling-plan="5012914415"{%- if product_index == 1 -%} checked{%- endif -%}>
-                            <label class="serum_prd" for="mBanner_hydra-soothing">
-                                <div class="serum_img">
-                                    <img src="{{ 'mc_3.webp' | asset_url }}" alt="" class="img-fluid">
-                                </div>
-                                <p class="serum_ttl">Rejuvenating + Hydra-Soothing</p>
-                            </label>
-                        </div>
                         <div class="serumBlock yellow_bg">
-                        <input type="radio" name="serum-{{ section_id }}" id="mBanner_rejuvenating-hydra" value="43821069435119" data-product-id="8015049621743" data-selling-plan="5012914415"{%- if product_index == 2 -%} checked{%- endif -%}>
+                            <input type="radio" name="serum-{{ section_id }}" id="mBanner_rejuvenating-hydra" value="43821069435119" data-product-id="8015049621743" data-selling-plan="5012914415"{%- if product_index == 2 -%} checked{%- endif -%}>
                             <label class="serum_prd" for="mBanner_rejuvenating-hydra">
                                 <div class="serum_img">
                                     <img src="{{ 'mc_2.webp' | asset_url }}" alt="" class="img-fluid">
                                 </div>
                                 <h4 class="serum_ttl">Rejuvenating
+                                    <span>for dark spots</span>
                                 </h4>
                             </label>
                         </div>
                         <div class="serumBlock grey_bg">
-                        <input type="radio" name="serum-{{ section_id }}" id="mBanner_rejuvenating" value="43821035290863" data-product-id="8015039496431" data-selling-plan="5012914415"{%- if product_index == 3 -%} checked{%- endif -%}>
+                            <input type="radio" name="serum-{{ section_id }}" id="mBanner_rejuvenating" value="43821035290863" data-product-id="8015039496431" data-selling-plan="5012914415"{%- if product_index == 3 -%} checked{%- endif -%}>
                             <label class="serum_prd" for="mBanner_rejuvenating">
                                 <div class="serum_img">
                                     <img src="{{ 'mc_1.webp' | asset_url }}" alt="" class="img-fluid">
                                 </div>
-                                <h4 class="serum_ttl">Hydra-Soothing</h4>
+                                <h4 class="serum_ttl">Hydra-Soothing
+                                    <span>wrinkles</span>
+                                </h4>
+                            </label>
+                        </div>
+                        <div class="serumBlock lnr_grdnt_bg">
+                            <input type="radio" name="serum-{{ section_id }}" id="mBanner_hydra-soothing" value="43821031031023" data-product-id="8015038873839" data-selling-plan="5012914415"{%- if product_index == 1 -%} checked{%- endif -%}>
+                            <label class="serum_prd" for="mBanner_hydra-soothing">
+                                <div class="serum_img">
+                                    <img src="{{ 'mc_3.webp' | asset_url }}" alt="" class="img-fluid">
+                                </div>
+                                <p class="serum_ttl">Rejuvenating + Hydra-Soothing</p>
                             </label>
                         </div>
                     </div>

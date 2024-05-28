@@ -108,6 +108,21 @@
       },
       "slidecart": {
         "type": "slidecart",
+        "blocks": {
+          "gift_ccQgi4": {
+            "type": "gift",
+            "settings": {
+              "product": "micro-infusion-targeted-patches-single",
+              "price_limit": "200",
+              "quantity": "2",
+              "discount": "FREEPATCH",
+              "disable": true
+            }
+          }
+        },
+        "block_order": [
+          "gift_ccQgi4"
+        ],
         "settings": {
         }
       },
@@ -157,6 +172,12 @@
       },
       "2728461494843721857": {
         "type": "shopify:\/\/apps\/amped-email-sms-popups\/blocks\/app-embed\/d9d8f140-4443-4f6c-a16a-95357ecc2125",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "471852632697159186": {
+        "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/rewards-launcher\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
         "disabled": false,
         "settings": {
         }

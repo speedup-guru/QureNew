@@ -333,7 +333,7 @@ https://www.qureskincare.com/pages/why-qurify
 <!-- -- How does this affect your skin? end -- -->
 
 <!-- -- qurify giveaway form start -- -->
-<div class="giveaway_form section" id="giveaway_form_wrap">
+<div class="giveaway_form" id="giveaway_form_wrap">
     <div class="container">
         <div class="section_header text-md-center pb-4 mw-100">
             <div class="title-lg paddingB text-md-center">What contaminants is your skin absorbing every
@@ -345,7 +345,44 @@ https://www.qureskincare.com/pages/why-qurify
                 what’s in your water and how it can be affecting your skin.
             </p>
         </div>
-        <form id="giveaway_form">
+
+        <style>
+            @media only screen and (min-width: 769px) {
+                .klaviyo-mobile {
+                    display: none;
+                }
+                .klaviyo-form {
+                    padding-bottom: 0px;
+                }
+                }
+                @media (max-width: 768px) {
+                .klaviyo-desktop,
+                .only-desktop {
+                    display: none;
+                }
+                }
+                .klaviyo-form {
+                min-height: 200px;
+                }
+                .klaviyo-desktop {
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+                .klaviyo-desktop button {
+                    width: 50% !important;
+                    margin: 0 auto;
+                }
+        </style>
+
+        <div class="klaviyo-form klaviyo-desktop">
+            <div class="klaviyo-form-SVbDx9"></div>
+        </div>
+
+        <div class="klaviyo-form klaviyo-mobile">
+            <div class="klaviyo-form-WezUbv"></div>
+        </div>
+
+        {% comment %} <form id="giveaway_form">
             <div class="textfield textfield--light">
                 <input type="text" id="g_name" class="textfield__input required" required>
                 <label for="g_name" class="textfield__label textfield__label--required">Name</label>
@@ -370,7 +407,7 @@ https://www.qureskincare.com/pages/why-qurify
                         &
                         Privacy.</a></p>
             </div>
-        </form>
+        </form> {% endcomment %}
     </div>
 </div>
 <!-- -- qurify giveaway form end -- -->

@@ -685,15 +685,27 @@
     "results_3LEkF7": {
       "type": "results",
       "blocks": {
-        "result_cGAEkd": {
+        "result_ThnNPK": {
           "type": "result",
           "settings": {
-            "image": "shopify:\/\/shop_images\/results-Ramandeep.png",
-            "heading": "I definitely see a difference",
-            "text": "<p>“I have done 2 treatments - 1 for rejuvenating and 2 for hydration with 3 week gap in between treatments. I definitely see a difference in before and after pictures. I am sure I need 4-8 more treatments but this did make a difference.”<\/p>",
+            "image": "shopify:\/\/shop_images\/results_ann.webp",
+            "heading": "How easy it is to use",
+            "text": "<p>\"I heard about micro-infusion in clinics but couldn’t afford to fork out hundreds of dollars for a treatment. So when I saw this online I jumped at buying it instantly. Yes, it doesn’t stamp in botox and filler BUT personally I LOVE the results and how easy it is to use myself at home. It works great for my skin, I have noticed my skin texture is much smoother and brighter.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Ann",
+            "code": ""
+          }
+        },
+        "result_JjTHyx": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jenn_Nay_b_a.png",
+            "heading": "Works better then I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”<\/p>",
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
-            "client": "Ramandeep",
+            "client": "Jennifer Nay",
             "code": ""
           }
         },
@@ -721,6 +733,18 @@
             "code": ""
           }
         },
+        "result_cGAEkd": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results-Ramandeep.png",
+            "heading": "I definitely see a difference",
+            "text": "<p>“I have done 2 treatments - 1 for rejuvenating and 2 for hydration with 3 week gap in between treatments. I definitely see a difference in before and after pictures. I am sure I need 4-8 more treatments but this did make a difference.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ramandeep",
+            "code": ""
+          }
+        },
         "result_BU6egp": {
           "type": "result",
           "settings": {
@@ -730,18 +754,6 @@
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Ela O.",
-            "code": ""
-          }
-        },
-        "result_ThnNPK": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_ann.webp",
-            "heading": "How easy it is to use",
-            "text": "<p>\"I heard about micro-infusion in clinics but couldn’t afford to fork out hundreds of dollars for a treatment. So when I saw this online I jumped at buying it instantly. Yes, it doesn’t stamp in botox and filler BUT personally I LOVE the results and how easy it is to use myself at home. It works great for my skin, I have noticed my skin texture is much smoother and brighter.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
-            "client": "Ann",
             "code": ""
           }
         },
@@ -807,11 +819,12 @@
         }
       },
       "block_order": [
-        "result_cGAEkd",
+        "result_ThnNPK",
+        "result_JjTHyx",
         "result_VCJwgD",
         "result_YbRNi7",
+        "result_cGAEkd",
         "result_BU6egp",
-        "result_ThnNPK",
         "result_DckD68",
         "result_URKRDq",
         "result_TJXM8n",
@@ -1089,6 +1102,14 @@
             "code": ""
           }
         },
+        "object_rALakf": {
+          "type": "object",
+          "settings": {
+            "heading": "Is this treatment suitable for sensitive and rosacea skin?",
+            "text": "<p>We recommend avoiding Micro-Infusion treatments if you have sensitive skin, or active rosacea flare-ups.<\/p>",
+            "code": ""
+          }
+        },
         "object_9UagXp": {
           "type": "object",
           "settings": {
@@ -1102,14 +1123,6 @@
           "settings": {
             "heading": "Are there any side effects?",
             "text": "<p>Everyone’s skin is different. You may experience a bit of skin redness for the first few hours after treatment. However, this should be minimal and disappear quickly.<\/p><p>We recommend consulting with your dermatologist or doctor before use if you suffer from any skin condition. A patch test on an area of your skin that isn't too exposed prior to treatment is also recommended, to have a better understanding of how your skin will react and the downtime you should expect.<\/p>",
-            "code": ""
-          }
-        },
-        "object_ArEa6g": {
-          "type": "object",
-          "settings": {
-            "heading": "What’s the difference between home micro-needling rolling and micro-infusion?",
-            "text": "<p>Micro-needling focuses on stimulating your body's own collagen by creating micro-injuries. But it doesn’t deliver any ingredients directly into your skin.<\/p><p>With microinfusion, you not only reap the benefits of micro-needling, but also deliver active ingredient solutions to target your specific skin concerns - This makes it work quicker and more effectively.<\/p>",
             "code": ""
           }
         },
@@ -1177,9 +1190,9 @@
         "object_tERiWN",
         "object_b4xRkF",
         "object_qfXzf3",
+        "object_rALakf",
         "object_9UagXp",
         "object_iNjJHr",
-        "object_ArEa6g",
         "object_n7R7ar",
         "object_jh9h8Y",
         "object_yjEtVU",

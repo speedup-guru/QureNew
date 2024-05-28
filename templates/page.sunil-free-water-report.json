@@ -8,7 +8,7 @@
           "settings": {
             "button_label": "Get my FREE Water Report",
             "button_url": "#giveaway_form_wrap",
-            "classname": "btn_white m-0 bg-green"
+            "classname": "btn_white m-0"
           }
         }
       },
@@ -68,8 +68,11 @@
     },
     "liquid_piWBb8": {
       "type": "liquid",
+      "custom_css": [
+        ".giveaway_form {background: #ffffff;}"
+      ],
       "settings": {
-        "code": "<div class=\"giveaway_form section\" id=\"giveaway_form_wrap\">\n    <div class=\"container\">\n        <div class=\"grab_header text-md-center pb-4\">\n            <div class=\"title-lg paddingB text-md-center\">What contaminants is your skin absorbing every day?\n            <\/div>\n            <p>Enter your information below to get a free, custom water report for your local area. <br>Learn\n                about\n                what’s in your water and how it can be affecting your skin.<\/p>\n        <\/div>\n        <form id=\"giveaway_form\">\n            <div class=\"textfield textfield--light\">\n                <input type=\"text\" id=\"g_name\" class=\"textfield__input required\" required>\n                <label for=\"g_name\" class=\"textfield__label textfield__label--required\">Name<\/label>\n            <\/div>\n            <div class=\"textfield textfield--light\">\n                <input type=\"email\" id=\"g_email\" class=\"textfield__input required\" required>\n                <label for=\"g_email\" class=\"textfield__label textfield__label--required\">Email<\/label>\n            <\/div>\n            <div class=\"textfield textfield--light\">\n                <input type=\"text\" id=\"g_zip\" class=\"textfield__input required\" required>\n                <label for=\"g_zip\" class=\"textfield__label textfield__label--required\">Zip Code<\/label>\n            <\/div>\n            <div class=\"textfield text-md-center mw-373\">\n                <button type=\"submit\" class=\"btn btn-lg btn-primary buy_btn my-4 mw-100\">Get my FREE Water\n                    Report\n                <\/button>\n                <p>By submitting this form, you agree to receive recurring automated promotional and\n                    personalized marketing Emails from Qure to the Email used when signing up. See <a\n                        href=\"javascript:void(0)\"\n                        style=\"text-decoration: underline;cursor:pointer;color: #000;\">Terms\n                        &\n                        Privacy.<\/a><\/p>\n            <\/div>\n        <\/form>\n    <\/div>\n<\/div>"
+        "code": "<div class=\"giveaway_form section\" id=\"giveaway_form_wrap\">\n    <div class=\"container\">\n        <div class=\"grab_header text-md-center pb-4\">\n            <div class=\"title-lg paddingB text-md-center\">What contaminants is your skin absorbing every day?\n            <\/div>\n            <p>Enter your information below to get a free, custom water report for your local area. <br>Learn\n                about\n                what’s in your water and how it can be affecting your skin.<\/p>\n        <\/div>\n\n        <style>\n            @media only screen and (min-width: 769px) {\n                .klaviyo-mobile {\n                    display: none;\n                }\n                .klaviyo-form {\n                    padding-bottom: 0px;\n                }\n                }\n                @media (max-width: 768px) {\n                .klaviyo-desktop,\n                .only-desktop {\n                    display: none;\n                }\n                }\n                .klaviyo-form {\n                min-height: 200px;\n                }\n                .klaviyo-desktop {\n                    max-width: 600px;\n                    margin: 0 auto;\n                }\n                .klaviyo-desktop button {\n                    width: 50% !important;\n                    margin: 0 auto;\n                }\n        <\/style>\n\n        <div class=\"klaviyo-form klaviyo-desktop\">\n            <div class=\"klaviyo-form-SVbDx9\"><\/div>\n        <\/div>\n\n        <div class=\"klaviyo-form klaviyo-mobile\">\n            <div class=\"klaviyo-form-WezUbv\"><\/div>\n        <\/div>\n\n    <\/div>\n<\/div>"
       }
     },
     "liquid_Aabdrk": {

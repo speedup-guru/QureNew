@@ -2,538 +2,158 @@
 <div id="faqs" class="faq_page section bg_yellow">
     <div class="container">
         <div class="section_header text-center mb-3">
-            <h2 class="title-lg">
-                The answers to your questions
-            </h2>
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">
+                    {{ section.settings.heading }}
+                </h2> 
+            {% endif %}
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
         </div>
         <div class="row">
             <div class="col-md-4 col--mobile">
                 <div class="on-scr on-src-mobile">
-                    <div class="mobile-dropdown">
-                        <div class="mobile-dropdown__content">
-                            <div class="mobile-dropdown-svg">
-                                <img src="{{ 'faq-led.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-ledGreen.svg' | asset_url }}" alt="">
+                    {% if section.blocks.size > 0 %}
+                        {%- for block in section.blocks limit:1 -%}
+                            <div class="mobile-dropdown">
+                                <div class="mobile-dropdown__content">
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
+                                        <img src="{{ block.settings.image2 | img_url: '250x' }}" alt="">
+                                    </div>
+                                    <span>{{ block.settings.heading }}</span>
+                                </div>
+                                <img src="{{ 'faq_down_arrow.svg' | asset_url }}" alt="">
                             </div>
-                            <span> Q-Rejuvalight Pro Facewear</span>
-                        </div>
-                        <img src="{{ 'faq_down_arrow.svg' | asset_url }}" alt="">
-                    </div>
-                    <ul class="faq-menu">
-                        <li class="faq-menu__item">
-                            <div class="faq-menu__item-img-wrapper">
-                                <img src="{{ 'faq-led.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-ledGreen.svg' | asset_url }}" alt="">
-                            </div>
-
-                            <a href="#qrejuvalight" class="faq-menu__url ">
-                                Q-Rejuvalight Pro Facewear
-                            </a>
-                        </li>
-
-                        <li class="faq-menu__item">
-                            <div class="faq-menu__item-img-wrapper">
-                                <img src="{{ 'faq-micro.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-microGreen.svg' | asset_url }}" alt="">
-                            </div>
-
-                            <a href="#microinfusion" class="faq-menu__url ">
-                                Micro-Infusion System
-                            </a>
-                        </li>
-                        <li class="faq-menu__item">
-                            <div class="faq-menu__item-img-wrapper">
-                                <img src="{{ 'faq-qurifytap.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-qurifytapGreen.svg' | asset_url }}" alt="">
-                            </div>
-
-                            <a href="#qurify_tap" class="faq-menu__url ">
-                                Q-urify Tap Water Filter
-                            </a>
-                        </li>
-                        <li class="faq-menu__item">
-                            <div class="faq-menu__item-img-wrapper">
-                                <img src="{{ 'faq-neck.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-neck.svg' | asset_url }}" alt="">
-                            </div>
-
-                            <a href="#neck" class="faq-menu__url ">
-                                Neck & Décolletage LED
-                            </a>
-                        </li>
-                        <li class="faq-menu__item">
-                            <div class="faq-menu__item-img-wrapper">
-                                <img src="{{ 'faq-all-in-one.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-all-in-one.svg' | asset_url }}" alt="">
-                            </div>
-
-                            <a href="#all_in_one" class="faq-menu__url ">
-                                All-In-One Face Serum
-                            </a>
-                        </li>
-                        <li class="faq-menu__item">
-                            <div class="faq-menu__item-img-wrapper">
-                                <img src="{{ 'faq-shipping.svg' | asset_url }}" alt="">
-                                <img src="{{ 'faq-shippingGreen.svg' | asset_url }}" alt="">
-                            </div>
-
-                            <a href="#shipping" class="faq-menu__url ">
-                                Shipping &amp; Orders
-                            </a>
-                        </li>
-
-                    </ul>
+                        {% endfor %}
+                        
+                        <ul class="faq-menu">
+                            {%- for block in section.blocks -%}
+                                <li class="faq-menu__item {% if forloop.index == 1 %}active{% endif %}">
+                                    <div class="faq-menu__item-img-wrapper">
+                                        <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
+                                        <img src="{{ block.settings.image2 | img_url: '250x' }}" alt="">
+                                    </div>
+                                    <a href="#faq_extended_section_{{ forloop.index }}" class="faq-menu__url ">
+                                        {{ block.settings.heading }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-md-8 faq__texts">
                 <div id="faq_page-custom-faq">
-
-                    <div id="microinfusion">
-                        <div class="faq_item_wrapper">
-                            <h2 style="z-index: 3;">Micro-infusion System</h2>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>When and what kind of results can I expect
-                                        with
-                                        Micro-Infusion?</strong></p>
-                                <p>You’ll likely notice a radiance boost, softer fine lines and overall a
-                                    healthy
-                                    fresh complexion in the next day or two.</p>
-                                <p>The more treatments you perform the greater skin benefits over time you’ll
-                                    receive. This quick and easy home facial is perfect to perform a day or two
-                                    before a big event, when you need to look to boost your skin’s complexion,
-                                    fast.
-                                </p>
+                    {% if section.blocks.size > 0 %}
+                        {%- for block in section.blocks -%}
+                            <div id="faq_extended_section_{{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}>
+                                <div class="faq_item_wrapper">
+                                    <h2 style="z-index: 3;">{{ block.settings.heading }}</h2>
+                                    {% if block.settings.text != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text |  replace: '<ul>', '<ul class="dot-list">'  }}
+                                            {% if block.settings.code != blank %}
+                                                {{ block.settings.code }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text1 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text1 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code1 != blank %}
+                                                {{ block.settings.code1 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text2 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text2 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code != blank %}
+                                                {{ block.settings.code }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text3 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text3 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code3 != blank %}
+                                                {{ block.settings.code3 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text4 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text4 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code4 != blank %}
+                                                {{ block.settings.code4 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text5 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text5 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code5 != blank %}
+                                                {{ block.settings.code5 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text6 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text6 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code6 != blank %}
+                                                {{ block.settings.code6 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text7 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text7 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code7 != blank %}
+                                                {{ block.settings.code7 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text8 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text8 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code8 != blank %}
+                                                {{ block.settings.code8 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text9 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text9 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code9 != blank %}
+                                                {{ block.settings.code9 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text10 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text10 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code10 != blank %}
+                                                {{ block.settings.code10 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                </div>
                             </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>How often can I do the treatment?</strong>
-                                </p>
-                                <p>We recommend a Micro-Infusion treatment every 2 weeks for the best results!
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>Is it painful? Does it hurt?</strong>
-                                </p>
-                                <p>Although the 0.5mm needles are longer than most at-home needling systems
-                                    (making
-                                    it more effective), the ultra-fine needles are thinner than a human hair, so
-                                    that means you’ll feel minimal to no pain during treatment.</p>
-                                <p> During the initial stages of treatment, you may experience a prickling
-                                    sensation
-                                    as the needles make contact with the skin but you’ll get used to the feeling
-                                    quickly.
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>How many treatments do I get out of the 
-                                        Micro-Infusion 3 Month Bundle?</strong></p>
-                                <p>Total of 6 treatments. Each needle head is to be used one time per treatment,
-                                    and
-                                    disposed of after each treatment. This minimizes the risk of infection and
-                                    unnecessary damage to the skin so you can get the best results. Use 1 full
-                                    serum
-                                    ampoule per treatment.</p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>What serums come in the bundle? Can I use
-                                        any
-                                        serum with my Micro-Infusion device?</strong></p>
-                                <p>We recommend only using the serums that come in the bundle. Some serums may
-                                    cause
-                                    irritation and should be avoided! We have developed our potent serum
-                                    ampoules
-                                    specifically for Qure’s Micro-Infusion system, with low risk of irritation
-                                    and
-                                    with no fragrance.
-                                </p>
-                                <p>There are two types of serums that come in the bundle, you can mix them
-                                    together
-                                    to experience a complete set of benefits that treats your specific skin
-                                    concerns.</p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>Rejuvenating Serum:</strong></p>
-                                <p>Reveals a smoother, evenly radiant complexion, generating a glow effect.
-                                    Collagen-stimulating, dark spot brightening, and wrinkle-combatting
-                                    properties
-                                    restores youthful skin.Skin Concerns: Fine lines and wrinkles, rough
-                                    texture,
-                                    dark spots, dryness.
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>Hydra-Soothing Serum:</strong></p>
-                                <p>Instant, intense hydration. Effectively plumps up fine lines, reduces
-                                    redness,
-                                    boosts and protects the skin barrier for healthy, supple skin.
-                                    Skin Concerns: Dehydration, dryness, redness, fine lines, dull skin.</p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>Is there any aftercare that I should follow
-                                        post my Micro-Infusion treatment?</strong></p>
-                                <p>After you’ve infused your skin with all that skin boosting serum, try to keep
-                                    the
-                                    skin clean for 24 hours and follow these post treatment guidelines:</p>
-                                <ul class="dot-list">
-                                    <li> The day after treatment, wash your face with a gentle cleanser and
-                                        apply a
-                                        nourishing moisturizer.</li>
-                                    <li>Users may experience minor redness and irritation after the procedure
-                                        but
-                                        should quickly subside. Skin may experience mild swelling, peeling or
-                                        flaking. You can minimize these effects by keeping the skin moisturized.
-                                    </li>
-                                    <li> Skip makeup for as long as you can, but at minimum, at least 24 hours.
-                                    </li>
-                                    <li> No exercising or strenuous activity for the first 24 hours
-                                        post-treatment.
-                                        Sweating and gym environments are harmful, rife with bacteria, and may
-                                        cause
-                                        adverse reactions.</li>
-                                    <li>Keep in mind, anything you put on your skin after using Micro-Infusion
-                                        will
-                                        absorb mo re easily, so it’s important to keep the skin clean and use
-                                        products that don’t have harsh ingredients (no acids!).</li>
-                                    <li>Avoid touching your face, especially with dirty hands that haven’t been
-                                        sanitized.</li>
-                                    <li>Avoid swimming, saunas and steam rooms for at least 24-48 hours
-                                        post-treatment.</li>
-                                    <li> Avoid applying products containing fragrances, active ingredients or
-                                        acids
-                                        such as Alpha Hydroxy Acids, Beta Hydroxy Acid, Retinol (Vitamin A),
-                                        Vitamin
-                                        C or anything perceived as ‘active’ skincare including scrubs or toners
-                                        for
-                                        at least 2-3 days post-treatment, as it may cause irritation.</li>
-                                    <li>Avoid exfoliating products for 2-3 days after treatment because they can
-                                        be
-                                        abrasive on skin when it is in that kind of condition.
-                                        Avoid direct sun exposure immediately after treatment. Apply a high
-                                        protection sunscreen when going outdoors, and avoid prolonged sun
-                                        exposure.
-                                        Use good quality non-comedogenic sunscreen if going in the sun.</li>
-                                </ul>
-                                <p> By the next day, you should be free to resume your normal activities,
-                                    skincare routine, and any makeup you want to apply—but you may not even need
-                                    it. Just ensure you monitor your skin’s reaction.</p>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div id="qrejuvalight" class="active">
-                        <div class="faq_item_wrapper">
-                            <h2 style="z-index: 4;">Q-Rejuvalight Pro Facewear</h2>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>What colour wavelengths does the
-                                        Q-Rejuvalight
-                                        Pro have?</strong></p>
-                                <p class="mb-1">The Q-Rejuvalight Pro Facewear has a total of 5 clinical-grade
-                                    wavelengths of
-                                    light for the best results:</p>
-                                <ul class="dot-list">
-                                    <li><span style="font-weight: 400;"> Infrared light (880 nm)</span></li>
-                                    <li><span style="font-weight: 400;"> Deep Red (660 nm)</span></li>
-                                    <li><span style="font-weight: 400;"> Red (630 nm)</span></li>
-                                    <li><span style="font-weight: 400;"> Amber (605 nm)</span></li>
-                                    <li><span style="font-weight: 400;"> Blue (415 nm)</span></li>
-                                </ul>
-                                <p>The Q-Rejuvalight Pro offers two treatment modes.
-                                    <br> Anti-Aging Treatment: Combines red, deep red, infrared and amber
-                                    wavelengths.<br>
-                                    Anti-breakout Treatment: Combines red and blue wavelengths.
-                                </p>
-                                <p> When paired with the Qure Skincare App, you can customize your treatment by
-                                    programming either Anti-Aging or Anti-Breakout treatment on 5 facial zones.
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>What type of results will I see? How quickly
-                                        will I
-                                        see them?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">Typically you’ll see improvements in 4 to 12
-                                        weeks. It is important to take "before and after" pictures to document
-                                        your
-                                        progress. Results are cumulative, frequent daily treatment is the key to
-                                        seeing the best results. </span></p>
-                                <p>Most users see a reduction of acne breakouts and redness after 2-4 weeks.
-                                    Smoother lines, improved skin tone and firmness after 10-12 weeks. With
-                                    continued positive results of skin improving overtime. </p>
-
-
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>How do you charge the Q-Rejuvalight Pro?</b></p>
-                                <p><span style="font-weight: 400;">Every Q-Rejuvalight Pro comes with a
-                                        universal
-                                        USB-C charging cable. Simply plug the cable into any regular USB charger
-                                        to
-                                        charge your mask! Charging takes about 2-4 hours and gives you 8 to 10
-                                        full
-                                        treatment sessions.</span></p>
-
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>Does the Q-Rejuvalight Pro come with
-                                        warranty?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">Q-Rejuvalight Pro Facewear comes with one (1)
-                                        year warranty covering any manufacturer related problems resulting from
-                                        everyday use of the product. Proudly designed in Australia.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="qurify_tap">
-                        <div class="faq_item_wrapper">
-                            <h2 style="z-index: 4;">Q-urify Tap Water Filter</h2>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>How does tap water harm my skin?</strong>
-                                </p>
-                                <p class="mb-1">Facial skin is more sensitive than your skin anywhere else. Your
-                                    skin barrier is like a protective shield against outside threats. But the
-                                    stuff
-                                    in tap water can harm it, leading to:
-                                </p>
-                                <ul class="dot-list">
-                                    <li><span style="font-weight: 400;"> Dry and Damaged Skin: Tap water can
-                                            strip
-                                            away your skin's natural oils, leaving it dry and damaged.</span>
-                                    </li>
-                                    <li><span style="font-weight: 400;"> Skin Irritation: It might also cause
-                                            skin
-                                            irritation, making it sensitive and red.</span></li>
-                                    <li><span style="font-weight: 400;">Premature Aging: The chemicals in tap
-                                            water
-                                            can even speed up the aging process, causing wrinkles and fine
-                                            lines.</span></li>
-                                </ul>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>What does it filter in the water?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">Q-urify water filter uses both physical and
-                                        chemical filtration components to remove up to 99% of contaminants, as
-                                        small
-                                        as 0.2 microns, known as skin irritants that make your tap water “hard”
-                                        –
-                                        like calcium, magnesium and chlorine.  </span></p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>What skin types can benefit from Q-urify Water
-                                        Filter?</b></p>
-                                <p><span style="font-weight: 400;">Every skin type! Especially helpful for
-                                        anyone
-                                        experiencing sensitive skin, premature aging, dry skin, and
-                                        acne. </span>
-                                </p>
-
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>How often do I need to replace my filter?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">It’s compatible with almost every circular
-                                        removable aerator! Each Q-urify Water Filter kit comes with 8 adaptors
-                                        to
-                                        help fit different faucet sizes. Please note that it will NOT fit
-                                        faucets
-                                        that are square shaped, pull out, hand-held, spray-style, or faucets
-                                        with a
-                                        sensor.</span></p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>Where can I buy replacement filters?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">Replacement filters can be purchased in a
-                                        convenient 2 pack on our site. We also offer subscription plans for your
-                                        convenience and ease.</span></p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>Will it fit my faucet?</b></p>
-                                <p><span style="font-weight: 400;">Every skin type! Especially helpful for
-                                        anyone
-                                        experiencing sensitive skin, premature aging, dry skin, and
-                                        acne. </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="neck">
-                        <div class="faq_item_wrapper">
-                            <h2 style="z-index: 4;">Neck & Décolletage LED </h2>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>What are the wavelengths? How many LED lights
-                                        does
-                                        it have? </b>
-                                </p>
-                                <p><span style="font-weight: 400;">Two clinically proven wavelengths of light
-                                        (red
-                                        633nm and near-infrared 830nm) work on a cellular level to stimulate new
-                                        collagen, reduce fine lines and wrinkles, and reduce sun damage and the
-                                        visible signs of aging.</span></p>
-
-                                <p><span style="font-weight: 400;"> LEDs: 55 Dual-core LEDs<br>
-                                        Wavelengths: 630 nm, 830 (Red and InfraRed)  </span></p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>How often should I use it for optimal
-                                        results?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">For best results, we recommend using the
-                                        device
-                                        5-7 times a week. Each session only lasts 10 minutes. Visible results
-                                        may
-                                        vary, but improvements can be seen within 4 weeks of consistent use.
-                                        More
-                                        significant changes can be seen over several months.  </span>
-                                </p>
-
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>How long is the treatment?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">Just 10 minutes! A one and a half hour charge
-                                        can
-                                        deliver up to 7 to 8 treatments.</span></p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>Is it safe for all skin types?</b>
-                                </p>
-                                <p><span style="font-weight: 400;">Yes, this device is safe for all skin types.
-                                        It
-                                        is non-invasive and gentle on the skin. However, if you have specific
-                                        skin
-                                        conditions, we recommend consulting with a dermatologist before
-                                        use.</span>
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>How do I charge the device? </b></p>
-                                <p><span style="font-weight: 400;">Charge Neck & Décolletage device fully for 4
-                                        hours before your first use. Only use a 5V adapter or computer USB port.
-                                        Please avoid fast chargers as they can damage the battery.</span></p>
-
-                                <p><span style="font-weight: 400;"></span>To charge the device, insert the USB-C
-                                    cable into the controller. Insert the USB-A side of the cable into a USB
-                                    power
-                                    supply. When the controller is charged, the LED indicator on the controller
-                                    flashes white, and when the controller is fully charged, the indicator will
-                                    be
-                                    steady white. </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="all_in_one">
-                        <div class="faq_item_wrapper">
-                            <h2 style="z-index: 4;">All-In-One Face Serum</h2>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>What’s the full ingredients list? </b>
-                                </p>
-                                <p><span style="font-weight: 400;">Purified Aqua, Aqua (and) Acetyl
-                                        Hexapeptide-8,
-                                        Aqua (and) Boswellia Serrata Resin Extract, Glycerin, Caprylic/capric
-                                        Triglyceride, 1,3-Propanediol, Aqua (and) Sodium Hydroxide, Maltodextrin
-                                        (and) Sucrose Dilaurate (and) Sodium Cocoyl Glutamate (and) Pisum
-                                        Sativum
-                                        (Pea) Extract, Glycerin (and) Aqua (and) Artemisia Umbelliformis
-                                        Extract,
-                                        Sodium Acrylates Copolymer (and) Lecithin, Niacinamide, 1,2-Hexanediol
-                                        (and)
-                                        Caprylyl Glycol (and) Tropolone, Sodium Acrylates Copolymer (and)
-                                        Lecithin,
-                                        Caprylic/Capric Triglyceride (and) Retinol (and) BHT, Retinyl Palmitate
-                                        (and) Glycine Soja (Soybean) Oil (and) Tocopherol, Bakuchiol, Glyceryl
-                                        Oleate Citrate (and) Caprylic/Capric Triglyceride, Lactic Acid,
-                                        Propanediol
-                                        (and) Aqua (and) Ganoderma Lucidum (Mushroom) Extract, Camellia Sinensis
-                                        Leaf Extract, Polycrylate-13 (and) Polyisobutene (and) Polysorbate 20,
-                                        Tocopheryl Acetate, 3-O-Ethyl Ascorbic Acid, Pentaerythrityl
-                                        tetra-di-t-butyl hydroxyhydrocinnamate, Ferulic Acid, Mandelic Acid,
-                                        Aqua
-                                        (and) Ginkgo biloba Leaf Extract, Aqua (and) Terminalia Ferdinandiana
-                                        Fruit
-                                        Extract.</span></p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>What skin type is it good for? </b>
-                                </p>
-                                <p><span style="font-weight: 400;">Most skin types. Face serum is
-                                        fragrance-free,
-                                        however we always recommend doing a patch test if you have sensitive
-                                        skin. </span>
-                                </p>
-
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><b>When can I start to see results? </b>
-                                </p>
-                                <p><span style="font-weight: 400;">Most people see improvement in a couple
-                                        months,
-                                        but this can vary. Remember to stick with it— consistency is key. Our
-                                        clinically-proven ingredients work to make your skin look brighter,
-                                        instantly and over time.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="shipping">
-                        <div class="faq_item_wrapper">
-                            <h2 style="z-index: 1;">Shipping & Orders </h2>
-                            <div class="faq_item">
-                                <p> We ship FREE, worldwide on orders over $100. </p>
-                                <p> Here’s how it works for products that are in stock: you order, we process,
-                                    then
-                                    we ship. Processing time is 1 to 3 business days. Orders are shipped from
-                                    our
-                                    warehouse in the U.S then one of our carriers takes it from there. You’ll
-                                    get an
-                                    email with your tracking number as soon as your package is on its way!</p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>What is the estimated shipping
-                                        time?</strong>
-                                </p>
-                                <p><span style="font-weight:500;">United States:</span> 3-6 business days<br>
-                                    <span style="font-weight:500;">Australia:</span> 7-14 business days<br>
-                                    <span style="font-weight:500;">Canada:</span> 3-10 business days<br>
-                                    <span style="font-weight:500;">United Kingdom:</span> 7-10 business days<br>
-                                    <span style="font-weight:500;"></span>Europe:</span> 7-14 business days
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="faq_item">
-                                <p class="custom-faq__title"><strong>Do I need to pay taxes and duties?</strong>
-                                </p>
-                                <p>Depending on your shipping destination country, you may be liable to pay
-                                    local
-                                    taxes and duties on receipt of your order. We recommend contacting your
-                                    local
-                                    customs department to find out more.</p>
-                            </div>
-                            <hr>
-
-                        </div>
-                    </div>
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -546,7 +166,139 @@
         "name": "t:sections.faq-extended.name",
         "class": "section-faq",
         "settings": [
-
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image2",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text2",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code2",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text3",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code3",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text4",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code4",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text5",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code5",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text6",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code6",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text7",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code7",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text8",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code8",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text9",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code9",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text10",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code10",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    }
         ],
         "presets": [
 			{
