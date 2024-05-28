@@ -57,8 +57,8 @@
           "type": "client_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/img_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/imgcollection-finelines-mob.png",
-            "text": "<p>“I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks.”<\/p>",
+            "image_mobile": "shopify:\/\/shop_images\/img_2.png",
+            "text": "<p>“I’ve been using my Qure for 1 month now and it has <strong>completely qured my acne<\/strong>. It’s gone AND it’s healing all my scars.”<\/p>",
             "client": "BJ Nardi",
             "position": "1"
           }
