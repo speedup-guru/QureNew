@@ -586,22 +586,29 @@
 								</div>
 
 									<div class="drawer__cart-price-quantity">
+
+											{% if free_gift %}
+												<div class="drawer__cart-quantity">
+													<a href="javascript:;" style="color:#e4e0e0">
+														-
+													</a>
+													<p class="drawer__cart-item-q">{{ item.quantity }}</p>
+													<a href="javascript:;" style="color:#e4e0e0">
+														+
+													</a>
+												</div>
+											{% else %}
+												<div class="drawer__cart-quantity">
+													<a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?line={{ item.index | plus: 1 }}&quantity={{ item.quantity | minus: 1 }}">
+														-
+													</a>
+													<p class="drawer__cart-item-q">{{ item.quantity }}</p>
+													<a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?line={{ item.index | plus: 1 }}&quantity={{ item.quantity | plus: 1 }}">
+														+
+													</a>
+												</div>
+											{% endif %}
 										
-											<div class="drawer__cart-quantity"{% if free_gift %} style="border:none"{% endif %}>
-												{% if free_gift == false %}
-												<a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?line={{ item.index | plus: 1 }}&quantity={{ item.quantity | minus: 1 }}">
-													-
-												</a>
-		
-												<p class="drawer__cart-item-q">{{ item.quantity }}</p>
-		
-												<a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?line={{ item.index | plus: 1 }}&quantity={{ item.quantity | plus: 1 }}">
-													+
-												</a>
-												{% endif %}
-
-											</div>
-
 										{% if free_gift %}
 											<div class="drawer__cart-item-price">
 												<p class="old-price"><span class="money">{{ item.original_line_price | money_without_trailing_zeros }}</span></p>
