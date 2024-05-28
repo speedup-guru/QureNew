@@ -64,7 +64,16 @@
                                 </div>
                             {% when 'brand_card' %}
                                 <div class="productBlockGrid">
-                                    <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid h-100">
+                                    {% if block.settings.image != blank %}
+                                        <div class="d-none d-md-block">
+                                            <img class="img-fluid h-100" src="{{ block.settings.image | img_url: '400x' }}" alt="">
+                                        </div> 
+                                    {% endif %}
+                                    {% if block.settings.image_mobile != blank %}
+                                        <div class="d-block d-md-none">
+                                            <img class="img-fluid h-100" src="{{ block.settings.image_mobile | img_url: '400x' }}" alt="">
+                                        </div> 
+                                    {% endif %}
                                     <div class="productVogue">
                                         {{ block.settings.text }}
                                         {% if block.settings.header %}
@@ -298,6 +307,11 @@
                         "type": "image_picker",
                         "id": "image",
                         "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_mobile",
+                        "label": "t:common.image_mobile.label"
                     },
                     {
                         "type": "text",
