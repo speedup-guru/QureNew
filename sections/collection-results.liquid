@@ -65,14 +65,10 @@
                             {% when 'brand_card' %}
                                 <div class="productBlockGrid">
                                     {% if block.settings.image != blank %}
-                                        <div class="d-none d-md-block">
-                                            <img class="img-fluid h-100" src="{{ block.settings.image | img_url: '400x' }}" alt="">
-                                        </div> 
+                                        <img class="img-fluid h-100 d-none d-md-block" src="{{ block.settings.image | img_url: '400x' }}" alt="">
                                     {% endif %}
                                     {% if block.settings.image_mobile != blank %}
-                                        <div class="d-block d-md-none">
-                                            <img class="img-fluid h-100" src="{{ block.settings.image_mobile | img_url: '400x' }}" alt="">
-                                        </div> 
+                                        <img class="img-fluid h-100 d-block d-md-none" src="{{ block.settings.image_mobile | img_url: '400x' }}" alt="">
                                     {% endif %}
                                     <div class="productVogue">
                                         {{ block.settings.text }}
