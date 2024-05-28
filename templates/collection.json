@@ -55,10 +55,10 @@
         "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collection-ela.webp",
-            "image_mobile": "shopify:\/\/shop_images\/collection-ela-mobile.webp",
-            "text": "<p>I was shocked at how my skin looked the<strong>morning after my first Micro-Infusion<\/strong>treatment! It was so easy to use, can’t wait until my next treatment.<\/p>",
-            "client": "Ela O.",
+            "image": "shopify:\/\/shop_images\/imgcollection-finelines.png",
+            "image_mobile": "shopify:\/\/shop_images\/imgcollection-finelines-mob.png",
+            "text": "<p>“This is an amazing product that you will not regret in purchasing it. \u2028I really see the change in my skin.”<\/p>",
+            "client": "Ellie V.",
             "position": "1"
           }
         },
