@@ -64,7 +64,7 @@
                                 </div>
                             {% when 'brand_card' %}
                                 <div class="productBlockGrid">
-                                    <img src="{{ 'collectionVogue.webp' | asset_url }}" alt="" class="img-fluid h-100">
+                                    <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid h-100">
                                     <div class="productVogue">
                                         {{ block.settings.text }}
                                         {% if block.settings.header %}
