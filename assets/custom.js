@@ -4,7 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.bf-bundles__item-before').forEach(item => {
             const currency = '€';
             if (item.textContent.includes(currency)) {
-                item.style.fontSize = '25px';
+                item.style.fontSize = '18px';
+            }
+        });
+
+        document.querySelectorAll('.bf-bundles__item-after').forEach(item => {
+            const currency = '€';
+            if (item.textContent.includes(currency)) {
+                item.style.fontSize = '21px';
             }
         });
 
@@ -27,7 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.bf-bundles__item-before').forEach(item => {
             const currency = '€';
             if (item.textContent.includes(currency)) {
-                item.style.fontSize = '19px';
+                item.style.fontSize = '16px';
+            }
+        });
+
+        document.querySelectorAll('.bf-bundles__item-after').forEach(item => {
+            const currency = '€';
+            if (item.textContent.includes(currency)) {
+                item.style.fontSize = '18px';
             }
         }); 
 
