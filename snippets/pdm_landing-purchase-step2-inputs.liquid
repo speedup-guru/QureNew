@@ -1,3 +1,23 @@
+{% comment %} 
+   Render Purchase Step 2 Inputs
+
+  Accepts:
+  - products1_type: {Object} - The first product type to be rendered (Metafield).
+  - products2_type: {Object} - The second product type to be rendered (Metafield).
+  - products3_type: {Object} - The third product type to be rendered (Metafield).
+  - generalSettings: {Object} - The general settings of the section. 
+
+  Usage:
+  {% render 'pdm_landing-purchase-step2-inputs',
+    products1_type: products1.select_type.value,
+    products2_type: products2.select_type.value,
+    products3_type: products3.select_type.value,
+    generalSettings: page.metafields.custom.general_information_purchase_process.value
+  %}
+
+{% endcomment %}
+
+
 <div class="landing-two-title-container">
   <h3>{{ generalSettings.step_2_title }}</h3>
 </div>

@@ -1,3 +1,12 @@
+{% comment %} 
+  Render Purchase Step 3 Card with title, payment text and payment logos.
+  Accepts:
+  - data: {Object} - The product data to be rendered (Metafield).
+  - cardCase: {Number} - The card case to be rendered. It can be 0 or 1.
+  Usage:
+  {% render 'pdm_landing-purchase-step3-card', data: product.metafields.custom.purchase_step_3.value, cardCase: 0 - 1 %}
+{% endcomment %}
+
 {% liquid
   assign cardTitles = data.step_3_card_titles.value
   assign paymentText = data.step_3_payment_texts.value 
