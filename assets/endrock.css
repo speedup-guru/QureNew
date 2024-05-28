@@ -819,11 +819,6 @@
 
 /* PRICE BELOW REVIEWS PDP - TEST */
 
-/* 
-this have to be on intelligems
-.price-test-original {
-  display: none !important;
-} */
 
 body:not([data-price-test="true"]) .price-test {
   display: none !important;
@@ -837,6 +832,9 @@ body:not([data-price-test="true"]) .price-test {
 
 [data-price-test="true"] #sale-price {
   display: none;
+}
+body[class~="page.sunil-mi-landing"] .product-price{
+  display: none !important;
 }
 
 .product-price {

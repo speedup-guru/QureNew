@@ -62,9 +62,12 @@
                             {% endif %}
                         {%- endfor -%}
                     {% endif %}
-                    <div class="product-price price-test">
-                        {% render 'no-price-atc' subscribe_count: subscribe_count, section: section %}
-                    </div>
+                    {% unless page.handle == 'qure-micro-infusion-landing-page-affiliate' %}
+                        
+                        <div class="product-price price-test">
+                            {% render 'no-price-atc' subscribe_count: subscribe_count, section: section %}
+                            </div>
+                    {% endunless %}
                     <div class="mw-452">
                         {% if list_count > 0 %}
                             <div class="ss_list py-4">
