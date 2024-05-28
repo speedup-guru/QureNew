@@ -105,6 +105,7 @@ const verifyCustomer = () => {
 
 const hidePrices = () => {
   const testActive = document.body.hasAttribute('data-price-test');
+  console.log("is active", testActive);
   const stickyButton = document.querySelectorAll('.button_sticky_wrapper');
   if (testActive) {
     if (stickyButton) {
