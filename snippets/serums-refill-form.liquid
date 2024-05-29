@@ -106,8 +106,10 @@
                                 </div>
                             </div>
                             {% render 'pdm_orderby' %}
-                            <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }} event_btn" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" data-ajax-cart-request-button>Buy Now -
+                            <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }} event_btn price-test-original" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" data-ajax-cart-request-button>Buy Now -
                                 {{ product_price | money_without_trailing_zeros }}<img src="https://qureskincaredns.com/assets/images/common/arrow_right.svg" alt="">
+                            </a>
+                            <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }} event_btn price-test" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" data-ajax-cart-request-button>Buy Now
                             </a>
 
                             {% capture sticky-button-classname %}buy-button-{{ section_id }} without_subscription{% endcapture %}
@@ -129,14 +131,17 @@
                             </div>
                         </div>
                         {% render 'pdm_orderby' %}
-                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-form-id="{{ product.id }}">
+                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }} form-test-id" enctype="multipart/form-data" data-form-id="{{ product.id }}">
                             <input type="hidden" name="form_type" value="product">
                             <input type="hidden" name="utf8" value="✓">
                             <input type="hidden" name="selling_plan" value="{{ selling_plan }}">
                             <input type="hidden" name="id" value="{{ product_variant_id }}">
                                 
-                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn" name="Submit" value="Submit">
+                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn price-test-original" name="Submit" value="Submit">
                                 Subscribe Now - {{ product_price_discount | money_without_trailing_zeros }}<img src="https://qureskincaredns.com/assets/images/common/arrow_right.svg" alt="">
+                            </button>
+                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn price-test" name="Submit" value="Submit">
+                                Subscribe Now
                             </button>
 
                             {% capture sticky-button-form-classname %}buy-form-{{ section_id }}{% endcapture %}

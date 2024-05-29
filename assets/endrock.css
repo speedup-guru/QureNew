@@ -817,3 +817,47 @@
   }
 /* CROSS SELL END */
 
+/* PRICE BELOW REVIEWS PDP - TEST */
+
+
+body:not([data-price-test="true"]) .price-test {
+  display: none !important;
+}
+[data-price-test="true"] .price-test-original {
+  display: none !important;
+}
+[data-price-test="true"] .price-test {
+  display: block !important;
+}
+
+[data-price-test="true"] #sale-price {
+  display: none;
+}
+body[class~="page.sunil-mi-landing"] .product-price{
+  display: none !important;
+}
+
+.product-price {
+  margin-top: 16px;
+}
+
+.subscriptionType:not(.active)[data-subscription="no-subscription"] .price-test {
+  display: none !important;
+}
+.subscriptionType.active[data-subscription="no-subscription"] ~ form.form-test-id .price-test {
+  display: none !important;
+}
+
+.product-price, .product-price .subscriptions-prices {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; 
+}
+.product-price .subscriptions-prices del {
+  margin-right: 5px;
+  color: #BABDBC;
+}
+
+/* PRICE BELOW REVIEWS PDP - TEST ---  END*/

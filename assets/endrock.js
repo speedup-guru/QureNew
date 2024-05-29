@@ -10,7 +10,6 @@ const userLocationIP = () => {
   fetch(url, requestOptions)
     .then(response => response.json())
     .then(result => {
-      console.log('result', result);
       return deliveryDate(result);
     })
     .catch(error => console.log('error', error));
@@ -93,10 +92,8 @@ const verifyCustomer = () => {
     ?.split("=")[1];
 
   if (!cookieValue) {
-    console.log("new customer");
     document.cookie = "newCustomer=true; max-age=2592000; path=/";
   } else {
-    console.log("returning customer");
     const crossSell = document.querySelectorAll('.cross-sell');
 
     crossSell.forEach((element) => {
@@ -106,9 +103,53 @@ const verifyCustomer = () => {
 
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+const hidePrices = () => {
+  const testActive = document.body.hasAttribute('data-price-test');
+  console.log("is active", testActive);
+  const stickyButton = document.querySelectorAll('.button_sticky_wrapper');
+  if (testActive) {
+    if (stickyButton) {
+      stickyButton.forEach((element) => {
+        element.querySelector('a').textContent = "ADD TO BAG";
+      })
+    }
+  }
+}
 
+/* ATC NO PRICES PDP */
+const atcNoPricesPdp = () => {
+console.log('🚀 --- atcNoPricesPdp');
+  const subscriptionTypes = document.querySelectorAll('.subscriptionType'); 
+  console.log(subscriptionTypes);
+  if (subscriptionTypes) {
+    subscriptionTypes.forEach((element) => {
+      element.addEventListener('click', function(e) {
+
+        const subscriptionType = e.currentTarget.getAttribute('data-subscription');
+        const subscriptionPrices = document.querySelectorAll('.subscriptions-prices');
+        console.log("subscriptionType", subscriptionType);
+        console.log("subscriptionPrices", subscriptionPrices);
+
+        subscriptionPrices.forEach((element) => { element.classList.add('hidden'); });
+        document.getElementById(`${subscriptionType}`).classList.remove('hidden');
+        hidePrices();
+      });
+    });
+  }
+}
+
+document.addEventListener('ig:ready', function() {
+  /* ATC NO PRICE TEST PDP */
+  atcNoPricesPdp();
+  hidePrices();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  atcNoPricesPdp();
+  hidePrices();
   // Start Cross-sell page targeting validation
+  console.log('PAGE LOG');
   const pageTargeting = [
     "/products/q-rejuvalight-pro-facewear",
     "/pages/microinfusion",
@@ -1040,5 +1081,5 @@ document.addEventListener('DOMContentLoaded', function () {
   // end Micro-Infusion Landing Page Purchase Process
 
   initUpsellSwiper(); //swiper for carousel upsell
-});
 
+});
