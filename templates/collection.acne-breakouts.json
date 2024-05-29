@@ -3,7 +3,8 @@
     "main": {
       "type": "collection",
       "settings": {
-        "heading": "<h1>Shop our <strong>best sellers<\/strong> & <strong>top rated<\/strong> products<\/h1>",
+        "heading": "<h1>Shop our <strong>best sellers<\/strong> & <strong>top rated<\/strong>products<\/h1>",
+        "heading_mobile": "",
         "image": "shopify:\/\/shop_images\/collection_banner_desk.webp",
         "image_mobile": "shopify:\/\/shop_images\/collection_banner_mob.webp"
       }
@@ -55,10 +56,10 @@
         "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/imgcollection-finelines.png",
-            "image_mobile": "shopify:\/\/shop_images\/imgcollection-finelines-mob.png",
-            "text": "<p>“This is an amazing product that you will not regret in purchasing it. \u2028I really see the change in my skin.”<\/p>",
-            "client": "Ellie V.",
+            "image": "shopify:\/\/shop_images\/img_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/img_2.png",
+            "text": "<p>“I’ve been using my Qure for 1 month now and it has <strong>completely qured my acne<\/strong>. It’s gone AND it’s healing all my scars.”<\/p>",
+            "client": "BJ Nardi",
             "position": "1"
           }
         },

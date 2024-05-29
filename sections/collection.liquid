@@ -5,11 +5,33 @@
         min-height: 240px;
     }   
 }
+.collectio-banner .heading {
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: .3px;
+    color: rgb(0 0 0 / 80%);
+}
 /* special for mobile */
 @media (max-width: 768px) {
     .collectio-banner picture {
         min-height: 150px;
-    }  
+    }
+    .collectio-banner .heading {
+        font-size: 18px;
+        line-height: 24px;
+        width: 176px;
+    }
+    .d-block p {
+        font-size: 10px !important;
+    }
+    .d-block p strong {
+        font-weight:800 !important;
+    }
 }
 </style>
 
@@ -30,7 +52,15 @@
     {% endif %}
 
     {% if section.settings.heading != blank %}
-        <h1>{{ section.settings.heading }}</h1>
+        <div class="heading d-none d-md-block">
+            {{ section.settings.heading }}
+        </div>
+    {% endif %}
+
+    {% if section.settings.heading_mobile != blank %}
+        <div class="heading d-block d-md-none">
+            {{ section.settings.heading_mobile }}
+        </div>
     {% endif %}
 </div>
 
@@ -43,6 +73,11 @@
                 "type": "richtext",
                 "id": "heading",
                 "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "heading_mobile",
+                "label": "t:common.heading.mobile.label"
             },
             {
                 "type": "image_picker",

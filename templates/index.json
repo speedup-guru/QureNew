@@ -362,7 +362,7 @@
             "progress": 91,
             "progress_text": "<p><strong>improved<\/strong> skin tone and enhanced smoothness after 12 weeks.<\/p>",
             "text": "",
-            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion and collagen density.<\/strong><\/p>",
+            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion.<\/strong><\/p>",
             "popup_link_text": "Read More About Clinical Study",
             "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
           }
@@ -377,7 +377,7 @@
       "settings": {
         "classname": "skincare_slider bg_gradient_yellow_bt",
         "heading": "Science-backed skincare that’s proven to work.",
-        "text": "<p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/>Our science-backed skincare and treatments are <em>clinically-proven<\/em> to work.<br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
+        "text": "<p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
       }
     },
     "trusted_qcJp6N": {
