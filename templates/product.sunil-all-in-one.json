@@ -396,6 +396,7 @@
         },
         "result_AdLwAt": {
           "type": "result",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/results_jessica.webp",
             "heading": "Best experience",
