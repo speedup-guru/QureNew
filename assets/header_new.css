@@ -1314,6 +1314,12 @@ img.fa.fa-user.nav__icon {
 }
 
 @media(max-width:767px) {
+    /* aaaaqqqq */
+    .nav__cart-count {
+        right: auto !important;
+        top: auto !important;
+    }
+
     .slide_cart .free_shpngBox {
         justify-content: flex-end;
     }
