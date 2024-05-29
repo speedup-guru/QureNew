@@ -891,6 +891,12 @@
 
 .bf_sale .payment_method .pmt_img {
     display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.bf_sale .payment_method .pmt_img img:not(:last-child) {
+    padding-right: 0px;
 }
 
 .bf_sale .payment_method p {
