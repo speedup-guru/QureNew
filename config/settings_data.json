@@ -35,11 +35,47 @@
             "settings": {
               "heading": "🤍 Rediscover The Qure"
             }
+          },
+          "banner_BeVKei": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_drop1.webp",
+              "button_label": "Shop Micro-Infusion: reduce look of wrinkles",
+              "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
+            }
+          },
+          "banner_jrcxU4": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_drop2.webp",
+              "button_label": "Discover our Best Selling Products",
+              "button_url": "shopify:\/\/collections\/best-sellers"
+            }
+          },
+          "banner_CiNYWN": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_drop3.webp",
+              "button_label": "Q-Rejuvalight Pro Quick Start Guide",
+              "button_url": "https:\/\/www.qureskincare.com\/pages\/q-rejuvalight-pro-led-mask-guide"
+            }
+          },
+          "banner_9fKdQK": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_drop4.webp",
+              "button_label": "See Micro-Infusion Detailed Guide",
+              "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion-safety-guide"
+            }
           }
         },
         "block_order": [
           "announcement_TPxBgi",
-          "tab_3Wyyea"
+          "tab_3Wyyea",
+          "banner_BeVKei",
+          "banner_jrcxU4",
+          "banner_CiNYWN",
+          "banner_9fKdQK"
         ],
         "settings": {
         }

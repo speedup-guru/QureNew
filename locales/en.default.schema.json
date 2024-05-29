@@ -275,6 +275,11 @@
           "name": "Tab title changer",
           "settings": {
           }
+        },
+        "banner": {
+          "name": "Banner",
+          "settings": {
+          }
         }
       }
     },

@@ -1,18 +1,18 @@
 <div class="wrapper home-default-wrapper header-wrapperBlock">
-    {% for block in section.blocks limit: 1 %}
-        {%- case block.type -%}
-            {% when 'announcement' %}
-                {% render 'header-announcement-bar', section: section, block: block %}
-            {% when 'announcement-promotion' %}
-                {% render 'promotion-header-announcement-bar', section: section, block: block %}
-        {%- endcase -%}
-    {% endfor %}
     <div id="shopify-section-header" class="shopify-section site-header">
         <div class="header-wrapper">
+            {% for block in section.blocks limit: 1 %}
+                {%- case block.type -%}
+                    {% when 'announcement' %}
+                        {% render 'header-announcement-bar', section: section, block: block %}
+                    {% when 'announcement-promotion' %}
+                        {% render 'promotion-header-announcement-bar', section: section, block: block %}
+                {%- endcase -%}
+            {% endfor %}
             <header>
                 <div class="header-new new-hp-header">
-                    {% render 'header-menu-mobile' %}
-                    {% render 'header-menu-desktop' %}
+                    {% render 'header-menu-mobile', section: section %}
+                    {% render 'header-menu-desktop', section: section %}
                 </div>
             </header>
         </div>
@@ -285,6 +285,30 @@
                     "type" : "text",
                     "id" : "heading",
                     "label" : "t:common.heading.label"
+                }
+			]
+		},
+		{
+			"type": "banner",
+			"name": "t:sections.header.blocks.banner.name",
+            "limit": 4,
+			"settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image.label"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "default": "Button label",
+                    "label": "t:common.button.label",
+                    "info": "t:common.button.info"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button.url.label"
                 }
 			]
 		}
