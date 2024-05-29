@@ -3,8 +3,8 @@
     "main": {
       "type": "collection",
       "settings": {
-        "heading": "<h3><strong>FREE Q-urify Water Filter (worth $69) with every purchase.<\/strong><\/h3><p><strong>Add Q-urify Water Filter to cart and use code ‘FREEQURIFY’ at checkout.<\/strong><\/p>",
-        "heading_mobile": "<h4><strong>FREE Q-urify with every purchase.<\/strong><\/h4><p>Add to cart & use code ‘<strong>FREEQURIFY<\/strong>’ at checkout.<\/p>",
+        "heading": "<h1>Shop our <strong>best sellers<\/strong> & <strong>top rated<\/strong> products<\/h1>",
+        "heading_mobile": "",
         "image": "shopify:\/\/shop_images\/collection_banner_desk.webp",
         "image_mobile": "shopify:\/\/shop_images\/collection_banner_mob.webp"
       }
@@ -56,19 +56,19 @@
         "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/imgcollection-finelines.png",
-            "image_mobile": "shopify:\/\/shop_images\/imgcollection-finelines-mob.png",
-            "text": "<p>“This is an amazing product that you will not regret in purchasing it. \u2028I really see the change in my skin.”<\/p>",
-            "client": "Ellie V.",
+            "image": "shopify:\/\/shop_images\/collection-darkspots.png",
+            "image_mobile": "shopify:\/\/shop_images\/img_97139eb9-1588-4473-925c-759542f3ee7f.png",
+            "text": "<p>“I’ve tried numerous serums for my <strong>sun spots<\/strong> but <strong>nothing worked until I used this mask.<\/strong> Definitely worth the money.\"<\/p>",
+            "client": "Teresa S.",
             "position": "1"
           }
         },
         "doctor_card_mikzkG": {
           "type": "doctor_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collection_drShah.webp",
+            "image": "shopify:\/\/shop_images\/IC_-_14collection-shah-mi_1.png",
             "header": "Trusted and recommended by world-leading dermatologists",
-            "text": "<p>\"The best LED mask on the market in my opinion at this time, that being said you do need to use this consistently to see results...\"<\/p>",
+            "text": "<p>\"...[Qure's Micro-Infusion] will help your products penetrate better\"<\/p>",
             "client": "Dr Shah, MD Certified Dermatologist",
             "position": "4"
           }
@@ -76,12 +76,12 @@
         "brand_card_ynEhKC": {
           "type": "brand_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collectionVogue.webp",
-            "image_mobile": "shopify:\/\/shop_images\/collectionVogue.webp",
-            "header": "VOGUE",
-            "text": "<p>One of VOGUE's top LED masks<\/p>",
+            "image": "shopify:\/\/shop_images\/IC_-_6_a563e08c-6dbc-4b11-9ec4-0a5a6898d8fc.png",
+            "image_mobile": "shopify:\/\/shop_images\/IC_-_25_d87403c0-c732-4787-b846-74f694162d37.png",
+            "header": "",
+            "text": "",
             "button_label": "Discover Now",
-            "button_url": "https:\/\/www.qureskincare.com\/products\/q-rejuvalight-pro-facewear",
+            "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion",
             "position": "7"
           }
         }
@@ -97,6 +97,18 @@
     "results_NPPBwQ": {
       "type": "results",
       "blocks": {
+        "result_JCcEmh": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_jess.webp",
+            "heading": "So much smoother",
+            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”<\/p>",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Jess",
+            "code": ""
+          }
+        },
         "result_ecrrRm": {
           "type": "result",
           "settings": {
@@ -157,18 +169,6 @@
             "code": ""
           }
         },
-        "result_JCcEmh": {
-          "type": "result",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/results_jess.webp",
-            "heading": "So much smoother",
-            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”<\/p>",
-            "image_country": "shopify:\/\/shop_images\/america_f.webp",
-            "text_country": "United States",
-            "client": "Jess",
-            "code": ""
-          }
-        },
         "result_AnCMPk": {
           "type": "result",
           "settings": {
@@ -195,12 +195,12 @@
         }
       },
       "block_order": [
+        "result_JCcEmh",
         "result_ecrrRm",
         "result_bNqVyU",
         "result_YDr83e",
         "result_47bjXc",
         "result_NmwfpJ",
-        "result_JCcEmh",
         "result_AnCMPk",
         "result_AqGUDT"
       ],

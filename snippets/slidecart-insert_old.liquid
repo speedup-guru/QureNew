@@ -87,55 +87,16 @@
     window.initUpsellSwiper =   initUpsellSwiper; 
   </script>
 
-<script type="module"> import { configureCart, subscribeToCartSectionsUpdate, cartRequestAdd, cartRequestChange } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
+<script type="module"> import { configureCart, subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
 	configureCart('addToCartCssClass', 'js-my-cart-open'); 
   	initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
-
 	subscribeToCartSectionsUpdate( sections => {
-		{% if giftProduct != blank and giftQuantity != blank and giftPriceLimit != blank and giftDiscount != blank %}
-			gift('{{ giftProduct.variants.first.id }}', '{{ giftQuantity }}', '{{ giftPriceLimit }}', '{{ giftDiscount }}');
-		{% endif %}
-
 		updateShippingInsurance();
 		if(typeof startCartTimer == 'function') {
 			startCartTimer(15 * 60);
 		}
-    	initUpsellSwiper();
+    initUpsellSwiper();
 	});
-
-    function gift(productId, productQuantity, priceLimit, discountCode = '') {
-        fetch('/cart.js')
-            .then(response => response.json())
-            .then(cart => {
-				var total_price = cart.total_price / 100;
-				var gift = cart.items.some(item => item.id === +(productId));
-
-                if (total_price > priceLimit && !gift) {
-					fetch('/discount/' + discountCode).then(async () => {
-						cartRequestAdd({ 
-						items: [
-							{
-								id: productId,
-								quantity: productQuantity,
-								properties: {
-									_discount_code: discountCode,
-									_free_product: true
-								}
-							}
-						]  
-					}, {} )
-					});
-                }
-				else if(total_price <= priceLimit && gift)
-				{
-					const giftInCart = cart.items.find(item => item.id === +(productId));
-					cartRequestChange({ 
-						id: giftInCart.key,
-						quantity: 0
-					},  {} )
-				}
-		});
-    }
 </script> 
 
 <script>
