@@ -6,7 +6,7 @@
                 {% if section.settings.heading != blank %}
                     <h2 class="title-xl mb-3">{{ section.settings.heading }}</h2>
                 {% endif %}
-                <h5>{{ block.settings.text }}</h5>
+                <h5>{{ section.settings.text }}</h5>
             </div>
             <div class="contact_info">
                 {%- for block in section.blocks -%}
@@ -15,8 +15,8 @@
                             <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
                         </div>
                         <div class="cnt_desc">
-                            <h6>{{ section.settings.heading }}</h6>
-                            {{ section.settings.text }}
+                            <h6>{{ block.settings.heading }}</h6>
+                            {{ block.settings.text }}
                         </div>
                     </div>
                 {% endfor %}
