@@ -234,7 +234,10 @@
       }
     },
     "feedback": {
-      "label": "Feedback"
+      "label": "Feedback",
+      "title": {
+        "label": "Feedback title"
+      }
     },
     "preorder": {
       "label": "Pre order"

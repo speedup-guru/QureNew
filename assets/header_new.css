@@ -1314,7 +1314,6 @@ img.fa.fa-user.nav__icon {
 }
 
 @media(max-width:767px) {
-    /* aaaaqqqq */
     .nav__cart-count {
         right: auto !important;
         top: auto !important;
@@ -1695,7 +1694,6 @@ img.fa.fa-user.nav__icon {
     }
 
     .dm_list {
-        /* aaaaqqqq */
         max-width: 154px;
         width: 100%;
     }

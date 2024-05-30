@@ -115,7 +115,7 @@
                                             {% endif %}
                                             <div class="ss_clinical">
                                                 <div class="ss_c_title">
-                                                    <h4>In a Clinical Trial...</h4>
+                                                    <h4>{{ block.settings.feedback_title }}</h4>
                                                 </div>
 
                                                 <div class="ss_c_detail">
@@ -282,6 +282,12 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "feedback_title",
+                        "label": "t:common.feedback.title.label",
+                        "default": "In a Clinical Trial..."
                     },
                     {
                         "type": "richtext",
