@@ -19,7 +19,7 @@
                     {% if num < 2 %}
                         <a class="dm_imgItem" href="{{ block.settings.button_url }}">
                             <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
-                            <h6>{{ block.settings.button_label }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                            <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
                         </a>
                     {% endif %}
                     {%- assign num = num | plus: 1 -%}
@@ -38,7 +38,7 @@
                     {% if num >= 2 %}
                         <a class="dm_imgItem" href="{{ block.settings.button_url }}">
                             <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
-                            <h6>{{ block.settings.button_label }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                            <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
                         </a>
                     {% endif %}
                     {%- assign num = num | plus: 1 -%}
