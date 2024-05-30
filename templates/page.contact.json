@@ -10,10 +10,19 @@
             "heading": "LIVE CHAT",
             "text": "<p>Experts are Available: Mon-Fri<\/p><p>9AM - 5PM EST<\/p>"
           }
+        },
+        "object_UNNXkx": {
+          "type": "object",
+          "settings": {
+            "image_country": "shopify:\/\/shop_images\/call-us.svg",
+            "heading": "CALL US",
+            "text": "<p>+1 (240) 702-2228<\/p><p>Availability: Sat - Sun<\/p><p>9AM - 5PM EST<\/p>"
+          }
         }
       },
       "block_order": [
-        "object_XPg864"
+        "object_XPg864",
+        "object_UNNXkx"
       ],
       "settings": {
         "heading": "Contact Us",
