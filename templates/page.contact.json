@@ -2,6 +2,19 @@
   "sections": {
     "main": {
       "type": "page-contact",
+      "blocks": {
+        "object_XPg864": {
+          "type": "object",
+          "settings": {
+            "image_country": "shopify:\/\/shop_images\/live-chat.svg",
+            "heading": "LIVE CHAT",
+            "text": "<p>Experts are Available: Mon-Fri<\/p><p>9AM - 5PM EST<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "object_XPg864"
+      ],
       "settings": {
         "heading": "Contact Us",
         "text": "<h5>We are here to help<\/h5>"
