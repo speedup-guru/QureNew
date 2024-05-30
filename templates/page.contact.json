@@ -3,6 +3,8 @@
     "main": {
       "type": "page-contact",
       "settings": {
+        "heading": "Contact Us",
+        "text": "<h5>We are here to help<\/h5>"
       }
     }
   },
