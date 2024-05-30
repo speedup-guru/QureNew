@@ -6,7 +6,7 @@
         "object_XPg864": {
           "type": "object",
           "settings": {
-            "image_country": "shopify:\/\/shop_images\/live-chat.svg",
+            "image": "shopify:\/\/shop_images\/live-chat.svg",
             "heading": "LIVE CHAT",
             "text": "<p>Experts are Available: Mon-Fri<\/p><p>9AM - 5PM EST<\/p>"
           }
@@ -14,7 +14,7 @@
         "object_UNNXkx": {
           "type": "object",
           "settings": {
-            "image_country": "shopify:\/\/shop_images\/call-us.svg",
+            "image": "shopify:\/\/shop_images\/call-us.svg",
             "heading": "CALL US",
             "text": "<p>+1 (240) 702-2228<\/p><p>Availability: Sat - Sun<\/p><p>9AM - 5PM EST<\/p>"
           }
@@ -22,7 +22,7 @@
         "object_ejQnXh": {
           "type": "object",
           "settings": {
-            "image_country": "shopify:\/\/shop_images\/email.svg",
+            "image": "shopify:\/\/shop_images\/email.svg",
             "heading": "EMAIL",
             "text": "<p>Send a Message to Customer Service below<\/p>"
           }
