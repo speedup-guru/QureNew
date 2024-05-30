@@ -12,7 +12,7 @@
                 {%- for block in section.blocks -%}
                     <div class="cnt_item">
                         <div class="cnt_img">
-                            <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
+                            <img src="{{ block.settings.image_country | img_url: '250x' }}" alt="">
                         </div>
                         <div class="cnt_desc">
                             <h6>{{ block.settings.heading }}</h6>
@@ -138,7 +138,7 @@
                 {
                     "type": "image_picker",
                     "id": "image_country",
-                    "label": "t:common.client.country.label"
+                    "label": "t:common.image.label"
                 },
                 {
                     "type": "text",
