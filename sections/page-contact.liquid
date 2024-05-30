@@ -16,7 +16,10 @@
                         </div>
                         <div class="cnt_desc">
                             <h6>{{ block.settings.heading }}</h6>
-                            {{ block.settings.text }}
+                            {{ block.settings.text 
+                                |  replace: '<strong>', '<u>'  
+                                |  replace: '</strong>', '</u>'  
+                            }}
                         </div>
                     </div>
                 {% endfor %}
