@@ -78,8 +78,8 @@
         "link_crBjL9": {
           "type": "link",
           "settings": {
-            "link_label": "Shop Micro-Infusion",
-            "link_url": "shopify:\/\/pages\/microinfusion"
+            "link_label": "Shop Best Sellers",
+            "link_url": "shopify:\/\/collections\/best-sellers"
           }
         }
       },
@@ -87,10 +87,10 @@
         "link_crBjL9"
       ],
       "settings": {
-        "heading": "Natural Skin Is in Full Bloom",
-        "text": "<p>Get dewy, radiant skin and keep your cover-up on the shelf.<\/p>",
-        "image": "shopify:\/\/shop_images\/homepage_banner_desk_f99d37af-4fa3-4c7e-83b3-e9a84907915b.webp",
-        "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_8cb05b33-b308-47c4-9173-cfb499a640e0.webp"
+        "heading": "Get clinic-level results from home- minus the ‘clinical’ costs.",
+        "text": "<p><strong>50,000+<\/strong>customers feel more confident in their own skin.<\/p>",
+        "image": "shopify:\/\/shop_images\/homepage_banner_desk_5a394355-a35f-4911-ad68-df2ef1c021df.webp",
+        "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_098b63eb-bcc4-4cd1-9cf1-30c41a61fb0a.webp"
       }
     },
     "main_banner_rJmjKt": {
@@ -296,6 +296,7 @@
             "progress": 87,
             "progress_text": "<p><strong>smoother<\/strong> facial wrinkles and fine lines after 12 weeks.<\/p>",
             "text": "",
+            "feedback_title": "In a Clinical Trial...",
             "feedback_text": "<p><strong>...8 out of 10<\/strong> subjects reported a                                                      significant <strong>reduction in periorbital wrinkles.<\/strong><\/p>",
             "popup_link_text": "Read More About Clinical Study",
             "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged\/photoaged individuals in a split-face single-blinded study.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
@@ -318,6 +319,7 @@
             "progress": 91,
             "progress_text": "<p><strong>improved<\/strong> clarity, smoother texture and skin appearance.<\/p>",
             "text": "",
+            "feedback_title": "In a Clinical Trial...",
             "feedback_text": "<p><strong>...9 out of 10<\/strong> users reported <strong>a                                                         noticeable difference<\/strong> in <strong>skin                                                          texture<\/strong> and <strong>clarify<\/strong> after                                                      treatment.<\/p>",
             "popup_link_text": "",
             "popup_content": ""
@@ -340,6 +342,7 @@
             "progress": 81,
             "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 12 weeks.<\/p>",
             "text": "",
+            "feedback_title": "In a Clinical Trial...",
             "feedback_text": "<p>...Acne count was significantly <strong>reduced by 81%<\/strong> after 12 weeks <\/p>",
             "popup_link_text": "Read More About Clinical Study",
             "popup_content": "<p><strong>After 4 weeks: <\/strong>The mean lesion count reduction was significant at 46%<\/p><p><strong>After 12 weeks: <\/strong>The mean lesion count reduction was also significant at 81%.<\/p><p>Patient and dermatologist assessments were similar. Severe acne showed a marginally better response than mild acne. Side effects were minimal and transitory. Comedones did not respond as well as inflammatory lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted on twenty-four subjects, Fitzpatrick skin types II-V, with mild to severe symmetric facial acne vulgaris. Subjects were treated, alternating between 415 nm blue light and 633 nm red light from a light-emitting diode (LED)-based therapy system. Acne was assessed at baseline and at weeks 2, 4, 8 and 12.<\/p><p><em>Reference: J Cosmet Laser Ther. 2006 Jun;8(2):71-5. doi: 10.1080\/14764170600735912.<\/em><\/p>"
@@ -362,6 +365,7 @@
             "progress": 91,
             "progress_text": "<p><strong>improved<\/strong> skin tone and enhanced smoothness after 12 weeks.<\/p>",
             "text": "",
+            "feedback_title": "In a Clinical Trial...",
             "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion.<\/strong><\/p>",
             "popup_link_text": "Read More About Clinical Study",
             "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
