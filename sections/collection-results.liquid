@@ -85,7 +85,7 @@
                 {%- endfor -%}
             {% endif %}
 
-            <div class="productBlockGrid fixed_height_btn">
+            <div class="productBlockGrid fixed_height_btn" data-product-id="{{ product.id }}">
                 <div class="cus-tag">
                     {% assign amount = 0 %}
                     {% for variant in product.variants %}
@@ -109,7 +109,25 @@
                         {% assign product_url = 'pages/microinfusion' %}
                     {% when 7802903003375 %}
                         {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802880229615 %}
+                        {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802897727727 %}
+                        {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802911981807 %}
+                        {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802905297135 %}
+                        {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802862862575 %}
+                        {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802905297135 %}
+                        {% assign product_url = 'pages/microinfusion' %}
+                    {% when 7802890092783 %}
+                        {% assign product_url = 'pages/microinfusion' %}
                     {% when 8015039496431 %}
+                        {% assign product_url = 'pages/micro-infusion-refill' %}
+                    {% when 8015049621743 %}
+                        {% assign product_url = 'pages/micro-infusion-refill' %}
+                    {% when 8015038873839 %}
                         {% assign product_url = 'pages/micro-infusion-refill' %}
                     {% else %}
                         {% capture product_url %}products/{{ product.handle }}{% endcapture %}
