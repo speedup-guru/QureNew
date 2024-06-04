@@ -207,6 +207,9 @@
       "url": {
         "label": "Button url"
       },
+      "image": {
+        "label": "Button image"
+      },
       "mobile": {
         "label": "Button label mobile"
       }
