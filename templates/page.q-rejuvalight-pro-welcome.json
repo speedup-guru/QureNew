@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "custom-q-rejuvalight-pro-welcome",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
