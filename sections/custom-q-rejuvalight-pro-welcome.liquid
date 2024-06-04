@@ -1,0 +1,122 @@
+<div class="welcome_wrapper section">
+    <div class="container">
+        <div class="section_header text-center ms-0 ms-md-auto">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-xl mb-2 mb-md-5">{{ section.settings.heading }}</h2>
+            {% endif %}
+        </div>
+        <div class="welcome_grid">
+            {%- for block in section.blocks -%}
+                <div class="welcome_item_wrap">
+                    <div class="section_header text-center">
+                        {% if block.settings.heading != blank %}
+                            <h2 class="title-lg">{{ block.settings.heading }}</h2>
+                        {% endif %}
+                    </div>
+                    <div class="welcome_info">
+                        <div class="welcome_item">
+                            {% if block.settings.image != blank %}
+                                <div class="welcome_img">
+                                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="img-fluid">
+                                </div>
+                            {% endif %}
+                            <div class="welcome_desc">
+                                {{ block.settings.text }}
+                            </div>
+                        </div>
+                        <div class="welcome_btns">
+                            <a href="{{ block.settings.button_url }}" class="black_btn">
+                                {% if block.settings.button_image != blank %}
+                                    <span><img src="{{ block.settings.button_image | img_url: 'master' }}" alt=""></span>
+                                {% endif %}
+                                {{ block.settings.button_label }}
+                            </a>
+                            {% if block.settings.button_url_second != blank %}
+                                <div class="or_text">
+                                    <p>or</p>
+                                </div>
+                                <a target="_blank" href="{{ block.settings.button_url_second }}" class="download_btn">
+                                    {% if block.settings.button_image_second != blank %}
+                                        <span><img src="{{ block.settings.button_image_second | img_url: 'master' }}" alt=""></span>
+                                    {% endif %}
+                                    {{ block.settings.button_label_second }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Welcome",
+        "class": "section-welcome",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "button_image",
+                        "label": "t:common.button.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label_second",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url_second",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "button_image_second",
+                        "label": "t:common.button.image.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

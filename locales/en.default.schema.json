@@ -207,6 +207,9 @@
       "url": {
         "label": "Button url"
       },
+      "image": {
+        "label": "Button image"
+      },
       "mobile": {
         "label": "Button label mobile"
       }
@@ -234,7 +237,10 @@
       }
     },
     "feedback": {
-      "label": "Feedback"
+      "label": "Feedback",
+      "title": {
+        "label": "Feedback title"
+      }
     },
     "preorder": {
       "label": "Pre order"
@@ -273,6 +279,11 @@
         },
         "tab": {
           "name": "Tab title changer",
+          "settings": {
+          }
+        },
+        "banner": {
+          "name": "Banner",
           "settings": {
           }
         }
@@ -539,6 +550,13 @@
     },
     "trusted": {
       "name": "Trusted",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "contact-us": {
+      "name": "Contact us",
       "settings": {
       },
       "blocks": {

@@ -16,7 +16,7 @@
         </picture>
     {% endif %}
 
-    <div class="main_b_wrapper bg_gradient_mob text-light">
+    <div class="main_b_wrapper {{ section.settings.image }}">
         <div class="container">
             <div class="row{% if section.settings.align_center == true %} justify-content-center{% endif %}">
                 <div class="col-12 col-md-6 col-sm-8">
@@ -89,6 +89,12 @@
                 "id": "align_center",
                 "label": "t:common.align.center.label",
                 "default": false
+            },
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "bg_gradient_mob text-light"
             }
         ],
         "blocks": [

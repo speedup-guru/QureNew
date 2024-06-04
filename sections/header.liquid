@@ -1,18 +1,18 @@
 <div class="wrapper home-default-wrapper header-wrapperBlock">
-    {% for block in section.blocks limit: 1 %}
-        {%- case block.type -%}
-            {% when 'announcement' %}
-                {% render 'header-announcement-bar', section: section, block: block %}
-            {% when 'announcement-promotion' %}
-                {% render 'promotion-header-announcement-bar', section: section, block: block %}
-        {%- endcase -%}
-    {% endfor %}
     <div id="shopify-section-header" class="shopify-section site-header">
         <div class="header-wrapper">
+            {% for block in section.blocks limit: 1 %}
+                {%- case block.type -%}
+                    {% when 'announcement' %}
+                        {% render 'header-announcement-bar', section: section, block: block %}
+                    {% when 'announcement-promotion' %}
+                        {% render 'promotion-header-announcement-bar', section: section, block: block %}
+                {%- endcase -%}
+            {% endfor %}
             <header>
                 <div class="header-new new-hp-header">
-                    {% render 'header-menu-mobile' %}
-                    {% render 'header-menu-desktop' %}
+                    {% render 'header-menu-mobile', section: section %}
+                    {% render 'header-menu-desktop', section: section %}
                 </div>
             </header>
         </div>
@@ -59,154 +59,6 @@
             {% endif %}
     {%- endcase -%}
 {% endfor %}
-
-<style>
-    @media (min-width:1199px) {
-        .navbar-nav>li>.dropdown-menu {
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-        }
-
-        .header-new {
-            align-items: unset;
-        }
-
-        .header-new .icon-section {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        .header-new .dropdown-menu {
-            width: 100%;
-            min-width: 300px;
-            background-color: #000 !important;
-            z-index: 999;
-            margin: 0;
-            padding-top: 40px;
-            padding-bottom: 50px;
-            padding-left: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-            position: absolute;
-            top: 100% !important;
-            left: 0;
-            transform: translateY(-400px);
-            display: flex !Important;
-        }
-
-        li.dropdown.mega-dropdown:hover ul.dropdown-menu.mega-dropdown-menu {
-            transform: translateY(0);
-        }
-
-        .header-new .dropdown-menu sapn.image {
-            padding-right: 17px;
-        }
-
-        ul.dropdown-menu.mega-dropdown-menu.row a span.text {
-            border-bottom: 1px solid transparent;
-        }
-
-        ul.dropdown-menu.mega-dropdown-menu.row a :hover.text {
-            border-bottom: 1px solid rgb(255 255 255 / 80%);
-        }
-
-        .header-new .menu .dropdown.mega-dropdown li {
-            padding-bottom: 26px;
-            padding-right: 0;
-        }
-
-        .mega-dropdown {
-            position: static !important;
-        }
-
-        .navbar-brand {
-            border-right: 2px solid #eee;
-        }
-
-        .mega-dropdown-menu>li>ul {
-            padding: 0;
-            margin: 0;
-        }
-
-        .mega-dropdown-menu>li>ul>li {
-            list-style: none;
-        }
-
-        .mega-dropdown-menu>li>ul>li>a {
-            display: block;
-            padding: 3px 20px;
-            clear: both;
-            font-weight: normal;
-            line-height: 1.428571429;
-            color: #999;
-            white-space: normal;
-        }
-
-        .mega-dropdown-menu>li>ul>li>a:hover {
-            color: rgb(255 255 255 / 40%);
-            text-decoration: none;
-        }
-
-        .header-new .menu .dropdown-menu a {
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 100%;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
-        }
-
-        .header-new .dropdown-menu .cus-md-6:nth-child(1) {
-            padding-left: 320px;
-            padding-bottom: 0 !important;
-        }
-
-        .header-new .dropdown-menu .cus-md-6:nth-child(2) {
-            padding-left: 75px;
-            border-left: 1px solid rgba(255, 255, 255, 0.15);
-            margin-left: 70px;
-            padding-bottom: 0 !important;
-        }
-
-        .header-new .menu li:last-child a {
-            padding-top: 25px;
-            padding-bottom: 30px;
-        }
-
-        ul.dropdown-menu.mega-dropdown-menu.row a {
-            padding: 0;
-        }
-
-        .has-dropdown {
-            position: relative;
-        }
-
-        .dropdown-nav {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            min-width: 300px;
-            padding: 50px 20px 20px;
-            background: #000;
-            list-style: none;
-            transform: translateY(-330px);
-        }
-
-        .dropdown-nav>li {
-            padding: 10px 0;
-        }
-
-        .has-dropdown:hover .dropdown-nav {
-            transform: translateY(0);
-        }
-
-        .header-new li.dropdown.mega-dropdown a.mega-drop-tag {
-            padding: 15px 0;
-        }
-    }
-</style>
 
 {% schema %}
 {
@@ -285,6 +137,30 @@
                     "type" : "text",
                     "id" : "heading",
                     "label" : "t:common.heading.label"
+                }
+			]
+		},
+		{
+			"type": "banner",
+			"name": "t:sections.header.blocks.banner.name",
+            "limit": 4,
+			"settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image.label"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "default": "Button label",
+                    "label": "t:common.button.label",
+                    "info": "t:common.button.info"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button.url.label"
                 }
 			]
 		}

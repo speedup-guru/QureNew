@@ -107,6 +107,9 @@
         {% assign main_class = 'stocklist' %}
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'become-stocklist.css' | asset_url }}">
+    {% when 'page.q-rejuvalight-pro-welcome' %}
+            {% assign main_class = 'welcome_qure' %}
+            <link rel="stylesheet" href="{{ 'welcome.css' | asset_url }}">
     {% when 'page.why-qurify' %}
         {% assign main_class = 'why_qurify qurify_lp1' %}
         <link rel="stylesheet" href="https://qureskincaredns.com/new/assets/qurify-filter-lp.css">

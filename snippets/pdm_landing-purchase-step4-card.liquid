@@ -1,3 +1,27 @@
+{% comment %} 
+  Render Purchase Step 4 Card with title, value props and dropdown.
+  Accepts: 
+  - productInfo: {Object} - The product data to be rendered (Metafield). 
+  - productData: {Object} - The product data to be rendered (Metafield). 
+  - productData2: {Object} - The product data to be rendered (Metafield). 
+  - cardTypeInfo: {String} - The type of card to be rendered. It can be 'meta' or 'general'. 
+  - checkIcon: {String} - The check icon. 
+  - starIcon: {String} - The star icon. 
+  - generalSettings: {Object} - The general settings of the section. 
+  - crossIcon: {String} - The cross icon. 
+  Usage: 
+  {% render 'pdm_landing-purchase-step4-card' 
+    productInfo: product.metafields.custom.purchase_step_4.value, 
+    productData: product.metafields.custom.purchase_step_4_product_1.value, 
+    productData2: product.metafields.custom.purchase_step_4_product_2.value, 
+    cardTypeInfo: 'meta' 
+    checkIcon: checkIcon, 
+    starIcon: starIcon, 
+  %} 
+{% endcomment %}
+
+{% assign product2_discount = productData2.price | times: 0.80 %}
+
 <div class="step4-purchase-card-container">
   {% if productInfo.popular_text != blank %}
     <div class="step4-card-choise-container">
@@ -37,6 +61,16 @@
         </div>
         {% comment %} value props {% endcomment %}
         <div class="step4-card-value-props__information">
+          <ul>
+            <li>
+              {{- checkIcon -}}
+              <span class="step4-card-value-props__information-price">{{ productData2.price |  money_without_trailing_zeros  }}</span>
+              <span class="step4-card-value-props__information-discount"> {{ product2_discount | money_without_trailing_zeros }}</span>
+              <span>
+                {{ productInfo.subscription_delivery }}
+              </span>
+            </li>
+          </ul>
           {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon }}
         </div>
       {% else %}
