@@ -127,6 +127,9 @@
         "before_and_after_PgL8Xi",
         "video_before_and_after_acJ7Q6"
       ],
+      "custom_css": [
+        ".panel__container {min-width: auto !important;}"
+      ],
       "settings": {
         "top_heading": "<h5>TRANSFORM YOUR <strong>FACIAL ROUTINE:<\/strong><\/h5>",
         "heading": "Wash Your Way To Clearer, Hydrated Skin with Q-urify Water Filter",
@@ -142,36 +145,31 @@
         "image_AMBy9U": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.svg",
-            "mobile_hide": false
+            "image": "shopify:\/\/shop_images\/vogue.svg"
           }
         },
         "image_NB4fUW": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
-            "mobile_hide": false
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg"
           }
         },
         "image_YPX4TP": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
-            "mobile_hide": false
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png"
           }
         },
         "image_KLcVe7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glamour.svg",
-            "mobile_hide": true
+            "image": "shopify:\/\/shop_images\/glamour.svg"
           }
         },
         "image_irDGaY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grazia.svg",
-            "mobile_hide": true
+            "image": "shopify:\/\/shop_images\/grazia.svg"
           }
         }
       },
@@ -186,7 +184,6 @@
         ".press_bl {background-color: rgb(251 251 251) !important;}"
       ],
       "settings": {
-        "heading": ""
       }
     },
     "clinicallyproven": {
