@@ -20,9 +20,14 @@
                         {% endif %}
                         <p class="text-sm fw-normal">{{ section.settings.rating_text }}</p>
                     </div>
-                    <div class="section_header text-center text-md-start">
+
+                    <div class="section_header">
+                        {% if section.settings.top_heading != blank %}
+                            {{ section.settings.top_heading |  replace: '<h5>', '<h5 class="subheading">'  }}
+                        {% endif %}
                         <h2 class="title-lg">{{ section.settings.heading }}</h2>
                     </div>
+
                     <div class="ss_list mw-452 pt-2 pb-4 d-none d-md-block">
                         {{ section.settings.text }}
                     </div>
@@ -131,6 +136,11 @@
         "name": "Main",
         "class": "section-main",
         "settings": [
+            {
+                "type": "richtext",
+                "id": "top_heading",
+                "label": "t:common.heading.label"
+            },
             {
                 "type": "text",
                 "id": "heading",
