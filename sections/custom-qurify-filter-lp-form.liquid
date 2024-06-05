@@ -60,11 +60,14 @@
             <div class="col-md-6 order-1 order-md-2">
                 <div class="tq_info">
                     <div class="refill_review justify-content-start">
-                        {% if section.settings.rating_image != blank %}
+                        <div class="green_tag">
+                            <p>IN A STUDY...</p>
+                        </div>
+                        {% comment %} {% if section.settings.rating_image != blank %}
                             <div class="star_gp">
                                 <img src="{{ section.settings.rating_image | img_url: 'master' }}" alt="">
                             </div>
-                        {% endif %}
+                        {% endif %} {% endcomment %}
                         <p class="text-sm fw-normal">{{ section.settings.rating_text }}</p>
                     </div>
                     <div class="section_header ps-0 pb-0 pt-3 ms-0">
