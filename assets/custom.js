@@ -82,20 +82,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    //https://www.qureskincare.com/pages/q-urify-water-filter-guide
-    var links = document.querySelectorAll('a[href*="#step"]');
-    
-    links.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            var href = link.getAttribute('href');
-            if (href && href.match(/#step[1-9]|#step10/)) {
-                event.preventDefault();
-                var stepHash = href.split('#')[1];
-                triggerClick('.' + stepHash);
-                window.was_clicked[stepHash] = true;
-            }
+    if (window.location.href.includes("/pages/q-urify-water-filter-guide")) {
+        document.querySelector('#hs_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step6');
         });
-    });
+        document.querySelector('#hs_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step8');
+        });
+        document.querySelector('#hs_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step10');
+        });
+        document.querySelector('#hsm_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step6');
+            triggerClick('.hamburger-container');
+        });
+        document.querySelector('#hsm_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step8');
+            triggerClick('.hamburger-container');
+        });
+        document.querySelector('#hsm_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step10');
+            triggerClick('.hamburger-container');
+        });
+    }
 });
 
 function triggerClick(selector) {
