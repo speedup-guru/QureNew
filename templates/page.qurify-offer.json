@@ -128,7 +128,8 @@
         "video_before_and_after_acJ7Q6"
       ],
       "custom_css": [
-        "@media (min-width: 767px) {.panel__container {min-width: 551px !important; }}"
+        "@media (min-width: 767px) {.panel__container {min-width: 551px !important; }}",
+        ".img-fluid {border-radius: unset !important;}"
       ],
       "settings": {
         "top_heading": "<h5>TRANSFORM YOUR <strong>FACIAL ROUTINE:<\/strong><\/h5>",
