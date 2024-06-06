@@ -1086,6 +1086,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Select the green product sticky button element
   const greenProductStickyBtn = document.querySelector('#green-product-sticky-btn');
+  const greenProductStickyFormBtn = document.querySelector('#green-product-sticky-form-btn');
 
   /**
    * Centers the given button horizontally within the window.
@@ -1105,6 +1106,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Re-center the button when the window is resized
     window.onresize = () => centerGreenBtn(greenProductStickyBtn);
   }
+
+  if (greenProductStickyFormBtn) {
+    // Center the button initially
+    centerGreenBtn(greenProductStickyFormBtn);
+    // Re-center the button when the window is resized
+    window.onresize = () => centerGreenBtn(greenProductStickyFormBtn);
+  }
+
 
   /* end QR- Shopify 2.0 Features Adjustments  */
 });
