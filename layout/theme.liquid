@@ -5,7 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
-    <link rel="canonical" href="{{ canonical_url }}">
+    {% if template contains 'product' and product.metafields.custom.custom_canonical_url != blank %}
+        <link rel="canonical" href="{{ product.metafields.custom.custom_canonical_url }}">
+    {% elsif template contains 'collection' and collection.metafields.custom.custom_canonical_url %}
+        <link rel="canonical" href="{{ collection.metafields.custom.custom_canonical_url }}">
+    {% else %}
+        <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
     <meta name="p:domain_verify" content="67d2a1408f84408a05deffe883a0a523"/>
     <meta name="google-site-verification" content="eJrHRDM9bifPc8Nf-ycIg275f3KrlSoWEHd5VM5M9LQ" />
     <meta name="google-site-verification" content="N0QF9SQ35xUa1DQifP7jZgs_z2odMQBZlSB4L7n5fl4" /> 
@@ -20,9 +26,6 @@
       {% if current_page != 1 %}
         &ndash; {{ 'general.meta.page' | t: page: current_page }}
       {% endif %}
-      {% unless page_title contains shop.name %}
-       &ndash; {{ shop.name }}
-      {% endunless %}
     {% endcapture %}
 
     <title>{{ seo_title }}</title>
