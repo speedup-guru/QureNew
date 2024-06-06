@@ -1087,32 +1087,29 @@ document.addEventListener('DOMContentLoaded', function() {
   // Select the green product sticky button element
   const greenProductStickyBtn = document.querySelector('#green-product-sticky-btn');
   const greenProductStickyFormBtn = document.querySelector('#green-product-sticky-form-btn');
-
+  
   /**
    * Centers the given button horizontally within the window.
    * @param {HTMLElement} btn - The button element to be centered.
    */
   const centerGreenBtn = (btn) => {
-    // Calculate the total left offset to center the button
-    const totalLeft = (window.innerWidth - btn.offsetWidth) / 2;
-    // Set the calculated left offset as the button's left CSS property
-    btn.style.left = `${totalLeft}px`;
+    if (btn) {
+      // Calculate the total left offset to center the button
+      const totalLeft = (window.innerWidth - btn.offsetWidth) / 2;
+      // Set the calculated left offset as the button's left CSS property
+      btn.style.left = `${totalLeft}px`;
+    }
   };
-
-  // Check if the green product sticky button element exists
-  if (greenProductStickyBtn) {
-    // Center the button initially
+  
+  // Center the buttons initially
+  centerGreenBtn(greenProductStickyBtn);
+  centerGreenBtn(greenProductStickyFormBtn);
+  
+  // Re-center the buttons when the window is resized
+  window.onresize = () => {
     centerGreenBtn(greenProductStickyBtn);
-    // Re-center the button when the window is resized
-    window.onresize = () => centerGreenBtn(greenProductStickyBtn);
-  }
-
-  if (greenProductStickyFormBtn) {
-    // Center the button initially
     centerGreenBtn(greenProductStickyFormBtn);
-    // Re-center the button when the window is resized
-    window.onresize = () => centerGreenBtn(greenProductStickyFormBtn);
-  }
+  };
 
 
   /* end QR- Shopify 2.0 Features Adjustments  */
