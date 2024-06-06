@@ -60,10 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    //https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide
+    
 
     if (window.location.hash) {
         switch (window.location.hash) {
+            //https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide
             case '#how-to-use':
                 triggerClick('.how-to-use');
                 break;
@@ -80,6 +81,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
         }
     }
+
+    //https://www.qureskincare.com/pages/q-urify-water-filter-guide
+    var links = document.querySelectorAll('a[href*="#step"]');
+    
+    links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            var href = link.getAttribute('href');
+            if (href && href.match(/#step[1-9]|#step10/)) {
+                event.preventDefault();
+                var stepHash = href.split('#')[1];
+                triggerClick('.' + stepHash);
+                window.was_clicked[stepHash] = true;
+            }
+        });
+    });
 });
 
 function triggerClick(selector) {
