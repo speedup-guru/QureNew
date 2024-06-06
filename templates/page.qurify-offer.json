@@ -6,8 +6,8 @@
         "announcement_68YDyx": {
           "type": "announcement",
           "settings": {
-            "heading": "Subscribe & SAVE $30 | 30-Day Money-Back Guarantee",
-            "heading_mobile": "Subscribe & SAVE $30 | 30-Day Money-Back Guarantee"
+            "heading": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee",
+            "heading_mobile": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee"
           }
         },
         "navigation_link_enLf8t": {
@@ -83,7 +83,7 @@
             "image_product_3": "shopify:\/\/shop_images\/qurify-product-7.webp",
             "image_product_text_3": "",
             "video_wistia_id_3": "",
-            "image_product_4": "shopify:\/\/shop_images\/filter-lp.gif",
+            "image_product_4": "shopify:\/\/shop_images\/filter2.gif",
             "image_product_text_4": "",
             "video_wistia_id_4": "",
             "image_product_5": "shopify:\/\/shop_images\/qurify-product-4.webp",
@@ -127,6 +127,10 @@
         "before_and_after_PgL8Xi",
         "video_before_and_after_acJ7Q6"
       ],
+      "custom_css": [
+        "@media (min-width: 767px) {.panel__container {min-width: 551px !important; }}",
+        ".img-fluid {border-radius: unset !important;}"
+      ],
       "settings": {
         "top_heading": "<h5>TRANSFORM YOUR <strong>FACIAL ROUTINE:<\/strong><\/h5>",
         "heading": "Wash Your Way To Clearer, Hydrated Skin with Q-urify Water Filter",
@@ -142,36 +146,31 @@
         "image_AMBy9U": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue.svg",
-            "mobile_hide": false
+            "image": "shopify:\/\/shop_images\/vogue.svg"
           }
         },
         "image_NB4fUW": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
-            "mobile_hide": false
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg"
           }
         },
         "image_YPX4TP": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
-            "mobile_hide": false
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png"
           }
         },
         "image_KLcVe7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glamour.svg",
-            "mobile_hide": true
+            "image": "shopify:\/\/shop_images\/glamour.svg"
           }
         },
         "image_irDGaY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grazia.svg",
-            "mobile_hide": true
+            "image": "shopify:\/\/shop_images\/grazia.svg"
           }
         }
       },
@@ -186,7 +185,6 @@
         ".press_bl {background-color: rgb(251 251 251) !important;}"
       ],
       "settings": {
-        "heading": ""
       }
     },
     "clinicallyproven": {
@@ -807,7 +805,7 @@
       "settings": {
         "heading": "Get clearer skin in just 1 single step",
         "text": "<p>The Only Step: Attach the Filter<\/p><p>Follow the included instructions to securely attach the filter to your faucet. Then wash your face morning and night with your preferred cleanser and Q-urified water and enjoy smoother, more hydrated skin after just a few weeks of consistent use.<\/p><p>Check <a href=\"https:\/\/crm.aronwebsolutions.com\/Qure-Html-2.0\/Qure-Html-2.0\/qurify-water-filter-lp.html#faucet_faq\">here<\/a> to see if Q-urify Water Filter is compatible with your faucet.<\/p>",
-        "image": "shopify:\/\/shop_images\/filter-lp.gif"
+        "image": "shopify:\/\/shop_images\/filter2.gif"
       }
     },
     "myfaucet": {
