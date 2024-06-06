@@ -111,6 +111,36 @@ document.addEventListener('DOMContentLoaded', function() {
             triggerClick('.hamburger-container');
         });
     }
+
+    if (window.location.href.includes("/pages/microinfusion-safety-guide")) {
+        document.querySelector('#hs_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step6');
+        });
+        document.querySelector('#hs_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step4');
+        });
+        document.querySelector('#hs_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step10');
+        });
+        document.querySelector('#hsm_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step6');
+            triggerClick('.hamburger-container');
+        });
+        document.querySelector('#hsm_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step4');
+            triggerClick('.hamburger-container');
+        });
+        document.querySelector('#hsm_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step10');
+            triggerClick('.hamburger-container');
+        });
+    }
 });
 
 function triggerClick(selector) {
