@@ -59,4 +59,38 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    //https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide
+
+    if (window.location.hash) {
+        switch (window.location.hash) {
+            case '#how-to-use':
+                triggerClick('.how-to-use');
+                break;
+            case '#getting-started':
+                triggerClick('.getting-started');
+                break;
+            case '#troubleshooting':
+                triggerClick('.troubleshooting');
+                break;
+            case '#take-care':
+                triggerClick('.take-care');
+                break;
+            default:
+                break;
+        }
+    }
 });
+
+function triggerClick(selector) {
+    var event = new Event('click', {
+        'bubbles': true,
+        'cancelable': true
+    });
+    var element = document.querySelector(selector);
+    if (element) {
+        element.dispatchEvent(event);
+    } else {
+        console.warn('Element with selector ' + selector + ' not found.');
+    }
+}
