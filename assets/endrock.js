@@ -1092,7 +1092,7 @@ document.addEventListener('DOMContentLoaded', function() {
    * Centers the given button horizontally within the window.
    * @param {HTMLElement} btn - The button element to be centered.
    */
-  const centerGreenBtn = (btn) => {
+  const centerStickyButtonProductHorizontally = (btn) => {
     if (btn) {
       // Calculate the total left offset to center the button
       const totalLeft = (window.innerWidth - btn.offsetWidth) / 2;
@@ -1102,13 +1102,13 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   
   // Center the buttons initially
-  centerGreenBtn(greenProductStickyBtn);
-  centerGreenBtn(greenProductStickyFormBtn);
+  centerStickyButtonProductHorizontally(greenProductStickyBtn);
+  centerStickyButtonProductHorizontally(greenProductStickyFormBtn);
   
   // Re-center the buttons when the window is resized
   window.onresize = () => {
-    centerGreenBtn(greenProductStickyBtn);
-    centerGreenBtn(greenProductStickyFormBtn);
+    centerStickyButtonProductHorizontally(greenProductStickyBtn);
+    centerStickyButtonProductHorizontally(greenProductStickyFormBtn);
   };
 
 
