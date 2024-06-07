@@ -1,82 +1,84 @@
 /* 
 * Common JS Start
 */
-
-var TwaSettingsSwiper = {
-    init: function () {
-        this.TwaSettingsCarousel();
-    },
-    TwaSettingsCarousel: function () {
-        document.querySelectorAll(".twa__swiper").forEach((e => {
-            this.TwaCarousel(e);
-        }))
-    },
-    TwaCarousel: function (e) {
-        var t = "true" === e?.dataset.autoplay,
-            n = "true" === e.dataset.loop,
-            w = e?.dataset.rows ? e?.dataset.row : 1,
-            o = e?.dataset.slideshow ? e?.dataset.slideshow : 0,
-            i = e?.dataset.desktop ? e?.dataset.desktop : 4,
-            s = e?.dataset.tablet ? e?.dataset.tablet : 2,
-            r = e?.dataset.mobile ? e?.dataset.mobile : 1,
-            a = e?.dataset.autoplaySpeed ? e?.dataset.autoplaySpeed : 3e3,
-            c = e?.dataset.speed ? e?.dataset.speed : 400,
-            l = e?.dataset.effect ? e?.dataset.effect : "slide",
-            d = e?.dataset.sectionId,
-            u = e?.dataset.row ? e?.dataset.row : 1,
-            ut = e?.dataset.rowtablet ? e?.dataset.rowtablet : 1,
-            um = e?.dataset.rowmobile ? e?.dataset.rowmobile : 1,
-            p = window.innerWidth,
-            m = e?.dataset.spacing ? e?.dataset.spacing : 0;
-        cs = "true" === e.dataset.centerslide,
-            al = e?.dataset.arrowleft ? e?.dataset.arrowleft : "swiper-button-prev",
-            ar = e?.dataset.arrowright ? e?.dataset.arrowright : "swiper-button-next",
-            m = Number(m), a = Number(a), c = Number(c), p <= 767 ? m >= 15 && (m = 15) : p <= 1199 && m >= 30 && (m = 30), new Swiper("#twa__swiper-" + d, {
-                slidesPerView: r,
-                slidesPerColumn: w,
-                spaceBetween: m,
-                centeredSlides: cs,
-                autoplay: t,
-                delay: a,
-                loop: n,
-                effect: l,
-                speed: c,
-                watchSlidesProgress: !0,
-                watchSlidesVisibility: !0,
-                lazy: true,
-                grid: {
-                    rows: um,
-                    fill: "row"
-                },
-                navigation: {
-                    nextEl: `.${ar}`,
-                    prevEl: `.${al}`,
-                },
-                pagination: {
-                    clickable: !0,
-                    el: e.querySelector(".swiper-pagination")
-                },
-                breakpoints: {
-                    768: {
-                        slidesPerView: s,
-                        centeredSlides: cs,
-                        grid: {
-                            rows: ut,
-                            fill: "row"
-                        }
+setTimeout(function () {
+    var TwaSettingsSwiper = {
+        init: function () {
+            this.TwaSettingsCarousel();
+        },
+        TwaSettingsCarousel: function () {
+            document.querySelectorAll(".twa__swiper").forEach((e => {
+                this.TwaCarousel(e);
+            }))
+        },
+        TwaCarousel: function (e) {
+            var t = "true" === e?.dataset.autoplay,
+                n = "true" === e.dataset.loop,
+                w = e?.dataset.rows ? e?.dataset.row : 1,
+                o = e?.dataset.slideshow ? e?.dataset.slideshow : 0,
+                i = e?.dataset.desktop ? e?.dataset.desktop : 4,
+                s = e?.dataset.tablet ? e?.dataset.tablet : 2,
+                r = e?.dataset.mobile ? e?.dataset.mobile : 1,
+                a = e?.dataset.autoplaySpeed ? e?.dataset.autoplaySpeed : 3e3,
+                c = e?.dataset.speed ? e?.dataset.speed : 400,
+                l = e?.dataset.effect ? e?.dataset.effect : "slide",
+                d = e?.dataset.sectionId,
+                u = e?.dataset.row ? e?.dataset.row : 1,
+                ut = e?.dataset.rowtablet ? e?.dataset.rowtablet : 1,
+                um = e?.dataset.rowmobile ? e?.dataset.rowmobile : 1,
+                p = window.innerWidth,
+                m = e?.dataset.spacing ? e?.dataset.spacing : 0;
+            cs = "true" === e.dataset.centerslide,
+                al = e?.dataset.arrowleft ? e?.dataset.arrowleft : "swiper-button-prev",
+                ar = e?.dataset.arrowright ? e?.dataset.arrowright : "swiper-button-next",
+                m = Number(m), a = Number(a), c = Number(c), p <= 767 ? m >= 15 && (m = 15) : p <= 1199 && m >= 30 && (m = 30), new Swiper("#twa__swiper-" + d, {
+                    slidesPerView: r,
+                    slidesPerColumn: w,
+                    spaceBetween: m,
+                    centeredSlides: cs,
+                    autoplay: t,
+                    delay: a,
+                    loop: n,
+                    effect: l,
+                    speed: c,
+                    watchSlidesProgress: !0,
+                    watchSlidesVisibility: !0,
+                    lazy: true,
+                    grid: {
+                        rows: um,
+                        fill: "row"
                     },
-                    1199: {
-                        slidesPerView: i,
-                        grid: {
-                            rows: u,
-                            fill: "row"
+                    navigation: {
+                        nextEl: `.${ar}`,
+                        prevEl: `.${al}`,
+                    },
+                    pagination: {
+                        clickable: !0,
+                        el: e.querySelector(".swiper-pagination")
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: s,
+                            centeredSlides: cs,
+                            grid: {
+                                rows: ut,
+                                fill: "row"
+                            }
+                        },
+                        1199: {
+                            slidesPerView: i,
+                            grid: {
+                                rows: u,
+                                fill: "row"
+                            }
                         }
                     }
-                }
-            })
-    }
-};
-TwaSettingsSwiper.init();
+                })
+        }
+    };
+    TwaSettingsSwiper.init();
+}, 500);
+
 
 //Header
 function hdrHeight() {
@@ -201,7 +203,7 @@ window.addEventListener('load', function () {
 // =================================== js for same height ===============================
 $(function () {
     //setTimeout(function () {
-    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img, .q_water_card').matchHeight({
+    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img').matchHeight({
         property: 'height',
         target: null,
         remove: false
@@ -324,8 +326,8 @@ var swiper = new Swiper(".result_slider", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-arrowResult-next",
-        prevEl: ".swiper-arrowResult-prev",
+        nextEl: ".qureSlider-swiper-next",
+        prevEl: ".qureSlider-swiper-prev",
     },
     breakpoints: {
         556: {
@@ -485,9 +487,12 @@ $(function () {
 
 
 // navbar
-$('.hamburger-container').click(function () {
-    $('body').toggleClass("openmenu");
-});
+setTimeout(function () {
+    $('.hamburger-container').click(function () {
+        $('body').toggleClass("openmenu");
+    });
+}, 500);
+
 
 
 $(".expand-content").click(function () {
@@ -517,10 +522,10 @@ $(".hamburger-container").on("click", function () {
     }
 });
 
-// $("#menu li > a").click(function () {
-//     $('body').removeClass("openmenu");
-//     bottomBar.removeClass("hidden");
-// })
+$("#menu li > a").click(function () {
+    $('body').removeClass("openmenu");
+    bottomBar.removeClass("hidden");
+})
 
 
 // // Tab Slider 
@@ -1058,7 +1063,7 @@ $('.subscriptionType').click(function () {
 /*
 * Ingredients Slider Start
 */
-var swiper = new Swiper(".ingredients_slider", {
+var swiper = new Swiper(".ingredients_slider1", {
     slidesPerView: 4.5,
     grid: {
         rows: 1,
@@ -1466,24 +1471,26 @@ listItems.forEach(function (item) {
 
 
 //  why should qurify your water start -- show more accordion
-
-if (window.matchMedia("(max-width: 767px)").matches) {
-    const qwCard = document.querySelectorAll(".qwCard_expandable");
-    qwCard.forEach((story) => {
-        const button = story.querySelector(".qwCard__accordion");
-        button.addEventListener("click", () => {
-            const paragraph = story.querySelector(".qwCard__hidden-div");
-            const more_text = button.getAttribute("data-more") || "Show More..";
-            const less_text = button.getAttribute("data-less") || "Show Less..";
-            paragraph.classList.toggle("hidden");
-            const text = paragraph.classList.contains("hidden")
-                ? more_text
-                : less_text;
-            button.textContent = text;
+function handleExpandableCards() {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        const qwCard = document.querySelectorAll(".qwCard_expandable");
+        qwCard.forEach((story) => {
+            const button = story.querySelector(".qwCard__accordion");
+            button.addEventListener("click", () => {
+                const paragraph = story.querySelector(".qwCard__hidden-div");
+                const more_text = button.getAttribute("data-more") || "Show More..";
+                const less_text = button.getAttribute("data-less") || "Show Less..";
+                paragraph.classList.toggle("hidden");
+                const text = paragraph.classList.contains("hidden")
+                    ? more_text
+                    : less_text;
+                button.textContent = text;
+            });
         });
-    });
+    }
 }
-
+handleExpandableCards();
+window.addEventListener('resize', handleExpandableCards);
 
 // affect your skin start
 const swiperAffect = new Swiper(".swiper-containerAffect", {
@@ -1524,3 +1531,20 @@ function swiperQWater() {
 }
 swiperQWater();
 window.addEventListener("resize", swiperQWater);
+
+
+//animation progress js
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animation_active');
+                observer.unobserve(entry.target); // Stop observing after the animation has been triggered once
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+    document.querySelectorAll('.user_report_wrap').forEach(section => {
+        observer.observe(section);
+    });
+});
