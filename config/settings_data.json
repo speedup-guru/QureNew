@@ -73,6 +73,22 @@
               "button_label": "See Micro-Infusion [Detailed Guide]",
               "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion-safety-guide"
             }
+          },
+          "banner_jibKaz": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_drop1.webp",
+              "button_label": "Shop [Micro-Infusion]: reduce look of wrinkles",
+              "button_url": "https:\/\/www.qureskincare.com\/pages\/microinfusion"
+            }
+          },
+          "banner_pe7PzR": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_drop2.webp",
+              "button_label": "Discover our [Best Selling] Products",
+              "button_url": "shopify:\/\/collections\/best-sellers"
+            }
           }
         },
         "block_order": [
@@ -81,7 +97,9 @@
           "banner_BeVKei",
           "banner_jrcxU4",
           "banner_CiNYWN",
-          "banner_9fKdQK"
+          "banner_9fKdQK",
+          "banner_jibKaz",
+          "banner_pe7PzR"
         ],
         "settings": {
         }

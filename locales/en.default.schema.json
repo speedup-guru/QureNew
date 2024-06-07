@@ -334,6 +334,13 @@
       "blocks": {
       }
     },
+    "header-landing-simple": {
+      "name": "Header landing simple",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "collection": {
       "name": "Collection",
       "settings": {

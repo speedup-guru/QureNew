@@ -335,8 +335,11 @@
         "result_cnAJAh",
         "result_TNjrMA"
       ],
+      "custom_css": [
+        ".section_header .title-lg {max-width: 480px;}"
+      ],
       "settings": {
-        "heading": "Clean Water , Clear Skinwith Q-urify Water Filter",
+        "heading": "Clean Water, Clear Skin with Q-urify Water Filter",
         "text": "<p>A dermatologist-reviewed water filter that improves skin hydration in just 14 days. (AKA, the new “step zero” of your skincare routine.)<\/p>"
       }
     },

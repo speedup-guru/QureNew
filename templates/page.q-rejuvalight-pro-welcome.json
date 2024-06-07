@@ -1,5 +1,46 @@
 {
   "sections": {
+    "header_landing_simple_zFxaEH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_T4mJ8V": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO USE",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/q-rejuvalight-pro-LED-mask-guide#how-to-use"
+          }
+        },
+        "navigation_link_LteKNY": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "QURE APP",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/q-rejuvalight-pro-LED-mask-guide#getting-started"
+          }
+        },
+        "navigation_link_bzjzjf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "TROUBLESHOOT",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/q-rejuvalight-pro-LED-mask-guide#troubleshooting"
+          }
+        },
+        "navigation_link_4nUk64": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CARE",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/q-rejuvalight-pro-LED-mask-guide#take-care"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_T4mJ8V",
+        "navigation_link_LteKNY",
+        "navigation_link_bzjzjf",
+        "navigation_link_4nUk64"
+      ],
+      "settings": {
+      }
+    },
     "main": {
       "type": "custom-q-rejuvalight-pro-welcome",
       "blocks": {
@@ -40,6 +81,7 @@
     }
   },
   "order": [
+    "header_landing_simple_zFxaEH",
     "main"
   ]
 }
