@@ -167,7 +167,7 @@
             "type": "gift",
             "settings": {
               "product": "micro-infusion-targeted-patches-single",
-              "price_limit": "200",
+              "price_limit": "150",
               "quantity": "2",
               "discount": "FREEPATCH",
               "disable": true
