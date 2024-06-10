@@ -453,6 +453,13 @@
       "blocks": {
       }
     },
+    "featuredin-extended": {
+      "name": "FeaturedIn extended",
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
     "uses": {
       "name": "Uses",
       "settings": {

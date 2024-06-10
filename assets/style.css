@@ -30115,7 +30115,7 @@ p {
 
 .title-xl {
     font-size: 42px;
-    line-height: 50px;
+    line-height: 55px;
     font-weight: 500;
     letter-spacing: 0.16px;
     font-family: 'Canela Web';
@@ -30414,6 +30414,10 @@ p {
     max-width: 394px !important;
 }
 
+.mw-402 {
+    max-width: 402px !important;
+}
+
 .mw-421 {
     max-width: 421px;
 }
@@ -30422,8 +30426,16 @@ p {
     max-width: 423px;
 }
 
+.mw-427 {
+    max-width: 427px;
+}
+
 .mw-452 {
     max-width: 452px;
+}
+
+.mw-455 {
+    max-width: 455px !important;
 }
 
 .mw-464 {
@@ -30618,17 +30630,22 @@ p {
         padding: 0 !important;
         display: flex;
         align-items: flex-start;
-        gap: 4px;
-        margin: 4px 0px 0px 4px;
+        gap: 5px;
+        /* margin: 4px 0px 0px 4px; */
+    }
+
+    .payment_method .pmt_img img:not(:last-child) {
+        padding-right: 0px !important;
     }
 
     .pmt_img img {
-        max-width: 31px;
+        /* max-width: 31px; */
+        max-width: 37px;
     }
 
-    .payment_method {
+    /* .payment_method {
         align-items: flex-start !important;
-    }
+    } */
 }
 
 @media (max-width: 420px) {
@@ -30657,6 +30674,34 @@ p {
     width: 14px;
 }
 
+.pagination_navigation {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    max-width: 440px;
+    margin: 20px auto;
+}
+
+.pagination_navigation .swiper-pagination {
+    padding-top: 0 !important;
+    top: 0;
+    margin: 20px 0;
+}
+
+.pagination_navigation .swiper-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dot_pagination .pagination_navigation .swiper-pagination-bullet {
+    margin: 0 11px !important;
+    height: 14px;
+    width: 14px;
+}
+
 @media (max-width: 767px) {
     .dot_pagination .swiper-pagination {
         padding-top: 20px;
@@ -30670,10 +30715,19 @@ p {
         padding-top: 30px;
     }
 
-    .dot_pagination .swiper-pagination-bullet {
+    .dot_pagination .swiper-pagination-bullet,
+    .dot_pagination .pagination_navigation .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
         margin: 0 4px !important;
+    }
+
+    .pagination_navigation .swiper-pagination {
+        margin: 0;
+    }
+
+    .pagination_navigation .swiper-button {
+        display: none
     }
 }
 
@@ -32049,7 +32103,7 @@ picture img {
     margin: 0;
 }
 
-.OKwUu {
+.animation_active .OKwUu {
     animation: progress-animation 3s ease-in-out;
 }
 
