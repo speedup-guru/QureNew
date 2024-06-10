@@ -107,7 +107,7 @@
     display: block;
     font-size: 14px;
     line-height: 15px;
-    color: rgba(77, 77, 77, 0.5);
+    color: #4E4E4E;
     user-select: none;
     cursor: text;
     font-weight: 300;
@@ -164,11 +164,7 @@
 }
 
 /* ---------------------- giveaway form end -------------------- */
-@media(min-width:1199px) {
-    .header-new .menu li {
-        padding-right: 22px;
-    }
-}
+
 
 @media(max-width:1200px) {
     .giveaway_header .giveaway_price .g_p_currency {
