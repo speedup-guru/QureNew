@@ -35,7 +35,7 @@
                                     {% when 'link' %}
                                         {% if block.settings.image %}
                                             <div style="padding-bottom: 10px">
-                                                <a href="{{ block.settings.link_url }}" target="_blank"><img src="{{ block.settings.image | img_url: '200x' }}" alt="link"></a>
+                                                <a href="{{ block.settings.link_url }}" target="_blank" rel="nofollow"><img src="{{ block.settings.image | img_url: '200x' }}" alt="link"></a>
                                             </div>
                                         {% endif %}
                                 {%- endcase -%}

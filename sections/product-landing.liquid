@@ -45,7 +45,7 @@
                 <div class="refill_info pt-0 pt-md-3">
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
-                            <h2 class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h2> 
+                            <h1 class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h1>
                         {% endif %}
                         {% if section.settings.heading_mobile != blank %}
                             <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile | replace: '\n', '<br />' }}</h2>
@@ -172,7 +172,7 @@
                                         {% endif %}
                                     {% endif %}
                                     <div class="play_btn">
-                                        <a class="popup-youtube" href="{{ video_source_url }}">
+                                        <a class="popup-youtube" href="{{ video_source_url }}" rel="nofollow">
                                             <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
                                                 <h6>{{ block.settings.video_label }}</h6>
                                             </span>

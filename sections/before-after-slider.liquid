@@ -3,9 +3,9 @@
     <div class="container">
         {% if section.settings.heading %}
             <div class="section_header text-center">
-                <h2 class="title-lg pb-2">
+                <{{ section.settings.title_tag }} class="title-lg pb-2">
                     {{ section.settings.heading }}
-                </h2>
+                </{{ section.settings.title_tag }}>
                 {% if section.settings.text %}
                     {{ section.settings.text }}
                 {% endif %}
@@ -195,6 +195,27 @@
                 "type": "text",
                 "id": "heading",
                 "label": "t:common.heading.label"
+            },
+            {
+                "type": "select",
+                "id": "title_tag",
+                "label": "Title HTML tag",
+                "info": "It's recommended to have only one h1 html tag per page",
+                "options": [
+                    {
+                        "label": "h1",
+                        "value": "h1"
+                    },
+                    {
+                        "label": "h2",
+                        "value": "h2"
+                    },
+                    {
+                        "label": "h3",
+                        "value": "h3"
+                    }
+                ],
+                "default": "h2"
             },
             {
                 "type": "richtext",

@@ -36,7 +36,7 @@
 
                         {% if section.settings.video_url != blank %}
                             <div class="play_btn">
-                                <a class="popup-youtube" href="{{ section.settings.video_url }}">
+                                <a class="popup-youtube" rel="nofollow"  href="{{ section.settings.video_url }}">
                                     <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
                                         <h6>{{ section.settings.video_label }}</h6>
                                     </span>
