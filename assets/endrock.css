@@ -709,6 +709,7 @@
     max-width: 550px;
     margin: 0 auto 40px;
   }
+
   .cross-sell .cross-sell__products {
     display: flex;
     flex-direction: column;
@@ -814,6 +815,13 @@
     .cross-sell .cross-sell__product-content--title.small-text {
       font-size: 14px;
     }
+  }
+  @media screen and (min-width: 992px) {
+  /* Just for microinfusion page */
+    body[class~="page.sunil-micro-infusion-pdp"] .cross-sell {
+      margin: 0 0 40px 40px;
+    } 
+  /* Just for microinfusion page */
   }
 /* CROSS SELL END */
 

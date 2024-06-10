@@ -59,7 +59,7 @@
     "main": {
       "type": "product-landing-sales",
       "settings": {
-        "heading": "<h3>EXCLUSIVE <strong>HOLIDAY<\/strong> BUNDLES<\/h3><h2>Save Up To 55%<\/h2>",
+        "heading": "<h3>EXCLUSIVE <strong>HOLIDAY<\/strong> BUNDLES<\/h3><h3>Save Up To 55%<\/h3>",
         "image": "shopify:\/\/shop_images\/holiday_banner_desk.webp",
         "image_mobile": "shopify:\/\/shop_images\/holiday_banner_mob.webp",
         "button_label": "Shop now",

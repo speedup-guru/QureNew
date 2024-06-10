@@ -23,16 +23,16 @@
                 {% if section.settings.social_show %}
                     <div class="social_icons">
                         {% if settings.social_instagram_link != blank %}
-                            <a href="{{ settings.social_instagram_link }}" target="_blank"><img src="{{ 'instagram.svg' | asset_url }}" alt=""></a>
+                            <a href="{{ settings.social_instagram_link }}" target="_blank" rel="nofollow"><img src="{{ 'instagram.svg' | asset_url }}" alt=""></a>
                         {% endif %}
                         {% if settings.social_tiktok_link != blank %}
-                            <a href="{{ settings.social_tiktok_link }}" target="_blank"> <img src="{{ 'tiktok.svg' | asset_url }}" alt=""></a>
+                            <a href="{{ settings.social_tiktok_link }}" target="_blank" rel="nofollow"> <img src="{{ 'tiktok.svg' | asset_url }}" alt=""></a>
                         {% endif %}
                         {% if settings.social_facebook_link != blank %}
-                            <a href="{{ settings.social_facebook_link }}" target="_blank"><img src="{{ 'facebook.svg' | asset_url }}" alt=""></a>
+                            <a href="{{ settings.social_facebook_link }}" target="_blank" rel="nofollow"><img src="{{ 'facebook.svg' | asset_url }}" alt=""></a>
                         {% endif %}
                         {% if settings.social_youtube_link != blank %}
-                            <a href="{{ settings.social_youtube_link }}" target="_blank"><img src="{{ 'youtube.svg' | asset_url }}" alt=""></a>
+                            <a href="{{ settings.social_youtube_link }}" target="_blank" rel="nofollow"><img src="{{ 'youtube.svg' | asset_url }}" alt=""></a>
                         {% endif %}
                     </div>
                 {% endif %}

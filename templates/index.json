@@ -88,6 +88,7 @@
       ],
       "settings": {
         "heading": "Get clinic-level results from home- minus the ‘clinical’ costs.",
+        "heading_tag": "h1",
         "text": "<p><strong>50,000+<\/strong>customers feel more confident in their own skin.<\/p>",
         "image": "shopify:\/\/shop_images\/homepage_banner_desk_5a394355-a35f-4911-ad68-df2ef1c021df.webp",
         "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_098b63eb-bcc4-4cd1-9cf1-30c41a61fb0a.webp"
@@ -114,6 +115,86 @@
         "text": "<p><strong>50,000+ <\/strong>customers feel more confident in their own skin.<\/p>",
         "image": "shopify:\/\/shop_images\/homepage_banner_desk1.webp",
         "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob1.webp"
+      }
+    },
+    "featuredin_extended_h8hWKY": {
+      "type": "featuredin_extended",
+      "blocks": {
+        "text_zGcEce": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The professional grade is the perfect addition to any<br\/>at-home skincare routine.”<\/p>"
+          }
+        },
+        "text_YGKnQG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Treatment time is only three minutes—among the fastest<br\/>of all devices.\"<\/p>"
+          }
+        },
+        "text_qaAPtw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"A multi-use LED mask with five different light setting options to plump, smooth and rejuvenate all skin types.\"<\/p>"
+          }
+        },
+        "text_RYx8xe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”<\/p>"
+          }
+        },
+        "text_LMPcy4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The Qure mask is the FIRST mask in the world that adapts to your skin! ...There is an app that reminds you of the treatments too.”<\/p>"
+          }
+        },
+        "image_8G8ic8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue-black_5851d9e9-b2a6-47f1-a606-0f0243a9319f.svg"
+          }
+        },
+        "image_b4NW4M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/womenshealth_e1cfba2e-29da-4232-9235-69184bd9d1a3.svg"
+          }
+        },
+        "image_TLRx8q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle-black_af7c0fb6-1535-4d44-b64c-b96b7d90bf08.svg"
+          }
+        },
+        "image_jfT3fA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan-black.svg"
+          }
+        },
+        "image_Nttj3a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia_black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "text_zGcEce",
+        "text_YGKnQG",
+        "text_qaAPtw",
+        "text_RYx8xe",
+        "text_LMPcy4",
+        "image_8G8ic8",
+        "image_b4NW4M",
+        "image_TLRx8q",
+        "image_jfT3fA",
+        "image_Nttj3a"
+      ],
+      "settings": {
+        "heading": "FEATURED IN"
       }
     },
     "featuredin_cgKaqj": {
@@ -177,6 +258,7 @@
         "image_Ft78hT",
         "image_KNeCQ7"
       ],
+      "disabled": true,
       "settings": {
         "heading": ""
       }
@@ -381,6 +463,7 @@
       "settings": {
         "classname": "skincare_slider bg_gradient_yellow_bt",
         "heading": "Science-backed skincare that’s proven to work.",
+        "title_tag": "h2",
         "text": "<p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
       }
     },
@@ -692,6 +775,7 @@
     "main",
     "promotion_main_banner_48gkNr",
     "main_banner_rJmjKt",
+    "featuredin_extended_h8hWKY",
     "featuredin_cgKaqj",
     "uses_gjAiWF",
     "icons_list_aYq7xP",

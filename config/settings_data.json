@@ -31,7 +31,7 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "<p><strong>FREE Water Filter <\/strong>with code ‘<strong>FREEQURIFY<\/strong>’<\/p>",
+              "heading": "<p><strong>FREE Micro-Infusion Patches <\/strong>with orders over $150<\/p>",
               "button_label": "SHOP NOW",
               "button_url": "shopify:\/\/collections\/best-sellers"
             }
@@ -173,10 +173,10 @@
             "type": "gift",
             "settings": {
               "product": "micro-infusion-targeted-patches-single",
-              "price_limit": "200",
+              "price_limit": "150",
               "quantity": "2",
               "discount": "FREEPATCH",
-              "disable": true
+              "disable": false
             }
           }
         },

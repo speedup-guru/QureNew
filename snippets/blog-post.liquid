@@ -17,12 +17,14 @@
                         <div class="blog_wrap">
                             <div class="blog_img">
                                 <a href="{{ article.url }}" aria-label="{{ article.title | truncatewords: 8 | escape }}">
+                                    {% if article.image != blank %}
                                     <picture>
                                         <source media="(min-width:1920px)" srcset="{{ article.image | img_url: 'master' }}">
                                         <source media="(min-width:1600px)" srcset="{{ article.image | img_url: '1600x' }}">
                                         <source media="(min-width:1100px)" srcset="{{ article.image | img_url: '1100x' }}">
                                         <img class="img-fluid" src="{{ article.image | img_url: '720x' }}" alt="{{ block.settings.image.alt | escape }}" width="167" height="100">
                                     </picture>
+                                    {% endif %}
                                 </a>
                             </div>
                             <div class="blog_content">

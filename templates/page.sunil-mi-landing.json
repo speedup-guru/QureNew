@@ -1005,7 +1005,7 @@
     "liquid_86wfLd": {
       "type": "liquid",
       "settings": {
-        "code": "{% render 'pdm_product-social-proof-data-snippet' %}\n\n{% render 'pdm_landing-page-purchase-process' %}"
+        "code": "<div id=\"productSubscription\">\n{% render 'pdm_product-social-proof-data-snippet' %}\n{% render 'pdm_landing-page-purchase-process' %}\n<\/div>"
       }
     },
     "compare_box_p4B7wy": {
