@@ -21,7 +21,11 @@
             <div class="m_b_content">
                 {% if section.settings.heading != blank %}
                     <div class="section_header pb-0">
-                        <h2 class="title-xl paddingB text-center text-md-start">{{ section.settings.heading }}</h2>
+                      {% if section.settings.heading_tag == 'h1' %}
+                          <h1 class="title-xl paddingB text-center text-md-start">{{ section.settings.heading }}</h1>
+                        {% else %}
+                          <h2 class="title-xl paddingB text-center text-md-start">{{ section.settings.heading }}</h2>
+                      {% endif %}
                     </div>
                 {% endif %}
 
@@ -85,6 +89,22 @@
                 "type": "text",
                 "id": "heading",
                 "label": "t:common.heading.label"
+            },
+            {
+              "type": "select",
+              "id": "heading_tag",
+              "label": "Heading tag",
+              "options": [
+                {
+                  "value": "h1",
+                  "label": "H1"
+                },
+                {
+                  "value": "h2",
+                  "label": "H2"
+                }
+              ],
+              "default": "h2"
             },
             {
                 "type": "richtext",
