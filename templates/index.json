@@ -88,6 +88,7 @@
       ],
       "settings": {
         "heading": "Get clinic-level results from home- minus the ‘clinical’ costs.",
+        "heading_tag": "h1",
         "text": "<p><strong>50,000+<\/strong>customers feel more confident in their own skin.<\/p>",
         "image": "shopify:\/\/shop_images\/homepage_banner_desk_5a394355-a35f-4911-ad68-df2ef1c021df.webp",
         "image_mobile": "shopify:\/\/shop_images\/homepage_banner_mob_098b63eb-bcc4-4cd1-9cf1-30c41a61fb0a.webp"
@@ -381,6 +382,7 @@
       "settings": {
         "classname": "skincare_slider bg_gradient_yellow_bt",
         "heading": "Science-backed skincare that’s proven to work.",
+        "title_tag": "h2",
         "text": "<p>Want smoother fine lines? Even toned complexion? Clearer skin?<br\/><strong>Reclaim your confidence at any age, <\/strong>no matter what your skin concern is. <\/p>"
       }
     },
