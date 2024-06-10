@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-q-rejuvalight-pro-offer",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

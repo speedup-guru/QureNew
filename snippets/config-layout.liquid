@@ -47,6 +47,9 @@
     {% when 'page.sunil_qurify-filter-lp' %}
         {% assign main_class = 'qurify_lp' %}
         <link rel="stylesheet" href="{{ 'qurify-filter-lp.css' | asset_url }}">
+    {% when 'page.qurify-offer' %}
+        {% assign main_class = 'qurify_lp' %}
+        <link rel="stylesheet" href="{{ 'qurify-offer.css' | asset_url }}">
     {% when 'page.sunil-mi-landing' %}
         {% assign main_class = 'mi_landing' %}
         <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
@@ -99,6 +102,11 @@
         {% assign main_class = 'content_instructions' %}
         <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.q-rejuvalight-pro-offer' %}
+        {% assign main_class = 'qurify_lp led_lp' %}
+        <link rel="stylesheet" href="{{ 'qurify-filter-lp.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'qure-skincare-app.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'led_mask_lp.css' | asset_url }}">
     {% when 'page.contact' %}
         {% assign main_class = 'contact_us' %}
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
@@ -107,6 +115,9 @@
         {% assign main_class = 'stocklist' %}
         <link rel="stylesheet" href="{{ 'qure_form.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'become-stocklist.css' | asset_url }}">
+    {% when 'page.q-rejuvalight-pro-welcome' %}
+            {% assign main_class = 'welcome_qure' %}
+            <link rel="stylesheet" href="{{ 'welcome.css' | asset_url }}">
     {% when 'page.why-qurify' %}
         {% assign main_class = 'why_qurify qurify_lp1' %}
         <link rel="stylesheet" href="https://qureskincaredns.com/new/assets/qurify-filter-lp.css">

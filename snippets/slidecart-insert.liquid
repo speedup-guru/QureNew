@@ -87,7 +87,7 @@
     window.initUpsellSwiper =   initUpsellSwiper; 
   </script>
 
-<script type="module"> import { configureCart, subscribeToCartSectionsUpdate, cartRequestAdd, cartRequestChange } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
+<script type="module"> import { configureCart, subscribeToCartSectionsUpdate, cartRequestAdd, cartRequestChange, getCartState } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
 	configureCart('addToCartCssClass', 'js-my-cart-open'); 
   	initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
 
@@ -101,7 +101,31 @@
 			startCartTimer(15 * 60);
 		}
     	initUpsellSwiper();
+
+		if (window.location.href.includes("/pages/q-rejuvalight-pro-offer"))
+		{
+			dicount(37390541553813, 44062187913455, 'N&D100');
+		}
 	});
+
+
+	function dicount(productId, dproductId, discountCode)
+	{
+		window.__discount_applied = false;
+
+        fetch('/cart.js')
+            .then(response => response.json())
+            .then(cart => {
+				if(window.__discount_applied == false)
+				{
+					if (cart.items.some(item => item.id === +(productId)) && cart.items.some(item => item.id === +(dproductId))) {
+						fetch('/discount/' + discountCode).then(async () => {
+
+						});
+                	}
+				}
+		});
+	}
 
     function gift(productId, productQuantity, priceLimit, discountCode = '') {
         fetch('/cart.js')

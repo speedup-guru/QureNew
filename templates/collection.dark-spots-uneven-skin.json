@@ -3,8 +3,8 @@
     "main": {
       "type": "collection",
       "settings": {
-        "heading": "<h1>Shop our <strong>best sellers<\/strong> & <strong>top rated<\/strong> products<\/h1>",
-        "heading_mobile": "",
+        "heading": "<h5><strong>FREE Q-urify Water Filter (worth$69) with every purchase.<\/strong><\/h5><p>Add Q-urify to cart & use code ‘<strong>FREEQURIFY<\/strong>’ at checkout.<\/p>",
+        "heading_mobile": "<p><strong>FREE Q-urify with every purchase.<\/strong><\/p><p>Add to cart & use code ‘<strong>FREEQURIFY<\/strong>’ at checkout.<\/p>",
         "image": "shopify:\/\/shop_images\/collection_banner_desk.webp",
         "image_mobile": "shopify:\/\/shop_images\/collection_banner_mob.webp"
       }

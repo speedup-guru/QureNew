@@ -10,7 +10,7 @@
 {% comment %} sliders {% endcomment %}
 
 
-{% capture right_menu_slider %}
+{% capture first_slider %}
     {% if section.blocks.size > 0 %}
         <div class="dropdown_menu_img">
             {% assign num = 0 %}
@@ -29,13 +29,32 @@
     {% endif %}
 {% endcapture %}
 
-{% capture left_menu_slider %}
+{% capture second_slider %}
     {% if section.blocks.size > 0 %}
         <div class="dropdown_menu_img">
             {% assign num = 0 %}
             {%- for block in section.blocks -%}
                 {% if block.type == 'banner' %}
-                    {% if num >= 2 %}
+                    {% if num > 1 and num < 4 %}
+                        <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                            <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                            <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                        </a>
+                    {% endif %}
+                    {%- assign num = num | plus: 1 -%}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endcapture %}
+
+{% capture third_slider %}
+    {% if section.blocks.size > 0 %}
+        <div class="dropdown_menu_img">
+            {% assign num = 0 %}
+            {%- for block in section.blocks -%}
+                {% if block.type == 'banner' %}
+                    {% if num > 3 and num < 6 %}
                         <a class="dm_imgItem" href="{{ block.settings.button_url }}">
                             <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
                             <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
@@ -62,7 +81,7 @@
                 <ul class="dropdown-menu-hp mega-dropdown-menu row">
                     <div class="container">
                         <div class="dropdown_menu_wrap">
-                            <div class="dropdown_menu_links">
+                            <div class="dropdown_menu_links" data-index="{{ forloop.index }}">
                                 {%- for childlink in link.links -%}
                                     <div class="dm_list">
                                         <div class="dm_list_heading" {% if childlink.title == 'FOLDER' %}style="display:none;"{% endif %}>{{ childlink.title | escape }}</div>
@@ -80,7 +99,12 @@
                                     </div>
                                 {%- endfor -%}
                             </div>
-                            {{ right_menu_slider }}
+                            {% case forloop.index %}
+                                {% when 2 %}
+                                    {{ first_slider }}
+                                {% when 3 %}
+                                    {{ second_slider }}
+                            {% endcase %}
                         </div>
                     </div>
                 </ul>
@@ -119,7 +143,7 @@
                                     </div>
                                 {%- endfor -%}
                             </div>
-                            {{ left_menu_slider }}
+                            {{ third_slider }}
                         </div>
                     </div>
                 </ul>
