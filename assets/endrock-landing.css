@@ -1870,3 +1870,97 @@
 
 
 }
+
+/* PDP Social Proof Data*/
+.social-proof-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  bottom: -20px;
+  z-index: 98;
+  border-radius: 16px 16px 0px 0px;
+  border-top: 1px solid #C92127;
+  border-right: 1px solid #C92127;
+  border-left: 1px solid #C92127;
+  background: #D44D52;
+  transform: translate(-50%, -50%);
+  padding: 9px 12px 8px 16px;
+  gap: 16px;
+}
+.social-proof-data-container.hidden { 
+  display: none;
+}
+.social-proof-data-container .text-container { 
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px; 
+  letter-spacing: 1px;
+}
+.social-proof-data-container .close-icon { 
+  color: #870B0F;  
+  cursor: pointer;
+}
+.social-proof-data-container .circle-container {
+  position: relative;
+  width: 20px; 
+  height: 20px; 
+}
+.social-proof-data-container .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px; 
+  height: 10px; 
+  background-color: #C8E6DC;
+  border-radius: 50%;
+}
+.social-proof-data-container .shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(200, 230, 220); 
+  animation: shine 2s linear infinite; 
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 10px rgba(200, 230, 220); 
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(200, 230, 220, 1), 0 0 20px rgba(200, 230, 220, 1), 0 0 20px rgba(200, 230, 220, 1); 
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(200, 230, 220); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-proof-data-container { 
+    width: 85%;
+    padding-bottom: 18px;
+    bottom: -25px;
+  }
+  iframe#launcher.new-bottom { 
+    bottom: 40px !important;
+  }
+  .button_sticky_wrapper.new-bottom { 
+    bottom: 60px !important;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .social-proof-data-container { 
+    bottom: -30px;
+    padding-bottom: 18px;
+    gap: 8px;
+  }
+}
