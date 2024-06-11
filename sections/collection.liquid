@@ -66,6 +66,43 @@
     {% endif %}
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setInterval(
+            function () {
+                var classNameRaman = document.getElementById("offcanvasBottom").classList;
+                
+                if (classNameRaman.contains('show')) {
+                    $('html').addClass('filterActive');
+                }
+                else {
+                    $('html').removeClass('filterActive');
+                }
+            }
+        )
+
+        function clcBtnHeight() {
+            var collection_item = $('.fixed_height_btn');
+
+            function setBtnHeight() {
+                var collectionBtnHeight = $(".pdt_cln_bottom").outerHeight();
+                collection_item.css('--collectionBtnHeight', collectionBtnHeight + 'px');
+            }
+
+            // Initial execution
+            setBtnHeight();
+
+            // Execute on window resize
+            $(window).on('resize', function () {
+                setBtnHeight();
+            });
+        }
+
+        // Call the function to start listening for window resize
+        clcBtnHeight();
+    });
+</script>
+
 {% schema %}
     {
         "name": "t:sections.collection.name",
