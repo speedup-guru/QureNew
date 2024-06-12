@@ -367,17 +367,6 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
-        "product_JVJkGj": {
-          "type": "product",
-          "settings": {
-            "product": "youth-boosting-bundle",
-            "comment_ammount": 202,
-            "percent": 24,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
         "product_3Frmww": {
           "type": "product",
           "settings": {
@@ -385,6 +374,17 @@
             "comment_ammount": 729,
             "percent": 30,
             "ppl_choise": 1,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_JVJkGj": {
+          "type": "product",
+          "settings": {
+            "product": "youth-boosting-bundle",
+            "comment_ammount": 202,
+            "percent": 24,
+            "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
           }
@@ -398,6 +398,17 @@
             "ppl_choise": 0,
             "recommended": 1,
             "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
+          }
+        },
+        "product_pCXqdM": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "comment_ammount": 283,
+            "percent": 29,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_EQ6HJY": {
@@ -422,28 +433,6 @@
             "recommended_code": ""
           }
         },
-        "product_CnMwyU": {
-          "type": "product",
-          "settings": {
-            "product": "youthify-or-glow-set",
-            "comment_ammount": 514,
-            "percent": 44,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
-        "product_pCXqdM": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "comment_ammount": 283,
-            "percent": 29,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
         "product_aKUc4N": {
           "type": "product",
           "settings": {
@@ -455,12 +444,12 @@
             "recommended_code": ""
           }
         },
-        "product_9Baiy9": {
+        "product_CnMwyU": {
           "type": "product",
           "settings": {
-            "product": "",
-            "comment_ammount": 100,
-            "percent": 34,
+            "product": "youthify-or-glow-set",
+            "comment_ammount": 514,
+            "percent": 44,
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
@@ -477,19 +466,30 @@
             "recommended": 0,
             "recommended_code": ""
           }
+        },
+        "product_9Baiy9": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
         }
       },
       "block_order": [
-        "product_JVJkGj",
         "product_3Frmww",
+        "product_JVJkGj",
         "product_DgMQiP",
+        "product_pCXqdM",
         "product_EQ6HJY",
         "product_zF9wP9",
-        "product_CnMwyU",
-        "product_pCXqdM",
         "product_aKUc4N",
-        "product_9Baiy9",
-        "product_nRhA4x"
+        "product_CnMwyU",
+        "product_nRhA4x",
+        "product_9Baiy9"
       ],
       "settings": {
         "heading": "Choose your bundle.",
