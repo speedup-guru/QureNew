@@ -14,42 +14,28 @@
 
 
 {% endcomment %}
+
+<!-- aaaaqqqq888 [{{ cross-sell-products }}] [{{ visibility }}] -->
+
 {% if cross-sell-products != nil %}
-  
-  <div class="cross-sell hidden {% if visibility == "desktop" %}d-none d-lg-block{% else %}d-lg-none order-3{% endif %}">
-    <div class="cross-sell__title">
-      {{ 'sections.cross-sell.title' | t }}
-    </div>
-    <div class="cross-sell__products">
-      {% for item in cross-sell-products %}
-        <div class="cross-sell__product">
-          <div class="cross-sell__product-content-image">
-          <img 
-          class="cross-sell__product--image"
-          src="{{ item.feature_image | image_url: width: 400, height: 400 }}" 
-          alt="{{ item.name }}"
-          loading="lazy"
-          width="auto"
-          height="auto">
+
+  <div class="upgrade_routine {% if visibility == "desktop" %}d-none d-lg-block{% else %}d-lg-none order-3{% endif %}">
+      <div class="ur_heading">{{ 'sections.cross-sell.title' | t }}</div>
+      <div class="ur_item_grid">
+        {% for item in cross-sell-products %}
+          <div class="ur_item">
+              <div class="ur_img">
+                  <a href="{{ item.product.value.handle }}" title="{{ item.name }}"><img src="{{ item.feature_image | image_url: width: 400, height: 400 }}" alt="{{ item.name }}" class="img-fluid"></a>
+              </div>
+              <div class="ur_info">
+                  <div class="ur_itemName">{{ item.name }}</div>
+                  <div class="ur_price_btn">
+                      <div class="ur_price">{{ item.product.value.price | money_without_trailing_zeros  }}</div>
+                      <div class="ur_btn"><a href="{{ routes.cart_add_url }}?id={{ item.product.value.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{{ 'sections.cross-sell.add_to_cart' | t }}</a></div>
+                  </div>
+              </div>
           </div>
-          <div class="cross-sell__product-content">
-            <div class="cross-sell__product-content__top">
-              <p class="cross-sell__product-content--title {%  if item.product.value.id == 7802912866543%}small-text{% endif %}">
-                {{ item.name }}
-              </p> 
-            </div>
-            <div class="cross-sell__product-content__bottom">
-              <span class="cross-sell__product-content--price"> {{ item.product.value.price | money_without_trailing_zeros  }}</span>
-              <a 
-              href="{{ routes.cart_add_url }}?id={{ item.product.value.variants.first.id }}&quantity=1"
-              class="btn btn-primary buy_btn event_btn cross-sell__product-content--button"
-              data-ajax-cart-request-button>
-                {{ 'sections.cross-sell.add_to_cart' | t }}
-              </a>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
   </div>
 {% endif %}

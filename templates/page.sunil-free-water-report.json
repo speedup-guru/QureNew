@@ -1,5 +1,56 @@
 {
   "sections": {
+    "header_landing_Hza7nA": {
+      "type": "header-landing",
+      "blocks": {
+        "announcement_hUapqW": {
+          "type": "announcement",
+          "settings": {
+            "heading": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee",
+            "heading_mobile": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee"
+          }
+        },
+        "navigation_link_rCPYUw": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "SHOP",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop",
+            "image": "shopify:\/\/shop_images\/header-lp-shop_2a0a39a1-3374-48e7-bcc6-efaebfe132fd.webp"
+          }
+        },
+        "navigation_link_RkBdNW": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "WHY Q-URIFY",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/why-qurify",
+            "image": "shopify:\/\/shop_images\/headerLanding-2_2fe2a335-9e17-487c-b0dc-c50a325e0e91.png"
+          }
+        },
+        "navigation_link_hxxTbn": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "LOCAL WATER REPORT",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/free-water-report",
+            "image": "shopify:\/\/shop_images\/header-lp-local_f1e236ac-3a53-41aa-94c5-aa7309579a0d.webp"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_hUapqW",
+        "navigation_link_rCPYUw",
+        "navigation_link_RkBdNW",
+        "navigation_link_hxxTbn"
+      ],
+      "custom_css": [
+        ".header_btn img {display: none;}",
+        ".menu_icon_footer {display: none;}",
+        ".announcement_bar {background-color: #008763 !important; color: #f8f9fa !important}"
+      ],
+      "settings": {
+        "button_label": "GET CLEARER SKIN",
+        "button_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop"
+      }
+    },
     "banner_dzjhFt": {
       "type": "banner",
       "blocks": {
@@ -8,7 +59,7 @@
           "settings": {
             "button_label": "Get my FREE Water Report",
             "button_url": "#giveaway_form_wrap",
-            "classname": "btn_white m-0"
+            "classname": "btn_white bg-green m-0 mw-375"
           }
         }
       },
@@ -23,7 +74,8 @@
         "text": "<p>See what chemicals are in your water<\/p>",
         "image": "shopify:\/\/shop_images\/free-water-banner-desk.webp",
         "image_mobile": "shopify:\/\/shop_images\/free-water-banner-mob.webp",
-        "align_center": false
+        "align_center": false,
+        "classname": "bg_gradient_mob text-light"
       }
     },
     "two_column_box_njkApG": {
@@ -32,7 +84,7 @@
         "content_UbPK4t": {
           "type": "content",
           "settings": {
-            "text": "<h2>What tap water does to your skin:<\/h2><p>Tap water significantly harms your skin.<br\/>Many of the chemicals found in our water systems may contribute to:<\/p>",
+            "text": "<h2>What tap water does to your skin:<\/h2><p>Tap water significantly harms your skin.<br\/>Many of the chemicals found in our water systems may contribute to: <\/p>",
             "column_content": 0,
             "classname": "tap_water_info"
           }
@@ -122,7 +174,7 @@
         "code_TLkxeY": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"meet_qurify_info mw-493\">\n                    <div class=\"title-lg\">Meet Q-urify Water Filter\n                    <\/div>\n                    <div class=\"refill_review justify-content-start align-items-center my-4\">\n                        <div class=\"star_gp\">\n                            <img src=\"{{ 'star-review.svg' | asset_url }}\" alt=\"\">\n                        <\/div>\n                        <p class=\"text-sm fw-normal d-none d-md-block\"\n                            style=\"text-decoration: none;line-height: 24px;\">90% of\n                            customers don’t go\n                            back to tap water\n                        <\/p>\n                        <p class=\"text-sm fw-normal d-block d-md-none\" style=\"text-decoration: none;\">96%\n                            satisfaction rate\n                        <\/p>\n                    <\/div>\n                    <p>Secure your complimentary water quality analysis today! Discover whether your tap water\n                        contains chemicals that may harm your skin. If any impurities are detected, experience\n                        the exceptional capabilities of the Qurify Skincare Water Filter – your ultimate\n                        solution for pure, healthy water.<\/p>\n                    <div class=\"get_report_btn ms-0 d-none d-md-block\">\n                        <a href=\"#giveaway_form_wrap\">Get my FREE Water\n                            Report<\/a>\n                    <\/div>\n                <\/div>"
+            "code": "<div class=\"meet_qurify_info mw-493\">\n    <div class=\"title-lg\">Meet our faucet skincare Water Filter\n    <\/div>\n    <div class=\"refill_review justify-content-start align-items-center my-4\">\n        <div class=\"star_gp\">\n            <img src=\"{{ 'star-review.svg' | asset_url }}\" alt=\"\">\n        <\/div>\n        <p class=\"text-sm fw-normal d-none d-md-block\"\n            style=\"text-decoration: none;line-height: 24px;\">90% of\n            customers don’t go\n            back to tap water\n        <\/p>\n        <p class=\"text-sm fw-normal d-block d-md-none\" style=\"text-decoration: none;\">96%\n            satisfaction rate\n        <\/p>\n    <\/div>\n    <p>Secure your complimentary water quality analysis today! Discover whether your tap water\n        contains chemicals that may harm your skin. <\/p>\n    <p class=\"pt-3\">If any impurities are detected, experience the exceptional capabilities of\n        the Q-urify\n        Skincare Water Filter – your ultimate solution for pure, healthy water.<\/p>\n    <div class=\"get_report_btn ms-0 d-none d-md-block\">\n        <a href=\"#giveaway_form_wrap\">Get my FREE Water\n            Report<\/a>\n    <\/div>\n<\/div>"
           }
         }
       },
@@ -139,6 +191,7 @@
     }
   },
   "order": [
+    "header_landing_Hza7nA",
     "banner_dzjhFt",
     "two_column_box_njkApG",
     "liquid_piWBb8",

@@ -28,6 +28,9 @@
     padding-left: 10px;
     width: 137px;
 }
+.dek-menu ul {
+    gap: 17px !important;
+}
 
 @media(max-width:767px) {
     .mi_landing .shipping.one_line .s_bx p {

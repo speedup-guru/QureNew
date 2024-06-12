@@ -84,10 +84,10 @@
 
                 </div>
             </div>
-            {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "mobile" %}
+            {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "mobile" %}
             <div class="col-md-6  order-1 order-md-2">
                 {% render 'pdm_before_after', data: section.blocks, dataSection: section.settings %}
-                {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "desktop" %}
+                {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "desktop" %}
             </div>
         </div>
     </div>

@@ -1310,10 +1310,15 @@ img.fa.fa-user.nav__icon {
 }
 
 .dek-menu .menu {
-    width: 36.33%;
+    width: 33.33%;
 }
 
 @media(max-width:767px) {
+    .nav__cart-count {
+        right: auto !important;
+        top: auto !important;
+    }
+
     .slide_cart .free_shpngBox {
         justify-content: flex-end;
     }
@@ -1762,7 +1767,7 @@ img.fa.fa-user.nav__icon {
     }
 
     .openmenu .header-new.new-hp-header {
-        margin: 0 24px;
+        /* margin: 0 24px; */
         padding: 0;
         border-bottom: 0.3px solid #959595;
     }
@@ -1979,8 +1984,7 @@ img.fa.fa-user.nav__icon {
         letter-spacing: .2px;
         color: #fff;
         transition: background .2s;
-        text-decoration: none;
-        justify-content: space-between;
+        text-decoration: none
     }
 
     .menu_icon_footer {
@@ -2046,18 +2050,6 @@ img.fa.fa-user.nav__icon {
 
     .mi-landing-page .menu_icon_footer .mi_ftrBlock {
         text-align: center;
-    }
-
-    .openmenu nav.mobile-menu-custome #menu .title {
-        margin: 20px 0;
-    }
-
-    .mobile-menu-custome #menu li a {
-        display: flex;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 2px;
-        text-transform: uppercase;
     }
 }
 
@@ -2148,14 +2140,14 @@ img.fa.fa-user.nav__icon {
     align-items: center;
     list-style: none;
     /* justify-content: space-between; */
-    gap: 30px;
+    gap: 20px;
 }
 
 .dek-menu ul li a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -2164,10 +2156,13 @@ img.fa.fa-user.nav__icon {
 }
 
 .dek-menu .logo {
-    width: 30.33%;
+    width: 33.33%;
     text-align: center;
 }
 
+.led_guide .logo {
+    width: 30.33%;
+}
 
 .dek-menu .saf-icon {
     width: 33.33%;
@@ -2182,12 +2177,7 @@ img.fa.fa-user.nav__icon {
 
 @media(max-width:767px) {
     .dek-menu {
-        padding: 14px 0px 15px 0px !important;
-    }
-
-    .nav__cart-count {
-        right: auto !important;
-        top: auto !important;
+        padding: 16px 24px;
     }
 }
 

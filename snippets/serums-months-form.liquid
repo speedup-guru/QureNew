@@ -8,7 +8,116 @@
         });
     </script>
 
+    <div class="mw-402">
+
     <div class="serum_bl">
+        <div class="s_bl_wrapper">
+            <div class="supply-detail supply-detail-without-counter pb-0">
+                <div class="supply_steps">
+                    <div class="step_block">
+                        <p class="pb-3">Choose serums:</p>
+                        <div class="step_content step_serum serum_image">
+                            <div class="serumBlock {{ section_id }}_productTypeObject">
+                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating">
+                                <label class="serum_prd" for="mBanner_rejuvenating">
+                                    <div class="serum_img product_type" data-product-type="2">
+                                        <img src="{{ 'reju.webp' | asset_url }}" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="serum_ttl">Rejuvenating<span>for dark spots</span></h4>
+                                </label>
+                            </div>
+                            <div class="serumBlock {{ section_id }}_productTypeObject mt-0">
+                                <input type="radio" name="mBanner_serum" id="mBanner_hydra-soothing">
+                                <label class="serum_prd" for="mBanner_hydra-soothing">
+                                    <div class="serum_img product_type" data-product-type="3">
+                                        <img src="{{ 'hydra.webp' | asset_url }}" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="serum_ttl">Hydra-Soothing<span>wrinkles</span></h4>
+                                </label>
+                            </div>
+                            <div class="serumBlock {{ section_id }}_productTypeObject mt-0">
+                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating-hydra" checked>
+                                <label class="serum_prd" for="mBanner_rejuvenating-hydra">
+                                    <div class="serum_img product_type" data-product-type="1">
+                                        <img src="{{ 'reju_hydra.webp' | asset_url }}" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="serum_ttl">Rejuvenating + Hydra-Soothing</h4>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supply_steps month_plan_steps mt-4">
+                    <div class="step_block">
+                        <p class="pb-3">Choose supply:</p>
+                        <div class="step_content">
+                            <div class="step_conten_blocks">
+                                <div class="planBlock {{ section_id }}_productPeriodObject">
+                                    <div class="plan_choosed">
+                                        <span>Over 5,000 people chose this supply</span>
+                                    </div>
+                                    {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
+                                    {% assign divided_price = product.price | divided_by: 4 %}
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_3_month" checked="" data-product-period="3">
+                                    <label class="monthly_plans" for="mBanner_3_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
+                                        <div class="plan_des">
+                                            <div class="plan_hdr">
+                                                <h3>3 Month Supply</h3>
+                                                <span class="saved_price">SAVE 43%</span>
+                                            </div>
+                                            <div class="plan_des">6 Micro-Infusion Treatments</div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="planBlock {{ section_id }}_productPeriodObject">
+                                    {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
+                                    {% assign divided_price = product.price | divided_by: 4 %}
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_2_month" data-product-period="2">
+                                    <label class="monthly_plans" for="mBanner_2_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
+                                        <div class="plan_des">
+                                            <div class="plan_hdr">
+                                                <h3>2 Month Supply</h3>
+                                                <span class="saved_price">SAVE 25%</span>
+                                            </div>
+                                            <div class="plan_des">4 Micro-Infusion Treatments</div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="planBlock {{ section_id }}_productPeriodObject">
+                                    {% assign product = all_products['micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum'] %}
+                                    {% assign divided_price = product.price | divided_by: 4 %}
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_1_month" data-product-period="1">
+                                    <label class="monthly_plans" for="mBanner_1_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
+                                        <div class="plan_des">
+                                            <div class="plan_hdr">
+                                                <h3>1 Month Supply</h3>
+                                            </div>
+                                            <div class="plan_des">2 Micro-Infusion Treatments</div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {% comment %} <div class="serum_bl">
         <p class="pb-3">Choose your serums:</p>
         <div class="s_bl_wrapper">
             <div class="supply-detail supply-detail-without-counter pb-0">
@@ -122,7 +231,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
     
     {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
     
@@ -150,13 +259,14 @@
             <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
         </div>
     </div>
+</div>
 {% endif %}
 
 {% capture sticky-button-classname %}{{ section_id }}_productButtonObject{% endcapture %}
 
-    {% render 'product-sticky-button' with 
-        variant_id: product.variants.first.id, 
-        current_price: product.price, 
-        original_price: product.compare_at_price, 
-        classname: sticky-button-classname
-    %}
+{% render 'product-sticky-button' with 
+    variant_id: product.variants.first.id, 
+    current_price: product.price, 
+    original_price: product.compare_at_price, 
+    classname: sticky-button-classname
+%}
