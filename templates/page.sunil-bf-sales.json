@@ -367,15 +367,15 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
-        "product_DgMQiP": {
+        "product_JVJkGj": {
           "type": "product",
           "settings": {
-            "product": "mi-bundle-may",
-            "comment_ammount": 100,
-            "percent": 34,
+            "product": "youth-boosting-bundle",
+            "comment_ammount": 202,
+            "percent": 24,
             "ppl_choise": 0,
-            "recommended": 1,
-            "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
+            "recommended": 0,
+            "recommended_code": ""
           }
         },
         "product_3Frmww": {
@@ -389,6 +389,17 @@
             "recommended_code": ""
           }
         },
+        "product_DgMQiP": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
+          }
+        },
         "product_EQ6HJY": {
           "type": "product",
           "settings": {
@@ -398,17 +409,6 @@
             "ppl_choise": 0,
             "recommended": 1,
             "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
-          }
-        },
-        "product_JVJkGj": {
-          "type": "product",
-          "settings": {
-            "product": "youth-boosting-bundle",
-            "comment_ammount": 202,
-            "percent": 24,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
           }
         },
         "product_zF9wP9": {
@@ -455,8 +455,20 @@
             "recommended_code": ""
           }
         },
+        "product_9Baiy9": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
         "product_nRhA4x": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hydra-glow",
             "comment_ammount": 187,
@@ -468,14 +480,15 @@
         }
       },
       "block_order": [
-        "product_DgMQiP",
-        "product_3Frmww",
-        "product_EQ6HJY",
         "product_JVJkGj",
+        "product_3Frmww",
+        "product_DgMQiP",
+        "product_EQ6HJY",
         "product_zF9wP9",
         "product_CnMwyU",
         "product_pCXqdM",
         "product_aKUc4N",
+        "product_9Baiy9",
         "product_nRhA4x"
       ],
       "settings": {
