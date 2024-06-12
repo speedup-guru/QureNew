@@ -6,7 +6,7 @@
         "announcement_JyMH8T": {
           "type": "announcement",
           "settings": {
-            "heading": "Holiday Sale Ends In:",
+            "heading": "Hurry, Sale Ends In:",
             "timer": "2024-06-09T23:59:59",
             "timer_next": 7
           }
@@ -405,7 +405,7 @@
           "settings": {
             "product": "ageless-glow-bundle",
             "comment_ammount": 283,
-            "percent": 24,
+            "percent": 26,
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
