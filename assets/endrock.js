@@ -145,9 +145,15 @@ document.addEventListener('ig:ready', function() {
 });
 
 // pdm product landing sales
-
 const pdmProductLadingSalesSwiper = new Swiper('.pdm_swiper_product_landing',{
   effect: 'fade',
+  loop: true,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  mousewheel: {
+    forceToAxis: true,
+  },
   fadeEffect: {
     crossFade: true
   },
@@ -156,8 +162,8 @@ const pdmProductLadingSalesSwiper = new Swiper('.pdm_swiper_product_landing',{
     clickable: true
   },
   navigation: {
-    nextEl: '.swiper-pdm-landing-sales-next',
     prevEl: '.swiper-pdm-landing-sales-prev',
+    nextEl: '.swiper-pdm-landing-sales-next',
   }
 });
 
