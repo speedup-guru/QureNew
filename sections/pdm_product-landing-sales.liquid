@@ -1,0 +1,135 @@
+<div class="container">
+  <div class="pdm_product-landing-sales-wrapper">
+    <div class="left-panel">
+      <div class="product-landing-information">
+        <div class="product-landing-information-text">
+          <h3>{{ section.settings.text_banner }}</h3>
+          <h2>{{ section.settings.text_offer_banner }}</h2>
+        </div>
+        <a href="{{ section.settings.button_banner_url }}">
+          {{ section.settings.button_banner_text }}
+        </a>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="container-swiper-product-landing">
+        <div class="swiper pdm_swiper_product_landing">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              {% liquid
+                assign product_block = block.settings.product
+                assign save_price = product_block.compare_at_price | minus: product_block.price | money_without_trailing_zeros
+              %}
+              <div class="swiper-slide">
+                <div class="pdm-product-landing-card-container">
+                  {% comment %} header-text {% endcomment %}
+                  <div class="product-landing-text-container">
+                    <div class="product-landing-information-item">
+                      <span
+                        style="visibility: {% if block.settings.announcement_id != blank %} visible {% else %} hidden {% endif %};"
+                      >
+                        {{- block.settings.announcement_id -}}
+                      </span>
+                      <h3>{{ product_block.title }}</h3>
+                    </div>
+                    <div class="product-landing-save-price">
+                      <p>SAVE {{ save_price }}</p>
+                    </div>
+                  </div>
+                  {% comment %} image {% endcomment %}
+                  <div class="product-landing-img-container">
+                    {{ product_block.media | first | image_url: width: 400 | image_tag: alt: product_block.title }}
+                  </div>
+                  <div>
+                    <div>
+                      <p>{{ product_block.compare_at_price | money_without_trailing_zeros }}</p>
+                      <p>{{ product_block.price | money_without_trailing_zeros }}</p>
+                    </div>
+                    <a href="{{ block.settings.button_url_id }}">
+                      {{ block.settings.button_text_id }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pdm-landing-sales-pagination"></div>
+          <div class="swiper-pdm-landing-sales-prev"></div>
+          <div class="swiper-pdm-landing-sales-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "pdm product landing sales",
+  "class": "pdm-product-landing-sales",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner Settings",
+      "info": "Banner Settings left side"
+    },
+    {
+      "type": "text",
+      "id": "text_banner",
+      "label": "text banner",
+      "default": "EXCLUSIVE HOLIDAY BUNDLES"
+    },
+    {
+      "type": "text",
+      "id": "text_offer_banner",
+      "label": "text offer banner",
+      "default": "Save Up To 50%"
+    },
+    {
+      "type": "url",
+      "id": "button_banner_url",
+      "label": "button_banner_url"
+    },
+    {
+      "type": "text",
+      "id": "button_banner_text",
+      "label": "button banner text",
+      "default": "Shop Now"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "pdm product landing sales",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "product"
+        },
+        {
+          "type": "text",
+          "id": "announcement_id",
+          "label": "announcement text"
+        },
+        {
+          "type": "url",
+          "id": "button_url_id",
+          "label": "button id"
+        },
+        {
+          "type": "text",
+          "id": "button_text_id",
+          "label": "button text",
+          "default": "Get yours"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "pdm product landing sales",
+      "category": "product page"
+    }
+  ]
+}
+{% endschema %}

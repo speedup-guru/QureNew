@@ -144,6 +144,24 @@ document.addEventListener('ig:ready', function() {
   hidePrices();
 });
 
+// pdm product landing sales
+
+const pdmProductLadingSalesSwiper = new Swiper('.pdm_swiper_product_landing',{
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  pagination:{
+    el: '.swiper-pdm-landing-sales-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-pdm-landing-sales-next',
+    prevEl: '.swiper-pdm-landing-sales-prev',
+  }
+});
+
+// end pdm product landing sales
 
 document.addEventListener('DOMContentLoaded', function() {
   atcNoPricesPdp();
@@ -1081,5 +1099,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // end Micro-Infusion Landing Page Purchase Process
 
   initUpsellSwiper(); //swiper for carousel upsell
-
 });

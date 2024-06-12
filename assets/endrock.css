@@ -869,3 +869,118 @@ body[class~="page.sunil-mi-landing"] .product-price{
 }
 
 /* PRICE BELOW REVIEWS PDP - TEST ---  END*/
+
+
+/* pdm_product-landing-sales */
+.pdm-product-landing-sales{
+  background-image: linear-gradient(90deg, white 0%, #F5F5F5 100%);
+  .container .pdm_product-landing-sales-wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    .left-panel{
+      width: 40%;
+      .product-landing-information{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        .product-landing-information-text{
+          h3{
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 1.5px;
+            text-align: left;
+            padding-bottom: 8px;
+          }
+          h2{
+            font-family: 'Canela Web';
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 64px;
+            letter-spacing: 1.5px;
+            text-align: left;
+          }
+        }
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 236px;
+          height: 48px;
+          padding: 8px 32px 8px 32px;
+          border-radius: 100px;
+          font-family: 'Poppins';
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.01em;
+          text-align: center;
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+    .right-panel{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container-swiper-product-landing{
+       width: 472px;
+       height: 477px;
+        .pdm_swiper_product_landing{
+          .swiper-wrapper{
+            .swiper-slide{
+              .pdm-product-landing-card-container{
+                .product-landing-text-container{
+                  display: flex;
+                  flex-direction: row;
+                  .product-landing-information-item{
+                    span{
+                      display: block;
+                      height: 34px;
+                      font-family: 'Poppins';
+                      font-size: 14px;
+                      font-weight: 500;
+                      line-height: 24px;
+                      letter-spacing: 1.5px;
+                      text-align: left;
+                      color: #797D7C;
+                    }
+                    h3{
+                      font-family: 'Canela Web';
+                      font-size: 28px;
+                      font-weight: 500;
+                      line-height: 32px;
+                      text-align: left;
+
+                    }
+                  }
+                }
+                .product-landing-img-container{
+                  width: 377px;
+                  height: 100%;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+/* end pdm_product-landing-sales */
