@@ -455,18 +455,6 @@
             "recommended_code": ""
           }
         },
-        "product_nRhA4x": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "hydra-glow",
-            "comment_ammount": 187,
-            "percent": 42,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
         "product_9Baiy9": {
           "type": "product",
           "settings": {
@@ -488,7 +476,6 @@
         "product_zF9wP9",
         "product_aKUc4N",
         "product_CnMwyU",
-        "product_nRhA4x",
         "product_9Baiy9"
       ],
       "settings": {
