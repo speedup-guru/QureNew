@@ -6,7 +6,7 @@
         "announcement_JyMH8T": {
           "type": "announcement",
           "settings": {
-            "heading": "Holiday Sale Ends In:",
+            "heading": "Limited Time Only:",
             "timer": "2024-06-09T23:59:59",
             "timer_next": 7
           }
@@ -367,6 +367,28 @@
     "bundle_list_LdzHxV": {
       "type": "bundle-list",
       "blocks": {
+        "product_3Frmww": {
+          "type": "product",
+          "settings": {
+            "product": "best-seller-bundle",
+            "comment_ammount": 729,
+            "percent": 30,
+            "ppl_choise": 1,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_JVJkGj": {
+          "type": "product",
+          "settings": {
+            "product": "youth-boosting-bundle",
+            "comment_ammount": 202,
+            "percent": 38,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
         "product_DgMQiP": {
           "type": "product",
           "settings": {
@@ -378,13 +400,13 @@
             "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE<\/p>\n                                                <\/div>\n                                            <\/div>"
           }
         },
-        "product_3Frmww": {
+        "product_pCXqdM": {
           "type": "product",
           "settings": {
-            "product": "best-seller-bundle",
-            "comment_ammount": 729,
-            "percent": 30,
-            "ppl_choise": 1,
+            "product": "ageless-glow-bundle",
+            "comment_ammount": 283,
+            "percent": 26,
+            "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
           }
@@ -400,45 +422,12 @@
             "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended<\/span><\/p>\n                                                    <\/div>\n                                                <\/div>"
           }
         },
-        "product_JVJkGj": {
-          "type": "product",
-          "settings": {
-            "product": "youth-boosting-bundle",
-            "comment_ammount": 202,
-            "percent": 24,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
         "product_zF9wP9": {
           "type": "product",
           "settings": {
             "product": "all-in-one-face-serum-bundle",
             "comment_ammount": 212,
             "percent": 44,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
-        "product_CnMwyU": {
-          "type": "product",
-          "settings": {
-            "product": "youthify-or-glow-set",
-            "comment_ammount": 514,
-            "percent": 44,
-            "ppl_choise": 0,
-            "recommended": 0,
-            "recommended_code": ""
-          }
-        },
-        "product_pCXqdM": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "comment_ammount": 283,
-            "percent": 29,
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
@@ -455,12 +444,12 @@
             "recommended_code": ""
           }
         },
-        "product_nRhA4x": {
+        "product_CnMwyU": {
           "type": "product",
           "settings": {
-            "product": "hydra-glow",
-            "comment_ammount": 187,
-            "percent": 42,
+            "product": "youthify-or-glow-set",
+            "comment_ammount": 514,
+            "percent": 44,
             "ppl_choise": 0,
             "recommended": 0,
             "recommended_code": ""
@@ -468,15 +457,14 @@
         }
       },
       "block_order": [
-        "product_DgMQiP",
         "product_3Frmww",
-        "product_EQ6HJY",
         "product_JVJkGj",
-        "product_zF9wP9",
-        "product_CnMwyU",
+        "product_DgMQiP",
         "product_pCXqdM",
+        "product_EQ6HJY",
+        "product_zF9wP9",
         "product_aKUc4N",
-        "product_nRhA4x"
+        "product_CnMwyU"
       ],
       "settings": {
         "heading": "Choose your bundle.",

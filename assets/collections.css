@@ -5,11 +5,8 @@
     position: relative;
 }
 
-/* aaaaqqqq */
 .collectio-banner h1 {
-    /*
     position: absolute;
-    */
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -25,11 +22,10 @@
 }
 
 @media(max-width:767px) {
-    /* aaaaqqqq */
     .collectio-banner h1 {
         font-size: 18px;
         line-height: 24px;
-        /* width: 176px; */
+        width: 176px;
     }
 }
 

@@ -85,7 +85,39 @@
                 {%- endfor -%}
             {% endif %}
 
-            <div class="productBlockGrid fixed_height_btn" data-product-id="{{ product.id }}">
+            {% case product.id %}
+                {% when 7802884784367 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802912866543 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802903003375 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802880229615 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802897727727 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802911981807 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802905297135 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802862862575 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802905297135 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 7802890092783 %}
+                    {% assign product_url = 'pages/microinfusion' %}
+                {% when 8015039496431 %}
+                    {% assign product_url = 'pages/micro-infusion-refill' %}
+                {% when 8015049621743 %}
+                    {% assign product_url = 'pages/micro-infusion-refill' %}
+                {% when 8015038873839 %}
+                    {% assign product_url = 'pages/micro-infusion-refill' %}
+                {% else %}
+                    {% capture product_url %}products/{{ product.handle }}{% endcapture %}
+            {% endcase %}
+
+            <div class="productBlockGrid fixed_height_btn">
+                <a href="{{ routes.root_url }}{{ product_url }}" class="productLink"></a>
                 <div class="cus-tag">
                     {% assign amount = 0 %}
                     {% for variant in product.variants %}
@@ -101,61 +133,33 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-
-                {% case product.id %}
-                    {% when 7802884784367 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802912866543 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802903003375 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802880229615 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802897727727 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802911981807 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802905297135 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802862862575 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802905297135 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 7802890092783 %}
-                        {% assign product_url = 'pages/microinfusion' %}
-                    {% when 8015039496431 %}
-                        {% assign product_url = 'pages/micro-infusion-refill' %}
-                    {% when 8015049621743 %}
-                        {% assign product_url = 'pages/micro-infusion-refill' %}
-                    {% when 8015038873839 %}
-                        {% assign product_url = 'pages/micro-infusion-refill' %}
-                    {% else %}
-                        {% capture product_url %}products/{{ product.handle }}{% endcapture %}
-                {% endcase %}
-
                 <div class="product-grid__image">
-                    <a href="{{ routes.root_url }}{{ product_url }}" class="productLink">
-                        <img src="{{ product.featured_image | img_url: '720x' }}" alt="collection img" />
-                    </a>
+                    <img src="{{ product.featured_image | img_url: '720x' }}" alt="collection img" />
                 </div>
                 <div class="pdt_cln_info">
                     <div class="product-grid__review collection-review">
-                      
+                        <!-- 
+                            <div class="prdStar"><img src="assets/collection-4.7.svg" alt=""></div>
+                            <span>196 Reviews</span>
+                        -->
                     </div>
                     <div class="product-grid__title">{{ product.title }}</div>
                     <div class="collection-description">{{ product.description | strip_html | truncate: 130 }}</div>
-
+                </div>
+                <div class="pdt_cln_bottom">
                     <div class="product-grid__price abtest">
-                        <span class="product-grid__sale-price" data-processed-abconvert-price="true" data-product-id="{{ product.id }}">{{ product.price |  money_without_trailing_zeros }}</span>
-                        <s class="product-grid__compare-price" data-processed-abconvert-price="true" data-product-id="{{ product.id }}">{{ product.compare_at_price |  money_without_trailing_zeros }}</s>
+                        {% if product.compare_at_price != blank %}
+                            <span class="product-grid__sale-price{% if product.compare_at_price != blank %} text-decoration-line-through{% endif %}" data-processed-abconvert-price="true">{{ product.compare_at_price |  money_without_trailing_zeros }}</span>
+                            {% if product.compare_at_price != blank %}
+                                <span class="product-grid__compare-price" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
+                            {% endif %}    
+                        {% else %}
+                            <span class="product-grid__sale-price" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
+                        {% endif %}
                     </div>
                     <div class="product-grid__atc-form-wrapper collection-form">
-                        <button type="button" class="button button_primary" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button><span>Buy Now</span></button>
-                        {% if product.id == 7802884784367 %}
-                            <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
-                        {% else %}
-                            <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
-                        {% endif %}
+                        <a class="button_primary" style="cursor:pointer;" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Buy Now</a>
+                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -207,7 +211,7 @@
         setInterval(
             function () {
                 var classNameRaman = document.getElementById("offcanvasBottom").classList;
-                console.log(classNameRaman)
+                
                 if (classNameRaman.contains('show')) {
                     $('html').addClass('filterActive');
                 }
