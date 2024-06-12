@@ -148,9 +148,9 @@
                 </div>
                 <div class="pdt_cln_bottom">
                     <div class="product-grid__price abtest">
-                        <span class="product-grid__sale-price{% if product.compare_at_price != blank %} text-decoration-line-through{% endif %}" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
+                        <span class="product-grid__sale-price{% if product.compare_at_price != blank %} text-decoration-line-through{% endif %}" data-processed-abconvert-price="true">{{ product.compare_at_price |  money_without_trailing_zeros }}</span>
                         {% if product.compare_at_price != blank %}
-                            <span class="product-grid__compare-price" data-processed-abconvert-price="true">{{ product.compare_at_price |  money_without_trailing_zeros }}</span>
+                            <span class="product-grid__compare-price" data-processed-abconvert-price="true">{{ product.price |  money_without_trailing_zeros }}</span>
                         {% endif %}
                     </div>
                     <div class="product-grid__atc-form-wrapper collection-form">
