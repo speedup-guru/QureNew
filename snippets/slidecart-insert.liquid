@@ -11,6 +11,7 @@
 <script>
 	var currency = '{{ shop.money_with_currency_format | remove: ' ' | split: '' | first }}';
 	var cart_price = '{{ cart.items_subtotal_price | money_without_currency | round:2 }}';
+	var __discount_applied = false;
 </script>
 <script type="application/json" data-ajax-cart-initial-state class="__init"> {{ cart | json }} </script> 
 <script type="application/json" data-ajax-cart-configuration class="__init"> { "addToCartCssClass": "js-my-cart-open" } </script>
@@ -92,27 +93,28 @@
   	initUpsellSwiper(); //Upsell Swiper PDM when add product need show upsell slider
 
 	subscribeToCartSectionsUpdate( sections => {
-		{% if giftProduct != blank and giftQuantity != blank and giftPriceLimit != blank and giftDiscount != blank %}
-			gift('{{ giftProduct.variants.first.id }}', '{{ giftQuantity }}', '{{ giftPriceLimit }}', '{{ giftDiscount }}');
-		{% endif %}
+
+		if (window.location.href.includes("/pages/q-rejuvalight-pro-offer"))
+		{
+			dicount(37390541553813, 44062187913455, 'N&D100');
+		}
+		else
+		{
+			{% if giftProduct != blank and giftQuantity != blank and giftPriceLimit != blank and giftDiscount != blank %}
+				gift('{{ giftProduct.variants.first.id }}', '{{ giftQuantity }}', '{{ giftPriceLimit }}', '{{ giftDiscount }}');
+			{% endif %}
+		}
 
 		updateShippingInsurance();
 		if(typeof startCartTimer == 'function') {
 			startCartTimer(15 * 60);
 		}
     	initUpsellSwiper();
-
-		if (window.location.href.includes("/pages/q-rejuvalight-pro-offer"))
-		{
-			dicount(37390541553813, 44062187913455, 'N&D100');
-		}
 	});
 
 
 	function dicount(productId, dproductId, discountCode)
 	{
-		window.__discount_applied = false;
-
         fetch('/cart.js')
             .then(response => response.json())
             .then(cart => {
@@ -120,9 +122,18 @@
 				{
 					if (cart.items.some(item => item.id === +(productId)) && cart.items.some(item => item.id === +(dproductId))) {
 						fetch('/discount/' + discountCode).then(async () => {
+							var event = new Event('click', {
+									'bubbles': true,
+									'cancelable': true
+							});
 
+							document.querySelector("#cart-reload").dispatchEvent(event);
+							window.__discount_applied = true;
 						});
                 	}
+					else {
+						window.__discount_applied = false;
+					}
 				}
 		});
 	}

@@ -709,8 +709,8 @@
                                 </ul>
                             </div>
                             <div class="get_clearer_wrapper ms-0">
-                                <a class="btn btn-lg btn-primary btn_green mw-100" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Bundle & SAVE - {{ discount | money_without_trailing_zeros }}
-                                </a>
+                                <a class="btn btn-lg btn-primary btn_green mw-100" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Bundle & SAVE - {{ discount | money_without_trailing_zeros }}</a>
+                                <a id="cart-reload" style="display:none" class="btn btn-lg btn-primary btn_green mw-100" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=0" data-ajax-cart-request-button>Bundle & SAVE - {{ discount | money_without_trailing_zeros }}</a>
                             </div>
                         </div>
                     </div>
