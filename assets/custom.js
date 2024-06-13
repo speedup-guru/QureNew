@@ -60,27 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    
-
-    if (window.location.hash) {
-        switch (window.location.hash) {
-            //https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide
-            case '#how-to-use':
-                triggerClick('.how-to-use');
-                break;
-            case '#getting-started':
-                triggerClick('.getting-started');
-                break;
-            case '#troubleshooting':
-                triggerClick('.troubleshooting');
-                break;
-            case '#take-care':
-                triggerClick('.take-care');
-                break;
-            default:
-                break;
-        }
-    }
 
     if (window.location.href.includes("/pages/q-urify-water-filter-guide")) {
         document.querySelector('#hs_1').addEventListener('click', function() {
@@ -141,7 +120,66 @@ document.addEventListener('DOMContentLoaded', function() {
             triggerClick('.hamburger-container');
         });
     }
+
+    if (window.location.href.includes("/pages/q-rejuvalight-pro-LED-mask-guide")) {
+
+        if (window.location.hash) {
+            switch (window.location.hash) {
+                case '#how-to-use':
+                    triggerClick('.how-to-use');
+                    break;
+                case '#getting-started':
+                    triggerClick('.getting-started');
+                    break;
+                case '#troubleshooting':
+                    triggerClick('.troubleshooting');
+                    break;
+                case '#take-care':
+                    triggerClick('.take-care');
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        document.querySelector('#hs_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.how-to-use');
+        });
+        document.querySelector('#hsm_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.how-to-use');
+        });
+        document.querySelector('#hs_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.getting-started');
+        });
+        document.querySelector('#hsm_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.getting-started');
+        });
+        document.querySelector('#hs_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.troubleshooting');
+        });
+        document.querySelector('#hsm_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.troubleshooting');
+        });
+        document.querySelector('#hs_4').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.take-care');
+        });
+        document.querySelector('#hsm_4').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.take-care');
+        });
+    }
 });
+
+
+
+
 
 function triggerClick(selector) {
     var event = new Event('click', {
