@@ -42,7 +42,7 @@
                         {%- for block in section.blocks offset:announcement_count -%}
                             {% if block.type == 'navigation-link' %}
                                 <li class="title">
-                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" class="tablinks" id="hsm_{{ forloop.index }}">{{ block.settings.link_label }}</a>
+                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" id="hsm_{{ forloop.index }}">{{ block.settings.link_label }}</a>
                                 </li>
                             {% endif %}
                         {%- endfor -%}
@@ -55,7 +55,7 @@
                         {%- for block in section.blocks offset:announcement_count -%}
                             {% if block.type == 'navigation-link' %}
                                 <li>
-                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" class="tablinks" id="hs_{{ forloop.index }}">{{ block.settings.link_label }}</a>
+                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" id="hs_{{ forloop.index }}">{{ block.settings.link_label }}</a>
                                 </li>
                             {% endif %}
                         {%- endfor -%}

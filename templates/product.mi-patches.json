@@ -362,6 +362,81 @@
         "text_reviewed": "Reviewed in"
       }
     },
+    "videos_RDmhf8": {
+      "type": "videos",
+      "blocks": {
+        "wistia_7jRVGV": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "suqimfilsp"
+          }
+        },
+        "wistia_9GRHyX": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "iv94ue7wqt"
+          }
+        },
+        "wistia_cy4gx6": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "ysiwr8pux7"
+          }
+        },
+        "wistia_hwGfHY": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "xf02ub5lry"
+          }
+        },
+        "wistia_NzVqQk": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "equ3v6w8n9"
+          }
+        },
+        "wistia_BtBKwM": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "gj1az9jxew"
+          }
+        },
+        "wistia_hnNaih": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "4ma2mlpqtb"
+          }
+        },
+        "wistia_UGt6JM": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "l6q62jsw6p"
+          }
+        },
+        "wistia_XqyD4d": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "6mdfof7669"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_7jRVGV",
+        "wistia_9GRHyX",
+        "wistia_cy4gx6",
+        "wistia_hwGfHY",
+        "wistia_NzVqQk",
+        "wistia_BtBKwM",
+        "wistia_hnNaih",
+        "wistia_UGt6JM",
+        "wistia_XqyD4d"
+      ],
+      "settings": {
+        "heading": "Confident skin starts here",
+        "text": "",
+        "classname": ""
+      }
+    },
     "two_column_box_cGgxCb": {
       "type": "two-column-box",
       "blocks": {
@@ -392,7 +467,7 @@
         "code_ywcMEL": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"swiper ingredients_slider combat_slider\">\n                            <div class=\"swiper-wrapper\">\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-fine_line.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Fine lines<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-wrinkles.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Wrinkles<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-dark_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Dark circles<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item\">\n                                        <img src=\"{{ 'mi-patches-puffiness.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Puffiness<\/p>\n                                    <\/div>\n                                <\/div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"ingredients_item mw-100\">\n                                        <img src=\"{{ 'mi-patches-under-eys.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <p>Under-eye bags<\/p>\n                                    <\/div>\n                                <\/div>\n                            <\/div>\n                            <div class=\"swiper-pagination\"><\/div>\n                        <\/div>"
+            "code": "<div class=\"swiper ingredients_slider combat_slider\">\n    <div class=\"swiper-wrapper\">\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-fine_line.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Fine lines<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-wrinkles.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Wrinkles<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-dark_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Dark circles<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-puffiness.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Puffiness<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item mw-100\">\n                <img src=\"{{ 'mi-patches-under-eys.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Under-eye bags<\/p>\n            <\/div>\n        <\/div>\n    <\/div>\n    <div class=\"swiper-pagination\"><\/div>\n<\/div>"
           }
         }
       },
@@ -571,6 +646,7 @@
     "two_column_box_LbCXBk",
     "one_column_box_ACaxnJ",
     "results_pkwNpm",
+    "videos_RDmhf8",
     "two_column_box_cGgxCb",
     "compare_b7K3DX",
     "liquid_WdMeGQ",
