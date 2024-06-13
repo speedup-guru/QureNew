@@ -904,6 +904,12 @@ body[data-test-product-landing='true']{
       }
       .left-panel{
         width: 41.67%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @media screen and (max-width: 1144px) {
+          justify-content: center;
+        }
         @media screen and (max-width: 768px){
           width: 100%;
         }
@@ -914,6 +920,7 @@ body[data-test-product-landing='true']{
           flex-direction: column;
           justify-content: center;
           gap: 24px;
+          width: 350px;
           @media screen and (max-width: 768px){
             align-items: center;
             padding: 31px 0;
@@ -948,6 +955,7 @@ body[data-test-product-landing='true']{
               letter-spacing: 1.5px;
               text-align: left;
               margin: 0;
+              white-space: nowrap;
               @media screen and (max-width: 768px){
                 font-size: 38px;
                 font-weight: 500;
@@ -958,30 +966,32 @@ body[data-test-product-landing='true']{
               }
             }
           }
-          a{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 236px;
-            height: 48px;
-            padding: 8px 32px 8px 32px;
-            border-radius: 100px;
-            font-family: 'Poppins';
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 20px;
-            letter-spacing: 0.01em;
-            text-align: center;
-            background-color: black;
-            color: white;
-            @media screen and (max-width: 768px){
-              height: 42px;
-              font-size: 18px;
+          .product-landing-information-anchor{
+            a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 236px;
+              height: 48px;
+              padding: 8px 32px 8px 32px;
+              border-radius: 100px;
+              font-family: 'Poppins';
+              font-size: 20px;
               font-weight: 500;
               line-height: 20px;
               letter-spacing: 0.01em;
               text-align: center;
+              background-color: black;
+              color: white;
+              @media screen and (max-width: 768px){
+                height: 42px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.01em;
+                text-align: center;
 
+              }
             }
           }
         }
@@ -990,9 +1000,12 @@ body[data-test-product-landing='true']{
         width: 58.33%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         background-color: #F5F5F5;
+        @media screen and (max-width: 1144px){
+          justify-content: center;
+        }
         @media screen and (max-width: 768px){
           width: 100%;
           height: 100%;
@@ -1077,6 +1090,9 @@ body[data-test-product-landing='true']{
                 padding-top: 32px;
                 @media screen and (max-width: 640px){
                   padding: 16px 32px 0;              
+                }
+                @media screen and (max-width: 325px) {
+                  padding: 16px 10px;
                 }
                 .product-landing-information-item{
                   flex: 1;
