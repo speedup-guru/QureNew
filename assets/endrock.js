@@ -151,9 +151,9 @@ if (document.querySelector('.pdm_product-landing-sales-wrapper')) {
   const pdmProductLadingSalesSwiper = new Swiper('.pdm_swiper_product_landing', {
     effect: 'fade',
     loop: true,
-    autoplay: {
-      delay: 3000,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    // },
     mousewheel: {
       forceToAxis: true,
     },
