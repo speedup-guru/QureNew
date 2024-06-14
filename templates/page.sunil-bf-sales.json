@@ -69,15 +69,6 @@
     "pdm_product_landing_sales_F9Dn8a": {
       "type": "pdm_product-landing-sales",
       "blocks": {
-        "product_Pmff3V": {
-          "type": "product",
-          "settings": {
-            "product": "mi-bundle-may",
-            "announcement_id": "New",
-            "button_url_id": "#mi-bundle-may",
-            "button_text_id": "Get yours"
-          }
-        },
         "product_UQdbaG": {
           "type": "product",
           "settings": {
@@ -87,12 +78,12 @@
             "button_text_id": "Get yours"
           }
         },
-        "product_mmM6Jm": {
+        "product_ncYWKA": {
           "type": "product",
           "settings": {
-            "product": "skin-ssentials-set-doctorly-choice",
-            "announcement_id": "Doctorly recommended",
-            "button_url_id": "#skin-ssentials-set-doctorly-choice",
+            "product": "ageless-glow-bundle",
+            "announcement_id": "",
+            "button_url_id": "#ageless-glow-bundle",
             "button_text_id": "Get yours"
           }
         },
@@ -114,30 +105,39 @@
             "button_text_id": "Get yours"
           }
         },
-        "product_MpViyV": {
-          "type": "product",
-          "settings": {
-            "product": "youthify-or-glow-set",
-            "announcement_id": "",
-            "button_url_id": "#youthify-or-glow-set",
-            "button_text_id": "Get yours"
-          }
-        },
-        "product_ncYWKA": {
-          "type": "product",
-          "settings": {
-            "product": "ageless-glow-bundle",
-            "announcement_id": "",
-            "button_url_id": "#ageless-glow-bundle",
-            "button_text_id": "Get yours"
-          }
-        },
         "product_3gJLGX": {
           "type": "product",
           "settings": {
             "product": "confidence-booster-bundle",
             "announcement_id": "",
             "button_url_id": "#confidence-booster-bundle",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_Pmff3V": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "announcement_id": "New",
+            "button_url_id": "#mi-bundle-may",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_mmM6Jm": {
+          "type": "product",
+          "settings": {
+            "product": "skin-ssentials-set-doctorly-choice",
+            "announcement_id": "Doctorly recommended",
+            "button_url_id": "#skin-ssentials-set-doctorly-choice",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_MpViyV": {
+          "type": "product",
+          "settings": {
+            "product": "youthify-or-glow-set",
+            "announcement_id": "",
+            "button_url_id": "#youthify-or-glow-set",
             "button_text_id": "Get yours"
           }
         },
@@ -153,14 +153,14 @@
         }
       },
       "block_order": [
-        "product_Pmff3V",
         "product_UQdbaG",
-        "product_mmM6Jm",
+        "product_ncYWKA",
         "product_ahkGAV",
         "product_yNEYEK",
-        "product_MpViyV",
-        "product_ncYWKA",
         "product_3gJLGX",
+        "product_Pmff3V",
+        "product_mmM6Jm",
+        "product_MpViyV",
         "product_Mhxq4H"
       ],
       "settings": {
