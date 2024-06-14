@@ -66,6 +66,111 @@
         "button_url": "#bf-bundles"
       }
     },
+    "pdm_product_landing_sales_F9Dn8a": {
+      "type": "pdm_product-landing-sales",
+      "blocks": {
+        "product_Pmff3V": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "announcement_id": "New",
+            "button_url_id": "#mi-bundle-may",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_UQdbaG": {
+          "type": "product",
+          "settings": {
+            "product": "best-seller-bundle",
+            "announcement_id": "Most popular",
+            "button_url_id": "#best-seller-bundle",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_mmM6Jm": {
+          "type": "product",
+          "settings": {
+            "product": "skin-ssentials-set-doctorly-choice",
+            "announcement_id": "Doctorly recommended",
+            "button_url_id": "#skin-ssentials-set-doctorly-choice",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_ahkGAV": {
+          "type": "product",
+          "settings": {
+            "product": "youth-boosting-bundle",
+            "announcement_id": "",
+            "button_url_id": "#youth-boosting-bundle",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_yNEYEK": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-bundle",
+            "announcement_id": "",
+            "button_url_id": "#all-in-one-face-serum-bundle",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_MpViyV": {
+          "type": "product",
+          "settings": {
+            "product": "youthify-or-glow-set",
+            "announcement_id": "",
+            "button_url_id": "#youthify-or-glow-set",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_ncYWKA": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "announcement_id": "",
+            "button_url_id": "#ageless-glow-bundle",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_3gJLGX": {
+          "type": "product",
+          "settings": {
+            "product": "confidence-booster-bundle",
+            "announcement_id": "",
+            "button_url_id": "#confidence-booster-bundle",
+            "button_text_id": "Get yours"
+          }
+        },
+        "product_Mhxq4H": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "hydra-glow",
+            "announcement_id": "",
+            "button_url_id": "#hydra-glow",
+            "button_text_id": "Get yours"
+          }
+        }
+      },
+      "block_order": [
+        "product_Pmff3V",
+        "product_UQdbaG",
+        "product_mmM6Jm",
+        "product_ahkGAV",
+        "product_yNEYEK",
+        "product_MpViyV",
+        "product_ncYWKA",
+        "product_3gJLGX",
+        "product_Mhxq4H"
+      ],
+      "settings": {
+        "text_banner": "EXCLUSIVE HOLIDAY BUNDLES",
+        "text_offer_banner": "Save Up To 50%",
+        "button_banner_url": "#bf-bundles",
+        "button_banner_text": "Shop Now",
+        "save_text": "save"
+      }
+    },
     "icons_list_qXfGQA": {
       "type": "icons-list",
       "blocks": {
@@ -916,6 +1021,7 @@
   "order": [
     "header_sales_TMQyBR",
     "main",
+    "pdm_product_landing_sales_F9Dn8a",
     "icons_list_qXfGQA",
     "results_NKDiDj",
     "two_column_box_FQCXGb",

@@ -144,7 +144,6 @@ document.addEventListener('ig:ready', function() {
   hidePrices();
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
   atcNoPricesPdp();
   hidePrices();
@@ -1113,4 +1112,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   /* end QR- Shopify 2.0 Features Adjustments  */
+
+  // pdm product landing sales
+  // Check if the element with the class .pdm_product-landing-sales-wrapper exists
+  if (document.querySelector('.pdm_product-landing-sales-wrapper')) {
+    // Initialize the Swiper only if the element exists
+    const pdmProductLadingSalesSwiper = new Swiper('.pdm_swiper_product_landing', {
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      mousewheel: {
+        forceToAxis: true,
+      },
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.swiper-pdm-landing-sales-pagination',
+        clickable: true
+      },
+      navigation: {
+        prevEl: '.swiper-pdm-landing-sales-prev',
+        nextEl: '.swiper-pdm-landing-sales-next',
+      }
+    });
+  }
+
+  // end pdm product landing sales
 });
