@@ -31,6 +31,9 @@ setTimeout(function () {
             cs = "true" === e.dataset.centerslide,
                 al = e?.dataset.arrowleft ? e?.dataset.arrowleft : "swiper-button-prev",
                 ar = e?.dataset.arrowright ? e?.dataset.arrowright : "swiper-button-next",
+                dir = e?.dataset.direction ? e.dataset.direction : 'horizontal',  // Default to 'horizontal'
+                rtl = document.documentElement.dir === 'rtl',  // Check the document's direction
+                initialSlide = e?.dataset.initialSlide ? Number(e.dataset.initialSlide) : 0,  // Default to 0
                 m = Number(m), a = Number(a), c = Number(c), p <= 767 ? m >= 15 && (m = 15) : p <= 1199 && m >= 30 && (m = 30), new Swiper("#twa__swiper-" + d, {
                     slidesPerView: r,
                     slidesPerColumn: w,
@@ -41,6 +44,9 @@ setTimeout(function () {
                     loop: n,
                     effect: l,
                     speed: c,
+                    direction: dir,
+                    rtl: rtl,
+                    initialSlide: initialSlide,
                     watchSlidesProgress: !0,
                     watchSlidesVisibility: !0,
                     lazy: true,
@@ -78,6 +84,7 @@ setTimeout(function () {
     };
     TwaSettingsSwiper.init();
 }, 500);
+
 
 
 //Header
@@ -295,7 +302,7 @@ accordionHeaders.forEach(header => {
 });
 
 // scroll to id
-$('a[href*="#"]:not([href="#"])').not('.faq-menu__url, .skincare_right a.popup-modal.ss_c_link, .popup-youtube, .ss_c_link, .collection-form .button_primary').click(function () {
+$('a[href*="#"]:not([href="#"])').not('.faq-menu__url, .skincare_right a.popup-modal.ss_c_link, .popup-youtube, .ss_c_link, .collection-form .button_primary, .welcome_qure .menu li a').click(function () {
     var target = $(this.hash);
     $('html,body').stop().animate({
         scrollTop: target.offset().top - 100
