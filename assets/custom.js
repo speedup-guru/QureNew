@@ -60,6 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    //set "no-subscription variant" for all pdp pages as default
+    setTimeout(() => {
+        var selector = '.subscriptionType[data-subscription="no-subscription"]';
+        if (document.querySelector(selector)) {
+            triggerClick(selector);
+        }
+    }, 750);
+
     //https://www.qureskincare.com/pages/q-urify-water-filter-guide
     if (template == 'page.sunil-q-urify-safety') {
         document.querySelector('#hs_1').addEventListener('click', function() {
