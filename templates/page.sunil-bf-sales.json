@@ -114,6 +114,15 @@
             "button_text_id": "Get yours"
           }
         },
+        "product_Pmff3V": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "announcement_id": "New",
+            "button_url_id": "#mi-bundle-may",
+            "button_text_id": "Get yours"
+          }
+        },
         "product_mmM6Jm": {
           "type": "product",
           "settings": {
@@ -129,15 +138,6 @@
             "product": "youthify-or-glow-set",
             "announcement_id": "",
             "button_url_id": "#youthify-or-glow-set",
-            "button_text_id": "Get yours"
-          }
-        },
-        "product_Pmff3V": {
-          "type": "product",
-          "settings": {
-            "product": "mi-bundle-may",
-            "announcement_id": "New",
-            "button_url_id": "#mi-bundle-may",
             "button_text_id": "Get yours"
           }
         },
@@ -158,9 +158,9 @@
         "product_ahkGAV",
         "product_yNEYEK",
         "product_3gJLGX",
+        "product_Pmff3V",
         "product_mmM6Jm",
         "product_MpViyV",
-        "product_Pmff3V",
         "product_Mhxq4H"
       ],
       "settings": {
