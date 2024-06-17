@@ -210,7 +210,7 @@ window.addEventListener('load', function () {
 // =================================== js for same height ===============================
 $(function () {
     //setTimeout(function () {
-    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img').matchHeight({
+    $('.q_uses_header, .dfrc__hdr, .s_name, .result_item, .trust_item, .serum_bx, .bs_content, .skin_item, .safety_content, .mc_desc, .blog_wrap, .see_item img, .menu li a').matchHeight({
         property: 'height',
         target: null,
         remove: false
@@ -302,7 +302,7 @@ accordionHeaders.forEach(header => {
 });
 
 // scroll to id
-$('a[href*="#"]:not([href="#"])').not('.faq-menu__url, .skincare_right a.popup-modal.ss_c_link, .popup-youtube, .ss_c_link, .collection-form .button_primary, .welcome_qure .menu li a').click(function () {
+$('a[href*="#"]:not([href="#"])').not('.faq-menu__url, .skincare_right a.popup-modal.ss_c_link, .popup-youtube, .ss_c_link, .collection-form .button_primary, .menu li a').click(function () {
     var target = $(this.hash);
     $('html,body').stop().animate({
         scrollTop: target.offset().top - 100
