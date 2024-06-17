@@ -60,8 +60,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    //set "no-subscription variant" for all pdp pages as default
+    setTimeout(() => {
+        var selector = '.subscriptionType[data-subscription="no-subscription"]';
+        if (document.querySelector(selector)) {
+            triggerClick(selector);
+        }
+    }, 750);
 
-    if (window.location.href.includes("/pages/q-urify-water-filter-guide")) {
+    //https://www.qureskincare.com/pages/q-urify-water-filter-guide
+    if (template == 'page.sunil-q-urify-safety') {
         document.querySelector('#hs_1').addEventListener('click', function() {
             event.preventDefault();
             triggerClick('.step6');
@@ -91,7 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    if (window.location.href.includes("/pages/microinfusion-safety-guide")) {
+    //https://www.qureskincare.com/pages/microinfusion-safety-guide
+    if (template == 'page.sunil-micro-infusion-safety') {
         document.querySelector('#hs_1').addEventListener('click', function() {
             event.preventDefault();
             triggerClick('.step6');
@@ -121,7 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    if (window.location.href.includes("/pages/q-rejuvalight-pro-LED-mask-guide")) {
+    //https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide
+    if (template == 'page.sunil-micro-mask-guide') {
 
         if (window.location.hash) {
             switch (window.location.hash) {
@@ -176,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    //https://www.qureskincare.com/products/micro-infusion-targeted-patches
     var swiper = new Swiper(".combat_slider", {
         slidesPerView: 3.6,
         grid: {
