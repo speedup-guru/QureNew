@@ -1024,15 +1024,14 @@ body[data-test-product-landing='true']{
           justify-content: center;
           align-items: center;
           height: 40px;
-          border-radius: 50%;
           position: absolute;
-          left: -2%;
+          left: -40px;
           top: 50%;
           transform: translateY(-50%);
           z-index: 10;
           cursor: pointer;
           @media screen and (max-width: 768px){
-            left: 1.25%;
+            left: 5px;
           }
           svg{
             width: 20px;
@@ -1044,15 +1043,14 @@ body[data-test-product-landing='true']{
           justify-content: center;
           align-items: center;
           height: 40px;
-          border-radius: 50%;
           position: absolute;
-          right: -2%;
+          right: -40px;
           top: 50%;
           transform: translateY(-50%);
           z-index: 10;
           cursor: pointer;
           @media screen and (max-width: 768px){
-            right: 1.25%;
+            right: 5px;
           }
           svg{
             width: 20px;
