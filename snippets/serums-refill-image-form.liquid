@@ -211,10 +211,7 @@
                                                 {{ product_price }}
                                             </div>
                                         </div>
-                                        <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }} event_btn price-test-original" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" data-ajax-cart-request-button>Buy Now -
-                                            {{ product_price }}<img src="https://qureskincaredns.com/assets/images/common/arrow_right.svg" alt="">
-                                        </a>
-                                        <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }} event_btn price-test" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" data-ajax-cart-request-button>Buy Now
+                                        <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }} event_btn" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" data-ajax-cart-request-button>Buy Now
                                         </a>
                                         <div class="payment_method without_subscription">
                                             <p>OR pay 4 monthly payments of {{ product_price_divided }} with</p>
