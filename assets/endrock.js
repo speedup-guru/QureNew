@@ -103,19 +103,6 @@ const verifyCustomer = () => {
 
 }
 
-const hidePrices = () => {
-  const testActive = document.body.hasAttribute('data-price-test');
-  console.log("is active", testActive);
-  const stickyButton = document.querySelectorAll('.button_sticky_wrapper');
-  if (testActive) {
-    if (stickyButton) {
-      stickyButton.forEach((element) => {
-        element.querySelector('a').textContent = "ADD TO BAG";
-      })
-    }
-  }
-}
-
 /* ATC NO PRICES PDP */
 const atcNoPricesPdp = () => {
 console.log('🚀 --- atcNoPricesPdp');
@@ -132,23 +119,17 @@ console.log('🚀 --- atcNoPricesPdp');
 
         subscriptionPrices.forEach((element) => { element.classList.add('hidden'); });
         document.getElementById(`${subscriptionType}`).classList.remove('hidden');
-        hidePrices();
       });
     });
   }
 }
 
-document.addEventListener('ig:ready', function() {
-  /* ATC NO PRICE TEST PDP */
-  atcNoPricesPdp();
-  hidePrices();
-});
-
 document.addEventListener('DOMContentLoaded', function() {
   atcNoPricesPdp();
-  hidePrices();
+
+
   // Start Cross-sell page targeting validation
-  console.log('PAGE LOG');
+
   const pageTargeting = [
     "/products/q-rejuvalight-pro-facewear",
     "/pages/microinfusion",

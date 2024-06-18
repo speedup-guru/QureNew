@@ -64,8 +64,8 @@
                     {% endif %}
                     {% unless page.handle == 'qure-micro-infusion-landing-page-affiliate' %}
                         
-                        <div class="product-price price-test">
-                            {% render 'no-price-atc' subscribe_count: subscribe_count, section: section %}
+                        <div class="product-price">
+                            {% render 'pdm_product-price' subscribe_count: subscribe_count, section: section %}
                             </div>
                     {% endunless %}
                     <div class="mw-452">
@@ -158,11 +158,7 @@
                                             {% unless supply_count > 0 %}
                                                 {% render 'pdm_orderby' %}
                                             {% endunless %}
-                                            <a class="btn btn-lg btn-primary without_subscription buy_btn price-test-original" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
-                                            {% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
-                                                {{ product.price | money_without_trailing_zeros }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
-                                            </a>
-                                            <a class="btn btn-lg btn-primary without_subscription buy_btn price-test" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
+                                            <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                                             {% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}
                                             </a>
 
@@ -189,10 +185,7 @@
                                         {% endunless %}
                                         <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }} form-test-id" enctype="multipart/form-data" data-form-id="{{ product.id }}">
                                             <input type="hidden" name="selling_plan" value="{{ block.settings.plan }}">
-                                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn price-test-original" name="Submit" value="Submit">
-                                                Subscribe Now - {{ product_price_discount | money_without_trailing_zeros  }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
-                                            </button>
-                                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn price-test" name="Submit" value="Submit">
+                                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn event_btn" name="Submit" value="Submit">
                                                 Subscribe Now
                                             </button>
                                             <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
@@ -214,10 +207,7 @@
                         {% unless supply_count > 0 %}
                             {% render 'pdm_orderby' %}
                         {% endunless %}
-                            <a class="btn btn-lg btn-primary buy_btn event_btn price-test-original" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
-                            <span class="igPrice" data-product-id="{{ product.id }}"> {{ product.price | money_without_trailing_zeros }}</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
-                            </a>
-                            <a class="btn btn-lg btn-primary buy_btn event_btn price-test" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} 
+                            <a class="btn btn-lg btn-primary buy_btn event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} 
                             </a>
 
                             {% if product.compare_at_price != blank %}

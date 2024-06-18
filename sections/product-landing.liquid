@@ -68,8 +68,8 @@
                         {%- endfor -%}
                     {% endif %}
                     {% unless page.handle == 'microinfusion' or page.handle == 'qure-microinfusion-offer' or page.handle == 'qure-microinfusion-offer-de' or page.handle == 'qure-micro-infusion-landing-page-affiliate'%}
-                        <div class="product-price price-test">
-                            {% render 'no-price-atc' subscribe_count: 1, section: section, landing:true %}
+                        <div class="product-price">
+                            {% render 'pdm_product-price' subscribe_count: 1, section: section, landing:true %}
                         </div>
                     {% endunless %}
                     {% if button_count %}
@@ -97,10 +97,8 @@
                             </div>
                         {% endif %}
                         {% if section.settings.product != blank %}
-                            <a class="btn btn-lg btn-primary buy_btn event_btn price-test-original" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %} -
-                            <span class="igPrice" data-product-id="{{ product.id }}"> {{ product.price | money_without_trailing_zeros }}</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
-                            </a>
-                            <a class="btn btn-lg btn-primary buy_btn event_btn price-test" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}
+                            
+                            <a class="btn btn-lg btn-primary buy_btn event_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}
                             </a>
 
                             {% if product.compare_at_price != blank %}
