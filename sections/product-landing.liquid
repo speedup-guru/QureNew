@@ -193,7 +193,13 @@
                     {% endif %}
                 </div>
             </div>
-            {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "mobile" %}
+
+            {% if product != blank %}
+                {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "mobile" %}
+            {% else %}
+                {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "mobile" %}
+            {% endif %}
+
             <div class="col-md-6  order-1 order-md-2">
                 {% if new_design == false %}
                     <div class="refill_slider mw-mob-100">
@@ -414,7 +420,12 @@
                 {% if new_design == true %}
                     {% render 'pdm_before_after', data: section.blocks, dataSection: section.settings %}
                 {% endif %}
-                {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "desktop" %}
+
+                {% if product != blank %}
+                    {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "desktop" %}
+                {% else %}
+                    {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "desktop" %}
+                {% endif %}
             </div>
         </div>
     </div>
