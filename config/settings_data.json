@@ -185,7 +185,7 @@
               "price_limit": "150",
               "quantity": "2",
               "discount": "FREEPATCH",
-              "disable": false
+              "disable": true
             }
           }
         },
