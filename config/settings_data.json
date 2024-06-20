@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/qure_favicon.png",
@@ -31,7 +40,7 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "<p><strong>FREE Micro-Infusion Patches <\/strong>with orders over $150<\/p>",
+              "heading": "<p><strong>FREE World-Wide Shipping <\/strong>Orders over $100<\/p>",
               "button_label": "SHOP NOW",
               "button_url": "shopify:\/\/collections\/best-sellers"
             }
