@@ -3536,9 +3536,9 @@ p.border-r {
     display: none !important;
 } */
 
-.wistia_placebo_close_button {
+/* .wistia_placebo_close_button {
     opacity: 1 !important;
-}
+} */
 
 .wistia_responsive_wrapper [id*=".thumbnail_focus_indicator"] {
     box-shadow: none !important;

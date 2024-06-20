@@ -1,6 +1,3 @@
-.header-wrapperBlock {
-    z-index: 99999 !important;
-}
 .header-wrapperBlock.header-sticky {
     position: fixed !important;
 }
