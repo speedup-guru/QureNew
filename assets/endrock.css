@@ -573,7 +573,7 @@
             height: 265px;
           }
           .info-result__wrapper{
-            display: flex;
+            display: block;
             width: 100%;
             height: 100%;
             justify-content: center;
